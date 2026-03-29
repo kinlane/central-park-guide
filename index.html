@@ -1,0 +1,192 @@
+---
+layout: default
+title: "Your guide to a park that never sits still"
+description: "Discover Central Park.Guide - your community-powered source for events, closures, concerts, and seasonal highlights."
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__bg">
+    <img src="/assets/images/homepage-park.avif" alt="Central Park aerial view with lush green trees and walking paths">
+  </div>
+  <div class="container hero__content">
+    <img src="/assets/svg/hero-logo.svg" alt="Central Park.Guide logo" style="height: 80px; margin-bottom: 32px;">
+    <h1>Your guide to a park that never sits still</h1>
+    <p>Events, closures, concerts, and the little surprises that make Central Park alive.</p>
+    <a href="/events/" class="btn btn-green" style="margin-top: 24px;">See what's happening</a>
+  </div>
+</section>
+
+<!-- Time of Day -->
+<section class="section bg-green">
+  <div class="container">
+    <div class="split">
+      <div class="split__text">
+        <h2>Every corner, and time of day, tells a story</h2>
+        <p>From the quiet glow of dawn to the hum of a summer evening, Central Park shifts with the light.</p>
+        <a href="/plan-your-visit/" class="btn btn-black">Plan your visit</a>
+      </div>
+      <div class="split__image">
+        <div class="tabs" style="margin-bottom: 16px;">
+          <button class="tab active" onclick="switchTab(this, 'dusk')">Dusk</button>
+          <button class="tab" onclick="switchTab(this, 'day')">Day</button>
+          <button class="tab" onclick="switchTab(this, 'dawn')">Dawn</button>
+          <button class="tab" onclick="switchTab(this, 'night')">Night</button>
+        </div>
+        <img id="day-tab-img" src="/assets/images/day-tab-dusk.png" alt="Central Park at dusk" style="border-radius: 20px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="section">
+  <div class="container">
+    <div class="grid-3">
+      <div class="card">
+        <img class="card__image" src="/assets/images/dog-walker.avif" alt="Person walking dogs through Central Park trails">
+        <div class="card__content">
+          <h3>Dog walker patrols</h3>
+          <p>The best routes, off-leash hours, and dog-friendly spots across the park.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__image" src="/assets/images/runners-loops.avif" alt="Runners on the Central Park loop">
+        <div class="card__content">
+          <h3>Runners' loops</h3>
+          <p>From the 3-mile lower loop to the full 6-mile drive. Pick your pace.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card__image" src="/assets/images/guided-bird.avif" alt="Bird watchers with binoculars in the Ramble">
+        <div class="card__content">
+          <h3>Guided bird watching tours</h3>
+          <p>Seasonal migratory routes and the best spots to see hawks, owls, and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events Preview -->
+<section class="section bg-ash">
+  <div class="container text-center">
+    <h2 class="mb-md">What's happening in the park</h2>
+    <div class="grid-3">
+      <div class="event-card">
+        <img class="event-card__image" src="/assets/images/event-1.avif" alt="Runners at Central Park 10K event">
+        <div class="event-card__body">
+          <div class="event-card__meta">
+            <span><img src="/assets/icons/calendar.png" alt="">14 Sep - Sun</span>
+            <span><img src="/assets/icons/time.png" alt="">07:15 Start</span>
+          </div>
+          <h3 class="event-card__title">Central Park 10K</h3>
+          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> Reservoir Loop</p>
+          <p class="event-card__desc">Community race with rolling closures until 1 PM. Runners of all levels welcome.</p>
+          <a href="/events/" class="btn btn-green">Register now</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <img class="event-card__image" src="/assets/images/event-2.avif" alt="Summer concert in Central Park">
+        <div class="event-card__body">
+          <div class="event-card__meta">
+            <span><img src="/assets/icons/calendar.png" alt="">14 Sep - Sun</span>
+            <span><img src="/assets/icons/time.png" alt="">07:15 Start</span>
+          </div>
+          <h3 class="event-card__title">Central Park 10K</h3>
+          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> Reservoir Loop</p>
+          <p class="event-card__desc">Community race with rolling closures until 1 PM. Runners of all levels welcome.</p>
+          <a href="/events/" class="btn btn-green">Register now</a>
+        </div>
+      </div>
+      <div class="event-card">
+        <img class="event-card__image" src="/assets/images/event-3.avif" alt="Park activities in Central Park">
+        <div class="event-card__body">
+          <div class="event-card__meta">
+            <span><img src="/assets/icons/calendar.png" alt="">14 Sep - Sun</span>
+            <span><img src="/assets/icons/time.png" alt="">07:15 Start</span>
+          </div>
+          <h3 class="event-card__title">Central Park 10K</h3>
+          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> Reservoir Loop</p>
+          <p class="event-card__desc">Community race with rolling closures until 1 PM. Runners of all levels welcome.</p>
+          <a href="/events/" class="btn btn-green">Register now</a>
+        </div>
+      </div>
+    </div>
+    <a href="/events/" class="btn btn-outline" style="margin-top: 40px;">See all events</a>
+  </div>
+</section>
+
+<!-- Two Perspectives -->
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-md">One park, two perspectives</h2>
+    <div class="grid-2">
+      <a href="/" class="card" style="text-decoration:none;">
+        <img class="card__image" src="/assets/images/brand-cpg.avif" alt="Central Park.Guide brand">
+        <div class="card__content">
+          <h3>CentralPark.Guide</h3>
+          <p>Events, closures, concerts, and seasonal highlights. The big picture of the park.</p>
+        </div>
+      </a>
+      <a href="https://poppyrlane.com" class="card" style="text-decoration:none;">
+        <img class="card__image" src="/assets/images/brand-sp.avif" alt="Squirrel Patrol brand">
+        <div class="card__content">
+          <h3>The Squirrel Patrol</h3>
+          <p>Street-level magic: buskers, surprise parades, and goose uprisings. From Poppy's sidecar.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="section bg-orange" style="position:relative; overflow:hidden;">
+  <div class="container" style="position:relative; z-index:1;">
+    <div class="split">
+      <div>
+        <h2>Don't miss a thing</h2>
+        <p>Get weekly park alerts straight to your inbox. Closures, concerts, and the good stuff.</p>
+        <form class="newsletter" style="margin-top: 24px;">
+          <input type="email" placeholder="Enter your E-mail" required>
+          <button type="submit" class="btn btn-green">Subscribe</button>
+        </form>
+      </div>
+      <div style="text-align:center;">
+        <img src="/assets/svg/newsletter-graphic.svg" alt="Newsletter illustration" style="max-height:280px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Activity Gallery -->
+<section class="section">
+  <div class="container">
+    <div class="marquee">
+      <div class="marquee__inner">
+        <img src="/assets/images/gallery-1.avif" alt="Central Park lawn">
+        <img src="/assets/images/gallery-2.avif" alt="Park scene">
+        <img src="/assets/images/gallery-3.avif" alt="Bird watching">
+        <img src="/assets/images/gallery-4.avif" alt="Jogging in the park">
+        <img src="/assets/images/gallery-6.avif" alt="Coffee by the lake">
+        <img src="/assets/images/gallery-7.avif" alt="Wildflowers">
+        <img src="/assets/images/gallery-8.avif" alt="Bird on a branch">
+        <img src="/assets/images/gallery-1.avif" alt="Central Park lawn">
+        <img src="/assets/images/gallery-2.avif" alt="Park scene">
+        <img src="/assets/images/gallery-3.avif" alt="Bird watching">
+        <img src="/assets/images/gallery-4.avif" alt="Jogging in the park">
+        <img src="/assets/images/gallery-6.avif" alt="Coffee by the lake">
+        <img src="/assets/images/gallery-7.avif" alt="Wildflowers">
+        <img src="/assets/images/gallery-8.avif" alt="Bird on a branch">
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function switchTab(el, time) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.getElementById('day-tab-img').src = '/assets/images/day-tab-' + time + '.png';
+}
+</script>

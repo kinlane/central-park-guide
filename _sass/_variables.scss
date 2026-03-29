@@ -1,0 +1,42 @@
+// Brand colors
+$green: #3ca474;
+$orange: #eb974f;
+$yellow: #f3ae14;
+$black: #000;
+$white: #fff;
+$zinc: #27272a;
+$black-70: rgba(0, 0, 0, 0.7);
+$black-90: rgba(0, 0, 0, 0.9);
+$black-65: rgba(0, 0, 0, 0.65);
+$near-white: #fafafa;
+$light-gray: #eee;
+$medium-gray: #ddd;
+$dark-gray: #333;
+
+// Background tints
+$green-20: rgba($green, 0.15);
+$orange-20: rgba($orange, 0.2);
+$ash-20: #f5f5f5;
+
+// Typography
+$font-body: 'Nunito', Arial, sans-serif;
+$font-heading: 'Ulm Grotesk', 'Helvetica Neue', Helvetica, sans-serif;
+$font-display: 'Sharp Grotesk', 'Helvetica Neue', sans-serif;
+
+// Spacing
+$section-lg: 160px;
+$section-md: 96px;
+$section-sm: 56px;
+$gap-lg: 80px;
+$gap-md: 48px;
+$gap-sm: 32px;
+
+// Border radius
+$radius-lg: 30px;
+$radius-md: 20px;
+$radius-sm: 12px;
+
+// Breakpoints
+$tablet: 991px;
+$landscape: 767px;
+$mobile: 479px;

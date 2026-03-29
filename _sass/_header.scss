@@ -1,0 +1,82 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 16px 0;
+  transition: background 0.3s, box-shadow 0.3s;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    img {
+      height: 40px;
+      width: auto;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @media (max-width: $tablet) {
+      display: none;
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $white;
+      flex-direction: column;
+      padding: 40px 24px;
+      gap: 24px;
+
+      &.is-open { display: flex; }
+    }
+
+    a {
+      font-weight: 600;
+      color: $black;
+      font-size: 0.95rem;
+      &:hover { color: $green; }
+      &.active { color: $green; }
+    }
+  }
+
+  &__cta {
+    @media (max-width: $tablet) { display: none; }
+  }
+
+  &__toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: $black;
+      transition: all 0.3s;
+    }
+
+    @media (max-width: $tablet) { display: flex; }
+  }
+}
