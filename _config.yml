@@ -4,6 +4,12 @@ url: "https://centralpark.guide"
 baseurl: ""
 
 permalink: pretty
+future: true
+
+collections:
+  events:
+    output: true
+    permalink: /events/:slug/
 
 sass:
   sass_dir: _sass
@@ -20,6 +26,11 @@ defaults:
       path: ""
     values:
       layout: default
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
 
 plugins:
   - jekyll-seo-tag

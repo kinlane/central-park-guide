@@ -1,0 +1,1288 @@
+# =============================================================================
+# Central Park Places, Landmarks, Features & Locations Taxonomy
+# Source: Wikipedia "Central Park", "List of arches and bridges in Central Park"
+# Generated: 2026-03-29
+# =============================================================================
+
+# ---------------------------------------------------------------------------
+# GATES & ENTRANCES (Named Gates)
+# Central Park has 20 named gates, named after vocations that gave NYC its
+# metropolitan character. The park wall is 29,025 ft long and 3 ft 10 in high.
+# ---------------------------------------------------------------------------
+gates:
+
+  - name: Merchants' Gate
+    type: gate
+    location: Columbus Circle, southwestern corner (Central Park West & 59th Street)
+    description: Main entrance at the southwestern corner of the park, adjacent to Columbus Circle.
+
+  - name: Artisans' Gate
+    type: gate
+    location: Central Park South & 7th Avenue
+    description: Southern entrance near Dipway Arch.
+
+  - name: Scholars' Gate
+    type: gate
+    location: Fifth Avenue & 59th Street, southeastern corner
+    description: Near Grand Army Plaza at the southeastern corner of the park.
+
+  - name: Pioneers' Gate
+    type: gate
+    location: Fifth Avenue & 110th Street, northeastern corner
+    description: Adjacent to Duke Ellington Circle at the northeastern corner.
+
+  - name: Naturalists' Gate
+    type: gate
+    location: 77th Street & Central Park West
+    description: Western entrance near Eaglevale Bridge.
+
+  - name: Farmers' Gate
+    type: gate
+    location: Lenox Avenue & 110th Street (south of)
+    description: Northern entrance near Huddlestone Arch.
+
+  - name: Gate of the Exonerated
+    type: gate
+    location: Lenox Avenue & Central Park North (110th Street)
+    description: Dedicated in 2022 in honor of the Central Park Five. The first new named gate added since the original 1862 naming.
+
+# Note: The Wikipedia article references 20 named gates total. The ones above
+# are those specifically named in the text. The original 1862 naming assigned
+# vocational names such as miners, scholars, artists, hunters, etc.
+
+# ---------------------------------------------------------------------------
+# PLAZAS & CIRCLES
+# ---------------------------------------------------------------------------
+plazas:
+
+  - name: Columbus Circle
+    type: plaza/circle
+    location: Southwestern corner, junction of Central Park West/8th Ave, Broadway & 59th St
+    description: Circular plaza built in the 1860s. Contains the Merchants' Gate entrance and the 1892 Columbus Monument.
+
+  - name: Grand Army Plaza
+    type: plaza
+    location: Southeastern corner, junction of Fifth Avenue & 59th Street
+    description: Square plaza. Contains the Pulitzer Fountain (1916) and the William Tecumseh Sherman statue (1903).
+
+  - name: Duke Ellington Circle
+    type: plaza/circle
+    location: Northeastern corner, junction of Fifth Avenue & Central Park North/110th Street
+    description: Contains the Duke Ellington Memorial (1997). Adjacent to Pioneers' Gate.
+
+  - name: Frederick Douglass Circle
+    type: plaza/circle
+    location: Northwestern corner, junction of Central Park West/8th Ave & Central Park North/110th Street
+    description: Named for Douglass in 1950. Contains a memorial to Frederick Douglass (2011). Near Mountcliff Arch.
+
+# ---------------------------------------------------------------------------
+# BODIES OF WATER (Lakes, Ponds, Pools, Streams, Reservoirs)
+# Central Park has 8 artificially created lakes and ponds.
+# ---------------------------------------------------------------------------
+water_bodies:
+
+  - name: The Lake
+    type: lake
+    alternate_names:
+      - Central Park Lake
+    location: Southwestern section, between 71st and 78th Streets
+    description: L-shaped lake; one of the first features to open to the public in December 1858. Crossed by Bow Bridge. Contains Bank Rock Bay.
+
+  - name: The Pond
+    type: pond
+    location: Southern end, near Grand Army Plaza (Fifth Avenue & 59th Street)
+    description: Part of the Pond and Hallett Nature Sanctuary area. Gapstow Bridge crosses it. Northwest of Grand Army Plaza.
+
+  - name: Harlem Meer
+    type: lake/meer
+    location: Northeast section of the park
+    description: Waterway in the northern section. The Dana Discovery Center sits on its north shore. The Lasker Rink formerly occupied the southwest corner.
+
+  - name: Jacqueline Kennedy Onassis Reservoir
+    type: reservoir
+    alternate_names:
+      - The Reservoir
+      - Onassis Reservoir
+      - Upper Reservoir
+    location: Between 86th and 96th Street transverses, central section
+    description: Dominates the area between 86th and 96th Street transverses. Originally a Croton Aqueduct collecting reservoir (35 acres, 150 million gallons). Construction started April 1858, completed 1862. Surrounded by three cast-iron bridges. Has Yoshino cherry trees on the east side.
+
+  - name: Turtle Pond
+    type: pond
+    location: Directly south of the Great Lawn
+    description: Western shore contains Belvedere Castle, Delacorte Theater, Shakespeare Garden, and Marionette Theatre. King Jagiello Monument is at the east end.
+
+  - name: Conservatory Water
+    type: pond/model boat pond
+    location: East side, south of the reservoir
+    description: One of the three main water features in the mid-park section (with the Lake and the Ramble). Site of the Alice in Wonderland sculpture.
+
+  - name: The Pool
+    type: pond
+    location: Northwest section, near 100th-103rd Streets
+    description: Connected to the Loch. Loch Bridge crosses near it.
+
+  - name: The Loch
+    type: stream
+    location: Northern section, near 102nd Street
+    description: A stream in the Ravine area. Multiple bridges cross it including Glen Span, Huddlestone Arch, Cascade Bridge, Loch Bridge, and others. Springbanks Arch has a hidden spring that drains into the Loch.
+
+  - name: The Gill
+    type: stream
+    location: The Ramble
+    description: A stream of the Lake running through the Ramble. Crossed by Gill Bridge and an unnamed rustic bridge.
+
+  - name: Bank Rock Bay
+    type: bay
+    location: Western section of the Lake, near West Drive at 77th Street
+    description: A strait of the Lake, crossed by Oak/Bank Rock Bridge.
+
+  - name: Ladies' Pond
+    type: pond (former)
+    location: Near Central Park West & 77th Street
+    description: Now filled in. A former branch of the Lake. Triplets Bridge originally crossed it. The strait connecting it to the Lake ran under Balcony Bridge (also infilled in the 1930s).
+
+# ---------------------------------------------------------------------------
+# MEADOWS, LAWNS & FIELDS
+# ---------------------------------------------------------------------------
+meadows_and_lawns:
+
+  - name: Sheep Meadow
+    type: meadow/lawn
+    location: Southern section, west of the Mall
+    description: Large lawn originally intended for use as a parade ground. Common gathering place. Named because sheep grazed here until 1934.
+
+  - name: Great Lawn
+    type: lawn
+    location: Between the Reservoir (north) and Turtle Pond (south), mid-park
+    description: Large open lawn with 8 baseball fields, a soccer field, and 4 basketball courts. Bordered by the Metropolitan Museum to the east, Turtle Pond to the south, and Summit Rock to the west. Site of New York Philharmonic summer concerts.
+
+  - name: North Meadow
+    type: meadow
+    location: Northern section, between the Loch and the Reservoir
+    description: Contains 12 baseball fields, 12 tennis courts, 6 soccer fields, 4 basketball courts, and a recreation center.
+
+  - name: East Meadow
+    type: meadow
+    location: Between the Loch to the north and the Reservoir to the south
+    description: Eastern section of the mid-park area.
+
+  - name: Heckscher Ballfields
+    type: ballfields
+    location: Near Columbus Circle, southern section
+    description: Six baseball fields near the southwestern portion of the park.
+
+# ---------------------------------------------------------------------------
+# WOODLANDS, GARDENS & NATURAL AREAS
+# ---------------------------------------------------------------------------
+natural_areas:
+
+  - name: The Ramble
+    type: woodland/forested area
+    alternate_names:
+      - The Ramble and Lake
+    location: South-central section, north of the Lake, between 73rd and 79th Streets
+    description: Forested area opened to the public in June 1859. Contains Ramble Arch, Gill Bridge, and rustic bridges. A black tupelo "great tree" grows here. Contains the Cave entrance (sealed in 1920s).
+
+  - name: Hallett Nature Sanctuary
+    type: nature sanctuary
+    location: Southern end, adjacent to the Pond
+    description: Part of the Pond and Hallett Nature Sanctuary area.
+
+  - name: North Woods
+    type: woodland
+    alternate_names:
+      - North Woods and North Meadow
+    location: Northern third of the park
+    description: Takes up most of the rest of the northern third of the park. The northern portion was intended as the "natural section" in contrast to the landscaped "pastoral section" to the south. Contains the Ravine, the Loch, and several rustic bridges.
+
+  - name: The Ravine
+    type: ravine/glen
+    location: Northern section, near the Loch
+    description: Area near the Loch in the North Woods. Contains Cascade Bridge and other rustic structures.
+
+  - name: Conservatory Garden
+    type: formal garden
+    location: Entered through the Vanderbilt Gate at Fifth Avenue & 105th Street
+    description: The park's only formal garden. Originally one of two plant nurseries maintained within park boundaries.
+
+  - name: Shakespeare Garden
+    type: garden
+    location: Western shore of Turtle Pond
+    description: Located alongside Belvedere Castle, Delacorte Theater, and Marionette Theatre on the western shore of Turtle Pond.
+
+  - name: Strawberry Fields
+    type: memorial/garden
+    location: Near Central Park West & 72nd Street, southwestern shore of the Lake
+    description: Memorial to John Lennon, who was murdered outside the nearby Dakota apartment building. Dedicated April 1981, rebuilt and rededicated October 9, 1985. Contains the "Imagine" mosaic donated by Italy.
+
+  - name: Arthur Ross Pinetum
+    type: pinetum/tree collection
+    location: Within the park (specific location not stated in article)
+    description: Contains 600 pine trees. One of Central Park's "great tree" clusters.
+
+  - name: Cherry Hill
+    type: hill/landscape feature
+    location: South of the Lake
+    description: Named landscape area south of the Lake.
+
+  - name: Cedar Hill
+    type: hill/landscape feature
+    location: East of the Lake
+    description: Named landscape area east of the Lake.
+
+  - name: Summit Rock
+    type: rock outcropping/hill
+    location: West of the Great Lawn, near 83rd Street
+    description: Highest point in Central Park at 137.5 ft. Abuts Diana Ross Playground to the south and the Seneca Village site (Toll Family Playground) to the north.
+
+  - name: Vista Rock
+    type: rock outcropping
+    location: Central Park, at the 79th Street transverse
+    description: Second-highest point in Central Park. The 79th Street transverse passes underneath it. Belvedere Castle sits atop it.
+
+  - name: McGowan's Pass
+    type: historic pass/rocky outcroppings
+    location: Northwest section of the park
+    description: Rocky outcroppings near Blockhouse No. 1. Also contained Fort Fish and Nutter's Battery historically.
+
+  - name: Seneca Village (site)
+    type: historic site
+    location: West side, occupied by the Toll Family Playground
+    description: Former majority-Black settlement (established 1825) that was razed through eminent domain for park construction. Approximately 1,600 residents were evicted.
+
+# ---------------------------------------------------------------------------
+# BUILDINGS & STRUCTURES
+# ---------------------------------------------------------------------------
+buildings:
+
+  - name: Belvedere Castle
+    type: castle/visitor center
+    location: Western shore of Turtle Pond, atop Vista Rock
+    description: One of five visitor centers in Central Park. Overlooks the Great Lawn, Turtle Pond, and Delacorte Theater.
+
+  - name: The Dairy
+    type: building/visitor center
+    location: Southern section, near 65th Street
+    description: One of five visitor centers. Near the Carousel and Playmates Arch. Located near the John Randel Jr. surveying bolt.
+
+  - name: The Arsenal
+    type: building/headquarters
+    location: Southern section, near the Central Park Zoo
+    description: Red-brick building designed by Martin E. Thompson in 1851 (predates the park). NYC Parks headquarters since 1934. Denesmouth Arch is nearby.
+
+  - name: Bethesda Terrace and Fountain
+    type: terrace/fountain
+    alternate_names:
+      - Bethesda Terrace
+      - Bethesda Fountain
+    location: Southeastern shore of the Lake, at 72nd Street
+    description: Bi-level hall with elaborate fountain on lower level. Connects to the Central Park Mall. Contains the Angel of the Waters sculpture by Emma Stebbins (1873), the only statue in the original park design. Completed during the Civil War. Features a seven-arched Arcade underneath. Terrace Bridge carries Center Drive over it.
+
+  - name: Central Park Zoo
+    type: zoo
+    alternate_names:
+      - Central Park Wildlife Center
+    location: Southern section, near 63rd-64th Streets and Fifth Avenue
+    description: Contains the Children's Zoo. Expanded in 1934 (destroying Outset Arch). Greengap Arch is the only span closed to the public due to the zoo restoration in 1988.
+
+  - name: Children's Zoo
+    type: zoo
+    location: Adjacent to the Central Park Zoo
+    description: Part of the Central Park Zoo complex.
+
+  - name: Tavern on the Green
+    type: restaurant/building
+    location: Central Park West & West 67th Street
+    description: Built in 1870 as a sheepfold, converted to restaurant in 1934. Expanded 1974-1976. Closed 2009, reopened after renovation. New York City Marathon finishes outside it.
+
+  - name: Loeb Boathouse
+    type: boathouse/restaurant
+    alternate_names:
+      - Loeb Boat House
+    location: On the Lake, near Fifth Avenue between 74th and 75th Streets
+    description: Constructed in 1954. Restaurant opened in 1983.
+
+  - name: Swedish Cottage Marionette Theatre
+    type: theater/building
+    alternate_names:
+      - Marionette Theatre
+    location: Western shore of Turtle Pond
+    description: Located alongside Belvedere Castle, Shakespeare Garden, and Delacorte Theater.
+
+  - name: Delacorte Theater
+    type: theater (outdoor)
+    location: Western shore of Turtle Pond
+    description: Open-air theater. Home of Shakespeare in the Park productions by the Public Theater.
+
+  - name: Naumburg Bandshell
+    type: bandshell
+    location: On the Mall
+    description: Bandshell of Indiana limestone. Named for banker Elkan Naumburg who funded its construction. Hosts concerts since 1923, including the Naumburg Orchestral Concerts (founded 1905), the oldest free classical music concert series in the US.
+
+  - name: Charles A. Dana Discovery Center
+    type: visitor center/building
+    alternate_names:
+      - Dana Discovery Center
+    location: Northeast section, north shore of Harlem Meer
+    description: Built in 1993. One of five visitor centers.
+
+  - name: Chess and Checkers House
+    type: building/visitor center
+    alternate_names:
+      - Chess & Checkers House
+      - Chess and Checkers
+      - Chess & Checkers
+    location: Southern section, "Children's District"
+    description: One of five visitor centers. Part of the Children's District along with the Carousel and Heckscher Playground.
+
+  - name: Blockhouse No. 1
+    type: blockhouse/historic structure
+    location: Northwest section of the park
+    description: Oldest extant structure within Central Park, built before the park's creation. Erected as part of Fort Clinton during the War of 1812.
+
+  - name: Fort Clinton
+    type: fort (historic/former)
+    location: Northwest section, near Blockhouse No. 1
+    description: War of 1812 fortification. Blockhouse No. 1 was erected as part of it.
+
+  - name: Fort Fish
+    type: fort (historic/former)
+    location: Near McGowan's Pass
+    description: Former fortification at the rocky outcroppings near McGowan's Pass.
+
+  - name: Nutter's Battery
+    type: battery (historic/former)
+    location: Near McGowan's Pass
+    description: Former military battery at the rocky outcroppings near McGowan's Pass.
+
+  - name: North Meadow Recreation Center
+    type: recreation center
+    location: North Meadow area, between the Loch and the Reservoir
+    description: Recreation center with tennis courts and sports facilities.
+
+  - name: Ballplayers House
+    type: building
+    location: Southern section, "Children's District"
+    description: Part of the Children's District in the southern border area.
+
+  - name: Central Park Medical Unit
+    type: medical facility
+    location: Within Central Park (mobile/patrol-based)
+    description: Free volunteer medical emergency service established in 1975. Operates bicycles, ambulances, and an ATV.
+
+  - name: 22nd (Central Park) Precinct
+    type: police precinct
+    location: At the 86th Street transverse
+    description: NYPD precinct dedicated to Central Park.
+
+# ---------------------------------------------------------------------------
+# RECREATION & AMUSEMENT
+# ---------------------------------------------------------------------------
+recreation:
+
+  - name: Wollman Rink
+    type: ice skating rink
+    location: Southern section, near 62nd-63rd Streets
+    description: Ice skating rink in winter, site of Victorian Gardens amusement park in summer. Near Driprock Arch.
+
+  - name: Victorian Gardens
+    type: seasonal amusement park
+    location: At Wollman Rink site (summer)
+    description: Seasonal amusement park operating at the Wollman Rink site during summer months.
+
+  - name: Lasker Rink
+    type: ice skating rink/swimming pool
+    location: Southwest corner of Harlem Meer, northern section
+    description: Skating rink in winter, outdoor swimming pool in summer. Formerly occupied the southwest corner of the Harlem Meer.
+
+  - name: Central Park Carousel
+    type: carousel
+    location: Southern section, "Children's District", near 65th Street
+    description: Part of the Children's District. Connected to the Dairy by Playmates Arch. Attractions along Center Drive.
+
+  - name: Heckscher Playground
+    type: playground
+    location: Southern section, near 62nd Street
+    description: Largest playground in Central Park at 3 acres. Part of the Children's District. Expanded in the 1930s (destroying the bridle path under Driprock Arch and Spur Rock Arch). Contains a rare Tetradium tree.
+
+  - name: Tarr Family Playground
+    type: playground
+    location: Between the Loch and the Reservoir
+    description: Located in the mid-northern section of the park.
+
+  - name: Diana Ross Playground
+    type: playground
+    location: South of Summit Rock
+    description: Named playground near the highest point in Central Park.
+
+  - name: Toll Family Playground
+    type: playground
+    location: North of Summit Rock, on the former Seneca Village site
+    description: Occupies the site of the former Seneca Village.
+
+  - name: Summerstage
+    type: performance venue
+    location: Within Central Park
+    description: Free musical concerts and performances throughout summer. Features music, dance, spoken word, and film.
+
+  - name: Concert Ground
+    type: performance area (historic)
+    location: Next to the Mall
+    description: Concerts moved here from the Ramble in the 1870s.
+
+# ---------------------------------------------------------------------------
+# PATHS, DRIVES & WALKWAYS
+# ---------------------------------------------------------------------------
+paths_and_drives:
+
+  - name: Central Park Mall
+    type: walkway/promenade
+    alternate_names:
+      - The Mall
+    location: Southern section, connecting to Bethesda Terrace
+    description: Landscaped walkway and the only formal feature in the Greensward Plan. Contains Literary Walk with busts of authors and poets. Connects to Bethesda Terrace. Naumburg Bandshell is on the Mall.
+
+  - name: Literary Walk
+    type: walkway/sculpture area
+    location: Adjacent to the Central Park Mall
+    description: Section of the Mall containing busts of authors and poets.
+
+  - name: West Drive
+    type: scenic drive
+    location: Western part of Central Park, running north-south
+    description: Westernmost of three vertical drives. Carries southbound bicycle and horse-carriage traffic. Connects Lenox Avenue/Central Park North with 7th Avenue/Central Park South.
+
+  - name: East Drive
+    type: scenic drive
+    alternate_names:
+      - Elite Carriage Parade (historical)
+    location: Eastern part of Central Park, running north-south
+    description: Easternmost drive. Connects northbound bicycle and carriage traffic from Midtown to Upper West Side. Passes by the Central Park Zoo (~63rd St) and Metropolitan Museum (80th-84th St). Straight between 86th and 96th Street transverses.
+
+  - name: Center Drive
+    type: scenic drive
+    alternate_names:
+      - Central Park Lower Loop
+    location: Southern section, connecting south to East Drive
+    description: Connects northbound traffic from Central Park South/6th Avenue to East Drive near the 66th Street transverse. Attractions along it include Victorian Gardens, the Carousel, and the Mall.
+
+  - name: Terrace Drive
+    type: scenic drive
+    location: At 72nd Street
+    description: Crosses the park horizontally connecting West and East Drives. Passes over Bethesda Terrace and Fountain.
+
+  - name: 102nd Street Crossing
+    type: scenic drive (former carriage drive)
+    location: Near 102nd Street
+    description: Former carriage drive connecting West and East Drives. Further north than Terrace Drive.
+
+  - name: 66th Street Transverse
+    type: transverse road
+    location: At 66th Street (connects 65th and 66th Streets)
+    description: First transverse finished (December 1859). Connects discontinuous sections of 65th and 66th Streets. Two lanes, sunken below park level.
+
+  - name: 79th Street Transverse
+    type: transverse road
+    location: At 79th Street (links West 81st and East 79th Streets)
+    description: Passes under Vista Rock. Completed December 1860 by a railroad contractor. Widened in 1964.
+
+  - name: 86th Street Transverse
+    type: transverse road
+    location: At 86th Street (links West 86th with East 84th-85th Streets)
+    description: Opened late 1862. By the 1890s handled most crosstown traffic. Site of the 22nd Precinct.
+
+  - name: 97th Street Transverse
+    type: transverse road
+    location: At 97th Street (joins 96th and 97th Streets)
+    description: Opened late 1862. Northernmost transverse.
+
+# ---------------------------------------------------------------------------
+# NAMED ROCKS (Bouldering)
+# ---------------------------------------------------------------------------
+rocks:
+
+  - name: Rat Rock
+    type: rock outcropping
+    location: South end of the park
+    description: One of the two most renowned bouldering spots in Central Park.
+
+  - name: Cat Rock
+    type: rock outcropping
+    location: South end of the park
+    description: One of the two most renowned bouldering spots in Central Park.
+
+  - name: Dog Rock
+    type: rock outcropping
+    location: South end of the park
+    description: Rock frequented by climbers.
+
+  - name: Duck Rock
+    type: rock outcropping
+    location: South end of the park
+    description: Rock frequented by climbers.
+
+  - name: Rock N' Roll Rock
+    type: rock outcropping
+    location: South end of the park
+    description: Rock frequented by climbers.
+
+  - name: Beaver Rock
+    type: rock outcropping
+    location: South end of the park
+    description: Rock frequented by climbers.
+
+# ---------------------------------------------------------------------------
+# MONUMENTS, STATUES & SCULPTURES
+# 29 sculptures have been erected within Central Park's boundaries.
+# ---------------------------------------------------------------------------
+monuments_and_sculptures:
+
+  - name: Angel of the Waters
+    type: sculpture/fountain centerpiece
+    location: Bethesda Fountain
+    description: Created by Emma Stebbins (1873). Centerpiece of Bethesda Fountain. First large public sculpture commission for an American woman. The only statue included in the original park design.
+
+  - name: Columbus Monument
+    type: monument/statue
+    location: Columbus Circle
+    description: Erected in 1892. Subject of controversies in the 2010s regarding removal.
+
+  - name: USS Maine National Monument
+    type: monument
+    location: Just outside the park entrance at Columbus Circle/Merchants' Gate
+    description: Dedicated in 1913.
+
+  - name: Pulitzer Fountain
+    type: fountain
+    location: Grand Army Plaza (southeastern corner)
+    description: Completed in 1916 along with the plaza itself.
+
+  - name: William Tecumseh Sherman statue
+    type: statue
+    location: Grand Army Plaza
+    description: Dedicated in 1903.
+
+  - name: Duke Ellington Memorial
+    type: memorial/statue
+    location: Duke Ellington Circle (northeastern corner)
+    description: Dedicated in 1997.
+
+  - name: Frederick Douglass Memorial
+    type: memorial/statue
+    location: Frederick Douglass Circle (northwestern corner)
+    description: Dedicated in 2011.
+
+  - name: Statue of Balto
+    type: statue
+    alternate_names:
+      - Balto
+    location: Near East Drive & East 66th Street
+    description: Erected in 1925. Statue of Balto, the sled dog famous for the 1925 serum run to Nome.
+
+  - name: Alice in Wonderland Margaret Delacorte Memorial
+    type: sculpture
+    location: Conservatory Water
+    description: Sculpture of Alice (1959). Part of a cluster of children's story sculptures around the Zoo and Conservatory Water.
+
+  - name: King Jagiello Monument
+    type: monument/statue
+    location: East end of Turtle Pond
+    description: Bronze monument (1939), installed in 1945.
+
+  - name: Women's Rights Pioneers Monument
+    type: monument/statue
+    location: Central Park (specific location not given in article)
+    description: Erected in 2020. Depicts Sojourner Truth, Susan B. Anthony, and Elizabeth Cady Stanton. First statue in NYC to depict a female historical figure.
+
+  - name: Cleopatra's Needle
+    type: obelisk
+    location: West of the Metropolitan Museum of Art
+    description: Red granite obelisk, the oldest human-made structure in Central Park. Originally erected at the Temple of Ra in Heliopolis, Egypt (~1450 BC) by Pharaoh Thutmose III. Hieroglyphs added ~200 years later by Rameses II. Arrived in NYC late 1880, dedicated early 1881.
+
+  - name: Imagine Mosaic
+    type: mosaic/memorial
+    location: Center of Strawberry Fields memorial, near Central Park West & 72nd Street
+    description: Donated by Italy as part of the Strawberry Fields memorial to John Lennon.
+
+  - name: John Randel Jr. Surveying Bolt
+    type: historic artifact
+    location: In a rock north of the Dairy and the 66th Street transverse
+    description: The only remaining surveying bolt from John Randel Jr.'s survey for the Commissioners' Plan of 1811, marking where West 65th Street would have intersected Sixth Avenue.
+
+# ---------------------------------------------------------------------------
+# ARCHES (from List of arches and bridges in Central Park)
+# ---------------------------------------------------------------------------
+arches:
+
+  - name: Claremont Arch
+    type: arch
+    location: Near Central Park West & 90th Street
+    built: 1890
+    description: Named after the former Claremont Riding Academy at 175 West 89th Street. Span and parapet walls made of Manhattan schist in ashlar. Carries ramp to West Drive over pedestrian path.
+
+  - name: Dalehead Arch
+    type: arch
+    bridge_number: 6
+    location: Near 64th Street
+    built: 1860
+    description: Made of sandstone with brownstone ring molding and ornate carvings in spandrels. Carries West Drive over bridle path.
+
+  - name: Denesmouth Arch
+    type: arch
+    bridge_number: 7
+    location: Near the Arsenal
+    built: 1860
+    description: Made entirely of New Brunswick sandstone. Only decorated arch carrying a transverse roadway. Carries 65th Street transverse over pedestrian path. Originally had four bronze street lights (three removed due to vandalism).
+
+  - name: Driprock Arch
+    type: arch
+    bridge_number: 2
+    location: Between 62nd and 63rd Streets, near Wollman Rink and Heckscher Playground
+    built: 1859
+    description: Carries Center Drive over a pedestrian path (formerly a bridle path, demolished in 1930s). Red-brick vault with sandstone trim and rosaries in the ceiling.
+
+  - name: Dipway Arch
+    type: arch
+    bridge_number: 16
+    location: Near Artisans' Gate at Central Park South & 7th Avenue
+    built: 1860
+    description: Curved blue-gray granite in ashlar. Vault lined with red brick in seven-arched arcade with keystones. Still has original cast-iron railings. Carries South Drive over pedestrian path.
+
+  - name: Eaglevale Bridge
+    type: arch/bridge (double arch)
+    alternate_names:
+      - West 77th Street Arch
+    location: Near Naturalists' Gate at 77th Street & Central Park West
+    built: 1890
+    description: Only double-arch bridge in Central Park. Eastern arch carries pedestrian walkway (formerly a branch of the Lake to Ladies' Pond), western arch carries bridle path. Revetted in gneiss and ashlar with balconies on the abutment between arches. 150 ft long, 36 ft wide.
+
+  - name: Gapstow Bridge
+    type: bridge
+    bridge_number: 35
+    location: Northwest of Grand Army Plaza at Fifth Avenue & 59th Street
+    built: 1896
+    description: Current schist structure built by Howard & Caudwell (replaced an 1874 wooden bridge). Carries pedestrian path over the Pond. 44 ft vault, 76 ft span, 12 ft height.
+
+  - name: Glade Arch
+    type: arch
+    bridge_number: 8
+    location: Near Fifth Avenue & 78th Street
+    built: 1862
+    description: Made entirely of New Brunswick sandstone. Carries a former carriage path (now pedestrian) across a pedestrian walkway to Fifth Avenue & 79th Street. 95 ft long balustrades. Renovated 1981.
+
+  - name: Glen Span
+    type: arch
+    bridge_number: 26
+    location: Near Central Park West & 102nd Street, adjacent to the Loch
+    built: 1865
+    description: Light-gray gneiss-and-ashlar span across the Loch and adjacent walkway. Originally a wooden trestle, replaced with stone in 1885. Two wide decorative grottos on either side. Carries West Drive.
+
+  - name: Greengap Arch
+    type: arch
+    bridge_number: 11
+    alternate_names:
+      - Green Gap Arch
+    location: Near the Central Park Zoo at around 63rd Street
+    built: 1861
+    description: Made of Alberta sandstone. Restored in 1988 with zoo renovation. Only span in the park closed to the public. Carries East Drive over bridle path.
+
+  - name: Greyshot Arch
+    type: arch
+    bridge_number: 13
+    location: Near Merchants' Gate at Columbus Circle
+    built: 1862
+    description: 80 ft wide with 100 ft long sandstone balustrade decorated with fleur-de-lis. Faced with gray-white gneiss from Westchester County. Vault lined with Philadelphia brick. Carries West Drive over pedestrian path.
+
+  - name: Greywacke Arch
+    type: arch
+    bridge_number: 23
+    location: Near 79th Street & Fifth Avenue, behind the Met
+    built: "c.1862-63"
+    description: >
+      "Saracenic" pointed arch. Exterior lined with grey Manhattan sandstone,
+      greywacke from Hudson Valley, and brownstone from Passaic, NJ. Vault lined
+      with red and white bricks. Restored 1985. Carries East Drive over pedestrian path.
+
+  - name: Huddlestone Arch
+    type: arch
+    bridge_number: 29
+    location: Near Farmers' Gate, south of Lenox Avenue & 110th Street
+    built: 1866
+    description: Made of boulders (some nearly 100 tons) held together solely by gravity. Carries East Drive above a pedestrian path and the Loch. 10 ft high, 22 ft wide vault.
+
+  - name: Inscope Arch
+    type: arch
+    bridge_number: 33
+    location: Near the Central Park Zoo at around 62nd Street
+    built: 1873
+    description: Built to reduce pedestrian/vehicle conflicts. Ovoid Tuscan-style archway faced with pink and gray granite. 100 ft long overhead railing. Carries East Drive over pedestrian path. Restored in 1970s and again from 2000.
+
+  - name: Mountcliff Arch
+    type: arch
+    alternate_names:
+      - 110th Street Arch
+    location: Near Frederick Douglass Circle
+    built: 1890
+    description: Made of gneiss and ashlar. 102 ft long span, 48 ft high -- taller than any other span in the park. Carries ramp to West Drive over pedestrian path.
+
+  - name: Playmates Arch
+    type: arch
+    bridge_number: 14
+    location: Near 65th Street, between the Dairy and the Carousel
+    built: 1863
+    description: Named because walkway underneath connects two children's play areas. Contains tricolored bands of red Philadelphia brick, yellow Milwaukee brick, and granite. Carries Center Drive over pedestrian path.
+
+  - name: Ramble Arch
+    type: arch
+    bridge_number: 20
+    location: The Ramble
+    built: "c.1862-63"
+    description: Made of rockface ashlar. Carries one pedestrian walkway over another. Near the entrance to the Cave (sealed 1920s). Sometimes classified as a rustic span.
+
+  - name: Riftstone Arch
+    type: arch
+    bridge_number: 18
+    location: Near Strawberry Fields at Central Park West & 72nd Street
+    built: 1862
+    description: Almost entirely hidden below surrounding terrain. Made of Manhattan schist with very little mortar. Abutments hidden by flora. Originally classified as a "rustic bridge." Carries ramp to West Drive over bridle path.
+
+  - name: Springbanks Arch
+    type: arch
+    bridge_number: 25
+    location: North Meadow at 102nd Street latitude
+    built: 1863
+    description: Carries a bridle path/former carriage road across a pedestrian path and hidden spring. Exterior faced with stone with entablature; vault lined with red brick. Cast-iron railing 50 ft 8 in long. Hidden spring drains into the Loch.
+
+  - name: Trefoil Arch
+    type: arch
+    bridge_number: 12
+    location: Near Fifth Avenue & 73rd Street
+    built: 1862
+    description: Distinguished by trefoil (three-leafed) Gothic-style eastern archway. Western archway is round with rusticated voussoirs. Renovated 1983-1985. Carries East Drive over pedestrian path.
+
+  - name: Willowdell Arch
+    type: arch
+    bridge_number: 3
+    location: Near Fifth Avenue & 67th Street, next to the statue of Balto
+    built: 1861
+    description: Brick bridge with sandstone trim. Rusticated voussoirs and brick coffers in vault. A fountain was once in a niche on the northern vault wall. Carries East Drive over pedestrian path.
+
+  - name: Winterdale Arch
+    type: arch
+    bridge_number: 17
+    location: Near 81st Street & Central Park West
+    built: 1862
+    description: Named after the Winter Drive (now West Drive). Granite facings and ashlar sandstone moldings. Vault contains Milwaukee white brick and Philadelphia red brick. Widest vault of any brick/stone bridge in the park. Rebuilt 1993 with railings restored. Carries West Drive over bridle and pedestrian path.
+
+# ---------------------------------------------------------------------------
+# BRIDGES (from List of arches and bridges in Central Park)
+# ---------------------------------------------------------------------------
+bridges:
+
+  - name: Balcony Bridge
+    type: bridge
+    bridge_number: 4
+    location: Near Central Park West & 77th Street
+    built: 1860
+    description: Made of Manhattan schist and Hudson Valley greywacke with sandstone and cast-stone quatrefoil-pattern railing. Carries West Drive across a strait of the Lake (formerly connecting the Lake and Ladies' Pond, infilled in 1930s). Two small bays with stone benches on eastern side. Asymmetric archways.
+
+  - name: Bow Bridge
+    type: bridge (cast iron)
+    bridge_number: 5
+    location: The Lake
+    built: 1862
+    description: Longest span of any bridge in the park at 87 ft (balustrade 142 ft long). Decorated with banister of interlocking circles, eight planting urns, arabesque elements and volutes. Cast iron. Carries pedestrian path across the Lake. Restored 1974.
+
+  - name: Oak Bridge
+    type: bridge (wooden/cast iron)
+    bridge_number: 10
+    alternate_names:
+      - Cabinet Bridge
+      - Bank Rock Bridge
+    location: Near West Drive at 77th Street latitude
+    built: 1860
+    description: Has had multiple names. Crosses Bank Rock Bay (a strait of the Lake). Originally wooden trestle of yellow pine on stone abutments. Completely replaced in 1935, 1982, and 2009. Current railings are cast-iron panels between wooden posts.
+
+  - name: Pine Bank Bridge
+    type: bridge (cast iron)
+    bridge_number: 15
+    location: Near 62nd Street & Central Park West
+    built: 1861
+    description: Cast iron painted white with Gothic handrail. One of three such bridges across the bridle path (other two eliminated in 1930s). Renovated 1984. Carries pedestrian path over bridle path.
+
+  - name: Terrace Bridge
+    type: bridge
+    bridge_number: 1
+    location: Bethesda Terrace
+    built: 1863
+    description: Located at Bethesda Terrace. Upper terrace carries Center Drive (Terrace Drive) supported by seven-arched Arcade underneath. Steps connect to lower terrace and Central Park Mall. 45 ft wide, 29 ft span, 16 ft height.
+
+  - name: Gothic Bridge (Bridge No. 28)
+    type: bridge (cast iron)
+    bridge_number: 28
+    location: North of Jacqueline Kennedy Onassis Reservoir
+    built: 1864
+    description: Unnamed officially; first of three cast-iron bridges surrounding the Reservoir. Manufactured by J.B. & W.W. Cornell Ironworks. Ornate oval-shaped arch with 93 ft long handrails. Rehabilitated 1981. Carries pedestrian path over bridle path.
+
+  - name: Bridge No. 24
+    type: bridge (cast iron)
+    bridge_number: 24
+    location: Near Fifth Avenue & 85th Street
+    built: 1864
+    description: Second of three cast-iron bridges surrounding the Reservoir. Manufactured by J.B. & W.W. Cornell Ironworks. Unique flat deck (unlike other cast-iron Reservoir bridges). Renovated 1989 and 2012.
+
+  - name: Bridge No. 27
+    type: bridge (cast iron)
+    bridge_number: 27
+    location: Near Central Park West & 94th Street
+    built: 1864
+    description: Third of three cast-iron bridges surrounding the Reservoir. Contains floral scrolls in spandrels and handrails. Restored 1979.
+
+# ---------------------------------------------------------------------------
+# RUSTIC BRIDGES
+# ---------------------------------------------------------------------------
+rustic_bridges:
+
+  - name: Cascade Bridge
+    type: rustic bridge (wooden)
+    bridge_number: 30
+    location: North Meadow, near the Loch in the Ravine
+    built: "c. late 1860s"
+    description: Wooden bridge crossing the Ravine (near the Loch) east of Glen Rock Span.
+
+  - name: Gill Bridge
+    type: rustic bridge (wooden)
+    bridge_number: 21
+    location: The Ramble
+    built: 1860
+    description: Wooden bridge crossing the Gill (a stream of the Lake). Distinguished by wooden railings that contort near the abutments. Rebuilt multiple times.
+
+  - name: Loch Bridge
+    type: rustic bridge (wooden)
+    bridge_number: 32
+    location: Near the Pool
+    built: "c. late 1860s"
+    description: Crosses the Loch west of Glen Rock Span, near the Pool.
+
+  - name: Triplets Bridge
+    type: rustic bridge (wooden)
+    bridge_number: 22
+    location: Near Central Park West & 77th Street
+    built: 1860
+    description: Originally unnamed wooden bridge crossing the Ladies' Pond (now filled in). Dedicated as "Triplets Bridge" in 2000 after Benjamin, Rachel and Justin Chasalow.
+
+  - name: Unnamed Ramble Rustic Bridge
+    type: rustic bridge (wooden)
+    location: The Ramble
+    built: 1860
+    description: Unnamed wooden bridge. Unlike Gill Bridge, its railings do not contort near the abutments. Crosses the Gill.
+
+  - name: Unnamed Bridge at the Loch (No. 31)
+    type: rustic bridge (wooden)
+    bridge_number: 31
+    location: North Meadow, near the Loch
+    built: "c. late 1860s"
+    description: Unnamed wooden bridge crossing the Loch east of Glen Rock Span.
+
+# ---------------------------------------------------------------------------
+# FORMER/DEMOLISHED BRIDGES
+# ---------------------------------------------------------------------------
+former_bridges:
+
+  - name: Original Gapstow Bridge
+    type: bridge (wooden, demolished)
+    bridge_number: 35
+    location: Northwest of Grand Army Plaza
+    built: 1874
+    demolished: 1896
+    description: First Gapstow Bridge was a wooden through arch bridge. Replaced by the current stone span.
+
+  - name: Marble Arch
+    type: arch (demolished)
+    bridge_number: 9
+    location: 66th Street latitude, southern end of the Mall
+    built: 1860
+    demolished: 1938
+    description: Central Park's only marble bridge. Vault contained a fountain and benches. Destroyed when Center Drive was straightened. Remains rumored to be buried under the Mall.
+
+  - name: Spur Rock Arch
+    type: arch (demolished)
+    bridge_number: 19
+    alternate_names:
+      - Oval Arch
+    location: Near 61st Street latitude
+    built: 1862
+    demolished: 1934
+    description: Oval-shaped arch close to Dipway Arch. One abutment rested against a "spur" of Manhattan schist. Contained wrought iron supports and fine cast-iron details. Destroyed when Heckscher Playground expanded.
+
+  - name: Outset Arch
+    type: arch (demolished)
+    bridge_number: 34
+    location: At the Central Park Zoo
+    built: 1875
+    demolished: 1934
+    description: Elaborate semi-elliptical arch. Destroyed when the Central Park Zoo was expanded.
+
+# ---------------------------------------------------------------------------
+# VANDERBILT GATE & OTHER SPECIFIC FEATURES
+# ---------------------------------------------------------------------------
+other_features:
+
+  - name: Vanderbilt Gate
+    type: gate/entrance feature
+    location: Fifth Avenue & 105th Street
+    description: Ornamental gate through which the Conservatory Garden is entered.
+
+  - name: The Cave
+    type: cave (sealed)
+    location: Under or next to Ramble Arch
+    description: A feature of the park sealed in the 1920s. The entrance was directly under or next to Ramble Arch.
+
+  - name: Children's District
+    type: designated area
+    location: Southern border of Central Park
+    description: Area including Heckscher Playground, the Carousel, the Ballplayers House, and the Chess and Checkers House.
+
+  - name: Croton Aqueduct Reservoir (site)
+    type: reservoir (former)
+    location: Center of what is now Central Park
+    description: The 35-acre, 150-million-gallon collecting reservoir that was the geographical center of the original park plan. Became the Jacqueline Kennedy Onassis Reservoir.
+
+  - name: The Arcade
+    type: architectural feature
+    location: Under Bethesda Terrace / Terrace Bridge
+    description: Seven-arched arcade underneath Terrace Bridge / Bethesda Terrace, supporting Center Drive above.
+
+  - name: Music Stand
+    type: structure (demolished)
+    location: Within the park (specific location not stated)
+    description: One of three major structures completed during the Civil War. Later demolished.
+
+  - name: Central Park Casino
+    type: restaurant (demolished)
+    alternate_names:
+      - Casino
+    location: Within the park
+    description: One of three major structures completed during the Civil War. Later demolished. Was a restaurant.
+
+  - name: Metropolitan Museum of Art (Fifth Avenue building)
+    type: museum
+    alternate_names:
+      - The Met
+      - The Met Fifth Avenue
+    location: East side, between approximately 80th and 84th Streets on Fifth Avenue
+    description: Major art museum. Its Fifth Avenue building borders the Great Lawn to the east. East Drive passes by it.
+
+# ---------------------------------------------------------------------------
+# ADDITIONAL LOCATIONS (from NYC Permitted Events data)
+# These are named sub-locations used in NYC Parks Department event permitting.
+# ---------------------------------------------------------------------------
+event_venues:
+
+  - name: Cop Cot
+    type: rustic shelter
+    location: Southern section, near 59th Street and Sixth Avenue
+    description: A rustic wooden shelter popular for small ceremonies and gatherings. One of the park's most-booked event venues.
+
+  - name: Ladies' Pavilion
+    type: pavilion
+    location: West side of the Lake, near 75th Street
+    description: Cast-iron Victorian shelter overlooking the Lake. Popular venue for ceremonies and small events.
+
+  - name: Dene Lawn
+    type: lawn
+    location: East side, near 67th Street
+    description: Open lawn area used for permitted events and gatherings.
+
+  - name: Bandshell Plaza
+    type: plaza/performance area
+    alternate_names:
+      - Naumburg Bandshell
+    location: Mid-park near 72nd Street, south of Bethesda Terrace
+    description: Open-air performance venue and surrounding plaza. Home to concerts, dance events, and the famous roller disco.
+
+  - name: Pilgrim Hill
+    type: hill/lawn
+    location: East side, near 72nd Street and Fifth Avenue
+    description: Gentle hill with open lawn. Named for the Pilgrim of the Mayflower statue at its base.
+
+  - name: Bowling Green Lawn
+    type: lawn
+    location: Southern section
+    description: Open lawn area in the southern part of the park.
+
+  - name: Heckscher Fields
+    type: athletic fields
+    alternate_names:
+      - Heckscher Ballfields
+    location: Southern section, near Heckscher Playground
+    description: Complex of softball fields in the southern section of the park. Includes six numbered fields (01-06).
+
+  - name: Heckscher Playground
+    type: playground
+    location: Southern section, near 62nd Street
+    description: The largest playground in Central Park. Part of the Children's District.
+
+  - name: Heckscher Picnic Area
+    type: picnic area
+    location: Southern section, near Heckscher Playground
+    description: Designated picnic area adjacent to Heckscher Playground and ballfields.
+
+  - name: Wagner Cove
+    type: cove/shelter
+    location: West side of the Lake, near 72nd Street
+    description: Small wooden shelter on the Lake's western shore. Popular ceremony spot.
+
+  - name: Mineral Springs
+    type: pavilion/concession
+    location: Mid-park, near Sheep Meadow
+    description: Historic pavilion area. Originally a site for mineral water dispensing.
+
+  - name: Adventure Playground Lawn
+    type: playground lawn
+    location: West side, near 67th Street
+    description: Lawn area adjacent to the Adventure Playground.
+
+  - name: Ross Pinetum
+    type: garden/arboretum
+    alternate_names:
+      - Arthur Ross Pinetum
+    location: West side, near 84th-86th Streets
+    description: A pine grove featuring over 20 species of conifers. Divided into east and west sections.
+
+  - name: Rudin Playground Lawn
+    type: playground lawn
+    location: West side, near 96th Street
+    description: Lawn area adjacent to the Rudin Family Playground.
+
+  - name: Levin Playground
+    type: playground
+    alternate_names:
+      - Bernard Family Playground
+    location: West side, near 73rd Street
+    description: Playground with adjacent lawn areas used for events.
+
+  - name: Safari Playground
+    type: playground
+    location: West side, near 91st Street
+    description: Playground with safari-themed play equipment.
+
+  - name: Mariners' Playground
+    type: playground
+    location: West side, near 84th Street
+    description: Nautical-themed playground with adjacent lawn.
+
+  - name: Johnson Playground
+    type: playground
+    alternate_names:
+      - Billy Johnson Playground
+    location: East side, near 67th Street
+    description: Playground featuring a large granite slide built into a rock outcrop.
+
+  - name: Wild West Playground
+    type: playground
+    location: West side, near 93rd Street
+    description: Western-themed playground with adjacent lawn.
+
+  - name: Tarr Playground
+    type: playground
+    alternate_names:
+      - Playground 100
+    location: West side, near 100th Street
+    description: Playground also known as Playground 100.
+
+  - name: Great Hill
+    type: hill/lawn
+    location: Northwest section, near 106th Street
+    description: Open hilltop area divided into north, south, and oval sections. Used for picnics and events.
+
+  - name: East Meadow
+    type: meadow/athletic area
+    location: East side, between approximately 97th and 99th Streets
+    description: Large open area with clay courts, picnic zone, and north lawn sections. Used for sports and community events.
+
+  - name: King Jagiello Plaza
+    type: plaza
+    location: East end of Turtle Pond
+    description: Plaza surrounding the King Jagiello Monument (bronze, 1939).
+
+  - name: Hernshead
+    type: promontory
+    location: West side of the Lake, near Ladies' Pavilion
+    description: Rocky promontory jutting into the Lake. Named for the herons that frequent the area.
+
+  - name: 72nd Street Cross Drive
+    type: transverse road
+    location: Mid-park at 72nd Street
+    description: One of the four sunken transverse roads crossing the park east-west.
+
+  - name: Central Park Tennis Center
+    type: tennis facility
+    location: Mid-park, near 94th Street
+    description: Complex of 26 Har-Tru clay courts and 4 hard courts. Numbered courts (01-30) used for permitted events.
+
+  - name: Diana Ross Playground
+    type: playground
+    location: West side, near 81st Street
+    description: Playground with adjacent lawn. Near the Naturalists' Gate entrance.
+
+  - name: Dana Discovery Center
+    type: nature center
+    alternate_names:
+      - Charles A. Dana Discovery Center
+    location: North shore of Harlem Meer, at 110th Street
+    description: Environmental education center with plaza and lawn areas. Hosts community events and seasonal festivals.
+
+  - name: East 106th Street Lawn
+    type: lawn
+    location: East side, near 106th Street
+    description: Open lawn area in the northeastern section of the park.
+
+  - name: East 102nd Street Landscape
+    type: landscape area
+    alternate_names:
+      - East 102nd St Landscape
+      - East 102nd St Landscape A
+      - East 102nd St Landscape B
+    location: East side, near 102nd Street
+    description: Landscaped area divided into sections A and B.
+
+  - name: East 72nd Street Playground
+    type: playground
+    location: East side, near 72nd Street and Fifth Avenue
+    description: Playground with adjacent lawns.
+
+  - name: West 96th Street Landscape
+    type: landscape area
+    location: West side, near 96th Street
+    description: Landscaped area near the western park boundary.
+
+  - name: West 110th Street Playground
+    type: playground
+    location: Northwest corner, near 110th Street
+    description: Playground near the Frederick Douglass Circle entrance.
+
+  - name: South Dead Road
+    type: service road
+    location: Southern section of the park
+    description: Internal park service road. Divided into sections A and B.
+
+  - name: North Reservoir Landscape
+    type: landscape area
+    location: North of the Reservoir, near 96th Street
+    description: Landscaped area bordering the north side of the Reservoir.
+
+  - name: Lawn Behind the Met Museum
+    type: lawn
+    alternate_names:
+      - East Green
+    location: East side, behind the Metropolitan Museum of Art
+    description: Open lawn area on the east side of the park adjacent to the Met.
+
+  - name: Central Park South Sidewalks
+    type: sidewalk/path
+    location: Southern border, 59th Street between 5th and 8th Avenues
+    description: Sidewalks along the southern perimeter of the park.
+
+  - name: King Jagiello Plaza
+    type: plaza
+    alternate_names:
+      - Jagiello Plaza
+      - King Jagiallo Plaza
+      - Jagiallo Plaza
+    location: East end of Turtle Pond
+    description: Plaza surrounding the King Jagiello Monument.
+
+  - name: East 106th Street Lawn
+    type: lawn
+    alternate_names:
+      - East 106th St Lawn
+    location: East side, near 106th Street
+    description: Open lawn area in the northeastern section of the park.
+
+  - name: Lawn Outside Tennis Courts
+    type: lawn
+    location: Mid-park, near 94th Street
+    description: Lawn area adjacent to the Central Park Tennis Center.
+
+  - name: Lower Loop
+    type: drive/path
+    location: Southern section of the park
+    description: The lower 3-mile loop of the park drives, popular with runners. Runs from Columbus Circle south through the southern end and back.
+
+  - name: Tennis Courts
+    type: tennis facility
+    alternate_names:
+      - Tennis Center
+      - Tennis-01
+      - Tennis-02
+      - Tennis-03
+      - Tennis-04
+      - Tennis-05
+      - Tennis-06
+      - Tennis-07
+      - Tennis-08
+      - Tennis-09
+      - Tennis-10
+    location: Mid-park, near 94th Street
+    description: Individual numbered courts (01-30) within the Central Park Tennis Center complex.
+
+  - name: Seneca Village
+    type: historic site
+    alternate_names:
+      - Seneca Village Landscape
+      - Seneca Village landscape
+    location: West side, between approximately 82nd and 89th Streets
+    description: Site of a 19th-century settlement of predominantly African American landowners, founded in 1825 and razed in 1857 for park construction. Now commemorated with interpretive signage and ongoing programming.
+
+  - name: Rumsey Playfield
+    type: performance venue
+    alternate_names:
+      - SummerStage
+    location: Mid-park, near 69th Street and Fifth Avenue
+    description: Outdoor performance venue and home of the SummerStage concert series. Named for Mary Harriman Rumsey.
+
+  - name: Central Park Farm Stand
+    type: market/concession
+    location: Northern end, 110th Street and Malcolm X Boulevard
+    description: Seasonal farm stand offering fresh produce and community programming at the northern edge of the park.
+
+  - name: Swedish Cottage Marionette Theatre
+    type: theater
+    alternate_names:
+      - Swedish Cottage
+    location: West side, near 79th Street
+    description: A 19th-century Swedish schoolhouse relocated to Central Park. Home to the Marionette Theatre, producing original puppet shows for children.
+
+  - name: Skate Circle
+    type: recreation area
+    alternate_names:
+      - Central Park Skate Circle
+      - Roller Skating Circle
+    location: Mid-park, near the Bandshell and 72nd Street
+    description: Informal gathering area for roller skaters and inline skaters near the Naumburg Bandshell. Active community since the 1990s.
+
+  - name: Loeb Boathouse
+    type: building/restaurant
+    alternate_names:
+      - The Boathouse
+      - Central Park Boathouse
+    location: East side of the Lake, near 74th Street
+    description: Restaurant and boathouse on the Lake. Rowboat and bicycle rentals available seasonally.
+
+  - name: Lawn Behind the Met Museum
+    type: lawn
+    alternate_names:
+      - East Green
+      - Lawn Behind Met Museum
+    location: East side, behind the Metropolitan Museum of Art
+    description: Open lawn area on the east side of the park adjacent to the Met. Used for sports and community events.
+
+  - name: Central Park West Entrance at 72nd Street
+    type: entrance
+    alternate_names:
+      - CPW & 72nd St
+      - Central Park West & 72nd Street entrance
+    location: West side at 72nd Street
+    description: Major western entrance to the park near Strawberry Fields and the Imagine mosaic.

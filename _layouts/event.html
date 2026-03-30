@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__bg">
+    <img src="{{ page.image }}" alt="{{ page.title }}">
+  </div>
+  <div class="container hero__content">
+    <a href="/events/" style="color: rgba(255,255,255,0.8); font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 16px;">&larr; Back to all events</a>
+    <h1>{{ page.title }}</h1>
+    <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px;">
+      <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 50px; color: white; font-size: 0.9rem;">
+        <img src="/assets/icons/calendar.png" alt="" style="width:16px;height:16px;filter:brightness(0) invert(1);">
+        {{ page.date | date: "%B %-d, %Y" }}
+      </span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 50px; color: white; font-size: 0.9rem;">
+        <img src="/assets/icons/time.png" alt="" style="width:16px;height:16px;filter:brightness(0) invert(1);">
+        {{ page.time }}
+      </span>
+      <span style="display: inline-flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 50px; color: white; font-size: 0.9rem;">
+        <img src="/assets/icons/location.png" alt="" style="width:16px;height:16px;filter:brightness(0) invert(1);">
+        {{ page.location }}
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- Event Content -->
+<section class="section">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 64px; align-items: start;">
+
+      <!-- Main Content -->
+      <div class="event-detail-content">
+        {{ content }}
+      </div>
+
+      <!-- Sidebar -->
+      <aside class="event-sidebar">
+        <div style="background: #f5f5f5; border-radius: 20px; padding: 32px; position: sticky; top: 100px;">
+          <h3 style="font-size: 1.1rem; margin-bottom: 24px;">Event Details</h3>
+
+          <div style="margin-bottom: 20px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Date</p>
+            <p style="font-weight: 600; margin: 0;">{{ page.date | date: "%A, %B %-d, %Y" }}</p>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Time</p>
+            <p style="font-weight: 600; margin: 0;">{{ page.time }}{% if page.end_time %} - {{ page.end_time }}{% endif %}</p>
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Location</p>
+            <p style="font-weight: 600; margin: 0;">{{ page.location }}</p>
+          </div>
+
+          {% if page.place %}
+          <div style="margin-bottom: 20px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Place</p>
+            <p style="font-weight: 600; margin: 0;"><a href="/events/?place={{ page.place | url_encode }}">{{ page.place }}</a></p>
+          </div>
+          {% endif %}
+
+          <div style="margin-bottom: 20px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Category</p>
+            <p style="font-weight: 600; margin: 0;">
+              {% case page.category %}
+                {% when 'runs-races' %}Runs &amp; Races
+                {% when 'concerts-performances' %}Concerts &amp; Performances
+                {% when 'family-community' %}Family &amp; Community
+                {% when 'closures' %}Closures
+              {% endcase %}
+            </p>
+          </div>
+
+          {% if page.tags %}
+          <div style="margin-bottom: 24px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 8px;">Tags</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+              {% for tag in page.tags %}
+              <span style="background: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if page.registration_url %}
+          <a href="{{ page.registration_url }}" target="_blank" rel="noopener" class="btn btn-green" style="width: 100%; justify-content: center;">Register Now</a>
+          {% endif %}
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- More Events -->
+<section class="section bg-ash">
+  <div class="container">
+    <h2 class="text-center mb-md">More events</h2>
+    <div class="grid-3">
+      {% assign other_events = site.events | where_exp: "e", "e.url != page.url" | sort: "date" | limit: 3 %}
+      {% for event in other_events limit: 3 %}
+      <a href="{{ event.url }}" class="event-card" style="text-decoration: none; color: inherit;">
+        <img class="event-card__image" src="{{ event.image }}" alt="{{ event.title }}">
+        <div class="event-card__body">
+          <div class="event-card__meta">
+            <span><img src="/assets/icons/calendar.png" alt="">{{ event.date | date: "%b %-d" }}</span>
+            <span><img src="/assets/icons/time.png" alt="">{{ event.time }}</span>
+          </div>
+          <h3 class="event-card__title">{{ event.title }}</h3>
+          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> {{ event.location }}</p>
+          <p class="event-card__desc">{{ event.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top: 40px;">
+      <a href="/events/" class="btn btn-outline">See all events</a>
+    </div>
+  </div>
+</section>

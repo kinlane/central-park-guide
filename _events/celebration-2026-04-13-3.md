@@ -1,0 +1,35 @@
+---
+title: "Celebration"
+date: 2026-04-13
+time: "13:00"
+end_time: "14:00"
+location: "Wagner Cove"
+place: "Wagner Cove"
+place_category: "event_venues"
+category: "family-community"
+image: "/assets/images/event-3.avif"
+description: "Celebration at Wagner Cove in Central Park."
+event_id: "919530"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - community
+---
+
+Celebration takes place at Wagner Cove in Central Park on Monday, April 13, 2026.
+
+## Event Details
+
+- **Event:** Celebration
+- **Date:** Monday, April 13, 2026
+- **Time:** 1:00 PM - 2:00 PM
+- **Location:** Wagner Cove, Central Park
+- **Place:** Wagner Cove
+- **Type:** Special Event
+- **Event ID:** 919530
+
+## About This Event
+
+Celebration is a permitted event taking place at Wagner Cove in Central Park. Contact the event organizers for more details about attendance and participation.

@@ -1,0 +1,640 @@
+[
+  {
+    "title": "Bird Watching with Birding Bob",
+    "url": "https://www.centralpark.com/events/bird-watching-with-birding-bob/",
+    "description": "Join up with Birding Bob and crew for a fun bird walk through some lesser-known areas in Central Park. Led by Dr. Robert 'Birding Bob' DeCandido, a native New Yorker with 25+ years of experience welcoming both novices and experienced birders.",
+    "location": "Central Park Boathouse (74th Street, East Drive)",
+    "meeting_points": {
+      "sundays_saturdays_thursdays": "Loeb Boathouse/Cafe (74th Street, East Drive)",
+      "mondays": "Strawberry Fields (72nd Street & Central Park West)",
+      "fridays": "Conservatory Garden (105th Street & 5th Avenue)"
+    },
+    "schedule": {
+      "sundays": "7:30 AM & 9:30 AM (year-round)",
+      "saturdays": "7:30 AM & 9:30 AM",
+      "mondays": "8:30 AM",
+      "thursdays": "8:30 AM",
+      "fridays": "8:30 AM (led by Deborah Allen)"
+    },
+    "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday",
+    "cost": "$10 per person (pay at tour end). Two-for-one weekend deal: start at 7:30 AM, continue through 9:30 AM free. Binocular rentals: $10.",
+    "contact": {
+      "phone": "347-703-5554",
+      "email": "rdcny@earthlink.net",
+      "website": "https://www.birdingbob.com"
+    },
+    "image_url": "https://www.centralpark.com/downloads/10951/download/bird-watching-birders.jpeg",
+    "categories": ["Education & Learning"],
+    "tags": ["Bird Watching", "Walking Tours", "Spring Activities", "Featured Events"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Central Park Highlights Running Tour",
+    "url": "https://www.centralpark.com/events/central-park-highlights-running-tour/",
+    "description": "Enjoy breathtaking views and a group vibe on this moderately-paced run through Central Park! The tour combines exercise with sightseeing, visiting iconic locations including Bethesda Fountain, The Mall, and Strawberry Fields.",
+    "location": "Jose Julian Marti statue",
+    "coordinates": {
+      "lat": 40.7660619765129,
+      "lng": -73.9760964679178
+    },
+    "schedule": {
+      "days": "Monday through Sunday (daily)",
+      "duration": "1 hour 15 minutes",
+      "distance": "4.6 miles (7.4 km)"
+    },
+    "recurrence": "Daily",
+    "cost": "$49 per person",
+    "booking": "Reservations required. Book through website or purchase gift cards via FareHarbor.",
+    "image_url": "https://www.centralpark.com/downloads/10793/download/fittoursnycwinter.JPG",
+    "categories": ["Fitness & Health", "Tours"],
+    "tags": ["City Fit Tours", "Running & Fitness Tours", "Running", "Fitness Classes"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Central Park Zoo Quests",
+    "url": "https://www.centralpark.com/events/central-park-zoo-quests/",
+    "description": "Interactive scavenger hunt-style activities that engage visitors in fun games and science challenges across the zoo. Participants learn about animals, conservation, and outdoor activities. Virtual quests also available anytime.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7676906686356,
+      "lng": -73.9718115378346
+    },
+    "schedule": {
+      "days": "Wednesday through Sunday",
+      "times": "10:00 AM - 3:30 PM (summer sessions)"
+    },
+    "recurrence": "Weekly - Wednesday, Thursday, Friday, Saturday, Sunday",
+    "cost": "Free",
+    "virtual_quests": [
+      "Harbor Seal Adventure",
+      "Penguin Quest",
+      "Snow Leopard Quest",
+      "Grizzly Bear Quest"
+    ],
+    "virtual_quest_url": "https://sites.google.com/wcs.org/virtualquests/home/central-park-zoo-quests",
+    "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg",
+    "categories": ["Free Events", "Kids & Family"],
+    "tags": ["Children's Activities", "Family Activities", "Zoo Animals"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Children's Programs at Central Park Zoo",
+    "url": "https://www.centralpark.com/events/childrens-programs-at-central-park-zoo/",
+    "description": "Interactive children's programs offer hands-on animal learning, fun activities, and early wildlife exploration at the Central Park Zoo.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7677,
+      "lng": -73.9718
+    },
+    "programs": [
+      {
+        "name": "Junior Keepers (Grades K-2 and 3-5)",
+        "cost_members": "$52",
+        "cost_nonmembers": "$65",
+        "time": "9:00 AM - 10:30 AM",
+        "format": "Drop-off only"
+      },
+      {
+        "name": "Intermediate Keepers (Grades 6-8 and 9-12)",
+        "cost_members": "$52",
+        "cost_nonmembers": "$65",
+        "time": "9:00 AM - 10:30 AM",
+        "format": "Drop-off only"
+      },
+      {
+        "name": "Early Childhood Programs (Ages 2-3)",
+        "cost_members": "$32",
+        "cost_nonmembers": "$40",
+        "time": "9:30 AM - 10:30 AM",
+        "format": "Caregiver & Me sessions"
+      },
+      {
+        "name": "Family Access Mornings",
+        "cost_members": "$16",
+        "cost_nonmembers": "$20",
+        "time": "9:30 AM - 10:30 AM",
+        "format": "Sensory-friendly access at Tisch Children's Zoo"
+      }
+    ],
+    "recurrence": "Select Saturdays and Sundays",
+    "contact": {
+      "email": "cpzeducation@wcs.org",
+      "website": "https://centralparkzoo.com/learn/families"
+    },
+    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg",
+    "categories": ["Education & Learning", "Kids & Family"],
+    "tags": ["Children's Activities", "Tisch Children's Zoo"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Little Red's Hood - Marionette Theater",
+    "url": "https://www.centralpark.com/events/little-reds-hood-marionette-theater/",
+    "description": "A modern puppet show featuring a dozen handmade marionettes that reimagines a classic fairy tale with contemporary elements. The story follows Little Red, a smartphone-obsessed girl, and Wulfric, a misunderstood wolf, encouraging audiences to unplug and savor real-life connections.",
+    "location": "Swedish Cottage, Central Park",
+    "coordinates": {
+      "lat": 40.7799,
+      "lng": -73.9703
+    },
+    "schedule": {
+      "days": "Fridays, Saturdays, Sundays, and Thursdays",
+      "run_period": "February 14, 2026 - March 30, 2026"
+    },
+    "recurrence": "Weekly - Thursday, Friday, Saturday, Sunday",
+    "cost": {
+      "children": "$10",
+      "adults": "$15",
+      "note": "Advance online purchase required"
+    },
+    "age_recommendation": "Ages 3 to 8",
+    "contact": {
+      "phone": "212-988-9093",
+      "email": "swedishcottage@cityparksfoundation.org",
+      "tickets": "https://wl.seetickets.us/SwedishCottageMarionetteTheatre",
+      "website": "https://cityparksfoundation.org/swedish-cottage-marionette-theatre/"
+    },
+    "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png",
+    "categories": ["Film & Theater", "Kids & Family"],
+    "tags": ["Children's Activities", "Family Activities", "Marionette Theatre"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Penguin Feedings at Central Park Zoo",
+    "url": "https://www.centralpark.com/events/central-park-zoo-penguin-feedings/",
+    "description": "Penguin feeding times are one of the most popular hours at the Central Park Zoo. Come and witness the penguins racing for fish! Viewing available through glass windows to watch them gliding underwater.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7677,
+      "lng": -73.9718
+    },
+    "schedule": {
+      "times": "Daily at 10:40 AM and 2:30 PM"
+    },
+    "recurrence": "Daily",
+    "cost": "Zoo admission required (date-specific tickets needed)",
+    "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg",
+    "categories": ["Kids & Family"],
+    "tags": ["Children's Activities", "Family Activities", "Zoo Animals"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Sea Lion Feedings at Central Park Zoo",
+    "url": "https://www.centralpark.com/events/central-park-zoo-sea-lion-feedings/",
+    "description": "Visit the Central Park Zoo to watch the sea lions feed their giant appetites and perform training exercises that keep them stimulated and fit! Viewing from both above and below water levels, with zookeepers available to answer questions.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7676906686356,
+      "lng": -73.9718115378346
+    },
+    "schedule": {
+      "times": "Daily at 11:30 AM, 1:30 PM, and 3:30 PM"
+    },
+    "recurrence": "Daily",
+    "cost": "Zoo admission required (date-specific tickets needed)",
+    "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg",
+    "categories": ["Kids & Family"],
+    "tags": ["Children's Activities", "Family Activities", "Zoo Animals", "Sea Lions"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
+    "url": "https://www.centralpark.com/events/amazing-race-style-scavenger-hunt-adventure/",
+    "description": "Solve clues, complete creative challenges, and discover fascinating stories about the park's history and sights. This smartphone-guided, self-paced adventure is designed for teams of 2-5 exploring Central Park without guides or crowds.",
+    "location": "Columbus Circle, Central Park",
+    "coordinates": {
+      "lat": 40.7680,
+      "lng": -73.9819
+    },
+    "schedule": {
+      "availability": "365 days per year, sunrise to sunset",
+      "format": "Self-paced, start anytime"
+    },
+    "routes": [
+      {
+        "name": "Lower Central Park",
+        "start": "Columbus Circle",
+        "highlights": ["Zoo", "Wollman Rink", "The Mall", "Bethesda Fountain", "Belvedere Castle", "Shakespeare Garden"]
+      },
+      {
+        "name": "Mid Central Park",
+        "start": "The Dakota",
+        "highlights": ["Strawberry Fields", "American Museum of Natural History", "Delacorte Theater", "The Reservoir", "The Met"]
+      }
+    ],
+    "recurrence": "Daily (year-round)",
+    "cost": "$39.20 per team (2-5 players) with promo code CENTRALPARK (20% off)",
+    "booking": {
+      "website": "https://www.UrbanAdventureQuest.com",
+      "promo_code": "CENTRALPARK"
+    },
+    "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe",
+    "categories": ["Education & Learning", "Kids & Family", "Tours"],
+    "tags": ["Scavenger Hunt", "Family Activities", "Group Tours", "Sightseeing Tours"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Central Park Zoo 4-D Theater",
+    "url": "https://www.centralpark.com/events/central-park-zoo-4D-theater/",
+    "description": "An immersive experience combining 3-D film visuals with sensory effects including wind and mist. Currently showing 'The Bear and the Squirrel.' Film length is 15-20 minutes with new screening every 25-30 minutes.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7677,
+      "lng": -73.9718
+    },
+    "schedule": {
+      "times": "10:15 AM until park closing (approx 5:00 PM)",
+      "frequency": "New screening every 25-30 minutes daily"
+    },
+    "recurrence": "Daily",
+    "cost": {
+      "general": "$7 (ages 3+)",
+      "wcs_members": "$4",
+      "conservation_members": "Free",
+      "with_full_zoo_admission": "Included"
+    },
+    "age_recommendation": "Geared for ages 6+; not recommended for children under 4",
+    "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg",
+    "categories": ["Film & Theater", "Kids & Family"],
+    "tags": ["Children's Activities", "4-D Theater", "Family Activities"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Free Weekly Run with Central Park Running Club",
+    "url": "https://www.centralpark.com/events/free-weekly-run-from-central-park-running-club/",
+    "description": "Improve your running performance and make new friends at the Central Park Running Club. Coaches, training, running company and inspiration! Routes change weekly throughout the park. Open to runners of all ability levels.",
+    "location": "Central Park Boathouse",
+    "coordinates": {
+      "lat": 40.7753,
+      "lng": -73.9685
+    },
+    "schedule": {
+      "tuesdays_wednesdays_thursdays": "6:30 AM",
+      "saturdays": "8:00 AM"
+    },
+    "recurrence": "Weekly - Tuesday, Wednesday, Thursday, Saturday",
+    "cost": "Free",
+    "contact": {
+      "email": "CPrunningnyc@gmail.com",
+      "website": "https://cprunning.com"
+    },
+    "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg",
+    "categories": ["Fitness & Health", "Free Events"],
+    "tags": ["Running", "Running Classes", "Sports & Recreation"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Fishing at the Harlem Meer",
+    "url": "https://www.centralpark.com/events/free-catch-release-fishing-harlem-meer/",
+    "description": "Head to the Harlem Meer for daily catch-and-release fishing. Borrow a fishing pole and receive free instruction and bait! Fish species present include large-mouth bass, pumpkinseed sunfish, bluegill sunfish, carp, and chain pickerel.",
+    "location": "Charles A. Dana Discovery Center, Harlem Meer",
+    "coordinates": {
+      "lat": 40.7971,
+      "lng": -73.9515
+    },
+    "schedule": {
+      "days": "Wednesday through Sunday",
+      "pole_borrowing": "10:00 AM - 3:00 PM",
+      "return_by": "4:00 PM",
+      "center_hours": "10:00 AM - 5:00 PM"
+    },
+    "recurrence": "Weekly - Wednesday, Thursday, Friday, Saturday, Sunday",
+    "cost": "Free",
+    "requirements": "Picture ID required",
+    "rules": [
+      "Catch-and-release only",
+      "Barbed hooks, lead sinkers, and overhead casting rods prohibited",
+      "Only corn kernel bait from the Dana Center permitted",
+      "Bread and hot dogs discouraged as bait"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/1876/download/harlem-meer.jpe",
+    "categories": ["Free Events", "Kids & Family"],
+    "tags": ["Catch & Release Fishing", "Family Activities", "Children's Activities"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Sunrise Yoga Walk",
+    "url": "https://www.centralpark.com/events/sunrise-yoga-walk/",
+    "description": "Center your mind and body on this exciting walk which combines power walking and restorative yoga poses, with stops at some of Central Park's most well-known attractions.",
+    "location": "General William Tecumseh Sherman Statue (Grand Army Plaza)",
+    "coordinates": {
+      "lat": 40.7648,
+      "lng": -73.9731
+    },
+    "schedule": {
+      "day": "Every Saturday",
+      "time": "8:00 AM - 9:30 AM",
+      "duration": "1.5 hours",
+      "distance": "1.5 miles (2.4 km)"
+    },
+    "recurrence": "Weekly - Saturday",
+    "cost": "$49",
+    "booking": "Reservations required",
+    "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg",
+    "categories": ["Fitness & Health", "Tours"],
+    "tags": ["City Fit Tours", "Running & Fitness Tours", "Central Park Walking Tours", "Yoga", "Fitness Classes"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "City Girls Who Walk",
+    "url": "https://www.centralpark.com/events/city-girls-who-walk/",
+    "description": "A women's walking group that brings together women from all walks of life to bond, exercise, and embrace the beauty of their surroundings. Approximately 80% of participants arrive solo, making it welcoming for newcomers. Founded by fitness entrepreneur Brianna Joye Kohn.",
+    "location": "Central Park West & 72nd Street entrance",
+    "coordinates": {
+      "lat": 40.7762,
+      "lng": -73.9759
+    },
+    "schedule": {
+      "day": "Every Sunday",
+      "time": "12:00 PM - 1:30 PM"
+    },
+    "recurrence": "Weekly - Sunday",
+    "cost": "Free",
+    "registration": "Not required - simply show up",
+    "pets": "Leashed dogs welcome",
+    "contact": {
+      "instagram": "@citygirlswhowalk"
+    },
+    "image_url": "https://www.centralpark.com/downloads/10659/download/city-girls-who-walk-noelle-de-leeuw.jpg",
+    "categories": ["Fitness & Health", "Free Events"],
+    "tags": ["Women", "Walks", "Sports & Recreation"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Yoga Classes",
+    "url": "https://www.centralpark.com/events/yoga-classes/",
+    "description": "Open-air yoga sessions featuring flowing movements with emphasis on breathing and healthy pose alignment. Great for those who want an energizing and mindful practice! Classes accommodate all skill levels with variations offered.",
+    "location": "Sheep Meadow, Central Park",
+    "meeting_point": "Le Pain Quotidien cafe (north side of Sheep Meadow), arrive 15 minutes early",
+    "coordinates": {
+      "lat": 40.7719,
+      "lng": -73.9752
+    },
+    "schedule": {
+      "season": "April through November",
+      "start_date": "2026-04-04",
+      "end_date": "2026-12-01",
+      "frequency": "Daily",
+      "duration": "1 hour per class"
+    },
+    "recurrence": "Daily (April - November, weather dependent)",
+    "cost": {
+      "drop_in": "$24 per session",
+      "3_class_pack": "$60",
+      "10_class_pack": "$160"
+    },
+    "booking": "Reservations mandatory",
+    "image_url": "https://www.centralpark.com/downloads/8886/download/yoga-sunset-pose.jpg",
+    "categories": ["Fitness & Health"],
+    "tags": ["Yoga Classes", "Annual Events 2026", "Featured Events", "The Yoga Trail in Central Park"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Central Park Model Yacht Club Races",
+    "url": "https://www.centralpark.com/events/central-park-model-yacht-club-races/",
+    "description": "Join in on Central Park Model Yacht Club races every Saturday. The club hosts weekly wind-powered model sailboat competitions controlled via remote using sail trim and rudder direction. Spectators are welcome to watch.",
+    "location": "Conservatory Water, Central Park",
+    "coordinates": {
+      "lat": 40.7740,
+      "lng": -73.9668
+    },
+    "schedule": {
+      "season": "April to November (weather permitting)",
+      "day": "Every Saturday",
+      "time": "10:00 AM - 1:00 PM"
+    },
+    "recurrence": "Weekly - Saturday (April - November)",
+    "cost": "Free",
+    "notes": "Powered boats not permitted. Model sailboat rentals available.",
+    "contact": {
+      "website": "http://www.cpmyc.org/"
+    },
+    "image_url": "https://www.centralpark.com/downloads/8929/download/model-sailboats.jpg",
+    "categories": ["Free Events", "Kids & Family"],
+    "tags": ["Races", "Model Sailboats", "Summer Activities", "Annual Events 2026"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Gladiators NYC",
+    "url": "https://www.centralpark.com/events/gladiators-nyc/",
+    "description": "Knights in full armor fighting it out in the middle of Central Park! NYC's premier medieval event. Attendees can bring picnic blankets and snacks or purchase grab-and-go food options. Family-friendly atmosphere suitable for all ages.",
+    "location": "Lawn Behind Met Museum, Central Park",
+    "coordinates": {
+      "lat": 40.7784,
+      "lng": -73.9656
+    },
+    "schedule": {
+      "frequency": "Second Saturday of each month",
+      "time": "2:00 PM - 4:00 PM",
+      "upcoming_dates": ["2026-04-11", "2026-05-09", "2026-06-13", "2026-07-11", "2026-08-08"]
+    },
+    "recurrence": "Monthly - 2nd Saturday",
+    "cost": "Free (501(c)(3) nonprofit, donations welcome)",
+    "contact": {
+      "instagram": "@gladiatorsnyc"
+    },
+    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg",
+    "categories": ["Fitness & Health", "Kids & Family", "Free Events"],
+    "tags": ["Annual Events", "Featured Events", "Metropolitan Museum of Art"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "RBC Race for the Kids 4M and Health Walk",
+    "url": "https://www.centralpark.com/events/rbc-race-for-the-kids/",
+    "description": "This annual charity race features a 4-mile run through Central Park to raise money to help change the lives of young people. Includes a complimentary 1-mile health walk accessible to all registrants. Proceeds benefit MSK Kids, the pediatric program at Memorial Sloan Kettering Cancer Center.",
+    "location": "Central Park (East Drive Near 68th Street)",
+    "schedule": {
+      "date": "2026-04-19",
+      "time": "8:00 AM - 11:00 AM"
+    },
+    "participation_options": [
+      "4-mile competitive run",
+      "1-mile health walk (free for all registrants)",
+      "Rising NYRR kids program (ages 2-11, free registration required)"
+    ],
+    "recurrence": "Annual",
+    "cost": "Registration required via NYRR (price not specified)",
+    "booking": "Through NYRR events portal. NYRR members get access to standby list if sold out.",
+    "image_url": null,
+    "categories": ["Kids & Family", "Fitness & Health", "Free Events"],
+    "tags": ["Annual Events 2026", "Races", "Spring Activities", "Charity & Cause Events", "Benefits & Fundraisers", "Walks"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Adult Programs at Central Park Zoo",
+    "url": "https://www.centralpark.com/events/adult-programs-at-central-park-zoo/",
+    "description": "Engage with wildlife hands-on through adult-only programs like Zookeeping for Grownups and other special events at Central Park Zoo. Hands-on experience for adults 18+ assisting with feeding, cleaning, and enrichment activities for zoo animals.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7677,
+      "lng": -73.9718
+    },
+    "schedule": {
+      "time": "8:30 AM - 10:30 AM",
+      "dates": [
+        {"date": "2026-02-08", "theme": "Animal Health & Nutrition"},
+        {"date": "2026-03-07", "theme": "Conservation Science"},
+        {"date": "2026-04-18", "theme": "Tropical Animals"},
+        {"date": "2026-05-09", "theme": "Animal Behavior"},
+        {"date": "2026-05-16", "theme": "Polar Zone"}
+      ]
+    },
+    "recurrence": "Select Saturdays and Sundays",
+    "cost": {
+      "members": "$72",
+      "non_members": "$90"
+    },
+    "age_requirement": "18+",
+    "contact": {
+      "email": "cpzeducation@wcs.org",
+      "website": "https://centralparkzoo.com/learn/adults",
+      "tickets": "https://tickets.wcs.org"
+    },
+    "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg",
+    "categories": ["Education & Learning"],
+    "tags": ["Spring Activities", "Winter Activities", "Fall Activities", "Central Park Zoo"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Pickleball at Wollman Rink",
+    "url": "https://www.centralpark.com/events/pickleball-at-wollman-rink/",
+    "description": "Play the nation's fastest growing sport at Wollman Rink, now with 14 permanent pickleball courts. The venue partners with CityPickle through a three-year agreement running through 2026.",
+    "location": "Wollman Rink, Central Park",
+    "coordinates": {
+      "lat": 40.7679,
+      "lng": -73.9744
+    },
+    "schedule": {
+      "season": "April 21 - October 7, 2026",
+      "daily_hours": "8:00 AM - 9:00 PM",
+      "off_peak": "10:00 AM - 5:00 PM (Mon-Thu)",
+      "peak": "8:00-10:00 AM and 5:00-9:00 PM (Mon-Thu); all day (Fri-Sun)"
+    },
+    "recurrence": "Daily (April - October)",
+    "cost": {
+      "off_peak": "$80/hour",
+      "peak": "$120/hour"
+    },
+    "amenities": [
+      "14 permanent courts (Standard and Cabana)",
+      "Group clinics",
+      "Private coaching",
+      "Open play",
+      "Leagues",
+      "Youth summer camps",
+      "Public restrooms",
+      "Locker storage",
+      "Spectator seating",
+      "On-site food/beverage by Great Performances",
+      "Private event hosting"
+    ],
+    "booking": {
+      "website": "https://www.city-pickle.com/locations/wollman-rink"
+    },
+    "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg",
+    "categories": ["Kids & Family", "Sports & Recreation"],
+    "tags": ["Annual Events 2026", "Summer Activities", "Fall Activities", "Spring Activities", "Recreation", "Pickleball"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "CPDSA Skate Circle Events",
+    "url": "https://www.centralpark.com/events/cpdsa-skate-circle-skating-events/",
+    "description": "Roller dance at the Skate Circle with live DJs! Family-friendly gathering welcoming skaters of all skill levels to groove with roller dancing while live DJs spin music. Children under 14 must wear helmets for safety.",
+    "location": "Central Park Skate Circle",
+    "coordinates": {
+      "lat": 40.7727,
+      "lng": -73.9726
+    },
+    "schedule": {
+      "season": "April through October 2026",
+      "days": "Most Saturdays and Sundays",
+      "time": "2:45 PM - 6:45 PM"
+    },
+    "recurrence": "Weekly - Saturday, Sunday (April - October)",
+    "cost": "Free",
+    "notes": "Bring your own skates. Helmet required for children under 14.",
+    "contact": {
+      "email": "CPDSA@earthlink.net",
+      "website": "https://www.cpdsa.org/events/"
+    },
+    "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg",
+    "categories": ["Fitness & Health", "Kids & Family", "Free Events"],
+    "tags": ["Live DJ Sets", "Music", "Roller Skating", "Roller Dancing", "Sports & Recreation", "Spring Activities", "Summer Activities", "Fall Activities", "Annual Events 2026"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "CityParks Seniors Fitness: Free Tennis Lessons",
+    "url": "https://www.centralpark.com/events/cityparks-seniors-fitness-free-tennis-lessons/",
+    "description": "City Parks Foundation invites all senior citizens to join their spring fitness program, which aims to promote wellness and fitness among New Yorkers. The program offers complimentary tennis instruction in Central Park as part of a broader initiative providing Yoga, fitness walking, pickleball, and Tai Chi classes across NYC parks.",
+    "location": "Tennis Courts, Central Park (93rd Street near West Drive)",
+    "coordinates": {
+      "lat": 40.7893,
+      "lng": -73.9619
+    },
+    "schedule": {
+      "day": "Fridays",
+      "time": "1:00 PM - 3:00 PM",
+      "season": "April 20 - June 12, 2026"
+    },
+    "recurrence": "Weekly - Friday (April 20 - June 12, 2026)",
+    "cost": "Free (registration required)",
+    "eligibility": "Ages 60+",
+    "equipment": "All equipment provided at no cost. Participants must bring appropriate footwear.",
+    "contact": {
+      "phone": "(718) 760-6999",
+      "email": "sports@cityparksfoundation.org",
+      "registration": "https://cityparksfoundationseniors.leagueapps.com/events/4934095-central-park---tennis"
+    },
+    "image_url": null,
+    "categories": ["Fitness & Health", "Free Events"],
+    "tags": ["Tennis", "Annual Events 2026", "Seniors"],
+    "source": "centralpark.com"
+  },
+  {
+    "title": "Free Shakespeare in the Park 2026",
+    "url": "https://www.centralpark.com/events/free-shakespeare-in-the-park/",
+    "description": "Free Shakespeare in the Park returns to the newly renovated Delacorte Theater in 2026 with two productions: Romeo and Juliet (directed by Saheem Ali, May 22 - June 28, starring Ra'Mya Latiah Aikens and Daniel Bravo Hernandez) and The Winter's Tale (directed by Tony winner Daniel Sullivan, dates TBA). A Public Works production and Public Forum series revival round out the lineup.",
+    "location": "Delacorte Theater, Central Park",
+    "coordinates": {
+      "lat": 40.780237,
+      "lng": -73.968792
+    },
+    "schedule": {
+      "opening": "2026-05-22",
+      "closing": "2026-06-28",
+      "time": "8:00 PM - 10:00 PM",
+      "days": "Tuesday through Sunday (varies weekly)"
+    },
+    "productions": [
+      {
+        "title": "Romeo and Juliet",
+        "director": "Saheem Ali",
+        "dates": "May 22 - June 28, 2026",
+        "cast_highlights": ["Ra'Mya Latiah Aikens", "Daniel Bravo Hernandez"]
+      },
+      {
+        "title": "The Winter's Tale",
+        "director": "Daniel Sullivan",
+        "dates": "TBA"
+      }
+    ],
+    "recurrence": "Seasonal (May - June 2026)",
+    "cost": "Free",
+    "ticket_distribution": [
+      "In-person distribution (noon daily when performances occur)",
+      "In-person standby line (after 6 PM)",
+      "In-person lottery at The Public Theater",
+      "Borough distribution locations",
+      "Digital lottery via TodayTix",
+      "Supporter donations ($300+) for reserved seating"
+    ],
+    "requirements": "Public Theater Patron ID required",
+    "contact": {
+      "phone": "212.967.7555",
+      "email": "info@publictheater.org",
+      "website": "https://publictheater.org/free-shakespeare-in-the-park/"
+    },
+    "image_url": "https://www.centralpark.com/downloads/2334/download/romeo-juliet.jpe",
+    "categories": ["Festivals & Fairs", "Film & Theater", "Free Events", "Kids & Family"],
+    "tags": ["Summer Activities", "Spring Activities", "Annual Events 2026", "Shakespeare In The Park"],
+    "source": "centralpark.com"
+  }
+]

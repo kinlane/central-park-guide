@@ -246,6 +246,11 @@
     color: $white;
     border-color: $green;
   }
+
+  .tab-count {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
 }
 
 // Newsletter form
@@ -442,6 +447,188 @@
     object-fit: cover;
     border-radius: $radius-sm;
   }
+}
+
+// Search input
+.search-bar {
+  position: relative;
+  max-width: 480px;
+  margin-bottom: $gap-sm;
+
+  input {
+    width: 100%;
+    padding: 14px 20px 14px 48px;
+    border: 2px solid $medium-gray;
+    border-radius: 50px;
+    font-family: $font-body;
+    font-size: 1rem;
+    outline: none;
+    background: $white;
+    transition: border-color 0.2s;
+    &:focus { border-color: $green; }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    opacity: 0.4;
+  }
+}
+
+// Pagination
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: $gap-md;
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $light-gray;
+    background: $white;
+    font-family: $font-body;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: $black;
+    text-decoration: none;
+
+    &:hover { border-color: $green; color: $green; }
+    &.active {
+      background: $green;
+      border-color: $green;
+      color: $white;
+    }
+    &:disabled, &.disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+      &:hover { border-color: $light-gray; color: $black; }
+    }
+  }
+
+  &__info {
+    font-size: 0.9rem;
+    color: $black-65;
+    margin: 0 16px;
+  }
+}
+
+// Event detail page
+.event-detail-content {
+  h2 {
+    font-size: 1.5rem;
+    margin: 40px 0 16px;
+    &:first-child { margin-top: 0; }
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin: 32px 0 12px;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  ul, ol {
+    padding-left: 24px;
+    margin-bottom: 20px;
+    list-style: disc;
+
+    li {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: $black-70;
+      margin-bottom: 6px;
+    }
+  }
+
+  ol { list-style: decimal; }
+
+  strong { color: $black; }
+}
+
+.event-sidebar {
+  @media (max-width: $landscape) {
+    display: none;
+  }
+}
+
+// Responsive event detail grid
+@media (max-width: $landscape) {
+  .event-detail-content {
+    max-width: 100%;
+  }
+}
+
+// Results count
+.results-count {
+  font-size: 0.9rem;
+  color: $black-65;
+  margin-bottom: 24px;
+}
+
+// No results
+.no-results {
+  text-align: center;
+  padding: 64px 24px;
+  color: $black-65;
+  font-size: 1.1rem;
+}
+
+// Event card as link
+a.event-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.1);
+    color: inherit;
+  }
+}
+
+// Place badge
+.place-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background: rgba(60, 164, 116, 0.1);
+  color: darken($green, 10%);
+  border: 1px solid rgba(60, 164, 116, 0.2);
+}
+
+// Category badge
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+
+  &--runs-races { background: rgba(235, 151, 79, 0.15); color: darken($orange, 15%); }
+  &--concerts-performances { background: rgba(60, 164, 116, 0.15); color: darken($green, 10%); }
+  &--family-community { background: rgba(243, 174, 20, 0.15); color: darken($yellow, 20%); }
+  &--closures { background: rgba(0, 0, 0, 0.08); color: $zinc; }
 }
 
 // Text alignment helpers
