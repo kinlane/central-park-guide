@@ -142,9 +142,17 @@ def categorize(name, event_type):
     if 'lawn closure' in name_lower or 'meadow closure' in name_lower:
         return 'closures'
 
+    # Runs / races / walks (BEFORE sports/concerts so "Band of Parents 4 Mile Run Walk"
+    # doesn't fall into concerts-performances on "band")
+    if re.search(r'\b(walk|run|race|5k|10k|15k|marathon|jog)\b', name_lower):
+        # but skip if it's actually a training/lesson/class
+        if not any(w in name_lower for w in ['training', 'lesson', 'class ', 'course']):
+            return 'runs-races'
+
     # Education: school programs, training, mini-camps
     edu_signals = ['sss cpe', 'sss cpw', 'mini-camp', 'mini camp',
-                   'soc-roc', 'socroc', 'soccer training', 'sports training']
+                   'soc-roc', 'socroc', 'soccer training', 'sports training',
+                   'training', 'tutorial']
     if any(s in name_lower for s in edu_signals):
         return 'education'
 
@@ -157,7 +165,7 @@ def categorize(name, event_type):
     if name_stripped in ('party', 'picnic', 'miscellaneous'):
         return 'private-events'
 
-    # Sports: leagues, training (after edu/private filter to catch sports private events first)
+    # Sports: leagues (event_type) or sport keywords
     if event_type in ('Sport - Adult', 'Sport - Youth'):
         return 'sports'
     if any(kw in name_lower for kw in SPORT_KEYWORDS):
@@ -172,61 +180,136 @@ def categorize(name, event_type):
                                      'marionette', 'puppet']):
         return 'concerts-performances'
 
-    # Runs & races
-    if any(w in name_lower for w in ['5k', '10k', 'marathon', ' run ', 'race',
-                                     'half marathon']):
-        return 'runs-races'
-
     return 'family-community'
 
 
-def get_tags(name, event_type, category=None):
-    n = name.lower()
-    tags = []
-    if event_type == 'Sport - Adult': tags.append('sports')
-    if event_type == 'Sport - Youth': tags.extend(['sports', 'youth'])
-    # Sport types
-    if 'softball' in n: tags.append('softball')
-    if 'baseball' in n: tags.append('baseball')
-    if 't-ball' in n or 't ball' in n: tags.append('t-ball')
-    if 'soccer' in n: tags.append('soccer')
-    if 'tennis' in n: tags.append('tennis')
-    if 'kickball' in n: tags.append('kickball')
-    if 'pickleball' in n: tags.append('pickleball')
-    if 'frisbee' in n: tags.append('frisbee')
-    if 'bowling' in n and 'lawn' not in n: tags.append('bowling')
-    if 'model yacht' in n or 'yacht racing' in n: tags.append('model-yachting')
-    if any(w in n for w in ['roller', 'skate circle', 'cpdsa', 'skating']): tags.append('skating')
-    # Music & performance
-    if any(w in n for w in ['music', 'concert', 'jazz', 'band', 'choir', 'symphonic']):
-        tags.append('music')
-    if 'salsa' in n: tags.append('salsa')
-    if 'dance' in n: tags.append('dance')
-    if any(w in n for w in ['shakespeare', 'julius caesar', 'midsummer', 'macbeth',
-                            'hamlet', 'marionette', 'puppet', 'theater', 'theatre']):
-        tags.append('theater')
-    # Weddings & private
-    if any(w in n for w in ['wedding', 'elopement', 'ceremony']): tags.append('wedding')
-    if category == 'private-events': tags.append('private-booking')
-    # School programs
-    if any(s in n for s in ['sss cpe', 'sss cpw', 'mini-camp', 'mini camp',
-                            'school', 'cpsports', 'soccer training']):
-        tags.append('school-program')
+TAG_RULES = [
+    # Sports
+    (r'\bsoftball\b', 'softball'),
+    (r'\bbaseball\b', 'baseball'),
+    (r't[ -]?ball\b', 't-ball'),
+    (r'\bsoccer\b', 'soccer'),
+    (r'\btennis\b', 'tennis'),
+    (r'\bkickball\b', 'kickball'),
+    (r'\bpickleball\b', 'pickleball'),
+    (r'\bbasketball\b', 'basketball'),
+    (r'\bvolleyball\b', 'volleyball'),
+    (r'\blacrosse\b', 'lacrosse'),
+    (r'\brugby\b', 'rugby'),
+    (r'\bfootball\b', 'football'),
+    (r'\bcricket\b', 'cricket'),
+    (r'\bfrisbee\b', 'frisbee'),
+    (r'\bultimate\b', 'frisbee'),
+    (r'\b(yacht\s*racing|model\s*yacht)\b', 'model-yachting'),
+    (r'\b(skating|skate\s*circle|cpdsa|roller)\b', 'skating'),
+    (r'\bbowling\b(?!.*\bgreen\b)', 'bowling'),
+    # Walking / running / racing
+    (r'\bwalk\b', 'walk'),
+    (r'\bhike\b', 'hike'),
+    (r'\brun\b(?!\w)', 'running'),
+    (r'\brunning\b', 'running'),
+    (r'\brace\b', 'race'),
+    (r'\bmarathon\b', 'marathon'),
+    (r'\b(5k|10k|15k|half\s*marathon)\b', 'race'),
+    (r'\bjog(ger|ging)?\b', 'running'),
+    # Music / performance
+    (r'\bjazz\b', 'jazz'),
+    (r'\bsalsa\b', 'salsa'),
+    (r'\bdance\b', 'dance'),
+    (r'\b(concert|symphonic|symphony|orchestra|philharmonic|band|choir|dj|songwriter|musical|blues|folk|bluegrass|country|rap|hip[\s-]?hop|gospel)\b', 'music'),
+    (r'\b(opera|operatic)\b', 'opera'),
+    (r'\b(theater|theatre|shakespeare|julius caesar|midsummer|macbeth|hamlet|romeo|king lear|othello|tempest|twelfth night|much ado|marionette|puppet|drama)\b', 'theater'),
+    (r'\b(film|movie|cinema|screening)\b', 'film'),
+    (r'\b(art|exhibit|gallery)\b', 'art'),
+    (r'\bperformance\b', 'performance'),
+    # Charity / fundraising
+    (r'\b(charity|fundrais|gala|benefit|donation)\b', 'charity'),
+    (r'\bluncheon\b', 'fundraiser'),
+    # Family / kids
+    (r'\b(kid|children|family|families)\b', 'family'),
+    (r'\bbirthday\b', 'birthday'),
+    (r'\b(school|hs\b|high school|middle school|elementary)\b', 'school-program'),
+    (r'\b(camp|mini-?camp|workshop|class|lesson|training|tutorial)\b', 'education'),
+    (r'\b(sss\s*cp|cpsports)\b', 'school-program'),
+    # Private / ceremony
+    (r'\bwedding\b', 'wedding'),
+    (r'\belopement\b', 'wedding'),
+    (r'\bceremony\b', 'ceremony'),
+    (r'\b(memorial|funeral|tribute)\b', 'memorial'),
+    (r'\bbar\s*mitzvah|bat\s*mitzvah\b', 'ceremony'),
+    (r'\b(reception|engagement)\b', 'celebration'),
+    (r'\b(party|celebration|reunion)\b', 'celebration'),
+    (r'\bbaptism\b', 'ceremony'),
+    # Outdoor / nature
+    (r'\b(bird|birding|birds)\b', 'birds'),
+    (r'\bnature\b', 'nature'),
+    (r'\bgarden\b', 'garden'),
+    (r'\b(picnic|cook[\s-]?out|bbq|barbecue|barbeque)\b', 'picnic'),
+    (r'\b(fish|fishing)\b', 'fishing'),
+    (r'\b(boat|boating|kayak|rowing|paddle)\b', 'boating'),
+    # Wellness
+    (r'\byoga\b', 'wellness'),
+    (r'\b(meditat|mindful)\b', 'wellness'),
+    (r'\bfitness\b', 'fitness'),
+    (r'\b(zumba|aerobic|pilates)\b', 'fitness'),
+    (r'\bstretch\b', 'wellness'),
+    # Holidays
+    (r'\b(holiday|christmas|hanukkah|kwanzaa|halloween|thanksgiving|easter|juneteenth)\b', 'holiday'),
+    (r'\b(pumpkin|harvest)\b', 'fall'),
+    (r'\b(cherry blossom|blossom)\b', 'spring'),
+    # Pets
+    (r'\bdog\b', 'dogs'),
+    (r'\bbark\b', 'dogs'),
     # Annual traditions
-    annuals = ['frederick law olmsted', 'great pumpkin', 'harvest festival',
-               'pumpkin flotilla', 'holiday lighting', 'open house',
-               'juneteenth', 'cherry blossom', 'fall foliage']
-    if any(s in n for s in annuals): tags.append('annual-tradition')
-    # Misc
-    if 'festival' in n: tags.append('festival')
-    if 'lawn closure' in n or 'meadow closure' in n: tags.extend(['closure', 'lawn'])
-    if 'free' in n: tags.append('free')
-    if 'chess' in n: tags.append('chess')
-    if 'yoga' in n: tags.append('wellness')
-    if 'bark' in n or 'dog' in n: tags.append('dogs')
-    if 'race' in n or 'marathon' in n or '5k' in n or '10k' in n: tags.append('running')
-    if not tags: tags.append('community')
-    return list(set(tags))
+    (r'\b(annual|tradition)\b', 'annual-tradition'),
+    (r'\b(frederick law olmsted|olmsted)\b', 'annual-tradition'),
+    (r'\b(open house ny|ohny)\b', 'annual-tradition'),
+    (r'\b(great pumpkin|harvest festival|pumpkin flotilla|holiday lighting|fall foliage)\b', 'annual-tradition'),
+    # Communities
+    (r'\b(LGBTQ|pride|queer)\b', 'lgbtq'),
+    # Free
+    (r'\bfree\b', 'free'),
+    # Closures / maintenance
+    (r'\b(lawn closure|meadow closure)\b', 'closure'),
+    (r'\bmaintenance\b', 'maintenance'),
+    # Other
+    (r'\b(chess|checkers)\b', 'chess'),
+    (r'\b(festival|fair)\b', 'festival'),
+    (r'\b(parade|march)\b', 'parade'),
+    (r'\b(speech|talk|lecture|seminar|panel|forum)\b', 'talk'),
+    (r'\b(book|reading|poetry|writer)\b', 'literature'),
+    (r'\b(food\s*truck|culinary|cooking)\b', 'food'),
+    (r'\b(market|farmers\s*market|farm\s*stand)\b', 'market'),
+    (r'\b(bike|biking|cycling|cyclist)\b', 'cycling'),
+    (r'\b(media|press|interview)\b', 'media'),
+]
+
+def get_tags(name, event_type, category=None):
+    text = (name + ' ' + (event_type or '')).lower()
+    tags = set()
+    for pattern, tag in TAG_RULES:
+        if re.search(pattern, text, re.IGNORECASE):
+            tags.add(tag)
+    # Sport-type roll-up
+    if event_type in ('Sport - Adult', 'Sport - Youth'):
+        tags.add('sports')
+        if event_type == 'Sport - Youth':
+            tags.add('youth')
+    if tags & {'softball','baseball','t-ball','soccer','tennis','kickball','pickleball','basketball','volleyball','lacrosse','rugby','football','cricket'}:
+        tags.add('sports')
+    # Category-based tags
+    if category == 'private-events':
+        tags.add('private-booking')
+    if category == 'closures':
+        tags.add('closure')
+    if category == 'maintenance':
+        tags.add('maintenance')
+    if category == 'education':
+        tags.add('education')
+    # Fallback
+    if not tags:
+        tags.add('community')
+    return sorted(tags)
 
 
 def clean_location(loc):

@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - media
 ---
 
 Media Challenge takes place at Lower Loop in Central Park on Tuesday, May 12, 2026.

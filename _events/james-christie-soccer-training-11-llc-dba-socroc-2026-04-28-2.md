@@ -15,8 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
+  - education
   - soccer
-  - school-program
+  - sports
 ---
 
 James Christie Soccer Training 11 takes place at South Dead Road A in Central Park on Tuesday, April 28, 2026.

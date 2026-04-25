@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - baseball
   - sports
+  - t-ball
+  - youth
 ---
 
 Baseball - T-ball takes place at Heckscher Fields-Softball-03 in Central Park on Saturday, May 9, 2026.

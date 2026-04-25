@@ -15,8 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
+  - education
   - soccer
-  - school-program
+  - sports
 ---
 
 James Christie Soccer Training 11 LLC, DBA SocRoc takes place at South Dead Road A in Central Park on Monday, April 20, 2026.

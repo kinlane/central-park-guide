@@ -17,6 +17,7 @@ police_precinct: "22"
 tags:
   - softball
   - sports
+  - t-ball
 ---
 
 Softball - Adults takes place at Great Lawn-Softball-06 in Central Park on Saturday, April 18, 2026.

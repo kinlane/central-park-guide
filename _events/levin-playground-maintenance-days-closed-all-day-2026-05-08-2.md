@@ -15,7 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - closure
+  - maintenance
 ---
 
 Levin Playground - Maintenance Days - Closed All Day takes place at Lawn Outside Levin Playground (Section A), Lawn Outside Levin Playground (Section B) in Central Park on Friday, May 8, 2026.

@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - t-ball
+  - youth
 ---
 
 Softball - Adults takes place at Great Lawn-Softball-08 in Central Park on Saturday, May 9, 2026.

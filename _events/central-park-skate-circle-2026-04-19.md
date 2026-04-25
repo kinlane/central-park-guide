@@ -16,7 +16,6 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - skating
-  - roller-skating
 ---
 
 Central Park Skate Circle takes place at Dead Road North in Central Park on Sunday, April 19, 2026.

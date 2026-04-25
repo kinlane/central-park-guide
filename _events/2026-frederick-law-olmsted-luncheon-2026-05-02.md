@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - annual-tradition
+  - fundraiser
 ---
 
 2026 Frederick Law Olmsted Luncheon takes place at 5th Ave Sidewalk-97 St-Duke Ellington Circle in Central Park on Saturday, May 2, 2026.

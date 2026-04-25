@@ -17,6 +17,7 @@ police_precinct: "22"
 tags:
   - baseball
   - sports
+  - t-ball
 ---
 
 Baseball - T-ball takes place at Heckscher Fields-Softball-05 in Central Park on Saturday, April 25, 2026.

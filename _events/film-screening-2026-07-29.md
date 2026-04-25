@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - film
 ---
 
 Film Screening takes place at Great Hill Oval, Great Hill North in Central Park on Wednesday, July 29, 2026.

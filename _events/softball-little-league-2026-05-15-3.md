@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - t-ball
+  - youth
 ---
 
 Softball (Little League) takes place at Great Lawn-Softball-03 in Central Park on Friday, May 22, 2026.

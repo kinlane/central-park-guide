@@ -17,6 +17,7 @@ police_precinct: "22"
 tags:
   - baseball
   - sports
+  - t-ball
 ---
 
 Baseball - T-ball takes place at North Meadow-Softball-12 in Central Park on Thursday, July 23, 2026.

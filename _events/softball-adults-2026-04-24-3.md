@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - t-ball
+  - youth
 ---
 
 Softball - Adults takes place at North Meadow-Softball-02 in Central Park on Friday, April 24, 2026.

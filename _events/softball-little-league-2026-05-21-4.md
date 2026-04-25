@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - t-ball
+  - youth
 ---
 
 Softball (Little League) takes place at North Meadow-Softball-08 in Central Park on Thursday, May 21, 2026.

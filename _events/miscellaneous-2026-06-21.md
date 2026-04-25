@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - sports
   - private-booking
+  - sports
 ---
 
 Miscellaneous takes place at North Meadow-Softball-02 in Central Park on Sunday, June 21, 2026.

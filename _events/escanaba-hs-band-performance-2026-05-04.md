@@ -16,6 +16,8 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - music
+  - performance
+  - school-program
 ---
 
 Escanaba HS Band Performance takes place at Bandshell Plaza in Central Park on Monday, May 4, 2026.

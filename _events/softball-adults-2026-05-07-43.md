@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - t-ball
+  - youth
 ---
 
 Softball - Adults takes place at Heckscher Fields-Softball-01 in Central Park on Thursday, May 7, 2026.

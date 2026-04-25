@@ -16,7 +16,8 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - bowling
-  - lawn-bowling
+  - closure
+  - maintenance
 ---
 
 Bowling Greens - Maintenance Day - Closed All Day takes place at Bowling Green Lawn in Central Park on Friday, May 22, 2026.

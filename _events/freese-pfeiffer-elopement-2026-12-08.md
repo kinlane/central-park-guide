@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
   - private-booking
+  - wedding
 ---
 
 Freese-pfeiffer Elopement takes place at Ladies' Pavilion in Central Park on Tuesday, December 8, 2026.

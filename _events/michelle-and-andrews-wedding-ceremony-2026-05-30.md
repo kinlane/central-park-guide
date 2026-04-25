@@ -15,8 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
+  - ceremony
   - private-booking
+  - wedding
 ---
 
 Michelle and Andrew's Wedding Ceremony takes place at Bethesda Fountain Terrace in Central Park on Saturday, May 30, 2026.

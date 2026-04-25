@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - sports
   - private-booking
+  - sports
 ---
 
 Miscellaneous takes place at Great Lawn-Softball-03 in Central Park on Sunday, April 26, 2026.

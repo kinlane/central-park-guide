@@ -15,9 +15,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - t-ball
+  - youth
 ---
 
 Softball (Little League) takes place at Heckscher Fields-Softball-06 in Central Park on Thursday, April 30, 2026.

@@ -14,44 +14,6 @@ sitemap: false
 .admin-header h1 { color: #fff; font-size: 2rem; }
 .admin-header p { color: rgba(255,255,255,0.7); }
 
-.admin-controls {
-  padding: 24px 0;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 72px;
-  background: #fff;
-  z-index: 50;
-}
-.admin-controls .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  align-items: center;
-}
-
-.admin-stats {
-  display: flex;
-  gap: 24px;
-  font-size: 0.85rem;
-  color: rgba(0,0,0,0.6);
-}
-.admin-stats strong { color: #000; }
-
-.admin-filter-bar {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.admin-filter-bar select, .admin-filter-bar input {
-  padding: 8px 14px;
-  border: 2px solid #ddd;
-  border-radius: 8px;
-  font-family: inherit;
-  font-size: 0.85rem;
-  outline: none;
-}
-.admin-filter-bar select:focus, .admin-filter-bar input:focus { border-color: #3ca474; }
-
 .event-row {
   border: 1px solid #eee;
   border-radius: 12px;
@@ -79,9 +41,7 @@ sitemap: false
   flex-wrap: wrap;
   margin-top: 6px;
 }
-.event-row__meta span {
-  font-weight: 600;
-}
+.event-row__meta span { font-weight: 600; }
 .event-row__meta .meta-label {
   background: #f0f0f0;
   padding: 2px 10px;
@@ -141,9 +101,6 @@ sitemap: false
 .btn-save { background: #3ca474; color: #fff; }
 .btn-save:hover { background: #2d8a5e; }
 .btn-save:disabled { background: #ccc; cursor: not-allowed; }
-.btn-toggle { background: #f5f5f5; color: #333; border: 1px solid #ddd; }
-.btn-toggle:hover { background: #eee; }
-.btn-toggle.active { background: #3ca474; color: #fff; border-color: #3ca474; }
 
 .save-status {
   font-size: 0.8rem;
@@ -181,6 +138,134 @@ sitemap: false
   color: rgba(0,0,0,0.5);
 }
 .no-token h2 { color: #e74c3c; }
+
+.admin-stats {
+  display: flex;
+  gap: 24px;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.6);
+  margin-top: 16px;
+}
+.admin-stats strong { color: #000; }
+
+/* Shared filter chip styles (matching events page) */
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  background: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+  color: rgba(0,0,0,0.7);
+}
+.filter-chip:hover { border-color: #3ca474; color: #3ca474; }
+.filter-chip.active { background: #3ca474; border-color: #3ca474; color: #fff; }
+.filter-chip__count { opacity: 0.65; font-size: 0.75rem; }
+.filter-chip.active .filter-chip__count { opacity: 0.85; }
+
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.filter-row__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(0,0,0,0.45);
+  margin-right: 6px;
+  min-width: 70px;
+}
+
+/* Include/Exclude mode toggle */
+.mode-toggle {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #fff;
+}
+.mode-toggle button {
+  background: #fff;
+  border: none;
+  padding: 8px 18px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: rgba(0,0,0,0.55);
+  transition: all 0.15s;
+}
+.mode-toggle button.active.include { background: #3ca474; color: #fff; }
+.mode-toggle button.active.exclude { background: #e74c3c; color: #fff; }
+.filter-panel.is-exclude .filter-chip.active {
+  background: #e74c3c;
+  border-color: #e74c3c;
+}
+
+/* Collapsible filter panel */
+.filter-panel {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.filter-panel__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+.filter-panel__header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.filter-panel__count {
+  background: #3ca474;
+  color: #fff;
+  padding: 2px 10px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+.filter-panel__toggle {
+  background: none;
+  border: none;
+  color: rgba(0,0,0,0.5);
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.filter-panel__toggle::before {
+  content: '▼';
+  font-size: 0.65rem;
+  transition: transform 0.2s;
+}
+.filter-panel.is-collapsed .filter-panel__toggle::before { transform: rotate(-90deg); }
+.filter-panel__body {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+.filter-panel.is-collapsed .filter-panel__body { display: none; }
 </style>
 
 <div class="admin-header">
@@ -196,38 +281,106 @@ sitemap: false
 </div>
 
 <div id="admin-app" style="display:none;">
-  <div class="admin-controls">
-    <div class="container">
-      <div class="admin-filter-bar">
-        <select id="admin-status-filter">
-          <option value="all">All events</option>
-          <option value="updated">Edited (unsaved)</option>
-        </select>
-        <select id="admin-category-filter">
-          <option value="all">All categories</option>
-          <option value="sports">Sports</option>
-          <option value="runs-races">Runs & Races</option>
-          <option value="concerts-performances">Concerts & Performances</option>
-          <option value="family-community">Family & Community</option>
-          <option value="education">Education</option>
-          <option value="private-events">Private Events</option>
-          <option value="closures">Closures</option>
-          <option value="maintenance">Maintenance</option>
-        </select>
-        <select id="admin-place-filter">
-          <option value="all">All locations</option>
-        </select>
-        <input type="date" id="admin-date-filter" style="min-width:160px;">
-        <input type="text" id="admin-search" placeholder="Search events...">
-      </div>
-      <div class="admin-stats" id="admin-stats"></div>
-    </div>
-  </div>
+  <section class="bg-ash" style="padding: 32px 0 96px;">
+  <div class="container">
 
-  <div class="container" style="padding-top: 24px;">
+    <!-- Search -->
+    <div class="search-bar">
+      <svg class="search-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" id="event-search" placeholder="Search events by name, location, or keyword...">
+    </div>
+
+    <!-- Always-on When/Time/Status filters (not affected by include/exclude mode) -->
+    <div style="background:#fff;border:1px solid #eee;border-radius:12px;padding:16px 20px;margin-bottom:16px;">
+      <div class="filter-row" style="margin-bottom: 10px;">
+        <span class="filter-row__label">Status:</span>
+        <button class="filter-chip active" data-status="all">All <span class="filter-chip__count" id="count-status-all"></span></button>
+        <button class="filter-chip" data-status="updated">Edited (unsaved) <span class="filter-chip__count" id="count-status-updated"></span></button>
+      </div>
+      <div class="filter-row" style="margin-bottom: 10px;">
+        <span class="filter-row__label">When:</span>
+        <button class="filter-chip" data-date-quick="today">Today</button>
+        <button class="filter-chip" data-date-quick="weekend">This weekend</button>
+        <button class="filter-chip" data-date-quick="week">Next 7 days</button>
+        <button class="filter-chip" data-date-quick="month">Next 30 days</button>
+        <input type="date" id="admin-date-filter" style="padding:6px 12px;border:1px solid #ddd;border-radius:20px;font-family:inherit;font-size:0.85rem;">
+      </div>
+      <div class="filter-row" style="margin-bottom: 0;">
+        <span class="filter-row__label">Time:</span>
+        <button class="filter-chip" data-time-of-day="morning">🌅 Morning</button>
+        <button class="filter-chip" data-time-of-day="afternoon">☀️ Afternoon</button>
+        <button class="filter-chip" data-time-of-day="evening">🌆 Evening</button>
+      </div>
+    </div>
+
+    <!-- Collapsible filter panel: taxonomy filters, subject to include/exclude -->
+    <div class="filter-panel" id="filter-panel">
+      <div class="filter-panel__header" id="filter-panel-toggle">
+        <h3>Filters <span class="filter-panel__count" id="filter-panel-count" style="display:none;">0</span></h3>
+        <div style="display:flex;gap:12px;align-items:center;">
+          <div class="mode-toggle" id="filter-mode-toggle" title="Switch between including events that match the filters, or excluding them">
+            <button type="button" class="include active" data-mode="include">Include</button>
+            <button type="button" class="exclude" data-mode="exclude">Exclude</button>
+          </div>
+          <button class="filter-panel__toggle" type="button">Hide</button>
+        </div>
+      </div>
+      <div class="filter-panel__body">
+
+        <!-- Category -->
+        <div class="filter-row">
+          <span class="filter-row__label">Type:</span>
+          <button class="filter-chip active" data-filter="all">All <span class="filter-chip__count" id="count-all"></span></button>
+          <button class="filter-chip" data-filter="sports">Sports <span class="filter-chip__count" id="count-sports"></span></button>
+          <button class="filter-chip" data-filter="runs-races">Runs &amp; Races <span class="filter-chip__count" id="count-runs-races"></span></button>
+          <button class="filter-chip" data-filter="concerts-performances">Concerts <span class="filter-chip__count" id="count-concerts-performances"></span></button>
+          <button class="filter-chip" data-filter="family-community">Family &amp; Community <span class="filter-chip__count" id="count-family-community"></span></button>
+          <button class="filter-chip" data-filter="education">Education <span class="filter-chip__count" id="count-education"></span></button>
+          <button class="filter-chip" data-filter="private-events">Private Events <span class="filter-chip__count" id="count-private-events"></span></button>
+          <button class="filter-chip" data-filter="closures">Closures <span class="filter-chip__count" id="count-closures"></span></button>
+          <button class="filter-chip" data-filter="maintenance">Maintenance <span class="filter-chip__count" id="count-maintenance"></span></button>
+        </div>
+
+        <!-- Sport sub-filter (only when sports active) -->
+        <div class="filter-row" id="sport-sub-row" style="display:none;">
+          <span class="filter-row__label">Sport:</span>
+          <button class="filter-chip" data-sport="all">All sports</button>
+        </div>
+
+        <!-- Tag chips -->
+        <div class="filter-row" id="tag-row">
+          <span class="filter-row__label">Tags:</span>
+        </div>
+
+        <!-- Area chips -->
+        <div class="filter-row" id="area-row">
+          <span class="filter-row__label">Area:</span>
+        </div>
+
+        <!-- Location dropdown -->
+        <div class="filter-row">
+          <span class="filter-row__label">Location:</span>
+          <select id="place-filter" style="padding:8px 14px;border:1px solid #ddd;border-radius:20px;font-family:inherit;font-size:0.85rem;background:white;cursor:pointer;outline:none;min-width:240px;">
+            <option value="all">All locations</option>
+          </select>
+        </div>
+
+      </div><!-- /filter-panel__body -->
+    </div><!-- /filter-panel -->
+
+    <!-- Active filters -->
+    <div id="active-filters" style="display:none;margin: 16px 0;">
+      <span style="font-size:0.85rem;color:rgba(0,0,0,0.5);">Active filters:</span>
+      <span id="filter-badges" style="display:inline-flex;flex-wrap:wrap;gap:8px;margin-left:8px;"></span>
+      <button id="clear-filters" style="background:none;border:none;color:#3ca474;font-weight:600;font-size:0.85rem;cursor:pointer;margin-left:12px;">Clear all</button>
+    </div>
+
+    <p class="results-count" id="results-count" style="margin-top: 8px;"></p>
+
     <div id="events-list"></div>
     <div class="admin-pagination" id="admin-pagination"></div>
   </div>
+  </section>
 </div>
 
 <!-- ALL future events as JSON for admin -->
@@ -240,7 +393,7 @@ sitemap: false
 {%- assign event_date = event.date | date: '%Y-%m-%d' -%}
 {%- if event_date >= now -%}
 {%- if first %}{% assign first = false %}{% else %},{% endif -%}
-{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":"{{ event.tags | join: ', ' }}","eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
+{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
 {%- endif -%}
 {%- endfor -%}
 ]
@@ -253,74 +406,269 @@ sitemap: false
   var ITEMS_PER_PAGE = 25;
   var API_BASE = 'https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/';
 
-  // Get token from URL
   var params = new URLSearchParams(window.location.search);
   var TOKEN = params.get('token');
-
   if (!TOKEN) {
     document.getElementById('no-token').style.display = '';
     return;
   }
   document.getElementById('admin-app').style.display = '';
 
-  // Parse events
-  var rawJson = document.getElementById('admin-events-data').textContent.trim();
-  // Fix trailing comma before ]
-  rawJson = rawJson.replace(/,\s*\]$/, ']');
-  var allEvents = JSON.parse(rawJson);
+  var allEvents = JSON.parse(document.getElementById('admin-events-data').textContent);
 
-  var currentPage = 1;
-  var statusFilter = 'all';
-  var categoryFilter = 'all';
-  var placeFilter = 'all';
-  var dateFilter = '';
-  var searchQuery = '';
+  // ── State ──────────────────────────────────────────────────────
+  var state = {
+    page: 1,
+    mode: 'include',        // 'include' | 'exclude' (applies to all filters except status)
+    status: 'all',          // all | updated
+    activeCategories: [],   // multi-select category list
+    sport: 'all',
+    place: 'all',
+    activePlaceCats: [],    // multi-select area list
+    timeOfDay: null,
+    dateQuick: null,
+    dateExact: '',
+    activeTags: [],
+    search: ''
+  };
 
-  var listEl = document.getElementById('events-list');
-  var paginationEl = document.getElementById('admin-pagination');
-  var statsEl = document.getElementById('admin-stats');
-  var placeSelect = document.getElementById('admin-place-filter');
+  var categoryLabels = {
+    'sports': 'Sports',
+    'runs-races': 'Runs & Races',
+    'concerts-performances': 'Concerts & Performances',
+    'family-community': 'Family & Community',
+    'education': 'Education',
+    'private-events': 'Private Events',
+    'closures': 'Closures',
+    'maintenance': 'Maintenance'
+  };
 
-  // Populate place dropdown sorted by count
-  var placeCounts = {};
+  var placeCatLabels = {
+    'gates': 'Gates & Entrances', 'plazas': 'Plazas & Circles',
+    'water_bodies': 'Bodies of Water', 'meadows_and_lawns': 'Meadows & Lawns',
+    'natural_areas': 'Natural Areas', 'buildings': 'Buildings & Structures',
+    'recreation': 'Recreation', 'paths_and_drives': 'Paths & Drives',
+    'rocks': 'Named Rocks', 'monuments_and_sculptures': 'Monuments & Sculptures',
+    'arches': 'Arches', 'bridges': 'Bridges', 'rustic_bridges': 'Rustic Bridges',
+    'former_bridges': 'Former Bridges', 'other_features': 'Other Features',
+    'event_venues': 'Event Venues & Grounds'
+  };
+
+  function getSportType(e) {
+    var t = (e.title + ' ' + (Array.isArray(e.tags) ? e.tags.join(' ') : (e.tags || ''))).toLowerCase();
+    if (t.indexOf('softball') !== -1) return 'softball';
+    if (t.indexOf('baseball') !== -1) return 'baseball';
+    if (t.indexOf('soccer') !== -1) return 'soccer';
+    if (t.indexOf('tennis') !== -1) return 'tennis';
+    if (t.indexOf('kickball') !== -1) return 'kickball';
+    if (t.indexOf('pickleball') !== -1) return 'pickleball';
+    if (t.indexOf('frisbee') !== -1) return 'frisbee';
+    if (t.indexOf('basketball') !== -1) return 'basketball';
+    if (t.indexOf('volleyball') !== -1) return 'volleyball';
+    if (t.indexOf('lacrosse') !== -1) return 'lacrosse';
+    return 'other';
+  }
+  function getTimeOfDay(timeStr) {
+    if (!timeStr) return null;
+    var h = parseInt(timeStr.split(':')[0], 10);
+    if (h < 12) return 'morning';
+    if (h < 17) return 'afternoon';
+    return 'evening';
+  }
+  function dateInRange(eventDate, quick) {
+    var today = new Date(); today.setHours(0,0,0,0);
+    var ev = new Date(eventDate + 'T00:00:00');
+    var diff = Math.floor((ev - today) / (1000*60*60*24));
+    if (quick === 'today') return diff === 0;
+    if (quick === 'weekend') {
+      var dow = today.getDay();
+      var toSat = dow === 6 ? 0 : (6 - dow);
+      return diff >= toSat && diff <= toSat + 1;
+    }
+    if (quick === 'week') return diff >= 0 && diff <= 7;
+    if (quick === 'month') return diff >= 0 && diff <= 30;
+    return true;
+  }
+
+  // Pre-compute fields
   allEvents.forEach(function(e) {
-    var p = e.place || e.location;
-    if (p) placeCounts[p] = (placeCounts[p] || 0) + 1;
+    if (!Array.isArray(e.tags)) e.tags = (e.tags || '').split(/[,\s]+/).filter(Boolean);
+    e._sportType = e.category === 'sports' ? getSportType(e) : null;
+    e._timeOfDay = getTimeOfDay(e.time);
   });
-  Object.keys(placeCounts).sort(function(a, b) {
-    return a.localeCompare(b);
-  }).forEach(function(p) {
+
+  // ── Filter ─────────────────────────────────────────────────────
+  // Always-on filters (status/when/time): apply regardless of include/exclude mode
+  function passesAlwaysFilters(e) {
+    if (state.status === 'updated' && !e._updated) return false;
+    if (state.timeOfDay && e._timeOfDay !== state.timeOfDay) return false;
+    if (state.dateQuick && !dateInRange(e.date, state.dateQuick)) return false;
+    if (state.dateExact && e.date !== state.dateExact) return false;
+    return true;
+  }
+
+  // Taxonomy filters (subject to include/exclude mode)
+  // Within multi-select dimensions (categories, tags) -> OR
+  // Across dimensions -> AND
+  function eventMatchesTaxonomyFilters(e) {
+    if (state.activeCategories.length && state.activeCategories.indexOf(e.category) === -1) return false;
+    if (state.sport !== 'all' && state.activeCategories.indexOf('sports') !== -1 && e._sportType !== state.sport) return false;
+    if (state.place !== 'all' && (e.place || e.location) !== state.place) return false;
+    if (state.activePlaceCats.length && state.activePlaceCats.indexOf(e.placeCat) === -1) return false;
+    if (state.activeTags.length) {
+      var hasAnyTag = false;
+      for (var i = 0; i < state.activeTags.length; i++) {
+        if (e.tags.indexOf(state.activeTags[i]) !== -1) { hasAnyTag = true; break; }
+      }
+      if (!hasAnyTag) return false;
+    }
+    if (state.search) {
+      var s = (e.title + ' ' + e.location + ' ' + e.place + ' ' + e.description + ' ' + e.tags.join(' ') + ' ' + e.eventType).toLowerCase();
+      if (s.indexOf(state.search) === -1) return false;
+    }
+    return true;
+  }
+
+  function hasTaxonomyFilters() {
+    return state.activeCategories.length > 0 ||
+           state.sport !== 'all' ||
+           state.place !== 'all' ||
+           state.activePlaceCats.length > 0 ||
+           state.activeTags.length > 0 ||
+           state.search;
+  }
+
+  function getFiltered() {
+    return allEvents.filter(function(e) {
+      if (!passesAlwaysFilters(e)) return false;
+      if (!hasTaxonomyFilters()) return true;
+      var matches = eventMatchesTaxonomyFilters(e);
+      return state.mode === 'exclude' ? !matches : matches;
+    });
+  }
+
+  // ── Build filter UI from data ──────────────────────────────────
+  // Category counts
+  var catCounts = { all: allEvents.length };
+  allEvents.forEach(function(e) { catCounts[e.category] = (catCounts[e.category] || 0) + 1; });
+  Object.keys(catCounts).forEach(function(k) {
+    var el = document.getElementById('count-' + k);
+    if (el) el.textContent = '(' + catCounts[k] + ')';
+  });
+  document.getElementById('count-status-all').textContent = '(' + allEvents.length + ')';
+
+  // Place dropdown
+  var placeSelect = document.getElementById('place-filter');
+  var placeCounts = {};
+  allEvents.forEach(function(e) { var p = e.place || e.location; if (p) placeCounts[p] = (placeCounts[p] || 0) + 1; });
+  Object.keys(placeCounts).sort(function(a,b) { return a.localeCompare(b); }).forEach(function(p) {
     var opt = document.createElement('option');
     opt.value = p;
     opt.textContent = p + ' (' + placeCounts[p] + ')';
     placeSelect.appendChild(opt);
   });
 
-  function getFiltered() {
-    return allEvents.filter(function(e) {
-      if (statusFilter === 'updated' && !e._updated) return false;
-      if (categoryFilter !== 'all' && e.category !== categoryFilter) return false;
-      if (placeFilter !== 'all' && (e.place || e.location) !== placeFilter) return false;
-      if (dateFilter && e.date !== dateFilter) return false;
-      if (searchQuery) {
-        var s = (e.title + ' ' + e.location + ' ' + e.place + ' ' + e.description + ' ' + e.tags).toLowerCase();
-        if (s.indexOf(searchQuery) === -1) return false;
+  // Area chips (multi-select)
+  var pcCounts = {};
+  allEvents.forEach(function(e) { if (e.placeCat) pcCounts[e.placeCat] = (pcCounts[e.placeCat] || 0) + 1; });
+  var areaRow = document.getElementById('area-row');
+  Object.keys(pcCounts).sort(function(a,b) { return pcCounts[b] - pcCounts[a]; }).forEach(function(pc) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.setAttribute('data-area', pc);
+    btn.innerHTML = (placeCatLabels[pc] || pc) + ' <span class="filter-chip__count">(' + pcCounts[pc] + ')</span>';
+    btn.onclick = function() {
+      var idx = state.activePlaceCats.indexOf(pc);
+      if (idx === -1) {
+        state.activePlaceCats.push(pc);
+        btn.classList.add('active');
+      } else {
+        state.activePlaceCats.splice(idx, 1);
+        btn.classList.remove('active');
       }
-      return true;
-    });
+      state.page = 1;
+      render();
+    };
+    areaRow.appendChild(btn);
+  });
+
+  // Sport sub-types
+  var sportRow = document.getElementById('sport-sub-row');
+  var sportCounts = {};
+  allEvents.forEach(function(e) {
+    if (e.category === 'sports' && e._sportType) sportCounts[e._sportType] = (sportCounts[e._sportType] || 0) + 1;
+  });
+  Object.keys(sportCounts).sort(function(a,b) { return sportCounts[b] - sportCounts[a]; }).forEach(function(sp) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.setAttribute('data-sport', sp);
+    btn.innerHTML = sp.charAt(0).toUpperCase() + sp.slice(1) + ' <span class="filter-chip__count">(' + sportCounts[sp] + ')</span>';
+    btn.onclick = function() {
+      state.sport = sp; state.page = 1;
+      sportRow.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
+      btn.classList.add('active');
+      render();
+    };
+    sportRow.appendChild(btn);
+  });
+  sportRow.querySelector('[data-sport="all"]').classList.add('active');
+  sportRow.querySelector('[data-sport="all"]').onclick = function() {
+    state.sport = 'all'; state.page = 1;
+    sportRow.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
+    this.classList.add('active');
+    render();
+  };
+
+  // Tag chips
+  var tagRow = document.getElementById('tag-row');
+  var tagCounts = {};
+  allEvents.forEach(function(e) {
+    e.tags.forEach(function(t) { if (t && t !== 'community') tagCounts[t] = (tagCounts[t] || 0) + 1; });
+  });
+  Object.keys(tagCounts).sort(function(a,b) { return tagCounts[b] - tagCounts[a]; }).slice(0, 18).forEach(function(tag) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.innerHTML = '#' + tag + ' <span class="filter-chip__count">(' + tagCounts[tag] + ')</span>';
+    btn.onclick = function() {
+      var idx = state.activeTags.indexOf(tag);
+      if (idx === -1) { state.activeTags.push(tag); btn.classList.add('active'); }
+      else { state.activeTags.splice(idx, 1); btn.classList.remove('active'); }
+      state.page = 1; render();
+    };
+    tagRow.appendChild(btn);
+  });
+
+  // ── Renderers ──────────────────────────────────────────────────
+  function esc(str) {
+    if (!str) return '';
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+  function escAttr(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function formatTime(t) {
+    if (!t) return '';
+    var p = t.split(':');
+    var h = parseInt(p[0], 10);
+    var ampm = h >= 12 ? 'PM' : 'AM';
+    if (h === 0) h = 12; else if (h > 12) h -= 12;
+    return h + ':' + p[1] + ' ' + ampm;
   }
 
   function renderStats() {
-    var total = allEvents.length;
+    var statsEl = document.getElementById('results-count');
+    var filtered = getFiltered();
     var updated = allEvents.filter(function(e) { return e._updated; }).length;
-    statsEl.innerHTML =
-      '<span>Total future: <strong>' + total + '</strong></span>' +
-      '<span>Edited (unsaved): <strong>' + updated + '</strong></span>';
+    var msg = filtered.length + ' of ' + allEvents.length + ' future events shown';
+    if (updated > 0) msg += ' · ' + updated + ' edited (unsaved)';
+    statsEl.textContent = msg;
   }
 
   function renderEvent(e, idx) {
     var stateClass = e._updated ? 'is-updated' : '';
-
     return '<div class="event-row ' + stateClass + '" data-idx="' + idx + '">' +
       '<div class="event-row__header">' +
         '<div>' +
@@ -330,7 +678,8 @@ sitemap: false
             '<span class="meta-label">' + formatTime(e.time) + '</span>' +
             '<span class="meta-label">' + esc(e.place || e.location) + '</span>' +
             '<span class="category-badge category-badge--' + e.category + '" style="font-size:0.7rem;">' + esc(e.category) + '</span>' +
-            (e.source ? '<span>via ' + esc(e.source) + '</span>' : '') +
+            (e.eventType ? '<span class="meta-label">' + esc(e.eventType) + '</span>' : '') +
+            (e.source ? '<span style="font-size:0.8rem;color:rgba(0,0,0,0.5);">via ' + esc(e.source) + '</span>' : '') +
           '</div>' +
         '</div>' +
       '</div>' +
@@ -343,14 +692,9 @@ sitemap: false
         '<div><label>Place</label><input type="text" value="' + escAttr(e.place || '') + '" onchange="updateField(' + idx + ',\'place\',this.value)"></div>' +
         '<div><label>Category</label>' +
           '<select onchange="updateField(' + idx + ',\'category\',this.value)">' +
-            '<option value="sports"' + (e.category === 'sports' ? ' selected' : '') + '>Sports</option>' +
-            '<option value="runs-races"' + (e.category === 'runs-races' ? ' selected' : '') + '>Runs & Races</option>' +
-            '<option value="concerts-performances"' + (e.category === 'concerts-performances' ? ' selected' : '') + '>Concerts & Performances</option>' +
-            '<option value="family-community"' + (e.category === 'family-community' ? ' selected' : '') + '>Family & Community</option>' +
-            '<option value="education"' + (e.category === 'education' ? ' selected' : '') + '>Education</option>' +
-            '<option value="private-events"' + (e.category === 'private-events' ? ' selected' : '') + '>Private Events</option>' +
-            '<option value="closures"' + (e.category === 'closures' ? ' selected' : '') + '>Closures</option>' +
-            '<option value="maintenance"' + (e.category === 'maintenance' ? ' selected' : '') + '>Maintenance</option>' +
+            Object.keys(categoryLabels).map(function(k) {
+              return '<option value="' + k + '"' + (e.category === k ? ' selected' : '') + '>' + categoryLabels[k] + '</option>';
+            }).join('') +
           '</select>' +
         '</div>' +
         '<div><label>Image</label><input type="text" value="' + escAttr(e.image || '') + '" onchange="updateField(' + idx + ',\'image\',this.value)"></div>' +
@@ -366,91 +710,120 @@ sitemap: false
   }
 
   function render() {
+    document.getElementById('sport-sub-row').style.display = state.activeCategories.indexOf('sports') !== -1 ? '' : 'none';
+    var statusUpdated = document.getElementById('count-status-updated');
+    var updatedCount = allEvents.filter(function(e) { return e._updated; }).length;
+    if (statusUpdated) statusUpdated.textContent = '(' + updatedCount + ')';
+
+    updateActiveFilters();
+
     var filtered = getFiltered();
     var totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
-    if (currentPage > totalPages) currentPage = totalPages || 1;
-
-    var start = (currentPage - 1) * ITEMS_PER_PAGE;
+    if (state.page > totalPages) state.page = totalPages || 1;
+    var start = (state.page - 1) * ITEMS_PER_PAGE;
     var pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
 
-    // We need the original index for each event
-    var html = '';
-    pageItems.forEach(function(e) {
-      var origIdx = allEvents.indexOf(e);
-      html += renderEvent(e, origIdx);
-    });
-
-    if (filtered.length === 0) {
-      html = '<div style="text-align:center;padding:48px;color:rgba(0,0,0,0.4);">No events match your filters.</div>';
-    }
-
+    var listEl = document.getElementById('events-list');
+    var html = pageItems.map(function(e) { return renderEvent(e, allEvents.indexOf(e)); }).join('');
+    if (filtered.length === 0) html = '<div style="text-align:center;padding:48px;color:rgba(0,0,0,0.4);">No events match your filters.</div>';
     listEl.innerHTML = html;
+
     renderStats();
     renderPagination(totalPages);
   }
 
   function renderPagination(totalPages) {
-    paginationEl.innerHTML = '';
+    var pagination = document.getElementById('admin-pagination');
+    pagination.innerHTML = '';
     if (totalPages <= 1) return;
 
     var prev = document.createElement('button');
-    prev.textContent = 'Prev';
-    prev.disabled = currentPage === 1;
-    prev.onclick = function() { currentPage--; render(); window.scrollTo(0, 200); };
-    paginationEl.appendChild(prev);
+    prev.textContent = 'Prev'; prev.disabled = state.page === 1;
+    prev.onclick = function() { state.page--; render(); window.scrollTo(0, 200); };
+    pagination.appendChild(prev);
 
     var info = document.createElement('span');
-    info.textContent = 'Page ' + currentPage + ' of ' + totalPages + ' (' + getFiltered().length + ' events)';
+    info.textContent = 'Page ' + state.page + ' of ' + totalPages + ' (' + getFiltered().length + ' events)';
     info.style.cssText = 'font-size:0.85rem;color:rgba(0,0,0,0.5);margin:0 16px;';
-    paginationEl.appendChild(info);
+    pagination.appendChild(info);
 
     var next = document.createElement('button');
-    next.textContent = 'Next';
-    next.disabled = currentPage === totalPages;
-    next.onclick = function() { currentPage++; render(); window.scrollTo(0, 200); };
-    paginationEl.appendChild(next);
+    next.textContent = 'Next'; next.disabled = state.page === totalPages;
+    next.onclick = function() { state.page++; render(); window.scrollTo(0, 200); };
+    pagination.appendChild(next);
   }
 
-  // Global functions for inline handlers
+  // ── Active filters display ─────────────────────────────────────
+  function updateActiveFilters() {
+    // alwaysBadges: status, when, time (always green, always include)
+    var alwaysBadges = [];
+    if (state.status !== 'all') alwaysBadges.push(state.status === 'updated' ? 'Edited' : state.status);
+    if (state.timeOfDay) alwaysBadges.push(state.timeOfDay);
+    if (state.dateQuick) alwaysBadges.push(state.dateQuick);
+    if (state.dateExact) alwaysBadges.push(state.dateExact);
+    // taxBadges: subject to include/exclude mode
+    var taxBadges = [];
+    state.activeCategories.forEach(function(c) { taxBadges.push(categoryLabels[c] || c); });
+    if (state.sport !== 'all') taxBadges.push(state.sport);
+    if (state.place !== 'all') taxBadges.push(state.place);
+    state.activePlaceCats.forEach(function(pc) { taxBadges.push(placeCatLabels[pc] || pc); });
+    state.activeTags.forEach(function(t) { taxBadges.push('#' + t); });
+    if (state.search) taxBadges.push('"' + state.search + '"');
+
+    var total = alwaysBadges.length + taxBadges.length;
+    var el = document.getElementById('active-filters');
+    var countEl = document.getElementById('filter-panel-count');
+    if (total === 0) {
+      el.style.display = 'none';
+      if (countEl) countEl.style.display = 'none';
+      return;
+    }
+    el.style.display = '';
+    if (countEl) {
+      countEl.textContent = taxBadges.length;
+      countEl.style.display = taxBadges.length > 0 ? '' : 'none';
+    }
+    var taxBg = state.mode === 'exclude' ? '#e74c3c' : '#3ca474';
+    var taxPrefix = state.mode === 'exclude' ? 'NOT ' : '';
+    var html = alwaysBadges.map(function(b) {
+      return '<span style="background:#3ca474;color:white;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:600;">' + esc(String(b)) + '</span>';
+    }).join('');
+    html += taxBadges.map(function(b) {
+      return '<span style="background:' + taxBg + ';color:white;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:600;">' + taxPrefix + esc(String(b)) + '</span>';
+    }).join('');
+    document.getElementById('filter-badges').innerHTML = html;
+  }
+
+  // ── Edit handlers ──────────────────────────────────────────────
   window.updateField = function(idx, field, value) {
     allEvents[idx][field] = value;
     allEvents[idx]._updated = true;
-    // Enable save button
     var btn = document.querySelector('[data-idx="' + idx + '"] .btn-save');
     if (btn) btn.disabled = false;
-    // Update row styling
     var row = document.querySelector('[data-idx="' + idx + '"]');
-    if (row) {
-      row.className = 'event-row is-updated';
-    }
+    if (row) row.className = 'event-row is-updated';
     renderStats();
+    var statusUpdated = document.getElementById('count-status-updated');
+    var updatedCount = allEvents.filter(function(e) { return e._updated; }).length;
+    if (statusUpdated) statusUpdated.textContent = '(' + updatedCount + ')';
   };
 
   window.saveEvent = async function(idx) {
     var e = allEvents[idx];
     var statusEl = document.getElementById('status-' + idx);
     var row = document.querySelector('[data-idx="' + idx + '"]');
-
     statusEl.className = 'save-status saving';
     statusEl.textContent = 'Saving...';
     if (row) row.classList.add('is-saving');
-
     try {
-      // 1. GET current file to get SHA
       var getResp = await fetch(API_BASE + e.path, {
         headers: { 'Authorization': 'token ' + TOKEN, 'Accept': 'application/vnd.github.v3+json' }
       });
       if (!getResp.ok) throw new Error('GET failed: ' + getResp.status);
       var fileData = await getResp.json();
       var sha = fileData.sha;
-
-      // 2. Decode current content
       var currentContent = atob(fileData.content.replace(/\n/g, ''));
-
-      // 3. Build updated front matter
       var updatedContent = rebuildFrontMatter(currentContent, e);
-
-      // 4. PUT updated file
       var putResp = await fetch(API_BASE + e.path, {
         method: 'PUT',
         headers: {
@@ -465,13 +838,10 @@ sitemap: false
         })
       });
       if (!putResp.ok) throw new Error('PUT failed: ' + putResp.status);
-
       e._updated = false;
       statusEl.className = 'save-status saved';
       statusEl.textContent = 'Saved';
-      if (row) {
-        row.classList.remove('is-saving', 'is-updated');
-      }
+      if (row) row.classList.remove('is-saving', 'is-updated');
       var btn = row.querySelector('.btn-save');
       if (btn) btn.disabled = true;
       renderStats();
@@ -483,14 +853,10 @@ sitemap: false
   };
 
   function rebuildFrontMatter(content, e) {
-    // Split into front matter and body
     var parts = content.split('---');
     if (parts.length < 3) return content;
-
     var fm = parts[1];
     var body = parts.slice(2).join('---');
-
-    // Update fields in front matter
     fm = replaceYamlField(fm, 'title', '"' + e.title.replace(/"/g, '\\"') + '"');
     fm = replaceYamlField(fm, 'date', e.date);
     fm = replaceYamlField(fm, 'time', '"' + e.time + '"');
@@ -500,66 +866,155 @@ sitemap: false
     fm = replaceYamlField(fm, 'category', '"' + e.category + '"');
     fm = replaceYamlField(fm, 'image', '"' + (e.image || '') + '"');
     fm = replaceYamlField(fm, 'description', '"' + (e.description || '').replace(/"/g, '\\"') + '"');
-
     return '---' + fm + '---' + body;
   }
-
   function replaceYamlField(fm, key, value) {
     var regex = new RegExp('^(' + key + ':)\\s*.*$', 'm');
-    if (regex.test(fm)) {
-      return fm.replace(regex, '$1 ' + value);
-    }
-    // If field doesn't exist, add it before the end
+    if (regex.test(fm)) return fm.replace(regex, '$1 ' + value);
     return fm.trimEnd() + '\n' + key + ': ' + value + '\n';
   }
 
-  function formatTime(timeStr) {
-    if (!timeStr) return '';
-    var parts = timeStr.split(':');
-    if (parts.length < 2) return timeStr;
-    var h = parseInt(parts[0], 10);
-    var m = parts[1];
-    var ampm = h >= 12 ? 'PM' : 'AM';
-    if (h === 0) h = 12;
-    else if (h > 12) h -= 12;
-    return h + ':' + m + ' ' + ampm;
-  }
-
-  function esc(str) {
-    if (!str) return '';
-    var div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-  }
-
-  function escAttr(str) {
-    if (!str) return '';
-    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-  }
-
-  // Filter handlers
-  document.getElementById('admin-status-filter').addEventListener('change', function() {
-    statusFilter = this.value; currentPage = 1; render();
+  // ── Event handlers ─────────────────────────────────────────────
+  // Status chips
+  document.querySelectorAll('.filter-chip[data-status]').forEach(function(b) {
+    b.onclick = function() {
+      document.querySelectorAll('.filter-chip[data-status]').forEach(function(c) { c.classList.remove('active'); });
+      b.classList.add('active');
+      state.status = b.getAttribute('data-status');
+      state.page = 1; render();
+    };
   });
-  document.getElementById('admin-category-filter').addEventListener('change', function() {
-    categoryFilter = this.value; currentPage = 1; render();
+  // Category chips (multi-select)
+  document.querySelectorAll('.filter-chip[data-filter]').forEach(function(b) {
+    b.onclick = function() {
+      var v = b.getAttribute('data-filter');
+      if (v === 'all') {
+        state.activeCategories = [];
+        document.querySelectorAll('.filter-chip[data-filter]').forEach(function(c) { c.classList.remove('active'); });
+        b.classList.add('active');
+      } else {
+        var idx = state.activeCategories.indexOf(v);
+        if (idx === -1) {
+          state.activeCategories.push(v);
+          b.classList.add('active');
+        } else {
+          state.activeCategories.splice(idx, 1);
+          b.classList.remove('active');
+        }
+        var allChip = document.querySelector('.filter-chip[data-filter="all"]');
+        if (state.activeCategories.length === 0) allChip.classList.add('active');
+        else allChip.classList.remove('active');
+      }
+      if (state.activeCategories.indexOf('sports') === -1) state.sport = 'all';
+      state.page = 1; render();
+    };
   });
-  placeSelect.addEventListener('change', function() {
-    placeFilter = this.value; currentPage = 1; render();
+  // Date quick
+  document.querySelectorAll('.filter-chip[data-date-quick]').forEach(function(b) {
+    b.onclick = function() {
+      var v = b.getAttribute('data-date-quick');
+      if (state.dateQuick === v) { state.dateQuick = null; b.classList.remove('active'); }
+      else {
+        document.querySelectorAll('.filter-chip[data-date-quick]').forEach(function(c) { c.classList.remove('active'); });
+        b.classList.add('active');
+        state.dateQuick = v;
+      }
+      state.dateExact = '';
+      document.getElementById('admin-date-filter').value = '';
+      state.page = 1; render();
+    };
   });
-  document.getElementById('admin-date-filter').addEventListener('change', function() {
-    dateFilter = this.value; currentPage = 1; render();
+  // Time of day
+  document.querySelectorAll('.filter-chip[data-time-of-day]').forEach(function(b) {
+    b.onclick = function() {
+      var v = b.getAttribute('data-time-of-day');
+      if (state.timeOfDay === v) { state.timeOfDay = null; b.classList.remove('active'); }
+      else {
+        document.querySelectorAll('.filter-chip[data-time-of-day]').forEach(function(c) { c.classList.remove('active'); });
+        b.classList.add('active');
+        state.timeOfDay = v;
+      }
+      state.page = 1; render();
+    };
   });
+  // Dropdowns
+  placeSelect.onchange = function() { state.place = this.value; state.page = 1; render(); };
+  // Date exact
+  document.getElementById('admin-date-filter').onchange = function() {
+    state.dateExact = this.value;
+    state.dateQuick = null;
+    document.querySelectorAll('.filter-chip[data-date-quick]').forEach(function(c) { c.classList.remove('active'); });
+    state.page = 1; render();
+  };
+  // Search
   var searchTimeout;
-  document.getElementById('admin-search').addEventListener('input', function() {
+  document.getElementById('event-search').addEventListener('input', function() {
+    var v = this.value;
     clearTimeout(searchTimeout);
-    var val = this.value;
     searchTimeout = setTimeout(function() {
-      searchQuery = val.toLowerCase().trim(); currentPage = 1; render();
+      state.search = v.toLowerCase().trim();
+      state.page = 1; render();
     }, 200);
   });
+  // Clear filters
+  function resetFilters() {
+    state.status = 'all';
+    state.activeCategories = [];
+    state.sport = 'all';
+    state.place = 'all';
+    state.activePlaceCats = [];
+    state.timeOfDay = null;
+    state.dateQuick = null;
+    state.dateExact = '';
+    state.activeTags = [];
+    state.search = '';
+    state.page = 1;
+    document.getElementById('event-search').value = '';
+    document.getElementById('admin-date-filter').value = '';
+    placeSelect.value = 'all';
+    document.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
+    document.querySelector('.filter-chip[data-status="all"]').classList.add('active');
+    document.querySelector('.filter-chip[data-filter="all"]').classList.add('active');
+    sportRow.querySelector('[data-sport="all"]').classList.add('active');
+  }
+  document.getElementById('clear-filters').onclick = function() {
+    resetFilters();
+    render();
+  };
 
-  // Initial render
+  // Filter panel collapse toggle
+  var filterPanel = document.getElementById('filter-panel');
+  var filterToggle = document.getElementById('filter-panel-toggle');
+  var toggleBtn = filterToggle.querySelector('.filter-panel__toggle');
+  if (localStorage.getItem('cpg_admin_filters_collapsed') === '1') {
+    filterPanel.classList.add('is-collapsed');
+    toggleBtn.textContent = 'Show';
+  }
+  filterToggle.addEventListener('click', function(e) {
+    if (e.target.tagName === 'A' || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+    if (e.target.closest && e.target.closest('.mode-toggle')) return;
+    filterPanel.classList.toggle('is-collapsed');
+    var isCollapsed = filterPanel.classList.contains('is-collapsed');
+    toggleBtn.textContent = isCollapsed ? 'Show' : 'Hide';
+    localStorage.setItem('cpg_admin_filters_collapsed', isCollapsed ? '1' : '0');
+  });
+
+  // Include / Exclude mode toggle
+  var modeToggle = document.getElementById('filter-mode-toggle');
+  modeToggle.querySelectorAll('button').forEach(function(b) {
+    b.addEventListener('click', function(ev) {
+      ev.stopPropagation();
+      var newMode = b.getAttribute('data-mode');
+      if (state.mode === newMode) return;
+      state.mode = newMode;
+      modeToggle.querySelectorAll('button').forEach(function(c) { c.classList.remove('active'); });
+      b.classList.add('active');
+      filterPanel.classList.toggle('is-exclude', newMode === 'exclude');
+      state.page = 1;
+      render();
+    });
+  });
+
   render();
 })();
 </script>

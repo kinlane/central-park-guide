@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - bowling
 ---
 
 University Club Lawn Bowling takes place at Bowling Green Lawn in Central Park on Thursday, May 7, 2026.

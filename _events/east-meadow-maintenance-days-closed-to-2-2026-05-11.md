@@ -15,7 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - closure
+  - maintenance
 ---
 
 East Meadow - Maintenance Days - Closed to 2 takes place at East Meadow in Central Park on Monday, May 11, 2026.

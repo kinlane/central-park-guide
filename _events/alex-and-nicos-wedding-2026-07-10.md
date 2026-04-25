@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
   - private-booking
+  - wedding
 ---
 
 Alex and Nico's Wedding takes place at Cop Cot in Central Park on Friday, July 10, 2026.

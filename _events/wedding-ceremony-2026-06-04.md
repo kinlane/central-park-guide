@@ -15,8 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
+  - ceremony
   - private-booking
+  - wedding
 ---
 
 Wedding Ceremony takes place at Wagner Cove, Cherry Hill in Central Park on Thursday, June 4, 2026.

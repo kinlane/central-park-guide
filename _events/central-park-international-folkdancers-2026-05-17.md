@@ -6,7 +6,7 @@ end_time: "19:00"
 location: "King Jagiallo Plaza"
 place: "King Jagiello Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
+category: "family-community"
 image: "/assets/images/event-2.avif"
 description: "Central Park International Folkdancers at King Jagiallo Plaza in Central Park."
 event_id: "889203"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - dance
+  - community
 ---
 
 Central Park International Folkdancers takes place at King Jagiallo Plaza in Central Park on Sunday, May 17, 2026.

@@ -15,9 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - baseball
   - sports
+  - youth
 ---
 
 Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-05 in Central Park on Friday, June 12, 2026.

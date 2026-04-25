@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
   - private-booking
+  - wedding
 ---
 
 Gemma Wedding takes place at Ladies' Pavilion in Central Park on Thursday, September 10, 2026.

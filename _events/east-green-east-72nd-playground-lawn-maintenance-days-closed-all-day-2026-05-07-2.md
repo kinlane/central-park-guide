@@ -15,7 +15,8 @@ event_borough: "Manhattan"
 community_board: "8"
 police_precinct: "19"
 tags:
-  - community
+  - closure
+  - maintenance
 ---
 
 East Green-east 72nd Playground Lawn - Maintenance Days - Closed All Day takes place at East 72nd Street Playground Lawns in Central Park on Thursday, May 7, 2026.

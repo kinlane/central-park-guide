@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - talk
 ---
 
 CPC Cultivating Resilience Panel takes place at Bethesda Fountain Terrace, Minton Arcade in Central Park on Thursday, April 23, 2026.

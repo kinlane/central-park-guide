@@ -15,6 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
+  - birthday
+  - picnic
   - private-booking
 ---
 

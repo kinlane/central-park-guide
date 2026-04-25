@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - picnic
 ---
 
 Bloomberg Bproud Spring Picnic Backup Date takes place at Mineral Springs in Central Park on Thursday, May 7, 2026.

@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - chess
+  - talk
 ---
 
 Chess Lecture Simul Series with Beginners Workshops takes place at Chess and Checkers in Central Park on Saturday, July 18, 2026.

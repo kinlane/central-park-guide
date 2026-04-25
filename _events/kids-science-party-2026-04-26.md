@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - celebration
 ---
 
 Kids Science Party takes place at Safari Playground Lawn in Central Park on Sunday, April 26, 2026.

@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
   - private-booking
+  - wedding
 ---
 
 Upton-evans Wedding takes place at The Pool Lawns in Central Park on Saturday, September 26, 2026.

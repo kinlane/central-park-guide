@@ -17,6 +17,7 @@ police_precinct: "22"
 tags:
   - softball
   - sports
+  - t-ball
 ---
 
 Softball - Adults takes place at Heckscher Fields-Softball-04 in Central Park on Thursday, May 14, 2026.

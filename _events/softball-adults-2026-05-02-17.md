@@ -17,6 +17,7 @@ police_precinct: "22"
 tags:
   - softball
   - sports
+  - t-ball
 ---
 
 Softball - Adults takes place at North Meadow-Baseball-05 in Central Park on Saturday, May 2, 2026.

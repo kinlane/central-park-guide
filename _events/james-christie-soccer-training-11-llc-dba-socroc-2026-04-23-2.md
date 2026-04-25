@@ -15,8 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
+  - education
   - soccer
-  - school-program
+  - sports
 ---
 
 James Christie Soccer Training 11 LLC, DBA SocRoc takes place at Lawn North of Levin Playground in Central Park on Thursday, April 23, 2026.

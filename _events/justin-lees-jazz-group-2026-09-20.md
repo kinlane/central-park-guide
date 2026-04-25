@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - music
+  - jazz
 ---
 
 Justin Lees Jazz Group takes place at Bandshell Plaza in Central Park on Sunday, September 20, 2026.

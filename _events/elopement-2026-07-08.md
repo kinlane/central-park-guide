@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wedding
   - private-booking
+  - wedding
 ---
 
 Elopement takes place at Wagner Cove, Cherry Hill in Central Park on Wednesday, July 8, 2026.

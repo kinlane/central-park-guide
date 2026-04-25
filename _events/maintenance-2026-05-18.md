@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - maintenance
 ---
 
 Maintenance takes place at Shakespeare Garden in Central Park on Monday, May 18, 2026.

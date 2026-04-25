@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - annual-tradition
+  - community
 ---
 
 Sacred Sites Open House Day 1 takes place at Mineral Springs in Central Park on Saturday, May 16, 2026.

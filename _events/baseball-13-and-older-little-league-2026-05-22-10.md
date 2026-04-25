@@ -15,9 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - baseball
   - sports
+  - youth
 ---
 
 Baseball - 13 and Older (Little League) takes place at North Meadow-Baseball-06 in Central Park on Friday, May 22, 2026.

@@ -15,7 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - closure
+  - maintenance
 ---
 
 East Meadow - Maintenance Days - Closed All Day takes place at East Meadow, East Meadow Clay Area in Central Park on Tuesday, May 19, 2026.

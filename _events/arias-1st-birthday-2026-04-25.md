@@ -15,6 +15,7 @@ event_borough: "Manhattan"
 community_board: "8"
 police_precinct: "19"
 tags:
+  - birthday
   - private-booking
 ---
 

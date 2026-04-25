@@ -15,7 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - closure
+  - maintenance
 ---
 
 Billy Johnson Lawn - Maintenance Days - Closed to 2 takes place at Johnson Playground Lawns in Central Park on Friday, May 1, 2026.

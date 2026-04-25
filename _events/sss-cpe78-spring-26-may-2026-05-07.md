@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - school-program
+  - education
 ---
 
 SSS CPE78 Spring 26 May takes place at Lawn North of Levin Playground in Central Park on Thursday, May 7, 2026.

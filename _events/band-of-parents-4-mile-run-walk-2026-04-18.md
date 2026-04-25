@@ -6,7 +6,7 @@ end_time: "11:30"
 location: "72nd Street Cross Drive, Lower Loop"
 place: "72nd Street Cross Drive"
 place_category: "event_venues"
-category: "concerts-performances"
+category: "runs-races"
 image: "/assets/images/event-2.avif"
 description: "Band of Parents 4 mile run walk at 72nd Street Cross Drive, Lower Loop in Central Park."
 event_id: "887040"
@@ -16,6 +16,8 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - music
+  - running
+  - walk
 ---
 
 Band of Parents 4 mile run walk takes place at 72nd Street Cross Drive, Lower Loop in Central Park on Saturday, April 18, 2026.

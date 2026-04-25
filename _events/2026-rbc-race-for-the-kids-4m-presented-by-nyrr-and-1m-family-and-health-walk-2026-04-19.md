@@ -6,7 +6,7 @@ end_time: "10:30"
 location: "East Drive, West Drive"
 place: "West Drive"
 place_category: "paths_and_drives"
-category: "family-community"
+category: "runs-races"
 image: "/assets/images/event-3.avif"
 description: "2026 RBC Race for the Kids 4M Presented by NYRR and 1M Family and Health Walk at East Drive, West Drive in Central Park."
 event_id: "893219"
@@ -15,7 +15,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - family
+  - race
+  - walk
 ---
 
 2026 RBC Race for the Kids 4M Presented by NYRR and 1M Family and Health Walk takes place at East Drive, West Drive in Central Park on Sunday, April 19, 2026.
