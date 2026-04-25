@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-06-06
-time: "09:00"
-end_time: "11:00"
-location: "Dene Lawn"
-place: "Dene Lawn"
+time: "15:00"
+end_time: "18:00"
+location: "Great Hill South"
+place: "Great Hill"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/gallery-4.avif"
-description: "Celebration at Dene Lawn in Central Park."
-event_id: "924699"
+category: "private-events"
+image: "/assets/images/event-3.avif"
+description: "Celebration at Great Hill South in Central Park."
+event_id: "917473"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Dene Lawn in Central Park on Saturday, June 6, 2026.
+Celebration takes place at Great Hill South in Central Park on Saturday, June 6, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, June 6, 2026
-- **Time:** 9:00 AM - 11:00 AM
-- **Location:** Dene Lawn, Central Park
-- **Place:** Dene Lawn
+- **Time:** 3:00 PM - 6:00 PM
+- **Location:** Great Hill South, Central Park
+- **Place:** Great Hill
 - **Type:** Special Event
-- **Event ID:** 924699
+- **Event ID:** 917473
 
 ## About This Event
 
-Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Great Hill South in Central Park. Contact the event organizers for more details about attendance and participation.

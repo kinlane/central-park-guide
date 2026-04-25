@@ -6,7 +6,7 @@ end_time: "17:00"
 location: "Heckscher Fields-Softball-03"
 place: "Heckscher Fields"
 place_category: "event_venues"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-2.avif"
 description: "Baseball - T-ball at Heckscher Fields-Softball-03. Youth league permitted event in Central Park."
 event_id: "904571"
@@ -16,8 +16,8 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - youth
-  - sports
   - baseball
+  - sports
 ---
 
 Baseball - T-ball takes place at Heckscher Fields-Softball-03 in Central Park on Saturday, April 25, 2026.

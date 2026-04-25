@@ -6,7 +6,7 @@ end_time: "14:00"
 location: "North Meadow-Baseball-11"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
 description: "Baseball - Adults at North Meadow-Baseball-11. Adult league permitted event in Central Park."
 event_id: "900495"
@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - sports
   - baseball
+  - sports
 ---
 
 Baseball - Adults takes place at North Meadow-Baseball-11 in Central Park on Sunday, August 23, 2026.

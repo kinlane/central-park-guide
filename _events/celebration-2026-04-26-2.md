@@ -6,7 +6,7 @@ end_time: "13:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Celebration at Ladies' Pavilion in Central Park."
 event_id: "920057"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Ladies' Pavilion in Central Park on Sunday, April 26, 2026.

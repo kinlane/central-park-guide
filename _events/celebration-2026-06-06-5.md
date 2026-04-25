@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-06-06
-time: "17:00"
-end_time: "18:00"
-location: "Cop Cot"
-place: "Cop Cot"
+time: "14:00"
+end_time: "16:00"
+location: "Dene Lawn"
+place: "Dene Lawn"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/gallery-7.avif"
-description: "Celebration at Cop Cot in Central Park."
-event_id: "912272"
+category: "private-events"
+image: "/assets/images/gallery-4.avif"
+description: "Celebration at Dene Lawn in Central Park."
+event_id: "920256"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Cop Cot in Central Park on Saturday, June 6, 2026.
+Celebration takes place at Dene Lawn in Central Park on Saturday, June 6, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, June 6, 2026
-- **Time:** 5:00 PM - 6:00 PM
-- **Location:** Cop Cot, Central Park
-- **Place:** Cop Cot
+- **Time:** 2:00 PM - 4:00 PM
+- **Location:** Dene Lawn, Central Park
+- **Place:** Dene Lawn
 - **Type:** Special Event
-- **Event ID:** 912272
+- **Event ID:** 920256
 
 ## About This Event
 
-Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

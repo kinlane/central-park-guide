@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-09-09
-time: "14:00"
-end_time: "15:00"
-location: "Shakespeare Garden"
-place: "Shakespeare Garden"
+time: "12:00"
+end_time: "13:00"
+location: "Wagner Cove, Cherry Hill"
+place: "Cherry Hill"
 place_category: "natural_areas"
-category: "family-community"
-image: "/assets/images/event-3.avif"
-description: "Celebration at Shakespeare Garden in Central Park."
-event_id: "913007"
+category: "private-events"
+image: "/assets/images/gallery-7.avif"
+description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
+event_id: "902858"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Shakespeare Garden in Central Park on Wednesday, September 9, 2026.
+Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Wednesday, September 9, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Wednesday, September 9, 2026
-- **Time:** 2:00 PM - 3:00 PM
-- **Location:** Shakespeare Garden, Central Park
-- **Place:** Shakespeare Garden
+- **Time:** 12:00 PM - 1:00 PM
+- **Location:** Wagner Cove, Cherry Hill, Central Park
+- **Place:** Cherry Hill
 - **Type:** Special Event
-- **Event ID:** 913007
+- **Event ID:** 902858
 
 ## About This Event
 
-Celebration is a permitted event taking place at Shakespeare Garden in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.

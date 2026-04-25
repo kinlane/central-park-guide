@@ -6,7 +6,7 @@ end_time: "14:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Celebration at Cop Cot in Central Park."
 event_id: "886740"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Cop Cot in Central Park on Saturday, September 12, 2026.

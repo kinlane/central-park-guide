@@ -8,55 +8,34 @@ permalink: /contact-us/
 <!-- Hero -->
 <section class="hero">
   <div class="hero__bg">
-    <img src="/assets/images/contact-hero.avif" alt="City skyline behind a park with lush green trees and a calm body of water in the foreground under a partly cloudy sky.">
+    <img src="{{ site.data.contact.hero.image }}" alt="{{ site.data.contact.hero.image_alt }}">
   </div>
   <div class="container hero__content">
-    <h1>Contact us</h1>
+    <h1>{{ site.data.contact.hero.heading }}</h1>
   </div>
 </section>
 
 <!-- Contact cards -->
 <section class="section">
   <div class="container">
-    <h2 class="mb-sm">Got a tip, a question or an idea</h2>
-    <p style="margin-bottom: 48px;">These are your quickest loops to connect with us.</p>
+    <h2 class="mb-sm">{{ site.data.contact.intro.heading }}</h2>
+    <p style="margin-bottom: 48px;">{{ site.data.contact.intro.text }}</p>
     <div class="grid-4">
+      {% for card in site.data.contact.cards %}
       <div class="contact-card">
-        <div class="contact-card__icon" style="background: rgba(235,151,79,0.15);">
-          <img src="/assets/icons/calendar.png" alt="" style="width:24px;">
+        <div class="contact-card__icon" style="background: {{ card.icon_bg }};">
+          {% if card.icon_emoji %}
+          <span style="font-size: 1.2rem;">{{ card.icon_emoji }}</span>
+          {% else %}
+          <img src="{{ card.icon }}" alt="" style="width:24px;">
+          {% endif %}
         </div>
-        <h3>Submit an event</h3>
-        <p>Hosting a concert, run, or community gathering in the park?</p>
-        <p style="font-size: 0.9rem;">Add it to the guide so everyone knows where to go (or avoid).</p>
-        <a href="mailto:hello@centralpark.guide" class="btn btn-orange" style="margin-top: 16px;">Submit an event</a>
+        <h3>{{ card.title }}</h3>
+        <p>{{ card.text }}</p>
+        <p style="font-size: 0.9rem;">{{ card.detail }}</p>
+        <a href="{{ card.cta.url }}" class="btn {{ card.cta.style }}" style="margin-top: 16px;">{{ card.cta.text }}</a>
       </div>
-      <div class="contact-card">
-        <div class="contact-card__icon" style="background: rgba(60,164,116,0.15);">
-          <img src="/assets/svg/puppy.svg" alt="" style="width:24px;">
-        </div>
-        <h3>Partnerships</h3>
-        <p>Want to collaborate?</p>
-        <p style="font-size: 0.9rem;">From local orgs to park vendors, we're open to partnerships that make Central Park even more vibrant.</p>
-        <a href="mailto:hello@centralpark.guide" class="btn btn-green" style="margin-top: 16px;">Say hello</a>
-      </div>
-      <div class="contact-card">
-        <div class="contact-card__icon" style="background: rgba(0,0,0,0.08);">
-          <span style="font-size: 1.2rem;">&#9998;</span>
-        </div>
-        <h3>Media &amp; press</h3>
-        <p>Covering Central Park, city life, or unique community projects?</p>
-        <p style="font-size: 0.9rem;">We've got stories to share about the patrol, the guide, the people, and paws behind it.</p>
-        <a href="mailto:hello@centralpark.guide" class="btn btn-black" style="margin-top: 16px;">Ask away</a>
-      </div>
-      <div class="contact-card">
-        <div class="contact-card__icon" style="background: rgba(243,174,20,0.15);">
-          <img src="/assets/icons/paw.png" alt="" style="width:24px;">
-        </div>
-        <h3>Squirrel patrol reports</h3>
-        <p>Spotted something worth sharing: a detour, surprise parade, or odd goose uprising?</p>
-        <p style="font-size: 0.9rem;">Log it with Poppy and the patrol squad.</p>
-        <a href="https://poppyrlane.com/field-reports/" class="btn btn-orange" style="margin-top: 16px;">Log a sighting</a>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -64,21 +43,21 @@ permalink: /contact-us/
 <!-- Follow along -->
 <section class="section bg-ash">
   <div class="container">
-    <h2 class="text-center mb-sm">Follow along</h2>
-    <p class="text-center" style="margin-bottom: 48px;">Stay connected for upcoming events, park updates and community moments.</p>
+    <h2 class="text-center mb-sm">{{ site.data.contact.follow.heading }}</h2>
+    <p class="text-center" style="margin-bottom: 48px;">{{ site.data.contact.follow.text }}</p>
     <div class="grid-2">
       <div class="card" style="text-align: center; padding: 48px 32px;">
-        <img src="/assets/images/contact-instagram.avif" alt="Instagram - Central Park Guide" style="border-radius: 16px; margin-bottom: 24px;">
-        <h3>Follow us on Instagram</h3>
-        <p>@CentralParkGuide</p>
-        <a href="https://www.instagram.com/centralparkguide/" target="_blank" rel="noopener" class="btn btn-green">See the patrol reports</a>
+        <img src="{{ site.data.contact.follow.instagram.image }}" alt="{{ site.data.contact.follow.instagram.image_alt }}" style="border-radius: 16px; margin-bottom: 24px;">
+        <h3>{{ site.data.contact.follow.instagram.heading }}</h3>
+        <p>{{ site.data.contact.follow.instagram.handle }}</p>
+        <a href="{{ site.data.contact.follow.instagram.url }}" target="_blank" rel="noopener" class="btn btn-green">{{ site.data.contact.follow.instagram.cta_text }}</a>
       </div>
       <div class="card" style="padding: 48px 32px;">
-        <h3 style="margin-bottom: 16px;">Don't want to miss the next closure or concert?</h3>
-        <p>Get weekly park alerts straight to your inbox.</p>
+        <h3 style="margin-bottom: 16px;">{{ site.data.contact.follow.newsletter.heading }}</h3>
+        <p>{{ site.data.contact.follow.newsletter.text }}</p>
         <form class="newsletter" style="margin-top: 24px;">
           <input type="email" placeholder="Enter your E-mail" required>
-          <button type="submit" class="btn btn-green">Subscribe for updates</button>
+          <button type="submit" class="btn btn-green">{{ site.data.contact.follow.newsletter.button_text }}</button>
         </form>
       </div>
     </div>

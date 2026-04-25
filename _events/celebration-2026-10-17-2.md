@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-10-17
-time: "16:00"
-end_time: "17:00"
-location: "Cop Cot"
-place: "Cop Cot"
+time: "12:00"
+end_time: "14:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
-description: "Celebration at Cop Cot in Central Park."
-event_id: "906724"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "886745"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Cop Cot in Central Park on Saturday, October 17, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Saturday, October 17, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, October 17, 2026
-- **Time:** 4:00 PM - 5:00 PM
-- **Location:** Cop Cot, Central Park
-- **Place:** Cop Cot
+- **Time:** 12:00 PM - 2:00 PM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 906724
+- **Event ID:** 886745
 
 ## About This Event
 
-Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

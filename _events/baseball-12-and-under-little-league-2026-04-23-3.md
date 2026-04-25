@@ -3,35 +3,35 @@ title: "Baseball - 12 and Under (Little League)"
 date: 2026-04-23
 time: "16:00"
 end_time: "18:00"
-location: "Great Lawn-Softball-08"
+location: "Great Lawn-Softball-02"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/gallery-1.avif"
-description: "Baseball - 12 and Under (Little League) at Great Lawn-Softball-08. Youth league permitted event in Central Park."
-event_id: "913030"
+description: "Baseball - 12 and Under (Little League) at Great Lawn-Softball-02. Youth league permitted event in Central Park."
+event_id: "924115"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
-  - sports
   - baseball
+  - sports
+  - youth
 ---
 
-Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-08 in Central Park on Thursday, April 23, 2026.
+Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-02 in Central Park on Thursday, April 23, 2026.
 
 ## Event Details
 
 - **Event:** Baseball - 12 and Under (Little League)
 - **Date:** Thursday, April 23, 2026
 - **Time:** 4:00 PM - 6:00 PM
-- **Location:** Great Lawn-Softball-08, Central Park
+- **Location:** Great Lawn-Softball-02, Central Park
 - **Place:** Great Lawn
 - **Type:** Sport - Youth
-- **Event ID:** 913030
+- **Event ID:** 924115
 
 ## About This Event
 
-This is a permitted sport - youth event at Great Lawn-Softball-08. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Great Lawn-Softball-02. The area may have restricted access during the event period.

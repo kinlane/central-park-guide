@@ -6,7 +6,7 @@ end_time: "20:30"
 location: "North Meadow-Baseball-04"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "private-events"
 image: "/assets/images/park-1.avif"
 description: "Miscellaneous at North Meadow-Baseball-04. Adult league permitted event in Central Park."
 event_id: "905447"
@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - sports
+  - private-booking
 ---
 
 Miscellaneous takes place at North Meadow-Baseball-04 in Central Park on Tuesday, April 28, 2026.

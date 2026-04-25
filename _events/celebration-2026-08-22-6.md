@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-08-22
-time: "15:00"
+time: "14:00"
 end_time: "16:00"
-location: "Wagner Cove, Cherry Hill"
-place: "Cherry Hill"
-place_category: "natural_areas"
-category: "family-community"
-image: "/assets/images/gallery-7.avif"
-description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
-event_id: "919713"
+location: "Belvedere Castle Terrace"
+place: "Belvedere Castle"
+place_category: "buildings"
+category: "private-events"
+image: "/assets/images/plan-visit-hero.avif"
+description: "Celebration at Belvedere Castle Terrace in Central Park."
+event_id: "919219"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Saturday, August 22, 2026.
+Celebration takes place at Belvedere Castle Terrace in Central Park on Saturday, August 22, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, August 22, 2026
-- **Time:** 3:00 PM - 4:00 PM
-- **Location:** Wagner Cove, Cherry Hill, Central Park
-- **Place:** Cherry Hill
+- **Time:** 2:00 PM - 4:00 PM
+- **Location:** Belvedere Castle Terrace, Central Park
+- **Place:** Belvedere Castle
 - **Type:** Special Event
-- **Event ID:** 919713
+- **Event ID:** 919219
 
 ## About This Event
 
-Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Belvedere Castle Terrace in Central Park. Contact the event organizers for more details about attendance and participation.

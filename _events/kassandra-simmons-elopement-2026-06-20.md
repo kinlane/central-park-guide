@@ -1,12 +1,12 @@
 ---
-title: "Kassandra Simmons elopement"
+title: "Kassandra Simmons Elopement"
 date: 2026-06-20
 time: "15:00"
 end_time: "17:00"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-4.avif"
 description: "Private ceremony at Dene Lawn in Central Park."
 event_id: "893454"
@@ -16,13 +16,14 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
-Kassandra Simmons elopement takes place at Dene Lawn in Central Park on Saturday, June 20, 2026.
+Kassandra Simmons Elopement takes place at Dene Lawn in Central Park on Saturday, June 20, 2026.
 
 ## Event Details
 
-- **Event:** Kassandra Simmons elopement
+- **Event:** Kassandra Simmons Elopement
 - **Date:** Saturday, June 20, 2026
 - **Time:** 3:00 PM - 5:00 PM
 - **Location:** Dene Lawn, Central Park
@@ -32,4 +33,4 @@ Kassandra Simmons elopement takes place at Dene Lawn in Central Park on Saturday
 
 ## About This Event
 
-Kassandra Simmons elopement is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.
+Kassandra Simmons Elopement is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

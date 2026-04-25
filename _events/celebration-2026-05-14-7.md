@@ -1,0 +1,35 @@
+---
+title: "Celebration"
+date: 2026-05-14
+time: "15:00"
+end_time: "21:00"
+location: "Dairy Lawn"
+place: "Dairy Lawn"
+place_category: "event_venues"
+category: "private-events"
+image: "/assets/images/event-3.avif"
+description: "Celebration at Dairy Lawn in Central Park."
+event_id: "910623"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - private-booking
+---
+
+Celebration takes place at Dairy Lawn in Central Park on Thursday, May 14, 2026.
+
+## Event Details
+
+- **Event:** Celebration
+- **Date:** Thursday, May 14, 2026
+- **Time:** 3:00 PM - 9:00 PM
+- **Location:** Dairy Lawn, Central Park
+- **Place:** Dairy Lawn
+- **Type:** Special Event
+- **Event ID:** 910623
+
+## About This Event
+
+Celebration is a permitted event taking place at Dairy Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

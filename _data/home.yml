@@ -1,0 +1,81 @@
+hero:
+  heading: "Your guide to a park that never sits still"
+  subheading: "Events, closures, concerts, and the little surprises that make Central Park alive."
+  image: /assets/images/homepage-park.avif
+  image_alt: "Central Park aerial view with lush green trees and walking paths"
+  logo: /assets/svg/hero-logo.svg
+  cta:
+    text: "See what's happening"
+    url: /events/
+
+time_of_day:
+  heading: "Every corner, and time of day, tells a story"
+  text: "From the quiet glow of dawn to the hum of a summer evening, Central Park shifts with the light."
+  cta:
+    text: "Plan your visit"
+    url: /plan-your-visit/
+  tabs:
+    - name: Dusk
+      image: /assets/images/day-tab-dusk.png
+    - name: Day
+      image: /assets/images/day-tab-day.png
+    - name: Dawn
+      image: /assets/images/day-tab-dawn.png
+    - name: Night
+      image: /assets/images/day-tab-night.png
+
+services:
+  - title: "Dog walker patrols"
+    text: "The best routes, off-leash hours, and dog-friendly spots across the park."
+    image: /assets/images/dog-walker.avif
+    image_alt: "Person walking dogs through Central Park trails"
+  - title: "Runners' loops"
+    text: "From the 3-mile lower loop to the full 6-mile drive. Pick your pace."
+    image: /assets/images/runners-loops.avif
+    image_alt: "Runners on the Central Park loop"
+  - title: "Guided bird watching tours"
+    text: "Seasonal migratory routes and the best spots to see hawks, owls, and more."
+    image: /assets/images/guided-bird.avif
+    image_alt: "Bird watchers with binoculars in the Ramble"
+
+events_preview:
+  heading: "What's happening in the park"
+  cta:
+    text: "See all events"
+    url: /events/
+
+perspectives:
+  heading: "One park, two perspectives"
+  items:
+    - title: "CentralPark.Guide"
+      text: "Events, closures, concerts, and seasonal highlights. The big picture of the park."
+      image: /assets/images/brand-cpg.avif
+      image_alt: "Central Park.Guide brand"
+      url: /
+    - title: "The Squirrel Patrol"
+      text: "Street-level magic: buskers, surprise parades, and goose uprisings. From Poppy's sidecar."
+      image: /assets/images/brand-sp.avif
+      image_alt: "Squirrel Patrol brand"
+      url: https://poppyrlane.com
+
+newsletter:
+  heading: "Don't miss a thing"
+  text: "Get weekly park alerts straight to your inbox. Closures, concerts, and the good stuff."
+  button_text: "Subscribe"
+  image: /assets/svg/newsletter-graphic.svg
+
+gallery:
+  - image: /assets/images/gallery-1.avif
+    alt: "Central Park lawn"
+  - image: /assets/images/gallery-2.avif
+    alt: "Park scene"
+  - image: /assets/images/gallery-3.avif
+    alt: "Bird watching"
+  - image: /assets/images/gallery-4.avif
+    alt: "Jogging in the park"
+  - image: /assets/images/gallery-6.avif
+    alt: "Coffee by the lake"
+  - image: /assets/images/gallery-7.avif
+    alt: "Wildflowers"
+  - image: /assets/images/gallery-8.avif
+    alt: "Bird on a branch"

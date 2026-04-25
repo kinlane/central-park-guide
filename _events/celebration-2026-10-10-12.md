@@ -6,7 +6,7 @@ end_time: "18:00"
 location: "Summit Rock"
 place: "Summit Rock"
 place_category: "natural_areas"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Celebration at Summit Rock in Central Park."
 event_id: "906360"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Summit Rock in Central Park on Saturday, October 10, 2026.

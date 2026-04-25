@@ -6,7 +6,7 @@ end_time: "15:30"
 location: "Great Lawn-Softball-06"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "private-events"
 image: "/assets/images/gallery-1.avif"
 description: "Miscellaneous at Great Lawn-Softball-06. Youth league permitted event in Central Park."
 event_id: "915708"
@@ -17,6 +17,7 @@ police_precinct: "22"
 tags:
   - youth
   - sports
+  - private-booking
 ---
 
 Miscellaneous takes place at Great Lawn-Softball-06 in Central Park on Tuesday, April 28, 2026.

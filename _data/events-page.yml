@@ -1,0 +1,80 @@
+hero:
+  heading: "Events"
+  image: /assets/images/events-hero.avif
+  image_alt: "Aerial view of Central Park in New York City with green trees, grassy fields, a lake, and the city skyline in the background."
+
+listing:
+  search_placeholder: "Search events by name, location, or keyword..."
+  categories:
+    - key: all
+      label: "All"
+    - key: sports
+      label: "Sports"
+    - key: runs-races
+      label: "Runs & Races"
+    - key: concerts-performances
+      label: "Concerts & Performances"
+    - key: family-community
+      label: "Family & Community"
+    - key: education
+      label: "Education"
+    - key: private-events
+      label: "Private Events"
+    - key: closures
+      label: "Closures"
+    - key: maintenance
+      label: "Maintenance"
+
+share_event:
+  heading: "Share your event or update with the community"
+  text: "Add your concert, run, or community event so the whole park (or at least the ones you want to notify) knows where to be."
+  cta:
+    text: "Submit your event"
+    url: /contact-us/
+
+seasonal:
+  heading: "Seasonal staples"
+  text: "Some things happen every year. These are some park traditions worth knowing."
+  seasons:
+    - name: Spring
+      events:
+        - "Cherry Blossoms bloom"
+        - "Shakespeare in the Park rehearsals"
+        - "Central Park Film Festival (spring series)"
+        - "Turtle Pond turtle sightings (peak basking season)"
+        - "Migratory bird watching in the Ramble"
+    - name: Summer
+      events:
+        - "SummerStage concerts"
+        - "Shakespeare in the Park main run"
+        - "Free yoga on the Great Lawn"
+        - "Roller disco/skating parties near Bandshell"
+        - "Outdoor movie nights on the Lawn"
+    - name: Fall
+      events:
+        - "New York City Marathon"
+        - "Central Park Conservancy's Fall Foliage Walks"
+        - "Great Pumpkin Flotilla"
+        - "Harvest Festival"
+        - "Peak leaf-peeping around the Mall and Literary Walk"
+    - name: Winter
+      events:
+        - "Ice skating at Wollman Rink"
+        - "Holiday markets near Columbus Circle"
+        - "Snow sculpture gatherings on the Great Lawn"
+        - "Winter birding in the Ramble (owls, hawks, sparrows)"
+        - "Horse carriage rides with seasonal lights"
+
+patrol_cta:
+  heading: "Want the small stuff too?"
+  text: "This page covers the big stuff like marathons, concerts, closures. But Poppy and the Squirrel Patrol report the street-level magic: buskers, surprise parades, and goose uprisings."
+  image: /assets/images/events-patrol.avif
+  image_alt: "Happy black and tan dog wearing a harness sitting under a stone arch tunnel on a street."
+  cta:
+    text: "See the patrol reports"
+    url: "https://poppyrlane.com/field-reports/"
+
+newsletter:
+  heading: "Stay in the loop"
+  text: "Don't want to miss the next closure or concert? Get weekly park alerts straight to your inbox."
+  button_text: "Subscribe"

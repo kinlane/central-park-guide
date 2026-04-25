@@ -1,0 +1,18 @@
+name: "Central Park.Guide"
+tagline: "Your everyday guide to the park that never sleeps."
+url: "https://centralpark.guide"
+email: "hello@centralpark.guide"
+contact_email: "info@apievangelist.com"
+instagram_url: "https://www.instagram.com/centralparkguide/"
+instagram_handle: "@CentralParkGuide"
+sister_site:
+  name: "Poppy R Lane"
+  url: "https://poppyrlane.com"
+company:
+  name: "API Evangelist LLC"
+  address: "606 W 57th, New York, NY 10019"
+  country: "New York, United States"
+footer:
+  tagline: "Your everyday guide to the park that never sleeps."
+  credit: "Built on fresh air, community spirit, and a little love from duo&co"
+  credit_url: "https://www.duoand.co/madewithlove"

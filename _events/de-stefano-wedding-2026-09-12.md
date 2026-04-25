@@ -6,7 +6,7 @@ end_time: "16:00"
 location: "Belvedere Castle Terrace"
 place: "Belvedere Castle"
 place_category: "buildings"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/plan-visit-hero.avif"
 description: "Private ceremony at Belvedere Castle Terrace in Central Park."
 event_id: "886603"
@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
 De Stefano Wedding takes place at Belvedere Castle Terrace in Central Park on Saturday, September 12, 2026.

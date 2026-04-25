@@ -6,7 +6,7 @@ end_time: "14:00"
 location: "The Pool Lawns"
 place: "The Pool"
 place_category: "water_bodies"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Miscellaneous at The Pool Lawns in Central Park."
 event_id: "912890"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Miscellaneous takes place at The Pool Lawns in Central Park on Tuesday, June 23, 2026.

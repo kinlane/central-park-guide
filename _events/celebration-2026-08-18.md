@@ -6,7 +6,7 @@ end_time: "13:00"
 location: "Cherry Hill, Wagner Cove"
 place: "Cherry Hill"
 place_category: "natural_areas"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Celebration at Cherry Hill, Wagner Cove in Central Park."
 event_id: "886724"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Cherry Hill, Wagner Cove in Central Park on Tuesday, August 18, 2026.

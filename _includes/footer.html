@@ -3,26 +3,28 @@
     <div class="site-footer__grid">
       <div class="site-footer__brand">
         <img src="/assets/svg/footer-logo.svg" alt="Central Park.Guide">
-        <p>Your everyday guide to the park that never sleeps.</p>
+        <p>{{ site.data.site.footer.tagline }}</p>
       </div>
       <div>
         <h4 class="site-footer__heading">Quicklinks</h4>
         <div class="site-footer__links">
-          <a href="/contact-us/">List your event</a>
-          <a href="mailto:hello@centralpark.guide">hello@centralpark.guide</a>
+          {% for link in site.data.navigation.footer.quicklinks %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
         </div>
       </div>
       <div>
         <h4 class="site-footer__heading">More</h4>
         <div class="site-footer__links">
-          <a href="/legal/terms/">Terms &amp; Conditions</a>
-          <a href="/legal/privacy/">Privacy Policy</a>
+          {% for link in site.data.navigation.footer.more %}
+          <a href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
         </div>
       </div>
       <div>
         <h4 class="site-footer__heading">Socials</h4>
         <div class="site-footer__social">
-          <a href="https://www.instagram.com/centralparkguide/" target="_blank" rel="noopener">
+          <a href="{{ site.data.site.instagram_url }}" target="_blank" rel="noopener">
             <img src="/assets/svg/instagram.svg" alt="Instagram">
           </a>
         </div>
@@ -30,7 +32,7 @@
     </div>
     <div class="site-footer__bottom">
       <p>&copy; {{ 'now' | date: '%Y' }} Central Park.Guide</p>
-      <p>Built on fresh air, community spirit, and a little &#10084; from <a href="https://www.duoand.co/madewithlove" target="_blank" rel="noopener">duo&amp;co</a></p>
+      <p>{{ site.data.site.footer.credit | replace: 'love', '&#10084;' }} <a href="{{ site.data.site.footer.credit_url }}" target="_blank" rel="noopener">duo&amp;co</a></p>
     </div>
   </div>
 </footer>

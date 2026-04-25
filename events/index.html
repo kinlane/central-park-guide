@@ -5,6 +5,222 @@ description: "Find upcoming Central Park events including runs, concerts, family
 permalink: /events/
 ---
 
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin="" defer></script>
+
+<style>
+  .filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: all 0.15s;
+    user-select: none;
+    color: rgba(0,0,0,0.7);
+  }
+  .filter-chip:hover { border-color: #3ca474; color: #3ca474; }
+  .filter-chip.active {
+    background: #3ca474;
+    border-color: #3ca474;
+    color: #fff;
+  }
+  .filter-chip__count { opacity: 0.65; font-size: 0.75rem; }
+  .filter-chip.active .filter-chip__count { opacity: 0.85; }
+
+  .filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  .filter-row__label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(0,0,0,0.45);
+    margin-right: 6px;
+    min-width: 70px;
+  }
+
+  .view-toggle {
+    display: inline-flex;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .view-toggle button {
+    background: #fff;
+    border: none;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgba(0,0,0,0.6);
+    border-right: 1px solid #ddd;
+  }
+  .view-toggle button:last-child { border-right: none; }
+  .view-toggle button.active { background: #3ca474; color: #fff; }
+
+  .recurring-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 2px solid #3ca474;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+  }
+  .recurring-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); color: inherit; }
+  .recurring-card__badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #3ca474;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .recurring-card__image {
+    width: 100%;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+  }
+  .recurring-card__body { padding: 24px; }
+  .recurring-card__dates {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.65);
+  }
+
+  /* Calendar view */
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    background: #ddd;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .cal-day-header {
+    background: #f5f5f5;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(0,0,0,0.5);
+    text-align: center;
+  }
+  .cal-cell {
+    background: #fff;
+    min-height: 100px;
+    padding: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background 0.15s;
+  }
+  .cal-cell:hover { background: #f5fbf8; }
+  .cal-cell--empty { background: #fafafa; cursor: default; pointer-events: none; }
+  .cal-cell--today { background: rgba(60,164,116,0.1); }
+  .cal-cell--selected { background: rgba(60,164,116,0.2); border: 2px solid #3ca474; padding: 6px; }
+  .cal-cell__date {
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 4px;
+  }
+  .cal-cell__count {
+    font-size: 0.7rem;
+    color: #3ca474;
+    font-weight: 700;
+  }
+  .cal-cell__events {
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.6);
+    line-height: 1.3;
+    overflow: hidden;
+  }
+  .cal-cell__event {
+    background: rgba(60,164,116,0.15);
+    color: #2d8a5e;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+  }
+
+  .cal-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  .cal-nav h3 { font-size: 1.5rem; }
+  .cal-nav button {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .cal-nav button:hover { background: #f5f5f5; }
+
+  /* Map view */
+  #event-map {
+    height: 600px;
+    border-radius: 12px;
+    z-index: 0;
+  }
+  .map-popup__title { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+  .map-popup__meta { font-size: 0.8rem; color: rgba(0,0,0,0.65); margin-bottom: 8px; }
+  .map-popup__more { color: #3ca474; font-weight: 600; font-size: 0.85rem; }
+
+  .feed-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    font-size: 0.85rem;
+  }
+  .feed-links a {
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .feed-links a:hover { color: #3ca474; }
+
+  @media (max-width: 767px) {
+    .filter-row__label { width: 100%; }
+    .cal-cell { min-height: 60px; padding: 4px; }
+    .cal-cell__date { font-size: 0.75rem; }
+    .cal-cell__events { display: none; }
+    #event-map { height: 400px; }
+  }
+</style>
+
 <!-- Hero -->
 <section class="hero">
   <div class="hero__bg">
@@ -16,73 +232,113 @@ permalink: /events/
   </div>
 </section>
 
-<!-- The park in play -->
-<section class="section">
-  <div class="container">
-    <div class="split">
-      <div class="split__text">
-        <h2>The park in play</h2>
-        <p>Your go-to schedule for runs, concerts, closures, and community moments. All event data sourced from <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" target="_blank" rel="noopener" style="color: white; text-decoration: underline;">NYC Open Data</a>.</p>
-        <a href="#events-list" class="btn btn-green">See what's happening</a>
-      </div>
-      <div class="split__image">
-        <img src="/assets/images/events-map.avif" alt="Map showing Shakespeare Garden near a pond with location markers for Bandshell, Reservoir, Bow Bridge, and Great Lawn." style="border-radius: 20px;">
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- Event Listings -->
-<section class="section bg-ash" id="events-list">
+<section class="bg-ash" id="events-list" style="padding: 32px 0 96px;">
   <div class="container">
-    <h2 class="mb-sm">The inside loop: races, concerts, closures, and more</h2>
-
     <!-- Search -->
     <div class="search-bar">
       <svg class="search-bar__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <input type="text" id="event-search" placeholder="Search events by name, location, or keyword...">
     </div>
 
-    <!-- Filter tabs -->
-    <div class="tabs mb-sm">
-      <button class="tab active" data-filter="all">All <span class="tab-count" id="count-all"></span></button>
-      <button class="tab" data-filter="runs-races">Runs &amp; Races <span class="tab-count" id="count-runs-races"></span></button>
-      <button class="tab" data-filter="concerts-performances">Concerts &amp; Performances <span class="tab-count" id="count-concerts-performances"></span></button>
-      <button class="tab" data-filter="family-community">Family &amp; Community <span class="tab-count" id="count-family-community"></span></button>
-      <button class="tab" data-filter="closures">Closures <span class="tab-count" id="count-closures"></span></button>
+    <!-- Quick date filters -->
+    <div class="filter-row">
+      <span class="filter-row__label">When:</span>
+      <button class="filter-chip" data-date-quick="today">Today</button>
+      <button class="filter-chip" data-date-quick="weekend">This weekend</button>
+      <button class="filter-chip" data-date-quick="week">Next 7 days</button>
+      <button class="filter-chip" data-date-quick="month">Next 30 days</button>
+      <input type="date" id="admin-date-filter" style="padding:6px 12px;border:1px solid #ddd;border-radius:20px;font-family:inherit;font-size:0.85rem;">
     </div>
 
-    <!-- Location filter -->
-    <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 32px;">
-      <label for="place-filter" style="font-weight: 600; font-size: 0.9rem; color: rgba(0,0,0,0.65);">Location:</label>
-      <select id="place-filter" style="padding: 10px 16px; border: 2px solid #ddd; border-radius: 50px; font-family: inherit; font-size: 0.9rem; background: white; min-width: 240px; cursor: pointer; outline: none;">
+    <!-- Time of day filter -->
+    <div class="filter-row">
+      <span class="filter-row__label">Time:</span>
+      <button class="filter-chip" data-time-of-day="morning">🌅 Morning</button>
+      <button class="filter-chip" data-time-of-day="afternoon">☀️ Afternoon</button>
+      <button class="filter-chip" data-time-of-day="evening">🌆 Evening</button>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="filter-row">
+      <span class="filter-row__label">Type:</span>
+      <button class="filter-chip active" data-filter="all">All <span class="filter-chip__count" id="count-all"></span></button>
+      <button class="filter-chip" data-filter="sports">Sports <span class="filter-chip__count" id="count-sports"></span></button>
+      <button class="filter-chip" data-filter="runs-races">Runs &amp; Races <span class="filter-chip__count" id="count-runs-races"></span></button>
+      <button class="filter-chip" data-filter="concerts-performances">Concerts <span class="filter-chip__count" id="count-concerts-performances"></span></button>
+      <button class="filter-chip" data-filter="family-community">Family &amp; Community <span class="filter-chip__count" id="count-family-community"></span></button>
+      <button class="filter-chip" data-filter="education">Education <span class="filter-chip__count" id="count-education"></span></button>
+      <button class="filter-chip" data-filter="private-events">Private Events <span class="filter-chip__count" id="count-private-events"></span></button>
+      <button class="filter-chip" data-filter="closures">Closures <span class="filter-chip__count" id="count-closures"></span></button>
+      <button class="filter-chip" data-filter="maintenance">Maintenance <span class="filter-chip__count" id="count-maintenance"></span></button>
+    </div>
+
+    <!-- Sport sub-filter (only when sports active) -->
+    <div class="filter-row" id="sport-sub-row" style="display:none;">
+      <span class="filter-row__label">Sport:</span>
+      <button class="filter-chip" data-sport="all">All sports</button>
+    </div>
+
+    <!-- Tag chips -->
+    <div class="filter-row" id="tag-row">
+      <span class="filter-row__label">Tags:</span>
+    </div>
+
+    <!-- Location & Area -->
+    <div class="filter-row">
+      <span class="filter-row__label">Where:</span>
+      <select id="place-filter" style="padding:8px 14px;border:1px solid #ddd;border-radius:20px;font-family:inherit;font-size:0.85rem;background:white;cursor:pointer;outline:none;min-width:200px;">
         <option value="all">All locations</option>
       </select>
-      <label for="place-cat-filter" style="font-weight: 600; font-size: 0.9rem; color: rgba(0,0,0,0.65); margin-left: 8px;">Area:</label>
-      <select id="place-cat-filter" style="padding: 10px 16px; border: 2px solid #ddd; border-radius: 50px; font-family: inherit; font-size: 0.9rem; background: white; min-width: 200px; cursor: pointer; outline: none;">
+      <select id="place-cat-filter" style="padding:8px 14px;border:1px solid #ddd;border-radius:20px;font-family:inherit;font-size:0.85rem;background:white;cursor:pointer;outline:none;min-width:180px;">
         <option value="all">All areas</option>
       </select>
     </div>
 
-    <!-- Active filters display -->
-    <div id="active-filters" style="display: none; margin-bottom: 24px;">
-      <span style="font-size: 0.85rem; color: rgba(0,0,0,0.5);">Active filters:</span>
-      <span id="filter-badges" style="display: inline-flex; flex-wrap: wrap; gap: 8px; margin-left: 8px;"></span>
-      <button id="clear-filters" style="background: none; border: none; color: #3ca474; font-weight: 600; font-size: 0.85rem; cursor: pointer; margin-left: 12px;">Clear all</button>
+    <!-- View toggle and grouping -->
+    <div class="filter-row" style="justify-content: space-between; margin-top: 8px;">
+      <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap;">
+        <span class="filter-row__label">View:</span>
+        <div class="view-toggle">
+          <button data-view="grid" class="active">Grid</button>
+          <button data-view="calendar">Calendar</button>
+          <button data-view="map">Map</button>
+        </div>
+        <label style="display:flex;align-items:center;gap:6px;font-size:0.85rem;color:rgba(0,0,0,0.65);cursor:pointer;">
+          <input type="checkbox" id="group-recurring" checked> Group recurring
+        </label>
+      </div>
+      <div class="feed-links">
+        <a href="/events/feed.xml" target="_blank" rel="noopener">📡 RSS</a>
+        <a href="/events/calendar.ics" target="_blank" rel="noopener">📅 iCal</a>
+      </div>
     </div>
 
-    <!-- Results count -->
-    <p class="results-count" id="results-count"></p>
+    <!-- Active filters -->
+    <div id="active-filters" style="display:none;margin: 16px 0;">
+      <span style="font-size:0.85rem;color:rgba(0,0,0,0.5);">Active filters:</span>
+      <span id="filter-badges" style="display:inline-flex;flex-wrap:wrap;gap:8px;margin-left:8px;"></span>
+      <button id="clear-filters" style="background:none;border:none;color:#3ca474;font-weight:600;font-size:0.85rem;cursor:pointer;margin-left:12px;">Clear all</button>
+    </div>
 
-    <!-- Events grid (rendered by JS) -->
+    <p class="results-count" id="results-count" style="margin-top: 24px;"></p>
+
+    <!-- Grid view -->
     <div class="grid-3" id="events-grid"></div>
 
-    <!-- No results message -->
-    <div class="no-results" id="no-results" style="display: none;">
-      No events found matching your search. Try a different keyword or category.
+    <!-- Calendar view -->
+    <div id="events-calendar" style="display:none;"></div>
+
+    <!-- Map view -->
+    <div id="events-map-wrap" style="display:none;">
+      <div id="event-map"></div>
+      <p style="font-size:0.85rem;color:rgba(0,0,0,0.5);margin-top:12px;">Click a pin to see events at that location.</p>
     </div>
 
-    <!-- Pagination -->
+    <div class="no-results" id="no-results" style="display:none;">
+      No events found matching your filters. Try adjusting them.
+    </div>
+
     <div class="pagination" id="pagination"></div>
   </div>
 </section>
@@ -93,72 +349,6 @@ permalink: /events/
     <h2 class="mb-sm">Share your event or update with the community</h2>
     <p style="max-width: 600px; margin: 0 auto 32px;">Add your concert, run, or community event so the whole park (or at least the ones you want to notify) knows where to be.</p>
     <a href="/contact-us/" class="btn btn-green">Submit your event</a>
-  </div>
-</section>
-
-<!-- Seasonal Staples -->
-<section class="section bg-green">
-  <div class="container">
-    <h2 class="text-center mb-sm">Seasonal staples</h2>
-    <p class="text-center" style="max-width: 600px; margin: 0 auto 48px;">Some things happen every year. These are some park traditions worth knowing.</p>
-    <div class="season-grid">
-      <div class="season-card" style="background: white;">
-        <h3>Spring</h3>
-        <ul>
-          <li>Cherry Blossoms bloom</li>
-          <li>Shakespeare in the Park rehearsals</li>
-          <li>Central Park Film Festival (spring series)</li>
-          <li>Turtle Pond turtle sightings (peak basking season)</li>
-          <li>Migratory bird watching in the Ramble</li>
-        </ul>
-      </div>
-      <div class="season-card" style="background: white;">
-        <h3>Summer</h3>
-        <ul>
-          <li>SummerStage concerts</li>
-          <li>Shakespeare in the Park main run</li>
-          <li>Free yoga on the Great Lawn</li>
-          <li>Roller disco/skating parties near Bandshell</li>
-          <li>Outdoor movie nights on the Lawn</li>
-        </ul>
-      </div>
-      <div class="season-card" style="background: white;">
-        <h3>Fall</h3>
-        <ul>
-          <li>New York City Marathon</li>
-          <li>Central Park Conservancy's "Fall Foliage Walks"</li>
-          <li>Great Pumpkin Flotilla</li>
-          <li>Harvest Festival</li>
-          <li>Peak leaf-peeping around the Mall and Literary Walk</li>
-        </ul>
-      </div>
-      <div class="season-card" style="background: white;">
-        <h3>Winter</h3>
-        <ul>
-          <li>Ice skating at Wollman Rink</li>
-          <li>Holiday markets near Columbus Circle</li>
-          <li>Snow sculpture gatherings on the Great Lawn</li>
-          <li>Winter birding in the Ramble (owls, hawks, sparrows)</li>
-          <li>Horse carriage rides with seasonal lights</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Patrol Reports CTA -->
-<section class="section">
-  <div class="container">
-    <div class="split">
-      <div class="split__image">
-        <img src="/assets/images/events-patrol.avif" alt="Happy black and tan dog wearing a harness sitting under a stone arch tunnel on a street.">
-      </div>
-      <div class="split__text">
-        <h2>Want the small stuff too?</h2>
-        <p>This page covers the big stuff like marathons, concerts, closures. But Poppy and the Squirrel Patrol report the street-level magic: buskers, surprise parades, and goose uprisings.</p>
-        <a href="https://poppyrlane.com/field-reports/" class="btn btn-orange">See the patrol reports</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -174,9 +364,25 @@ permalink: /events/
   </div>
 </section>
 
-<!-- Event data as JSON -->
+<!-- Event JSON (all future events) -->
+{% assign now = 'now' | date: '%Y-%m-%d' %}
+{% assign visible_events = site.events | sort: "date" %}
 <script id="events-data" type="application/json">
-[{% assign sorted_events = site.events | sort: "date" %}{% for event in sorted_events %}{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":"{{ event.tags | join: ' ' }}","eventType":"{{ event.event_type }}"}{% unless forloop.last %},{% endunless %}{% endfor %}]
+[
+{%- assign first = true -%}
+{%- for event in visible_events -%}
+{%- assign event_date = event.date | date: '%Y-%m-%d' -%}
+{%- if event_date >= now -%}
+{%- if first %}{% assign first = false %}{% else %},{% endif -%}
+{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}"}
+{%- endif -%}
+{%- endfor -%}
+]
+</script>
+
+<!-- Place coords -->
+<script id="place-coords" type="application/json">
+{% assign coords = site.data.place-coordinates %}{ {% for entry in coords %}"{{ entry[0] | replace: '"', '\"' }}":[{{ entry[1][0] }},{{ entry[1][1] }}]{% unless forloop.last %},{% endunless %}{% endfor %} }
 </script>
 
 <!-- Place category labels -->
@@ -186,89 +392,251 @@ permalink: /events/
 
 <script>
 (function() {
+  // ── State ──────────────────────────────────────────────────────
   var ITEMS_PER_PAGE = 12;
-  var currentPage = 1;
-  var currentFilter = 'all';
-  var currentPlace = 'all';
-  var currentPlaceCat = 'all';
-  var currentSearch = '';
-
-  var allEvents = JSON.parse(document.getElementById('events-data').textContent);
-  var placeCatLabels = JSON.parse(document.getElementById('place-cat-labels').textContent);
-  var grid = document.getElementById('events-grid');
-  var pagination = document.getElementById('pagination');
-  var resultsCount = document.getElementById('results-count');
-  var noResults = document.getElementById('no-results');
-  var searchInput = document.getElementById('event-search');
-  var placeSelect = document.getElementById('place-filter');
-  var placeCatSelect = document.getElementById('place-cat-filter');
-  var activeFiltersEl = document.getElementById('active-filters');
-  var filterBadgesEl = document.getElementById('filter-badges');
-  var clearFiltersBtn = document.getElementById('clear-filters');
-
-  var categoryLabels = {
-    'runs-races': 'Runs &amp; Races',
-    'concerts-performances': 'Concerts &amp; Performances',
-    'family-community': 'Family &amp; Community',
-    'closures': 'Closures'
+  var state = {
+    page: 1,
+    category: 'all',
+    sport: 'all',
+    place: 'all',
+    placeCat: 'all',
+    timeOfDay: null,    // 'morning' | 'afternoon' | 'evening'
+    dateQuick: null,    // 'today' | 'weekend' | 'week' | 'month'
+    dateExact: '',      // YYYY-MM-DD
+    activeTags: [],
+    search: '',
+    view: 'grid',
+    groupRecurring: true,
+    calMonth: null,     // Date object first day of month
   };
 
-  // ── Build filter option lists ──────────────────────────────────
-  // Category tab counts
+  // ── Data ───────────────────────────────────────────────────────
+  var allEvents = JSON.parse(document.getElementById('events-data').textContent);
+  var placeCoords = JSON.parse(document.getElementById('place-coords').textContent);
+  var placeCatLabels = JSON.parse(document.getElementById('place-cat-labels').textContent);
+
+  var categoryLabels = {
+    'sports': 'Sports',
+    'runs-races': 'Runs & Races',
+    'concerts-performances': 'Concerts & Performances',
+    'family-community': 'Family & Community',
+    'education': 'Education',
+    'private-events': 'Private Events',
+    'closures': 'Closures',
+    'maintenance': 'Maintenance'
+  };
+
+  // Detect sport subtype from title/tags
+  function getSportType(e) {
+    var t = (e.title + ' ' + (e.tags || []).join(' ')).toLowerCase();
+    if (t.indexOf('softball') !== -1) return 'softball';
+    if (t.indexOf('baseball') !== -1) return 'baseball';
+    if (t.indexOf('soccer') !== -1) return 'soccer';
+    if (t.indexOf('tennis') !== -1) return 'tennis';
+    if (t.indexOf('kickball') !== -1) return 'kickball';
+    if (t.indexOf('pickleball') !== -1) return 'pickleball';
+    if (t.indexOf('basketball') !== -1) return 'basketball';
+    if (t.indexOf('volleyball') !== -1) return 'volleyball';
+    if (t.indexOf('lacrosse') !== -1) return 'lacrosse';
+    if (t.indexOf('rugby') !== -1) return 'rugby';
+    if (t.indexOf('frisbee') !== -1) return 'frisbee';
+    return 'other';
+  }
+
+  // Time of day from "HH:MM"
+  function getTimeOfDay(timeStr) {
+    if (!timeStr) return null;
+    var h = parseInt(timeStr.split(':')[0], 10);
+    if (h < 12) return 'morning';
+    if (h < 17) return 'afternoon';
+    return 'evening';
+  }
+
+  // Pre-compute fields
+  allEvents.forEach(function(e) {
+    if (!Array.isArray(e.tags)) e.tags = (e.tags || '').split(/\s+/).filter(Boolean);
+    e._sportType = e.category === 'sports' ? getSportType(e) : null;
+    e._timeOfDay = getTimeOfDay(e.time);
+    e._dateObj = new Date(e.date + 'T00:00:00');
+  });
+
+  // ── Date helpers ───────────────────────────────────────────────
+  function todayISO() {
+    var d = new Date();
+    return d.toISOString().slice(0, 10);
+  }
+  function dateInRange(eventDate, quick) {
+    var today = new Date();
+    today.setHours(0,0,0,0);
+    var ev = new Date(eventDate + 'T00:00:00');
+    var diffDays = Math.floor((ev - today) / (1000 * 60 * 60 * 24));
+    if (quick === 'today') return diffDays === 0;
+    if (quick === 'weekend') {
+      var dayOfWeek = today.getDay();
+      // Days until next Saturday (or today if Sat)
+      var daysToSat = dayOfWeek === 6 ? 0 : (6 - dayOfWeek);
+      var daysToSun = daysToSat + 1;
+      return diffDays >= daysToSat && diffDays <= daysToSun;
+    }
+    if (quick === 'week') return diffDays >= 0 && diffDays <= 7;
+    if (quick === 'month') return diffDays >= 0 && diffDays <= 30;
+    return true;
+  }
+
+  // ── Filter logic ───────────────────────────────────────────────
+  function getFilteredFlat() {
+    return allEvents.filter(function(e) {
+      if (state.category !== 'all' && e.category !== state.category) return false;
+      if (state.category === 'sports' && state.sport !== 'all' && e._sportType !== state.sport) return false;
+      if (state.place !== 'all' && e.place !== state.place) return false;
+      if (state.placeCat !== 'all' && e.placeCat !== state.placeCat) return false;
+      if (state.timeOfDay && e._timeOfDay !== state.timeOfDay) return false;
+      if (state.dateQuick && !dateInRange(e.date, state.dateQuick)) return false;
+      if (state.dateExact && e.date !== state.dateExact) return false;
+      if (state.activeTags.length) {
+        for (var i = 0; i < state.activeTags.length; i++) {
+          if (e.tags.indexOf(state.activeTags[i]) === -1) return false;
+        }
+      }
+      if (state.search) {
+        var s = (e.title + ' ' + e.location + ' ' + e.place + ' ' + e.description + ' ' + e.tags.join(' ') + ' ' + e.eventType).toLowerCase();
+        if (s.indexOf(state.search) === -1) return false;
+      }
+      return true;
+    });
+  }
+
+  // Group recurring: events with same title + place
+  function groupEvents(events) {
+    if (!state.groupRecurring) return events.map(function(e) { return { type: 'single', event: e }; });
+    var groups = {};
+    var order = [];
+    events.forEach(function(e) {
+      var key = (e.title || '') + '|' + (e.place || '');
+      if (!groups[key]) {
+        groups[key] = [];
+        order.push(key);
+      }
+      groups[key].push(e);
+    });
+    return order.map(function(key) {
+      var arr = groups[key];
+      if (arr.length === 1) return { type: 'single', event: arr[0] };
+      return { type: 'recurring', events: arr, first: arr[0], count: arr.length };
+    });
+  }
+
+  // ── Build filter UI ─────────────────────────────────────────────
+  // Category counts
   var catCounts = { all: allEvents.length };
   allEvents.forEach(function(e) {
     catCounts[e.category] = (catCounts[e.category] || 0) + 1;
   });
-  Object.keys(catCounts).forEach(function(key) {
-    var el = document.getElementById('count-' + key);
-    if (el) el.textContent = '(' + catCounts[key] + ')';
+  Object.keys(catCounts).forEach(function(k) {
+    var el = document.getElementById('count-' + k);
+    if (el) el.textContent = '(' + catCounts[k] + ')';
   });
 
-  // Place dropdown - sorted by event count desc
+  // Place dropdown (alphabetical)
   var placeCounts = {};
-  allEvents.forEach(function(e) {
-    if (e.place) placeCounts[e.place] = (placeCounts[e.place] || 0) + 1;
-  });
-  var sortedPlaces = Object.keys(placeCounts).sort(function(a, b) {
-    return placeCounts[b] - placeCounts[a];
-  });
-  sortedPlaces.forEach(function(p) {
+  allEvents.forEach(function(e) { if (e.place) placeCounts[e.place] = (placeCounts[e.place] || 0) + 1; });
+  var placeSelect = document.getElementById('place-filter');
+  Object.keys(placeCounts).sort(function(a,b) { return a.localeCompare(b); }).forEach(function(p) {
     var opt = document.createElement('option');
     opt.value = p;
     opt.textContent = p + ' (' + placeCounts[p] + ')';
     placeSelect.appendChild(opt);
   });
 
-  // Place category dropdown - sorted by count desc
+  // Place category dropdown
   var pcCounts = {};
-  allEvents.forEach(function(e) {
-    if (e.placeCat) pcCounts[e.placeCat] = (pcCounts[e.placeCat] || 0) + 1;
-  });
-  var sortedPcats = Object.keys(pcCounts).sort(function(a, b) {
-    return pcCounts[b] - pcCounts[a];
-  });
-  sortedPcats.forEach(function(pc) {
+  allEvents.forEach(function(e) { if (e.placeCat) pcCounts[e.placeCat] = (pcCounts[e.placeCat] || 0) + 1; });
+  var placeCatSelect = document.getElementById('place-cat-filter');
+  Object.keys(pcCounts).sort(function(a,b) { return pcCounts[b] - pcCounts[a]; }).forEach(function(pc) {
     var opt = document.createElement('option');
     opt.value = pc;
     opt.textContent = (placeCatLabels[pc] || pc) + ' (' + pcCounts[pc] + ')';
     placeCatSelect.appendChild(opt);
   });
 
-  // ── Filter logic ───────────────────────────────────────────────
-  function getFiltered() {
-    return allEvents.filter(function(e) {
-      if (currentFilter !== 'all' && e.category !== currentFilter) return false;
-      if (currentPlace !== 'all' && e.place !== currentPlace) return false;
-      if (currentPlaceCat !== 'all' && e.placeCat !== currentPlaceCat) return false;
-      if (currentSearch) {
-        var searchable = (e.title + ' ' + e.location + ' ' + e.place + ' ' + e.description + ' ' + e.tags + ' ' + e.eventType).toLowerCase();
-        if (searchable.indexOf(currentSearch) === -1) return false;
-      }
-      return true;
+  // Sport sub-types
+  var sportCounts = {};
+  allEvents.forEach(function(e) {
+    if (e.category === 'sports' && e._sportType) {
+      sportCounts[e._sportType] = (sportCounts[e._sportType] || 0) + 1;
+    }
+  });
+  var sportRow = document.getElementById('sport-sub-row');
+  Object.keys(sportCounts).sort(function(a,b) { return sportCounts[b] - sportCounts[a]; }).forEach(function(sp) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.setAttribute('data-sport', sp);
+    btn.innerHTML = sp.charAt(0).toUpperCase() + sp.slice(1) + ' <span class="filter-chip__count">(' + sportCounts[sp] + ')</span>';
+    btn.onclick = function() {
+      state.sport = sp;
+      state.page = 1;
+      sportRow.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
+      btn.classList.add('active');
+      render();
+    };
+    sportRow.appendChild(btn);
+  });
+  // Set "All sports" active by default
+  sportRow.querySelector('[data-sport="all"]').classList.add('active');
+  sportRow.querySelector('[data-sport="all"]').onclick = function() {
+    state.sport = 'all';
+    state.page = 1;
+    sportRow.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
+    this.classList.add('active');
+    render();
+  };
+
+  // Tag chips - top tags
+  var tagCounts = {};
+  allEvents.forEach(function(e) {
+    e.tags.forEach(function(t) {
+      if (t && t !== 'community') tagCounts[t] = (tagCounts[t] || 0) + 1;
     });
+  });
+  var topTags = Object.keys(tagCounts).sort(function(a,b) { return tagCounts[b] - tagCounts[a]; }).slice(0, 18);
+  var tagRow = document.getElementById('tag-row');
+  topTags.forEach(function(tag) {
+    var btn = document.createElement('button');
+    btn.className = 'filter-chip';
+    btn.setAttribute('data-tag', tag);
+    btn.innerHTML = '#' + tag + ' <span class="filter-chip__count">(' + tagCounts[tag] + ')</span>';
+    btn.onclick = function() {
+      var idx = state.activeTags.indexOf(tag);
+      if (idx === -1) {
+        state.activeTags.push(tag);
+        btn.classList.add('active');
+      } else {
+        state.activeTags.splice(idx, 1);
+        btn.classList.remove('active');
+      }
+      state.page = 1;
+      render();
+    };
+    tagRow.appendChild(btn);
+  });
+
+  // ── Renderers ──────────────────────────────────────────────────
+  function escHtml(str) {
+    if (!str) return '';
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+  function fmtTime(t) {
+    if (!t) return '';
+    var p = t.split(':');
+    var h = parseInt(p[0], 10);
+    var ampm = h >= 12 ? 'PM' : 'AM';
+    if (h === 0) h = 12;
+    else if (h > 12) h -= 12;
+    return h + ':' + p[1] + ' ' + ampm;
   }
 
-  // ── Render ─────────────────────────────────────────────────────
   function renderCard(e) {
     var placeBadge = e.place ? '<span class="place-badge">' + escHtml(e.place) + '</span>' : '';
     return '<a href="' + e.url + '" class="event-card">' +
@@ -280,7 +648,7 @@ permalink: /events/
         '</div>' +
         '<div class="event-card__meta">' +
           '<span><img src="/assets/icons/calendar.png" alt="">' + e.dateDisplay + '</span>' +
-          '<span><img src="/assets/icons/time.png" alt="">' + e.time + '</span>' +
+          '<span><img src="/assets/icons/time.png" alt="">' + fmtTime(e.time) + '</span>' +
         '</div>' +
         '<h3 class="event-card__title">' + escHtml(e.title) + '</h3>' +
         '<p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> ' + escHtml(e.location) + '</p>' +
@@ -289,69 +657,74 @@ permalink: /events/
     '</a>';
   }
 
-  function escHtml(str) {
-    if (!str) return '';
-    var div = document.createElement('div');
-    div.textContent = str;
-    return div.innerHTML;
-  }
-
-  function updateActiveFilters() {
-    var badges = [];
-    if (currentFilter !== 'all') badges.push(categoryLabels[currentFilter] || currentFilter);
-    if (currentPlace !== 'all') badges.push(currentPlace);
-    if (currentPlaceCat !== 'all') badges.push(placeCatLabels[currentPlaceCat] || currentPlaceCat);
-    if (currentSearch) badges.push('"' + currentSearch + '"');
-
-    if (badges.length > 0) {
-      activeFiltersEl.style.display = '';
-      filterBadgesEl.innerHTML = badges.map(function(b) {
-        return '<span style="background:#3ca474;color:white;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:600;">' + b + '</span>';
-      }).join('');
-    } else {
-      activeFiltersEl.style.display = 'none';
+  function renderRecurringCard(group) {
+    var first = group.first;
+    var nextDate = first.dateDisplay;
+    var dateRange = '';
+    if (group.count > 1) {
+      var dates = group.events.map(function(e) { return e.date; }).sort();
+      var firstD = new Date(dates[0] + 'T00:00:00');
+      var lastD = new Date(dates[dates.length - 1] + 'T00:00:00');
+      var fmt = { month: 'short', day: 'numeric' };
+      dateRange = firstD.toLocaleDateString('en-US', fmt) + ' &ndash; ' + lastD.toLocaleDateString('en-US', fmt);
     }
+    return '<a href="' + first.url + '" class="recurring-card">' +
+      '<span class="recurring-card__badge">' + group.count + ' dates</span>' +
+      '<img class="recurring-card__image" src="' + first.image + '" alt="' + escHtml(first.title) + '" loading="lazy">' +
+      '<div class="recurring-card__body">' +
+        '<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">' +
+          '<span class="category-badge category-badge--' + first.category + '">' + (categoryLabels[first.category] || first.category) + '</span>' +
+        '</div>' +
+        '<h3 style="font-size:1.15rem;margin-bottom:6px;">' + escHtml(first.title) + '</h3>' +
+        '<p style="font-size:0.9rem;color:rgba(0,0,0,0.65);margin-bottom:6px;"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> ' + escHtml(first.place || first.location) + '</p>' +
+        '<div class="recurring-card__dates">📅 ' + dateRange + ' · ' + fmtTime(first.time) + '</div>' +
+      '</div>' +
+    '</a>';
   }
 
-  function render() {
-    var filtered = getFiltered();
-    var totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
-    if (currentPage > totalPages) currentPage = totalPages || 1;
+  function renderGrid() {
+    var filtered = getFilteredFlat();
+    var grouped = groupEvents(filtered);
+    var totalPages = Math.ceil(grouped.length / ITEMS_PER_PAGE);
+    if (state.page > totalPages) state.page = totalPages || 1;
+    var start = (state.page - 1) * ITEMS_PER_PAGE;
+    var pageItems = grouped.slice(start, start + ITEMS_PER_PAGE);
 
-    var start = (currentPage - 1) * ITEMS_PER_PAGE;
-    var pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
+    var grid = document.getElementById('events-grid');
+    grid.innerHTML = pageItems.map(function(item) {
+      return item.type === 'recurring' ? renderRecurringCard(item) : renderCard(item.event);
+    }).join('');
 
-    grid.innerHTML = pageItems.map(renderCard).join('');
-    resultsCount.textContent = filtered.length + ' event' + (filtered.length !== 1 ? 's' : '') + ' found';
-    noResults.style.display = filtered.length === 0 ? '' : 'none';
+    document.getElementById('results-count').textContent =
+      filtered.length + ' event' + (filtered.length !== 1 ? 's' : '') +
+      (state.groupRecurring && grouped.length !== filtered.length
+        ? ' across ' + grouped.length + ' listing' + (grouped.length !== 1 ? 's' : '')
+        : '');
+    document.getElementById('no-results').style.display = filtered.length === 0 ? '' : 'none';
     grid.style.display = filtered.length === 0 ? 'none' : '';
 
-    updateActiveFilters();
     renderPagination(totalPages);
   }
 
   function renderPagination(totalPages) {
+    var pagination = document.getElementById('pagination');
     pagination.innerHTML = '';
     if (totalPages <= 1) return;
-
     var prev = document.createElement('button');
-    prev.className = 'pagination__btn' + (currentPage === 1 ? ' disabled' : '');
+    prev.className = 'pagination__btn' + (state.page === 1 ? ' disabled' : '');
     prev.innerHTML = '&larr;';
-    prev.disabled = currentPage === 1;
-    prev.onclick = function() { if (currentPage > 1) { currentPage--; render(); scrollToList(); } };
+    prev.disabled = state.page === 1;
+    prev.onclick = function() { if (state.page > 1) { state.page--; render(); scrollToList(); } };
     pagination.appendChild(prev);
-
     var pages = [];
-    if (totalPages <= 7) {
-      for (var i = 1; i <= totalPages; i++) pages.push(i);
-    } else {
+    if (totalPages <= 7) for (var i = 1; i <= totalPages; i++) pages.push(i);
+    else {
       pages.push(1);
-      if (currentPage > 3) pages.push('...');
-      for (var j = Math.max(2, currentPage - 1); j <= Math.min(totalPages - 1, currentPage + 1); j++) pages.push(j);
-      if (currentPage < totalPages - 2) pages.push('...');
+      if (state.page > 3) pages.push('...');
+      for (var j = Math.max(2, state.page - 1); j <= Math.min(totalPages - 1, state.page + 1); j++) pages.push(j);
+      if (state.page < totalPages - 2) pages.push('...');
       pages.push(totalPages);
     }
-
     pages.forEach(function(p) {
       if (p === '...') {
         var span = document.createElement('span');
@@ -360,24 +733,22 @@ permalink: /events/
         pagination.appendChild(span);
       } else {
         var btn = document.createElement('button');
-        btn.className = 'pagination__btn' + (p === currentPage ? ' active' : '');
+        btn.className = 'pagination__btn' + (p === state.page ? ' active' : '');
         btn.textContent = p;
-        btn.onclick = (function(page) { return function() { currentPage = page; render(); scrollToList(); }; })(p);
+        btn.onclick = (function(pg) { return function() { state.page = pg; render(); scrollToList(); }; })(p);
         pagination.appendChild(btn);
       }
     });
-
     var next = document.createElement('button');
-    next.className = 'pagination__btn' + (currentPage === totalPages ? ' disabled' : '');
+    next.className = 'pagination__btn' + (state.page === totalPages ? ' disabled' : '');
     next.innerHTML = '&rarr;';
-    next.disabled = currentPage === totalPages;
-    next.onclick = function() { if (currentPage < totalPages) { currentPage++; render(); scrollToList(); } };
+    next.disabled = state.page === totalPages;
+    next.onclick = function() { if (state.page < totalPages) { state.page++; render(); scrollToList(); } };
     pagination.appendChild(next);
-
     var info = document.createElement('p');
     info.className = 'pagination__info';
     info.style.cssText = 'width:100%;text-align:center;margin-top:12px;';
-    info.textContent = 'Page ' + currentPage + ' of ' + totalPages;
+    info.textContent = 'Page ' + state.page + ' of ' + totalPages;
     pagination.appendChild(info);
   }
 
@@ -385,80 +756,299 @@ permalink: /events/
     document.getElementById('events-list').scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
-  // ── Event handlers ─────────────────────────────────────────────
-  // Category tabs
-  document.querySelectorAll('.tab[data-filter]').forEach(function(tab) {
-    tab.addEventListener('click', function() {
-      document.querySelectorAll('.tab[data-filter]').forEach(function(t) { t.classList.remove('active'); });
-      tab.classList.add('active');
-      currentFilter = tab.getAttribute('data-filter');
-      currentPage = 1;
-      render();
+  // ── Calendar view ──────────────────────────────────────────────
+  function renderCalendar() {
+    var filtered = getFilteredFlat();
+    var byDate = {};
+    filtered.forEach(function(e) {
+      if (!byDate[e.date]) byDate[e.date] = [];
+      byDate[e.date].push(e);
     });
-  });
 
-  // Place dropdown
-  placeSelect.addEventListener('change', function() {
-    currentPlace = this.value;
-    currentPage = 1;
+    if (!state.calMonth) {
+      state.calMonth = new Date();
+      state.calMonth.setDate(1);
+      state.calMonth.setHours(0,0,0,0);
+    }
+    var month = state.calMonth;
+    var year = month.getFullYear();
+    var monthIdx = month.getMonth();
+    var firstDay = new Date(year, monthIdx, 1).getDay();
+    var daysInMonth = new Date(year, monthIdx + 1, 0).getDate();
+    var monthName = month.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+    var todayStr = todayISO();
+
+    var html = '<div class="cal-nav">' +
+      '<button id="cal-prev">&larr; Prev</button>' +
+      '<h3>' + monthName + '</h3>' +
+      '<button id="cal-next">Next &rarr;</button>' +
+    '</div>';
+    html += '<div class="cal-grid">';
+    var dayNames = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    dayNames.forEach(function(d) { html += '<div class="cal-day-header">' + d + '</div>'; });
+
+    for (var i = 0; i < firstDay; i++) html += '<div class="cal-cell cal-cell--empty"></div>';
+    for (var d = 1; d <= daysInMonth; d++) {
+      var dStr = year + '-' + String(monthIdx + 1).padStart(2, '0') + '-' + String(d).padStart(2, '0');
+      var dayEvents = byDate[dStr] || [];
+      var classes = 'cal-cell';
+      if (dStr === todayStr) classes += ' cal-cell--today';
+      if (dStr === state.dateExact) classes += ' cal-cell--selected';
+      html += '<div class="' + classes + '" data-date="' + dStr + '">';
+      html += '<div class="cal-cell__date">' + d + '</div>';
+      if (dayEvents.length > 0) {
+        html += '<div class="cal-cell__count">' + dayEvents.length + ' event' + (dayEvents.length !== 1 ? 's' : '') + '</div>';
+        html += '<div class="cal-cell__events">';
+        dayEvents.slice(0, 2).forEach(function(e) {
+          html += '<div class="cal-cell__event" title="' + escHtml(e.title) + '">' + escHtml(e.title) + '</div>';
+        });
+        if (dayEvents.length > 2) html += '<div style="font-size:0.65rem;color:rgba(0,0,0,0.4);margin-top:2px;">+' + (dayEvents.length - 2) + ' more</div>';
+        html += '</div>';
+      }
+      html += '</div>';
+    }
+    html += '</div>';
+
+    var calEl = document.getElementById('events-calendar');
+    calEl.innerHTML = html;
+
+    document.getElementById('cal-prev').onclick = function() {
+      state.calMonth = new Date(year, monthIdx - 1, 1);
+      renderCalendar();
+    };
+    document.getElementById('cal-next').onclick = function() {
+      state.calMonth = new Date(year, monthIdx + 1, 1);
+      renderCalendar();
+    };
+    calEl.querySelectorAll('.cal-cell:not(.cal-cell--empty)').forEach(function(cell) {
+      cell.onclick = function() {
+        var dt = cell.getAttribute('data-date');
+        state.dateExact = (state.dateExact === dt) ? '' : dt;
+        document.getElementById('admin-date-filter').value = state.dateExact;
+        // Show as a list below, switch view to grid
+        state.view = 'grid';
+        applyView();
+        render();
+      };
+    });
+
+    document.getElementById('results-count').textContent = filtered.length + ' event' + (filtered.length !== 1 ? 's' : '') + ' in view';
+    document.getElementById('no-results').style.display = 'none';
+  }
+
+  // ── Map view ───────────────────────────────────────────────────
+  var map = null;
+  var markersLayer = null;
+  function renderMap() {
+    if (typeof L === 'undefined') {
+      document.getElementById('event-map').innerHTML = '<p style="padding:24px;text-align:center;">Loading map...</p>';
+      setTimeout(renderMap, 200);
+      return;
+    }
+    if (!map) {
+      map = L.map('event-map').setView([40.7829, -73.9654], 14);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap',
+        maxZoom: 18
+      }).addTo(map);
+      markersLayer = L.layerGroup().addTo(map);
+    }
+    markersLayer.clearLayers();
+
+    var filtered = getFilteredFlat();
+    var byPlace = {};
+    filtered.forEach(function(e) {
+      var p = e.place || e.location;
+      if (!p) return;
+      if (!byPlace[p]) byPlace[p] = [];
+      byPlace[p].push(e);
+    });
+
+    Object.keys(byPlace).forEach(function(place) {
+      var coord = placeCoords[place];
+      if (!coord) return;
+      var events = byPlace[place];
+      var icon = L.divIcon({
+        className: 'cp-marker',
+        html: '<div style="background:#3ca474;color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.85rem;border:2px solid white;box-shadow:0 2px 8px rgba(0,0,0,0.3);">' + events.length + '</div>',
+        iconSize: [32,32],
+        iconAnchor: [16,16]
+      });
+      var popupHtml = '<div class="map-popup__title">' + escHtml(place) + '</div>' +
+        '<div class="map-popup__meta">' + events.length + ' upcoming event' + (events.length !== 1 ? 's' : '') + '</div>';
+      events.slice(0, 5).forEach(function(e) {
+        popupHtml += '<div style="margin-bottom:4px;font-size:0.85rem;">' +
+          '<a href="' + e.url + '" style="color:#3ca474;text-decoration:none;font-weight:600;">' + escHtml(e.title) + '</a>' +
+          ' · <span style="color:rgba(0,0,0,0.5);">' + e.dateDisplay + '</span>' +
+          '</div>';
+      });
+      if (events.length > 5) {
+        popupHtml += '<a class="map-popup__more" href="?place=' + encodeURIComponent(place) + '">View all ' + events.length + ' &rarr;</a>';
+      }
+      L.marker(coord, { icon: icon }).addTo(markersLayer).bindPopup(popupHtml);
+    });
+
+    setTimeout(function() { map.invalidateSize(); }, 50);
+    document.getElementById('results-count').textContent = filtered.length + ' event' + (filtered.length !== 1 ? 's' : '') + ' across ' + Object.keys(byPlace).length + ' locations';
+    document.getElementById('no-results').style.display = filtered.length === 0 ? '' : 'none';
+  }
+
+  // ── Active filters display ─────────────────────────────────────
+  function updateActiveFilters() {
+    var badges = [];
+    if (state.category !== 'all') badges.push(categoryLabels[state.category] || state.category);
+    if (state.sport !== 'all') badges.push(state.sport);
+    if (state.place !== 'all') badges.push(state.place);
+    if (state.placeCat !== 'all') badges.push(placeCatLabels[state.placeCat] || state.placeCat);
+    if (state.timeOfDay) badges.push(state.timeOfDay);
+    if (state.dateQuick) badges.push(state.dateQuick);
+    if (state.dateExact) badges.push(state.dateExact);
+    state.activeTags.forEach(function(t) { badges.push('#' + t); });
+    if (state.search) badges.push('"' + state.search + '"');
+    var el = document.getElementById('active-filters');
+    if (badges.length === 0) { el.style.display = 'none'; return; }
+    el.style.display = '';
+    document.getElementById('filter-badges').innerHTML = badges.map(function(b) {
+      return '<span style="background:#3ca474;color:white;padding:4px 12px;border-radius:20px;font-size:0.8rem;font-weight:600;">' + escHtml(String(b)) + '</span>';
+    }).join('');
+  }
+
+  // ── View toggle ────────────────────────────────────────────────
+  function applyView() {
+    document.querySelectorAll('.view-toggle button').forEach(function(b) {
+      b.classList.toggle('active', b.getAttribute('data-view') === state.view);
+    });
+    document.getElementById('events-grid').style.display = state.view === 'grid' ? '' : 'none';
+    document.getElementById('events-calendar').style.display = state.view === 'calendar' ? '' : 'none';
+    document.getElementById('events-map-wrap').style.display = state.view === 'map' ? '' : 'none';
+    document.getElementById('pagination').style.display = state.view === 'grid' ? '' : 'none';
+  }
+
+  // ── Master render ──────────────────────────────────────────────
+  function render() {
+    document.getElementById('sport-sub-row').style.display = state.category === 'sports' ? '' : 'none';
+    updateActiveFilters();
+    if (state.view === 'grid') renderGrid();
+    else if (state.view === 'calendar') renderCalendar();
+    else if (state.view === 'map') renderMap();
+  }
+
+  // ── Event handlers ─────────────────────────────────────────────
+  // Category chips
+  document.querySelectorAll('.filter-chip[data-filter]').forEach(function(b) {
+    b.onclick = function() {
+      document.querySelectorAll('.filter-chip[data-filter]').forEach(function(c) { c.classList.remove('active'); });
+      b.classList.add('active');
+      state.category = b.getAttribute('data-filter');
+      if (state.category !== 'sports') state.sport = 'all';
+      state.page = 1;
+      render();
+    };
+  });
+  // Date quick
+  document.querySelectorAll('.filter-chip[data-date-quick]').forEach(function(b) {
+    b.onclick = function() {
+      var v = b.getAttribute('data-date-quick');
+      if (state.dateQuick === v) { state.dateQuick = null; b.classList.remove('active'); }
+      else {
+        document.querySelectorAll('.filter-chip[data-date-quick]').forEach(function(c) { c.classList.remove('active'); });
+        b.classList.add('active');
+        state.dateQuick = v;
+      }
+      state.dateExact = '';
+      document.getElementById('admin-date-filter').value = '';
+      state.page = 1;
+      render();
+    };
+  });
+  // Time of day
+  document.querySelectorAll('.filter-chip[data-time-of-day]').forEach(function(b) {
+    b.onclick = function() {
+      var v = b.getAttribute('data-time-of-day');
+      if (state.timeOfDay === v) { state.timeOfDay = null; b.classList.remove('active'); }
+      else {
+        document.querySelectorAll('.filter-chip[data-time-of-day]').forEach(function(c) { c.classList.remove('active'); });
+        b.classList.add('active');
+        state.timeOfDay = v;
+      }
+      state.page = 1;
+      render();
+    };
+  });
+  // View toggle
+  document.querySelectorAll('.view-toggle button[data-view]').forEach(function(b) {
+    b.onclick = function() {
+      state.view = b.getAttribute('data-view');
+      applyView();
+      render();
+    };
+  });
+  // Group recurring
+  document.getElementById('group-recurring').onchange = function() {
+    state.groupRecurring = this.checked;
+    state.page = 1;
     render();
-  });
-
-  // Place category dropdown
-  placeCatSelect.addEventListener('change', function() {
-    currentPlaceCat = this.value;
-    currentPage = 1;
+  };
+  // Place
+  placeSelect.onchange = function() { state.place = this.value; state.page = 1; render(); };
+  placeCatSelect.onchange = function() { state.placeCat = this.value; state.page = 1; render(); };
+  // Date exact
+  document.getElementById('admin-date-filter').onchange = function() {
+    state.dateExact = this.value;
+    state.dateQuick = null;
+    document.querySelectorAll('.filter-chip[data-date-quick]').forEach(function(c) { c.classList.remove('active'); });
+    state.page = 1;
     render();
-  });
-
+  };
   // Search
   var searchTimeout;
-  searchInput.addEventListener('input', function() {
+  document.getElementById('event-search').addEventListener('input', function() {
+    var v = this.value;
     clearTimeout(searchTimeout);
     searchTimeout = setTimeout(function() {
-      currentSearch = searchInput.value.toLowerCase().trim();
-      currentPage = 1;
+      state.search = v.toLowerCase().trim();
+      state.page = 1;
       render();
-    }, 250);
+    }, 200);
   });
-
-  // Clear all filters
-  clearFiltersBtn.addEventListener('click', function() {
-    currentFilter = 'all';
-    currentPlace = 'all';
-    currentPlaceCat = 'all';
-    currentSearch = '';
-    searchInput.value = '';
+  // Clear
+  document.getElementById('clear-filters').onclick = function() {
+    state.category = 'all';
+    state.sport = 'all';
+    state.place = 'all';
+    state.placeCat = 'all';
+    state.timeOfDay = null;
+    state.dateQuick = null;
+    state.dateExact = '';
+    state.activeTags = [];
+    state.search = '';
+    state.page = 1;
+    document.getElementById('event-search').value = '';
+    document.getElementById('admin-date-filter').value = '';
     placeSelect.value = 'all';
     placeCatSelect.value = 'all';
-    document.querySelectorAll('.tab[data-filter]').forEach(function(t) { t.classList.remove('active'); });
-    document.querySelector('.tab[data-filter="all"]').classList.add('active');
-    currentPage = 1;
+    document.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
+    document.querySelector('.filter-chip[data-filter="all"]').classList.add('active');
+    sportRow.querySelector('[data-sport="all"]').classList.add('active');
     render();
-  });
+  };
 
-  // URL parameter support (e.g., /events/?place=Cop+Cot&category=family-community)
+  // URL params
   var params = new URLSearchParams(window.location.search);
-  if (params.get('place')) {
-    currentPlace = params.get('place');
-    placeSelect.value = currentPlace;
-  }
-  if (params.get('area')) {
-    currentPlaceCat = params.get('area');
-    placeCatSelect.value = currentPlaceCat;
-  }
   if (params.get('category')) {
-    currentFilter = params.get('category');
-    document.querySelectorAll('.tab[data-filter]').forEach(function(t) {
-      t.classList.toggle('active', t.getAttribute('data-filter') === currentFilter);
-    });
+    state.category = params.get('category');
+    var b = document.querySelector('.filter-chip[data-filter="' + state.category + '"]');
+    if (b) {
+      document.querySelectorAll('.filter-chip[data-filter]').forEach(function(c) { c.classList.remove('active'); });
+      b.classList.add('active');
+    }
   }
-  if (params.get('q')) {
-    currentSearch = params.get('q').toLowerCase();
-    searchInput.value = params.get('q');
-  }
+  if (params.get('place')) { state.place = params.get('place'); placeSelect.value = state.place; }
+  if (params.get('area')) { state.placeCat = params.get('area'); placeCatSelect.value = state.placeCat; }
+  if (params.get('q')) { state.search = params.get('q').toLowerCase(); document.getElementById('event-search').value = params.get('q'); }
+  if (params.get('view')) { state.view = params.get('view'); }
 
-  // Initial render
+  applyView();
   render();
 })();
 </script>

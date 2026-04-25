@@ -1,35 +1,36 @@
 ---
-title: "James Christie Soccer Training 11 LLC, DBA SocRoc"
+title: "James Christie Soccer Training 11"
 date: 2026-04-23
-time: "09:30"
-end_time: "13:30"
-location: "Lawn North of Levin Playground"
-place: "Levin Playground"
+time: "13:00"
+end_time: "16:00"
+location: "South Dead Road A"
+place: "South Dead Road"
 place_category: "event_venues"
-category: "family-community"
+category: "education"
 image: "/assets/images/event-3.avif"
-description: "James Christie Soccer Training 11 LLC, DBA SocRoc at Lawn North of Levin Playground in Central Park."
-event_id: "909006"
+description: "James Christie Soccer Training 11 LLC, DBA SocRoc at South Dead Road A in Central Park."
+event_id: "907918"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
   - soccer
+  - school-program
 ---
 
-James Christie Soccer Training 11 LLC, DBA SocRoc takes place at Lawn North of Levin Playground in Central Park on Thursday, April 23, 2026.
+James Christie Soccer Training 11 LLC, DBA SocRoc takes place at South Dead Road A in Central Park on Thursday, April 23, 2026.
 
 ## Event Details
 
 - **Event:** James Christie Soccer Training 11 LLC, DBA SocRoc
 - **Date:** Thursday, April 23, 2026
-- **Time:** 9:30 AM - 1:30 PM
-- **Location:** Lawn North of Levin Playground, Central Park
-- **Place:** Levin Playground
+- **Time:** 1:00 PM - 4:00 PM
+- **Location:** South Dead Road A, Central Park
+- **Place:** South Dead Road
 - **Type:** Special Event
-- **Event ID:** 909006
+- **Event ID:** 907918
 
 ## About This Event
 
-James Christie Soccer Training 11 LLC, DBA SocRoc is a permitted event taking place at Lawn North of Levin Playground in Central Park. Contact the event organizers for more details about attendance and participation.
+James Christie Soccer Training 11 LLC, DBA SocRoc is a permitted event taking place at South Dead Road A in Central Park. Contact the event organizers for more details about attendance and participation.

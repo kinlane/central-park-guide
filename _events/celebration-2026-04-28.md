@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-04-28
-time: "08:30"
-end_time: "10:00"
-location: "Bethesda Fountain Terrace, Minton Arcade"
-place: "Bethesda Terrace and Fountain"
-place_category: "buildings"
-category: "family-community"
-image: "/assets/images/plan-visit-hero.avif"
-description: "Celebration at Bethesda Fountain Terrace, Minton Arcade in Central Park."
-event_id: "918116"
+time: "14:00"
+end_time: "15:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
+place_category: "event_venues"
+category: "private-events"
+image: "/assets/images/gallery-7.avif"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "906641"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Bethesda Fountain Terrace, Minton Arcade in Central Park on Tuesday, April 28, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Tuesday, April 28, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Tuesday, April 28, 2026
-- **Time:** 8:30 AM - 10:00 AM
-- **Location:** Bethesda Fountain Terrace, Minton Arcade, Central Park
-- **Place:** Bethesda Terrace and Fountain
+- **Time:** 2:00 PM - 3:00 PM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 918116
+- **Event ID:** 906641
 
 ## About This Event
 
-Celebration is a permitted event taking place at Bethesda Fountain Terrace, Minton Arcade in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

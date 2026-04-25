@@ -1,37 +1,37 @@
 ---
 title: "Baseball - 12 and Under (Little League)"
-date: 2026-04-28
+date: 2026-05-19
 time: "16:00"
 end_time: "17:00"
-location: "North Meadow-Softball-09"
-place: "North Meadow"
+location: "Great Lawn-Softball-05"
+place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/park-1.avif"
-description: "Baseball - 12 and Under (Little League) at North Meadow-Softball-09. Youth league permitted event in Central Park."
-event_id: "913328"
+category: "sports"
+image: "/assets/images/gallery-1.avif"
+description: "Baseball - 12 and Under (Little League) at Great Lawn-Softball-05. Youth league permitted event in Central Park."
+event_id: "915342"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
   - youth
-  - sports
   - baseball
+  - sports
 ---
 
-Baseball - 12 and Under (Little League) takes place at North Meadow-Softball-09 in Central Park on Tuesday, April 28, 2026.
+Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-05 in Central Park on Tuesday, May 19, 2026.
 
 ## Event Details
 
 - **Event:** Baseball - 12 and Under (Little League)
-- **Date:** Tuesday, April 28, 2026
+- **Date:** Tuesday, May 19, 2026
 - **Time:** 4:00 PM - 5:00 PM
-- **Location:** North Meadow-Softball-09, Central Park
-- **Place:** North Meadow
+- **Location:** Great Lawn-Softball-05, Central Park
+- **Place:** Great Lawn
 - **Type:** Sport - Youth
-- **Event ID:** 913328
+- **Event ID:** 915342
 
 ## About This Event
 
-This is a permitted sport - youth event at North Meadow-Softball-09. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Great Lawn-Softball-05. The area may have restricted access during the event period.

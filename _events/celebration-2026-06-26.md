@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-06-26
-time: "11:00"
-end_time: "13:00"
-location: "Belvedere Castle Terrace"
-place: "Belvedere Castle"
-place_category: "buildings"
-category: "family-community"
-image: "/assets/images/plan-visit-hero.avif"
-description: "Celebration at Belvedere Castle Terrace in Central Park."
-event_id: "890592"
+time: "14:00"
+end_time: "16:00"
+location: "Dene Lawn"
+place: "Dene Lawn"
+place_category: "event_venues"
+category: "private-events"
+image: "/assets/images/gallery-4.avif"
+description: "Celebration at Dene Lawn in Central Park."
+event_id: "886988"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Belvedere Castle Terrace in Central Park on Friday, June 26, 2026.
+Celebration takes place at Dene Lawn in Central Park on Friday, June 26, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Friday, June 26, 2026
-- **Time:** 11:00 AM - 1:00 PM
-- **Location:** Belvedere Castle Terrace, Central Park
-- **Place:** Belvedere Castle
+- **Time:** 2:00 PM - 4:00 PM
+- **Location:** Dene Lawn, Central Park
+- **Place:** Dene Lawn
 - **Type:** Special Event
-- **Event ID:** 890592
+- **Event ID:** 886988
 
 ## About This Event
 
-Celebration is a permitted event taking place at Belvedere Castle Terrace in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

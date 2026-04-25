@@ -1286,3 +1286,36 @@ event_venues:
       - Central Park West & 72nd Street entrance
     location: West side at 72nd Street
     description: Major western entrance to the park near Strawberry Fields and the Imagine mosaic.
+
+  - name: Central Park West Sidewalks
+    type: sidewalk/path
+    alternate_names:
+      - Central Park West Sidewalks - 97th St to 110th St
+    location: Western border, Central Park West between 59th and 110th Streets
+    description: Sidewalks along the western perimeter of the park.
+
+  - name: Dairy Lawn
+    type: lawn
+    alternate_names:
+      - Diary Lawn
+    location: Southern section, near the Dairy visitor center
+    description: Open lawn area adjacent to the Dairy building in the southern part of the park.
+
+  - name: Dead Road North
+    type: service road
+    alternate_names:
+      - North Dead Road
+    location: Northern section of the park
+    description: Internal park service road in the northern section.
+
+  - name: Kerbs Boathouse
+    type: building
+    alternate_names:
+      - Kerbs Memorial Boathouse
+    location: East side, at Conservatory Water near 74th Street
+    description: Small boathouse at Conservatory Water where model sailboats are stored and rented.
+
+  - name: Frisbee Hill
+    type: hill/lawn
+    location: Sheep Meadow area, mid-park
+    description: Informal name for a sloped area of Sheep Meadow popular for frisbee and casual sports.

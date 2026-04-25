@@ -3,13 +3,13 @@ title: "Softball - Adults"
 date: 2026-05-15
 time: "18:00"
 end_time: "19:30"
-location: "North Meadow-Softball-08"
+location: "North Meadow-Softball-07"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
-description: "Softball - Adults at North Meadow-Softball-08. Adult league permitted event in Central Park."
-event_id: "903950"
+description: "Softball - Adults at North Meadow-Softball-07. Adult league permitted event in Central Park."
+event_id: "903947"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
 community_board: "64"
@@ -19,18 +19,18 @@ tags:
   - sports
 ---
 
-Softball - Adults takes place at North Meadow-Softball-08 in Central Park on Friday, May 15, 2026.
+Softball - Adults takes place at North Meadow-Softball-07 in Central Park on Friday, May 15, 2026.
 
 ## Event Details
 
 - **Event:** Softball - Adults
 - **Date:** Friday, May 15, 2026
 - **Time:** 6:00 PM - 7:30 PM
-- **Location:** North Meadow-Softball-08, Central Park
+- **Location:** North Meadow-Softball-07, Central Park
 - **Place:** North Meadow
 - **Type:** Sport - Adult
-- **Event ID:** 903950
+- **Event ID:** 903947
 
 ## About This Event
 
-This is a permitted sport - adult event at North Meadow-Softball-08. The area may have restricted access during the event period.
+This is a permitted sport - adult event at North Meadow-Softball-07. The area may have restricted access during the event period.

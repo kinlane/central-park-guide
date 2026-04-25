@@ -1,12 +1,12 @@
 ---
-title: "elopement"
+title: "Elopement"
 date: 2026-07-08
 time: "11:00"
 end_time: "13:00"
 location: "Wagner Cove, Cherry Hill"
 place: "Cherry Hill"
 place_category: "natural_areas"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Private ceremony at Wagner Cove, Cherry Hill in Central Park."
 event_id: "891358"
@@ -16,13 +16,14 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
-elopement takes place at Wagner Cove, Cherry Hill in Central Park on Wednesday, July 8, 2026.
+Elopement takes place at Wagner Cove, Cherry Hill in Central Park on Wednesday, July 8, 2026.
 
 ## Event Details
 
-- **Event:** elopement
+- **Event:** Elopement
 - **Date:** Wednesday, July 8, 2026
 - **Time:** 11:00 AM - 1:00 PM
 - **Location:** Wagner Cove, Cherry Hill, Central Park
@@ -32,4 +33,4 @@ elopement takes place at Wagner Cove, Cherry Hill in Central Park on Wednesday, 
 
 ## About This Event
 
-elopement is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.
+Elopement is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.

@@ -1,21 +1,21 @@
 ---
 title: "Celebration"
 date: 2026-05-12
-time: "09:00"
-end_time: "11:00"
+time: "11:30"
+end_time: "13:30"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-4.avif"
 description: "Celebration at Dene Lawn in Central Park."
-event_id: "923346"
+event_id: "914576"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Dene Lawn in Central Park on Tuesday, May 12, 2026.
@@ -24,11 +24,11 @@ Celebration takes place at Dene Lawn in Central Park on Tuesday, May 12, 2026.
 
 - **Event:** Celebration
 - **Date:** Tuesday, May 12, 2026
-- **Time:** 9:00 AM - 11:00 AM
+- **Time:** 11:30 AM - 1:30 PM
 - **Location:** Dene Lawn, Central Park
 - **Place:** Dene Lawn
 - **Type:** Special Event
-- **Event ID:** 923346
+- **Event ID:** 914576
 
 ## About This Event
 

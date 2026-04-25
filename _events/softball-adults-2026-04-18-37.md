@@ -1,15 +1,15 @@
 ---
 title: "Softball - Adults"
 date: 2026-04-18
-time: "10:00"
-end_time: "19:30"
-location: "North Meadow-Softball-09"
+time: "11:00"
+end_time: "13:00"
+location: "North Meadow-Baseball-01"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
-description: "Softball - Adults at North Meadow-Softball-09. Adult league permitted event in Central Park."
-event_id: "907447"
+description: "Softball - Adults at North Meadow-Baseball-01. Adult league permitted event in Central Park."
+event_id: "902778"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
 community_board: "64"
@@ -19,18 +19,18 @@ tags:
   - sports
 ---
 
-Softball - Adults takes place at North Meadow-Softball-09 in Central Park on Saturday, April 18, 2026.
+Softball - Adults takes place at North Meadow-Baseball-01 in Central Park on Saturday, April 18, 2026.
 
 ## Event Details
 
 - **Event:** Softball - Adults
 - **Date:** Saturday, April 18, 2026
-- **Time:** 10:00 AM - 7:30 PM
-- **Location:** North Meadow-Softball-09, Central Park
+- **Time:** 11:00 AM - 1:00 PM
+- **Location:** North Meadow-Baseball-01, Central Park
 - **Place:** North Meadow
 - **Type:** Sport - Adult
-- **Event ID:** 907447
+- **Event ID:** 902778
 
 ## About This Event
 
-This is a permitted sport - adult event at North Meadow-Softball-09. The area may have restricted access during the event period.
+This is a permitted sport - adult event at North Meadow-Baseball-01. The area may have restricted access during the event period.

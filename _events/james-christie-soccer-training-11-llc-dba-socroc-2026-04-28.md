@@ -1,14 +1,14 @@
 ---
-title: "James Christie Soccer Training 11 LLC, DBA SocRoc"
+title: "James Christie Soccer Training 11"
 date: 2026-04-28
 time: "09:30"
 end_time: "13:30"
 location: "Lawn North of Levin Playground"
 place: "Levin Playground"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/event-3.avif"
-description: "James Christie Soccer Training 11 LLC, DBA SocRoc at Lawn North of Levin Playground in Central Park."
+category: "education"
+image: "/assets/images/event-1.avif"
+description: "James Christie Soccer Training 11 at Lawn North of Levin Playground in Central Park."
 event_id: "909006"
 event_type: "Special Event"
 event_borough: "Manhattan"
@@ -16,13 +16,14 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - soccer
+  - school-program
 ---
 
-James Christie Soccer Training 11 LLC, DBA SocRoc takes place at Lawn North of Levin Playground in Central Park on Tuesday, April 28, 2026.
+James Christie Soccer Training 11 takes place at Lawn North of Levin Playground in Central Park on Tuesday, April 28, 2026.
 
 ## Event Details
 
-- **Event:** James Christie Soccer Training 11 LLC, DBA SocRoc
+- **Event:** James Christie Soccer Training 11
 - **Date:** Tuesday, April 28, 2026
 - **Time:** 9:30 AM - 1:30 PM
 - **Location:** Lawn North of Levin Playground, Central Park
@@ -32,4 +33,4 @@ James Christie Soccer Training 11 LLC, DBA SocRoc takes place at Lawn North of L
 
 ## About This Event
 
-James Christie Soccer Training 11 LLC, DBA SocRoc is a permitted event taking place at Lawn North of Levin Playground in Central Park. Contact the event organizers for more details about attendance and participation.
+This is a permitted special event event at Lawn North of Levin Playground. The area may have restricted access during the event period.

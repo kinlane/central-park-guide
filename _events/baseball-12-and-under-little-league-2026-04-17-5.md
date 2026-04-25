@@ -1,37 +1,37 @@
 ---
 title: "Baseball - 12 and Under (Little League)"
 date: 2026-04-17
-time: "17:00"
+time: "08:00"
 end_time: "17:30"
-location: "Heckscher Fields-Softball-01"
-place: "Heckscher Fields"
-place_category: "event_venues"
-category: "runs-races"
-image: "/assets/images/park-2.avif"
-description: "Baseball - 12 and Under (Little League) at Heckscher Fields-Softball-01. Youth league permitted event in Central Park."
-event_id: "905475"
+location: "Great Lawn-Softball-04"
+place: "Great Lawn"
+place_category: "meadows_and_lawns"
+category: "sports"
+image: "/assets/images/gallery-1.avif"
+description: "Baseball - 12 and Under (Little League) at Great Lawn-Softball-04. Youth league permitted event in Central Park."
+event_id: "905408"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
-  - sports
   - baseball
+  - sports
+  - youth
 ---
 
-Baseball - 12 and Under (Little League) takes place at Heckscher Fields-Softball-01 in Central Park on Friday, April 17, 2026.
+Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-04 in Central Park on Friday, April 17, 2026.
 
 ## Event Details
 
 - **Event:** Baseball - 12 and Under (Little League)
 - **Date:** Friday, April 17, 2026
-- **Time:** 5:00 PM - 5:30 PM
-- **Location:** Heckscher Fields-Softball-01, Central Park
-- **Place:** Heckscher Fields
+- **Time:** 8:00 AM - 5:30 PM
+- **Location:** Great Lawn-Softball-04, Central Park
+- **Place:** Great Lawn
 - **Type:** Sport - Youth
-- **Event ID:** 905475
+- **Event ID:** 905408
 
 ## About This Event
 
-This is a permitted sport - youth event at Heckscher Fields-Softball-01. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Great Lawn-Softball-04. The area may have restricted access during the event period.

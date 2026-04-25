@@ -1,0 +1,112 @@
+# Approximate latitude/longitude for each place in Central Park.
+# Used for the map view on /events/.
+# Park center: 40.7829, -73.9654
+
+# Major venues
+"Bandshell Plaza": [40.7720, -73.9716]
+"Bethesda Fountain Terrace": [40.7740, -73.9712]
+"Bow Bridge": [40.7755, -73.9722]
+"Belvedere Castle": [40.7794, -73.9692]
+"Conservatory Water": [40.7747, -73.9670]
+"Delacorte Theater": [40.7807, -73.9696]
+"Loeb Boathouse": [40.7752, -73.9694]
+"Wollman Rink": [40.7682, -73.9742]
+"Rumsey Playfield": [40.7717, -73.9698]
+"Skate Circle": [40.7715, -73.9710]
+"Swedish Cottage Marionette Theatre": [40.7800, -73.9712]
+"Central Park Zoo": [40.7677, -73.9716]
+"Central Park Tennis Center": [40.7896, -73.9619]
+"Tennis Courts": [40.7896, -73.9619]
+"Charles A. Dana Discovery Center": [40.7972, -73.9519]
+"Dana Discovery Center": [40.7972, -73.9519]
+
+# Meadows & lawns
+"Sheep Meadow": [40.7720, -73.9740]
+"Great Lawn": [40.7820, -73.9690]
+"North Meadow": [40.7920, -73.9626]
+"East Meadow": [40.7918, -73.9569]
+"Cedar Hill": [40.7740, -73.9650]
+"Cherry Hill": [40.7745, -73.9735]
+"Pilgrim Hill": [40.7710, -73.9658]
+"Cop Cot": [40.7672, -73.9748]
+"Dene Lawn": [40.7700, -73.9663]
+"Bowling Green Lawn": [40.7700, -73.9740]
+"Ladies' Pavilion": [40.7755, -73.9745]
+"The Pond": [40.7665, -73.9742]
+"Heckscher Picnic Area": [40.7700, -73.9760]
+"Heckscher Playground": [40.7702, -73.9760]
+"Heckscher Fields": [40.7702, -73.9760]
+"Frisbee Hill": [40.7720, -73.9740]
+"Wagner Cove": [40.7732, -73.9752]
+"Adventure Playground Lawn": [40.7710, -73.9762]
+
+# Northern section
+"Harlem Meer": [40.7972, -73.9519]
+"The Loch": [40.7944, -73.9558]
+"The Ramble": [40.7770, -73.9697]
+"The Pool": [40.7960, -73.9596]
+"Conservatory Garden": [40.7943, -73.9526]
+"Great Hill": [40.7949, -73.9588]
+"Blockhouse No. 1": [40.7986, -73.9572]
+
+# Buildings & misc
+"The Mall": [40.7727, -73.9713]
+"Strawberry Fields": [40.7758, -73.9748]
+"Naumburg Bandshell": [40.7720, -73.9716]
+"Chess and Checkers House": [40.7672, -73.9742]
+"The Dairy": [40.7693, -73.9738]
+"Turtle Pond": [40.7807, -73.9685]
+"Shakespeare Garden": [40.7798, -73.9692]
+"Diana Ross Playground": [40.7805, -73.9711]
+"Diana Ross Playground Lawn": [40.7805, -73.9711]
+"Levin Playground": [40.7733, -73.9750]
+"Mariners' Playground": [40.7822, -73.9707]
+"Wild West Playground": [40.7900, -73.9633]
+"Safari Playground": [40.7872, -73.9650]
+"Tarr Playground": [40.7960, -73.9576]
+"Johnson Playground": [40.7700, -73.9665]
+"East 72nd Street Playground": [40.7700, -73.9665]
+"Rudin Playground Lawn": [40.7920, -73.9628]
+
+# Roads / paths
+"East Drive": [40.7820, -73.9650]
+"West Drive": [40.7820, -73.9700]
+"Lower Loop": [40.7700, -73.9710]
+"72nd Street Cross Drive": [40.7745, -73.9716]
+"Bridle Path": [40.7860, -73.9650]
+"South Dead Road": [40.7700, -73.9760]
+"Dead Road North": [40.7960, -73.9576]
+"Central Park West Sidewalks": [40.7857, -73.9700]
+"Central Park West Entrance at 72nd Street": [40.7757, -73.9760]
+
+# Plazas & circles
+"Columbus Circle": [40.7681, -73.9819]
+"Grand Army Plaza": [40.7644, -73.9737]
+"Duke Ellington Circle": [40.7977, -73.9518]
+"Frederick Douglass Circle": [40.7975, -73.9596]
+
+# Monuments & sculptures
+"William Tecumseh Sherman statue": [40.7644, -73.9737]
+"Cleopatra's Needle": [40.7795, -73.9655]
+"King Jagiello Plaza": [40.7805, -73.9685]
+
+# Bridges & arches
+"Gapstow Bridge": [40.7672, -73.9728]
+"Gothic Bridge": [40.7882, -73.9665]
+
+# Other features
+"Seneca Village": [40.7833, -73.9686]
+"Central Park Farm Stand": [40.7977, -73.9555]
+"Kerbs Boathouse": [40.7747, -73.9670]
+"Mineral Springs": [40.7728, -73.9744]
+"Dairy Lawn": [40.7693, -73.9738]
+"East 102nd Street Landscape": [40.7945, -73.9536]
+"East 106th Street Lawn": [40.7960, -73.9530]
+"West 96th Street Landscape": [40.7926, -73.9646]
+"West 110th Street Playground": [40.7975, -73.9596]
+"Lawn Outside Tennis Courts": [40.7896, -73.9619]
+"Lawn Behind the Met Museum": [40.7795, -73.9637]
+"Hernshead": [40.7755, -73.9745]
+"Central Park South Sidewalks": [40.7659, -73.9750]
+"North Reservoir Landscape": [40.7886, -73.9620]
+"Belvedere Castle Terrace": [40.7794, -73.9692]

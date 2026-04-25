@@ -1,0 +1,40 @@
+hero:
+  heading: "Stay in the loop"
+  image: /assets/images/in-the-loop-hero.avif
+  image_alt: "Autumn scene in an urban park with people walking among trees and skyscrapers in the background."
+
+inner_loop:
+  heading: "Step into the inner loop"
+  text:
+    - "Central Park isn't just paths and lawns. It's a thousand little stories unfolding every hour. The Guide is where those stories gather."
+    - "Join in, and the park will feel different every time you visit."
+  why_join:
+    heading: "Why join?"
+    text: "You don't just want to visit Central Park. You want to live it."
+  image: /assets/images/loop-map.avif
+  image_alt: "Central Park map with highlighted routes"
+  callout: "The right moments -- Dawn runners know when the Mall is empty. We'll tell you too."
+
+alerts:
+  heading: "More than alerts"
+  text: "We'll also slip in tips to help you make the most of your time here:"
+  tips:
+    - "Where to rent a rowboat without the long line"
+    - "The best mile markers for pacing a run"
+    - "The shady lawns families love (and where to avoid sprinklers)"
+  image: /assets/images/loop-alerts.avif
+  image_alt: "Central Park tips and alerts"
+
+signup:
+  heading: "Join the story of the park"
+  text: "We'll also slip in tips to help you make the most of your time here:"
+  button_text: "Yes, I want in"
+  images:
+    - image: /assets/images/gallery-1.avif
+      alt: "Park lawn"
+    - image: /assets/images/gallery-3.avif
+      alt: "Bird watching"
+    - image: /assets/images/gallery-8.avif
+      alt: "Bird on branch"
+    - image: /assets/images/gallery-6.avif
+      alt: "Coffee by lake"

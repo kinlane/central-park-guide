@@ -6,7 +6,7 @@ end_time: "17:30"
 location: "Lawn North of Levin Playground"
 place: "Levin Playground"
 place_category: "event_venues"
-category: "family-community"
+category: "education"
 image: "/assets/images/event-3.avif"
 description: "SSS CPE78 Spring 26 April at Lawn North of Levin Playground in Central Park."
 event_id: "891457"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - school-program
 ---
 
 SSS CPE78 Spring 26 April takes place at Lawn North of Levin Playground in Central Park on Thursday, April 23, 2026.

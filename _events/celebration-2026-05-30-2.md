@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-30
-time: "12:00"
-end_time: "14:00"
-location: "Cop Cot"
-place: "Cop Cot"
+time: "10:00"
+end_time: "15:00"
+location: "Mineral Springs"
+place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/gallery-7.avif"
-description: "Celebration at Cop Cot in Central Park."
-event_id: "886608"
+category: "private-events"
+image: "/assets/images/event-3.avif"
+description: "Celebration at Mineral Springs in Central Park."
+event_id: "917880"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Cop Cot in Central Park on Saturday, May 30, 2026.
+Celebration takes place at Mineral Springs in Central Park on Saturday, May 30, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, May 30, 2026
-- **Time:** 12:00 PM - 2:00 PM
-- **Location:** Cop Cot, Central Park
-- **Place:** Cop Cot
+- **Time:** 10:00 AM - 3:00 PM
+- **Location:** Mineral Springs, Central Park
+- **Place:** Mineral Springs
 - **Type:** Special Event
-- **Event ID:** 886608
+- **Event ID:** 917880
 
 ## About This Event
 
-Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Mineral Springs in Central Park. Contact the event organizers for more details about attendance and participation.

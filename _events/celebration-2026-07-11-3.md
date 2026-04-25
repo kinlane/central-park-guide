@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-07-11
-time: "09:00"
-end_time: "11:00"
-location: "Wagner Cove, Cherry Hill"
-place: "Cherry Hill"
-place_category: "natural_areas"
-category: "family-community"
-image: "/assets/images/gallery-7.avif"
-description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
-event_id: "918431"
+time: "09:30"
+end_time: "11:30"
+location: "Dene Lawn"
+place: "Dene Lawn"
+place_category: "event_venues"
+category: "private-events"
+image: "/assets/images/gallery-4.avif"
+description: "Celebration at Dene Lawn in Central Park."
+event_id: "927243"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Saturday, July 11, 2026.
+Celebration takes place at Dene Lawn in Central Park on Saturday, July 11, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, July 11, 2026
-- **Time:** 9:00 AM - 11:00 AM
-- **Location:** Wagner Cove, Cherry Hill, Central Park
-- **Place:** Cherry Hill
+- **Time:** 9:30 AM - 11:30 AM
+- **Location:** Dene Lawn, Central Park
+- **Place:** Dene Lawn
 - **Type:** Special Event
-- **Event ID:** 918431
+- **Event ID:** 927243
 
 ## About This Event
 
-Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

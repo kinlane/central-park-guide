@@ -1,12 +1,12 @@
 ---
-title: "Wedding ceremony"
+title: "Wedding Ceremony"
 date: 2026-06-02
 time: "16:30"
 end_time: "18:30"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-4.avif"
 description: "Private ceremony at Dene Lawn in Central Park."
 event_id: "903449"
@@ -16,13 +16,14 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
-Wedding ceremony takes place at Dene Lawn in Central Park on Tuesday, June 2, 2026.
+Wedding Ceremony takes place at Dene Lawn in Central Park on Tuesday, June 2, 2026.
 
 ## Event Details
 
-- **Event:** Wedding ceremony
+- **Event:** Wedding Ceremony
 - **Date:** Tuesday, June 2, 2026
 - **Time:** 4:30 PM - 6:30 PM
 - **Location:** Dene Lawn, Central Park
@@ -32,4 +33,4 @@ Wedding ceremony takes place at Dene Lawn in Central Park on Tuesday, June 2, 20
 
 ## About This Event
 
-Wedding ceremony is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.
+Wedding Ceremony is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

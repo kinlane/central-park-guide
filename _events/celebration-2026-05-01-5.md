@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-01
-time: "18:00"
-end_time: "19:00"
-location: "Wagner Cove, Cherry Hill"
-place: "Cherry Hill"
-place_category: "natural_areas"
-category: "family-community"
+time: "11:00"
+end_time: "12:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
+place_category: "event_venues"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
-description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
-event_id: "905704"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "927224"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Friday, May 1, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Friday, May 1, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Friday, May 1, 2026
-- **Time:** 6:00 PM - 7:00 PM
-- **Location:** Wagner Cove, Cherry Hill, Central Park
-- **Place:** Cherry Hill
+- **Time:** 11:00 AM - 12:00 PM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 905704
+- **Event ID:** 927224
 
 ## About This Event
 
-Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

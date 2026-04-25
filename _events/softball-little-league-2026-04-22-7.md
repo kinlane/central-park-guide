@@ -1,37 +1,37 @@
 ---
-title: "Softball (Little league)"
+title: "Softball (Little League)"
 date: 2026-04-22
-time: "15:00"
-end_time: "18:00"
-location: "North Meadow-Softball-07"
+time: "15:30"
+end_time: "17:30"
+location: "North Meadow-Softball-12"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
-description: "Softball (Little league) at North Meadow-Softball-07. Youth league permitted event in Central Park."
-event_id: "910573"
+description: "Softball (Little league) at North Meadow-Softball-12. Youth league permitted event in Central Park."
+event_id: "902534"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - softball
   - sports
+  - youth
 ---
 
-Softball (Little league) takes place at North Meadow-Softball-07 in Central Park on Wednesday, April 22, 2026.
+Softball (Little league) takes place at North Meadow-Softball-12 in Central Park on Wednesday, April 22, 2026.
 
 ## Event Details
 
 - **Event:** Softball (Little league)
 - **Date:** Wednesday, April 22, 2026
-- **Time:** 3:00 PM - 6:00 PM
-- **Location:** North Meadow-Softball-07, Central Park
+- **Time:** 3:30 PM - 5:30 PM
+- **Location:** North Meadow-Softball-12, Central Park
 - **Place:** North Meadow
 - **Type:** Sport - Youth
-- **Event ID:** 910573
+- **Event ID:** 902534
 
 ## About This Event
 
-This is a permitted sport - youth event at North Meadow-Softball-07. The area may have restricted access during the event period.
+This is a permitted sport - youth event at North Meadow-Softball-12. The area may have restricted access during the event period.

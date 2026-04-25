@@ -1,5 +1,5 @@
 ---
-title: "CentralParkinternationalfolkdancers"
+title: "Centralparkinternationalfolkdancers"
 date: 2026-04-19
 time: "11:00"
 end_time: "18:00"

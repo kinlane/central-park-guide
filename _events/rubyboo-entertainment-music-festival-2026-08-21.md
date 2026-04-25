@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - festival
   - music
+  - festival
 ---
 
 Rubyboo Entertainment Music Festival takes place at Bandshell Plaza in Central Park on Friday, August 21, 2026.

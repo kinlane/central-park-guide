@@ -6,7 +6,7 @@ end_time: "14:00"
 location: "North Meadow-Softball-12"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
 description: "Baseball - 12 and Under (Little League) at North Meadow-Softball-12. Youth league permitted event in Central Park."
 event_id: "915388"
@@ -16,8 +16,8 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - youth
-  - sports
   - baseball
+  - sports
 ---
 
 Baseball - 12 and Under (Little League) takes place at North Meadow-Softball-12 in Central Park on Thursday, June 11, 2026.

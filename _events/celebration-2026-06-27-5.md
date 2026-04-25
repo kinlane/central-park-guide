@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-06-27
-time: "10:00"
+time: "09:00"
 end_time: "11:00"
-location: "Ladies' Pavilion"
-place: "Ladies' Pavilion"
-place_category: "event_venues"
-category: "family-community"
+location: "Wagner Cove, Cherry Hill"
+place: "Cherry Hill"
+place_category: "natural_areas"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
-description: "Celebration at Ladies' Pavilion in Central Park."
-event_id: "888037"
+description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
+event_id: "892528"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Ladies' Pavilion in Central Park on Saturday, June 27, 2026.
+Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Saturday, June 27, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, June 27, 2026
-- **Time:** 10:00 AM - 11:00 AM
-- **Location:** Ladies' Pavilion, Central Park
-- **Place:** Ladies' Pavilion
+- **Time:** 9:00 AM - 11:00 AM
+- **Location:** Wagner Cove, Cherry Hill, Central Park
+- **Place:** Cherry Hill
 - **Type:** Special Event
-- **Event ID:** 888037
+- **Event ID:** 892528
 
 ## About This Event
 
-Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.

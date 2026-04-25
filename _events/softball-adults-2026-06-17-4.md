@@ -1,15 +1,15 @@
 ---
 title: "Softball - Adults"
 date: 2026-06-17
-time: "18:00"
-end_time: "20:00"
-location: "North Meadow-Softball-07"
-place: "North Meadow"
+time: "17:30"
+end_time: "19:30"
+location: "Great Lawn-Softball-02"
+place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/park-1.avif"
-description: "Softball - Adults at North Meadow-Softball-07. Adult league permitted event in Central Park."
-event_id: "905619"
+category: "sports"
+image: "/assets/images/gallery-1.avif"
+description: "Softball - Adults at Great Lawn-Softball-02. Adult league permitted event in Central Park."
+event_id: "903922"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
 community_board: "64"
@@ -19,18 +19,18 @@ tags:
   - sports
 ---
 
-Softball - Adults takes place at North Meadow-Softball-07 in Central Park on Wednesday, June 17, 2026.
+Softball - Adults takes place at Great Lawn-Softball-02 in Central Park on Wednesday, June 17, 2026.
 
 ## Event Details
 
 - **Event:** Softball - Adults
 - **Date:** Wednesday, June 17, 2026
-- **Time:** 6:00 PM - 8:00 PM
-- **Location:** North Meadow-Softball-07, Central Park
-- **Place:** North Meadow
+- **Time:** 5:30 PM - 7:30 PM
+- **Location:** Great Lawn-Softball-02, Central Park
+- **Place:** Great Lawn
 - **Type:** Sport - Adult
-- **Event ID:** 905619
+- **Event ID:** 903922
 
 ## About This Event
 
-This is a permitted sport - adult event at North Meadow-Softball-07. The area may have restricted access during the event period.
+This is a permitted sport - adult event at Great Lawn-Softball-02. The area may have restricted access during the event period.

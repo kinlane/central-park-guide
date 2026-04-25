@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-28
-time: "16:30"
-end_time: "17:30"
-location: "Cop Cot"
-place: "Cop Cot"
+time: "11:00"
+end_time: "12:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
-description: "Celebration at Cop Cot in Central Park."
-event_id: "893856"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "886721"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Cop Cot in Central Park on Thursday, May 28, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Thursday, May 28, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Thursday, May 28, 2026
-- **Time:** 4:30 PM - 5:30 PM
-- **Location:** Cop Cot, Central Park
-- **Place:** Cop Cot
+- **Time:** 11:00 AM - 12:00 PM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 893856
+- **Event ID:** 886721
 
 ## About This Event
 
-Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

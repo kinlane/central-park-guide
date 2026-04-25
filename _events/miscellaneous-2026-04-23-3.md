@@ -1,35 +1,37 @@
 ---
 title: "Miscellaneous"
 date: 2026-04-23
-time: "18:00"
-end_time: "19:30"
-location: "North Meadow-Softball-02"
-place: "North Meadow"
+time: "11:00"
+end_time: "15:30"
+location: "Great Lawn-Softball-06"
+place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/park-1.avif"
-description: "Miscellaneous at North Meadow-Softball-02. Adult league permitted event in Central Park."
-event_id: "905440"
-event_type: "Sport - Adult"
+category: "private-events"
+image: "/assets/images/gallery-1.avif"
+description: "Miscellaneous at Great Lawn-Softball-06. Youth league permitted event in Central Park."
+event_id: "915708"
+event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
   - sports
+  - youth
+  - private-booking
 ---
 
-Miscellaneous takes place at North Meadow-Softball-02 in Central Park on Thursday, April 23, 2026.
+Miscellaneous takes place at Great Lawn-Softball-06 in Central Park on Thursday, April 23, 2026.
 
 ## Event Details
 
 - **Event:** Miscellaneous
 - **Date:** Thursday, April 23, 2026
-- **Time:** 6:00 PM - 7:30 PM
-- **Location:** North Meadow-Softball-02, Central Park
-- **Place:** North Meadow
-- **Type:** Sport - Adult
-- **Event ID:** 905440
+- **Time:** 11:00 AM - 3:30 PM
+- **Location:** Great Lawn-Softball-06, Central Park
+- **Place:** Great Lawn
+- **Type:** Sport - Youth
+- **Event ID:** 915708
 
 ## About This Event
 
-This is a permitted sport - adult event at North Meadow-Softball-02. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Great Lawn-Softball-06. The area may have restricted access during the event period.

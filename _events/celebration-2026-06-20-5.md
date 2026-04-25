@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-06-20
-time: "10:00"
-end_time: "12:00"
-location: "Ladies' Pavilion"
-place: "Ladies' Pavilion"
+time: "11:00"
+end_time: "13:00"
+location: "Cop Cot"
+place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
-description: "Celebration at Ladies' Pavilion in Central Park."
-event_id: "918928"
+description: "Celebration at Cop Cot in Central Park."
+event_id: "911061"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Ladies' Pavilion in Central Park on Saturday, June 20, 2026.
+Celebration takes place at Cop Cot in Central Park on Saturday, June 20, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, June 20, 2026
-- **Time:** 10:00 AM - 12:00 PM
-- **Location:** Ladies' Pavilion, Central Park
-- **Place:** Ladies' Pavilion
+- **Time:** 11:00 AM - 1:00 PM
+- **Location:** Cop Cot, Central Park
+- **Place:** Cop Cot
 - **Type:** Special Event
-- **Event ID:** 918928
+- **Event ID:** 911061
 
 ## About This Event
 
-Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.

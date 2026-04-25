@@ -1,15 +1,15 @@
 ---
 title: "Softball - Adults"
 date: 2026-04-27
-time: "18:00"
-end_time: "19:30"
-location: "North Meadow-Softball-12"
-place: "North Meadow"
-place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/park-1.avif"
-description: "Softball - Adults at North Meadow-Softball-12. Adult league permitted event in Central Park."
-event_id: "904959"
+time: "13:00"
+end_time: "16:00"
+location: "Heckscher Fields-Softball-05"
+place: "Heckscher Fields"
+place_category: "event_venues"
+category: "sports"
+image: "/assets/images/park-2.avif"
+description: "Softball - Adults at Heckscher Fields-Softball-05. Adult league permitted event in Central Park."
+event_id: "908611"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
 community_board: "64"
@@ -19,18 +19,18 @@ tags:
   - sports
 ---
 
-Softball - Adults takes place at North Meadow-Softball-12 in Central Park on Monday, April 27, 2026.
+Softball - Adults takes place at Heckscher Fields-Softball-05 in Central Park on Monday, April 27, 2026.
 
 ## Event Details
 
 - **Event:** Softball - Adults
 - **Date:** Monday, April 27, 2026
-- **Time:** 6:00 PM - 7:30 PM
-- **Location:** North Meadow-Softball-12, Central Park
-- **Place:** North Meadow
+- **Time:** 1:00 PM - 4:00 PM
+- **Location:** Heckscher Fields-Softball-05, Central Park
+- **Place:** Heckscher Fields
 - **Type:** Sport - Adult
-- **Event ID:** 904959
+- **Event ID:** 908611
 
 ## About This Event
 
-This is a permitted sport - adult event at North Meadow-Softball-12. The area may have restricted access during the event period.
+This is a permitted sport - adult event at Heckscher Fields-Softball-05. The area may have restricted access during the event period.

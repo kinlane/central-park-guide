@@ -6,7 +6,7 @@ end_time: "14:00"
 location: "Belvedere Castle Terrace"
 place: "Belvedere Castle"
 place_category: "buildings"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/plan-visit-hero.avif"
 description: "Celebration at Belvedere Castle Terrace in Central Park."
 event_id: "889662"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Belvedere Castle Terrace in Central Park on Tuesday, May 12, 2026.

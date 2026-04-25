@@ -1,12 +1,12 @@
 ---
 title: "East Meadow - Maintenance Days - Closed All Day"
-date: 2026-04-21
+date: 2026-05-19
 time: "00:00"
 end_time: "23:59"
 location: "East Meadow, East Meadow Clay Area"
 place: "East Meadow"
 place_category: "event_venues"
-category: "family-community"
+category: "maintenance"
 image: "/assets/images/park-1.avif"
 description: "East Meadow - Maintenance Days - Closed All Day at East Meadow, East Meadow Clay Area in Central Park."
 event_id: "888209"
@@ -18,12 +18,12 @@ tags:
   - community
 ---
 
-East Meadow - Maintenance Days - Closed All Day takes place at East Meadow, East Meadow Clay Area in Central Park on Tuesday, April 21, 2026.
+East Meadow - Maintenance Days - Closed All Day takes place at East Meadow, East Meadow Clay Area in Central Park on Tuesday, May 19, 2026.
 
 ## Event Details
 
 - **Event:** East Meadow - Maintenance Days - Closed All Day
-- **Date:** Tuesday, April 21, 2026
+- **Date:** Tuesday, May 19, 2026
 - **Time:** 12:00 AM - 11:59 PM
 - **Location:** East Meadow, East Meadow Clay Area, Central Park
 - **Place:** East Meadow

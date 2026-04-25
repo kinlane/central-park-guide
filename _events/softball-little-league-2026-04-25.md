@@ -1,14 +1,14 @@
 ---
-title: "Softball (Little league)"
+title: "Softball (Little League)"
 date: 2026-04-25
 time: "12:00"
 end_time: "14:30"
 location: "Heckscher Fields-Softball-01"
 place: "Heckscher Fields"
 place_category: "event_venues"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-2.avif"
-description: "Softball (Little league) at Heckscher Fields-Softball-01. Youth league permitted event in Central Park."
+description: "Softball (Little League) at Heckscher Fields-Softball-01. Youth league permitted event in Central Park."
 event_id: "900823"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
@@ -20,11 +20,11 @@ tags:
   - sports
 ---
 
-Softball (Little league) takes place at Heckscher Fields-Softball-01 in Central Park on Saturday, April 25, 2026.
+Softball (Little League) takes place at Heckscher Fields-Softball-01 in Central Park on Saturday, April 25, 2026.
 
 ## Event Details
 
-- **Event:** Softball (Little league)
+- **Event:** Softball (Little League)
 - **Date:** Saturday, April 25, 2026
 - **Time:** 12:00 PM - 2:30 PM
 - **Location:** Heckscher Fields-Softball-01, Central Park

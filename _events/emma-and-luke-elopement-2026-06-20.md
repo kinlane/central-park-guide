@@ -1,12 +1,12 @@
 ---
-title: "Emma and Luke elopement"
+title: "Emma and Luke Elopement"
 date: 2026-06-20
 time: "15:00"
 end_time: "16:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Private ceremony at Ladies' Pavilion in Central Park."
 event_id: "899793"
@@ -16,13 +16,14 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
-Emma and Luke elopement takes place at Ladies' Pavilion in Central Park on Saturday, June 20, 2026.
+Emma and Luke Elopement takes place at Ladies' Pavilion in Central Park on Saturday, June 20, 2026.
 
 ## Event Details
 
-- **Event:** Emma and Luke elopement
+- **Event:** Emma and Luke Elopement
 - **Date:** Saturday, June 20, 2026
 - **Time:** 3:00 PM - 4:00 PM
 - **Location:** Ladies' Pavilion, Central Park
@@ -32,4 +33,4 @@ Emma and Luke elopement takes place at Ladies' Pavilion in Central Park on Satur
 
 ## About This Event
 
-Emma and Luke elopement is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.
+Emma and Luke Elopement is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

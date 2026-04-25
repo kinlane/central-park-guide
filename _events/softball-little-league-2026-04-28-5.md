@@ -1,15 +1,15 @@
 ---
-title: "Softball (Little league)"
+title: "Softball (Little League)"
 date: 2026-04-28
 time: "15:30"
-end_time: "18:00"
-location: "North Meadow-Softball-08"
-place: "North Meadow"
-place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/park-1.avif"
-description: "Softball (Little league) at North Meadow-Softball-08. Youth league permitted event in Central Park."
-event_id: "903207"
+end_time: "17:30"
+location: "Heckscher Fields-Softball-05"
+place: "Heckscher Fields"
+place_category: "event_venues"
+category: "sports"
+image: "/assets/images/park-2.avif"
+description: "Softball (Little League) at Heckscher Fields-Softball-05. Youth league permitted event in Central Park."
+event_id: "900825"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
@@ -20,18 +20,18 @@ tags:
   - sports
 ---
 
-Softball (Little league) takes place at North Meadow-Softball-08 in Central Park on Tuesday, April 28, 2026.
+Softball (Little League) takes place at Heckscher Fields-Softball-05 in Central Park on Tuesday, April 28, 2026.
 
 ## Event Details
 
-- **Event:** Softball (Little league)
+- **Event:** Softball (Little League)
 - **Date:** Tuesday, April 28, 2026
-- **Time:** 3:30 PM - 6:00 PM
-- **Location:** North Meadow-Softball-08, Central Park
-- **Place:** North Meadow
+- **Time:** 3:30 PM - 5:30 PM
+- **Location:** Heckscher Fields-Softball-05, Central Park
+- **Place:** Heckscher Fields
 - **Type:** Sport - Youth
-- **Event ID:** 903207
+- **Event ID:** 900825
 
 ## About This Event
 
-This is a permitted sport - youth event at North Meadow-Softball-08. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Heckscher Fields-Softball-05. The area may have restricted access during the event period.

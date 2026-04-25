@@ -1,0 +1,94 @@
+hero:
+  heading: "Plan your visit"
+  image: /assets/images/plan-visit-hero.avif
+  image_alt: "Autumn trees with colorful foliage surrounding a lake in a city park with skyscrapers in the background."
+
+intro:
+  heading: "Heading to the park?"
+  text: "Whether it's your first stroll or your thousandth loop, make the best of your next visit to Central Park."
+  weather_heading: "Sky check before you go"
+  image: /assets/images/plan-runners.avif
+  image_alt: "Couple jogging by lake in Central Park"
+
+activities:
+  heading: "Plan your park day your way"
+  text: "No two visits are the same. Pick the path that fits you."
+  guides:
+    - title: "For runners"
+      image: /assets/images/plan-runners.avif
+      image_alt: "Couple jogging by lake in Central Park"
+      items:
+        - label: "3-Mile Loop"
+          text: "Lower loop from Columbus Circle to Bethesda Terrace to back."
+        - label: "6-Mile Loop"
+          text: "Full park drive loop, the classic. Start anywhere, end where you like."
+        - label: "Long Run (10+ miles)"
+          text: "Add Harlem Hill repeats or extend into the East/West Drives for distance."
+    - title: "For families"
+      image: /assets/images/plan-families.avif
+      image_alt: "Family walking in Central Park"
+      items:
+        - label: "Carousel"
+          text: "A vintage favorite, open spring through fall near 65th Street."
+        - label: "Playgrounds"
+          text: "Heckscher Playground (biggest in the park) and Ancient Playground (next to the Met)."
+        - label: "Picnic spots"
+          text: "Sheep Meadow (open space + skyline views), Great Hill (quiet lawns, uptown)."
+        - label: "Bonus"
+          text: "Rowboats at Loeb Boathouse are a family crowd-pleaser."
+    - title: "For first-time visitors"
+      image: /assets/images/plan-visitors.avif
+      image_alt: "Two women birdwatching in Central Park"
+      items:
+        - label: "Bow Bridge"
+          text: "The most photographed spot in the park -- classic views."
+        - label: "Strawberry Fields"
+          text: "Tribute to John Lennon, with live musicians most days."
+        - label: "The Mall & Literary Walk"
+          text: "Historic elm trees and statues of writers."
+        - label: "Bethesda Terrace & Fountain"
+          text: "Iconic arches, tiled ceiling, and water views."
+        - label: "Hidden gem"
+          text: "Conservatory Garden (formal gardens, seasonal blooms)."
+    - title: "For dog lovers"
+      image: /assets/images/plan-dogs.avif
+      image_alt: "Woman walking French bulldog in the park"
+      items:
+        - label: "Off-Leash Hours"
+          text: "6 AM-9 AM & 9 PM-1 AM on all lawns/wooded areas."
+        - label: "Dog runs"
+          text: "Bull Moose Dog Run (west side, 81st St.) and Peter Detmold Dog Run (east side, 49th St.)."
+        - label: "Best strolls"
+          text: "The Ramble (wooded trails for adventurous pups) and Harlem Meer (calm waterside paths)."
+        - label: "Tip"
+          text: "Bring water! Fountains with dog basins are scattered but seasonal."
+
+poppy:
+  heading: "You might even spot Poppy"
+  text: "Every great park has characters. Ours is four-legged, rides sidecar, and answers to Poppy. Keep an eye out, the Squirrel Patrol might roll past your picnic."
+  cta:
+    text: "Poppy's playlist"
+    url: https://poppyrlane.com
+  image: /assets/images/plan-poppy.avif
+  image_alt: "Large black and tan dog wearing a harness in a park, with a woman in sunglasses riding a rental bike and taking a photo in the background."
+
+photo_marquee:
+  heading: "Life between the loops"
+  text: "Snapped, tagged, and shared by the park community."
+  instagram_text: "Tag your moments to be featured"
+  instagram_url: "https://www.instagram.com/centralparkguide/"
+  images:
+    - image: /assets/images/gallery-1.avif
+      alt: "Central Park"
+    - image: /assets/images/gallery-2.avif
+      alt: "Central Park"
+    - image: /assets/images/gallery-3.avif
+      alt: "Central Park"
+    - image: /assets/images/gallery-4.avif
+      alt: "Central Park"
+    - image: /assets/images/gallery-6.avif
+      alt: "Central Park"
+    - image: /assets/images/gallery-7.avif
+      alt: "Central Park"
+    - image: /assets/images/gallery-8.avif
+      alt: "Central Park"

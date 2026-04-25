@@ -6,7 +6,7 @@ end_time: "13:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Private ceremony at Cop Cot in Central Park."
 event_id: "886592"
@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
 West Wedding takes place at Cop Cot in Central Park on Thursday, May 28, 2026.

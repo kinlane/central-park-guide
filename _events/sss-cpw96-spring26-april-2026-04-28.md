@@ -1,28 +1,28 @@
 ---
-title: "SSS CPW96 Spring26 April"
+title: "SSS CPW96 Spring April"
 date: 2026-04-28
 time: "13:30"
 end_time: "17:30"
 location: "Rudin Playground Lawn"
 place: "Rudin Playground Lawn"
 place_category: "event_venues"
-category: "family-community"
+category: "education"
 image: "/assets/images/event-3.avif"
-description: "SSS CPW96 Spring26 April at Rudin Playground Lawn in Central Park."
+description: "SSS CPW96 Spring April at Rudin Playground Lawn in Central Park."
 event_id: "893462"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - school-program
 ---
 
-SSS CPW96 Spring26 April takes place at Rudin Playground Lawn in Central Park on Tuesday, April 28, 2026.
+SSS CPW96 Spring April takes place at Rudin Playground Lawn in Central Park on Tuesday, April 28, 2026.
 
 ## Event Details
 
-- **Event:** SSS CPW96 Spring26 April
+- **Event:** SSS CPW96 Spring April
 - **Date:** Tuesday, April 28, 2026
 - **Time:** 1:30 PM - 5:30 PM
 - **Location:** Rudin Playground Lawn, Central Park
@@ -32,4 +32,4 @@ SSS CPW96 Spring26 April takes place at Rudin Playground Lawn in Central Park on
 
 ## About This Event
 
-SSS CPW96 Spring26 April is a permitted event taking place at Rudin Playground Lawn in Central Park. Contact the event organizers for more details about attendance and participation.
+SSS CPW96 Spring April is a permitted event taking place at Rudin Playground Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

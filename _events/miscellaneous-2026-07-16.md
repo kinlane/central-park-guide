@@ -6,7 +6,7 @@ end_time: "20:00"
 location: "North Meadow-Softball-09"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "private-events"
 image: "/assets/images/park-1.avif"
 description: "Miscellaneous at North Meadow-Softball-09. Adult league permitted event in Central Park."
 event_id: "905478"
@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - sports
+  - private-booking
 ---
 
 Miscellaneous takes place at North Meadow-Softball-09 in Central Park on Thursday, July 16, 2026.

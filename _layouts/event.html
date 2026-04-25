@@ -68,10 +68,14 @@ layout: default
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Category</p>
             <p style="font-weight: 600; margin: 0;">
               {% case page.category %}
+                {% when 'sports' %}Sports
                 {% when 'runs-races' %}Runs &amp; Races
                 {% when 'concerts-performances' %}Concerts &amp; Performances
                 {% when 'family-community' %}Family &amp; Community
+                {% when 'education' %}Education
+                {% when 'private-events' %}Private Event
                 {% when 'closures' %}Closures
+                {% when 'maintenance' %}Maintenance
               {% endcase %}
             </p>
           </div>

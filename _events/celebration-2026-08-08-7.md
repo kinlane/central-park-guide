@@ -6,7 +6,7 @@ end_time: "18:00"
 location: "The Pool Lawns"
 place: "The Pool"
 place_category: "water_bodies"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Celebration at The Pool Lawns in Central Park."
 event_id: "912923"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at The Pool Lawns in Central Park on Saturday, August 8, 2026.

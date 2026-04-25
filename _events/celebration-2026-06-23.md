@@ -6,7 +6,7 @@ end_time: "13:00"
 location: "Lawn Behind the Met Museum"
 place: "Lawn Behind the Met Museum"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Celebration at Lawn Behind the Met Museum in Central Park."
 event_id: "899291"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Lawn Behind the Met Museum in Central Park on Tuesday, June 23, 2026.

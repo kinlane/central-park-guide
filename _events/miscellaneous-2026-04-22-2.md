@@ -1,36 +1,37 @@
 ---
 title: "Miscellaneous"
 date: 2026-04-22
-time: "11:00"
-end_time: "15:30"
-location: "Great Lawn-Softball-04"
-place: "Great Lawn"
-place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/gallery-1.avif"
-description: "Miscellaneous at Great Lawn-Softball-04. Youth league permitted event in Central Park."
-event_id: "915702"
+time: "14:00"
+end_time: "15:00"
+location: "Heckscher Fields-Softball-05"
+place: "Heckscher Fields"
+place_category: "event_venues"
+category: "private-events"
+image: "/assets/images/park-2.avif"
+description: "Miscellaneous at Heckscher Fields-Softball-05. Youth league permitted event in Central Park."
+event_id: "900320"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
   - sports
+  - youth
+  - private-booking
 ---
 
-Miscellaneous takes place at Great Lawn-Softball-04 in Central Park on Wednesday, April 22, 2026.
+Miscellaneous takes place at Heckscher Fields-Softball-05 in Central Park on Wednesday, April 22, 2026.
 
 ## Event Details
 
 - **Event:** Miscellaneous
 - **Date:** Wednesday, April 22, 2026
-- **Time:** 11:00 AM - 3:30 PM
-- **Location:** Great Lawn-Softball-04, Central Park
-- **Place:** Great Lawn
+- **Time:** 2:00 PM - 3:00 PM
+- **Location:** Heckscher Fields-Softball-05, Central Park
+- **Place:** Heckscher Fields
 - **Type:** Sport - Youth
-- **Event ID:** 915702
+- **Event ID:** 900320
 
 ## About This Event
 
-This is a permitted sport - youth event at Great Lawn-Softball-04. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Heckscher Fields-Softball-05. The area may have restricted access during the event period.

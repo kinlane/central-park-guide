@@ -1,0 +1,67 @@
+hero:
+  heading: "About us"
+  image: /assets/images/about-hero.avif
+  image_alt: "Central Park grassy area with people scattered around and colorful autumn trees with city buildings in the background under a clear sky."
+
+path:
+  heading: "What is happening in the Park?"
+  text: "This website is born out of the need to know what is happening in Central Park, not to join in on what is happening, but to avoid it--to know when to steer clear of the crowds, the detours, the noise, and the chaos. It's a guide for those who want to enjoy the park on their own terms."
+  cta:
+    text: "See what's happening"
+    url: /events/
+  image: /assets/images/about-brand.avif
+  image_alt: "Autumn scene of Central Park lake with city buildings in the background and Central Park.Guide text with tree compass logo overlay."
+
+patrol:
+  heading: "Born from the patrol"
+  text:
+    - "It all started with Poppy. Every day, she patrols the park from her sidecar. Nose up, ears back, spotting squirrels, shortcuts, and surprises."
+    - "Now, the stories and sightings from her patrol feed into something bigger: a guide that helps everyone enjoy the park."
+  cta:
+    text: "Meet Poppy & the patrol squad"
+    url: https://poppyrlane.com/my-story/
+  image: /assets/images/about-poppy.avif
+  image_alt: "Rottweiler dog lying in a grassy field with its tongue out and wearing a chain collar and red collar."
+
+community:
+  heading: "A community guide, not just a calendar"
+  text: "This isn't an official bulletin board. It's powered by the people who use the park every day."
+  closing: "When you add to it, the whole community wins."
+  cta:
+    text: "See the latest events"
+    url: /events/
+  contributors:
+    - "Runners logging detours or major races"
+    - "Families sharing festivals"
+    - "Musicians posting gigs"
+    - "Neighbors tipping each other off"
+  features:
+    - title: "Closures & detours"
+      text: "Planned roadworks, weather disruptions etc."
+    - title: "Major events"
+      text: "We're talking marathons, charity runs, parades."
+    - title: "Seasonal highlights"
+      text: "Blossoms, skating and holiday lights."
+    - title: "Concerts & performances"
+      text: "From SummerStage to pop-up jazz."
+
+movement:
+  heading: "The movement we're starting"
+  text: "Our goal is simple: to spark a warm, witty movement where neighbors and visitors see Central Park through curious eyes: Poppy's eyes, your eyes, our eyes. Because when the park feels alive, so do we."
+  cta:
+    text: "See the latest events"
+    url: /events/
+
+gallery:
+  - image: /assets/images/park-1.avif
+    alt: "Park lawn scene"
+  - image: /assets/images/park-2.avif
+    alt: "Cyclists in the park"
+  - image: /assets/images/park-3.avif
+    alt: "Man jogging with dog"
+  - image: /assets/images/gallery-1.avif
+    alt: "Central Park lawn"
+  - image: /assets/images/gallery-3.avif
+    alt: "Bird watching"
+  - image: /assets/images/gallery-6.avif
+    alt: "Coffee by the lake"

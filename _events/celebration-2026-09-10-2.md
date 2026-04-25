@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-09-10
-time: "15:00"
-end_time: "17:00"
-location: "Wagner Cove"
-place: "Wagner Cove"
+time: "13:00"
+end_time: "15:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/event-3.avif"
-description: "Celebration at Wagner Cove in Central Park."
-event_id: "894418"
+category: "private-events"
+image: "/assets/images/gallery-7.avif"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "886687"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Wagner Cove in Central Park on Thursday, September 10, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Thursday, September 10, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Thursday, September 10, 2026
-- **Time:** 3:00 PM - 5:00 PM
-- **Location:** Wagner Cove, Central Park
-- **Place:** Wagner Cove
+- **Time:** 1:00 PM - 3:00 PM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 894418
+- **Event ID:** 886687
 
 ## About This Event
 
-Celebration is a permitted event taking place at Wagner Cove in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

@@ -625,10 +625,14 @@ a.event-card {
   letter-spacing: 0.5px;
   margin-bottom: 8px;
 
+  &--sports { background: rgba(99, 102, 241, 0.15); color: #4338ca; }
   &--runs-races { background: rgba(235, 151, 79, 0.15); color: darken($orange, 15%); }
   &--concerts-performances { background: rgba(60, 164, 116, 0.15); color: darken($green, 10%); }
   &--family-community { background: rgba(243, 174, 20, 0.15); color: darken($yellow, 20%); }
+  &--education { background: rgba(14, 165, 233, 0.15); color: #0369a1; }
+  &--private-events { background: rgba(236, 72, 153, 0.12); color: #be185d; }
   &--closures { background: rgba(0, 0, 0, 0.08); color: $zinc; }
+  &--maintenance { background: rgba(120, 113, 108, 0.15); color: #57534e; }
 }
 
 // Text alignment helpers

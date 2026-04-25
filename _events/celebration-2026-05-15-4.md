@@ -2,34 +2,34 @@
 title: "Celebration"
 date: 2026-05-15
 time: "13:00"
-end_time: "15:00"
-location: "Dene Lawn"
-place: "Dene Lawn"
-place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/gallery-4.avif"
-description: "Celebration at Dene Lawn in Central Park."
-event_id: "893006"
+end_time: "14:00"
+location: "Bethesda Fountain Terrace"
+place: "Bethesda Terrace and Fountain"
+place_category: "buildings"
+category: "private-events"
+image: "/assets/images/plan-visit-hero.avif"
+description: "Celebration at Bethesda Fountain Terrace in Central Park."
+event_id: "914932"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Dene Lawn in Central Park on Friday, May 15, 2026.
+Celebration takes place at Bethesda Fountain Terrace in Central Park on Friday, May 15, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Friday, May 15, 2026
-- **Time:** 1:00 PM - 3:00 PM
-- **Location:** Dene Lawn, Central Park
-- **Place:** Dene Lawn
+- **Time:** 1:00 PM - 2:00 PM
+- **Location:** Bethesda Fountain Terrace, Central Park
+- **Place:** Bethesda Terrace and Fountain
 - **Type:** Special Event
-- **Event ID:** 893006
+- **Event ID:** 914932
 
 ## About This Event
 
-Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Bethesda Fountain Terrace in Central Park. Contact the event organizers for more details about attendance and participation.

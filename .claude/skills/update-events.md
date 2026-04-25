@@ -1,6 +1,42 @@
 # Update Events from NYC Open Data, Central Park Conservancy & centralpark.com
 
-Update Central Park Guide events by fetching permitted event data from three sources, filtering against the Central Park places vocabulary, deduplicating, and writing Jekyll collection files.
+Update Central Park Guide events by fetching permitted event data from three sources, filtering against the Central Park places vocabulary, merging (with title cleanup and category mapping), and writing Jekyll collection files. All future events automatically display on the public site — no curation step.
+
+## Quick start (NYC Open Data refresh)
+
+For the most common case — pulling the latest NYC events:
+
+```bash
+# 1. Fetch all Central Park events from the API (paginated)
+OFFSET=0
+> /tmp/cp_events_pages.json
+while true; do
+  RESP=$(curl -s "https://data.cityofnewyork.us/resource/tvpp-9vvx.json?\$where=event_location%20like%20%27Central%20Park%25%27&\$limit=1000&\$offset=$OFFSET")
+  COUNT=$(echo "$RESP" | python3 -c "import json,sys; print(len(json.load(sys.stdin)))")
+  echo "$RESP" >> /tmp/cp_events_pages.json
+  [ "$COUNT" -lt 1000 ] && break
+  OFFSET=$((OFFSET + 1000))
+done
+
+# 2. Combine pages into one JSON array
+python3 -c "
+import json
+with open('/tmp/cp_events_pages.json') as f:
+    pages = [json.loads(line) for line in f if line.strip()]
+combined = [e for page in pages for e in page]
+with open('/tmp/central_park_events_latest.json', 'w') as f:
+    json.dump(combined, f)
+print(f'Total: {len(combined)}')
+"
+
+# 3. Run the merge
+python3 .claude/skills/scripts/merge_nyc_events.py
+
+# 4. Build to verify
+bundle exec jekyll build
+```
+
+The merge script at `.claude/skills/scripts/merge_nyc_events.py` is self-contained and idempotent — running it again with the same data is a no-op.
 
 ## Data Sources
 
@@ -125,12 +161,17 @@ If an event location doesn't match and looks like it should (a real Central Park
 
 ### 5. Categorize events
 
-**NYC Open Data:**
-- `event_type` is "Sport - Adult" or "Sport - Youth" → `runs-races`
-- `event_name` contains lawn/meadow closure keywords → `closures`
-- `event_name` contains music/concert/dance/band/festival keywords → `concerts-performances`
-- `event_name` contains wedding/elopement/ceremony → `family-community`
-- Default → `family-community`
+**NYC Open Data (apply in this order — first match wins):**
+1. `event_name` contains "maintenance" → `maintenance`
+2. `event_name` contains "lawn closure" or "meadow closure" → `closures`
+3. `event_name` contains SSS CPE/CPW, mini-camp, soccer training, sports training, socroc → `education`
+4. `event_name` contains celebration/wedding/elopement/ceremony/birthday/baptism/memorial/bar mitzvah/reception, OR is exactly "party"/"picnic"/"miscellaneous" → `private-events`
+5. `event_type` is "Sport - Adult" or "Sport - Youth" OR `event_name` contains softball/baseball/t-ball/kickball/soccer/tennis/pickleball/frisbee/volleyball/basketball/lacrosse/rugby/bowling/yacht/skating → `sports`
+6. `event_name` contains concert/music/jazz/salsa/band/choir/festival/dance/theater/songwriters/dj/entertainment/opera/symphonic/marching/shakespeare/marionette/puppet → `concerts-performances`
+7. `event_name` contains 5k/10k/marathon/run/race/half marathon → `runs-races`
+8. Default → `family-community`
+
+**Why the order matters:** A "Soccer Training Mini-Camp" should be `education`, not `sports`. A "Birthday Party" hosted on a softball field should be `private-events`, not `sports`.
 
 **Conservancy:**
 - `type` contains "Arts & Entertainment" → `concerts-performances`
@@ -144,12 +185,13 @@ If an event location doesn't match and looks like it should (a real Central Park
 
 ### 6. Assign tags
 
-**NYC Open Data:** Build a tag list from event name and type:
-- Sports: `sports`, `softball`, `baseball`, `soccer`, `tennis`, `kickball`
-- Music: `music`, `dance`, `festival`
-- Weddings: `wedding`
-- Closures: `closure`, `lawn`
-- Community: `community`, `chess`, `wellness`, `dogs`
+**NYC Open Data:** Build a tag list from event name, type, and category:
+- Sports: `sports`, `softball`, `baseball`, `t-ball`, `soccer`, `tennis`, `kickball`, `pickleball`, `frisbee`, `bowling`, `model-yachting`, `skating`
+- Music & performance: `music`, `dance`, `salsa`, `theater`, `festival`
+- Private bookings: `wedding`, `private-booking` (auto-added when category = `private-events`)
+- Education: `school-program` (for SSS series, mini-camps, training)
+- Annual traditions: `annual-tradition` (Olmsted Luncheon, Pumpkin Flotilla, Cherry Blossom, Fall Foliage, Juneteenth, Holiday Lighting, Open House, Harvest Festival)
+- Misc: `closure`, `lawn`, `chess`, `wellness`, `dogs`, `running`, `free`
 
 **Conservancy:** Start with `conservancy` tag, then add:
 - Lowercased, hyphenated versions of the event's `tags` array (e.g., "Kids and Families" → `kids-and-families`)
@@ -160,16 +202,43 @@ If an event location doesn't match and looks like it should (a real Central Park
 - `zoo` if title or location mentions zoo
 - `birds`, `running`, `wellness`, `nature`, `theater`, `skating` based on title keywords
 
-### 7. Deduplicate
+### 7. Clean up titles
 
-Use `event_id` as the unique key. Each source has its own prefix to avoid collisions:
+Raw event names from the API often contain noise that should be stripped before display. Apply these rules:
+
+- Strip `, DBA Xxx` suffixes (e.g., `James Christie Soccer Training 11 LLC, DBA SocRoc` → `James Christie Soccer Training 11 LLC`)
+- Strip trailing `LLC`, `Inc.`, `Corp.` (run twice in case of nested commas)
+- Strip year-suffix codes like `Spring26 April` → `Spring April`
+- Add space inside CamelCase like `CPSports` → `CP Sports`
+- Apply smart title-case: keep known acronyms uppercase (`NYC`, `NYRR`, `CP`, `CPW`, `CPE`, `SSS`, `LLC`, `5K`, `10K`, `AME`, `LGBTQ`, `YMCA`, etc.); lowercase short connecting words (`a`, `an`, `and`, `the`, `of`, etc.) when not first word
+- For alphanumeric tokens like `CPW96`, recognize the alpha prefix `CPW` and uppercase the whole token
+- Collapse multiple spaces to one
+
+Title cleanup applies to NYC Open Data events. For Conservancy and centralpark.com events, titles come pre-formatted from those sources.
+
+### 8. Merge & deduplicate (preserve curation)
+
+**Key insight:** NYC Open Data API returns multiple records per `event_id` for recurring events — one record per occurrence/date. The unique key for an event occurrence is `(event_id, date)`, not just `event_id`.
+
+Each source uses its own ID namespace:
 - NYC Open Data: raw numeric IDs (e.g., `922588`)
 - Conservancy: `cpc-` prefix (e.g., `cpc-887607`)
 - centralpark.com: `cpcom-` prefix (e.g., `cpcom-bird-watching-with-birding-bob`)
 
-If a file already exists for the same `event_id`, compare the existing front matter against the new data. Only overwrite if the data has changed (different date, time, location, or name). This prevents unnecessary git churn.
+**Merge algorithm:**
+
+1. Build an index: `existing_by_key = { (event_id, date): [list of files] }` from all `.md` files in `_events/`
+2. For each API record:
+   - Compute `(event_id, date)` key
+   - If key matches existing files: keep the first file at its current path, write updated content. Delete duplicate files for the same key.
+   - If key is new: create new file with slug `{slugified-cleaned-title}-{YYYY-MM-DD}.md` (with `-2`, `-3` suffixes for same-day collisions)
+3. For files NOT matched by any API record: leave them alone (past events, manually-curated entries) but still apply title cleanup
+4. **Never rename files** — always update in-place to keep URLs stable
+5. **Never delete user-curated events** that originated from non-API sources (Conservancy `cpc-`, centralpark.com `cpcom-`)
 
 The slug format is: `{slugified-event-name}-{YYYY-MM-DD}.md` with a numeric suffix for same-day duplicates (e.g., `-2`, `-3`).
+
+**Public visibility:** All future events show on the public `/events/` page automatically. There is no `display` flag; past events drop off via the `event_date >= now` filter at build time. The `/admin/` page exists only for editing event metadata (title, location, category, etc.).
 
 ### 8. Assign images
 
@@ -213,7 +282,7 @@ end_time: "HH:MM"
 location: "Cleaned Location"
 place: "Canonical Place Name"
 place_category: "taxonomy_category"
-category: "runs-races|concerts-performances|family-community|closures"
+category: "sports|runs-races|concerts-performances|family-community|education|private-events|closures|maintenance"
 image: "/assets/images/..."
 description: "Brief description"
 event_id: "123456"
@@ -245,14 +314,20 @@ Event body content with details, about section, etc.
 | `community_board` | from API | — | — |
 | `police_precinct` | from API | — | — |
 
-### 10. Remove stale events
+### 10. Stale events
 
-After writing all current events, scan `_events/` for any `.md` files whose `event_id` is NOT in the current combined response from all three sources. Remove those files — they've been cancelled or are no longer in the datasets.
+The merge intentionally **does NOT remove** events that are no longer in the API response, because:
+- The user manually curates events via `/admin/`. Removing files would lose their curation.
+- Past events naturally drop off the public site via the date filter (`event_date >= now`) on the events page and homepage.
 
-**Important:** Each source manages its own ID namespace. Only compare:
-- Raw numeric IDs against NYC Open Data results
-- `cpc-` prefixed IDs against Conservancy results
-- `cpcom-` prefixed IDs against centralpark.com results
+However, you should still **clean titles** on these orphaned files (apply the title cleanup rules from step 7 even when not refreshing other fields).
+
+If the user explicitly asks to "purge" or "reset" events, you can offer to delete files where:
+- `event_id` does NOT have a `cpc-` or `cpcom-` prefix (so we don't touch Conservancy/centralpark.com)
+- AND `event_id` is not in the current API response
+- AND `date` is in the past
+
+But default behavior is preservation.
 
 ### 11. Build and verify
 

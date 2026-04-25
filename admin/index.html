@@ -1,0 +1,565 @@
+---
+layout: default
+title: "Admin - Event Editor"
+description: "Edit event metadata for centralpark.guide"
+sitemap: false
+---
+
+<style>
+.admin-header {
+  padding: 140px 0 32px;
+  background: #000;
+  color: #fff;
+}
+.admin-header h1 { color: #fff; font-size: 2rem; }
+.admin-header p { color: rgba(255,255,255,0.7); }
+
+.admin-controls {
+  padding: 24px 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 72px;
+  background: #fff;
+  z-index: 50;
+}
+.admin-controls .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+}
+
+.admin-stats {
+  display: flex;
+  gap: 24px;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.6);
+}
+.admin-stats strong { color: #000; }
+
+.admin-filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.admin-filter-bar select, .admin-filter-bar input {
+  padding: 8px 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  outline: none;
+}
+.admin-filter-bar select:focus, .admin-filter-bar input:focus { border-color: #3ca474; }
+
+.event-row {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 12px;
+  background: #fff;
+  transition: box-shadow 0.2s;
+}
+.event-row:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+.event-row.is-updated { border-left: 4px solid #eb974f; }
+.event-row.is-saving { opacity: 0.5; pointer-events: none; }
+
+.event-row__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.event-row__meta {
+  font-size: 0.9rem;
+  color: rgba(0,0,0,0.75);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+.event-row__meta span {
+  font-weight: 600;
+}
+.event-row__meta .meta-label {
+  background: #f0f0f0;
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.event-row__fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) { .event-row__fields { grid-template-columns: 1fr; } }
+
+.event-row__fields label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(0,0,0,0.5);
+  display: block;
+  margin-bottom: 4px;
+}
+.event-row__fields input,
+.event-row__fields textarea,
+.event-row__fields select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+}
+.event-row__fields input:focus,
+.event-row__fields textarea:focus { border-color: #3ca474; }
+.event-row__fields textarea { resize: vertical; min-height: 60px; }
+
+.event-row__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.btn-sm {
+  padding: 8px 18px;
+  font-size: 0.85rem;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+.btn-save { background: #3ca474; color: #fff; }
+.btn-save:hover { background: #2d8a5e; }
+.btn-save:disabled { background: #ccc; cursor: not-allowed; }
+.btn-toggle { background: #f5f5f5; color: #333; border: 1px solid #ddd; }
+.btn-toggle:hover { background: #eee; }
+.btn-toggle.active { background: #3ca474; color: #fff; border-color: #3ca474; }
+
+.save-status {
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.save-status.saved { color: #3ca474; background: rgba(60,164,116,0.1); }
+.save-status.error { color: #e74c3c; background: rgba(231,76,60,0.1); }
+.save-status.saving { color: #eb974f; background: rgba(235,151,79,0.1); }
+
+.admin-pagination {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0;
+}
+.admin-pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+}
+.admin-pagination button:hover { background: #f5f5f5; }
+.admin-pagination button:disabled { opacity: 0.3; cursor: not-allowed; }
+.admin-pagination button.active { background: #3ca474; color: #fff; border-color: #3ca474; }
+
+.no-token {
+  text-align: center;
+  padding: 80px 24px;
+  color: rgba(0,0,0,0.5);
+}
+.no-token h2 { color: #e74c3c; }
+</style>
+
+<div class="admin-header">
+  <div class="container">
+    <h1>Event Editor</h1>
+    <p>Edit event metadata. All future events show on the public site automatically.</p>
+  </div>
+</div>
+
+<div id="no-token" class="no-token" style="display:none;">
+  <h2>No Token Provided</h2>
+  <p>Add <code>?token=YOUR_GITHUB_TOKEN</code> to the URL to access the admin.</p>
+</div>
+
+<div id="admin-app" style="display:none;">
+  <div class="admin-controls">
+    <div class="container">
+      <div class="admin-filter-bar">
+        <select id="admin-status-filter">
+          <option value="all">All events</option>
+          <option value="updated">Edited (unsaved)</option>
+        </select>
+        <select id="admin-category-filter">
+          <option value="all">All categories</option>
+          <option value="sports">Sports</option>
+          <option value="runs-races">Runs & Races</option>
+          <option value="concerts-performances">Concerts & Performances</option>
+          <option value="family-community">Family & Community</option>
+          <option value="education">Education</option>
+          <option value="private-events">Private Events</option>
+          <option value="closures">Closures</option>
+          <option value="maintenance">Maintenance</option>
+        </select>
+        <select id="admin-place-filter">
+          <option value="all">All locations</option>
+        </select>
+        <input type="date" id="admin-date-filter" style="min-width:160px;">
+        <input type="text" id="admin-search" placeholder="Search events...">
+      </div>
+      <div class="admin-stats" id="admin-stats"></div>
+    </div>
+  </div>
+
+  <div class="container" style="padding-top: 24px;">
+    <div id="events-list"></div>
+    <div class="admin-pagination" id="admin-pagination"></div>
+  </div>
+</div>
+
+<!-- ALL future events as JSON for admin -->
+{% assign now = 'now' | date: '%Y-%m-%d' %}
+{% assign sorted_events = site.events | sort: "date" %}
+<script id="admin-events-data" type="application/json">
+[
+{%- assign first = true -%}
+{%- for event in sorted_events -%}
+{%- assign event_date = event.date | date: '%Y-%m-%d' -%}
+{%- if event_date >= now -%}
+{%- if first %}{% assign first = false %}{% else %},{% endif -%}
+{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":"{{ event.tags | join: ', ' }}","eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
+{%- endif -%}
+{%- endfor -%}
+]
+</script>
+
+<script>
+(function() {
+  var REPO_OWNER = 'kinlane';
+  var REPO_NAME = 'central-park-guide';
+  var ITEMS_PER_PAGE = 25;
+  var API_BASE = 'https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/';
+
+  // Get token from URL
+  var params = new URLSearchParams(window.location.search);
+  var TOKEN = params.get('token');
+
+  if (!TOKEN) {
+    document.getElementById('no-token').style.display = '';
+    return;
+  }
+  document.getElementById('admin-app').style.display = '';
+
+  // Parse events
+  var rawJson = document.getElementById('admin-events-data').textContent.trim();
+  // Fix trailing comma before ]
+  rawJson = rawJson.replace(/,\s*\]$/, ']');
+  var allEvents = JSON.parse(rawJson);
+
+  var currentPage = 1;
+  var statusFilter = 'all';
+  var categoryFilter = 'all';
+  var placeFilter = 'all';
+  var dateFilter = '';
+  var searchQuery = '';
+
+  var listEl = document.getElementById('events-list');
+  var paginationEl = document.getElementById('admin-pagination');
+  var statsEl = document.getElementById('admin-stats');
+  var placeSelect = document.getElementById('admin-place-filter');
+
+  // Populate place dropdown sorted by count
+  var placeCounts = {};
+  allEvents.forEach(function(e) {
+    var p = e.place || e.location;
+    if (p) placeCounts[p] = (placeCounts[p] || 0) + 1;
+  });
+  Object.keys(placeCounts).sort(function(a, b) {
+    return a.localeCompare(b);
+  }).forEach(function(p) {
+    var opt = document.createElement('option');
+    opt.value = p;
+    opt.textContent = p + ' (' + placeCounts[p] + ')';
+    placeSelect.appendChild(opt);
+  });
+
+  function getFiltered() {
+    return allEvents.filter(function(e) {
+      if (statusFilter === 'updated' && !e._updated) return false;
+      if (categoryFilter !== 'all' && e.category !== categoryFilter) return false;
+      if (placeFilter !== 'all' && (e.place || e.location) !== placeFilter) return false;
+      if (dateFilter && e.date !== dateFilter) return false;
+      if (searchQuery) {
+        var s = (e.title + ' ' + e.location + ' ' + e.place + ' ' + e.description + ' ' + e.tags).toLowerCase();
+        if (s.indexOf(searchQuery) === -1) return false;
+      }
+      return true;
+    });
+  }
+
+  function renderStats() {
+    var total = allEvents.length;
+    var updated = allEvents.filter(function(e) { return e._updated; }).length;
+    statsEl.innerHTML =
+      '<span>Total future: <strong>' + total + '</strong></span>' +
+      '<span>Edited (unsaved): <strong>' + updated + '</strong></span>';
+  }
+
+  function renderEvent(e, idx) {
+    var stateClass = e._updated ? 'is-updated' : '';
+
+    return '<div class="event-row ' + stateClass + '" data-idx="' + idx + '">' +
+      '<div class="event-row__header">' +
+        '<div>' +
+          '<strong style="font-size:1.1rem;">' + esc(e.title) + '</strong>' +
+          '<div class="event-row__meta">' +
+            '<span class="meta-label">' + e.dateDisplay + '</span>' +
+            '<span class="meta-label">' + formatTime(e.time) + '</span>' +
+            '<span class="meta-label">' + esc(e.place || e.location) + '</span>' +
+            '<span class="category-badge category-badge--' + e.category + '" style="font-size:0.7rem;">' + esc(e.category) + '</span>' +
+            (e.source ? '<span>via ' + esc(e.source) + '</span>' : '') +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="event-row__fields">' +
+        '<div><label>Title</label><input type="text" value="' + escAttr(e.title) + '" onchange="updateField(' + idx + ',\'title\',this.value)"></div>' +
+        '<div><label>Date</label><input type="date" value="' + e.date + '" onchange="updateField(' + idx + ',\'date\',this.value)"></div>' +
+        '<div><label>Time</label><input type="text" value="' + e.time + '" onchange="updateField(' + idx + ',\'time\',this.value)"></div>' +
+        '<div><label>End Time</label><input type="text" value="' + (e.endTime || '') + '" onchange="updateField(' + idx + ',\'endTime\',this.value)"></div>' +
+        '<div><label>Location</label><input type="text" value="' + escAttr(e.location || '') + '" onchange="updateField(' + idx + ',\'location\',this.value)"></div>' +
+        '<div><label>Place</label><input type="text" value="' + escAttr(e.place || '') + '" onchange="updateField(' + idx + ',\'place\',this.value)"></div>' +
+        '<div><label>Category</label>' +
+          '<select onchange="updateField(' + idx + ',\'category\',this.value)">' +
+            '<option value="sports"' + (e.category === 'sports' ? ' selected' : '') + '>Sports</option>' +
+            '<option value="runs-races"' + (e.category === 'runs-races' ? ' selected' : '') + '>Runs & Races</option>' +
+            '<option value="concerts-performances"' + (e.category === 'concerts-performances' ? ' selected' : '') + '>Concerts & Performances</option>' +
+            '<option value="family-community"' + (e.category === 'family-community' ? ' selected' : '') + '>Family & Community</option>' +
+            '<option value="education"' + (e.category === 'education' ? ' selected' : '') + '>Education</option>' +
+            '<option value="private-events"' + (e.category === 'private-events' ? ' selected' : '') + '>Private Events</option>' +
+            '<option value="closures"' + (e.category === 'closures' ? ' selected' : '') + '>Closures</option>' +
+            '<option value="maintenance"' + (e.category === 'maintenance' ? ' selected' : '') + '>Maintenance</option>' +
+          '</select>' +
+        '</div>' +
+        '<div><label>Image</label><input type="text" value="' + escAttr(e.image || '') + '" onchange="updateField(' + idx + ',\'image\',this.value)"></div>' +
+        '<div style="grid-column: 1/-1;"><label>Description</label><textarea onchange="updateField(' + idx + ',\'description\',this.value)">' + esc(e.description || '') + '</textarea></div>' +
+      '</div>' +
+      '<div class="event-row__actions">' +
+        '<button class="btn-sm btn-save" onclick="saveEvent(' + idx + ')" ' + (e._updated ? '' : 'disabled') + '>Save</button>' +
+        '<span class="save-status" id="status-' + idx + '"></span>' +
+        '<span style="flex:1;"></span>' +
+        '<a href="' + e.url + '" target="_blank" style="font-size:0.8rem;color:#3ca474;">View page &rarr;</a>' +
+      '</div>' +
+    '</div>';
+  }
+
+  function render() {
+    var filtered = getFiltered();
+    var totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
+    if (currentPage > totalPages) currentPage = totalPages || 1;
+
+    var start = (currentPage - 1) * ITEMS_PER_PAGE;
+    var pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
+
+    // We need the original index for each event
+    var html = '';
+    pageItems.forEach(function(e) {
+      var origIdx = allEvents.indexOf(e);
+      html += renderEvent(e, origIdx);
+    });
+
+    if (filtered.length === 0) {
+      html = '<div style="text-align:center;padding:48px;color:rgba(0,0,0,0.4);">No events match your filters.</div>';
+    }
+
+    listEl.innerHTML = html;
+    renderStats();
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    paginationEl.innerHTML = '';
+    if (totalPages <= 1) return;
+
+    var prev = document.createElement('button');
+    prev.textContent = 'Prev';
+    prev.disabled = currentPage === 1;
+    prev.onclick = function() { currentPage--; render(); window.scrollTo(0, 200); };
+    paginationEl.appendChild(prev);
+
+    var info = document.createElement('span');
+    info.textContent = 'Page ' + currentPage + ' of ' + totalPages + ' (' + getFiltered().length + ' events)';
+    info.style.cssText = 'font-size:0.85rem;color:rgba(0,0,0,0.5);margin:0 16px;';
+    paginationEl.appendChild(info);
+
+    var next = document.createElement('button');
+    next.textContent = 'Next';
+    next.disabled = currentPage === totalPages;
+    next.onclick = function() { currentPage++; render(); window.scrollTo(0, 200); };
+    paginationEl.appendChild(next);
+  }
+
+  // Global functions for inline handlers
+  window.updateField = function(idx, field, value) {
+    allEvents[idx][field] = value;
+    allEvents[idx]._updated = true;
+    // Enable save button
+    var btn = document.querySelector('[data-idx="' + idx + '"] .btn-save');
+    if (btn) btn.disabled = false;
+    // Update row styling
+    var row = document.querySelector('[data-idx="' + idx + '"]');
+    if (row) {
+      row.className = 'event-row is-updated';
+    }
+    renderStats();
+  };
+
+  window.saveEvent = async function(idx) {
+    var e = allEvents[idx];
+    var statusEl = document.getElementById('status-' + idx);
+    var row = document.querySelector('[data-idx="' + idx + '"]');
+
+    statusEl.className = 'save-status saving';
+    statusEl.textContent = 'Saving...';
+    if (row) row.classList.add('is-saving');
+
+    try {
+      // 1. GET current file to get SHA
+      var getResp = await fetch(API_BASE + e.path, {
+        headers: { 'Authorization': 'token ' + TOKEN, 'Accept': 'application/vnd.github.v3+json' }
+      });
+      if (!getResp.ok) throw new Error('GET failed: ' + getResp.status);
+      var fileData = await getResp.json();
+      var sha = fileData.sha;
+
+      // 2. Decode current content
+      var currentContent = atob(fileData.content.replace(/\n/g, ''));
+
+      // 3. Build updated front matter
+      var updatedContent = rebuildFrontMatter(currentContent, e);
+
+      // 4. PUT updated file
+      var putResp = await fetch(API_BASE + e.path, {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'token ' + TOKEN,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          message: 'Update event: ' + e.title,
+          content: btoa(unescape(encodeURIComponent(updatedContent))),
+          sha: sha
+        })
+      });
+      if (!putResp.ok) throw new Error('PUT failed: ' + putResp.status);
+
+      e._updated = false;
+      statusEl.className = 'save-status saved';
+      statusEl.textContent = 'Saved';
+      if (row) {
+        row.classList.remove('is-saving', 'is-updated');
+      }
+      var btn = row.querySelector('.btn-save');
+      if (btn) btn.disabled = true;
+      renderStats();
+    } catch (err) {
+      statusEl.className = 'save-status error';
+      statusEl.textContent = 'Error: ' + err.message;
+      if (row) row.classList.remove('is-saving');
+    }
+  };
+
+  function rebuildFrontMatter(content, e) {
+    // Split into front matter and body
+    var parts = content.split('---');
+    if (parts.length < 3) return content;
+
+    var fm = parts[1];
+    var body = parts.slice(2).join('---');
+
+    // Update fields in front matter
+    fm = replaceYamlField(fm, 'title', '"' + e.title.replace(/"/g, '\\"') + '"');
+    fm = replaceYamlField(fm, 'date', e.date);
+    fm = replaceYamlField(fm, 'time', '"' + e.time + '"');
+    if (e.endTime) fm = replaceYamlField(fm, 'end_time', '"' + e.endTime + '"');
+    fm = replaceYamlField(fm, 'location', '"' + (e.location || '').replace(/"/g, '\\"') + '"');
+    fm = replaceYamlField(fm, 'place', '"' + (e.place || '').replace(/"/g, '\\"') + '"');
+    fm = replaceYamlField(fm, 'category', '"' + e.category + '"');
+    fm = replaceYamlField(fm, 'image', '"' + (e.image || '') + '"');
+    fm = replaceYamlField(fm, 'description', '"' + (e.description || '').replace(/"/g, '\\"') + '"');
+
+    return '---' + fm + '---' + body;
+  }
+
+  function replaceYamlField(fm, key, value) {
+    var regex = new RegExp('^(' + key + ':)\\s*.*$', 'm');
+    if (regex.test(fm)) {
+      return fm.replace(regex, '$1 ' + value);
+    }
+    // If field doesn't exist, add it before the end
+    return fm.trimEnd() + '\n' + key + ': ' + value + '\n';
+  }
+
+  function formatTime(timeStr) {
+    if (!timeStr) return '';
+    var parts = timeStr.split(':');
+    if (parts.length < 2) return timeStr;
+    var h = parseInt(parts[0], 10);
+    var m = parts[1];
+    var ampm = h >= 12 ? 'PM' : 'AM';
+    if (h === 0) h = 12;
+    else if (h > 12) h -= 12;
+    return h + ':' + m + ' ' + ampm;
+  }
+
+  function esc(str) {
+    if (!str) return '';
+    var div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
+  function escAttr(str) {
+    if (!str) return '';
+    return str.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  // Filter handlers
+  document.getElementById('admin-status-filter').addEventListener('change', function() {
+    statusFilter = this.value; currentPage = 1; render();
+  });
+  document.getElementById('admin-category-filter').addEventListener('change', function() {
+    categoryFilter = this.value; currentPage = 1; render();
+  });
+  placeSelect.addEventListener('change', function() {
+    placeFilter = this.value; currentPage = 1; render();
+  });
+  document.getElementById('admin-date-filter').addEventListener('change', function() {
+    dateFilter = this.value; currentPage = 1; render();
+  });
+  var searchTimeout;
+  document.getElementById('admin-search').addEventListener('input', function() {
+    clearTimeout(searchTimeout);
+    var val = this.value;
+    searchTimeout = setTimeout(function() {
+      searchQuery = val.toLowerCase().trim(); currentPage = 1; render();
+    }, 200);
+  });
+
+  // Initial render
+  render();
+})();
+</script>

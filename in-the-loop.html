@@ -8,10 +8,10 @@ permalink: /in-the-loop/
 <!-- Hero -->
 <section class="hero">
   <div class="hero__bg">
-    <img src="/assets/images/in-the-loop-hero.avif" alt="Autumn scene in an urban park with people walking among trees and skyscrapers in the background.">
+    <img src="{{ site.data['in-the-loop'].hero.image }}" alt="{{ site.data['in-the-loop'].hero.image_alt }}">
   </div>
   <div class="container hero__content">
-    <h1>Stay in the loop</h1>
+    <h1>{{ site.data['in-the-loop'].hero.heading }}</h1>
   </div>
 </section>
 
@@ -20,19 +20,20 @@ permalink: /in-the-loop/
   <div class="container">
     <div class="split">
       <div class="split__text">
-        <h2>Step into the inner loop</h2>
-        <p>Central Park isn't just paths and lawns. It's a thousand little stories unfolding every hour. The Guide is where those stories gather.</p>
-        <p>Join in, and the park will feel different every time you visit.</p>
+        <h2>{{ site.data['in-the-loop'].inner_loop.heading }}</h2>
+        {% for paragraph in site.data['in-the-loop'].inner_loop.text %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
         <div style="margin-top: 24px; padding: 24px; background: white; border-radius: 16px; border: 1px solid #eee;">
-          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Why join?</h3>
-          <p style="font-size: 0.95rem;">You don't just want to visit Central Park. You want to live it.</p>
+          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">{{ site.data['in-the-loop'].inner_loop.why_join.heading }}</h3>
+          <p style="font-size: 0.95rem;">{{ site.data['in-the-loop'].inner_loop.why_join.text }}</p>
           <a href="#signup" class="btn btn-green" style="margin-top: 12px;">Join our newsletter</a>
         </div>
       </div>
       <div class="split__image">
-        <img src="/assets/images/loop-map.avif" alt="Central Park map with highlighted routes">
+        <img src="{{ site.data['in-the-loop'].inner_loop.image }}" alt="{{ site.data['in-the-loop'].inner_loop.image_alt }}">
         <div style="margin-top: 16px; padding: 16px; background: rgba(60,164,116,0.1); border-radius: 12px;">
-          <p style="font-size: 0.9rem; font-style: italic; margin: 0;"><strong>The right moments</strong> -- Dawn runners know when the Mall is empty. We'll tell you too.</p>
+          <p style="font-size: 0.9rem; font-style: italic; margin: 0;">{{ site.data['in-the-loop'].inner_loop.callout }}</p>
         </div>
       </div>
     </div>
@@ -44,25 +45,19 @@ permalink: /in-the-loop/
   <div class="container">
     <div class="split split--reverse">
       <div class="split__text">
-        <h2>More than alerts</h2>
-        <p>We'll also slip in tips to help you make the most of your time here:</p>
+        <h2>{{ site.data['in-the-loop'].alerts.heading }}</h2>
+        <p>{{ site.data['in-the-loop'].alerts.text }}</p>
         <ul style="list-style: none; padding: 0; margin-top: 16px;">
-          <li style="padding: 12px 0; border-bottom: 1px solid #ddd; display: flex; align-items: center; gap: 12px;">
+          {% for tip in site.data['in-the-loop'].alerts.tips %}
+          <li style="padding: 12px 0;{% unless forloop.last %} border-bottom: 1px solid #ddd;{% endunless %} display: flex; align-items: center; gap: 12px;">
             <span style="color: #3ca474; font-size: 1.2rem;">&#10003;</span>
-            Where to rent a rowboat without the long line
+            {{ tip }}
           </li>
-          <li style="padding: 12px 0; border-bottom: 1px solid #ddd; display: flex; align-items: center; gap: 12px;">
-            <span style="color: #3ca474; font-size: 1.2rem;">&#10003;</span>
-            The best mile markers for pacing a run
-          </li>
-          <li style="padding: 12px 0; display: flex; align-items: center; gap: 12px;">
-            <span style="color: #3ca474; font-size: 1.2rem;">&#10003;</span>
-            The shady lawns families love (and where to avoid sprinklers)
-          </li>
+          {% endfor %}
         </ul>
       </div>
       <div class="split__image">
-        <img src="/assets/images/loop-alerts.avif" alt="Central Park tips and alerts">
+        <img src="{{ site.data['in-the-loop'].alerts.image }}" alt="{{ site.data['in-the-loop'].alerts.image_alt }}">
       </div>
     </div>
   </div>
@@ -73,19 +68,18 @@ permalink: /in-the-loop/
   <div class="container">
     <div class="split">
       <div>
-        <h2>Join the story of the park</h2>
-        <p>We'll also slip in tips to help you make the most of your time here:</p>
+        <h2>{{ site.data['in-the-loop'].signup.heading }}</h2>
+        <p>{{ site.data['in-the-loop'].signup.text }}</p>
         <form class="newsletter" style="margin-top: 24px;">
           <input type="email" placeholder="Enter your E-mail" required>
-          <button type="submit" class="btn btn-black">Yes, I want in</button>
+          <button type="submit" class="btn btn-black">{{ site.data['in-the-loop'].signup.button_text }}</button>
         </form>
       </div>
       <div>
         <div class="photo-grid" style="grid-template-columns: repeat(2, 1fr);">
-          <img src="/assets/images/gallery-1.avif" alt="Park lawn">
-          <img src="/assets/images/gallery-3.avif" alt="Bird watching">
-          <img src="/assets/images/gallery-8.avif" alt="Bird on branch">
-          <img src="/assets/images/gallery-6.avif" alt="Coffee by lake">
+          {% for img in site.data['in-the-loop'].signup.images %}
+          <img src="{{ img.image }}" alt="{{ img.alt }}">
+          {% endfor %}
         </div>
       </div>
     </div>

@@ -1,0 +1,25 @@
+main:
+  - title: Home
+    url: /
+  - title: About
+    url: /about-us/
+  - title: Events
+    url: /events/
+  - title: Stay in the loop
+    url: /in-the-loop/
+  - title: Contact us
+    url: /contact-us/
+cta:
+  title: "Submit an event"
+  url: /contact-us/
+footer:
+  quicklinks:
+    - title: "List your event"
+      url: /contact-us/
+    - title: "hello@centralpark.guide"
+      url: "mailto:hello@centralpark.guide"
+  more:
+    - title: "Terms & Conditions"
+      url: /legal/terms/
+    - title: "Privacy Policy"
+      url: /legal/privacy/

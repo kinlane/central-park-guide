@@ -1,0 +1,36 @@
+---
+title: "Baseball - Adults"
+date: 2026-05-16
+time: "17:00"
+end_time: "21:00"
+location: "North Meadow-Baseball-10"
+place: "North Meadow"
+place_category: "meadows_and_lawns"
+category: "sports"
+image: "/assets/images/park-1.avif"
+description: "Baseball - Adults at North Meadow-Baseball-10. Adult league permitted event in Central Park."
+event_id: "924995"
+event_type: "Sport - Adult"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - baseball
+  - sports
+---
+
+Baseball - Adults takes place at North Meadow-Baseball-10 in Central Park on Saturday, May 16, 2026.
+
+## Event Details
+
+- **Event:** Baseball - Adults
+- **Date:** Saturday, May 16, 2026
+- **Time:** 5:00 PM - 9:00 PM
+- **Location:** North Meadow-Baseball-10, Central Park
+- **Place:** North Meadow
+- **Type:** Sport - Adult
+- **Event ID:** 924995
+
+## About This Event
+
+This is a permitted sport - adult event at North Meadow-Baseball-10. The area may have restricted access during the event period.

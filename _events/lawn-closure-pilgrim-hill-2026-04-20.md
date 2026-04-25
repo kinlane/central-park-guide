@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - lawn
+  - closure
 ---
 
 Lawn Closure - Pilgrim Hill takes place at Pilgrim Hill in Central Park on Monday, April 20, 2026.

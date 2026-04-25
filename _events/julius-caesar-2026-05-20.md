@@ -1,0 +1,35 @@
+---
+title: "Julius Caesar"
+date: 2026-05-20
+time: "10:00"
+end_time: "21:00"
+location: "The Pool Lawns"
+place: "The Pool"
+place_category: "water_bodies"
+category: "family-community"
+image: "/assets/images/event-3.avif"
+description: "Julius Caesar at The Pool Lawns in Central Park."
+event_id: "896623"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - theater
+---
+
+Julius Caesar takes place at The Pool Lawns in Central Park on Wednesday, May 20, 2026.
+
+## Event Details
+
+- **Event:** Julius Caesar
+- **Date:** Wednesday, May 20, 2026
+- **Time:** 10:00 AM - 9:00 PM
+- **Location:** The Pool Lawns, Central Park
+- **Place:** The Pool
+- **Type:** Special Event
+- **Event ID:** 896623
+
+## About This Event
+
+Julius Caesar is a permitted event taking place at The Pool Lawns in Central Park. Contact the event organizers for more details about attendance and participation.

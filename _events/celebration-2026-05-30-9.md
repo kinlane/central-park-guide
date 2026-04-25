@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-30
-time: "10:00"
-end_time: "15:00"
-location: "Mineral Springs"
-place: "Mineral Springs"
+time: "09:00"
+end_time: "11:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/event-3.avif"
-description: "Celebration at Mineral Springs in Central Park."
-event_id: "917880"
+category: "private-events"
+image: "/assets/images/gallery-7.avif"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "919949"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Mineral Springs in Central Park on Saturday, May 30, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Saturday, May 30, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, May 30, 2026
-- **Time:** 10:00 AM - 3:00 PM
-- **Location:** Mineral Springs, Central Park
-- **Place:** Mineral Springs
+- **Time:** 9:00 AM - 11:00 AM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 917880
+- **Event ID:** 919949
 
 ## About This Event
 
-Celebration is a permitted event taking place at Mineral Springs in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

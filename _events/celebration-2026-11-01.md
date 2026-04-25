@@ -6,7 +6,7 @@ end_time: "13:00"
 location: "Dana Discovery Center Plaza, Duke Ellington Circle"
 place: "Duke Ellington Circle"
 place_category: "plazas"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-6.avif"
 description: "Celebration at Dana Discovery Center Plaza, Duke Ellington Circle in Central Park."
 event_id: "887020"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22, 28"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Dana Discovery Center Plaza, Duke Ellington Circle in Central Park on Sunday, November 1, 2026.

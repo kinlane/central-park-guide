@@ -6,7 +6,7 @@ end_time: "15:00"
 location: "Bow Bridge"
 place: "Bow Bridge"
 place_category: "bridges"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/about-hero.avif"
 description: "Celebration at Bow Bridge in Central Park."
 event_id: "905988"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Bow Bridge in Central Park on Saturday, May 23, 2026.

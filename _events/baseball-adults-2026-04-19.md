@@ -6,7 +6,7 @@ end_time: "12:00"
 location: "North Meadow-Baseball-03"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
 description: "Baseball - Adults at North Meadow-Baseball-03. Adult league permitted event in Central Park."
 event_id: "905804"
@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - sports
   - baseball
+  - sports
 ---
 
 Baseball - Adults takes place at North Meadow-Baseball-03 in Central Park on Sunday, April 19, 2026.

@@ -6,7 +6,7 @@ end_time: "12:15"
 location: "Adventure Playground Lawn"
 place: "Adventure Playground Lawn"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Penelope Second Birthday at Adventure Playground Lawn in Central Park."
 event_id: "925802"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Penelope Second Birthday takes place at Adventure Playground Lawn in Central Park on Saturday, April 18, 2026.

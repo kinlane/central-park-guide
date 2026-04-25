@@ -2,36 +2,36 @@
 title: "Baseball - 12 and Under (Little League)"
 date: 2026-04-18
 time: "08:00"
-end_time: "17:00"
-location: "North Meadow-Softball-09"
-place: "North Meadow"
-place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/park-1.avif"
-description: "Baseball - 12 and Under (Little League) at North Meadow-Softball-09. Youth league permitted event in Central Park."
-event_id: "911612"
+end_time: "12:00"
+location: "Heckscher Fields-Softball-02"
+place: "Heckscher Fields"
+place_category: "event_venues"
+category: "sports"
+image: "/assets/images/park-2.avif"
+description: "Baseball - 12 and Under (Little League) at Heckscher Fields-Softball-02. Youth league permitted event in Central Park."
+event_id: "904970"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
-  - sports
   - baseball
+  - sports
+  - youth
 ---
 
-Baseball - 12 and Under (Little League) takes place at North Meadow-Softball-09 in Central Park on Saturday, April 18, 2026.
+Baseball - 12 and Under (Little League) takes place at Heckscher Fields-Softball-02 in Central Park on Saturday, April 18, 2026.
 
 ## Event Details
 
 - **Event:** Baseball - 12 and Under (Little League)
 - **Date:** Saturday, April 18, 2026
-- **Time:** 8:00 AM - 5:00 PM
-- **Location:** North Meadow-Softball-09, Central Park
-- **Place:** North Meadow
+- **Time:** 8:00 AM - 12:00 PM
+- **Location:** Heckscher Fields-Softball-02, Central Park
+- **Place:** Heckscher Fields
 - **Type:** Sport - Youth
-- **Event ID:** 911612
+- **Event ID:** 904970
 
 ## About This Event
 
-This is a permitted sport - youth event at North Meadow-Softball-09. The area may have restricted access during the event period.
+This is a permitted sport - youth event at Heckscher Fields-Softball-02. The area may have restricted access during the event period.

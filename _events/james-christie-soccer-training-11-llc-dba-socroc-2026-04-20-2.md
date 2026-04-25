@@ -1,12 +1,12 @@
 ---
-title: "James Christie Soccer Training 11 LLC, DBA SocRoc"
+title: "James Christie Soccer Training 11"
 date: 2026-04-20
 time: "13:00"
 end_time: "16:00"
 location: "South Dead Road A"
 place: "South Dead Road"
 place_category: "event_venues"
-category: "family-community"
+category: "education"
 image: "/assets/images/event-3.avif"
 description: "James Christie Soccer Training 11 LLC, DBA SocRoc at South Dead Road A in Central Park."
 event_id: "907918"
@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - soccer
+  - school-program
 ---
 
 James Christie Soccer Training 11 LLC, DBA SocRoc takes place at South Dead Road A in Central Park on Monday, April 20, 2026.

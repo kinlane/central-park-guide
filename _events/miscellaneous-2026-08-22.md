@@ -6,7 +6,7 @@ end_time: "13:30"
 location: "Lawn Outside Tennis Courts"
 place: "Lawn Outside Tennis Courts"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Miscellaneous at Lawn Outside Tennis Courts in Central Park."
 event_id: "917748"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Miscellaneous takes place at Lawn Outside Tennis Courts in Central Park on Saturday, August 22, 2026.

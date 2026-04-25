@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-08-28
-time: "10:00"
-end_time: "12:00"
-location: "Dene Lawn"
-place: "Dene Lawn"
+time: "19:00"
+end_time: "20:00"
+location: "Ladies' Pavilion"
+place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/gallery-4.avif"
-description: "Celebration at Dene Lawn in Central Park."
-event_id: "920897"
+category: "private-events"
+image: "/assets/images/gallery-7.avif"
+description: "Celebration at Ladies' Pavilion in Central Park."
+event_id: "913518"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Dene Lawn in Central Park on Friday, August 28, 2026.
+Celebration takes place at Ladies' Pavilion in Central Park on Friday, August 28, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Friday, August 28, 2026
-- **Time:** 10:00 AM - 12:00 PM
-- **Location:** Dene Lawn, Central Park
-- **Place:** Dene Lawn
+- **Time:** 7:00 PM - 8:00 PM
+- **Location:** Ladies' Pavilion, Central Park
+- **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 920897
+- **Event ID:** 913518
 
 ## About This Event
 
-Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Ladies' Pavilion in Central Park. Contact the event organizers for more details about attendance and participation.

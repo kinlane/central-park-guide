@@ -1,21 +1,21 @@
 ---
 title: "Celebration"
 date: 2026-08-08
-time: "14:00"
-end_time: "16:00"
+time: "16:00"
+end_time: "17:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Celebration at Cop Cot in Central Park."
-event_id: "889000"
+event_id: "915168"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Cop Cot in Central Park on Saturday, August 8, 2026.
@@ -24,11 +24,11 @@ Celebration takes place at Cop Cot in Central Park on Saturday, August 8, 2026.
 
 - **Event:** Celebration
 - **Date:** Saturday, August 8, 2026
-- **Time:** 2:00 PM - 4:00 PM
+- **Time:** 4:00 PM - 5:00 PM
 - **Location:** Cop Cot, Central Park
 - **Place:** Cop Cot
 - **Type:** Special Event
-- **Event ID:** 889000
+- **Event ID:** 915168
 
 ## About This Event
 

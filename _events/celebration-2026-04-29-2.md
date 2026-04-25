@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-04-29
-time: "15:00"
-end_time: "17:00"
-location: "West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell"
-place: "West 110th Street Playground"
+time: "13:00"
+end_time: "15:00"
+location: "Wagner Cove"
+place: "Wagner Cove"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
-description: "Celebration at West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell in Central Park."
-event_id: "912683"
+description: "Celebration at Wagner Cove in Central Park."
+event_id: "913535"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell in Central Park on Wednesday, April 29, 2026.
+Celebration takes place at Wagner Cove in Central Park on Wednesday, April 29, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Wednesday, April 29, 2026
-- **Time:** 3:00 PM - 5:00 PM
-- **Location:** West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell, Central Park
-- **Place:** West 110th Street Playground
+- **Time:** 1:00 PM - 3:00 PM
+- **Location:** Wagner Cove, Central Park
+- **Place:** Wagner Cove
 - **Type:** Special Event
-- **Event ID:** 912683
+- **Event ID:** 913535
 
 ## About This Event
 
-Celebration is a permitted event taking place at West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Wagner Cove in Central Park. Contact the event organizers for more details about attendance and participation.

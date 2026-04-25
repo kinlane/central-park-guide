@@ -1,12 +1,12 @@
 ---
-title: "Wedding ceremony"
+title: "Wedding Ceremony"
 date: 2026-05-30
 time: "14:00"
 end_time: "16:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Private ceremony at Cop Cot in Central Park."
 event_id: "890469"
@@ -16,13 +16,14 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
-Wedding ceremony takes place at Cop Cot in Central Park on Saturday, May 30, 2026.
+Wedding Ceremony takes place at Cop Cot in Central Park on Saturday, May 30, 2026.
 
 ## Event Details
 
-- **Event:** Wedding ceremony
+- **Event:** Wedding Ceremony
 - **Date:** Saturday, May 30, 2026
 - **Time:** 2:00 PM - 4:00 PM
 - **Location:** Cop Cot, Central Park
@@ -32,4 +33,4 @@ Wedding ceremony takes place at Cop Cot in Central Park on Saturday, May 30, 202
 
 ## About This Event
 
-Wedding ceremony is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.
+Wedding Ceremony is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.

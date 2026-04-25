@@ -6,7 +6,7 @@ end_time: "17:00"
 location: "North Reservoir Landscape A"
 place: "North Reservoir Landscape"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/events-hero.avif"
 description: "Miscellaneous at North Reservoir Landscape A in Central Park."
 event_id: "920460"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Miscellaneous takes place at North Reservoir Landscape A in Central Park on Wednesday, April 22, 2026.

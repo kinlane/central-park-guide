@@ -7,83 +7,41 @@ description: "Discover Central Park.Guide - your community-powered source for ev
 <!-- Hero -->
 <section class="hero">
   <div class="hero__bg">
-    <img src="/assets/images/homepage-park.avif" alt="Central Park aerial view with lush green trees and walking paths">
+    <img src="{{ site.data.home.hero.image }}" alt="{{ site.data.home.hero.image_alt }}">
   </div>
   <div class="container hero__content">
-    <img src="/assets/svg/hero-logo.svg" alt="Central Park.Guide logo" style="height: 80px; margin-bottom: 32px;">
-    <h1>Your guide to a park that never sits still</h1>
-    <p>Events, closures, concerts, and the little surprises that make Central Park alive.</p>
-    <a href="/events/" class="btn btn-green" style="margin-top: 24px;">See what's happening</a>
-  </div>
-</section>
-
-<!-- Time of Day -->
-<section class="section bg-green">
-  <div class="container">
-    <div class="split">
-      <div class="split__text">
-        <h2>Every corner, and time of day, tells a story</h2>
-        <p>From the quiet glow of dawn to the hum of a summer evening, Central Park shifts with the light.</p>
-        <a href="/plan-your-visit/" class="btn btn-black">Plan your visit</a>
-      </div>
-      <div class="split__image">
-        <div class="tabs" style="margin-bottom: 16px;">
-          <button class="tab active" onclick="switchTab(this, 'dusk')">Dusk</button>
-          <button class="tab" onclick="switchTab(this, 'day')">Day</button>
-          <button class="tab" onclick="switchTab(this, 'dawn')">Dawn</button>
-          <button class="tab" onclick="switchTab(this, 'night')">Night</button>
-        </div>
-        <img id="day-tab-img" src="/assets/images/day-tab-dusk.png" alt="Central Park at dusk" style="border-radius: 20px;">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Services -->
-<section class="section">
-  <div class="container">
-    <div class="grid-3">
-      <div class="card">
-        <img class="card__image" src="/assets/images/dog-walker.avif" alt="Person walking dogs through Central Park trails">
-        <div class="card__content">
-          <h3>Dog walker patrols</h3>
-          <p>The best routes, off-leash hours, and dog-friendly spots across the park.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__image" src="/assets/images/runners-loops.avif" alt="Runners on the Central Park loop">
-        <div class="card__content">
-          <h3>Runners' loops</h3>
-          <p>From the 3-mile lower loop to the full 6-mile drive. Pick your pace.</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card__image" src="/assets/images/guided-bird.avif" alt="Bird watchers with binoculars in the Ramble">
-        <div class="card__content">
-          <h3>Guided bird watching tours</h3>
-          <p>Seasonal migratory routes and the best spots to see hawks, owls, and more.</p>
-        </div>
-      </div>
-    </div>
+    <img src="{{ site.data.home.hero.logo }}" alt="{{ site.data.site.name }} logo" style="height: 80px; margin-bottom: 32px;">
+    <h1>{{ site.data.home.hero.heading }}</h1>
+    <p>{{ site.data.home.hero.subheading }}</p>
+    <a href="{{ site.data.home.hero.cta.url }}" class="btn btn-green" style="margin-top: 24px;">{{ site.data.home.hero.cta.text }}</a>
   </div>
 </section>
 
 <!-- Events Preview -->
 <section class="section bg-ash">
   <div class="container text-center">
-    <h2 class="mb-md">What's happening in the park</h2>
+    <h2 class="mb-md">{{ site.data.home.events_preview.heading }}</h2>
     <div class="grid-3">
-      {% assign upcoming = site.events | sort: "date" %}
-      {% for event in upcoming limit: 3 %}
+      {% assign today = 'now' | date: '%Y-%m-%d' %}
+      {% assign sorted = site.events | sort: "date" %}
+      {% assign upcoming_count = 0 %}
+      {% for event in sorted %}
+        {% assign event_date = event.date | date: '%Y-%m-%d' %}
+        {% if event_date >= today and upcoming_count < 3 %}
+          {% assign upcoming_count = upcoming_count | plus: 1 %}
       <a href="{{ event.url }}" class="event-card" style="text-decoration: none; color: inherit;">
         <img class="event-card__image" src="{{ event.image }}" alt="{{ event.title }}">
         <div class="event-card__body">
           <span class="category-badge category-badge--{{ event.category }}">
             {% case event.category %}
+              {% when 'sports' %}Sports
               {% when 'runs-races' %}Runs &amp; Races
               {% when 'concerts-performances' %}Concerts &amp; Performances
               {% when 'family-community' %}Family &amp; Community
+              {% when 'education' %}Education
+              {% when 'private-events' %}Private Event
               {% when 'closures' %}Closures
+              {% when 'maintenance' %}Maintenance
             {% endcase %}
           </span>
           <div class="event-card__meta">
@@ -95,31 +53,27 @@ description: "Discover Central Park.Guide - your community-powered source for ev
           <p class="event-card__desc">{{ event.description }}</p>
         </div>
       </a>
+        {% endif %}
       {% endfor %}
     </div>
-    <a href="/events/" class="btn btn-outline" style="margin-top: 40px;">See all events</a>
+    <a href="{{ site.data.home.events_preview.cta.url }}" class="btn btn-outline" style="margin-top: 40px;">{{ site.data.home.events_preview.cta.text }}</a>
   </div>
 </section>
 
 <!-- Two Perspectives -->
 <section class="section">
   <div class="container">
-    <h2 class="text-center mb-md">One park, two perspectives</h2>
+    <h2 class="text-center mb-md">{{ site.data.home.perspectives.heading }}</h2>
     <div class="grid-2">
-      <a href="/" class="card" style="text-decoration:none;">
-        <img class="card__image" src="/assets/images/brand-cpg.avif" alt="Central Park.Guide brand">
+      {% for item in site.data.home.perspectives.items %}
+      <a href="{{ item.url }}" class="card" style="text-decoration:none;">
+        <img class="card__image" src="{{ item.image }}" alt="{{ item.image_alt }}">
         <div class="card__content">
-          <h3>CentralPark.Guide</h3>
-          <p>Events, closures, concerts, and seasonal highlights. The big picture of the park.</p>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.text }}</p>
         </div>
       </a>
-      <a href="https://poppyrlane.com" class="card" style="text-decoration:none;">
-        <img class="card__image" src="/assets/images/brand-sp.avif" alt="Squirrel Patrol brand">
-        <div class="card__content">
-          <h3>The Squirrel Patrol</h3>
-          <p>Street-level magic: buskers, surprise parades, and goose uprisings. From Poppy's sidecar.</p>
-        </div>
-      </a>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -129,15 +83,15 @@ description: "Discover Central Park.Guide - your community-powered source for ev
   <div class="container" style="position:relative; z-index:1;">
     <div class="split">
       <div>
-        <h2>Don't miss a thing</h2>
-        <p>Get weekly park alerts straight to your inbox. Closures, concerts, and the good stuff.</p>
+        <h2>{{ site.data.home.newsletter.heading }}</h2>
+        <p>{{ site.data.home.newsletter.text }}</p>
         <form class="newsletter" style="margin-top: 24px;">
           <input type="email" placeholder="Enter your E-mail" required>
-          <button type="submit" class="btn btn-green">Subscribe</button>
+          <button type="submit" class="btn btn-green">{{ site.data.home.newsletter.button_text }}</button>
         </form>
       </div>
       <div style="text-align:center;">
-        <img src="/assets/svg/newsletter-graphic.svg" alt="Newsletter illustration" style="max-height:280px;">
+        <img src="{{ site.data.home.newsletter.image }}" alt="Newsletter illustration" style="max-height:280px;">
       </div>
     </div>
   </div>
@@ -148,20 +102,12 @@ description: "Discover Central Park.Guide - your community-powered source for ev
   <div class="container">
     <div class="marquee">
       <div class="marquee__inner">
-        <img src="/assets/images/gallery-1.avif" alt="Central Park lawn">
-        <img src="/assets/images/gallery-2.avif" alt="Park scene">
-        <img src="/assets/images/gallery-3.avif" alt="Bird watching">
-        <img src="/assets/images/gallery-4.avif" alt="Jogging in the park">
-        <img src="/assets/images/gallery-6.avif" alt="Coffee by the lake">
-        <img src="/assets/images/gallery-7.avif" alt="Wildflowers">
-        <img src="/assets/images/gallery-8.avif" alt="Bird on a branch">
-        <img src="/assets/images/gallery-1.avif" alt="Central Park lawn">
-        <img src="/assets/images/gallery-2.avif" alt="Park scene">
-        <img src="/assets/images/gallery-3.avif" alt="Bird watching">
-        <img src="/assets/images/gallery-4.avif" alt="Jogging in the park">
-        <img src="/assets/images/gallery-6.avif" alt="Coffee by the lake">
-        <img src="/assets/images/gallery-7.avif" alt="Wildflowers">
-        <img src="/assets/images/gallery-8.avif" alt="Bird on a branch">
+        {% for img in site.data.home.gallery %}
+        <img src="{{ img.image }}" alt="{{ img.alt }}">
+        {% endfor %}
+        {% for img in site.data.home.gallery %}
+        <img src="{{ img.image }}" alt="{{ img.alt }}">
+        {% endfor %}
       </div>
     </div>
   </div>

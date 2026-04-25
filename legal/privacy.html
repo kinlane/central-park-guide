@@ -6,28 +6,11 @@ permalink: /legal/privacy/
 ---
 
 <div class="legal-content" style="padding-top: 140px;">
-  <h2>Privacy Policy</h2>
-  <p><em>Effective: November 17th, 2025</em></p>
+  <h2>{{ site.data.legal.privacy.title }}</h2>
+  <p><em>Effective: {{ site.data.legal.privacy.effective_date }}</em></p>
 
-  <h3>Collection of Routine Information</h3>
-  <p>This website tracks basic information about its visitors. This information includes, but is not limited to, IP addresses, browser details, timestamps and referring pages. None of this information can personally identify specific visitors to this website. The information is tracked for routine administration and maintenance purposes.</p>
-
-  <h3>Cookies</h3>
-  <p>Where necessary, this website uses cookies to store information about a visitor's preferences and history in order to better serve the visitor and/or present the visitor with customized content.</p>
-
-  <h3>Advertisement and Other Third Parties</h3>
-  <p>Advertising partners and other third parties may use cookies, scripts and/or web beacons to track visitors activities on this website in order to display advertisements and other useful information. Such tracking is done directly by the third parties through their own servers and is subject to their own privacy policies.</p>
-
-  <h3>Links to Third Party Websites</h3>
-  <p>We have included links on this website for your use and reference. We are not responsible for the privacy policies on these websites. You should be aware that the privacy policies of these websites may differ from our own.</p>
-
-  <h3>Security</h3>
-  <p>The security of your personal information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage, is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.</p>
-
-  <h3>Changes To This Privacy Policy</h3>
-  <p>This Privacy Policy is effective and will remain in effect except with respect to any changes in its provisions in the future, which will be in effect immediately after being posted on this page.</p>
-  <p>We reserve the right to update or change our Privacy Policy at any time and you should check this Privacy Policy periodically.</p>
-
-  <h3>Contact Information</h3>
-  <p>If you have any questions or concerns regarding the privacy policy, please send us an email to <a href="mailto:info@apievangelist.com">info@apievangelist.com</a>.</p>
+  {% for section in site.data.legal.privacy.sections %}
+  <h3>{{ section.heading }}</h3>
+  <p>{{ section.content }}</p>
+  {% endfor %}
 </div>

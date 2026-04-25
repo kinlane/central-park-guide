@@ -1,0 +1,35 @@
+---
+title: "Flagship - Griffin's Tale"
+date: 2026-05-30
+time: "12:00"
+end_time: "14:00"
+location: "Pilgrim Hill"
+place: "Pilgrim Hill"
+place_category: "event_venues"
+category: "family-community"
+image: "/assets/images/homepage-park.avif"
+description: "Flagship - Griffin's Tale at Pilgrim Hill in Central Park."
+event_id: "927341"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - community
+---
+
+Flagship - Griffin's Tale takes place at Pilgrim Hill in Central Park on Saturday, May 30, 2026.
+
+## Event Details
+
+- **Event:** Flagship - Griffin's Tale
+- **Date:** Saturday, May 30, 2026
+- **Time:** 12:00 PM - 2:00 PM
+- **Location:** Pilgrim Hill, Central Park
+- **Place:** Pilgrim Hill
+- **Type:** Special Event
+- **Event ID:** 927341
+
+## About This Event
+
+Flagship - Griffin's Tale is a permitted event taking place at Pilgrim Hill in Central Park. Contact the event organizers for more details about attendance and participation.

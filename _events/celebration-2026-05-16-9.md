@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-16
-time: "09:00"
-end_time: "11:00"
-location: "Wagner Cove, Cherry Hill"
-place: "Cherry Hill"
-place_category: "natural_areas"
-category: "family-community"
+time: "16:00"
+end_time: "17:00"
+location: "Cop Cot"
+place: "Cop Cot"
+place_category: "event_venues"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
-description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
-event_id: "892527"
+description: "Celebration at Cop Cot in Central Park."
+event_id: "906581"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Saturday, May 16, 2026.
+Celebration takes place at Cop Cot in Central Park on Saturday, May 16, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, May 16, 2026
-- **Time:** 9:00 AM - 11:00 AM
-- **Location:** Wagner Cove, Cherry Hill, Central Park
-- **Place:** Cherry Hill
+- **Time:** 4:00 PM - 5:00 PM
+- **Location:** Cop Cot, Central Park
+- **Place:** Cop Cot
 - **Type:** Special Event
-- **Event ID:** 892527
+- **Event ID:** 906581
 
 ## About This Event
 
-Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.

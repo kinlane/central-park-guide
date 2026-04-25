@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - lawn
+  - closure
 ---
 
 East Meadow Closure takes place at East Meadow, East Meadow Picnic Zone in Central Park on Sunday, April 19, 2026.

@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-23
-time: "13:00"
-end_time: "15:00"
-location: "Cop Cot"
-place: "Cop Cot"
+time: "12:00"
+end_time: "14:30"
+location: "Diana Ross Playground Lawn"
+place: "Diana Ross Playground"
 place_category: "event_venues"
-category: "family-community"
-image: "/assets/images/gallery-7.avif"
-description: "Celebration at Cop Cot in Central Park."
-event_id: "919747"
+category: "private-events"
+image: "/assets/images/event-3.avif"
+description: "Celebration at Diana Ross Playground Lawn in Central Park."
+event_id: "919916"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Cop Cot in Central Park on Saturday, May 23, 2026.
+Celebration takes place at Diana Ross Playground Lawn in Central Park on Saturday, May 23, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, May 23, 2026
-- **Time:** 1:00 PM - 3:00 PM
-- **Location:** Cop Cot, Central Park
-- **Place:** Cop Cot
+- **Time:** 12:00 PM - 2:30 PM
+- **Location:** Diana Ross Playground Lawn, Central Park
+- **Place:** Diana Ross Playground
 - **Type:** Special Event
-- **Event ID:** 919747
+- **Event ID:** 919916
 
 ## About This Event
 
-Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Diana Ross Playground Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

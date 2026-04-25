@@ -6,7 +6,7 @@ end_time: "18:00"
 location: "Ross Pinetum West"
 place: "Ross Pinetum"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Celebration at Ross Pinetum West in Central Park."
 event_id: "919833"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Ross Pinetum West in Central Park on Monday, May 18, 2026.

@@ -1,17 +1,14 @@
 <header class="site-header">
   <div class="container">
     <a href="/" class="site-header__logo">
-      <img src="/assets/images/logo.png" alt="Central Park.Guide">
+      <img src="/assets/images/logo.png" alt="{{ site.data.site.name }}">
     </a>
     <nav class="site-header__nav" id="main-nav">
-      <a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
-      <a href="/about-us/" {% if page.url contains 'about' %}class="active"{% endif %}>About</a>
-      <a href="/events/" {% if page.url contains 'events' %}class="active"{% endif %}>Events</a>
-      <a href="/plan-your-visit/" {% if page.url contains 'plan' %}class="active"{% endif %}>Plan your visit</a>
-      <a href="/in-the-loop/" {% if page.url contains 'loop' %}class="active"{% endif %}>Stay in the loop</a>
-      <a href="/contact-us/" {% if page.url contains 'contact' %}class="active"{% endif %}>Contact us</a>
+      {% for link in site.data.navigation.main %}
+      <a href="{{ link.url }}" {% if page.url == link.url %}class="active"{% endif %}>{{ link.title }}</a>
+      {% endfor %}
     </nav>
-    <a href="/contact-us/" class="btn btn-green site-header__cta">Submit an event</a>
+    <a href="{{ site.data.navigation.cta.url }}" class="btn btn-green site-header__cta">{{ site.data.navigation.cta.title }}</a>
     <button class="site-header__toggle" id="nav-toggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>

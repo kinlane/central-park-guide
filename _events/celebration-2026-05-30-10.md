@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-05-30
-time: "11:00"
-end_time: "12:00"
-location: "Shakespeare Garden"
-place: "Shakespeare Garden"
-place_category: "natural_areas"
-category: "family-community"
-image: "/assets/images/event-3.avif"
-description: "Celebration at Shakespeare Garden in Central Park."
-event_id: "890625"
+time: "12:00"
+end_time: "14:00"
+location: "Dene Lawn"
+place: "Dene Lawn"
+place_category: "event_venues"
+category: "private-events"
+image: "/assets/images/gallery-4.avif"
+description: "Celebration at Dene Lawn in Central Park."
+event_id: "917541"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Shakespeare Garden in Central Park on Saturday, May 30, 2026.
+Celebration takes place at Dene Lawn in Central Park on Saturday, May 30, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, May 30, 2026
-- **Time:** 11:00 AM - 12:00 PM
-- **Location:** Shakespeare Garden, Central Park
-- **Place:** Shakespeare Garden
+- **Time:** 12:00 PM - 2:00 PM
+- **Location:** Dene Lawn, Central Park
+- **Place:** Dene Lawn
 - **Type:** Special Event
-- **Event ID:** 890625
+- **Event ID:** 917541
 
 ## About This Event
 
-Celebration is a permitted event taking place at Shakespeare Garden in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Dene Lawn in Central Park. Contact the event organizers for more details about attendance and participation.

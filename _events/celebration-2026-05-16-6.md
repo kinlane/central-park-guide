@@ -1,21 +1,21 @@
 ---
 title: "Celebration"
 date: 2026-05-16
-time: "15:00"
-end_time: "15:30"
+time: "16:00"
+end_time: "18:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Celebration at Ladies' Pavilion in Central Park."
-event_id: "886737"
+event_id: "923060"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Ladies' Pavilion in Central Park on Saturday, May 16, 2026.
@@ -24,11 +24,11 @@ Celebration takes place at Ladies' Pavilion in Central Park on Saturday, May 16,
 
 - **Event:** Celebration
 - **Date:** Saturday, May 16, 2026
-- **Time:** 3:00 PM - 3:30 PM
+- **Time:** 4:00 PM - 6:00 PM
 - **Location:** Ladies' Pavilion, Central Park
 - **Place:** Ladies' Pavilion
 - **Type:** Special Event
-- **Event ID:** 886737
+- **Event ID:** 923060
 
 ## About This Event
 

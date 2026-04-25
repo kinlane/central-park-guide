@@ -1,35 +1,35 @@
 ---
 title: "Celebration"
 date: 2026-10-24
-time: "16:00"
-end_time: "18:00"
-location: "Belvedere Castle Terrace"
-place: "Belvedere Castle"
-place_category: "buildings"
-category: "family-community"
-image: "/assets/images/plan-visit-hero.avif"
-description: "Celebration at Belvedere Castle Terrace in Central Park."
-event_id: "927487"
+time: "13:00"
+end_time: "14:00"
+location: "The Pool Lawns"
+place: "The Pool"
+place_category: "water_bodies"
+category: "private-events"
+image: "/assets/images/event-3.avif"
+description: "Celebration at The Pool Lawns in Central Park."
+event_id: "899487"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
-Celebration takes place at Belvedere Castle Terrace in Central Park on Saturday, October 24, 2026.
+Celebration takes place at The Pool Lawns in Central Park on Saturday, October 24, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Saturday, October 24, 2026
-- **Time:** 4:00 PM - 6:00 PM
-- **Location:** Belvedere Castle Terrace, Central Park
-- **Place:** Belvedere Castle
+- **Time:** 1:00 PM - 2:00 PM
+- **Location:** The Pool Lawns, Central Park
+- **Place:** The Pool
 - **Type:** Special Event
-- **Event ID:** 927487
+- **Event ID:** 899487
 
 ## About This Event
 
-Celebration is a permitted event taking place at Belvedere Castle Terrace in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at The Pool Lawns in Central Park. Contact the event organizers for more details about attendance and participation.

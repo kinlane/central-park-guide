@@ -1,0 +1,28 @@
+---
+permalink: /events/calendar.ics
+layout: null
+---
+{%- assign sorted_events = site.events | sort: "date" -%}
+{%- assign now = 'now' | date: '%Y-%m-%d' -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Central Park Guide//Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Central Park Events
+X-WR-CALDESC:Curated events happening in Central Park, New York City
+X-WR-TIMEZONE:America/New_York
+{% for event in sorted_events %}{% assign event_date = event.date | date: '%Y-%m-%d' %}{% if event_date >= now %}{% assign date_compact = event.date | date: '%Y%m%d' %}{% assign time_compact = event.time | replace: ':', '' %}{% assign end_time_compact = event.end_time | replace: ':', '' %}
+BEGIN:VEVENT
+UID:{{ event.event_id }}-{{ event.date | date: '%Y%m%d' }}@centralpark.guide
+DTSTAMP:{{ 'now' | date: '%Y%m%dT%H%M%SZ' }}
+DTSTART;TZID=America/New_York:{{ date_compact }}T{{ time_compact }}00
+DTEND;TZID=America/New_York:{{ date_compact }}T{{ end_time_compact }}00
+SUMMARY:{{ event.title | replace: ',', '\,' | replace: ';', '\;' | replace: '"', '' }}
+DESCRIPTION:{{ event.description | replace: ',', '\,' | replace: ';', '\;' | replace: '"', '' }} \n\nFull details: https://centralpark.guide{{ event.url }}
+LOCATION:{{ event.place | default: event.location | replace: ',', '\,' }}\, Central Park\, New York\, NY
+URL:https://centralpark.guide{{ event.url }}
+CATEGORIES:{{ event.category }}
+END:VEVENT
+{% endif %}{% endfor %}
+END:VCALENDAR

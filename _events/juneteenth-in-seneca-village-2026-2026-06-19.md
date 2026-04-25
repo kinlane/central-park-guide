@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - annual-tradition
 ---
 
 Juneteenth in Seneca Village 2026 takes place at West Drive in Central Park on Friday, June 19, 2026.

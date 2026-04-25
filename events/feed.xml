@@ -1,0 +1,38 @@
+---
+permalink: /events/feed.xml
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Central Park.Guide - Events</title>
+  <link>https://centralpark.guide/events/</link>
+  <atom:link href="https://centralpark.guide/events/feed.xml" rel="self" type="application/rss+xml" />
+  <description>Curated events happening in Central Park, New York City.</description>
+  <language>en-us</language>
+  <lastBuildDate>{{ 'now' | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
+{%- assign sorted_events = site.events | sort: "date" -%}
+{%- assign now = 'now' | date: '%Y-%m-%d' -%}
+{%- for event in sorted_events -%}
+{%- assign event_date = event.date | date: '%Y-%m-%d' -%}
+{%- if event_date >= now %}
+  <item>
+    <title>{{ event.title | xml_escape }}</title>
+    <link>https://centralpark.guide{{ event.url }}</link>
+    <guid isPermaLink="false">{{ event.event_id }}-{{ event.date | date: '%Y%m%d' }}@centralpark.guide</guid>
+    <pubDate>{{ event.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+    <category>{{ event.category }}</category>
+    <description><![CDATA[
+      <p><strong>{{ event.title }}</strong></p>
+      <p>{{ event.description }}</p>
+      <ul>
+        <li><strong>Date:</strong> {{ event.date | date: "%A, %B %-d, %Y" }}</li>
+        <li><strong>Time:</strong> {{ event.time }}{% if event.end_time %} - {{ event.end_time }}{% endif %}</li>
+        <li><strong>Location:</strong> {{ event.place | default: event.location }}, Central Park</li>
+      </ul>
+    ]]></description>
+  </item>
+{%- endif -%}
+{%- endfor %}
+</channel>
+</rss>

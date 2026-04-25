@@ -1,23 +1,23 @@
 ---
 title: "Baseball - 13 and Older (Little League)"
 date: 2026-04-17
-time: "08:00"
-end_time: "16:00"
+time: "15:00"
+end_time: "17:30"
 location: "North Meadow-Baseball-04"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "runs-races"
+category: "sports"
 image: "/assets/images/park-1.avif"
 description: "Baseball - 13 and Older (Little League) at North Meadow-Baseball-04. Youth league permitted event in Central Park."
-event_id: "908194"
+event_id: "900268"
 event_type: "Sport - Youth"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - youth
-  - sports
   - baseball
+  - sports
+  - youth
 ---
 
 Baseball - 13 and Older (Little League) takes place at North Meadow-Baseball-04 in Central Park on Friday, April 17, 2026.
@@ -26,11 +26,11 @@ Baseball - 13 and Older (Little League) takes place at North Meadow-Baseball-04 
 
 - **Event:** Baseball - 13 and Older (Little League)
 - **Date:** Friday, April 17, 2026
-- **Time:** 8:00 AM - 4:00 PM
+- **Time:** 3:00 PM - 5:30 PM
 - **Location:** North Meadow-Baseball-04, Central Park
 - **Place:** North Meadow
 - **Type:** Sport - Youth
-- **Event ID:** 908194
+- **Event ID:** 900268
 
 ## About This Event
 

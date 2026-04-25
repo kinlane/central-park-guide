@@ -6,7 +6,7 @@ end_time: "12:00"
 location: "Wagner Cove, Cherry Hill"
 place: "Cherry Hill"
 place_category: "natural_areas"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
 event_id: "918790"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Sunday, May 31, 2026.

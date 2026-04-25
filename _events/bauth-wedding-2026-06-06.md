@@ -6,7 +6,7 @@ end_time: "13:00"
 location: "Wagner Cove, Cherry Hill"
 place: "Cherry Hill"
 place_category: "natural_areas"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/gallery-7.avif"
 description: "Private ceremony at Wagner Cove, Cherry Hill in Central Park."
 event_id: "888215"
@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - wedding
+  - private-booking
 ---
 
 Bauth Wedding takes place at Wagner Cove, Cherry Hill in Central Park on Saturday, June 6, 2026.

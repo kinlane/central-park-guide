@@ -8,10 +8,10 @@ permalink: /plan-your-visit/
 <!-- Hero -->
 <section class="hero">
   <div class="hero__bg">
-    <img src="/assets/images/plan-visit-hero.avif" alt="Autumn trees with colorful foliage surrounding a lake in a city park with skyscrapers in the background.">
+    <img src="{{ site.data['plan-your-visit'].hero.image }}" alt="{{ site.data['plan-your-visit'].hero.image_alt }}">
   </div>
   <div class="container hero__content">
-    <h1>Plan your visit</h1>
+    <h1>{{ site.data['plan-your-visit'].hero.heading }}</h1>
   </div>
 </section>
 
@@ -20,9 +20,9 @@ permalink: /plan-your-visit/
   <div class="container">
     <div class="split">
       <div class="split__text">
-        <h2>Heading to the park?</h2>
-        <p>Whether it's your first stroll or your thousandth loop, make the best of your next visit to Central Park.</p>
-        <h3 style="margin-top: 32px; margin-bottom: 16px;">Sky check before you go</h3>
+        <h2>{{ site.data['plan-your-visit'].intro.heading }}</h2>
+        <p>{{ site.data['plan-your-visit'].intro.text }}</p>
+        <h3 style="margin-top: 32px; margin-bottom: 16px;">{{ site.data['plan-your-visit'].intro.weather_heading }}</h3>
         <div class="weather-widget">
           <p class="weather-widget__location">Central Park, New York, NY</p>
           <p class="weather-widget__temp">+20&deg;</p>
@@ -33,7 +33,7 @@ permalink: /plan-your-visit/
         </div>
       </div>
       <div class="split__image">
-        <img src="/assets/images/plan-runners.avif" alt="Couple jogging by lake in Central Park" style="border-radius: 20px;">
+        <img src="{{ site.data['plan-your-visit'].intro.image }}" alt="{{ site.data['plan-your-visit'].intro.image_alt }}" style="border-radius: 20px;">
       </div>
     </div>
   </div>
@@ -44,42 +44,29 @@ permalink: /plan-your-visit/
   <div class="container text-center">
     <h2 class="mb-md">What's happening in the park</h2>
     <div class="grid-3">
-      <div class="event-card">
-        <img class="event-card__image" src="/assets/images/event-1.avif" alt="Central Park 10K">
+      {% assign upcoming = site.events | sort: "date" %}
+      {% for event in upcoming limit: 3 %}
+      <a href="{{ event.url }}" class="event-card" style="text-decoration: none; color: inherit;">
+        <img class="event-card__image" src="{{ event.image }}" alt="{{ event.title }}">
         <div class="event-card__body">
+          <span class="category-badge category-badge--{{ event.category }}">
+            {% case event.category %}
+              {% when 'runs-races' %}Runs &amp; Races
+              {% when 'concerts-performances' %}Concerts &amp; Performances
+              {% when 'family-community' %}Family &amp; Community
+              {% when 'closures' %}Closures
+            {% endcase %}
+          </span>
           <div class="event-card__meta">
-            <span><img src="/assets/icons/calendar.png" alt="">14 Sep - Sun</span>
-            <span><img src="/assets/icons/time.png" alt="">07:15 Start</span>
+            <span><img src="/assets/icons/calendar.png" alt="">{{ event.date | date: "%b %-d" }}</span>
+            <span><img src="/assets/icons/time.png" alt="">{{ event.time }}</span>
           </div>
-          <h3 class="event-card__title">Central Park 10K</h3>
-          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> Reservoir Loop</p>
-          <p class="event-card__desc">Community race with rolling closures until 1 PM. Runners of all levels welcome.</p>
+          <h3 class="event-card__title">{{ event.title }}</h3>
+          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> {{ event.location }}</p>
+          <p class="event-card__desc">{{ event.description }}</p>
         </div>
-      </div>
-      <div class="event-card">
-        <img class="event-card__image" src="/assets/images/event-2.avif" alt="Park event">
-        <div class="event-card__body">
-          <div class="event-card__meta">
-            <span><img src="/assets/icons/calendar.png" alt="">14 Sep - Sun</span>
-            <span><img src="/assets/icons/time.png" alt="">07:15 Start</span>
-          </div>
-          <h3 class="event-card__title">Central Park 10K</h3>
-          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> Reservoir Loop</p>
-          <p class="event-card__desc">Community race with rolling closures until 1 PM. Runners of all levels welcome.</p>
-        </div>
-      </div>
-      <div class="event-card">
-        <img class="event-card__image" src="/assets/images/event-3.avif" alt="Park event">
-        <div class="event-card__body">
-          <div class="event-card__meta">
-            <span><img src="/assets/icons/calendar.png" alt="">14 Sep - Sun</span>
-            <span><img src="/assets/icons/time.png" alt="">07:15 Start</span>
-          </div>
-          <h3 class="event-card__title">Central Park 10K</h3>
-          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> Reservoir Loop</p>
-          <p class="event-card__desc">Community race with rolling closures until 1 PM. Runners of all levels welcome.</p>
-        </div>
-      </div>
+      </a>
+      {% endfor %}
     </div>
     <a href="/events/" class="btn btn-outline" style="margin-top: 40px;">See all events</a>
   </div>
@@ -88,58 +75,23 @@ permalink: /plan-your-visit/
 <!-- Plan your park day -->
 <section class="section">
   <div class="container">
-    <h2 class="text-center mb-sm">Plan your park day your way</h2>
-    <p class="text-center" style="max-width: 600px; margin: 0 auto 48px;">No two visits are the same. Pick the path that fits you.</p>
+    <h2 class="text-center mb-sm">{{ site.data['plan-your-visit'].activities.heading }}</h2>
+    <p class="text-center" style="max-width: 600px; margin: 0 auto 48px;">{{ site.data['plan-your-visit'].activities.text }}</p>
 
     <div class="grid-2" style="margin-bottom: 48px;">
+      {% for guide in site.data['plan-your-visit'].activities.guides %}
       <div class="activity-card">
-        <img class="activity-card__image" src="/assets/images/plan-runners.avif" alt="Couple jogging by lake in Central Park">
+        <img class="activity-card__image" src="{{ guide.image }}" alt="{{ guide.image_alt }}">
         <div class="activity-card__content">
-          <h3>For runners</h3>
+          <h3>{{ guide.title }}</h3>
           <ul>
-            <li><strong>3-Mile Loop:</strong> Lower loop from Columbus Circle to Bethesda Terrace to back.</li>
-            <li><strong>6-Mile Loop:</strong> Full park drive loop, the classic. Start anywhere, end where you like.</li>
-            <li><strong>Long Run (10+ miles):</strong> Add Harlem Hill repeats or extend into the East/West Drives for distance.</li>
+            {% for item in guide.items %}
+            <li><strong>{{ item.label }}:</strong> {{ item.text }}</li>
+            {% endfor %}
           </ul>
         </div>
       </div>
-      <div class="activity-card">
-        <img class="activity-card__image" src="/assets/images/plan-families.avif" alt="Family walking in Central Park">
-        <div class="activity-card__content">
-          <h3>For families</h3>
-          <ul>
-            <li><strong>Carousel:</strong> A vintage favorite, open spring through fall near 65th Street.</li>
-            <li><strong>Playgrounds:</strong> Heckscher Playground (biggest in the park) and Ancient Playground (next to the Met).</li>
-            <li><strong>Picnic spots:</strong> Sheep Meadow (open space + skyline views), Great Hill (quiet lawns, uptown).</li>
-            <li><strong>Bonus:</strong> Rowboats at Loeb Boathouse are a family crowd-pleaser.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="activity-card">
-        <img class="activity-card__image" src="/assets/images/plan-visitors.avif" alt="Two women birdwatching in Central Park">
-        <div class="activity-card__content">
-          <h3>For first-time visitors</h3>
-          <ul>
-            <li><strong>Bow Bridge:</strong> The most photographed spot in the park -- classic views.</li>
-            <li><strong>Strawberry Fields:</strong> Tribute to John Lennon, with live musicians most days.</li>
-            <li><strong>The Mall &amp; Literary Walk:</strong> Historic elm trees and statues of writers.</li>
-            <li><strong>Bethesda Terrace &amp; Fountain:</strong> Iconic arches, tiled ceiling, and water views.</li>
-            <li><strong>Hidden gem:</strong> Conservatory Garden (formal gardens, seasonal blooms).</li>
-          </ul>
-        </div>
-      </div>
-      <div class="activity-card">
-        <img class="activity-card__image" src="/assets/images/plan-dogs.avif" alt="Woman walking French bulldog in the park">
-        <div class="activity-card__content">
-          <h3>For dog lovers</h3>
-          <ul>
-            <li><strong>Off-Leash Hours:</strong> 6 AM-9 AM &amp; 9 PM-1 AM on all lawns/wooded areas.</li>
-            <li><strong>Dog runs:</strong> Bull Moose Dog Run (west side, 81st St.) and Peter Detmold Dog Run (east side, 49th St.).</li>
-            <li><strong>Best strolls:</strong> The Ramble (wooded trails for adventurous pups) and Harlem Meer (calm waterside paths).</li>
-            <li><strong>Tip:</strong> Bring water! Fountains with dog basins are scattered but seasonal.</li>
-          </ul>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>
@@ -149,12 +101,12 @@ permalink: /plan-your-visit/
   <div class="container">
     <div class="split">
       <div class="split__text">
-        <h2>You might even spot Poppy</h2>
-        <p>Every great park has characters. Ours is four-legged, rides sidecar, and answers to Poppy. Keep an eye out, the Squirrel Patrol might roll past your picnic.</p>
-        <a href="https://poppyrlane.com" class="btn btn-black">Poppy's playlist</a>
+        <h2>{{ site.data['plan-your-visit'].poppy.heading }}</h2>
+        <p>{{ site.data['plan-your-visit'].poppy.text }}</p>
+        <a href="{{ site.data['plan-your-visit'].poppy.cta.url }}" class="btn btn-black">{{ site.data['plan-your-visit'].poppy.cta.text }}</a>
       </div>
       <div class="split__image">
-        <img src="/assets/images/plan-poppy.avif" alt="Large black and tan dog wearing a harness in a park, with a woman in sunglasses riding a rental bike and taking a photo in the background.">
+        <img src="{{ site.data['plan-your-visit'].poppy.image }}" alt="{{ site.data['plan-your-visit'].poppy.image_alt }}">
       </div>
     </div>
   </div>
@@ -163,22 +115,18 @@ permalink: /plan-your-visit/
 <!-- Photo marquee -->
 <section class="section">
   <div class="container text-center">
-    <h2 class="mb-sm">Life between the loops</h2>
-    <p style="margin-bottom: 32px;">Snapped, tagged, and shared by the park community.</p>
+    <h2 class="mb-sm">{{ site.data['plan-your-visit'].photo_marquee.heading }}</h2>
+    <p style="margin-bottom: 32px;">{{ site.data['plan-your-visit'].photo_marquee.text }}</p>
     <div class="marquee">
       <div class="marquee__inner">
-        <img src="/assets/images/gallery-1.avif" alt="Central Park">
-        <img src="/assets/images/gallery-2.avif" alt="Central Park">
-        <img src="/assets/images/gallery-3.avif" alt="Central Park">
-        <img src="/assets/images/gallery-4.avif" alt="Central Park">
-        <img src="/assets/images/gallery-6.avif" alt="Central Park">
-        <img src="/assets/images/gallery-7.avif" alt="Central Park">
-        <img src="/assets/images/gallery-8.avif" alt="Central Park">
-        <img src="/assets/images/gallery-1.avif" alt="Central Park">
-        <img src="/assets/images/gallery-2.avif" alt="Central Park">
-        <img src="/assets/images/gallery-3.avif" alt="Central Park">
+        {% for img in site.data['plan-your-visit'].photo_marquee.images %}
+        <img src="{{ img.image }}" alt="{{ img.alt }}">
+        {% endfor %}
+        {% for img in site.data['plan-your-visit'].photo_marquee.images %}
+        <img src="{{ img.image }}" alt="{{ img.alt }}">
+        {% endfor %}
       </div>
     </div>
-    <p style="margin-top: 24px;"><a href="https://www.instagram.com/centralparkguide/" target="_blank" rel="noopener">Tag your moments to be featured</a></p>
+    <p style="margin-top: 24px;"><a href="{{ site.data['plan-your-visit'].photo_marquee.instagram_url }}" target="_blank" rel="noopener">{{ site.data['plan-your-visit'].photo_marquee.instagram_text }}</a></p>
   </div>
 </section>

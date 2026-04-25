@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - dance
+  - salsa
 ---
 
 Salsa Dura Social takes place at Bandshell Plaza in Central Park on Friday, June 5, 2026.

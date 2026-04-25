@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - music
+  - school-program
 ---
 
 Columbia High School Symphonic Band takes place at Bandshell Plaza in Central Park on Monday, April 20, 2026.

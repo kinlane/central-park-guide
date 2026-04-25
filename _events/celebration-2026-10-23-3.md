@@ -6,7 +6,7 @@ end_time: "16:00"
 location: "Pilgrim Hill"
 place: "Pilgrim Hill"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/homepage-park.avif"
 description: "Celebration at Pilgrim Hill in Central Park."
 event_id: "918023"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
 ---
 
 Celebration takes place at Pilgrim Hill in Central Park on Friday, October 23, 2026.

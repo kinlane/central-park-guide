@@ -6,7 +6,7 @@ end_time: "19:45"
 location: "King Jagiallo Plaza, Turtle Pond Lawn"
 place: "King Jagiello Plaza"
 place_category: "event_venues"
-category: "family-community"
+category: "private-events"
 image: "/assets/images/event-3.avif"
 description: "Shakespeare Reception August 2026 at King Jagiallo Plaza, Turtle Pond Lawn in Central Park."
 event_id: "919574"
@@ -15,7 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - private-booking
+  - theater
 ---
 
 Shakespeare Reception August 2026 takes place at King Jagiallo Plaza, Turtle Pond Lawn in Central Park on Wednesday, August 12, 2026.

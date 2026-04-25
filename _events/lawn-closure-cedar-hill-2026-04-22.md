@@ -15,8 +15,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - lawn
+  - closure
 ---
 
 Lawn Closure - Cedar Hill takes place at Cedar Hill in Central Park on Wednesday, April 22, 2026.

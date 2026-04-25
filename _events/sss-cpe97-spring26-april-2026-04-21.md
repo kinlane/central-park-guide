@@ -1,12 +1,12 @@
 ---
-title: "SSS CPE97 Spring26 April"
+title: "SSS CPE97 Spring April"
 date: 2026-04-21
 time: "13:30"
 end_time: "17:30"
 location: "West 96th Street Landscape"
 place: "West 96th Street Landscape"
 place_category: "event_venues"
-category: "family-community"
+category: "education"
 image: "/assets/images/event-3.avif"
 description: "SSS CPE97 Spring26 April at West 96th Street Landscape in Central Park."
 event_id: "893490"
@@ -15,7 +15,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - school-program
 ---
 
 SSS CPE97 Spring26 April takes place at West 96th Street Landscape in Central Park on Tuesday, April 21, 2026.

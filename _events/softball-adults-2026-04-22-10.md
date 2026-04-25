@@ -2,14 +2,14 @@
 title: "Softball - Adults"
 date: 2026-04-22
 time: "18:00"
-end_time: "20:00"
-location: "Great Lawn-Softball-08"
-place: "Great Lawn"
-place_category: "meadows_and_lawns"
-category: "runs-races"
-image: "/assets/images/gallery-1.avif"
-description: "Softball - Adults at Great Lawn-Softball-08. Adult league permitted event in Central Park."
-event_id: "909311"
+end_time: "19:30"
+location: "Heckscher Fields-Softball-05"
+place: "Heckscher Fields"
+place_category: "event_venues"
+category: "sports"
+image: "/assets/images/park-2.avif"
+description: "Softball - Adults at Heckscher Fields-Softball-05. Adult league permitted event in Central Park."
+event_id: "900742"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
 community_board: "64"
@@ -19,18 +19,18 @@ tags:
   - sports
 ---
 
-Softball - Adults takes place at Great Lawn-Softball-08 in Central Park on Wednesday, April 22, 2026.
+Softball - Adults takes place at Heckscher Fields-Softball-05 in Central Park on Wednesday, April 22, 2026.
 
 ## Event Details
 
 - **Event:** Softball - Adults
 - **Date:** Wednesday, April 22, 2026
-- **Time:** 6:00 PM - 8:00 PM
-- **Location:** Great Lawn-Softball-08, Central Park
-- **Place:** Great Lawn
+- **Time:** 6:00 PM - 7:30 PM
+- **Location:** Heckscher Fields-Softball-05, Central Park
+- **Place:** Heckscher Fields
 - **Type:** Sport - Adult
-- **Event ID:** 909311
+- **Event ID:** 900742
 
 ## About This Event
 
-This is a permitted sport - adult event at Great Lawn-Softball-08. The area may have restricted access during the event period.
+This is a permitted sport - adult event at Heckscher Fields-Softball-05. The area may have restricted access during the event period.

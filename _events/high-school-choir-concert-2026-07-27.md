@@ -16,6 +16,7 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - music
+  - school-program
 ---
 
 High School Choir Concert takes place at Bandshell Plaza in Central Park on Monday, July 27, 2026.
