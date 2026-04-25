@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Diana Ross Playground Lawn"
 place: "Diana Ross Playground"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/celebration.png"
 description: "3s Park Party Rodeph Sholom School at Diana Ross Playground Lawn in Central Park."
 event_id: "928504"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - school-program
+  - "Celebration"
+  - "Family & Community"
+  - "School Program"
 ---
 
 3s Park Party Rodeph Sholom School takes place at Diana Ross Playground Lawn in Central Park on Saturday, May 2, 2026.

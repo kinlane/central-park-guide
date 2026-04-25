@@ -6,7 +6,6 @@ end_time: "13:00"
 location: "Great Hill North"
 place: "Great Hill"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/birthday.png"
 description: "Aaradhya's Birthday at Great Hill North in Central Park."
 event_id: "927303"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - birthday
-  - private-booking
+  - "Birthday"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Aaradhya's Birthday takes place at Great Hill North in Central Park on Sunday, May 24, 2026.

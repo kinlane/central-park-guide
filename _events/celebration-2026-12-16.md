@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Wagner Cove"
 place: "Wagner Cove"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Wagner Cove in Central Park."
 event_id: "912101"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Wagner Cove in Central Park on Wednesday, December 16, 2026.

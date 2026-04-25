@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "Ross Pinetum East"
 place: "Ross Pinetum"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/education.png"
 description: "Troop 662 Leadership Training at Ross Pinetum East in Central Park."
 event_id: "889867"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
+  - "Education"
 ---
 
 Troop 662 Leadership Training takes place at Ross Pinetum East in Central Park on Sunday, May 3, 2026.

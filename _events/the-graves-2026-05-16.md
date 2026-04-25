@@ -6,7 +6,6 @@ end_time: "11:00"
 location: "Bethesda Fountain Terrace"
 place: "Bethesda Terrace and Fountain"
 place_category: "buildings"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "The Graves at Bethesda Fountain Terrace in Central Park."
 event_id: "928164"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 The Graves takes place at Bethesda Fountain Terrace in Central Park on Saturday, May 16, 2026.

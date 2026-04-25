@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "North Reservoir Landscape A"
 place: "North Reservoir Landscape"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at North Reservoir Landscape A in Central Park."
 event_id: "920462"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Miscellaneous takes place at North Reservoir Landscape A in Central Park on Wednesday, May 20, 2026.

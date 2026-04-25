@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Cherry Hill"
 place: "Cherry Hill"
 place_category: "natural_areas"
-category: "family-community"
 image: "/assets/images/tags/birds.png"
 description: "NYC Bird Alliance and Brearley School Bird Outing at Cherry Hill in Central Park."
 event_id: "922503"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - birds
-  - school-program
+  - "Birds"
+  - "Family & Community"
+  - "School Program"
 ---
 
 NYC Bird Alliance and Brearley School Bird Outing takes place at Cherry Hill in Central Park on Sunday, April 19, 2026.

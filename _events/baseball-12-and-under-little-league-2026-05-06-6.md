@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Heckscher Fields-Softball-01"
 place: "Heckscher Fields"
 place_category: "event_venues"
-category: "sports"
 image: "/assets/images/tags/baseball.png"
 description: "Baseball - 12 and Under (Little League) at Heckscher Fields-Softball-01. Youth league permitted event in Central Park."
 event_id: "905663"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - baseball
-  - sports
-  - youth
+  - "Baseball"
+  - "Sports"
+  - "Youth"
 ---
 
 Baseball - 12 and Under (Little League) takes place at Heckscher Fields-Softball-01 in Central Park on Wednesday, May 6, 2026.

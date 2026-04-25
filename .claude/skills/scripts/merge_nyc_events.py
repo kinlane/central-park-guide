@@ -290,18 +290,45 @@ TAG_RULES = [
     (r'\bmarathon\b', 'marathon'),
     (r'\b(5k|10k|15k|half\s*marathon)\b', 'race'),
     (r'\bjog(ger|ging)?\b', 'running'),
-    # Music / performance
+    # Cycling
+    (r'\b(bike|biking|cycling|cyclist|bicycle)\b', 'cycling'),
+    # Music / performance — specific subtypes emit BOTH the subtype and 'music'
     (r'\bjazz\b', 'jazz'),
+    (r'\bjazz\b', 'music'),
     (r'\bsalsa\b', 'salsa'),
+    (r'\bsalsa\b', 'music'),
+    (r'\b(folk|folkdance|folkdancers)\b', 'folk'),
+    (r'\b(folk|folkdance|folkdancers)\b', 'music'),
+    (r'\b(hip[\s-]?hop|rap)\b', 'hip-hop'),
+    (r'\b(hip[\s-]?hop|rap)\b', 'music'),
+    (r'\bgospel\b', 'gospel'),
+    (r'\bgospel\b', 'music'),
+    (r'\bblues\b', 'blues'),
+    (r'\bblues\b', 'music'),
+    (r'\b(world\s*music|south\s*asian|afrobeat|afro[\s-]?cuban)\b', 'world-music'),
+    (r'\b(world\s*music|afrobeat|afro[\s-]?cuban)\b', 'music'),
+    (r'\b(latin\s*music|cumbia|merengue|bachata)\b', 'latin-music'),
+    (r'\b(latin\s*music|cumbia|merengue|bachata)\b', 'music'),
     (r'\bdance\b', 'dance'),
-    (r'\b(concert|symphonic|symphony|orchestra|philharmonic|band|choir|dj|songwriter|musical|blues|folk|bluegrass|country|rap|hip[\s-]?hop|gospel)\b', 'music'),
+    (r'\bballet\b', 'ballet'),
+    (r'\bballet\b', 'dance'),
+    (r'\b(concert|symphonic|symphony|orchestra|philharmonic|band|choir|dj|songwriter|musical|bluegrass|country)\b', 'music'),
     (r'\b(opera|operatic)\b', 'opera'),
-    (r'\b(theater|theatre|shakespeare|julius caesar|midsummer|macbeth|hamlet|romeo|king lear|othello|tempest|twelfth night|much ado|marionette|puppet|drama)\b', 'theater'),
+    (r'\b(opera|operatic)\b', 'music'),
+    # Theater — Shakespeare titles emit BOTH 'shakespeare' and 'theater'
+    (r'\bshakespeare\b', 'shakespeare'),
+    (r'\b(julius caesar|midsummer|macbeth|hamlet|romeo|king lear|othello|tempest|twelfth night|much ado)\b', 'shakespeare'),
+    (r'\b(shakespeare|julius caesar|midsummer|macbeth|hamlet|romeo|king lear|othello|tempest|twelfth night|much ado)\b', 'theater'),
+    (r'\b(theater|theatre|drama)\b', 'theater'),
+    (r'\b(marionette|puppet)\b', 'puppet'),
+    (r'\b(marionette|puppet)\b', 'theater'),
+    (r'\b(comedy|stand[\s-]?up|improv)\b', 'comedy'),
     (r'\b(film|movie|cinema|screening)\b', 'film'),
     (r'\b(art|exhibit|gallery)\b', 'art'),
     (r'\bperformance\b', 'performance'),
     # Charity / fundraising
     (r'\b(charity|fundrais|gala|benefit|donation)\b', 'charity'),
+    (r'\bgala\b', 'gala'),
     (r'\bluncheon\b', 'fundraiser'),
     # Family / kids
     (r'\b(kid|children|family|families)\b', 'family'),
@@ -315,7 +342,8 @@ TAG_RULES = [
     (r'\bceremony\b', 'ceremony'),
     (r'\b(memorial|funeral|tribute)\b', 'memorial'),
     (r'\bbar\s*mitzvah|bat\s*mitzvah\b', 'ceremony'),
-    (r'\b(reception|engagement)\b', 'celebration'),
+    (r'\breception\b', 'reception'),
+    (r'\bengagement\b', 'celebration'),
     (r'\b(party|celebration|reunion)\b', 'celebration'),
     (r'\bbaptism\b', 'ceremony'),
     # Outdoor / nature
@@ -326,12 +354,20 @@ TAG_RULES = [
     (r'\b(fish|fishing)\b', 'fishing'),
     (r'\b(boat|boating|kayak|rowing|paddle)\b', 'boating'),
     # Wellness
+    (r'\byoga\b', 'yoga'),
     (r'\byoga\b', 'wellness'),
+    (r'\b(meditat|mindful)\b', 'meditation'),
     (r'\b(meditat|mindful)\b', 'wellness'),
     (r'\bfitness\b', 'fitness'),
     (r'\b(zumba|aerobic|pilates)\b', 'fitness'),
     (r'\bstretch\b', 'wellness'),
-    # Holidays
+    (r'\b(support\s*group|resilience|grief|recovery)\b', 'support-group'),
+    # Holidays — emit specific holiday tag AND umbrella holiday tag
+    (r'\bjuneteenth\b', 'juneteenth'),
+    (r'\bhalloween\b', 'halloween'),
+    (r'\bthanksgiving\b', 'thanksgiving'),
+    (r'\beaster\b', 'easter'),
+    (r'\b(earth\s*day)\b', 'earth-day'),
     (r'\b(holiday|christmas|hanukkah|kwanzaa|halloween|thanksgiving|easter|juneteenth)\b', 'holiday'),
     (r'\b(pumpkin|harvest)\b', 'fall'),
     (r'\b(cherry blossom|blossom)\b', 'spring'),
@@ -343,51 +379,112 @@ TAG_RULES = [
     (r'\b(frederick law olmsted|olmsted)\b', 'annual-tradition'),
     (r'\b(open house ny|ohny)\b', 'annual-tradition'),
     (r'\b(great pumpkin|harvest festival|pumpkin flotilla|holiday lighting|fall foliage)\b', 'annual-tradition'),
-    # Communities
+    # Cultural communities
     (r'\b(LGBTQ|pride|queer)\b', 'lgbtq'),
+    (r'\b(south\s*asian|latino|latina|latine|latinx|aapi|asian\s*american|black\s*history|hispanic|caribbean|african|chinese|korean|japanese|indian)\b', 'cultural'),
     # Free
     (r'\bfree\b', 'free'),
     # Closures / maintenance
     (r'\b(lawn closure|meadow closure)\b', 'closure'),
     (r'\bmaintenance\b', 'maintenance'),
+    # Gatherings
+    (r'\b(meet[\s-]?up|meetup|social|mixer|hangout|gathering)\b', 'social'),
+    (r'\bmeeting\b', 'meeting'),
+    (r'\b(rally|demonstration|protest|march\s*for)\b', 'rally'),
+    (r'\b(spiritual|prayer|unity|vigil|faith)\b', 'spiritual'),
+    (r'\bcommemoration\b', 'commemoration'),
     # Other
     (r'\b(chess|checkers)\b', 'chess'),
     (r'\b(festival|fair)\b', 'festival'),
-    (r'\b(parade|march)\b', 'parade'),
-    (r'\b(speech|talk|lecture|seminar|panel|forum)\b', 'talk'),
-    (r'\b(book|reading|poetry|writer)\b', 'literature'),
-    (r'\b(food\s*truck|culinary|cooking)\b', 'food'),
+    (r'\bparade\b', 'parade'),
+    (r'\b(speech|talk|lecture|seminar|forum|keynote)\b', 'talk'),
+    (r'\bpanel\b', 'panel'),
+    (r'\b(book|reading|poetry|writer|literary|author)\b', 'literature'),
+    (r'\b(food\s*truck|culinary|cooking|tasting)\b', 'food'),
     (r'\b(market|farmers\s*market|farm\s*stand)\b', 'market'),
-    (r'\b(bike|biking|cycling|cyclist)\b', 'cycling'),
     (r'\b(media|press|interview)\b', 'media'),
+    (r'\b(history|historic|heritage)\b', 'history'),
+    (r'\b(adventure|exploration|expedition)\b', 'adventure'),
 ]
 
+# Slug → Title Case display value. The site stores tags in this human-readable
+# Title Case form (single metadata system, no separate `category` field).
+TAG_DISPLAY = {
+    'annual-tradition': 'Annual Tradition', 'baseball': 'Baseball', 'birds': 'Birds',
+    'birthday': 'Birthday', 'bowling': 'Bowling', 'celebration': 'Celebration',
+    'ceremony': 'Ceremony', 'chess': 'Chess', 'closures': 'Closures',
+    'concerts-performances': 'Concerts & Performances', 'cultural': 'Cultural',
+    'dance': 'Dance', 'earth-day': 'Earth Day', 'education': 'Education',
+    'family': 'Family', 'family-community': 'Family & Community',
+    'festival': 'Festival', 'film': 'Film', 'folk': 'Folk', 'free': 'Free',
+    'fundraiser': 'Fundraiser', 'holiday': 'Holiday', 'jazz': 'Jazz',
+    'juneteenth': 'Juneteenth', 'kickball': 'Kickball', 'maintenance': 'Maintenance',
+    'media': 'Media', 'meeting': 'Meeting', 'memorial': 'Memorial',
+    'model-yachting': 'Model Yachting', 'music': 'Music', 'panel': 'Panel',
+    'performance': 'Performance', 'picnic': 'Picnic', 'private-booking': 'Private Booking',
+    'private-events': 'Private Events', 'race': 'Race', 'rally': 'Rally',
+    'reception': 'Reception', 'running': 'Running', 'runs-races': 'Runs & Races',
+    'salsa': 'Salsa', 'school-program': 'School Program', 'shakespeare': 'Shakespeare',
+    'skating': 'Skating', 'soccer': 'Soccer', 'social': 'Social', 'softball': 'Softball',
+    'spiritual': 'Spiritual', 'sports': 'Sports', 'support-group': 'Support Group',
+    't-ball': 'T-Ball', 'talk': 'Talk', 'tennis': 'Tennis', 'theater': 'Theater',
+    'walk': 'Walk', 'wedding': 'Wedding', 'wellness': 'Wellness',
+    'world-music': 'World Music', 'yoga': 'Yoga', 'youth': 'Youth',
+    'hike': 'Hike', 'marathon': 'Marathon', 'cycling': 'Cycling',
+    'pickleball': 'Pickleball', 'volleyball': 'Volleyball', 'basketball': 'Basketball',
+    'lacrosse': 'Lacrosse', 'rugby': 'Rugby', 'football': 'Football', 'cricket': 'Cricket',
+    'frisbee': 'Frisbee', 'hip-hop': 'Hip-Hop', 'gospel': 'Gospel', 'blues': 'Blues',
+    'latin-music': 'Latin Music', 'ballet': 'Ballet', 'opera': 'Opera',
+    'puppet': 'Puppet', 'comedy': 'Comedy', 'art': 'Art', 'charity': 'Charity',
+    'gala': 'Gala', 'meditation': 'Meditation', 'fitness': 'Fitness',
+    'nature': 'Nature', 'garden': 'Garden', 'fishing': 'Fishing', 'boating': 'Boating',
+    'dogs': 'Dogs', 'halloween': 'Halloween', 'thanksgiving': 'Thanksgiving',
+    'easter': 'Easter', 'spring': 'Spring', 'fall': 'Fall', 'lgbtq': 'LGBTQ',
+    'literature': 'Literature', 'food': 'Food', 'market': 'Market', 'parade': 'Parade',
+    'commemoration': 'Commemoration', 'history': 'History', 'adventure': 'Adventure',
+    'community': 'Community',
+}
+
+
 def get_tags(name, event_type, category=None):
+    """Return a sorted list of Title Case tag values.
+
+    `category` is an internal slug (still used for category-based tag emission
+    and for the closure/maintenance/education roll-up rules); it is not written
+    to the event file as a separate field — it's folded into tags.
+    """
     text = (name + ' ' + (event_type or '')).lower()
-    tags = set()
+    slugs = set()
     for pattern, tag in TAG_RULES:
         if re.search(pattern, text, re.IGNORECASE):
-            tags.add(tag)
+            slugs.add(tag)
     # Sport-type roll-up
     if event_type in ('Sport - Adult', 'Sport - Youth'):
-        tags.add('sports')
+        slugs.add('sports')
         if event_type == 'Sport - Youth':
-            tags.add('youth')
-    if tags & {'softball','baseball','t-ball','soccer','tennis','kickball','pickleball','basketball','volleyball','lacrosse','rugby','football','cricket'}:
-        tags.add('sports')
+            slugs.add('youth')
+    if slugs & {'softball','baseball','t-ball','soccer','tennis','kickball','pickleball','basketball','volleyball','lacrosse','rugby','football','cricket'}:
+        slugs.add('sports')
     # Category-based tags
     if category == 'private-events':
-        tags.add('private-booking')
+        slugs.add('private-booking')
     if category == 'closures':
-        tags.add('closure')
+        slugs.add('closures')
     if category == 'maintenance':
-        tags.add('maintenance')
+        slugs.add('maintenance')
     if category == 'education':
-        tags.add('education')
+        slugs.add('education')
+    # Always include the category itself as a tag (single-dimension filtering)
+    if category:
+        slugs.add(category)
+    # Consolidate singular `closure` into plural `closures`
+    if 'closure' in slugs:
+        slugs.discard('closure')
+        slugs.add('closures')
     # Fallback
-    if not tags:
-        tags.add('community')
-    return sorted(tags)
+    if not slugs:
+        slugs.add('community')
+    return sorted({TAG_DISPLAY.get(s, s.replace('-', ' ').title()) for s in slugs})
 
 
 def clean_location(loc):
@@ -419,23 +516,32 @@ if os.path.isdir(_cat_path):
 
 # Tag priority — most specific first
 TAG_PRIORITY = [
-    'walk','race','running','marathon','cycling','skating','wellness','fitness',
+    'walk','race','running','marathon','cycling','skating','yoga','meditation','wellness','fitness',
     'softball','baseball','tennis','soccer','kickball','pickleball','frisbee','bowling','model-yachting',
-    'jazz','salsa','dance','theater','opera','film','art','music',
+    'jazz','salsa','folk','hip-hop','gospel','blues','world-music','latin-music',
+    'shakespeare','puppet','comedy','ballet','dance','theater','opera','film','art','music',
     'birds','garden','fishing','boating','nature','picnic','dogs',
-    'wedding','ceremony','birthday','celebration','charity','fundraiser',
+    'wedding','ceremony','memorial','reception','birthday','celebration','gala','charity','fundraiser',
     'school-program','education','family',
-    'holiday','spring','fall','annual-tradition',
-    'chess','festival','parade','market','food','literature','talk','media','free',
+    'juneteenth','halloween','thanksgiving','easter','earth-day','holiday','spring','fall','annual-tradition',
+    'cultural','lgbtq','support-group','spiritual',
+    'chess','festival','parade','market','food','literature','talk','panel','meeting','social','rally','media','free',
+    'commemoration','history','adventure',
     'closure','lawn','maintenance',
 ]
 
 def get_image(category, location, tags=None):
-    """Pick the most specific tag-based image, falling back to the category image."""
+    """Pick the most specific tag-based image, falling back to the category image.
+
+    `tags` are Title Case display values (e.g., "Runs & Races"). Image asset
+    filenames stay kebab-case (`runs-races.png`), so we slugify each tag back
+    to its asset filename before matching.
+    """
     if tags:
-        for t in TAG_PRIORITY:
-            if t in tags and t in HAVE_TAG_IMAGES:
-                return f"{TAG_IMAGES_DIR}/{t}.png"
+        tag_slugs = {slugify(t) for t in tags}
+        for slug in TAG_PRIORITY:
+            if slug in tag_slugs and slug in HAVE_TAG_IMAGES:
+                return f"{TAG_IMAGES_DIR}/{slug}.png"
     if category in HAVE_CAT_IMAGES:
         return f"{CAT_IMAGES_DIR}/{category}.png"
     return '/assets/images/event-3.avif'
@@ -592,7 +698,6 @@ for event in latest:
         lines.append('boroughs:')
         for b in nyrr_boroughs:
             lines.append('  - "' + b + '"')
-    lines.append('category: "' + category + '"')
     lines.append('image: "' + image + '"')
     lines.append('description: "' + yaml_safe(description) + '"')
     lines.append('event_id: "' + eid + '"')
@@ -602,7 +707,7 @@ for event in latest:
     lines.append('police_precinct: "' + pp + '"')
     lines.append('tags:')
     for tag in tags:
-        lines.append('  - ' + tag)
+        lines.append('  - "' + yaml_safe(tag) + '"')
     if nyrr_rec:
         lines.append('nyrr:')
         for fld in ('event_item_id', 'distance', 'hashtag',
@@ -671,8 +776,10 @@ for event in latest:
             except FileNotFoundError:
                 pass
 
-# Clean titles in events left alone (file not matched by an API record)
+# Clean titles + backfill missing descriptions in events left alone
+# (file not matched by an API record).
 title_only_cleaned = 0
+description_backfilled = 0
 left_alone_count = 0
 for key, files in existing_by_key.items():
     if key in api_keys:
@@ -680,28 +787,70 @@ for key, files in existing_by_key.items():
     left_alone_count += len(files)
     for info in files:
         content = info['content']
+        changed = False
+
         title_match = re.search(r'^title:\s*"(.+?)"', content, re.MULTILINE)
-        if not title_match:
-            continue
-        raw_title = title_match.group(1).replace('\\"', '"')
-        cleaned = clean_title(raw_title)
-        if cleaned != raw_title:
-            new_content = re.sub(
-                r'^title:\s*".*?"',
-                'title: "' + yaml_safe(cleaned) + '"',
-                content,
-                count=1,
-                flags=re.MULTILINE,
-            )
+        if title_match:
+            raw_title = title_match.group(1).replace('\\"', '"')
+            cleaned = clean_title(raw_title)
+            if cleaned != raw_title:
+                content = re.sub(
+                    r'^title:\s*".*?"',
+                    'title: "' + yaml_safe(cleaned) + '"',
+                    content,
+                    count=1,
+                    flags=re.MULTILINE,
+                )
+                title_only_cleaned += 1
+                changed = True
+        else:
+            cleaned = None
+
+        # Backfill description if absent or empty.
+        # Source priority: existing front matter location/title/event_type.
+        desc_match = re.search(r'^description:\s*"(.*?)"\s*$', content, re.MULTILINE)
+        if not desc_match or not desc_match.group(1).strip():
+            current_title = (cleaned
+                             or (title_match.group(1).replace('\\"', '"') if title_match else 'Event'))
+            loc_match = re.search(r'^location:\s*"(.*?)"', content, re.MULTILINE)
+            et_match = re.search(r'^event_type:\s*"(.*?)"', content, re.MULTILINE)
+            location_str = loc_match.group(1) if loc_match else 'Central Park'
+            event_type_str = et_match.group(1) if et_match else ''
+            new_desc = make_description(current_title, event_type_str, location_str)
+            new_desc_line = 'description: "' + yaml_safe(new_desc) + '"'
+            if desc_match:
+                content = re.sub(
+                    r'^description:\s*".*?"\s*$',
+                    new_desc_line,
+                    content,
+                    count=1,
+                    flags=re.MULTILINE,
+                )
+            else:
+                # Insert after location (or before category) inside front matter.
+                if loc_match:
+                    insert_at = content.find('\n', loc_match.end()) + 1
+                    content = content[:insert_at] + new_desc_line + '\n' + content[insert_at:]
+                else:
+                    # Last resort: insert just before the closing `---`
+                    content = re.sub(
+                        r'(\n---\s*\n)',
+                        '\n' + new_desc_line + r'\1',
+                        content,
+                        count=1,
+                    )
+            description_backfilled += 1
+            changed = True
+
+        if changed:
             with open(info['path'], 'w') as f:
-                f.write(new_content)
-            title_only_cleaned += 1
+                f.write(content)
 
 print(f"\nMerge results:")
 print(f"  Created (new events): {created}")
 print(f"  Updated (existing events refreshed): {updated}")
 print(f"  Total API events processed: {len(latest)}")
-print(f"  Files not in API (titles cleaned): {title_only_cleaned} cleaned, {left_alone_count} files left alone")
+print(f"  Files not in API: {title_only_cleaned} titles cleaned, {description_backfilled} descriptions backfilled, {left_alone_count} files visited")
 print(f"  Skipped (location unmatched): {skipped_unmatched}")
 print(f"  Skipped (invalid data): {skipped_invalid}")
 if unmatched_locs:

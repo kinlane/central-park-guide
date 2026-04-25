@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Hernshead"
 place: "Hernshead"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "That Guitar Man From Central Park at Hernshead in Central Park."
 event_id: "891301"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 That Guitar Man From Central Park takes place at Hernshead in Central Park on Saturday, May 16, 2026.

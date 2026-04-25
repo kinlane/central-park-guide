@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/categories/concerts-performances.png"
 description: "Bill Popp and the Tapes at Bandshell Plaza in Central Park."
 event_id: "892994"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Concerts & Performances"
 ---
 
 Bill Popp and the Tapes takes place at Bandshell Plaza in Central Park on Monday, August 17, 2026.

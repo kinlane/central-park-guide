@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/music.png"
 description: "Escanaba HS Band Performance at Bandshell Plaza in Central Park."
 event_id: "899770"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - music
-  - performance
-  - school-program
+  - "Concerts & Performances"
+  - "Music"
+  - "Performance"
+  - "School Program"
 ---
 
 Escanaba HS Band Performance takes place at Bandshell Plaza in Central Park on Monday, May 4, 2026.

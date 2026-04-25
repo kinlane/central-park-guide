@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Dead Road North"
 place: "Dead Road North"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/skating.png"
 description: "Central Park Skate Circle at Dead Road North in Central Park."
 event_id: "890066"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - skating
+  - "Family & Community"
+  - "Skating"
 ---
 
 Central Park Skate Circle takes place at Dead Road North in Central Park on Saturday, April 18, 2026.

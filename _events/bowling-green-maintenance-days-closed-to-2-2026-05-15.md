@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
-category: "maintenance"
 image: "/assets/images/tags/maintenance.png"
 description: "Bowling Green - Maintenance Days - Closed to 2 at Bowling Green Lawn in Central Park."
 event_id: "889691"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - maintenance
+  - "Maintenance"
 ---
 
 Bowling Green - Maintenance Days - Closed to 2 takes place at Bowling Green Lawn in Central Park on Friday, May 15, 2026.

@@ -6,7 +6,6 @@ end_time: "20:30"
 location: "North Meadow-Baseball-04"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at North Meadow-Baseball-04. Adult league permitted event in Central Park."
 event_id: "905447"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - sports
+  - "Private Booking"
+  - "Private Events"
+  - "Sports"
 ---
 
 Miscellaneous takes place at North Meadow-Baseball-04 in Central Park on Tuesday, May 19, 2026.

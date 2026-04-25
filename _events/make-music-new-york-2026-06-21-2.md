@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Pilgrim Hill"
 place: "Pilgrim Hill"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/categories/concerts-performances.png"
 description: "Make Music New York at Pilgrim Hill in Central Park."
 event_id: "888930"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Concerts & Performances"
 ---
 
 Make Music New York takes place at Pilgrim Hill in Central Park on Sunday, June 21, 2026.

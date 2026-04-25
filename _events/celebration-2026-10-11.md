@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Belvedere Castle Terrace"
 place: "Belvedere Castle"
 place_category: "buildings"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Belvedere Castle Terrace in Central Park."
 event_id: "891055"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Belvedere Castle Terrace in Central Park on Sunday, October 11, 2026.

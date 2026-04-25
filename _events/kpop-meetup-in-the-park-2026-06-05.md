@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Kpop Meetup in the Park at Mineral Springs in Central Park."
 event_id: "920685"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Social"
 ---
 
 Kpop Meetup in the Park takes place at Mineral Springs in Central Park on Friday, June 5, 2026.

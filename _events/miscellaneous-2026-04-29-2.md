@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Heckscher Fields-Softball-05"
 place: "Heckscher Fields"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at Heckscher Fields-Softball-05. Youth league permitted event in Central Park."
 event_id: "900320"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - sports
-  - youth
+  - "Private Booking"
+  - "Private Events"
+  - "Sports"
+  - "Youth"
 ---
 
 Miscellaneous takes place at Heckscher Fields-Softball-05 in Central Park on Wednesday, April 29, 2026.

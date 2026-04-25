@@ -6,7 +6,6 @@ end_time: "21:00"
 location: "The Pool Lawns"
 place: "The Pool"
 place_category: "water_bodies"
-category: "family-community"
 image: "/assets/images/tags/theater.png"
 description: "Julius Caesar at The Pool Lawns in Central Park."
 event_id: "896623"
@@ -15,7 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - theater
+  - "Family & Community"
+  - "Shakespeare"
+  - "Theater"
 ---
 
 Julius Caesar takes place at The Pool Lawns in Central Park on Sunday, May 10, 2026.

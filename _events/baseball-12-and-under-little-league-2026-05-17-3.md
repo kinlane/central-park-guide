@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Great Lawn-Softball-03"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "sports"
 image: "/assets/images/tags/baseball.png"
 description: "Baseball - 12 and Under (Little League) at Great Lawn-Softball-03. Youth league permitted event in Central Park."
 event_id: "905490"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - baseball
-  - sports
-  - youth
+  - "Baseball"
+  - "Sports"
+  - "Youth"
 ---
 
 Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-03 in Central Park on Sunday, May 17, 2026.

@@ -7,47 +7,7 @@ intro:
   heading: "Got a tip, a question or an idea"
   text: "These are your quickest loops to connect with us."
 
-cards:
-  - title: "Submit an event"
-    text: "Hosting a concert, run, or community gathering in the park?"
-    detail: "Add it to the guide so everyone knows where to go (or avoid)."
-    icon: /assets/icons/calendar.png
-    icon_bg: "rgba(235,151,79,0.15)"
-    cta:
-      text: "Submit an event"
-      url: "mailto:hello@centralpark.guide"
-      style: btn-orange
-  - title: "Partnerships"
-    text: "Want to collaborate?"
-    detail: "From local orgs to park vendors, we're open to partnerships that make Central Park even more vibrant."
-    icon: /assets/svg/puppy.svg
-    icon_bg: "rgba(60,164,116,0.15)"
-    cta:
-      text: "Say hello"
-      url: "mailto:hello@centralpark.guide"
-      style: btn-green
-  - title: "Media & press"
-    text: "Covering Central Park, city life, or unique community projects?"
-    detail: "We've got stories to share about the patrol, the guide, the people, and paws behind it."
-    icon_emoji: "&#9998;"
-    icon_bg: "rgba(0,0,0,0.08)"
-    cta:
-      text: "Ask away"
-      url: "mailto:hello@centralpark.guide"
-      style: btn-black
-  - title: "Squirrel patrol reports"
-    text: "Spotted something worth sharing: a detour, surprise parade, or odd goose uprising?"
-    detail: "Log it with Poppy and the patrol squad."
-    icon: /assets/icons/paw.png
-    icon_bg: "rgba(243,174,20,0.15)"
-    cta:
-      text: "Log a sighting"
-      url: "https://poppyrlane.com/field-reports/"
-      style: btn-orange
-
 follow:
-  heading: "Follow along"
-  text: "Stay connected for upcoming events, park updates and community moments."
   instagram:
     image: /assets/images/contact-instagram.avif
     image_alt: "Instagram - Central Park Guide"
@@ -59,3 +19,8 @@ follow:
     heading: "Don't want to miss the next closure or concert?"
     text: "Get weekly park alerts straight to your inbox."
     button_text: "Subscribe for updates"
+  email:
+    heading: "Send us an email"
+    text: "Got a question, a tip, or want to say hi? We read every note."
+    address: "hello@centralpark.guide"
+    cta_text: "Email hello@centralpark.guide"

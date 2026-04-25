@@ -49,14 +49,7 @@ permalink: /plan-your-visit/
       <a href="{{ event.url }}" class="event-card" style="text-decoration: none; color: inherit;">
         <img class="event-card__image" src="{{ event.image }}" alt="{{ event.title }}">
         <div class="event-card__body">
-          <span class="category-badge category-badge--{{ event.category }}">
-            {% case event.category %}
-              {% when 'runs-races' %}Runs &amp; Races
-              {% when 'concerts-performances' %}Concerts &amp; Performances
-              {% when 'family-community' %}Family &amp; Community
-              {% when 'closures' %}Closures
-            {% endcase %}
-          </span>
+          {% include primary-tag-badge.html tags=event.tags %}
           <div class="event-card__meta">
             <span><img src="/assets/icons/calendar.png" alt="">{{ event.date | date: "%b %-d" }}</span>
             <span><img src="/assets/icons/time.png" alt="">{{ event.time }}</span>

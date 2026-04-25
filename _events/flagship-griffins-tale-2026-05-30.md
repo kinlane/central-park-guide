@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Pilgrim Hill"
 place: "Pilgrim Hill"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Flagship - Griffin's Tale at Pilgrim Hill in Central Park."
 event_id: "927341"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Flagship - Griffin's Tale takes place at Pilgrim Hill in Central Park on Saturday, May 30, 2026.

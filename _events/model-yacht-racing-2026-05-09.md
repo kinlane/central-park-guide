@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Kerbs Boathouse"
 place: "Kerbs Boathouse"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/model-yachting.png"
 description: "Model Yacht Racing at Kerbs Boathouse in Central Park."
 event_id: "919099"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - model-yachting
+  - "Family & Community"
+  - "Model Yachting"
 ---
 
 Model Yacht Racing takes place at Kerbs Boathouse in Central Park on Saturday, May 9, 2026.

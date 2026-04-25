@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/picnic.png"
 description: "Proposal Picnic at Cop Cot in Central Park."
 event_id: "928808"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - picnic
+  - "Family & Community"
+  - "Picnic"
 ---
 
 Proposal Picnic takes place at Cop Cot in Central Park on Saturday, May 2, 2026.

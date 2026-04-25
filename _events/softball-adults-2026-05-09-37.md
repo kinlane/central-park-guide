@@ -6,7 +6,6 @@ end_time: "20:30"
 location: "North Meadow-Softball-07"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "sports"
 image: "/assets/images/tags/softball.png"
 description: "Softball - Adults at North Meadow-Softball-07. Adult league permitted event in Central Park."
 event_id: "907266"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - softball
-  - sports
-  - t-ball
+  - "Softball"
+  - "Sports"
+  - "T-Ball"
 ---
 
 Softball - Adults takes place at North Meadow-Softball-07 in Central Park on Saturday, May 9, 2026.

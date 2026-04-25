@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Sacred Sites Open House Day 2 at Mineral Springs in Central Park."
 event_id: "915372"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Sacred Sites Open House Day 2 takes place at Mineral Springs in Central Park on Sunday, May 17, 2026.

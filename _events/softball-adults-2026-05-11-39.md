@@ -6,7 +6,6 @@ end_time: "19:30"
 location: "Heckscher Fields-Softball-01"
 place: "Heckscher Fields"
 place_category: "event_venues"
-category: "sports"
 image: "/assets/images/tags/softball.png"
 description: "Softball - Adults at Heckscher Fields-Softball-01. Adult league permitted event in Central Park."
 event_id: "900049"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - softball
-  - sports
-  - t-ball
+  - "Softball"
+  - "Sports"
+  - "T-Ball"
 ---
 
 Softball - Adults takes place at Heckscher Fields-Softball-01 in Central Park on Monday, May 11, 2026.

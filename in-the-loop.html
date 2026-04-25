@@ -5,10 +5,11 @@ description: "Join Central Park.Guide's newsletter for insider tips, event alert
 permalink: /in-the-loop/
 ---
 
-<!-- Hero -->
+<!-- Hero — background image rotates per build via Liquid sample -->
+{% assign hero_image = site.data.central-park-images.images | sample %}
 <section class="hero">
   <div class="hero__bg">
-    <img src="{{ site.data['in-the-loop'].hero.image }}" alt="{{ site.data['in-the-loop'].hero.image_alt }}">
+    <img src="{{ hero_image }}" alt="{{ site.data['in-the-loop'].hero.image_alt }}">
   </div>
   <div class="container hero__content">
     <h1>{{ site.data['in-the-loop'].hero.heading }}</h1>
@@ -76,9 +77,10 @@ permalink: /in-the-loop/
         </form>
       </div>
       <div>
+        {% assign signup_images = site.data.central-park-images.images | sample: 4 %}
         <div class="photo-grid" style="grid-template-columns: repeat(2, 1fr);">
-          {% for img in site.data['in-the-loop'].signup.images %}
-          <img src="{{ img.image }}" alt="{{ img.alt }}">
+          {% for img in signup_images %}
+          <img src="{{ img }}" alt="Central Park scene">
           {% endfor %}
         </div>
       </div>

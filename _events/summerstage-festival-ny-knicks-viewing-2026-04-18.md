@@ -6,7 +6,6 @@ end_time: "22:00"
 location: "Rumsey Playfield, Bandshell Plaza"
 place: "Rumsey Playfield"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/festival.png"
 description: "SummerStage Festival - NY Knicks Viewing at Rumsey Playfield, Bandshell Plaza in Central Park."
 event_id: "933421"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - festival
+  - "Family & Community"
+  - "Festival"
 ---
 
 SummerStage Festival - NY Knicks Viewing takes place at Rumsey Playfield, Bandshell Plaza in Central Park on Saturday, April 18, 2026.

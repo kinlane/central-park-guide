@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/music.png"
 description: "Columbia High School Symphonic Band at Bandshell Plaza in Central Park."
 event_id: "898311"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - music
-  - school-program
+  - "Concerts & Performances"
+  - "Music"
+  - "School Program"
 ---
 
 Columbia High School Symphonic Band takes place at Bandshell Plaza in Central Park on Monday, April 20, 2026.

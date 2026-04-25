@@ -8,7 +8,9 @@
       <a href="{{ link.url }}" {% if page.url == link.url %}class="active"{% endif %}>{{ link.title }}</a>
       {% endfor %}
     </nav>
+    {% if site.data.navigation.cta %}
     <a href="{{ site.data.navigation.cta.url }}" class="btn btn-green site-header__cta">{{ site.data.navigation.cta.title }}</a>
+    {% endif %}
     <button class="site-header__toggle" id="nav-toggle" aria-label="Toggle navigation">
       <span></span>
       <span></span>

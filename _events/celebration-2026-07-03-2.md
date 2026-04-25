@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Bow Bridge"
 place: "Bow Bridge"
 place_category: "bridges"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Bow Bridge in Central Park."
 event_id: "919722"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Bow Bridge in Central Park on Friday, July 3, 2026.

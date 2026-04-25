@@ -6,7 +6,6 @@ end_time: "13:00"
 location: "East 72nd Street Playground Lawns"
 place: "East 72nd Street Playground"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/birthday.png"
 description: "Birthday party at East 72nd Street Playground Lawns in Central Park."
 event_id: "928963"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "8"
 police_precinct: "19"
 tags:
-  - birthday
-  - celebration
-  - private-booking
+  - "Birthday"
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Birthday party takes place at East 72nd Street Playground Lawns in Central Park on Sunday, April 19, 2026.

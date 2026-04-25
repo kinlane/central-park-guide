@@ -6,7 +6,6 @@ end_time: "20:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/salsa.png"
 description: "Salsa Dura Social at Bandshell Plaza in Central Park."
 event_id: "889401"
@@ -15,7 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - salsa
+  - "Concerts & Performances"
+  - "Music"
+  - "Salsa"
+  - "Social"
 ---
 
 Salsa Dura Social takes place at Bandshell Plaza in Central Park on Friday, June 5, 2026.

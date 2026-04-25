@@ -6,7 +6,6 @@ end_time: "20:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/salsa.png"
 description: "Carlos Konig Salsa at Bandshell Plaza in Central Park."
 event_id: "892746"
@@ -15,7 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - salsa
+  - "Concerts & Performances"
+  - "Music"
+  - "Salsa"
 ---
 
 Carlos Konig Salsa takes place at Bandshell Plaza in Central Park on Saturday, August 22, 2026.

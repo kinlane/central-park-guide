@@ -6,7 +6,6 @@ end_time: "13:30"
 location: "Lawn North of Levin Playground"
 place: "Levin Playground"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/soccer.png"
 description: "James Christie Soccer Training 11 at Lawn North of Levin Playground in Central Park."
 event_id: "909007"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
-  - soccer
-  - sports
+  - "Education"
+  - "Soccer"
+  - "Sports"
 ---
 
 James Christie Soccer Training 11 takes place at Lawn North of Levin Playground in Central Park on Thursday, May 14, 2026.

@@ -6,7 +6,6 @@ end_time: "19:30"
 location: "Shakespeare Garden"
 place: "Shakespeare Garden"
 place_category: "natural_areas"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Shakespeare Garden in Central Park."
 event_id: "925776"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - wedding
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Wolfe-stojanov Wedding takes place at Shakespeare Garden in Central Park on Friday, May 8, 2026.

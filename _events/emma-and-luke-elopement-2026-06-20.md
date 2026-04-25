@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Ladies' Pavilion in Central Park."
 event_id: "899793"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - wedding
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Emma and Luke Elopement takes place at Ladies' Pavilion in Central Park on Saturday, June 20, 2026.

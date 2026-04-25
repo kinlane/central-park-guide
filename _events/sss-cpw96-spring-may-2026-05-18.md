@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "Rudin Playground Lawn"
 place: "Rudin Playground Lawn"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/education.png"
 description: "SSS CPW96 Spring May at Rudin Playground Lawn in Central Park."
 event_id: "893466"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
+  - "Education"
 ---
 
 SSS CPW96 Spring May takes place at Rudin Playground Lawn in Central Park on Monday, May 18, 2026.

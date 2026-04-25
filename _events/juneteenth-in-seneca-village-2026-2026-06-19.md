@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "West Drive"
 place: "West Drive"
 place_category: "paths_and_drives"
-category: "family-community"
 image: "/assets/images/tags/holiday.png"
 description: "Juneteenth in Seneca Village 2026 at West Drive in Central Park."
 event_id: "915982"
@@ -15,7 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - holiday
+  - "Family & Community"
+  - "Holiday"
+  - "Juneteenth"
 ---
 
 Juneteenth in Seneca Village 2026 takes place at West Drive in Central Park on Friday, June 19, 2026.

@@ -6,7 +6,6 @@ end_time: "20:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Lucada Mlange Presents Les Berceaux the Lighthouse: No. 1 a Mental Health Crisis and No. 2 Forest J at Bandshell Plaza in Central Park."
 event_id: "911633"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Lucada Mlange Presents Les Berceaux the Lighthouse: No. 1 a Mental Health Crisis and No. 2 Forest J takes place at Bandshell Plaza in Central Park on Thursday, August 27, 2026.

@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Ross Pinetum West"
 place: "Ross Pinetum"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/birthday.png"
 description: "Preskill Birthday Party at Ross Pinetum West in Central Park."
 event_id: "933292"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - birthday
-  - celebration
-  - private-booking
+  - "Birthday"
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Preskill Birthday Party takes place at Ross Pinetum West in Central Park on Saturday, May 30, 2026.

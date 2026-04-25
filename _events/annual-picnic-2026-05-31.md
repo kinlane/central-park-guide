@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Ross Pinetum West"
 place: "Ross Pinetum"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/picnic.png"
 description: "Annual Picnic at Ross Pinetum West in Central Park."
 event_id: "927571"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - annual-tradition
-  - picnic
+  - "Annual Tradition"
+  - "Family & Community"
+  - "Picnic"
 ---
 
 Annual Picnic takes place at Ross Pinetum West in Central Park on Sunday, May 31, 2026.

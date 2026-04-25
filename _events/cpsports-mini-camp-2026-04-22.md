@@ -6,7 +6,6 @@ end_time: "12:30"
 location: "South Dead Road A"
 place: "South Dead Road"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/education.png"
 description: "CPSports Mini-Camp at South Dead Road A in Central Park."
 event_id: "898429"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
+  - "Education"
 ---
 
 CPSports Mini-Camp takes place at South Dead Road A in Central Park on Wednesday, April 22, 2026.

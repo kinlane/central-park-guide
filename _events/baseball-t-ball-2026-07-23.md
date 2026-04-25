@@ -6,7 +6,6 @@ end_time: "19:30"
 location: "North Meadow-Softball-12"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "sports"
 image: "/assets/images/tags/baseball.png"
 description: "Baseball - T-ball at North Meadow-Softball-12. Adult league permitted event in Central Park."
 event_id: "930169"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - baseball
-  - sports
-  - t-ball
+  - "Baseball"
+  - "Sports"
+  - "T-Ball"
 ---
 
 Baseball - T-ball takes place at North Meadow-Softball-12 in Central Park on Thursday, July 23, 2026.

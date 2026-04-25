@@ -6,7 +6,6 @@ end_time: "13:00"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Dene Lawn in Central Park."
 event_id: "918934"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Dene Lawn in Central Park on Saturday, September 26, 2026.

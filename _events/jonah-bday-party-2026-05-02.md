@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/celebration.png"
 description: "Jonah Bday Party at Mineral Springs in Central Park."
 event_id: "929527"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
+  - "Celebration"
+  - "Family & Community"
 ---
 
 Jonah Bday Party takes place at Mineral Springs in Central Park on Saturday, May 2, 2026.

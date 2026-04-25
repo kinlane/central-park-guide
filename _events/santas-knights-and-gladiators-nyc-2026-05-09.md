@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Lawn Behind the Met Museum"
 place: "Lawn Behind the Met Museum"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Santa's Knights and Gladiators NYC at Lawn Behind the Met Museum in Central Park."
 event_id: "898277"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Santa's Knights and Gladiators NYC takes place at Lawn Behind the Met Museum in Central Park on Saturday, May 9, 2026.

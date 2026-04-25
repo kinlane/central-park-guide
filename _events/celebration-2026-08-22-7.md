@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Summit Rock"
 place: "Summit Rock"
 place_category: "natural_areas"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Summit Rock in Central Park."
 event_id: "913465"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Summit Rock in Central Park on Saturday, August 22, 2026.

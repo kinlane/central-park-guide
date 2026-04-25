@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "King Jagiallo Plaza"
 place: "King Jagiello Plaza"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "CentralParkinternationalfolkdancers at King Jagiallo Plaza in Central Park."
 event_id: "889197"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 CentralParkinternationalfolkdancers takes place at King Jagiallo Plaza in Central Park on Sunday, April 19, 2026.

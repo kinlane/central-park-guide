@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "South Dead Road A"
 place: "South Dead Road"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "CP Sports Summer Program at South Dead Road A in Central Park."
 event_id: "898467"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 CP Sports Summer Program takes place at South Dead Road A in Central Park on Thursday, October 8, 2026.

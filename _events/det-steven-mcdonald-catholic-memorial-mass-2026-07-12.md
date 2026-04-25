@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "East 106th St Lawn"
 place: "East 106th Street Lawn"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Det Steven Mcdonald Catholic Memorial Mass at East 106th St Lawn in Central Park."
 event_id: "899139"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - memorial
-  - private-booking
+  - "Memorial"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Det Steven Mcdonald Catholic Memorial Mass takes place at East 106th St Lawn in Central Park on Sunday, July 12, 2026.

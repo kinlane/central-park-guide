@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "5th Ave Sidewalk-97 St-Duke Ellington Circle"
 place: "Duke Ellington Circle"
 place_category: "plazas"
-category: "family-community"
 image: "/assets/images/tags/fundraiser.png"
 description: "2026 Frederick Law Olmsted Luncheon at 5th Ave Sidewalk-97 St-Duke Ellington Circle in Central Park."
 event_id: "891662"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - annual-tradition
-  - fundraiser
+  - "Annual Tradition"
+  - "Family & Community"
+  - "Fundraiser"
 ---
 
 2026 Frederick Law Olmsted Luncheon takes place at 5th Ave Sidewalk-97 St-Duke Ellington Circle in Central Park on Thursday, April 30, 2026.

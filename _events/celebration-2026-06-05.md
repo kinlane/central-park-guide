@@ -6,7 +6,6 @@ end_time: "10:30"
 location: "Cherry Hill"
 place: "Cherry Hill"
 place_category: "natural_areas"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Cherry Hill in Central Park."
 event_id: "921501"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Cherry Hill in Central Park on Friday, June 5, 2026.

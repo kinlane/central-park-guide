@@ -6,7 +6,6 @@ end_time: "13:15"
 location: "Central Park West Sidewalks - 86th St to 97th St"
 place: "Central Park West Sidewalks"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Central Park West Sidewalks - 86th St to 97th St in Central Park."
 event_id: "927665"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Central Park West Sidewalks - 86th St to 97th St in Central Park on Tuesday, May 12, 2026.

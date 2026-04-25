@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "The Pool Lawns"
 place: "The Pool"
 place_category: "water_bodies"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Dancing in the Park at The Pool Lawns in Central Park."
 event_id: "915043"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Dancing in the Park takes place at The Pool Lawns in Central Park on Sunday, August 30, 2026.

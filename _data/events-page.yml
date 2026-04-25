@@ -25,13 +25,6 @@ listing:
     - key: maintenance
       label: "Maintenance"
 
-share_event:
-  heading: "Share your event or update with the community"
-  text: "Add your concert, run, or community event so the whole park (or at least the ones you want to notify) knows where to be."
-  cta:
-    text: "Submit your event"
-    url: /contact-us/
-
 seasonal:
   heading: "Seasonal staples"
   text: "Some things happen every year. These are some park traditions worth knowing."

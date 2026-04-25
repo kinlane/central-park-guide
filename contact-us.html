@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contact us"
-description: "Get in touch with Central Park.Guide. Submit events, explore partnerships, media inquiries, or report sightings. Stay connected with park updates."
+description: "Get in touch with Central Park.Guide. Explore partnerships, media inquiries, or report sightings. Stay connected with park updates."
 permalink: /contact-us/
 ---
 
@@ -15,42 +15,17 @@ permalink: /contact-us/
   </div>
 </section>
 
-<!-- Contact cards -->
+<!-- Connect: Instagram, Newsletter, Email -->
 <section class="section">
   <div class="container">
-    <h2 class="mb-sm">{{ site.data.contact.intro.heading }}</h2>
-    <p style="margin-bottom: 48px;">{{ site.data.contact.intro.text }}</p>
-    <div class="grid-4">
-      {% for card in site.data.contact.cards %}
-      <div class="contact-card">
-        <div class="contact-card__icon" style="background: {{ card.icon_bg }};">
-          {% if card.icon_emoji %}
-          <span style="font-size: 1.2rem;">{{ card.icon_emoji }}</span>
-          {% else %}
-          <img src="{{ card.icon }}" alt="" style="width:24px;">
-          {% endif %}
-        </div>
-        <h3>{{ card.title }}</h3>
-        <p>{{ card.text }}</p>
-        <p style="font-size: 0.9rem;">{{ card.detail }}</p>
-        <a href="{{ card.cta.url }}" class="btn {{ card.cta.style }}" style="margin-top: 16px;">{{ card.cta.text }}</a>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<!-- Follow along -->
-<section class="section bg-ash">
-  <div class="container">
-    <h2 class="text-center mb-sm">{{ site.data.contact.follow.heading }}</h2>
-    <p class="text-center" style="margin-bottom: 48px;">{{ site.data.contact.follow.text }}</p>
-    <div class="grid-2">
+    <h2 class="text-center mb-sm">{{ site.data.contact.intro.heading }}</h2>
+    <p class="text-center" style="margin-bottom: 48px;">{{ site.data.contact.intro.text }}</p>
+    <div class="grid-3">
       <div class="card" style="text-align: center; padding: 48px 32px;">
         <img src="{{ site.data.contact.follow.instagram.image }}" alt="{{ site.data.contact.follow.instagram.image_alt }}" style="border-radius: 16px; margin-bottom: 24px;">
         <h3>{{ site.data.contact.follow.instagram.heading }}</h3>
         <p>{{ site.data.contact.follow.instagram.handle }}</p>
-        <a href="{{ site.data.contact.follow.instagram.url }}" target="_blank" rel="noopener" class="btn btn-green">{{ site.data.contact.follow.instagram.cta_text }}</a>
+        <a href="{{ site.data.contact.follow.instagram.url }}" target="_blank" rel="noopener" class="btn btn-green" style="margin-top: 16px;">{{ site.data.contact.follow.instagram.cta_text }}</a>
       </div>
       <div class="card" style="padding: 48px 32px;">
         <h3 style="margin-bottom: 16px;">{{ site.data.contact.follow.newsletter.heading }}</h3>
@@ -59,6 +34,11 @@ permalink: /contact-us/
           <input type="email" placeholder="Enter your E-mail" required>
           <button type="submit" class="btn btn-green">{{ site.data.contact.follow.newsletter.button_text }}</button>
         </form>
+      </div>
+      <div class="card" style="padding: 48px 32px;">
+        <h3 style="margin-bottom: 16px;">{{ site.data.contact.follow.email.heading }}</h3>
+        <p>{{ site.data.contact.follow.email.text }}</p>
+        <a href="mailto:{{ site.data.contact.follow.email.address }}" class="btn btn-green" style="margin-top: 24px;">{{ site.data.contact.follow.email.cta_text }}</a>
       </div>
     </div>
   </div>

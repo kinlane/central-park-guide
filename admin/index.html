@@ -327,27 +327,7 @@ sitemap: false
       </div>
       <div class="filter-panel__body">
 
-        <!-- Category -->
-        <div class="filter-row">
-          <span class="filter-row__label">Type:</span>
-          <button class="filter-chip active" data-filter="all">All <span class="filter-chip__count" id="count-all"></span></button>
-          <button class="filter-chip" data-filter="sports">Sports <span class="filter-chip__count" id="count-sports"></span></button>
-          <button class="filter-chip" data-filter="runs-races">Runs &amp; Races <span class="filter-chip__count" id="count-runs-races"></span></button>
-          <button class="filter-chip" data-filter="concerts-performances">Concerts <span class="filter-chip__count" id="count-concerts-performances"></span></button>
-          <button class="filter-chip" data-filter="family-community">Family &amp; Community <span class="filter-chip__count" id="count-family-community"></span></button>
-          <button class="filter-chip" data-filter="education">Education <span class="filter-chip__count" id="count-education"></span></button>
-          <button class="filter-chip" data-filter="private-events">Private Events <span class="filter-chip__count" id="count-private-events"></span></button>
-          <button class="filter-chip" data-filter="closures">Closures <span class="filter-chip__count" id="count-closures"></span></button>
-          <button class="filter-chip" data-filter="maintenance">Maintenance <span class="filter-chip__count" id="count-maintenance"></span></button>
-        </div>
-
-        <!-- Sport sub-filter (only when sports active) -->
-        <div class="filter-row" id="sport-sub-row" style="display:none;">
-          <span class="filter-row__label">Sport:</span>
-          <button class="filter-chip" data-sport="all">All sports</button>
-        </div>
-
-        <!-- Tag chips -->
+        <!-- Tag chips (unified type + tags) -->
         <div class="filter-row" id="tag-row">
           <span class="filter-row__label">Tags:</span>
         </div>
@@ -393,7 +373,7 @@ sitemap: false
 {%- assign event_date = event.date | date: '%Y-%m-%d' -%}
 {%- if event_date >= now -%}
 {%- if first %}{% assign first = false %}{% else %},{% endif -%}
-{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","places":{{ event.places | default: empty | jsonify }},"placeCategories":{{ event.place_categories | default: empty | jsonify }},"category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
+{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","places":{{ event.places | default: empty | jsonify }},"placeCategories":{{ event.place_categories | default: empty | jsonify }},"image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
 {%- endif -%}
 {%- endfor -%}
 ]
@@ -426,8 +406,6 @@ sitemap: false
     page: 1,
     mode: 'include',        // 'include' | 'exclude' (applies to all filters except status)
     status: 'all',          // all | updated
-    activeCategories: [],   // multi-select category list
-    sport: 'all',
     place: 'all',
     activePlaceCats: [],    // multi-select area list
     timeOfDay: null,
@@ -437,16 +415,20 @@ sitemap: false
     search: ''
   };
 
-  var categoryLabels = {
-    'sports': 'Sports',
-    'runs-races': 'Runs & Races',
-    'concerts-performances': 'Concerts & Performances',
-    'family-community': 'Family & Community',
-    'education': 'Education',
-    'private-events': 'Private Events',
-    'closures': 'Closures',
-    'maintenance': 'Maintenance'
-  };
+  // Tags that act as the "primary category" badge on event rows. First match
+  // (in this order) wins; slug form (Title Case → kebab) is the CSS modifier.
+  var PRIMARY_BADGE_TAGS = ['Sports','Runs & Races','Concerts & Performances','Education','Private Events','Closures','Maintenance','Family & Community'];
+
+  function tagSlug(tag) {
+    return (tag || '').toLowerCase().replace(/[^a-z0-9\s-]/g, '').replace(/\s+/g, '-').replace(/-+/g, '-');
+  }
+  function primaryBadge(e) {
+    if (!Array.isArray(e.tags)) return null;
+    for (var i = 0; i < PRIMARY_BADGE_TAGS.length; i++) {
+      if (e.tags.indexOf(PRIMARY_BADGE_TAGS[i]) !== -1) return PRIMARY_BADGE_TAGS[i];
+    }
+    return null;
+  }
 
   var placeCatLabels = {
     'gates': 'Gates & Entrances', 'plazas': 'Plazas & Circles',
@@ -498,7 +480,6 @@ sitemap: false
   // Pre-compute fields
   allEvents.forEach(function(e) {
     if (!Array.isArray(e.tags)) e.tags = (e.tags || '').split(/[,\s]+/).filter(Boolean);
-    e._sportType = e.category === 'sports' ? getSportType(e) : null;
     e._timeOfDay = getTimeOfDay(e.time);
   });
 
@@ -516,8 +497,6 @@ sitemap: false
   // Within multi-select dimensions (categories, tags) -> OR
   // Across dimensions -> AND
   function eventMatchesTaxonomyFilters(e) {
-    if (state.activeCategories.length && state.activeCategories.indexOf(e.category) === -1) return false;
-    if (state.sport !== 'all' && state.activeCategories.indexOf('sports') !== -1 && e._sportType !== state.sport) return false;
     if (state.place !== 'all' && e.allPlaces.indexOf(state.place) === -1) return false;
     if (state.activePlaceCats.length) {
       var anyCat = false;
@@ -541,9 +520,7 @@ sitemap: false
   }
 
   function hasTaxonomyFilters() {
-    return state.activeCategories.length > 0 ||
-           state.sport !== 'all' ||
-           state.place !== 'all' ||
+    return state.place !== 'all' ||
            state.activePlaceCats.length > 0 ||
            state.activeTags.length > 0 ||
            state.search;
@@ -559,13 +536,6 @@ sitemap: false
   }
 
   // ── Build filter UI from data ──────────────────────────────────
-  // Category counts
-  var catCounts = { all: allEvents.length };
-  allEvents.forEach(function(e) { catCounts[e.category] = (catCounts[e.category] || 0) + 1; });
-  Object.keys(catCounts).forEach(function(k) {
-    var el = document.getElementById('count-' + k);
-    if (el) el.textContent = '(' + catCounts[k] + ')';
-  });
   document.getElementById('count-status-all').textContent = '(' + allEvents.length + ')';
 
   // Place dropdown — multi-location events count under each place
@@ -607,42 +577,20 @@ sitemap: false
     areaRow.appendChild(btn);
   });
 
-  // Sport sub-types
-  var sportRow = document.getElementById('sport-sub-row');
-  var sportCounts = {};
-  allEvents.forEach(function(e) {
-    if (e.category === 'sports' && e._sportType) sportCounts[e._sportType] = (sportCounts[e._sportType] || 0) + 1;
-  });
-  Object.keys(sportCounts).sort(function(a,b) { return sportCounts[b] - sportCounts[a]; }).forEach(function(sp) {
-    var btn = document.createElement('button');
-    btn.className = 'filter-chip';
-    btn.setAttribute('data-sport', sp);
-    btn.innerHTML = sp.charAt(0).toUpperCase() + sp.slice(1) + ' <span class="filter-chip__count">(' + sportCounts[sp] + ')</span>';
-    btn.onclick = function() {
-      state.sport = sp; state.page = 1;
-      sportRow.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
-      btn.classList.add('active');
-      render();
-    };
-    sportRow.appendChild(btn);
-  });
-  sportRow.querySelector('[data-sport="all"]').classList.add('active');
-  sportRow.querySelector('[data-sport="all"]').onclick = function() {
-    state.sport = 'all'; state.page = 1;
-    sportRow.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
-    this.classList.add('active');
-    render();
-  };
-
-  // Tag chips
+  // Tag chips — top 30 visible by default; "+N more tags" reveals the rest
+  var TAG_CHIPS_VISIBLE = 30;
   var tagRow = document.getElementById('tag-row');
   var tagCounts = {};
   allEvents.forEach(function(e) {
     e.tags.forEach(function(t) { if (t && t !== 'community') tagCounts[t] = (tagCounts[t] || 0) + 1; });
   });
-  Object.keys(tagCounts).sort(function(a,b) { return tagCounts[b] - tagCounts[a]; }).slice(0, 18).forEach(function(tag) {
+  var sortedTags = Object.keys(tagCounts).sort(function(a,b) { return tagCounts[b] - tagCounts[a]; });
+  function makeTagChip(tag, hidden) {
     var btn = document.createElement('button');
     btn.className = 'filter-chip';
+    btn.setAttribute('data-tag', tag);
+    if (hidden) btn.setAttribute('data-tag-extra', '1');
+    if (hidden) btn.style.display = 'none';
     btn.innerHTML = '#' + tag + ' <span class="filter-chip__count">(' + tagCounts[tag] + ')</span>';
     btn.onclick = function() {
       var idx = state.activeTags.indexOf(tag);
@@ -650,8 +598,27 @@ sitemap: false
       else { state.activeTags.splice(idx, 1); btn.classList.remove('active'); }
       state.page = 1; render();
     };
-    tagRow.appendChild(btn);
+    return btn;
+  }
+  sortedTags.forEach(function(tag, i) {
+    tagRow.appendChild(makeTagChip(tag, i >= TAG_CHIPS_VISIBLE));
   });
+  if (sortedTags.length > TAG_CHIPS_VISIBLE) {
+    var hiddenCount = sortedTags.length - TAG_CHIPS_VISIBLE;
+    var moreBtn = document.createElement('button');
+    moreBtn.className = 'filter-chip filter-chip--more';
+    moreBtn.style.borderStyle = 'dashed';
+    moreBtn.style.fontStyle = 'italic';
+    moreBtn.textContent = '+ ' + hiddenCount + ' more tags';
+    moreBtn.onclick = function() {
+      var expanded = tagRow.classList.toggle('is-expanded');
+      tagRow.querySelectorAll('[data-tag-extra]').forEach(function(c) {
+        c.style.display = expanded ? '' : 'none';
+      });
+      moreBtn.textContent = expanded ? 'Show fewer tags' : '+ ' + hiddenCount + ' more tags';
+    };
+    tagRow.appendChild(moreBtn);
+  }
 
   // ── Renderers ──────────────────────────────────────────────────
   function esc(str) {
@@ -684,6 +651,11 @@ sitemap: false
 
   function renderEvent(e, idx) {
     var stateClass = e._updated ? 'is-updated' : '';
+    var primary = primaryBadge(e);
+    var catBadge = primary ? '<span class="category-badge category-badge--' + tagSlug(primary) + '" style="font-size:0.7rem;">' + esc(primary) + '</span>' : '';
+    var tagPills = (e.tags || []).map(function(t) {
+      return '<span style="background:#f0f0f0;padding:2px 8px;border-radius:10px;font-size:0.75rem;font-weight:600;">' + esc(t) + '</span>';
+    }).join(' ');
     return '<div class="event-row ' + stateClass + '" data-idx="' + idx + '">' +
       '<div class="event-row__header">' +
         '<div>' +
@@ -692,7 +664,7 @@ sitemap: false
             '<span class="meta-label">' + e.dateDisplay + '</span>' +
             '<span class="meta-label">' + formatTime(e.time) + '</span>' +
             '<span class="meta-label">' + esc(e.place || e.location) + '</span>' +
-            '<span class="category-badge category-badge--' + e.category + '" style="font-size:0.7rem;">' + esc(e.category) + '</span>' +
+            catBadge +
             (e.eventType ? '<span class="meta-label">' + esc(e.eventType) + '</span>' : '') +
             (e.source ? '<span style="font-size:0.8rem;color:rgba(0,0,0,0.5);">via ' + esc(e.source) + '</span>' : '') +
           '</div>' +
@@ -705,15 +677,10 @@ sitemap: false
         '<div><label>End Time</label><input type="text" value="' + (e.endTime || '') + '" onchange="updateField(' + idx + ',\'endTime\',this.value)"></div>' +
         '<div><label>Location</label><input type="text" value="' + escAttr(e.location || '') + '" onchange="updateField(' + idx + ',\'location\',this.value)"></div>' +
         '<div><label>Place</label><input type="text" value="' + escAttr(e.place || '') + '" onchange="updateField(' + idx + ',\'place\',this.value)"></div>' +
-        '<div><label>Category</label>' +
-          '<select onchange="updateField(' + idx + ',\'category\',this.value)">' +
-            Object.keys(categoryLabels).map(function(k) {
-              return '<option value="' + k + '"' + (e.category === k ? ' selected' : '') + '>' + categoryLabels[k] + '</option>';
-            }).join('') +
-          '</select>' +
-        '</div>' +
+        '<div><label>Tags</label><input type="text" value="' + escAttr((e.tags || []).join(', ')) + '" onchange="updateField(' + idx + ',\'tags\',this.value.split(/\\s*,\\s*/).filter(Boolean))" placeholder="Comma-separated"></div>' +
         '<div><label>Image</label><input type="text" value="' + escAttr(e.image || '') + '" onchange="updateField(' + idx + ',\'image\',this.value)"></div>' +
         '<div style="grid-column: 1/-1;"><label>Description</label><textarea onchange="updateField(' + idx + ',\'description\',this.value)">' + esc(e.description || '') + '</textarea></div>' +
+        (tagPills ? '<div style="grid-column: 1/-1;"><label>Current tags</label><div style="display:flex;flex-wrap:wrap;gap:6px;">' + tagPills + '</div></div>' : '') +
       '</div>' +
       '<div class="event-row__actions">' +
         '<button class="btn-sm btn-save" onclick="saveEvent(' + idx + ')" ' + (e._updated ? '' : 'disabled') + '>Save</button>' +
@@ -725,7 +692,6 @@ sitemap: false
   }
 
   function render() {
-    document.getElementById('sport-sub-row').style.display = state.activeCategories.indexOf('sports') !== -1 ? '' : 'none';
     var statusUpdated = document.getElementById('count-status-updated');
     var updatedCount = allEvents.filter(function(e) { return e._updated; }).length;
     if (statusUpdated) statusUpdated.textContent = '(' + updatedCount + ')';
@@ -778,8 +744,6 @@ sitemap: false
     if (state.dateExact) alwaysBadges.push(state.dateExact);
     // taxBadges: subject to include/exclude mode
     var taxBadges = [];
-    state.activeCategories.forEach(function(c) { taxBadges.push(categoryLabels[c] || c); });
-    if (state.sport !== 'all') taxBadges.push(state.sport);
     if (state.place !== 'all') taxBadges.push(state.place);
     state.activePlaceCats.forEach(function(pc) { taxBadges.push(placeCatLabels[pc] || pc); });
     state.activeTags.forEach(function(t) { taxBadges.push('#' + t); });
@@ -878,15 +842,26 @@ sitemap: false
     if (e.endTime) fm = replaceYamlField(fm, 'end_time', '"' + e.endTime + '"');
     fm = replaceYamlField(fm, 'location', '"' + (e.location || '').replace(/"/g, '\\"') + '"');
     fm = replaceYamlField(fm, 'place', '"' + (e.place || '').replace(/"/g, '\\"') + '"');
-    fm = replaceYamlField(fm, 'category', '"' + e.category + '"');
     fm = replaceYamlField(fm, 'image', '"' + (e.image || '') + '"');
     fm = replaceYamlField(fm, 'description', '"' + (e.description || '').replace(/"/g, '\\"') + '"');
+    // Drop any leftover category: line — flattened into tags
+    fm = fm.replace(/^category:\s*.*\n?/m, '');
+    if (Array.isArray(e.tags)) fm = replaceYamlList(fm, 'tags', e.tags);
     return '---' + fm + '---' + body;
   }
   function replaceYamlField(fm, key, value) {
     var regex = new RegExp('^(' + key + ':)\\s*.*$', 'm');
     if (regex.test(fm)) return fm.replace(regex, '$1 ' + value);
     return fm.trimEnd() + '\n' + key + ': ' + value + '\n';
+  }
+  function replaceYamlList(fm, key, items) {
+    // Match "tags:\n  - foo\n  - bar\n" (any indent of two spaces, with or without quotes)
+    var blockRegex = new RegExp('^' + key + ':\\s*\\n(?:  - .+\\n?)*', 'm');
+    var newBlock = key + ':\n' + items.map(function(v) {
+      return '  - "' + String(v).replace(/"/g, '\\"') + '"';
+    }).join('\n') + '\n';
+    if (blockRegex.test(fm)) return fm.replace(blockRegex, newBlock);
+    return fm.trimEnd() + '\n' + newBlock;
   }
 
   // ── Event handlers ─────────────────────────────────────────────
@@ -896,31 +871,6 @@ sitemap: false
       document.querySelectorAll('.filter-chip[data-status]').forEach(function(c) { c.classList.remove('active'); });
       b.classList.add('active');
       state.status = b.getAttribute('data-status');
-      state.page = 1; render();
-    };
-  });
-  // Category chips (multi-select)
-  document.querySelectorAll('.filter-chip[data-filter]').forEach(function(b) {
-    b.onclick = function() {
-      var v = b.getAttribute('data-filter');
-      if (v === 'all') {
-        state.activeCategories = [];
-        document.querySelectorAll('.filter-chip[data-filter]').forEach(function(c) { c.classList.remove('active'); });
-        b.classList.add('active');
-      } else {
-        var idx = state.activeCategories.indexOf(v);
-        if (idx === -1) {
-          state.activeCategories.push(v);
-          b.classList.add('active');
-        } else {
-          state.activeCategories.splice(idx, 1);
-          b.classList.remove('active');
-        }
-        var allChip = document.querySelector('.filter-chip[data-filter="all"]');
-        if (state.activeCategories.length === 0) allChip.classList.add('active');
-        else allChip.classList.remove('active');
-      }
-      if (state.activeCategories.indexOf('sports') === -1) state.sport = 'all';
       state.page = 1; render();
     };
   });
@@ -974,8 +924,6 @@ sitemap: false
   // Clear filters
   function resetFilters() {
     state.status = 'all';
-    state.activeCategories = [];
-    state.sport = 'all';
     state.place = 'all';
     state.activePlaceCats = [];
     state.timeOfDay = null;
@@ -989,8 +937,6 @@ sitemap: false
     placeSelect.value = 'all';
     document.querySelectorAll('.filter-chip').forEach(function(c) { c.classList.remove('active'); });
     document.querySelector('.filter-chip[data-status="all"]').classList.add('active');
-    document.querySelector('.filter-chip[data-filter="all"]').classList.add('active');
-    sportRow.querySelector('[data-sport="all"]').classList.add('active');
   }
   document.getElementById('clear-filters').onclick = function() {
     resetFilters();

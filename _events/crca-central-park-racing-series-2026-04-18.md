@@ -6,7 +6,6 @@ end_time: "07:30"
 location: "East Drive - 72nd St to 90th St"
 place: "East Drive"
 place_category: "paths_and_drives"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "CRCA Central Park Racing Series at East Drive - 72nd St to 90th St in Central Park."
 event_id: "898250"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 CRCA Central Park Racing Series takes place at East Drive - 72nd St to 90th St in Central Park on Saturday, April 18, 2026.

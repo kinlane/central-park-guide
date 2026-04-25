@@ -6,7 +6,6 @@ end_time: "11:00"
 location: "Wagner Cove"
 place: "Wagner Cove"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Wagner Cove in Central Park."
 event_id: "928403"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - ceremony
-  - private-booking
-  - wedding
+  - "Ceremony"
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Wedding Ceremony takes place at Wagner Cove in Central Park on Friday, May 8, 2026.

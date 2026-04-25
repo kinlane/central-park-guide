@@ -6,7 +6,6 @@ end_time: "11:10"
 location: "Shakespeare Garden"
 place: "Shakespeare Garden"
 place_category: "natural_areas"
-category: "maintenance"
 image: "/assets/images/tags/maintenance.png"
 description: "Maintenance at Shakespeare Garden in Central Park."
 event_id: "902117"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - maintenance
+  - "Maintenance"
 ---
 
 Maintenance takes place at Shakespeare Garden in Central Park on Thursday, May 21, 2026.

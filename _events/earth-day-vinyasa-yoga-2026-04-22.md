@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/wellness.png"
 description: "Earth Day Vinyasa Yoga at Mineral Springs in Central Park."
 event_id: "928572"
@@ -15,7 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wellness
+  - "Earth Day"
+  - "Family & Community"
+  - "Wellness"
+  - "Yoga"
 ---
 
 Earth Day Vinyasa Yoga takes place at Mineral Springs in Central Park on Wednesday, April 22, 2026.

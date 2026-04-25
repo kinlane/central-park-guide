@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Cedar Hill"
 place: "Cedar Hill"
 place_category: "natural_areas"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at Cedar Hill in Central Park."
 event_id: "919131"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Miscellaneous takes place at Cedar Hill in Central Park on Friday, June 12, 2026.

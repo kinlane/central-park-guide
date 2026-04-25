@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Diana Ross Playground Lawn"
 place: "Diana Ross Playground"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "South Asian Summer Social Central Park at Diana Ross Playground Lawn in Central Park."
 event_id: "926592"
@@ -15,7 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Cultural"
+  - "Family & Community"
+  - "Social"
+  - "World Music"
 ---
 
 South Asian Summer Social Central Park takes place at Diana Ross Playground Lawn in Central Park on Saturday, June 6, 2026.

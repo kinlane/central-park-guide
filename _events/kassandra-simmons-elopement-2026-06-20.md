@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Dene Lawn in Central Park."
 event_id: "893454"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - wedding
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Kassandra Simmons Elopement takes place at Dene Lawn in Central Park on Saturday, June 20, 2026.

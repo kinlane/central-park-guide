@@ -6,7 +6,6 @@ end_time: "11:30"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Dene Lawn in Central Park."
 event_id: "928433"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - ceremony
-  - private-booking
-  - wedding
+  - "Ceremony"
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 wedding ceremony takes place at Dene Lawn in Central Park on Saturday, April 18, 2026.

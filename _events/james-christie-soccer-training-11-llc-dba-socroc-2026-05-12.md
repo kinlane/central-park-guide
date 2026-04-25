@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "South Dead Road A"
 place: "South Dead Road"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/soccer.png"
 description: "James Christie Soccer Training 11 at South Dead Road A in Central Park."
 event_id: "907937"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
-  - soccer
-  - sports
+  - "Education"
+  - "Soccer"
+  - "Sports"
 ---
 
 James Christie Soccer Training 11 takes place at South Dead Road A in Central Park on Tuesday, May 12, 2026.

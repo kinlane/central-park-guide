@@ -6,7 +6,6 @@ end_time: "13:00"
 location: "The Pond Lawns"
 place: "The Pond"
 place_category: "water_bodies"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Cast for Kids at The Pond Lawns in Central Park."
 event_id: "914186"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Cast for Kids takes place at The Pond Lawns in Central Park on Saturday, May 30, 2026.

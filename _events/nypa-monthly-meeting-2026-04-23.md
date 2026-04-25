@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Heckscher Picnic Area"
 place: "Heckscher Picnic Area"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "NYPA Monthly meeting at Heckscher Picnic Area in Central Park."
 event_id: "929651"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Meeting"
 ---
 
 NYPA Monthly meeting takes place at Heckscher Picnic Area in Central Park on Thursday, April 23, 2026.

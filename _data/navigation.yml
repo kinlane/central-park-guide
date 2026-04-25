@@ -9,13 +9,8 @@ main:
     url: /in-the-loop/
   - title: Contact us
     url: /contact-us/
-cta:
-  title: "Submit an event"
-  url: /contact-us/
 footer:
   quicklinks:
-    - title: "List your event"
-      url: /contact-us/
     - title: "hello@centralpark.guide"
       url: "mailto:hello@centralpark.guide"
   more:

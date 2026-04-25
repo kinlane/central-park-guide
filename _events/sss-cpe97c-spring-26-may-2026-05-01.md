@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "East Meadow Clay Area"
 place: "East Meadow"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/education.png"
 description: "SSS CPE97C Spring 26 May at East Meadow Clay Area in Central Park."
 event_id: "892669"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
+  - "Education"
 ---
 
 SSS CPE97C Spring 26 May takes place at East Meadow Clay Area in Central Park on Friday, May 1, 2026.

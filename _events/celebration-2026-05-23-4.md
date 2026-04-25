@@ -6,7 +6,6 @@ end_time: "14:30"
 location: "Diana Ross Playground Lawn"
 place: "Diana Ross Playground"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Diana Ross Playground Lawn in Central Park."
 event_id: "919916"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Diana Ross Playground Lawn in Central Park on Saturday, May 23, 2026.

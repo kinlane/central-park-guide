@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "GSB and Friends at Bandshell Plaza in Central Park."
 event_id: "910377"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 GSB and Friends takes place at Bandshell Plaza in Central Park on Tuesday, June 16, 2026.

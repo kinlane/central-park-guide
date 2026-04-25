@@ -22,7 +22,7 @@ SUMMARY:{{ event.title | replace: ',', '\,' | replace: ';', '\;' | replace: '"',
 DESCRIPTION:{{ event.description | replace: ',', '\,' | replace: ';', '\;' | replace: '"', '' }} \n\nFull details: https://centralpark.guide{{ event.url }}
 LOCATION:{{ event.place | default: event.location | replace: ',', '\,' }}\, Central Park\, New York\, NY
 URL:https://centralpark.guide{{ event.url }}
-CATEGORIES:{{ event.category }}
+CATEGORIES:{{ event.tags | join: ',' }}
 END:VEVENT
 {% endif %}{% endfor %}
 END:VCALENDAR

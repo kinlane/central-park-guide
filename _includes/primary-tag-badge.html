@@ -1,0 +1,13 @@
+{%- assign primary_tag = '' -%}
+{%- if include.tags contains 'Sports' -%}{%- assign primary_tag = 'Sports' -%}
+{%- elsif include.tags contains 'Runs & Races' -%}{%- assign primary_tag = 'Runs & Races' -%}
+{%- elsif include.tags contains 'Concerts & Performances' -%}{%- assign primary_tag = 'Concerts & Performances' -%}
+{%- elsif include.tags contains 'Education' -%}{%- assign primary_tag = 'Education' -%}
+{%- elsif include.tags contains 'Private Events' -%}{%- assign primary_tag = 'Private Events' -%}
+{%- elsif include.tags contains 'Closures' -%}{%- assign primary_tag = 'Closures' -%}
+{%- elsif include.tags contains 'Maintenance' -%}{%- assign primary_tag = 'Maintenance' -%}
+{%- elsif include.tags contains 'Family & Community' -%}{%- assign primary_tag = 'Family & Community' -%}
+{%- endif -%}
+{%- if primary_tag != '' -%}
+<span class="category-badge category-badge--{{ primary_tag | slugify }}">{{ primary_tag }}</span>
+{%- endif -%}

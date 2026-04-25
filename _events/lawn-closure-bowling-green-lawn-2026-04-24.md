@@ -6,7 +6,6 @@ end_time: "23:59"
 location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
-category: "closures"
 image: "/assets/images/tags/closure.png"
 description: "Scheduled lawn closure at Bowling Green Lawn for maintenance and restoration."
 event_id: "889688"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
+  - "Closures"
 ---
 
 Lawn Closure - Bowling Green Lawn takes place at Bowling Green Lawn in Central Park on Friday, April 24, 2026.

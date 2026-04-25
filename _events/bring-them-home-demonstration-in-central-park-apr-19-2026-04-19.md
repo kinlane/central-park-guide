@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Central Park West Sidewalks - 97th St to 110th St"
 place: "Central Park West Sidewalks"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Bring Them Home Demonstration in Central Park Apr. 19 at Central Park West Sidewalks - 97th St to 110th St in Central Park."
 event_id: "929433"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Rally"
 ---
 
 Bring Them Home Demonstration in Central Park Apr. 19 takes place at Central Park West Sidewalks - 97th St to 110th St in Central Park on Sunday, April 19, 2026.

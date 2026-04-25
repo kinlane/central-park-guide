@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "Delacorte Theater"
 place: "Delacorte Theater"
 place_category: "buildings"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Delacorte Theater in Central Park."
 event_id: "910632"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Delacorte Theater in Central Park on Thursday, April 30, 2026.

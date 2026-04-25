@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Marriage Proposal at Cop Cot in Central Park."
 event_id: "929336"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Marriage Proposal takes place at Cop Cot in Central Park on Saturday, April 25, 2026.

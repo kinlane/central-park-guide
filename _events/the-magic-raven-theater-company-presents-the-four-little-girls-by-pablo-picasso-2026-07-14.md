@@ -6,7 +6,6 @@ end_time: "20:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/theater.png"
 description: "The Magic Raven Theater Company Presents - the Four Little Girls by Pablo Picasso at Bandshell Plaza in Central Park."
 event_id: "919038"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - theater
+  - "Concerts & Performances"
+  - "Theater"
 ---
 
 The Magic Raven Theater Company Presents - the Four Little Girls by Pablo Picasso takes place at Bandshell Plaza in Central Park on Tuesday, July 14, 2026.

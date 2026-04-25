@@ -6,7 +6,6 @@ end_time: "10:00"
 location: "Bethesda Fountain Terrace, Minton Arcade"
 place: "Bethesda Terrace and Fountain"
 place_category: "buildings"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Bethesda Fountain Terrace, Minton Arcade in Central Park."
 event_id: "918116"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Bethesda Fountain Terrace, Minton Arcade in Central Park on Tuesday, April 28, 2026.

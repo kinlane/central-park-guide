@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Harlem Meer Picnic Area"
 place: "Harlem Meer"
 place_category: "water_bodies"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Celebrating Sylvaine Neves at Harlem Meer Picnic Area in Central Park."
 event_id: "923132"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Celebrating Sylvaine Neves takes place at Harlem Meer Picnic Area in Central Park on Sunday, May 3, 2026.

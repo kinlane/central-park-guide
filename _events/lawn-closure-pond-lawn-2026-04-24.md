@@ -6,7 +6,6 @@ end_time: "23:59"
 location: "The Pond Lawns"
 place: "The Pond"
 place_category: "water_bodies"
-category: "closures"
 image: "/assets/images/tags/closure.png"
 description: "Scheduled lawn closure at The Pond Lawns for maintenance and restoration."
 event_id: "888280"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
+  - "Closures"
 ---
 
 Lawn Closure - Pond Lawn takes place at The Pond Lawns in Central Park on Friday, April 24, 2026.

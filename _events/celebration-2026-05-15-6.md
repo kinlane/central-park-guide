@@ -6,7 +6,6 @@ end_time: "15:20"
 location: "Cedar Hill"
 place: "Cedar Hill"
 place_category: "natural_areas"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Cedar Hill in Central Park."
 event_id: "933013"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Cedar Hill in Central Park on Friday, May 15, 2026.

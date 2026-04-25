@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "Great Lawn-Softball-06"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "sports"
 image: "/assets/images/tags/softball.png"
 description: "Softball (Little League) at Great Lawn-Softball-06. Youth league permitted event in Central Park."
 event_id: "904228"
@@ -15,10 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - softball
-  - sports
-  - t-ball
-  - youth
+  - "Softball"
+  - "Sports"
+  - "T-Ball"
+  - "Youth"
 ---
 
 Softball (Little League) takes place at Great Lawn-Softball-06 in Central Park on Monday, May 18, 2026.

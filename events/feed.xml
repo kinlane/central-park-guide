@@ -21,7 +21,7 @@ layout: null
     <link>https://centralpark.guide{{ event.url }}</link>
     <guid isPermaLink="false">{{ event.event_id }}-{{ event.date | date: '%Y%m%d' }}@centralpark.guide</guid>
     <pubDate>{{ event.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
-    <category>{{ event.category }}</category>
+    {% for tag in event.tags %}<category>{{ tag | xml_escape }}</category>{% endfor %}
     <description><![CDATA[
       <p><strong>{{ event.title }}</strong></p>
       <p>{{ event.description }}</p>

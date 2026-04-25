@@ -6,7 +6,6 @@ end_time: "23:59"
 location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
-category: "maintenance"
 image: "/assets/images/tags/bowling.png"
 description: "Bowling Greens - Maintenance Day - Closed All Day at Bowling Green Lawn in Central Park."
 event_id: "889689"
@@ -15,8 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - bowling
-  - maintenance
+  - "Bowling"
+  - "Maintenance"
 ---
 
 Bowling Greens - Maintenance Day - Closed All Day takes place at Bowling Green Lawn in Central Park on Tuesday, May 12, 2026.

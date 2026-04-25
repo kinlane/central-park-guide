@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Mineral Springs in Central Park."
 event_id: "917880"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Mineral Springs in Central Park on Saturday, May 30, 2026.

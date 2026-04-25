@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/dance.png"
 description: "Dance Is Life at Bandshell Plaza in Central Park."
 event_id: "904413"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - dance
+  - "Concerts & Performances"
+  - "Dance"
 ---
 
 Dance Is Life takes place at Bandshell Plaza in Central Park on Monday, September 14, 2026.

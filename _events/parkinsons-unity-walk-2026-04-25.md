@@ -12,7 +12,6 @@ places:
 place_categories:
   - "event_venues"
   - "event_venues"
-category: "runs-races"
 image: "/assets/images/tags/walk.png"
 description: "Parkinson's Unity Walk at Bandshell Plaza, 72nd Street Cross Drive in Central Park."
 event_id: "887369"
@@ -21,7 +20,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - walk
+  - "Runs & Races"
+  - "Spiritual"
+  - "Walk"
 ---
 
 Parkinson's Unity Walk takes place at Bandshell Plaza, 72nd Street Cross Drive in Central Park on Saturday, April 25, 2026.

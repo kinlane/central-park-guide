@@ -6,7 +6,6 @@ end_time: "12:30"
 location: "Harlem Meer Picnic Area"
 place: "Harlem Meer"
 place_category: "water_bodies"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Harlem Meer Picnic Area in Central Park."
 event_id: "919557"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Harlem Meer Picnic Area in Central Park on Saturday, September 12, 2026.

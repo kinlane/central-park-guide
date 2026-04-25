@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell"
 place: "West 110th Street Playground"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell in Central Park."
 event_id: "912683"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell in Central Park on Wednesday, April 29, 2026.

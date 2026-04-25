@@ -6,7 +6,6 @@ end_time: "20:00"
 location: "Lower Loop"
 place: "Lower Loop"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/media.png"
 description: "Media Challenge at Lower Loop in Central Park."
 event_id: "917462"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - media
+  - "Family & Community"
+  - "Media"
 ---
 
 Media Challenge takes place at Lower Loop in Central Park on Wednesday, June 24, 2026.

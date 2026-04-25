@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "West 96th Street Landscape"
 place: "West 96th Street Landscape"
 place_category: "event_venues"
-category: "education"
 image: "/assets/images/tags/education.png"
 description: "SSS CPE97 Spring May at West 96th Street Landscape in Central Park."
 event_id: "893494"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - education
+  - "Education"
 ---
 
 SSS CPE97 Spring May takes place at West 96th Street Landscape in Central Park on Thursday, May 7, 2026.

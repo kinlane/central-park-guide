@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Chess and Checkers"
 place: "Chess and Checkers House"
 place_category: "buildings"
-category: "family-community"
 image: "/assets/images/tags/chess.png"
 description: "Chess Lecture Simul Series with Beginners Workshops at Chess and Checkers in Central Park."
 event_id: "886984"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - chess
-  - talk
+  - "Chess"
+  - "Family & Community"
+  - "Talk"
 ---
 
 Chess Lecture Simul Series with Beginners Workshops takes place at Chess and Checkers in Central Park on Saturday, July 18, 2026.

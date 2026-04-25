@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Ladies' Pavilion in Central Park."
 event_id: "920929"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - wedding
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Krotow Wedding takes place at Ladies' Pavilion in Central Park on Friday, June 26, 2026.

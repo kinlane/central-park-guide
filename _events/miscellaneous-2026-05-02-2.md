@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "East 106th St Lawn"
 place: "East 106th Street Lawn"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at East 106th St Lawn in Central Park."
 event_id: "924431"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Miscellaneous takes place at East 106th St Lawn in Central Park on Saturday, May 2, 2026.

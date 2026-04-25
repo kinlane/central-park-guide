@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "North Meadow-Softball-07"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "sports"
 image: "/assets/images/tags/softball.png"
 description: "Softball (Little League) at North Meadow-Softball-07. Youth league permitted event in Central Park."
 event_id: "904217"
@@ -15,10 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - softball
-  - sports
-  - t-ball
-  - youth
+  - "Softball"
+  - "Sports"
+  - "T-Ball"
+  - "Youth"
 ---
 
 Softball (Little League) takes place at North Meadow-Softball-07 in Central Park on Tuesday, May 19, 2026.

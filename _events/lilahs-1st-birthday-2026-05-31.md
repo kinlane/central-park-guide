@@ -6,7 +6,6 @@ end_time: "13:00"
 location: "Turtle Pond Lawn"
 place: "Turtle Pond"
 place_category: "water_bodies"
-category: "private-events"
 image: "/assets/images/tags/birthday.png"
 description: "Lilah's 1st Birthday at Turtle Pond Lawn in Central Park."
 event_id: "929411"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - birthday
-  - private-booking
+  - "Birthday"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Lilah's 1st Birthday takes place at Turtle Pond Lawn in Central Park on Sunday, May 31, 2026.

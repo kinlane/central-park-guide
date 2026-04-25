@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Columbia Mailman Students Gender Reveal at Mineral Springs in Central Park."
 event_id: "927166"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Columbia Mailman Students Gender Reveal takes place at Mineral Springs in Central Park on Saturday, April 18, 2026.

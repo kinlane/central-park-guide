@@ -6,7 +6,6 @@ end_time: "18:30"
 location: "Summit Rock"
 place: "Summit Rock"
 place_category: "natural_areas"
-category: "concerts-performances"
 image: "/assets/images/tags/dance.png"
 description: "Steppers Performance and Dance Demo at Summit Rock in Central Park."
 event_id: "912856"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - dance
-  - performance
+  - "Concerts & Performances"
+  - "Dance"
+  - "Performance"
 ---
 
 Steppers Performance and Dance Demo takes place at Summit Rock in Central Park on Sunday, July 26, 2026.

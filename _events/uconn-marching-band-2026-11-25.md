@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/music.png"
 description: "Uconn Marching Band at Bandshell Plaza in Central Park."
 event_id: "906712"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - music
+  - "Concerts & Performances"
+  - "Music"
 ---
 
 Uconn Marching Band takes place at Bandshell Plaza in Central Park on Wednesday, November 25, 2026.

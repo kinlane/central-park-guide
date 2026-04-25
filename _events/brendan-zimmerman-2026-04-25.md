@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Brendan Zimmerman at Ladies' Pavilion in Central Park."
 event_id: "929519"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Brendan Zimmerman takes place at Ladies' Pavilion in Central Park on Saturday, April 25, 2026.

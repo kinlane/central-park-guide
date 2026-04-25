@@ -6,7 +6,6 @@ end_time: "13:30"
 location: "East Meadow, East Meadow Picnic Zone"
 place: "East Meadow"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Wtc Mental Health 9-11 Nat'l Day of Remembrance Gathering at East Meadow, East Meadow Picnic Zone in Central Park."
 event_id: "915138"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Social"
 ---
 
 Wtc Mental Health 9-11 Nat'l Day of Remembrance Gathering takes place at East Meadow, East Meadow Picnic Zone in Central Park on Friday, September 11, 2026.

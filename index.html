@@ -4,10 +4,11 @@ title: "Your guide to a park that never sits still"
 description: "Discover Central Park.Guide - your community-powered source for events, closures, concerts, and seasonal highlights."
 ---
 
-<!-- Hero -->
+<!-- Hero — background image rotates per build via Liquid sample -->
+{% assign hero_image = site.data.central-park-images.images | sample %}
 <section class="hero">
   <div class="hero__bg">
-    <img src="{{ site.data.home.hero.image }}" alt="{{ site.data.home.hero.image_alt }}">
+    <img src="{{ hero_image }}" alt="{{ site.data.home.hero.image_alt }}">
   </div>
   <div class="container hero__content">
     <img src="{{ site.data.home.hero.logo }}" alt="{{ site.data.site.name }} logo" style="height: 80px; margin-bottom: 32px;">
@@ -32,18 +33,7 @@ description: "Discover Central Park.Guide - your community-powered source for ev
       <a href="{{ event.url }}" class="event-card" style="text-decoration: none; color: inherit;">
         <img class="event-card__image" src="{{ event.image }}" alt="{{ event.title }}">
         <div class="event-card__body">
-          <span class="category-badge category-badge--{{ event.category }}">
-            {% case event.category %}
-              {% when 'sports' %}Sports
-              {% when 'runs-races' %}Runs &amp; Races
-              {% when 'concerts-performances' %}Concerts &amp; Performances
-              {% when 'family-community' %}Family &amp; Community
-              {% when 'education' %}Education
-              {% when 'private-events' %}Private Event
-              {% when 'closures' %}Closures
-              {% when 'maintenance' %}Maintenance
-            {% endcase %}
-          </span>
+          {% include primary-tag-badge.html tags=event.tags %}
           <div class="event-card__meta">
             <span><img src="/assets/icons/calendar.png" alt="">{{ event.date | date: "%b %-d" }}</span>
             <span><img src="/assets/icons/time.png" alt="">{{ event.time }}</span>
@@ -97,16 +87,17 @@ description: "Discover Central Park.Guide - your community-powered source for ev
   </div>
 </section>
 
-<!-- Activity Gallery -->
+<!-- Activity Gallery — random selection from the central-park pool per build -->
+{% assign gallery_images = site.data.central-park-images.images | sample: 8 %}
 <section class="section">
   <div class="container">
     <div class="marquee">
       <div class="marquee__inner">
-        {% for img in site.data.home.gallery %}
-        <img src="{{ img.image }}" alt="{{ img.alt }}">
+        {% for img in gallery_images %}
+        <img src="{{ img }}" alt="Central Park scene">
         {% endfor %}
-        {% for img in site.data.home.gallery %}
-        <img src="{{ img.image }}" alt="{{ img.alt }}">
+        {% for img in gallery_images %}
+        <img src="{{ img }}" alt="Central Park scene">
         {% endfor %}
       </div>
     </div>

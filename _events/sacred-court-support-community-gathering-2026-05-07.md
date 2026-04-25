@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Heckscher Picnic Area"
 place: "Heckscher Picnic Area"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Sacred Court Support Community Gathering at Heckscher Picnic Area in Central Park."
 event_id: "926781"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Social"
 ---
 
 Sacred Court Support Community Gathering takes place at Heckscher Picnic Area in Central Park on Thursday, May 7, 2026.

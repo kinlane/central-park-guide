@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Ladies' Pavilion in Central Park."
 event_id: "912006"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Ladies' Pavilion in Central Park on Saturday, September 19, 2026.

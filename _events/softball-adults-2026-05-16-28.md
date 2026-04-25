@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Great Lawn-Softball-04"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "sports"
 image: "/assets/images/tags/softball.png"
 description: "Softball - Adults at Great Lawn-Softball-04. Adult league permitted event in Central Park."
 event_id: "905709"
@@ -15,9 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - softball
-  - sports
-  - t-ball
+  - "Softball"
+  - "Sports"
+  - "T-Ball"
 ---
 
 Softball - Adults takes place at Great Lawn-Softball-04 in Central Park on Saturday, May 16, 2026.

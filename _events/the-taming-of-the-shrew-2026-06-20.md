@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Summit Rock"
 place: "Summit Rock"
 place_category: "natural_areas"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "The Taming of the Shrew at Summit Rock in Central Park."
 event_id: "893966"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 The Taming of the Shrew takes place at Summit Rock in Central Park on Saturday, June 20, 2026.

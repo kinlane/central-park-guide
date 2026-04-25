@@ -6,7 +6,6 @@ end_time: "12:00"
 location: "Heckscher Picnic Area"
 place: "Heckscher Picnic Area"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at Heckscher Picnic Area in Central Park."
 event_id: "898034"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Miscellaneous takes place at Heckscher Picnic Area in Central Park on Friday, June 5, 2026.

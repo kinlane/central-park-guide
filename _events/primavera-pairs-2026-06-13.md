@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Primavera Pairs at Bowling Green Lawn in Central Park."
 event_id: "922331"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Primavera Pairs takes place at Bowling Green Lawn in Central Park on Saturday, June 13, 2026.

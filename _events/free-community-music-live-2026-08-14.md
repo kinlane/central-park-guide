@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/free.png"
 description: "Free Community Music Live at Bandshell Plaza in Central Park."
 event_id: "898237"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - free
+  - "Concerts & Performances"
+  - "Free"
 ---
 
 Free Community Music Live takes place at Bandshell Plaza in Central Park on Friday, August 14, 2026.

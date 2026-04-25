@@ -6,7 +6,6 @@ end_time: "19:00"
 location: "Lawn Behind the Met Museum"
 place: "Lawn Behind the Met Museum"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/picnic.png"
 description: "Olly's 21st Birthday Picnic at Lawn Behind the Met Museum in Central Park."
 event_id: "928847"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - birthday
-  - picnic
-  - private-booking
+  - "Birthday"
+  - "Picnic"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Olly's 21st Birthday Picnic takes place at Lawn Behind the Met Museum in Central Park on Friday, April 17, 2026.

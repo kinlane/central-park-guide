@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Cedar Hill"
 place: "Cedar Hill"
 place_category: "natural_areas"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Lenox Hill Pccm Fellows Graduation Gathering at Cedar Hill in Central Park."
 event_id: "930857"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Social"
 ---
 
 Lenox Hill Pccm Fellows Graduation Gathering takes place at Cedar Hill in Central Park on Saturday, June 6, 2026.

@@ -6,7 +6,6 @@ end_time: "17:30"
 location: "Gapstow Bridge"
 place: "Gapstow Bridge"
 place_category: "arches"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Gapstow Bridge in Central Park."
 event_id: "914642"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Gapstow Bridge in Central Park on Saturday, October 3, 2026.

@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "Great Hill South"
 place: "Great Hill"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at Great Hill South in Central Park."
 event_id: "917473"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at Great Hill South in Central Park on Saturday, June 6, 2026.

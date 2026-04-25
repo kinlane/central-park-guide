@@ -217,7 +217,9 @@ For each event, scan its cleaned location for **all** place name tokens from the
 
 If a location has zero matches, **skip the event** — it doesn't map to a known Central Park location. If it looks like a real Central Park sub-location, add it to `_data/central-park-places.yml` under the `event_venues` category before re-matching.
 
-### 5. Categorize events
+### 5. Categorize events (internal — folded into tags)
+
+There is no `category:` field on event files. Categorization still happens internally inside `categorize()` to drive the category-based tag rollups in `get_tags()` (e.g., a `closures` category emits the `Closures` tag, `private-events` emits both `Private Events` and `Private Booking`). The internal slug is never written to disk — it only feeds the tag list.
 
 **NYC Open Data (apply in this order — first match wins):**
 1. `event_name` contains "maintenance" → `maintenance`
@@ -243,13 +245,26 @@ If a location has zero matches, **skip the event** — it doesn't map to a known
 
 ### 6. Assign tags
 
-**NYC Open Data:** Build a tag list from event name, type, and category:
-- Sports: `sports`, `softball`, `baseball`, `t-ball`, `soccer`, `tennis`, `kickball`, `pickleball`, `frisbee`, `bowling`, `model-yachting`, `skating`
-- Music & performance: `music`, `dance`, `salsa`, `theater`, `festival`
-- Private bookings: `wedding`, `private-booking` (auto-added when category = `private-events`)
-- Education: `school-program` (for SSS series, mini-camps, training)
-- Annual traditions: `annual-tradition` (Olmsted Luncheon, Pumpkin Flotilla, Cherry Blossom, Fall Foliage, Juneteenth, Holiday Lighting, Open House, Harvest Festival)
-- Misc: `closure`, `lawn`, `chess`, `wellness`, `dogs`, `running`, `free`
+**Single-dimension filtering:** The site has one metadata system — `tags`. There is no separate `category` field. The internal category from step 5 is folded into the tag list alongside all keyword-derived tags.
+
+**Storage form: Title Case.** Tags are stored on event files as human-readable Title Case strings (`Sports`, `Runs & Races`, `Concerts & Performances`, `T-Ball`, `LGBTQ`). The `TAG_DISPLAY` map in `merge_nyc_events.py` is the slug → display lookup. Internal slug form is only used for: (1) keyword matching inside `TAG_RULES`, (2) image asset filenames in `assets/images/tags/{slug}.png` (the merge script slugifies tags before lookup), (3) `category-badge--{slug}` CSS modifier classes generated client-side from the Title Case tag.
+
+**NYC Open Data:** Build a tag list from event name, type, and category. The merge script's `TAG_RULES` constant is the source of truth — any change to the keyword list lives there. Subtype rules also emit their parent (e.g., a Shakespeare play tags as both `shakespeare` and `theater`; a salsa concert tags as both `salsa` and `music`). All slugs below get mapped to Title Case via `TAG_DISPLAY` before being written to disk:
+- Sports: `sports`, `softball`, `baseball`, `t-ball`, `soccer`, `tennis`, `kickball`, `pickleball`, `frisbee`, `bowling`, `volleyball`, `basketball`, `lacrosse`, `rugby`, `football`, `cricket`, `model-yachting`, `skating`
+- Walks/Races/Runs: `walk`, `hike`, `running`, `race`, `marathon`, `cycling`, `youth` (Sport - Youth events)
+- Music subtypes (each also adds `music`): `jazz`, `salsa`, `folk`, `hip-hop`, `gospel`, `blues`, `world-music`, `latin-music`. Plus `dance`, `ballet` (also `dance`), `opera` (also `music`)
+- Theater subtypes (each also adds `theater`): `shakespeare` (matches play titles like Julius Caesar, Macbeth, Hamlet, etc.), `puppet` (marionette/puppet). Plus `comedy`, `film`, `art`, `performance`
+- Charity: `charity`, `gala`, `fundraiser` (e.g., Olmsted Luncheon)
+- Family / education: `family`, `birthday`, `school-program`, `education`
+- Private bookings: `wedding`, `ceremony`, `memorial`, `reception`, `celebration`, plus `private-booking` (auto-added when category = `private-events`)
+- Outdoor / nature: `birds`, `nature`, `garden`, `picnic`, `fishing`, `boating`, `dogs`
+- Wellness: `yoga`, `meditation`, `wellness`, `fitness`, `support-group` (resilience/grief/recovery groups)
+- Holidays: specific tags `juneteenth`, `halloween`, `thanksgiving`, `easter`, `earth-day` each also emit umbrella `holiday`. Plus `spring`, `fall`
+- Annual traditions: `annual-tradition` (Olmsted Luncheon, Open House NY, Pumpkin Flotilla, Holiday Lighting, Harvest Festival, Fall Foliage)
+- Cultural communities: `cultural` (South Asian / Latino / AAPI / Black History / etc.), `lgbtq` (pride / queer)
+- Gatherings: `social` (meetups / mixers / hangouts), `meeting`, `rally` (demonstrations / protests), `spiritual` (prayer / unity / vigil), `panel`, `talk`, `commemoration`
+- Misc: `closure`, `lawn`, `chess`, `free`, `festival`, `parade`, `market`, `food`, `literature`, `media`, `history`, `adventure`
+- **The category itself is also added as a tag** so events can be filtered by category-as-tag (e.g., `Sports`, `Runs & Races`, `Concerts & Performances`, `Family & Community`, `Education`, `Private Events`, `Closures`, `Maintenance`). These eight act as the "primary badge" on event cards (first match in that order wins) — they are the only tags rendered as a colored category badge; all others render as plain pills.
 
 **Conservancy:** Start with `conservancy` tag, then add:
 - Lowercased, hyphenated versions of the event's `tags` array (e.g., "Kids and Families" → `kids-and-families`)
@@ -329,6 +344,8 @@ The slug format is: `{slugified-event-name}-{YYYY-MM-DD}.md` with a numeric suff
 
 ### 9. Write event files to `_events/`
 
+**Required fields:** every event MUST have a non-empty `description:` (one short sentence). The merge script generates one via `make_description(name, event_type, location)` for any event it writes. The orphan-cleanup pass (Step 10) also backfills missing descriptions on files that aren't in the current API response — so an event ending up without a `description:` should never happen, even for hand-curated files.
+
 Each event becomes a Markdown file in `_events/` with this front matter:
 
 ```yaml
@@ -349,7 +366,6 @@ place_categories:                          # OPTIONAL — parallel to `places`
 boroughs:                                   # OPTIONAL — populated by NYRR enrichment for multi-borough races
   - "Manhattan"
   - "Brooklyn"
-category: "sports|runs-races|concerts-performances|family-community|education|private-events|closures|maintenance"
 image: "/assets/images/..."
 description: "Brief description"
 event_id: "123456"
@@ -361,9 +377,10 @@ cost: "Free"
 recurrence: "Saturdays, April through November"
 community_board: "64"
 police_precinct: "22"
-tags:
-  - tag1
-  - tag2
+tags:                                       # Title Case strings (single metadata system)
+  - "Sports"
+  - "Softball"
+  - "Youth"
 nyrr:                                       # OPTIONAL — present when matched to a record in _data/nyrr-races.json
   event_item_id: "D7ADAFDE-..."
   distance: "10 Kilometers"
@@ -401,7 +418,10 @@ The merge intentionally **does NOT remove** events that are no longer in the API
 - The user manually curates events via `/admin/`. Removing files would lose their curation.
 - Past events naturally drop off the public site via the date filter (`event_date >= now`) on the events page and homepage.
 
-However, you should still **clean titles** on these orphaned files (apply the title cleanup rules from step 7 even when not refreshing other fields).
+However, you should still touch these orphaned files for two maintenance passes:
+
+1. **Clean titles** — apply the rules from step 7.
+2. **Backfill `description:`** — if an orphan file is missing the field or its value is empty, generate one with `make_description(title, event_type, location)` (reading those values from the file's existing front matter, defaulting `event_type` to `""` and `location` to `"Central Park"` if absent). This is what the merge script does in its orphan-cleanup pass; the rule exists so the schema invariant "every event has a non-empty description" never breaks even when files are added or hand-edited outside the merge.
 
 If the user explicitly asks to "purge" or "reset" events, you can offer to delete files where:
 - `event_id` does NOT have a `cpc-` or `cpcom-` prefix (so we don't touch Conservancy/centralpark.com)

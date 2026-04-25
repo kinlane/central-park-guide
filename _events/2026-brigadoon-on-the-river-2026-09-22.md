@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "2026 Brigadoon on the River at Bandshell Plaza in Central Park."
 event_id: "898891"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 2026 Brigadoon on the River takes place at Bandshell Plaza in Central Park on Tuesday, September 22, 2026.

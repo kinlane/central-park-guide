@@ -6,7 +6,6 @@ end_time: "17:00"
 location: "Great Lawn South West Lawn"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
-category: "family-community"
 image: "/assets/images/tags/picnic.png"
 description: "Spring Picnic at Great Lawn South West Lawn in Central Park."
 event_id: "929837"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - picnic
+  - "Family & Community"
+  - "Picnic"
 ---
 
 Spring Picnic takes place at Great Lawn South West Lawn in Central Park on Sunday, May 31, 2026.

@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "North Meadow-Softball-12"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at North Meadow-Softball-12. Adult league permitted event in Central Park."
 event_id: "905238"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - sports
+  - "Private Booking"
+  - "Private Events"
+  - "Sports"
 ---
 
 Miscellaneous takes place at North Meadow-Softball-12 in Central Park on Sunday, August 23, 2026.

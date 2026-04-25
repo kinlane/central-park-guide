@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/categories/concerts-performances.png"
 description: "Acoustic Songwriters Day at Bandshell Plaza in Central Park."
 event_id: "898683"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Concerts & Performances"
 ---
 
 Acoustic Songwriters Day takes place at Bandshell Plaza in Central Park on Thursday, July 2, 2026.

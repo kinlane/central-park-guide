@@ -6,7 +6,6 @@ end_time: "20:00"
 location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/bowling.png"
 description: "University Club Lawn Bowling at Bowling Green Lawn in Central Park."
 event_id: "919127"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - bowling
+  - "Bowling"
+  - "Family & Community"
 ---
 
 University Club Lawn Bowling takes place at Bowling Green Lawn in Central Park on Thursday, May 7, 2026.

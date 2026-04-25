@@ -69,28 +69,12 @@ layout: default
           </div>
           {% endif %}
 
-          <div style="margin-bottom: 20px;">
-            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Category</p>
-            <p style="font-weight: 600; margin: 0;">
-              {% case page.category %}
-                {% when 'sports' %}Sports
-                {% when 'runs-races' %}Runs &amp; Races
-                {% when 'concerts-performances' %}Concerts &amp; Performances
-                {% when 'family-community' %}Family &amp; Community
-                {% when 'education' %}Education
-                {% when 'private-events' %}Private Event
-                {% when 'closures' %}Closures
-                {% when 'maintenance' %}Maintenance
-              {% endcase %}
-            </p>
-          </div>
-
           {% if page.tags %}
           <div style="margin-bottom: 24px;">
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 8px;">Tags</p>
             <div style="display: flex; flex-wrap: wrap; gap: 8px;">
               {% for tag in page.tags %}
-              <span style="background: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">{{ tag }}</span>
+              <a href="/events/?tag={{ tag | url_encode }}" style="background: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; color: inherit;">{{ tag }}</a>
               {% endfor %}
             </div>
           </div>

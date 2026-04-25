@@ -6,7 +6,6 @@ end_time: "13:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Ladies' Pavilion in Central Park."
 event_id: "929511"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
-  - wedding
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Wedding Diaz takes place at Ladies' Pavilion in Central Park on Monday, June 1, 2026.

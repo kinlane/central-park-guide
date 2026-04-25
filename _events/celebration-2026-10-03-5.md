@@ -6,7 +6,6 @@ end_time: "17:45"
 location: "The Pond Lawns"
 place: "The Pond"
 place_category: "water_bodies"
-category: "private-events"
 image: "/assets/images/tags/celebration.png"
 description: "Celebration at The Pond Lawns in Central Park."
 event_id: "894912"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - celebration
-  - private-booking
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Celebration takes place at The Pond Lawns in Central Park on Saturday, October 3, 2026.

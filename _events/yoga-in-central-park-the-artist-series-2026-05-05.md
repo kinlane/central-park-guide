@@ -6,7 +6,6 @@ end_time: "19:30"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/wellness.png"
 description: "Yoga in Central Park: the Artist Series at Mineral Springs in Central Park."
 event_id: "932264"
@@ -15,7 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - wellness
+  - "Family & Community"
+  - "Wellness"
+  - "Yoga"
 ---
 
 Yoga in Central Park: the Artist Series takes place at Mineral Springs in Central Park on Tuesday, May 5, 2026.

@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Cop Cot in Central Park."
 event_id: "926288"
@@ -15,9 +14,10 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - ceremony
-  - private-booking
-  - wedding
+  - "Ceremony"
+  - "Private Booking"
+  - "Private Events"
+  - "Wedding"
 ---
 
 Wedding Ceremony takes place at Cop Cot in Central Park on Saturday, August 1, 2026.

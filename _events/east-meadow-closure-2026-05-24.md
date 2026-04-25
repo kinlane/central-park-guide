@@ -6,7 +6,6 @@ end_time: "23:59"
 location: "East Meadow, East Meadow Picnic Zone"
 place: "East Meadow"
 place_category: "event_venues"
-category: "closures"
 image: "/assets/images/tags/closure.png"
 description: "Scheduled lawn closure at East Meadow, East Meadow Picnic Zone for maintenance and restoration."
 event_id: "884734"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
+  - "Closures"
 ---
 
 East Meadow Closure takes place at East Meadow, East Meadow Picnic Zone in Central Park on Sunday, May 24, 2026.

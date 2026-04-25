@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Spring Fling at Bandshell Plaza in Central Park."
 event_id: "905656"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Spring Fling takes place at Bandshell Plaza in Central Park on Thursday, April 30, 2026.

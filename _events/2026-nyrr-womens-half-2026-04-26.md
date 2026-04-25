@@ -12,7 +12,6 @@ places:
 place_categories:
   - "event_venues"
   - "event_venues"
-category: "runs-races"
 image: "/assets/images/categories/runs-races.png"
 description: "2026 NYRR Women's Half at Bandshell Plaza, Dead Road North in Central Park."
 event_id: "893220"
@@ -21,7 +20,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Runs & Races"
 ---
 
 2026 NYRR Women's Half takes place at Bandshell Plaza, Dead Road North in Central Park on Sunday, April 26, 2026.

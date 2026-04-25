@@ -6,7 +6,6 @@ end_time: "16:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "The MGP Experience and Fandango NYC at Bandshell Plaza in Central Park."
 event_id: "894572"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 The MGP Experience and Fandango NYC takes place at Bandshell Plaza in Central Park on Friday, May 8, 2026.

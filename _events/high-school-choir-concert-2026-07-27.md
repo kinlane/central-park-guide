@@ -6,7 +6,6 @@ end_time: "18:00"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
-category: "concerts-performances"
 image: "/assets/images/tags/music.png"
 description: "High School Choir Concert at Bandshell Plaza in Central Park."
 event_id: "899567"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - music
-  - school-program
+  - "Concerts & Performances"
+  - "Music"
+  - "School Program"
 ---
 
 High School Choir Concert takes place at Bandshell Plaza in Central Park on Monday, July 27, 2026.

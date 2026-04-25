@@ -6,7 +6,6 @@ end_time: "13:30"
 location: "The Pool Lawns"
 place: "The Pool"
 place_category: "water_bodies"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Shoresh Prayer Service at The Pool Lawns in Central Park."
 event_id: "932411"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
+  - "Spiritual"
 ---
 
 Shoresh Prayer Service takes place at The Pool Lawns in Central Park on Saturday, June 6, 2026.

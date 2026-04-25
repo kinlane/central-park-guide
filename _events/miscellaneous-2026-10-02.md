@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Mineral Springs"
 place: "Mineral Springs"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/categories/private-events.png"
 description: "Miscellaneous at Mineral Springs in Central Park."
 event_id: "910567"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - private-booking
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Miscellaneous takes place at Mineral Springs in Central Park on Friday, October 2, 2026.

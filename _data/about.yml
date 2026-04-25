@@ -20,8 +20,8 @@ patrol:
   cta:
     text: "Meet Poppy & the patrol squad"
     url: https://poppyrlane.com/my-story/
-  image: /assets/images/about-poppy.avif
-  image_alt: "Rottweiler dog lying in a grassy field with its tongue out and wearing a chain collar and red collar."
+  image: /assets/images/central-park/IMG_8677.jpeg
+  image_alt: "Poppy on patrol in Central Park."
 
 community:
   heading: "A community guide, not just a calendar"

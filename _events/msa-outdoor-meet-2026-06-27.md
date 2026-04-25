@@ -6,7 +6,6 @@ end_time: "14:00"
 location: "Lawn Outside Tennis Courts"
 place: "Lawn Outside Tennis Courts"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "MSA Outdoor Meet at Lawn Outside Tennis Courts in Central Park."
 event_id: "917743"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 MSA Outdoor Meet takes place at Lawn Outside Tennis Courts in Central Park on Saturday, June 27, 2026.

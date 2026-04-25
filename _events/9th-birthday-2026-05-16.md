@@ -6,7 +6,6 @@ end_time: "15:00"
 location: "Heckscher Picnic Area"
 place: "Heckscher Picnic Area"
 place_category: "event_venues"
-category: "private-events"
 image: "/assets/images/tags/birthday.png"
 description: "9th Birthday at Heckscher Picnic Area in Central Park."
 event_id: "928239"
@@ -15,8 +14,9 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - birthday
-  - private-booking
+  - "Birthday"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 9th Birthday takes place at Heckscher Picnic Area in Central Park on Saturday, May 16, 2026.

@@ -6,7 +6,6 @@ end_time: "22:00"
 location: "Great Hill Oval, Great Hill North"
 place: "Great Hill"
 place_category: "event_venues"
-category: "family-community"
 image: "/assets/images/tags/film.png"
 description: "Film Screening at Great Hill Oval, Great Hill North in Central Park."
 event_id: "928471"
@@ -15,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - film
+  - "Family & Community"
+  - "Film"
 ---
 
 Film Screening takes place at Great Hill Oval, Great Hill North in Central Park on Wednesday, July 29, 2026.

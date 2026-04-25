@@ -6,7 +6,6 @@ end_time: "11:00"
 location: "Belvedere Castle Terrace"
 place: "Belvedere Castle"
 place_category: "buildings"
-category: "family-community"
 image: "/assets/images/categories/family-community.png"
 description: "Adrienne and Troy at Belvedere Castle Terrace in Central Park."
 event_id: "886676"
@@ -15,7 +14,7 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - community
+  - "Family & Community"
 ---
 
 Adrienne and Troy takes place at Belvedere Castle Terrace in Central Park on Sunday, May 17, 2026.
