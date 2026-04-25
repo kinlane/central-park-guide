@@ -38,10 +38,19 @@ with open('/tmp/central_park_events_latest.json', 'w') as f:
 print(f'Total: {len(combined)}')
 "
 
-# 3. Run the merge
+# 3. Refresh NYRR enrichment cache (course maps, race meta).
+#    Discovers candidate races from /tmp/central_park_events_latest.json and
+#    fetches each detail page (live → Wayback fallback). Persists to
+#    _data/nyrr-races.json which is checked into git.
+#    Note: nyrr.org sits behind Queue-It on race-day surges; if the live fetch
+#    is queued and Wayback has no snapshot, the script logs the miss and moves
+#    on. Re-run later when traffic clears.
+python3 .claude/skills/scripts/fetch_nyrr_races.py
+
+# 4. Run the merge — picks up NYRR enrichment from _data/nyrr-races.json.
 python3 .claude/skills/scripts/merge_nyc_events.py
 
-# 4. Build to verify
+# 5. Build to verify
 bundle exec jekyll build
 ```
 
@@ -68,7 +77,43 @@ Each record has these fields:
 - `street_closure_type`
 - `community_board` / `police_precinct`
 
-### Source 2: Central Park Conservancy (centralparknyc.org)
+### Source 2: NYRR (New York Road Runners) race-detail enrichment
+
+Enriches existing NYC Open Data race events with course-map, distance, hashtag, hero photo, and traversed-landmark data parsed from the NYRR race detail page. Does **not** create new events — only enhances ones that already exist from Source 1.
+
+- **Listing URL:** `https://www.nyrr.org/run/race-calendar` (today the calendar itself is fronted by Queue-It; we discover candidates from the NYC Open Data feed instead)
+- **Detail URL pattern:** `https://www.nyrr.org/races/{year}{slug}` or `/races/{year}/{slug}` or `/races/{slug}` — slug is the title with `[^A-Za-z0-9]` stripped, lowercased, year prefix removed
+- **Queue-It caveat:** during high-traffic windows (race-day, registration), every NYRR path 302s to `virtualcorral.nyrr.org`. The fetch script detects this and falls back to the Wayback Machine via the CDX API. If neither works, it logs the miss in `_data/nyrr-races.json` and the merge proceeds without enrichment for that race. Re-run when the queue clears.
+- **iCal endpoint:** `https://www.nyrr.org/api/feature/racedetail/ExportIcal?eventItemId={GUID}` (also queue-fronted)
+- **Cache file:** `_data/nyrr-races.json` (checked into git) — keyed by `{year}{slug}`. Each entry stores the parsed fields plus `fetch_source` (`live` / `wayback` / `manual_seed`) and `fetched_at`.
+
+Fields parsed from each detail page (when present):
+
+| Field | Source on page | Used by merge |
+|---|---|---|
+| `title` | `og:title` | display only |
+| `date` / `time` | `event_key_list__item` | reference |
+| `location` | meta_list (Location) | filter signal — must reference Central Park |
+| `distance` | meta_list (Distance) | `nyrr.distance` |
+| `hashtag` | meta_list (Hashtag) | `nyrr.hashtag` |
+| `description` | `.race_detail-desc--intro` block | tokenized for landmarks |
+| `course_text` | "The Course" accordion | tokenized for landmarks |
+| `course_map` | `prodsitecore.blob...race-course-maps/*.pdf` | `nyrr.course_map` (linked from event page) |
+| `race_photo` | `prodsitecoreimage.../racepage/photos/*` | `nyrr.race_photo` |
+| `race_logo` | `prodsitecoreimage.../race-logos/*` | `nyrr.race_logo` |
+| `event_item_id` | iCal href GUID | `nyrr.event_item_id`, drives `nyrr.ical_url` |
+| `sponsors` | `/logo/partners/*` filenames | `nyrr.sponsors` |
+| `strava_club` | external link | `nyrr.strava_club` |
+| `total_finishers` | post-race stat | `nyrr.total_finishers` |
+| `boroughs` | regex over description+course | merged into the event's `boroughs:` array |
+
+**Filter to Central Park:** keep records where `Location` contains "Central Park" OR description/course text mentions Central Park OR title is one of the multi-borough finishers (NYC Marathon, NYC Half). Brooklyn Half is **excluded** — it doesn't enter the park.
+
+**Multi-location enrichment:** the parsed `description` and `course_text` are tokenized against `_data/central-park-places.yml` using the same `match_places()` longest-first algorithm the merge uses for permit locations. Any landmark named in the race narrative gets appended to the event's `places:` array (deduped against the primary location match). Boroughs touched by the route (`Manhattan`, `Brooklyn`, etc.) write to a `boroughs:` array on the event front matter.
+
+**Match key from event side:** the merge derives a NYRR slug from the event's `name` + `date.year` and looks up `nyrr_cache[{year}{slug}]`, falling back to `{slug}` alone, then `{year-1}{slug}` (recurring annuals).
+
+### Source 3: Central Park Conservancy (centralparknyc.org)
 
 - **API endpoint:** `https://www.centralparknyc.org/activities.json`
 - **Pagination:** 16 items per page, paginate with `?page=N` until no more results
@@ -100,7 +145,7 @@ Each listing record has:
 
 **The enriched Conservancy data is also cached to `_data/central-park-conservancy-events.json` for reference.**
 
-### Source 3: centralpark.com (Community Events)
+### Source 4: centralpark.com (Community Events)
 
 - **Listing URL:** `https://www.centralpark.com/search/event/upcoming-events/`
 - **Platform:** Metro Publisher (no REST API; parse HTML listing pages or RSS/ICS feeds)
@@ -301,6 +346,9 @@ places:                                    # OPTIONAL — only when 2+ places ma
 place_categories:                          # OPTIONAL — parallel to `places`
   - "taxonomy_category"
   - "taxonomy_category"
+boroughs:                                   # OPTIONAL — populated by NYRR enrichment for multi-borough races
+  - "Manhattan"
+  - "Brooklyn"
 category: "sports|runs-races|concerts-performances|family-community|education|private-events|closures|maintenance"
 image: "/assets/images/..."
 description: "Brief description"
@@ -316,6 +364,20 @@ police_precinct: "22"
 tags:
   - tag1
   - tag2
+nyrr:                                       # OPTIONAL — present when matched to a record in _data/nyrr-races.json
+  event_item_id: "D7ADAFDE-..."
+  distance: "10 Kilometers"
+  hashtag: "#NYRRManhattan10K"
+  course_map: "https://prodsitecore.blob.../race-course-maps/manhattan10k_map_011223.pdf"
+  race_photo: "https://prodsitecoreimage.../racepage/photos/manhattan10k22.jpg"
+  race_logo: "https://prodsitecoreimage.../race-logos/...png"
+  ical_url: "https://www.nyrr.org/api/feature/racedetail/ExportIcal?eventItemId=..."
+  strava_club: "https://www.strava.com/clubs/new-york-road-runners-108605"
+  source_url: "https://www.nyrr.org/races/2023/nyrrmanhattan10k"
+  total_finishers: 4873
+  sponsors:
+    - "tcs"
+    - "new balance"
 ---
 
 Event body content with details, about section, etc.

@@ -1,0 +1,63 @@
+{
+  "fetched_at": "2026-04-25T20:59:12+00:00",
+  "races": {
+    "2023nyrrmanhattan10k": {
+      "boroughs": [
+        "Manhattan"
+      ],
+      "course_map": "https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/pdf/race-course-maps/manhattan10k_map_011223.pdf",
+      "date": "February 5, 2023 8:00 AM",
+      "description": "About This event is completed. 4,873 Total Finishers 2,565 Men | 2,295 Women | 13 Non-Binary View official results from this race. View NYRR Manhattan 10K race photos here . Take on Central Park and all its hills with a full park loop at the NYRR Manhattan 10K. Harlem Hill, the Three Sisters, and Cat Hill are all yours to climb up and coast down on Sunday, February 5. Pre-Race Notes on Registration The race will operate under 2023 Safety Procedures at NYRR Races guidelines. This race is a 9+1 program qualifier and a 4 Out of 6 program qualifier. We've updated our website with a new change to increase inclusivity and representation in our races. Runners can now register as woman, man, or non-binary. Visit our FAQ page for more information on how to update your profile. If you wish to pay in cash for your race entry, please email help@nyrr.org for assistance. Please include the event name and the email associated with your NYRR account. As part of our mission to help and inspire people through running, New York Road Runners offers annually a limited number of complimentary race entries\u2014including to the TCS New York City Marathon\u2014through Race Free. Learn more and apply .",
+      "distance": "10 Kilometers",
+      "event_item_id": "D7ADAFDE-33D2-4B45-93FC-7B7F1ED55E89",
+      "fetch_source": "wayback",
+      "hashtag": "#NYRRManhattan10K",
+      "ical_url": "https://www.nyrr.org/api/feature/racedetail/ExportIcal?eventItemId=D7ADAFDE-33D2-4B45-93FC-7B7F1ED55E89",
+      "location": "Central Park",
+      "parsed": true,
+      "race_logo": "https://prodsitecoreimage.nyrr.org/nyrrsitecoreblob/nyrr/logo/race-logos/nyrrm10k_22_primary_logo_pms_fc-01.png",
+      "race_photo": "https://prodsitecoreimage.nyrr.org/nyrrsitecoreblob/nyrr/image/racepage/photos/manhattan10k22.jpg",
+      "slug": "nyrrmanhattan10k",
+      "source_url": "https://www.nyrr.org/races/2023/nyrrmanhattan10k",
+      "sponsors": [
+        "tcs newlogo",
+        "nb 072023 1180x"
+      ],
+      "strava_club": "https://www.strava.com/clubs/new-york-road-runners-108605",
+      "title": "NYRRManhattan10K",
+      "total_finishers": 4873,
+      "year": 2023
+    },
+    "2024unitedairlinesnychalf": {
+      "boroughs": [
+        "Manhattan",
+        "Brooklyn"
+      ],
+      "course_map": "https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/pdf/race-course-maps/uanych24_mapcourse_031324_m2.pdf",
+      "date": "March 17, 2024 7:00 AM",
+      "description": "About This race is completed. 27,824 Total Finishers 13,614 Men | 14,139 Women | 71 Non-Binary 21 Wheelchair | 9 Handcycles View official results from this race. View the race-day photo galleries . Mark your calendar! The drawing will take place on November 29. The guaranteed entry claim period and applications are now closed. For more information on entry methods, click here . Applications for Non-NYRR time qualifiers opened on October 19 at 12:00 p.m. and closed on October 26 at 11:59 p.m. For more information, please review our full policy here . Those accepted will have their credit card charged and will be notified of their acceptance via email before the drawing takes place on November 29, 2023. Join Team for Kids to get guaranteed entry, expert coaching, and the opportunity to help keep kids healthy and fit. Check out the full list of official Charity Partners of the 2024 United Airlines NYC Half for guaranteed entry to runners who agree to fundraise on their behalf. --> The drawing for the United Airlines NYC Half took place on Wednesday, November 29. Here's how to know if you got in: 1. Credit card charges: Accepted runners will see a charge to their credit card for the race-entry fee. If your credit card is charged for the full race fee, you have been accepted into the race. You may be charged before you receive an email confirming your status or before your status changes in your NYRR account. 2. Status in your NYRR account: If you have been accepted into the race, your status will change to \"Accepted&rdquo; by end of day Wednesday, November 29. 3. Email: All entrants, whether you are accepted or not, will receive an email indicating your status by the end of day Wednesday, November 29. Guarantee Your Entry by Running with the Charity of Your Choice Team for Kids is now full. Guarantee your entry by running with one of our other official Charity Partners ! Experience the bright lights of New York City as the United Airlines NYC Half returns on Sunday, March 17, 2024! The 13.1-mile journey begins in Brooklyn, making its way over the historic Manhattan Bridge and FDR Drive. Runners also get the unique opportunity to run through Times Square (only 1 of 2 times that it is closed each year!) and finish in Central Park. Kids Can Run Too! Rising New York Road Runners welcomes your child to participate in the Times Square Kids Run at the United Airlines NYC Half with non-competitive short dashes for Stage 1 (ages 2 to 11), an untimed non-competitive 1-mile run for Stage 2 (ages 8 to 18), and a timed and competitive 1-mile race for Stage 3 (ages 12 to 18). Registration for all Rising New York Road Runners events is completely FREE and made possible by the generosity of our community. Guarantee Your Entry by Running with the Charity of Your Choice The 2024 United Airlines NYC Half charity program offers guaranteed entry to runners who pledge to raise funds for one of the event's official charity partners . --> Guarantee Your Entry by Running wit",
+      "distance": "13.1 Miles",
+      "event_item_id": "4051140D-2F8C-4D3C-9DB4-FF3A4C21E22D",
+      "fetch_source": "wayback",
+      "hashtag": "#UnitedNYCHalf",
+      "ical_url": "https://www.nyrr.org/api/feature/racedetail/ExportIcal?eventItemId=4051140D-2F8C-4D3C-9DB4-FF3A4C21E22D",
+      "location": "New York City",
+      "parsed": true,
+      "race_photo": "https://prodsitecoreimage.nyrr.org/nyrrsitecoreblob/nyrr/image/racepage/photos/2024/marquee-halfs/nych23_ah_348-r2.jpg",
+      "slug": "unitedairlinesnychalf",
+      "source_url": "https://www.nyrr.org/races/2024unitedairlinesnychalf",
+      "sponsors": [
+        "tcs newlogo",
+        "citizens",
+        "mc symbol rgb 1180x800 notm",
+        "nb 072023 1180x",
+        "gatorade gbolt",
+        "mu base standard lockup"
+      ],
+      "strava_club": "https://www.strava.com/clubs/new-york-road-runners-108605",
+      "title": "2024 United Airlines NYC Half",
+      "total_finishers": 27824,
+      "year": 2024
+    }
+  }
+}

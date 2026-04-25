@@ -29,6 +29,9 @@ REPO_ROOT = os.path.normpath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
 LATEST_JSON = '/tmp/central_park_events_latest.json'
 PLACES_PATH = os.path.join(REPO_ROOT, '_data', 'central-park-places.yml')
 EVENTS_DIR = os.path.join(REPO_ROOT, '_events')
+NYRR_JSON_PATH = os.path.join(REPO_ROOT, '_data', 'nyrr-races.json')
+
+BOROUGHS = ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island']
 
 # ── Load places vocabulary ────────────────────────────────────────────
 with open(PLACES_PATH) as f:
@@ -75,6 +78,60 @@ def match_place(location):
     """Back-compat: first matched place, or None."""
     matches = match_places(location)
     return matches[0] if matches else None
+
+
+# ── NYRR enrichment ────────────────────────────────────────────────────
+def load_nyrr_cache():
+    if not os.path.exists(NYRR_JSON_PATH):
+        return {}
+    with open(NYRR_JSON_PATH) as f:
+        data = json.load(f)
+    return data.get('races', {}) if isinstance(data, dict) else {}
+
+
+nyrr_cache = load_nyrr_cache()
+
+
+def derive_nyrr_slug(title):
+    """NYRR slugs strip everything but lowercase alphanumerics; year prefix removed."""
+    t = re.sub(r'^\s*20\d\d\s+', '', title or '')
+    return re.sub(r'[^A-Za-z0-9]', '', t).lower()
+
+
+def find_nyrr_record(title, year):
+    """Look up a NYRR record by ({year}{slug}, then {slug} alone). Returns dict or None."""
+    slug = derive_nyrr_slug(title)
+    if not slug:
+        return None
+    candidates = [f'{year}{slug}'] if year else []
+    candidates.append(slug)
+    # Also try previous-year cache as a fallback for recurring annual races
+    if year:
+        candidates.append(f'{year - 1}{slug}')
+    for k in candidates:
+        rec = nyrr_cache.get(k)
+        if rec and rec.get('parsed'):
+            return rec
+    return None
+
+
+def enrich_places_from_nyrr(rec):
+    """Tokenize NYRR description + course text against the places vocabulary.
+    Returns ([{name,category}, ...], [borough, ...])."""
+    blob = ' '.join(
+        v for k, v in rec.items()
+        if isinstance(v, str) and k in ('description', 'course_text', 'location')
+    )
+    landmarks = match_places(blob) if blob else []
+    boroughs = []
+    for b in (rec.get('boroughs') or []):
+        if b in BOROUGHS and b not in boroughs:
+            boroughs.append(b)
+    # Also catch boroughs by direct text scan (in case rec.boroughs missed them)
+    for b in BOROUGHS:
+        if b not in boroughs and re.search(r'\b' + re.escape(b) + r'\b', blob, re.I):
+            boroughs.append(b)
+    return landmarks, boroughs
 
 
 # ── Title cleanup ──────────────────────────────────────────────────────
@@ -489,6 +546,18 @@ for event in latest:
         continue
     place = all_places[0]
 
+    # NYRR enrichment: dedupe-merge landmarks discovered in the race detail
+    # description/course text, and collect boroughs touched by the route.
+    nyrr_rec = find_nyrr_record(name, start.year)
+    nyrr_boroughs = []
+    if nyrr_rec:
+        extra_places, nyrr_boroughs = enrich_places_from_nyrr(nyrr_rec)
+        existing_names = {p['name'] for p in all_places}
+        for p in extra_places:
+            if p['name'] not in existing_names:
+                all_places.append(p)
+                existing_names.add(p['name'])
+
     category = categorize(name, event_type)
     tags = get_tags(name, event_type, category)
     image = get_image(category, location, tags)
@@ -519,6 +588,10 @@ for event in latest:
         lines.append('place_categories:')
         for p in all_places:
             lines.append('  - "' + p['category'] + '"')
+    if nyrr_boroughs:
+        lines.append('boroughs:')
+        for b in nyrr_boroughs:
+            lines.append('  - "' + b + '"')
     lines.append('category: "' + category + '"')
     lines.append('image: "' + image + '"')
     lines.append('description: "' + yaml_safe(description) + '"')
@@ -530,6 +603,20 @@ for event in latest:
     lines.append('tags:')
     for tag in tags:
         lines.append('  - ' + tag)
+    if nyrr_rec:
+        lines.append('nyrr:')
+        for fld in ('event_item_id', 'distance', 'hashtag',
+                    'course_map', 'race_photo', 'race_logo',
+                    'ical_url', 'strava_club', 'source_url'):
+            val = nyrr_rec.get(fld)
+            if val:
+                lines.append('  ' + fld + ': "' + yaml_safe(str(val)) + '"')
+        if nyrr_rec.get('total_finishers'):
+            lines.append('  total_finishers: ' + str(nyrr_rec['total_finishers']))
+        if nyrr_rec.get('sponsors'):
+            lines.append('  sponsors:')
+            for s in nyrr_rec['sponsors']:
+                lines.append('    - "' + yaml_safe(s) + '"')
     lines.append('---')
     lines.append('')
     lines.append(name + ' takes place at ' + location + ' in Central Park on ' + start.strftime('%A, %B %-d, %Y') + '.')
