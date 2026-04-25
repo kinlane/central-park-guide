@@ -312,10 +312,11 @@ permalink: /events/
   }
 </style>
 
-<!-- Hero -->
+<!-- Hero — background image rotates per build via Liquid sample -->
+{% assign hero_image = site.data.central-park-images.images | sample %}
 <section class="hero">
   <div class="hero__bg">
-    <img src="/assets/images/events-hero.avif" alt="Aerial view of Central Park in New York City with green trees, grassy fields, a lake, and the city skyline in the background.">
+    <img src="{{ hero_image }}" alt="Aerial view of Central Park in New York City with green trees, grassy fields, a lake, and the city skyline in the background.">
   </div>
   <div class="container hero__content">
     <h1>Events</h1>

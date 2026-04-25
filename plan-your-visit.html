@@ -5,10 +5,11 @@ description: "Get ready for your Central Park visit with live weather, upcoming 
 permalink: /plan-your-visit/
 ---
 
-<!-- Hero -->
+<!-- Hero — background image rotates per build via Liquid sample -->
+{% assign hero_image = site.data.central-park-images.images | sample %}
 <section class="hero">
   <div class="hero__bg">
-    <img src="{{ site.data['plan-your-visit'].hero.image }}" alt="{{ site.data['plan-your-visit'].hero.image_alt }}">
+    <img src="{{ hero_image }}" alt="{{ site.data['plan-your-visit'].hero.image_alt }}">
   </div>
   <div class="container hero__content">
     <h1>{{ site.data['plan-your-visit'].hero.heading }}</h1>

@@ -5,10 +5,11 @@ description: "Get in touch with Central Park.Guide. Explore partnerships, media 
 permalink: /contact-us/
 ---
 
-<!-- Hero -->
+<!-- Hero — background image rotates per build via Liquid sample -->
+{% assign hero_image = site.data.central-park-images.images | sample %}
 <section class="hero">
   <div class="hero__bg">
-    <img src="{{ site.data.contact.hero.image }}" alt="{{ site.data.contact.hero.image_alt }}">
+    <img src="{{ hero_image }}" alt="{{ site.data.contact.hero.image_alt }}">
   </div>
   <div class="container hero__content">
     <h1>{{ site.data.contact.hero.heading }}</h1>
