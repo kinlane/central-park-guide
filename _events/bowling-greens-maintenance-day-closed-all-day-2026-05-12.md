@@ -7,7 +7,7 @@ location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
 category: "maintenance"
-image: "/assets/images/event-3.avif"
+image: "/assets/images/tags/bowling.png"
 description: "Bowling Greens - Maintenance Day - Closed All Day at Bowling Green Lawn in Central Park."
 event_id: "889689"
 event_type: "Special Event"
@@ -16,7 +16,6 @@ community_board: "64"
 police_precinct: "22"
 tags:
   - bowling
-  - closure
   - maintenance
 ---
 

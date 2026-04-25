@@ -18,12 +18,21 @@ while true; do
   OFFSET=$((OFFSET + 1000))
 done
 
-# 2. Combine pages into one JSON array
+# 2. Combine pages into one JSON array.
+#    Each curl response is a JSON array but can span multiple lines, so parse
+#    streaming with raw_decode rather than line-by-line.
 python3 -c "
 import json
-with open('/tmp/cp_events_pages.json') as f:
-    pages = [json.loads(line) for line in f if line.strip()]
-combined = [e for page in pages for e in page]
+text = open('/tmp/cp_events_pages.json').read()
+decoder = json.JSONDecoder()
+combined, i = [], 0
+while i < len(text):
+    while i < len(text) and text[i] in ' \t\r\n':
+        i += 1
+    if i >= len(text):
+        break
+    obj, i = decoder.raw_decode(text, i)
+    combined.extend(obj)
 with open('/tmp/central_park_events_latest.json', 'w') as f:
     json.dump(combined, f)
 print(f'Total: {len(combined)}')
@@ -155,9 +164,13 @@ Build a lookup of all place names and alternate names (lowercased) mapped to the
 
 ### 4. Match events to places
 
-For each event, check if its cleaned location contains any place name token (case-insensitive). If matched, record the canonical `place` name and `place_category`. If no match, **skip the event** — it doesn't map to a known Central Park location.
+For each event, scan its cleaned location for **all** place name tokens from the vocabulary (case-insensitive, longest-first to avoid shorter tokens stealing a longer span). The merge script's `match_places()` returns every distinct match in source order.
 
-If an event location doesn't match and looks like it should (a real Central Park sub-location), consider adding it to `_data/central-park-places.yml` under the `event_venues` category before re-matching.
+- The **first** match becomes the primary `place:` and `place_category:` (singular fields, always written — back-compat with everything that reads them).
+- When more than one place is matched, the writer also emits `places:` and `place_categories:` arrays. Single-location events do NOT get these arrays (keeps diffs minimal and keeps "places" semantically meaning "this event spans multiple landmarks").
+- Listing/admin pages normalize both shapes at runtime: `e.allPlaces = e.places && e.places.length ? e.places : (e.place ? [e.place] : [])`. The place dropdown counts each place per event; an event filtered by place matches if any of its places equals the selection.
+
+If a location has zero matches, **skip the event** — it doesn't map to a known Central Park location. If it looks like a real Central Park sub-location, add it to `_data/central-park-places.yml` under the `event_venues` category before re-matching.
 
 ### 5. Categorize events
 
@@ -168,7 +181,7 @@ If an event location doesn't match and looks like it should (a real Central Park
 4. `event_name` contains celebration/wedding/elopement/ceremony/birthday/baptism/memorial/bar mitzvah/reception, OR is exactly "party"/"picnic"/"miscellaneous" → `private-events`
 5. `event_type` is "Sport - Adult" or "Sport - Youth" OR `event_name` contains softball/baseball/t-ball/kickball/soccer/tennis/pickleball/frisbee/volleyball/basketball/lacrosse/rugby/bowling/yacht/skating → `sports`
 6. `event_name` contains concert/music/jazz/salsa/band/choir/festival/dance/theater/songwriters/dj/entertainment/opera/symphonic/marching/shakespeare/marionette/puppet → `concerts-performances`
-7. `event_name` contains 5k/10k/marathon/run/race/half marathon → `runs-races`
+7. `event_name` contains walk/run/race/5k/10k/15k/half/marathon/jog (word-boundary match; "half" catches NYC/Brooklyn/Women's Half) → `runs-races`
 8. Default → `family-community`
 
 **Why the order matters:** A "Soccer Training Mini-Camp" should be `education`, not `sports`. A "Birthday Party" hosted on a softball field should be `private-events`, not `sports`.
@@ -280,8 +293,14 @@ date: YYYY-MM-DD
 time: "HH:MM"
 end_time: "HH:MM"
 location: "Cleaned Location"
-place: "Canonical Place Name"
-place_category: "taxonomy_category"
+place: "Canonical Place Name"             # primary (first matched token)
+place_category: "taxonomy_category"        # primary
+places:                                    # OPTIONAL — only when 2+ places matched
+  - "Canonical Place Name"
+  - "Second Place"
+place_categories:                          # OPTIONAL — parallel to `places`
+  - "taxonomy_category"
+  - "taxonomy_category"
 category: "sports|runs-races|concerts-performances|family-community|education|private-events|closures|maintenance"
 image: "/assets/images/..."
 description: "Brief description"

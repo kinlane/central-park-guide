@@ -484,7 +484,7 @@ permalink: /events/
 {%- assign event_date = event.date | date: '%Y-%m-%d' -%}
 {%- if event_date >= now -%}
 {%- if first %}{% assign first = false %}{% else %},{% endif -%}
-{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}"}
+{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","places":{{ event.places | default: empty | jsonify }},"placeCategories":{{ event.place_categories | default: empty | jsonify }},"category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}"}
 {%- endif -%}
 {%- endfor -%}
 ]
@@ -525,6 +525,12 @@ permalink: /events/
   var allEvents = JSON.parse(document.getElementById('events-data').textContent);
   var placeCoords = JSON.parse(document.getElementById('place-coords').textContent);
   var placeCatLabels = JSON.parse(document.getElementById('place-cat-labels').textContent);
+  // Normalize: every event has a non-empty allPlaces / allPlaceCats array.
+  // Multi-location events emit `places` / `placeCategories`; singles emit `place` only.
+  allEvents.forEach(function(e) {
+    e.allPlaces = (e.places && e.places.length) ? e.places : (e.place ? [e.place] : []);
+    e.allPlaceCats = (e.placeCategories && e.placeCategories.length) ? e.placeCategories : (e.placeCat ? [e.placeCat] : []);
+  });
 
   var categoryLabels = {
     'sports': 'Sports',
@@ -610,8 +616,14 @@ permalink: /events/
     if (state.activeCategories.length && state.activeCategories.indexOf(e.category) === -1) return false;
     // sport sub-filter applies only when 'sports' is among selected categories
     if (state.sport !== 'all' && state.activeCategories.indexOf('sports') !== -1 && e._sportType !== state.sport) return false;
-    if (state.place !== 'all' && e.place !== state.place) return false;
-    if (state.activePlaceCats.length && state.activePlaceCats.indexOf(e.placeCat) === -1) return false;
+    if (state.place !== 'all' && e.allPlaces.indexOf(state.place) === -1) return false;
+    if (state.activePlaceCats.length) {
+      var anyCat = false;
+      for (var k = 0; k < e.allPlaceCats.length; k++) {
+        if (state.activePlaceCats.indexOf(e.allPlaceCats[k]) !== -1) { anyCat = true; break; }
+      }
+      if (!anyCat) return false;
+    }
     if (state.activeTags.length) {
       var hasAnyTag = false;
       for (var i = 0; i < state.activeTags.length; i++) {
@@ -675,9 +687,11 @@ permalink: /events/
     if (el) el.textContent = '(' + catCounts[k] + ')';
   });
 
-  // Place dropdown (alphabetical)
+  // Place dropdown (alphabetical) — multi-location events count under each place
   var placeCounts = {};
-  allEvents.forEach(function(e) { if (e.place) placeCounts[e.place] = (placeCounts[e.place] || 0) + 1; });
+  allEvents.forEach(function(e) {
+    e.allPlaces.forEach(function(p) { placeCounts[p] = (placeCounts[p] || 0) + 1; });
+  });
   var placeSelect = document.getElementById('place-filter');
   Object.keys(placeCounts).sort(function(a,b) { return a.localeCompare(b); }).forEach(function(p) {
     var opt = document.createElement('option');
@@ -688,7 +702,9 @@ permalink: /events/
 
   // Area chips (multi-select)
   var pcCounts = {};
-  allEvents.forEach(function(e) { if (e.placeCat) pcCounts[e.placeCat] = (pcCounts[e.placeCat] || 0) + 1; });
+  allEvents.forEach(function(e) {
+    e.allPlaceCats.forEach(function(pc) { pcCounts[pc] = (pcCounts[pc] || 0) + 1; });
+  });
   var areaRow = document.getElementById('area-row');
   Object.keys(pcCounts).sort(function(a,b) { return pcCounts[b] - pcCounts[a]; }).forEach(function(pc) {
     var btn = document.createElement('button');
@@ -1009,10 +1025,11 @@ permalink: /events/
     var filtered = getFilteredFlat();
     var byPlace = {};
     filtered.forEach(function(e) {
-      var p = e.place || e.location;
-      if (!p) return;
-      if (!byPlace[p]) byPlace[p] = [];
-      byPlace[p].push(e);
+      var places = e.allPlaces.length ? e.allPlaces : (e.location ? [e.location] : []);
+      places.forEach(function(p) {
+        if (!byPlace[p]) byPlace[p] = [];
+        byPlace[p].push(e);
+      });
     });
 
     Object.keys(byPlace).forEach(function(place) {

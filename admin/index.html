@@ -393,7 +393,7 @@ sitemap: false
 {%- assign event_date = event.date | date: '%Y-%m-%d' -%}
 {%- if event_date >= now -%}
 {%- if first %}{% assign first = false %}{% else %},{% endif -%}
-{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
+{"title":{{ event.title | jsonify }},"url":"{{ event.url }}","path":"{{ event.path }}","date":"{{ event.date | date: '%Y-%m-%d' }}","dateDisplay":"{{ event.date | date: '%b %-d, %Y' }}","time":"{{ event.time }}","endTime":"{{ event.end_time }}","location":{{ event.location | jsonify }},"place":{{ event.place | jsonify }},"placeCat":"{{ event.place_category }}","places":{{ event.places | default: empty | jsonify }},"placeCategories":{{ event.place_categories | default: empty | jsonify }},"category":"{{ event.category }}","image":"{{ event.image }}","description":{{ event.description | jsonify }},"tags":{{ event.tags | jsonify }},"eventType":"{{ event.event_type }}","eventId":"{{ event.event_id }}","source":"{{ event.source }}","sourceUrl":"{{ event.source_url }}","cost":{{ event.cost | jsonify }}}
 {%- endif -%}
 {%- endfor -%}
 ]
@@ -415,6 +415,11 @@ sitemap: false
   document.getElementById('admin-app').style.display = '';
 
   var allEvents = JSON.parse(document.getElementById('admin-events-data').textContent);
+  // Normalize: every event has a non-empty allPlaces / allPlaceCats array.
+  allEvents.forEach(function(e) {
+    e.allPlaces = (e.places && e.places.length) ? e.places : (e.place ? [e.place] : (e.location ? [e.location] : []));
+    e.allPlaceCats = (e.placeCategories && e.placeCategories.length) ? e.placeCategories : (e.placeCat ? [e.placeCat] : []);
+  });
 
   // ── State ──────────────────────────────────────────────────────
   var state = {
@@ -513,8 +518,14 @@ sitemap: false
   function eventMatchesTaxonomyFilters(e) {
     if (state.activeCategories.length && state.activeCategories.indexOf(e.category) === -1) return false;
     if (state.sport !== 'all' && state.activeCategories.indexOf('sports') !== -1 && e._sportType !== state.sport) return false;
-    if (state.place !== 'all' && (e.place || e.location) !== state.place) return false;
-    if (state.activePlaceCats.length && state.activePlaceCats.indexOf(e.placeCat) === -1) return false;
+    if (state.place !== 'all' && e.allPlaces.indexOf(state.place) === -1) return false;
+    if (state.activePlaceCats.length) {
+      var anyCat = false;
+      for (var k = 0; k < e.allPlaceCats.length; k++) {
+        if (state.activePlaceCats.indexOf(e.allPlaceCats[k]) !== -1) { anyCat = true; break; }
+      }
+      if (!anyCat) return false;
+    }
     if (state.activeTags.length) {
       var hasAnyTag = false;
       for (var i = 0; i < state.activeTags.length; i++) {
@@ -557,10 +568,12 @@ sitemap: false
   });
   document.getElementById('count-status-all').textContent = '(' + allEvents.length + ')';
 
-  // Place dropdown
+  // Place dropdown — multi-location events count under each place
   var placeSelect = document.getElementById('place-filter');
   var placeCounts = {};
-  allEvents.forEach(function(e) { var p = e.place || e.location; if (p) placeCounts[p] = (placeCounts[p] || 0) + 1; });
+  allEvents.forEach(function(e) {
+    e.allPlaces.forEach(function(p) { placeCounts[p] = (placeCounts[p] || 0) + 1; });
+  });
   Object.keys(placeCounts).sort(function(a,b) { return a.localeCompare(b); }).forEach(function(p) {
     var opt = document.createElement('option');
     opt.value = p;
@@ -570,7 +583,9 @@ sitemap: false
 
   // Area chips (multi-select)
   var pcCounts = {};
-  allEvents.forEach(function(e) { if (e.placeCat) pcCounts[e.placeCat] = (pcCounts[e.placeCat] || 0) + 1; });
+  allEvents.forEach(function(e) {
+    e.allPlaceCats.forEach(function(pc) { pcCounts[pc] = (pcCounts[pc] || 0) + 1; });
+  });
   var areaRow = document.getElementById('area-row');
   Object.keys(pcCounts).sort(function(a,b) { return pcCounts[b] - pcCounts[a]; }).forEach(function(pc) {
     var btn = document.createElement('button');

@@ -7,7 +7,7 @@ location: "East Meadow, East Meadow Clay Area"
 place: "East Meadow"
 place_category: "event_venues"
 category: "maintenance"
-image: "/assets/images/park-1.avif"
+image: "/assets/images/tags/maintenance.png"
 description: "East Meadow - Maintenance Days - Closed All Day at East Meadow, East Meadow Clay Area in Central Park."
 event_id: "888209"
 event_type: "Special Event"
@@ -15,7 +15,6 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - maintenance
 ---
 

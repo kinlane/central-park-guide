@@ -7,7 +7,7 @@ location: "West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clay
 place: "West 110th Street Playground"
 place_category: "event_venues"
 category: "private-events"
-image: "/assets/images/event-3.avif"
+image: "/assets/images/tags/celebration.png"
 description: "Celebration at West 110th Street Playground Lawn, 110th-Frederick Douglass-Adam Clayton Powell in Central Park."
 event_id: "912683"
 event_type: "Special Event"

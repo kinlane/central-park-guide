@@ -7,7 +7,7 @@ location: "Bowling Green Lawn"
 place: "Bowling Green Lawn"
 place_category: "event_venues"
 category: "maintenance"
-image: "/assets/images/event-3.avif"
+image: "/assets/images/tags/maintenance.png"
 description: "Bowling Green - Maintenance Days - Closed to 2 at Bowling Green Lawn in Central Park."
 event_id: "889691"
 event_type: "Special Event"
@@ -15,7 +15,6 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - maintenance
 ---
 

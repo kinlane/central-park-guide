@@ -4,10 +4,16 @@ date: 2026-04-24
 time: "16:15"
 end_time: "16:45"
 location: "Wagner Cove, Cherry Hill"
-place: "Cherry Hill"
-place_category: "natural_areas"
+place: "Wagner Cove"
+place_category: "event_venues"
+places:
+  - "Wagner Cove"
+  - "Cherry Hill"
+place_categories:
+  - "event_venues"
+  - "natural_areas"
 category: "private-events"
-image: "/assets/images/gallery-7.avif"
+image: "/assets/images/tags/celebration.png"
 description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
 event_id: "918656"
 event_type: "Special Event"
@@ -27,7 +33,7 @@ Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Friday, A
 - **Date:** Friday, April 24, 2026
 - **Time:** 4:15 PM - 4:45 PM
 - **Location:** Wagner Cove, Cherry Hill, Central Park
-- **Place:** Cherry Hill
+- **Place:** Wagner Cove
 - **Type:** Special Event
 - **Event ID:** 918656
 

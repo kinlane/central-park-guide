@@ -4,10 +4,16 @@ date: 2026-11-01
 time: "10:00"
 end_time: "13:00"
 location: "Dana Discovery Center Plaza, Duke Ellington Circle"
-place: "Duke Ellington Circle"
-place_category: "plazas"
+place: "Dana Discovery Center"
+place_category: "event_venues"
+places:
+  - "Dana Discovery Center"
+  - "Duke Ellington Circle"
+place_categories:
+  - "event_venues"
+  - "plazas"
 category: "private-events"
-image: "/assets/images/gallery-6.avif"
+image: "/assets/images/tags/celebration.png"
 description: "Celebration at Dana Discovery Center Plaza, Duke Ellington Circle in Central Park."
 event_id: "887020"
 event_type: "Special Event"
@@ -27,7 +33,7 @@ Celebration takes place at Dana Discovery Center Plaza, Duke Ellington Circle in
 - **Date:** Sunday, November 1, 2026
 - **Time:** 10:00 AM - 1:00 PM
 - **Location:** Dana Discovery Center Plaza, Duke Ellington Circle, Central Park
-- **Place:** Duke Ellington Circle
+- **Place:** Dana Discovery Center
 - **Type:** Special Event
 - **Event ID:** 887020
 

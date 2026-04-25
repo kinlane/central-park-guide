@@ -7,7 +7,7 @@ location: "Lawn Outside Levin Playground (Section A), Lawn Outside Levin Playgro
 place: "Levin Playground"
 place_category: "event_venues"
 category: "maintenance"
-image: "/assets/images/event-3.avif"
+image: "/assets/images/tags/maintenance.png"
 description: "Levin Playground - Maintenance Days - Closed All Day at Lawn Outside Levin Playground (Section A), Lawn Outside Levin Playground (Section B) in Central Park."
 event_id: "888305"
 event_type: "Special Event"
@@ -15,7 +15,6 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - maintenance
 ---
 

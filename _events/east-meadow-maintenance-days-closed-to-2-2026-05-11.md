@@ -7,7 +7,7 @@ location: "East Meadow"
 place: "East Meadow"
 place_category: "event_venues"
 category: "maintenance"
-image: "/assets/images/park-1.avif"
+image: "/assets/images/tags/maintenance.png"
 description: "East Meadow - Maintenance Days - Closed to 2 at East Meadow in Central Park."
 event_id: "888212"
 event_type: "Special Event"
@@ -15,7 +15,6 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - closure
   - maintenance
 ---
 

@@ -48,12 +48,33 @@ for category, items in places_data.items():
 search_tokens = sorted(place_lookup.keys(), key=len, reverse=True)
 
 
+def match_places(location):
+    """Return all distinct vocabulary places mentioned in the location string,
+    ordered by their position in the source. Greedy longest-first to avoid
+    shorter tokens overlapping a longer match."""
+    loc = list(location.lower())
+    matches = []  # (index, name, category)
+    seen = set()
+    for token in search_tokens:  # longest-first
+        text = ''.join(loc)
+        idx = text.find(token)
+        if idx < 0:
+            continue
+        entry = place_lookup[token]
+        if entry['name'] not in seen:
+            matches.append((idx, entry['name'], entry['category']))
+            seen.add(entry['name'])
+        # Mask the matched span so shorter tokens can't overlap-claim it
+        for i in range(idx, idx + len(token)):
+            loc[i] = ' '
+    matches.sort(key=lambda m: m[0])
+    return [{'name': n, 'category': c} for _, n, c in matches]
+
+
 def match_place(location):
-    loc_lower = location.lower()
-    for token in search_tokens:
-        if token in loc_lower:
-            return place_lookup[token]
-    return None
+    """Back-compat: first matched place, or None."""
+    matches = match_places(location)
+    return matches[0] if matches else None
 
 
 # ── Title cleanup ──────────────────────────────────────────────────────
@@ -144,7 +165,7 @@ def categorize(name, event_type):
 
     # Runs / races / walks (BEFORE sports/concerts so "Band of Parents 4 Mile Run Walk"
     # doesn't fall into concerts-performances on "band")
-    if re.search(r'\b(walk|run|race|5k|10k|15k|marathon|jog)\b', name_lower):
+    if re.search(r'\b(walk|run|race|5k|10k|15k|half|marathon|jog)\b', name_lower):
         # but skip if it's actually a training/lesson/class
         if not any(w in name_lower for w in ['training', 'lesson', 'class ', 'course']):
             return 'runs-races'
@@ -322,32 +343,45 @@ def clean_location(loc):
     return ', '.join(cleaned[:2])
 
 
-def get_image(category, location):
-    loc_lower = location.lower()
-    if 'great lawn' in loc_lower: return '/assets/images/gallery-1.avif'
-    if 'bandshell' in loc_lower: return '/assets/images/event-2.avif'
-    if 'bethesda' in loc_lower: return '/assets/images/plan-visit-hero.avif'
-    if 'bow bridge' in loc_lower: return '/assets/images/about-hero.avif'
-    if 'reservoir' in loc_lower: return '/assets/images/events-hero.avif'
-    if 'harlem' in loc_lower or 'dana' in loc_lower: return '/assets/images/gallery-6.avif'
-    if 'cherry' in loc_lower: return '/assets/images/gallery-7.avif'
-    if 'meadow' in loc_lower and 'sheep' not in loc_lower: return '/assets/images/park-1.avif'
-    if 'sheep' in loc_lower: return '/assets/images/gallery-1.avif'
-    if 'delacorte' in loc_lower: return '/assets/images/event-3.avif'
-    if 'cop cot' in loc_lower or 'ladies' in loc_lower: return '/assets/images/gallery-7.avif'
-    if 'north meadow' in loc_lower: return '/assets/images/park-3.avif'
-    if 'heckscher' in loc_lower: return '/assets/images/park-2.avif'
-    if 'belvedere' in loc_lower: return '/assets/images/plan-visit-hero.avif'
-    if 'pilgrim' in loc_lower or 'cedar' in loc_lower: return '/assets/images/homepage-park.avif'
-    if 'dene' in loc_lower: return '/assets/images/gallery-4.avif'
-    images = {
-        'sports': '/assets/images/event-1.avif',
-        'runs-races': '/assets/images/event-1.avif',
-        'concerts-performances': '/assets/images/event-2.avif',
-        'closures': '/assets/images/events-map.avif',
-        'family-community': '/assets/images/event-3.avif',
-    }
-    return images.get(category, '/assets/images/event-3.avif')
+CAT_IMAGES_DIR = '/assets/images/categories'
+TAG_IMAGES_DIR = '/assets/images/tags'
+
+# Available tag images (kept in sync with assets/images/tags/)
+HAVE_TAG_IMAGES = set()
+HAVE_CAT_IMAGES = set()
+_tag_path = os.path.join(REPO_ROOT, 'assets', 'images', 'tags')
+_cat_path = os.path.join(REPO_ROOT, 'assets', 'images', 'categories')
+if os.path.isdir(_tag_path):
+    for _f in os.listdir(_tag_path):
+        if _f.endswith('.png'):
+            HAVE_TAG_IMAGES.add(_f[:-4])
+if os.path.isdir(_cat_path):
+    for _f in os.listdir(_cat_path):
+        if _f.endswith('.png'):
+            HAVE_CAT_IMAGES.add(_f[:-4])
+
+# Tag priority — most specific first
+TAG_PRIORITY = [
+    'walk','race','running','marathon','cycling','skating','wellness','fitness',
+    'softball','baseball','tennis','soccer','kickball','pickleball','frisbee','bowling','model-yachting',
+    'jazz','salsa','dance','theater','opera','film','art','music',
+    'birds','garden','fishing','boating','nature','picnic','dogs',
+    'wedding','ceremony','birthday','celebration','charity','fundraiser',
+    'school-program','education','family',
+    'holiday','spring','fall','annual-tradition',
+    'chess','festival','parade','market','food','literature','talk','media','free',
+    'closure','lawn','maintenance',
+]
+
+def get_image(category, location, tags=None):
+    """Pick the most specific tag-based image, falling back to the category image."""
+    if tags:
+        for t in TAG_PRIORITY:
+            if t in tags and t in HAVE_TAG_IMAGES:
+                return f"{TAG_IMAGES_DIR}/{t}.png"
+    if category in HAVE_CAT_IMAGES:
+        return f"{CAT_IMAGES_DIR}/{category}.png"
+    return '/assets/images/event-3.avif'
 
 
 def make_description(name, event_type, location):
@@ -448,15 +482,16 @@ for event in latest:
         skipped_invalid += 1
         continue
 
-    place = match_place(location)
-    if not place:
+    all_places = match_places(location)
+    if not all_places:
         skipped_unmatched += 1
         unmatched_locs.add(location)
         continue
+    place = all_places[0]
 
     category = categorize(name, event_type)
     tags = get_tags(name, event_type, category)
-    image = get_image(category, location)
+    image = get_image(category, location, tags)
     description = make_description(name, event_type, location)
     date_str = start.strftime('%Y-%m-%d')
     time_str = start.strftime('%H:%M')
@@ -477,6 +512,13 @@ for event in latest:
     lines.append('location: "' + yaml_safe(location) + '"')
     lines.append('place: "' + yaml_safe(place['name']) + '"')
     lines.append('place_category: "' + place['category'] + '"')
+    if len(all_places) > 1:
+        lines.append('places:')
+        for p in all_places:
+            lines.append('  - "' + yaml_safe(p['name']) + '"')
+        lines.append('place_categories:')
+        for p in all_places:
+            lines.append('  - "' + p['category'] + '"')
     lines.append('category: "' + category + '"')
     lines.append('image: "' + image + '"')
     lines.append('description: "' + yaml_safe(description) + '"')

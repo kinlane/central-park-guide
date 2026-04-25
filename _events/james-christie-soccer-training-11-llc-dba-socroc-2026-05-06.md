@@ -7,7 +7,7 @@ location: "Lawn North of Levin Playground"
 place: "Levin Playground"
 place_category: "event_venues"
 category: "education"
-image: "/assets/images/event-1.avif"
+image: "/assets/images/tags/soccer.png"
 description: "James Christie Soccer Training 11 at Lawn North of Levin Playground in Central Park."
 event_id: "909007"
 event_type: "Special Event"
@@ -34,4 +34,4 @@ James Christie Soccer Training 11 takes place at Lawn North of Levin Playground 
 
 ## About This Event
 
-This is a permitted special event event at Lawn North of Levin Playground. The area may have restricted access during the event period.
+James Christie Soccer Training 11 is a permitted event taking place at Lawn North of Levin Playground in Central Park. Contact the event organizers for more details about attendance and participation.

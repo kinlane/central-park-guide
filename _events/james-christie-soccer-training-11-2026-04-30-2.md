@@ -7,7 +7,7 @@ location: "South Dead Road A"
 place: "South Dead Road"
 place_category: "event_venues"
 category: "education"
-image: "/assets/images/event-1.avif"
+image: "/assets/images/tags/soccer.png"
 description: "James Christie Soccer Training 11 at South Dead Road A in Central Park."
 event_id: "907918"
 event_type: "Special Event"
@@ -34,4 +34,4 @@ James Christie Soccer Training 11 takes place at South Dead Road A in Central Pa
 
 ## About This Event
 
-This is a permitted special event event at South Dead Road A. The area may have restricted access during the event period.
+James Christie Soccer Training 11 is a permitted event taking place at South Dead Road A in Central Park. Contact the event organizers for more details about attendance and participation.

@@ -57,7 +57,12 @@ layout: default
             <p style="font-weight: 600; margin: 0;">{{ page.location }}</p>
           </div>
 
-          {% if page.place %}
+          {% if page.places and page.places.size > 1 %}
+          <div style="margin-bottom: 20px;">
+            <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Places</p>
+            <p style="font-weight: 600; margin: 0;">{% for p in page.places %}<a href="/events/?place={{ p | url_encode }}">{{ p }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+          </div>
+          {% elsif page.place %}
           <div style="margin-bottom: 20px;">
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Place</p>
             <p style="font-weight: 600; margin: 0;"><a href="/events/?place={{ page.place | url_encode }}">{{ page.place }}</a></p>

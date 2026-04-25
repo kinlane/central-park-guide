@@ -4,10 +4,16 @@ date: 2026-05-03
 time: "15:00"
 end_time: "16:00"
 location: "Wagner Cove, Cherry Hill"
-place: "Cherry Hill"
-place_category: "natural_areas"
+place: "Wagner Cove"
+place_category: "event_venues"
+places:
+  - "Wagner Cove"
+  - "Cherry Hill"
+place_categories:
+  - "event_venues"
+  - "natural_areas"
 category: "private-events"
-image: "/assets/images/gallery-7.avif"
+image: "/assets/images/tags/wedding.png"
 description: "Private ceremony at Wagner Cove, Cherry Hill in Central Park."
 event_id: "930196"
 event_type: "Special Event"
@@ -27,7 +33,7 @@ Wedding for Tiffany and Gabriel takes place at Wagner Cove, Cherry Hill in Centr
 - **Date:** Sunday, May 3, 2026
 - **Time:** 3:00 PM - 4:00 PM
 - **Location:** Wagner Cove, Cherry Hill, Central Park
-- **Place:** Cherry Hill
+- **Place:** Wagner Cove
 - **Type:** Special Event
 - **Event ID:** 930196
 
