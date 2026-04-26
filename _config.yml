@@ -10,6 +10,9 @@ collections:
   events:
     output: true
     permalink: /events/:slug/
+  personas:
+    output: true
+    permalink: /personas/:slug/
 
 sass:
   sass_dir: _sass
@@ -31,6 +34,11 @@ defaults:
       type: events
     values:
       layout: event
+  - scope:
+      path: ""
+      type: personas
+    values:
+      layout: persona
 
 plugins:
   - jekyll-seo-tag

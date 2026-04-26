@@ -1,0 +1,71 @@
+---
+layout: default
+---
+{%- assign p = nil -%}
+{%- for entry in site.data.personas.personas -%}
+  {%- if entry.id == page.persona_id -%}{%- assign p = entry -%}{%- endif -%}
+{%- endfor -%}
+
+{% if p %}
+<section class="hero hero--persona" style="padding: 140px 0 64px; background: #f7f6f1;">
+  <div class="container" style="text-align:center; max-width: 760px;">
+    {% if p.icon %}<img src="{{ p.icon }}" alt="{{ p.title }} icon" style="width:120px; height:120px; margin-bottom:20px; border-radius:50%; background:#fff; padding:12px;">{% endif %}
+    <h1 style="margin-bottom: 12px;">{{ p.title }}</h1>
+    <p style="font-size: 1.1rem; color: rgba(0,0,0,0.7);">{{ p.blurb }}</p>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:24px;">
+      {% for t in p.tags %}
+      <span style="background:#fff; padding:4px 12px; border-radius:20px; font-size:0.8rem; font-weight:600;">{{ t }}</span>
+      {% endfor %}
+    </div>
+    <a href="/updates/?persona={{ p.id }}" class="btn btn-green" style="margin-top: 32px;">Get {{ p.title }} updates</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    {% assign now = 'now' | date: '%Y-%m-%d' %}
+    {% assign sorted = site.events | sort: 'date' %}
+    {% assign matches = "" | split: "" %}
+    {% for event in sorted %}
+      {% assign event_date = event.date | date: '%Y-%m-%d' %}
+      {% if event_date >= now and event.tags %}
+        {% assign hit = false %}
+        {% for t in p.tags %}
+          {% if event.tags contains t %}{% assign hit = true %}{% endif %}
+        {% endfor %}
+        {% if hit %}{% assign matches = matches | push: event %}{% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <h2 class="text-center mb-md">Upcoming events for {{ p.title }}s</h2>
+    <p class="text-center" style="color:rgba(0,0,0,0.6); margin-bottom: 40px;">{{ matches | size }} upcoming event{% if matches.size != 1 %}s{% endif %} matching your interests.</p>
+
+    {% if matches.size > 0 %}
+    <div class="grid-3">
+      {% for event in matches limit: 30 %}
+      <a href="{{ event.url }}" class="event-card" style="text-decoration: none; color: inherit;">
+        <img class="event-card__image" src="{{ event.image }}" alt="{{ event.title }}">
+        <div class="event-card__body">
+          {% include primary-tag-badge.html tags=event.tags %}
+          <div class="event-card__meta">
+            <span><img src="/assets/icons/calendar.png" alt="">{{ event.date | date: "%b %-d" }}</span>
+            <span><img src="/assets/icons/time.png" alt="">{{ event.time }}</span>
+          </div>
+          <h3 class="event-card__title">{{ event.title }}</h3>
+          <p class="event-card__location"><img src="/assets/icons/location.png" alt="" style="width:14px;height:14px;display:inline;vertical-align:middle;"> {{ event.location }}</p>
+          <p class="event-card__desc">{{ event.description }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% if matches.size > 30 %}
+    <p class="text-center" style="margin-top: 32px;">
+      <a href="/events/?tag={% for t in p.tags %}{{ t | url_encode }}{% unless forloop.last %},{% endunless %}{% endfor %}" class="btn btn-outline">See all {{ matches.size }} events</a>
+    </p>
+    {% endif %}
+    {% else %}
+    <p class="text-center" style="color:rgba(0,0,0,0.5);">Nothing on the calendar yet — sign up and we'll let you know.</p>
+    {% endif %}
+  </div>
+</section>
+{% endif %}

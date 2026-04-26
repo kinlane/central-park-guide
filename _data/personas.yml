@@ -1,0 +1,63 @@
+# Personas users can select on the /updates/ signup form. Each maps to one
+# or more event tags so a persona's landing page can list the events they
+# care about. Tag values match the Title Case form stored on event files.
+personas:
+  - id: runner
+    title: "Runner"
+    blurb: "Race calendars, route closures, and the long-loop traffic windows."
+    icon: /assets/images/personas/runner.png
+    tags: [Running, Race, Marathon, "Runs & Races"]
+
+  - id: walker
+    title: "Walker"
+    blurb: "Charity walks, history-walks, and quiet routes when the cyclists thin out."
+    icon: /assets/images/personas/walker.png
+    tags: [Walk, Hike]
+
+  - id: cyclist
+    title: "Cyclist"
+    blurb: "Bike-loop closures, group rides, and the days the park goes car-free."
+    icon: /assets/images/personas/cyclist.png
+    tags: [Cycling]
+
+  - id: theater-fan
+    title: "Theater Fan"
+    blurb: "Shakespeare in the Park, marionette shows, and outdoor performances."
+    icon: /assets/images/personas/theater-fan.png
+    tags: [Theater, Shakespeare, Puppet, Comedy]
+
+  - id: music-fan
+    title: "Music Fan"
+    blurb: "Concerts, jazz nights, salsa socials, and SummerStage lineups."
+    icon: /assets/images/personas/music-fan.png
+    tags: [Music, Jazz, Salsa, Folk, "Hip-Hop", Gospel, Blues, "World Music", "Latin Music", Opera, "Concerts & Performances"]
+
+  - id: family
+    title: "Family"
+    blurb: "Kid-friendly events, school programs, picnics, and birthday-friendly lawns."
+    icon: /assets/images/personas/family.png
+    tags: [Family, "Family & Community", Birthday, "School Program", Picnic]
+
+  - id: sports-fan
+    title: "Sports Fan"
+    blurb: "League games, pickup spots, and which fields are reserved when."
+    icon: /assets/images/personas/sports-fan.png
+    tags: [Sports, Softball, Baseball, "T-Ball", Tennis, Soccer, Kickball, Pickleball, Basketball, Volleyball]
+
+  - id: wellness-seeker
+    title: "Wellness Seeker"
+    blurb: "Yoga in the meadow, meditation circles, and free fitness classes."
+    icon: /assets/images/personas/wellness-seeker.png
+    tags: [Yoga, Meditation, Wellness, Fitness, "Support Group"]
+
+  - id: nature-lover
+    title: "Nature Lover"
+    blurb: "Bird walks, garden tours, fishing days, and quiet ramble routes."
+    icon: /assets/images/personas/nature-lover.png
+    tags: [Birds, Nature, Garden, Fishing, Boating, Dogs]
+
+  - id: park-watcher
+    title: "Park Watcher"
+    blurb: "Closures and maintenance — alerts so you can route around the chaos."
+    icon: /assets/images/personas/park-watcher.png
+    tags: [Closures, Maintenance]

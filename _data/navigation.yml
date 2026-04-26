@@ -5,12 +5,16 @@ main:
     url: /about-us/
   - title: Events
     url: /events/
+  - title: Updates
+    url: /updates/
   - title: Stay in the loop
     url: /in-the-loop/
   - title: Contact us
     url: /contact-us/
 footer:
   quicklinks:
+    - title: "Get updates"
+      url: /updates/
     - title: "hello@centralpark.guide"
       url: "mailto:hello@centralpark.guide"
   more:

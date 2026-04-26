@@ -1,0 +1,190 @@
+---
+layout: default
+title: "Get updates"
+description: "Sign up for Central Park.Guide updates. Pick the personas that match how you use the park — runner, walker, music fan, family, and more — and we'll only send what's relevant."
+permalink: /updates/
+---
+
+<style>
+  .updates-form {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 32px;
+  }
+  .updates-form label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 6px;
+  }
+  .updates-form input[type=text],
+  .updates-form input[type=email] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    margin-bottom: 20px;
+  }
+  .persona-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .persona-tile {
+    border: 2px solid #eee;
+    border-radius: 12px;
+    padding: 16px 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+    background: #fafafa;
+    user-select: none;
+  }
+  .persona-tile:hover { border-color: #3ca474; }
+  .persona-tile.is-selected {
+    border-color: #3ca474;
+    background: rgba(60,164,116,0.08);
+  }
+  .persona-tile__icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .persona-tile__title {
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+  .persona-tile__blurb {
+    font-size: 0.75rem;
+    color: rgba(0,0,0,0.55);
+    line-height: 1.3;
+  }
+  .updates-form__error {
+    background: rgba(231,76,60,0.08);
+    color: #c0392b;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    display: none;
+  }
+  .updates-form.is-submitting button[type=submit] { opacity: 0.5; pointer-events: none; }
+</style>
+
+<!-- Hero — background image rotates per build via Liquid sample -->
+{% assign hero_image = site.data.central-park-images.images | sample %}
+<section class="hero">
+  <div class="hero__bg">
+    <img src="{{ hero_image }}" alt="Central Park scene">
+  </div>
+  <div class="container hero__content" style="text-align:center; max-width: 800px;">
+    <h1>Get updates that fit your park</h1>
+    <p style="font-size: 1.15rem;">Pick the personas that describe how you use Central Park. We'll only send what matches — no firehose.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="updates-form" id="updates-form" novalidate>
+      <div class="updates-form__error" id="updates-error"></div>
+
+      <label for="updates-name">Name</label>
+      <input type="text" id="updates-name" name="name" autocomplete="name" required>
+
+      <label for="updates-email">Email</label>
+      <input type="email" id="updates-email" name="email" autocomplete="email" required>
+
+      <label>Pick one or more personas</label>
+      <div class="persona-grid" id="persona-grid">
+        {% for p in site.data.personas.personas %}
+        <label class="persona-tile" data-persona="{{ p.id }}">
+          <input type="checkbox" name="personas" value="{{ p.id }}" hidden>
+          <img class="persona-tile__icon" src="{{ p.icon }}" alt="" onerror="this.style.background='#eee';this.removeAttribute('src');">
+          <div class="persona-tile__title">{{ p.title }}</div>
+          <div class="persona-tile__blurb">{{ p.blurb }}</div>
+        </label>
+        {% endfor %}
+      </div>
+
+      <button type="submit" class="btn btn-green" style="width:100%; padding: 14px;">Send me updates</button>
+      <p style="font-size:0.8rem; color:rgba(0,0,0,0.5); text-align:center; margin-top:14px;">We'll send a confirmation email to verify your address.</p>
+    </form>
+  </div>
+</section>
+
+<script>
+(function() {
+  var form = document.getElementById('updates-form');
+  var errorBox = document.getElementById('updates-error');
+  var grid = document.getElementById('persona-grid');
+
+  // Persona tile selection — click toggles the hidden checkbox + .is-selected
+  grid.querySelectorAll('.persona-tile').forEach(function(tile) {
+    var cb = tile.querySelector('input[type=checkbox]');
+    tile.addEventListener('click', function(e) {
+      e.preventDefault();
+      cb.checked = !cb.checked;
+      tile.classList.toggle('is-selected', cb.checked);
+    });
+  });
+
+  // ?persona=runner pre-selects the matching tile
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('persona')) {
+    var pre = params.get('persona').split(',').filter(Boolean);
+    pre.forEach(function(pid) {
+      var tile = grid.querySelector('.persona-tile[data-persona="' + pid + '"]');
+      if (tile) {
+        var cb = tile.querySelector('input[type=checkbox]');
+        cb.checked = true;
+        tile.classList.add('is-selected');
+      }
+    });
+  }
+
+  function showError(msg) {
+    errorBox.textContent = msg;
+    errorBox.style.display = 'block';
+  }
+  function clearError() { errorBox.style.display = 'none'; }
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearError();
+    var name = form.name.value.trim();
+    var email = form.email.value.trim();
+    var personas = Array.from(grid.querySelectorAll('input[type=checkbox]:checked')).map(function(c) { return c.value; });
+    if (!name) return showError('Please enter your name.');
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showError('Please enter a valid email address.');
+    if (personas.length === 0) return showError('Please pick at least one persona.');
+
+    form.classList.add('is-submitting');
+    fetch('https://updates.centralpark.guide/signup', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({name: name, email: email, personas: personas})
+    })
+      .then(function(r) {
+        if (!r.ok) return r.text().then(function(t) { throw new Error(t || 'Signup failed (' + r.status + ')'); });
+        window.location.href = '/updates/thanks/';
+      })
+      .catch(function(err) {
+        form.classList.remove('is-submitting');
+        showError(err.message || 'Something went wrong. Please try again.');
+      });
+  });
+})();
+</script>
