@@ -1194,10 +1194,11 @@ permalink: /events/
   if (params.get('view')) { state.view = params.get('view'); }
 
   // Filter panel collapse toggle (persists in localStorage)
+  // Collapsed by default; opens only if the user has explicitly expanded it.
   var filterPanel = document.getElementById('filter-panel');
   var filterToggle = document.getElementById('filter-panel-toggle');
   var toggleBtn = filterToggle.querySelector('.filter-panel__toggle');
-  if (localStorage.getItem('cpg_filters_collapsed') === '1') {
+  if (localStorage.getItem('cpg_filters_collapsed') !== '0') {
     filterPanel.classList.add('is-collapsed');
     toggleBtn.textContent = 'Show';
   }
