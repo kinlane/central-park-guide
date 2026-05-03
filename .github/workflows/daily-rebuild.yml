@@ -1,0 +1,30 @@
+name: Daily rebuild (drop past events)
+
+# Force a daily Pages rebuild so the events page (filtered with `event.date >= now`
+# at build time) drops yesterday's events without a manual push.
+#
+# Two cron entries handle DST: 12:00 AM EDT = 04:00 UTC, 12:00 AM EST = 05:00 UTC.
+# During each season one of the two fires at midnight local; the other fires at
+# 11 PM or 1 AM. Both runs are cheap (one empty commit each) and harmless.
+
+on:
+  schedule:
+    - cron: '0 4 * * *'   # 12:00 AM EDT / 11:00 PM EST
+    - cron: '0 5 * * *'   # 12:00 AM EST / 1:00 AM EDT
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Empty commit to trigger Pages rebuild
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: daily rebuild (drop past events) — $(date -u +%Y-%m-%d)"
+          git push
