@@ -1,0 +1,36 @@
+---
+title: "Baseball - 12 and Under (Little League)"
+date: 2026-05-28
+time: "16:00"
+end_time: "18:00"
+location: "North Meadow-Softball-12"
+place: "North Meadow"
+place_category: "meadows_and_lawns"
+image: "/assets/images/tags/baseball.png"
+description: "Baseball - 12 and Under (Little League) at North Meadow-Softball-12. Youth league permitted event in Central Park."
+event_id: "913119"
+event_type: "Sport - Youth"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - "Baseball"
+  - "Sports"
+  - "Youth"
+---
+
+Baseball - 12 and Under (Little League) takes place at North Meadow-Softball-12 in Central Park on Thursday, May 28, 2026.
+
+## Event Details
+
+- **Event:** Baseball - 12 and Under (Little League)
+- **Date:** Thursday, May 28, 2026
+- **Time:** 4:00 PM - 6:00 PM
+- **Location:** North Meadow-Softball-12, Central Park
+- **Place:** North Meadow
+- **Type:** Sport - Youth
+- **Event ID:** 913119
+
+## About This Event
+
+This is a permitted sport - youth event at North Meadow-Softball-12. The area may have restricted access during the event period.

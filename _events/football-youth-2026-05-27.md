@@ -1,0 +1,37 @@
+---
+title: "Football - Youth"
+date: 2026-05-27
+time: "18:00"
+end_time: "13:30"
+location: "Heckscher Playground: Soccer-01"
+place: "Heckscher Playground"
+place_category: "event_venues"
+image: "/assets/images/categories/sports.png"
+description: "Football - Youth at Heckscher Playground: Soccer-01. Youth league permitted event in Central Park."
+event_id: "907919"
+event_type: "Sport - Youth"
+event_borough: "Manhattan"
+community_board: "4"
+police_precinct: "83"
+tags:
+  - "Football"
+  - "Sports"
+  - "T-Ball"
+  - "Youth"
+---
+
+Football - Youth takes place at Heckscher Playground: Soccer-01 in Central Park on Wednesday, May 27, 2026.
+
+## Event Details
+
+- **Event:** Football - Youth
+- **Date:** Wednesday, May 27, 2026
+- **Time:** 6:00 PM - 1:30 PM
+- **Location:** Heckscher Playground: Soccer-01, Central Park
+- **Place:** Heckscher Playground
+- **Type:** Sport - Youth
+- **Event ID:** 907919
+
+## About This Event
+
+This is a permitted sport - youth event at Heckscher Playground: Soccer-01. The area may have restricted access during the event period.

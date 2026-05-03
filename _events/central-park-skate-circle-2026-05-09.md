@@ -1,0 +1,35 @@
+---
+title: "Central Park Skate Circle"
+date: 2026-05-09
+time: "14:00"
+end_time: "19:00"
+location: "Dead Road North"
+place: "Dead Road North"
+place_category: "event_venues"
+image: "/assets/images/tags/skating.png"
+description: "Central Park Skate Circle at Dead Road North in Central Park."
+event_id: "890071"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - "Family & Community"
+  - "Skating"
+---
+
+Central Park Skate Circle takes place at Dead Road North in Central Park on Saturday, May 9, 2026.
+
+## Event Details
+
+- **Event:** Central Park Skate Circle
+- **Date:** Saturday, May 9, 2026
+- **Time:** 2:00 PM - 7:00 PM
+- **Location:** Dead Road North, Central Park
+- **Place:** Dead Road North
+- **Type:** Special Event
+- **Event ID:** 890071
+
+## About This Event
+
+Central Park Skate Circle is a permitted event taking place at Dead Road North in Central Park. Contact the event organizers for more details about attendance and participation.

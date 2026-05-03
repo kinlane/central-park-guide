@@ -598,6 +598,17 @@ dup_count = sum(1 for files in existing_by_key.values() if len(files) > 1)
 total_files = sum(len(files) for files in existing_by_key.values())
 print(f"Indexed {total_files} files across {len(existing_by_key)} unique (event_id, date) combos ({dup_count} duplicates)")
 
+# Remove past event files left over from previous runs
+_purged_past = 0
+for (eid, date), files in list(existing_by_key.items()):
+    if date and date < TODAY:
+        for info in files:
+            os.remove(info['path'])
+            _purged_past += 1
+        del existing_by_key[(eid, date)]
+if _purged_past:
+    print(f"Purged {_purged_past} past event files (date < {TODAY})")
+
 
 # ── Process latest events from API ────────────────────────────────────
 with open(LATEST_JSON) as f:
@@ -610,6 +621,8 @@ created = 0
 updated = 0
 skipped_unmatched = 0
 skipped_invalid = 0
+skipped_past = 0
+TODAY = datetime.now().strftime('%Y-%m-%d')
 unmatched_locs = set()
 api_event_ids = set()
 api_keys = set()
@@ -669,6 +682,9 @@ for event in latest:
     image = get_image(category, location, tags)
     description = make_description(name, event_type, location)
     date_str = start.strftime('%Y-%m-%d')
+    if date_str < TODAY:
+        skipped_past += 1
+        continue
     time_str = start.strftime('%H:%M')
     end_time_str = end.strftime('%H:%M')
     cb = event.get('community_board', '').rstrip(', ')
@@ -853,6 +869,7 @@ print(f"  Total API events processed: {len(latest)}")
 print(f"  Files not in API: {title_only_cleaned} titles cleaned, {description_backfilled} descriptions backfilled, {left_alone_count} files visited")
 print(f"  Skipped (location unmatched): {skipped_unmatched}")
 print(f"  Skipped (invalid data): {skipped_invalid}")
+print(f"  Skipped (past date): {skipped_past}")
 if unmatched_locs:
     print(f"\n  Unmatched locations:")
     for loc in sorted(unmatched_locs):

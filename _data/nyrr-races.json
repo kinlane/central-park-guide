@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-04-25T20:59:12+00:00",
+  "fetched_at": "2026-05-02T00:41:03+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -58,6 +58,222 @@
       "title": "2024 United Airlines NYC Half",
       "total_finishers": 27824,
       "year": 2024
+    },
+    "2026nyrrbrooklynrun5k": {
+      "candidate_title": "NYRR Brooklyn RUN 5k",
+      "fetched_at": "2026-05-02T00:41:01+00:00",
+      "last_error": "wayback_err_timeout",
+      "parsed": false,
+      "slug": "nyrrbrooklynrun5k",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrrbrooklynrun5k",
+        "https://www.nyrr.org/races/2026/nyrrbrooklynrun5k",
+        "https://www.nyrr.org/races/nyrrbrooklynrun5k"
+      ],
+      "year": 2026
+    },
+    "2026nyrrmindful5k": {
+      "candidate_title": "NYRR Mindful 5k",
+      "fetched_at": "2026-05-02T00:40:09+00:00",
+      "last_error": "wayback_err_timeout",
+      "parsed": false,
+      "slug": "nyrrmindful5k",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrrmindful5k",
+        "https://www.nyrr.org/races/2026/nyrrmindful5k",
+        "https://www.nyrr.org/races/nyrrmindful5k"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatastoriapark": {
+      "candidate_title": "NYRR Open Run at Astoria Park",
+      "fetched_at": "2026-05-02T00:34:26+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "nyrropenrunatastoriapark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatastoriapark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatastoriapark",
+        "https://www.nyrr.org/races/nyrropenrunatastoriapark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatbaisleypondpark": {
+      "candidate_title": "NYRR Open Run at Baisley Pond Park",
+      "fetched_at": "2026-05-02T00:29:16+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "nyrropenrunatbaisleypondpark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatbaisleypondpark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatbaisleypondpark",
+        "https://www.nyrr.org/races/nyrropenrunatbaisleypondpark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatcanarsiepark": {
+      "candidate_title": "NYRR Open Run at Canarsie Park",
+      "fetched_at": "2026-05-02T00:28:12+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "nyrropenrunatcanarsiepark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatcanarsiepark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatcanarsiepark",
+        "https://www.nyrr.org/races/nyrropenrunatcanarsiepark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatconferencehousepark": {
+      "candidate_title": "NYRR Open Run at Conference House Park",
+      "fetched_at": "2026-05-02T00:37:08+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "nyrropenrunatconferencehousepark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatconferencehousepark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatconferencehousepark",
+        "https://www.nyrr.org/races/nyrropenrunatconferencehousepark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatcrocheronpark": {
+      "candidate_title": "NYRR Open Run at Crocheron Park",
+      "fetched_at": "2026-05-02T00:30:14+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunatcrocheronpark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatcrocheronpark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatcrocheronpark",
+        "https://www.nyrr.org/races/nyrropenrunatcrocheronpark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatcunninghampark": {
+      "candidate_title": "NYRR Open Run at Cunningham Park",
+      "fetched_at": "2026-05-02T00:35:54+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunatcunninghampark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatcunninghampark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatcunninghampark",
+        "https://www.nyrr.org/races/nyrropenrunatcunninghampark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatflushingmeadowscoronapark": {
+      "candidate_title": "NYRR Open Run at Flushing Meadows Corona Park",
+      "fetched_at": "2026-05-02T00:32:59+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunatflushingmeadowscoronapark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatflushingmeadowscoronapark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatflushingmeadowscoronapark",
+        "https://www.nyrr.org/races/nyrropenrunatflushingmeadowscoronapark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunathighlandpark": {
+      "candidate_title": "NYRR Open Run at Highland Park",
+      "fetched_at": "2026-05-02T00:33:45+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunathighlandpark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunathighlandpark",
+        "https://www.nyrr.org/races/2026/nyrropenrunathighlandpark",
+        "https://www.nyrr.org/races/nyrropenrunathighlandpark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatinwoodhillpark": {
+      "candidate_title": "NYRR Open Run at Inwood Hill Park",
+      "fetched_at": "2026-05-02T00:30:52+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunatinwoodhillpark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatinwoodhillpark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatinwoodhillpark",
+        "https://www.nyrr.org/races/nyrropenrunatinwoodhillpark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatmorningsidepark": {
+      "candidate_title": "NYRR Open Run at Morningside Park",
+      "fetched_at": "2026-05-02T00:27:11+00:00",
+      "last_error": "wayback_err_timeout",
+      "parsed": false,
+      "slug": "nyrropenrunatmorningsidepark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatmorningsidepark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatmorningsidepark",
+        "https://www.nyrr.org/races/nyrropenrunatmorningsidepark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatshoreroadpark": {
+      "candidate_title": "NYRR Open Run at Shore Road Park",
+      "fetched_at": "2026-05-02T00:35:17+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunatshoreroadpark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatshoreroadpark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatshoreroadpark",
+        "https://www.nyrr.org/races/nyrropenrunatshoreroadpark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatsoundviewpark": {
+      "candidate_title": "NYRR Open Run at Soundview Park",
+      "fetched_at": "2026-05-02T00:38:00+00:00",
+      "last_error": "wayback_err_timeout",
+      "parsed": false,
+      "slug": "nyrropenrunatsoundviewpark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatsoundviewpark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatsoundviewpark",
+        "https://www.nyrr.org/races/nyrropenrunatsoundviewpark"
+      ],
+      "year": 2026
+    },
+    "2026nyrropenrunatstmaryspark": {
+      "candidate_title": "NYRR Open Run at St Marys Park",
+      "fetched_at": "2026-05-02T00:31:58+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrropenrunatstmaryspark",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrropenrunatstmaryspark",
+        "https://www.nyrr.org/races/2026/nyrropenrunatstmaryspark",
+        "https://www.nyrr.org/races/nyrropenrunatstmaryspark"
+      ],
+      "year": 2026
+    },
+    "2026nyrrpremarathonyouthevent": {
+      "candidate_title": "NYRR Pre Marathon Youth Event",
+      "fetched_at": "2026-05-02T00:25:37+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrrpremarathonyouthevent",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrrpremarathonyouthevent",
+        "https://www.nyrr.org/races/2026/nyrrpremarathonyouthevent",
+        "https://www.nyrr.org/races/nyrrpremarathonyouthevent"
+      ],
+      "year": 2026
+    },
+    "2026rbcbrooklynhalf": {
+      "candidate_title": "2026 RBC Brooklyn Half",
+      "fetched_at": "2026-05-02T00:39:06+00:00",
+      "parsed": false,
+      "reason": "not_central_park",
+      "slug": "rbcbrooklynhalf",
+      "year": 2026
     }
   }
 }
