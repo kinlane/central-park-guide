@@ -1,0 +1,57 @@
+- timestamp: '2026-05-18T00:22:20.444820+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:21.232071+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Walking Plans: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:21.967255+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:22.702686+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:23.393793+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:24.071056+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Walking Plans: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:24.726453+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Mon May 18 \u2013 Sun May 24"
+  week_of: '2026-05-17'
+  status: sent
+- timestamp: '2026-05-18T00:22:25.389345+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "Final week of Julius Caesar + Bandshell season opens: Mon May 18 \u2013\
+    \ Sun May 24"
+  week_of: '2026-05-17'
+  status: sent

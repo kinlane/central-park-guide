@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<section class="email-page" style="padding: 100px 0 64px; background: #f7f6f1;">
+  <div class="container" style="max-width: 760px;">
+    <a href="/updates/archive/" style="font-size: 0.9rem; display: inline-flex; align-items: center; gap: 6px; margin-bottom: 24px; color: rgba(0,0,0,0.6);">&larr; Back to all updates</a>
+
+    <div style="background:#fff; border-radius: 12px; padding: 48px 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
+      <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom: 16px; font-size: 0.85rem; color: rgba(0,0,0,0.55);">
+        <span><strong>Week of</strong> {{ page.week_of | date: "%B %-d, %Y" }}</span>
+        <span>&middot;</span>
+        <span><strong>For</strong> {{ page.audience }}</span>
+      </div>
+
+      <h1 style="margin-top: 8px; margin-bottom: 24px; font-size: 1.7rem; line-height: 1.25;">{{ page.subject }}</h1>
+
+      <div class="email-body" style="font-size: 1rem; line-height: 1.6;">
+        {{ content }}
+      </div>
+    </div>
+
+    <div style="margin-top: 32px; padding: 24px; background: #fff; border-radius: 12px; text-align: center;">
+      <p style="margin: 0 0 12px; color: rgba(0,0,0,0.7);">Get this delivered to your inbox every week.</p>
+      <a href="/updates/" class="btn btn-green">Sign up for updates</a>
+    </div>
+  </div>
+</section>
+
+<style>
+.email-body h1 { display: none; }
+.email-body h2 { margin-top: 32px; margin-bottom: 12px; font-size: 1.25rem; }
+.email-body p, .email-body ul, .email-body ol { margin-bottom: 16px; }
+.email-body ul, .email-body ol { padding-left: 24px; }
+.email-body li { margin-bottom: 4px; }
+.email-body strong { color: rgba(0,0,0,0.9); }
+.email-body table { border-collapse: collapse; margin: 16px 0; }
+.email-body th, .email-body td { border: 1px solid rgba(0,0,0,0.1); padding: 8px 12px; }
+.email-body hr { border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 32px 0; }
+</style>

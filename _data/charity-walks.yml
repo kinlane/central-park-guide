@@ -1,0 +1,76 @@
+# Annual charity walks/runs that use Central Park as a venue but are missed by
+# the four other event sources:
+#
+#   1. NYC Open Data (tvpp-9vvx)      — skews toward street/sidewalk permits;
+#                                       large Parks-venue private bookings
+#                                       like AIDS Walk don't flow through.
+#   2. centralparknyc.org             — Conservancy programming only.
+#   3. centralpark.com                — in-park commercial/community programming.
+#   4. NYRR (nyrr-races.json)         — running races only.
+#
+# Each entry below is a recurring annual event. Confirm the year's date and
+# update the `dates:` map each spring. Entries where the current year's date
+# is null are skipped by the merge until filled.
+
+walks:
+
+  - id: aids-walk-ny
+    title: "AIDS Walk New York"
+    organizer: "GMHC"
+    source_url: "https://aidswalkny.org/day-of-event/"
+    recurrence: "Third Sunday of May (typical)"
+    dates:
+      "2026": "2026-05-17"
+    start_time: "10:00"
+    opening_ceremony_time: "09:15"
+    end_time: "12:30"
+    location: "Naumburg Bandshell"
+    event_type: "Charity Walk"
+    event_borough: "Manhattan"
+    expected_attendance: 30000
+    affects_loop: true
+    route_impact: >
+      Opening ceremony at Naumburg Bandshell 9:15 AM, 6.2-mile walk through
+      Central Park starting 10 AM. Crowds enter from CPW, Fifth Ave, and both
+      transverses. East Drive in the 60s–70s is unusable for running roughly
+      9 AM – 12:30 PM.
+    audience_relevance:
+      - runners
+      - cyclists
+      - walkers
+      - park-watcher
+    description: >
+      Annual fundraiser for GMHC (Gay Men's Health Crisis). Opening ceremony
+      at the Naumburg Bandshell on the Mall, followed by a 6.2-mile route
+      through Central Park. Finish-line festival on the Mall through 12:30 PM.
+    tags:
+      - charity
+      - walk
+      - affects-loop
+      - annual-tradition
+      - lgbtq
+
+  # Template for future additions. Copy, fill in, and add to the `walks:` list
+  # above when verified. Required fields: id, title, organizer, source_url,
+  # recurrence, dates (with current year), location (must match a place in
+  # central-park-places.yml), event_borough, description.
+  #
+  # - id: kebab-case-id
+  #   title: "Display Title"
+  #   organizer: "Hosting nonprofit"
+  #   source_url: "https://..."
+  #   recurrence: "Plain-English pattern (e.g. 'First Sunday of October')"
+  #   dates:
+  #     "2026": null            # YYYY-MM-DD when confirmed, null otherwise
+  #   start_time: "HH:MM"
+  #   end_time: "HH:MM"
+  #   location: "Place name from central-park-places.yml"
+  #   event_type: "Charity Walk"
+  #   event_borough: "Manhattan"
+  #   affects_loop: false
+  #   audience_relevance: [walkers]
+  #   description: >
+  #     One-sentence summary of the event.
+  #   tags:
+  #     - charity
+  #     - walk

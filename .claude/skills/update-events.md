@@ -1,6 +1,6 @@
-# Update Events from NYC Open Data, Central Park Conservancy & centralpark.com
+# Update Events from NYC Open Data, Central Park Conservancy, centralpark.com & curated charity walks
 
-Update Central Park Guide events by fetching permitted event data from three sources, filtering against the Central Park places vocabulary, merging (with title cleanup and category mapping), and writing Jekyll collection files. All future events automatically display on the public site — no curation step.
+Update Central Park Guide events by fetching permitted event data from four upstream sources plus a hand-curated charity-walks file, filtering against the Central Park places vocabulary, merging (with title cleanup and category mapping), and writing Jekyll collection files. All future events automatically display on the public site — no curation step.
 
 ## Quick start (NYC Open Data refresh)
 
@@ -181,9 +181,93 @@ Each event page/record has:
 
 **The raw data is cached to `_data/centralpark-com-events.json` for reference.**
 
+### Source 5: New York Cycle Club rides (nycc.org/upcoming-rides)
+
+NYCC publishes its weekly group-ride calendar at `https://nycc.org/upcoming-rides`. Most rides start outside Central Park (Long Island, Jersey, etc.), but a meaningful share roll out from **Loeb Boathouse**, the **72nd Street Transverse**, or **Engineers' Gate (90th & 5th)** — and they briefly occupy East Drive on the way out. Useful in the cyclist and runner persona emails as a heads-up about peloton activity in the early-morning loop.
+
+- **Listing URL:** `https://nycc.org/upcoming-rides`
+- **Cloudflare caveat:** the live site sits behind Cloudflare's managed JS challenge — direct curl/WebFetch returns 403. WordPress feed endpoints (`/feed`, `/wp-json/wp/v2/posts`, `/upcoming-rides/feed`) are also blocked. Follow the same fallback chain we use for NYRR: try live first, then Wayback (`https://web.archive.org/web/{TIMESTAMP}/https://nycc.org/upcoming-rides`), then log the miss and skip. Re-run once a snapshot exists.
+- **Wayback coverage gap (critical):** Wayback indexes the listing page (`/upcoming-rides`) but **NOT** the individual ride detail pages (`/node/{ID}`). Verified empirically via the CDX API: every detail-page node ID tested returned zero snapshots. Practical consequence — when the live site is Cloudflare-blocked, the fetch script can parse the listing rows (title, date, time, leader, pace, distance) but **cannot resolve the Meet Up location**, which is the field that determines whether a ride starts in Central Park. The listing HTML itself has no location column. Without a live fetch or a manual Meet Up source, the script will produce zero kept rides.
+- **Snapshot discovery:** use the Wayback availability API: `https://archive.org/wayback/available?url=nycc.org/upcoming-rides`. For the freshest snapshot use the CDX API filtered to recent timestamps.
+- **Real-world path to usable data:** to actually harvest NYCC rides, one of: (a) a headless-browser fetch that can solve the Cloudflare challenge (Playwright/Puppeteer — out of scope for this skill); (b) an iCal/RSS export negotiated with the NYCC webmaster; or (c) a hand-curated YAML of known-CP recurring rides (SIG/STS series, weekly Boathouse rolls) mirroring the `charity-walks.yml` pattern. Until one of those exists, the fetch script is a structural placeholder.
+- **Cache file:** `_data/nycc-rides.json` (checked into git) — one record per ride occurrence. Keyed by `{date}-{slugified-name}-{slugified-leader}` since NYCC has no stable per-ride ID.
+- **Event ID prefix:** `nycc-` (e.g., `nycc-2026-05-23-market-back-via-9w-cliu`) to avoid collisions with the other sources.
+
+**Scrape pattern.** The page renders a Drupal/Views table where each ride row contains five fields in this order:
+
+```
+Ride Name | Day, Mon DD | HH:MM AM/PM | Leader | Pace/MPH | Distance
+```
+
+Example rows confirmed from the Feb 2026 snapshot:
+
+| Name | When | Leader | Pace | Distance |
+|---|---|---|---|---|
+| Market & Back via 9W | Sun, Feb 15  08:30 AM | Chuxin Liu | B /16 | 40 Miles |
+| Long Island North Shore | Sun, Feb 15  08:30 AM | Jan Laan | B /19 | 86 (or 60,70,50,25) Miles |
+| Market with Walnut return | Sun, Feb 15  09:00 AM | Scott Weinstein | B /18 | 30 Miles |
+
+**Pace classification:** ride pace is `{Letter} /{mph}` — `A`, `B`, `C`, plus `SIG` (Special Interest Group — training series) and `STS` (Saturday Training Series). Store the raw string in `pace:` and parse the integer into `mph:` for sortability.
+
+**Central-Park filter (critical).** Most NYCC rides don't start in or pass through Central Park. The merge must apply a positive filter and reject everything else, because including the full club calendar would flood the events page:
+
+1. Fetch each ride's detail page (link in the row's title `<a>`) to get the **Meet Up** location.
+2. Keep the ride if the Meet Up location matches a place in `central-park-places.yml` via the standard `match_places()` algorithm. Known NYCC start spots that match: **Loeb Boathouse** ("Central Park Boathouse"), **Engineers' Gate** (90th St & 5th Ave — add to `gates:` if missing), **72nd Street Cross Drive**, **Merchants' Gate** / **Columbus Circle**, **Tavern on the Green**.
+3. If detail-page fetch fails (Cloudflare blocks bulk requests), fall back to scanning the listing-page row text — but expect to miss most CP rides this way and log the gap.
+
+**Output mapping.** Each kept ride becomes one event:
+
+| Field | Source on NYCC page |
+|---|---|
+| `title` | Ride name |
+| `date` | Parsed from the day-and-date string (resolve year against fetch date — ride listings are forward-looking) |
+| `time` | Start time, 24-hour |
+| `location` | Meet Up text from detail page |
+| `event_type` | `"Group Ride"` |
+| `event_borough` | `"Manhattan"` (always, since we filtered to CP starts) |
+| `source` | `"nycc.org"` |
+| `source_url` | Ride detail page URL |
+| `description` | Auto-generated: `"NYCC {pace} group ride led by {leader}. {distance}, departing from {location}."` |
+| `tags` | Always `["nycc", "cycling", "group-ride"]`. Add `"sig"` or `"sts"` when the pace string starts with those letters. Add `"affects-loop"` when start time falls between 5 AM and 9 AM (peak runner overlap on East Drive). |
+
+**The raw scrape is cached to `_data/nycc-rides.json` for reference.** Each entry stores the parsed fields plus `fetch_source` (`live` / `wayback`) and `fetched_at`, mirroring the NYRR cache convention.
+
+### Source 6: Curated charity walks (`_data/charity-walks.yml`)
+
+Annual third-party charity walks/runs that use Central Park as a venue but are missed by Sources 1–5. The triggering miss was AIDS Walk New York (5/17/2026 — ~30K participants, opening at Naumburg Bandshell, route across East Drive and the Mall) — absent from `tvpp-9vvx` entirely, with no centralpark.com or Conservancy listing either, because the Parks Department permitting for large private venue bookings doesn't flow to NYC Open Data.
+
+- **Source file:** `_data/charity-walks.yml` (checked into git, hand-edited)
+- **Event ID prefix:** `charity-` (e.g., `charity-aids-walk-ny-2026-05-17`) to avoid collisions with the other four sources
+- **Structure:** a top-level `walks:` list. Each entry is one annually recurring event, with a `dates:` map keyed by year. An entry expands to one event per year-with-a-non-null-date.
+- **Skip rule:** entries where `dates[current_year]` is null OR missing are silently skipped — they're placeholders awaiting confirmation.
+
+Fields on each entry (required unless noted):
+
+| Field | Notes |
+|---|---|
+| `id` | Stable kebab-case identifier. Used in the event id (`charity-{id}-{date}`). |
+| `title` | Display title. |
+| `organizer` | Sponsoring nonprofit. Appears in event body. |
+| `source_url` | Official event page. Written to `source_url:` on event front matter. |
+| `recurrence` | Plain-English pattern for the maintainer's reference (e.g., "Third Sunday of May"). Not used by merge logic. |
+| `dates` | Map of `"YYYY"` → ISO date string. Years with null values are skipped. |
+| `start_time` / `end_time` | `HH:MM` (24-hour). |
+| `opening_ceremony_time` | *Optional.* Some events open earlier than the walk start. |
+| `location` | Plain place-name string; must match a place in `central-park-places.yml`. Run through `match_places()` like all other sources — multi-place matches become `places:` arrays. |
+| `event_type` | Typically `"Charity Walk"` or `"Charity Run"`. |
+| `event_borough` | Always `"Manhattan"` for in-park events. |
+| `expected_attendance` | *Optional.* Integer. Used by persona-email logic to weight impact. |
+| `affects_loop` | Boolean. If true, the merge adds the `affects-loop` tag (new), which the runner/cyclist persona-email templates must surface even when the event isn't a race. |
+| `route_impact` | Plain text describing closures/crowding. Written into the event body. |
+| `audience_relevance` | List of persona keys (`runners`, `cyclists`, `walkers`, `park-watcher`, etc.). The persona-email generator uses this to decide which weekly briefs include the event. |
+| `description` | One-paragraph event summary. |
+| `tags` | List of tag slugs. Always include `charity` and either `walk` or `race`. |
+
+**Maintenance pattern:** once per year (Feb/March), walk through the file and fill in the new year under each entry's `dates:` map. The build should warn when an entry has no `dates` value for the current year — those are knowable gaps that need filling before walk season.
+
 ## Steps
 
-### 1. Fetch events from all three sources
+### 1. Fetch events from all sources
 
 **NYC Open Data:** Use WebFetch to pull all Central Park events from the Socrata API. Paginate with `$offset` until fewer than 1000 results are returned.
 
@@ -194,6 +278,10 @@ https://data.cityofnewyork.us/resource/tvpp-9vvx.json?$where=event_location%20li
 **Conservancy:** Fetch `https://www.centralparknyc.org/activities.json?page=1` through all pages. Filter to event types only. Then fetch each event's detail URL to get enriched data.
 
 **centralpark.com:** Fetch the listing pages at `https://www.centralpark.com/search/event/upcoming-events/` (paginate through all pages) or use the RSS feed. Then fetch each event's detail page for full data including schedule, cost, and location details.
+
+**NYCC:** Fetch `https://nycc.org/upcoming-rides`. Expect a 403 Cloudflare challenge on direct fetch. Fall back to the latest Wayback snapshot via `https://archive.org/wayback/available?url=nycc.org/upcoming-rides`. Parse the ride table, then for each row resolve the ride's detail-page URL and fetch it to read the **Meet Up** location. Drop any ride whose Meet Up doesn't match a Central Park place. Cache the kept records to `_data/nycc-rides.json` with `fetch_source` set to `live` or `wayback`. If both fail, leave the cache as-is and log the gap.
+
+**charity-walks.yml:** No fetch step — read the file directly. For each entry, look up `dates[current_year]`; if null/missing, skip. Otherwise emit one event record with `event_id = "charity-{id}-{date}"`, `event_type = entry.event_type` (default `"Charity Walk"`), `source = "charity-walks.yml"`, and `source_url = entry.source_url`. When `affects_loop: true`, append the `affects-loop` tag (Title Case: `Affects Loop`).
 
 ### 2. Load the places vocabulary
 

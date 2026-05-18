@@ -46,6 +46,14 @@ gates:
     location: Lenox Avenue & Central Park North (110th Street)
     description: Dedicated in 2022 in honor of the Central Park Five. The first new named gate added since the original 1862 naming.
 
+  - name: Engineers' Gate
+    type: gate
+    alternate_names:
+      - Engineer's Gate
+      - Engineers Gate
+    location: Fifth Avenue & 90th Street, east side
+    description: Eastern entrance at 90th Street and Fifth Avenue, just south of the Reservoir. The canonical meet-up point for NYCC and other club cyclists rolling out into Central Park.
+
 # Note: The Wikipedia article references 20 named gates total. The ones above
 # are those specifically named in the text. The original 1862 naming assigned
 # vocational names such as miners, scholars, artists, hunters, etc.
@@ -496,6 +504,13 @@ paths_and_drives:
     type: transverse road
     location: At 97th Street (joins 96th and 97th Streets)
     description: Opened late 1862. Northernmost transverse.
+
+  - name: 102nd Street Cross Drive
+    type: cross drive
+    alternate_names:
+      - 102nd Street Transverse
+    location: Connects East Drive and West Drive at 102nd Street
+    description: Internal cross drive linking the two main north-south drives, separating the upper and lower park loops.
 
 # ---------------------------------------------------------------------------
 # NAMED ROCKS (Bouldering)
@@ -1148,6 +1163,22 @@ event_venues:
     location: East side, near 102nd Street
     description: Landscaped area divided into sections A and B.
 
+  - name: East 102nd Street Clay Oval
+    type: clay athletic oval
+    alternate_names:
+      - East 102nd St Clay Oval
+    location: East side, near 102nd Street
+    description: Clay-surfaced oval used for athletic events and permitted activities.
+
+  - name: East 96th Street Playground
+    type: playground
+    alternate_names:
+      - Margaret Kempner Playground
+      - E 96th St Playground
+      - Lawn Outside E 96th St Playground
+    location: East side, near 96th Street
+    description: Playground area (Margaret Kempner) on the east side, with adjacent lawn used for events.
+
   - name: East 72nd Street Playground
     type: playground
     location: East side, near 72nd Street and Fifth Avenue
@@ -1262,6 +1293,11 @@ event_venues:
       - Roller Skating Circle
     location: Mid-park, near the Bandshell and 72nd Street
     description: Informal gathering area for roller skaters and inline skaters near the Naumburg Bandshell. Active community since the 1990s.
+
+  - name: Shakespeare Statue Plaza
+    type: plaza
+    location: South end of the Mall, at the start of Literary Walk
+    description: Small plaza surrounding the bronze statue of William Shakespeare (1872, John Quincy Adams Ward) at the south end of the Mall. Used for small gatherings and ceremonies.
 
   - name: Loeb Boathouse
     type: building/restaurant

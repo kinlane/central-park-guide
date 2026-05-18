@@ -30,6 +30,8 @@ LATEST_JSON = '/tmp/central_park_events_latest.json'
 PLACES_PATH = os.path.join(REPO_ROOT, '_data', 'central-park-places.yml')
 EVENTS_DIR = os.path.join(REPO_ROOT, '_events')
 NYRR_JSON_PATH = os.path.join(REPO_ROOT, '_data', 'nyrr-races.json')
+CHARITY_WALKS_PATH = os.path.join(REPO_ROOT, '_data', 'charity-walks.yml')
+NYCC_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'nycc-rides.json')
 
 BOROUGHS = ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island']
 
@@ -443,6 +445,12 @@ TAG_DISPLAY = {
     'literature': 'Literature', 'food': 'Food', 'market': 'Market', 'parade': 'Parade',
     'commemoration': 'Commemoration', 'history': 'History', 'adventure': 'Adventure',
     'community': 'Community',
+    # Source 5/6 additions:
+    'affects-loop': 'Affects Loop',     # event impinges on the runner/cyclist loop
+    'group-ride': 'Group Ride',         # NYCC and similar club rides
+    'nycc': 'NYCC',                     # source tag for New York Cycle Club
+    'sig': 'SIG',                       # NYCC Special Interest Group training rides
+    'sts': 'STS',                       # NYCC Saturday Training Series
 }
 
 
@@ -598,6 +606,8 @@ dup_count = sum(1 for files in existing_by_key.values() if len(files) > 1)
 total_files = sum(len(files) for files in existing_by_key.values())
 print(f"Indexed {total_files} files across {len(existing_by_key)} unique (event_id, date) combos ({dup_count} duplicates)")
 
+TODAY = datetime.now().strftime('%Y-%m-%d')
+
 # Remove past event files left over from previous runs
 _purged_past = 0
 for (eid, date), files in list(existing_by_key.items()):
@@ -622,7 +632,6 @@ updated = 0
 skipped_unmatched = 0
 skipped_invalid = 0
 skipped_past = 0
-TODAY = datetime.now().strftime('%Y-%m-%d')
 unmatched_locs = set()
 api_event_ids = set()
 api_keys = set()
@@ -792,6 +801,292 @@ for event in latest:
             except FileNotFoundError:
                 pass
 
+# ── Source 6: Curated charity walks (charity-walks.yml) ───────────────
+charity_created = 0
+charity_updated = 0
+charity_skipped_no_date = 0
+charity_skipped_unmatched = 0
+current_year = datetime.now().year
+if os.path.exists(CHARITY_WALKS_PATH):
+    with open(CHARITY_WALKS_PATH) as f:
+        cw_data = yaml.safe_load(f) or {}
+    walks = cw_data.get('walks') or []
+    for entry in walks:
+        wid = entry.get('id')
+        if not wid:
+            continue
+        date_str = (entry.get('dates') or {}).get(str(current_year))
+        if not date_str:
+            charity_skipped_no_date += 1
+            continue
+        if date_str < TODAY:
+            continue
+        eid = f'charity-{wid}-{date_str}'
+        api_event_ids.add(eid)
+        name = entry.get('title') or wid
+        location = entry.get('location') or ''
+        all_places = match_places(location)
+        if not all_places:
+            charity_skipped_unmatched += 1
+            unmatched_locs.add(location)
+            continue
+        place = all_places[0]
+        time_str = entry.get('start_time') or '09:00'
+        end_time_str = entry.get('end_time') or '12:00'
+        event_type = entry.get('event_type') or 'Charity Walk'
+        event_borough = entry.get('event_borough') or 'Manhattan'
+        source_url = entry.get('source_url') or ''
+        description = (entry.get('description') or '').strip().replace('\n', ' ')
+        description = re.sub(r'\s+', ' ', description)
+        if not description:
+            description = make_description(name, event_type, location)
+
+        # Build tag set: get_tags() handles 'walk'/'run' patterns from the title.
+        # Then merge in author-supplied tags and the affects-loop flag.
+        cat = 'runs-races'
+        tag_slugs = set()
+        for t in get_tags(name, event_type, cat):
+            # get_tags returns Title Case; convert back to slug for dedupe
+            tag_slugs.add(slugify(t))
+        for t in (entry.get('tags') or []):
+            tag_slugs.add(t)
+        if entry.get('affects_loop'):
+            tag_slugs.add('affects-loop')
+        tag_list = sorted({
+            TAG_DISPLAY.get(s, s.replace('-', ' ').title())
+            for s in tag_slugs
+        })
+        image = get_image(cat, location, tag_list)
+
+        key = (eid, date_str)
+        api_keys.add(key)
+        is_new = key not in existing_by_key
+
+        date_dt = datetime.strptime(date_str, '%Y-%m-%d')
+        lines = []
+        lines.append('---')
+        lines.append('title: "' + yaml_safe(name) + '"')
+        lines.append('date: ' + date_str)
+        lines.append('time: "' + time_str + '"')
+        lines.append('end_time: "' + end_time_str + '"')
+        lines.append('location: "' + yaml_safe(location) + '"')
+        lines.append('place: "' + yaml_safe(place['name']) + '"')
+        lines.append('place_category: "' + place['category'] + '"')
+        if len(all_places) > 1:
+            lines.append('places:')
+            for p in all_places:
+                lines.append('  - "' + yaml_safe(p['name']) + '"')
+            lines.append('place_categories:')
+            for p in all_places:
+                lines.append('  - "' + p['category'] + '"')
+        lines.append('image: "' + image + '"')
+        lines.append('description: "' + yaml_safe(description) + '"')
+        lines.append('event_id: "' + eid + '"')
+        lines.append('event_type: "' + event_type + '"')
+        lines.append('event_borough: "' + event_borough + '"')
+        lines.append('source: "charity-walks.yml"')
+        if source_url:
+            lines.append('source_url: "' + yaml_safe(source_url) + '"')
+        if entry.get('organizer'):
+            lines.append('organizer: "' + yaml_safe(entry['organizer']) + '"')
+        if entry.get('expected_attendance'):
+            lines.append('expected_attendance: ' + str(entry['expected_attendance']))
+        if entry.get('affects_loop'):
+            lines.append('affects_loop: true')
+        lines.append('tags:')
+        for tag in tag_list:
+            lines.append('  - "' + yaml_safe(tag) + '"')
+        lines.append('---')
+        lines.append('')
+        lines.append(description)
+        lines.append('')
+        lines.append('## Event Details')
+        lines.append('')
+        lines.append('- **Event:** ' + name)
+        lines.append('- **Date:** ' + date_dt.strftime('%A, %B %-d, %Y'))
+        if entry.get('opening_ceremony_time'):
+            lines.append('- **Opening Ceremony:** ' + entry['opening_ceremony_time'])
+        lines.append('- **Time:** ' + time_str + ' – ' + end_time_str)
+        lines.append('- **Location:** ' + location + ', Central Park')
+        if entry.get('organizer'):
+            lines.append('- **Organizer:** ' + entry['organizer'])
+        if source_url:
+            lines.append('- **Official site:** ' + source_url)
+        lines.append('')
+        if entry.get('route_impact'):
+            ri = re.sub(r'\s+', ' ', entry['route_impact'].strip())
+            lines.append('## Route Impact')
+            lines.append('')
+            lines.append(ri)
+            lines.append('')
+
+        new_content = '\n'.join(lines)
+
+        if is_new:
+            base_slug = slugify(name) + '-' + date_str
+            slug_counts[base_slug] += 1
+            slug = base_slug if slug_counts[base_slug] == 1 else base_slug + '-' + str(slug_counts[base_slug])
+            filepath = os.path.join(EVENTS_DIR, slug + '.md')
+            with open(filepath, 'w') as f:
+                f.write(new_content)
+            charity_created += 1
+        else:
+            existing_files = existing_by_key[key]
+            keeper = existing_files[0]
+            if keeper['content'] != new_content:
+                with open(keeper['path'], 'w') as f:
+                    f.write(new_content)
+                charity_updated += 1
+            for dup in existing_files[1:]:
+                try:
+                    os.remove(dup['path'])
+                except FileNotFoundError:
+                    pass
+
+
+# ── Source 5: NYCC group rides (nycc-rides.json cache) ────────────────
+# Read-only consumer of the cache produced by a separate fetch step.
+# If the cache is absent, log and continue — the fetch lives behind Cloudflare
+# and may not have a fresh snapshot every run.
+nycc_created = 0
+nycc_updated = 0
+nycc_skipped_unmatched = 0
+nycc_cache_present = os.path.exists(NYCC_CACHE_PATH)
+if nycc_cache_present:
+    with open(NYCC_CACHE_PATH) as f:
+        nycc_data = json.load(f) or {}
+    rides = nycc_data.get('rides') or []
+    for rec in rides:
+        date_str = rec.get('date')
+        if not date_str or date_str < TODAY:
+            continue
+        name = rec.get('title') or 'NYCC Group Ride'
+        leader = rec.get('leader') or ''
+        eid = f"nycc-{date_str}-{slugify(name)}-{slugify(leader)}"
+        api_event_ids.add(eid)
+        location = rec.get('location') or ''
+        all_places = match_places(location)
+        if not all_places:
+            nycc_skipped_unmatched += 1
+            unmatched_locs.add(location)
+            continue
+        place = all_places[0]
+        time_str = rec.get('time') or '08:00'
+        end_time_str = rec.get('end_time') or ''  # NYCC rarely publishes
+        pace = rec.get('pace') or ''
+        mph = rec.get('mph')
+        distance = rec.get('distance') or ''
+        source_url = rec.get('source_url') or 'https://nycc.org/upcoming-rides'
+        description = rec.get('description') or (
+            f"NYCC {pace} group ride led by {leader}. {distance}, departing from {location}." if leader
+            else f"NYCC {pace} group ride. {distance}, departing from {location}."
+        )
+        description = re.sub(r'\s+', ' ', description).strip()
+
+        # Tag set: every NYCC ride gets nycc/cycling/group-ride. SIG/STS based
+        # on pace string. Affects-loop on 5–9 AM start times.
+        tag_slugs = {'nycc', 'cycling', 'group-ride'}
+        if pace.upper().startswith('SIG'):
+            tag_slugs.add('sig')
+        if pace.upper().startswith('STS'):
+            tag_slugs.add('sts')
+        try:
+            hh = int(time_str.split(':')[0])
+            if 5 <= hh <= 8:
+                tag_slugs.add('affects-loop')
+        except Exception:
+            pass
+        tag_list = sorted({
+            TAG_DISPLAY.get(s, s.replace('-', ' ').title())
+            for s in tag_slugs
+        })
+        cat = 'runs-races'  # closest existing category; "Group Ride" event_type carries the distinction
+        image = get_image(cat, location, tag_list)
+        event_type = 'Group Ride'
+
+        key = (eid, date_str)
+        api_keys.add(key)
+        is_new = key not in existing_by_key
+
+        date_dt = datetime.strptime(date_str, '%Y-%m-%d')
+        lines = []
+        lines.append('---')
+        lines.append('title: "' + yaml_safe(name) + '"')
+        lines.append('date: ' + date_str)
+        lines.append('time: "' + time_str + '"')
+        if end_time_str:
+            lines.append('end_time: "' + end_time_str + '"')
+        lines.append('location: "' + yaml_safe(location) + '"')
+        lines.append('place: "' + yaml_safe(place['name']) + '"')
+        lines.append('place_category: "' + place['category'] + '"')
+        if len(all_places) > 1:
+            lines.append('places:')
+            for p in all_places:
+                lines.append('  - "' + yaml_safe(p['name']) + '"')
+            lines.append('place_categories:')
+            for p in all_places:
+                lines.append('  - "' + p['category'] + '"')
+        lines.append('image: "' + image + '"')
+        lines.append('description: "' + yaml_safe(description) + '"')
+        lines.append('event_id: "' + eid + '"')
+        lines.append('event_type: "' + event_type + '"')
+        lines.append('event_borough: "Manhattan"')
+        lines.append('source: "nycc.org"')
+        lines.append('source_url: "' + yaml_safe(source_url) + '"')
+        if leader:
+            lines.append('leader: "' + yaml_safe(leader) + '"')
+        if pace:
+            lines.append('pace: "' + yaml_safe(pace) + '"')
+        if mph:
+            lines.append('mph: ' + str(mph))
+        if distance:
+            lines.append('distance: "' + yaml_safe(distance) + '"')
+        if 'affects-loop' in tag_slugs:
+            lines.append('affects_loop: true')
+        lines.append('tags:')
+        for tag in tag_list:
+            lines.append('  - "' + yaml_safe(tag) + '"')
+        lines.append('---')
+        lines.append('')
+        lines.append(description)
+        lines.append('')
+        lines.append('## Ride Details')
+        lines.append('')
+        lines.append('- **Date:** ' + date_dt.strftime('%A, %B %-d, %Y'))
+        lines.append('- **Start time:** ' + time_str)
+        lines.append('- **Meet-up:** ' + location + ', Central Park')
+        if leader:
+            lines.append('- **Leader:** ' + leader)
+        if pace:
+            lines.append('- **Pace:** ' + pace)
+        if distance:
+            lines.append('- **Distance:** ' + distance)
+        lines.append('')
+
+        new_content = '\n'.join(lines)
+
+        if is_new:
+            base_slug = slugify(name) + '-' + date_str
+            slug_counts[base_slug] += 1
+            slug = base_slug if slug_counts[base_slug] == 1 else base_slug + '-' + str(slug_counts[base_slug])
+            filepath = os.path.join(EVENTS_DIR, slug + '.md')
+            with open(filepath, 'w') as f:
+                f.write(new_content)
+            nycc_created += 1
+        else:
+            existing_files = existing_by_key[key]
+            keeper = existing_files[0]
+            if keeper['content'] != new_content:
+                with open(keeper['path'], 'w') as f:
+                    f.write(new_content)
+                nycc_updated += 1
+            for dup in existing_files[1:]:
+                try:
+                    os.remove(dup['path'])
+                except FileNotFoundError:
+                    pass
+
+
 # Clean titles + backfill missing descriptions in events left alone
 # (file not matched by an API record).
 title_only_cleaned = 0
@@ -870,6 +1165,16 @@ print(f"  Files not in API: {title_only_cleaned} titles cleaned, {description_ba
 print(f"  Skipped (location unmatched): {skipped_unmatched}")
 print(f"  Skipped (invalid data): {skipped_invalid}")
 print(f"  Skipped (past date): {skipped_past}")
+print(f"\nCharity walks (charity-walks.yml):")
+print(f"  Created: {charity_created}, Updated: {charity_updated}")
+print(f"  Skipped (no date for {current_year}): {charity_skipped_no_date}")
+print(f"  Skipped (location unmatched): {charity_skipped_unmatched}")
+print(f"\nNYCC group rides (nycc-rides.json):")
+if not nycc_cache_present:
+    print(f"  Cache missing at {NYCC_CACHE_PATH} — run the fetch step before merging.")
+else:
+    print(f"  Created: {nycc_created}, Updated: {nycc_updated}")
+    print(f"  Skipped (location unmatched): {nycc_skipped_unmatched}")
 if unmatched_locs:
     print(f"\n  Unmatched locations:")
     for loc in sorted(unmatched_locs):

@@ -1,0 +1,18 @@
+---
+layout: null
+permalink: /updates/archive/index.json
+---
+[
+{% assign emails = site.emails | sort: "week_of" | reverse %}
+{% for e in emails %}
+  {
+    "url": {{ e.url | jsonify }},
+    "week_of": {{ e.week_of | date: "%Y-%m-%d" | jsonify }},
+    "sent_date": {{ e.sent_date | date: "%Y-%m-%d" | jsonify }},
+    "audience": {{ e.audience | jsonify }},
+    "persona": {{ e.path | split: "/" | last | replace: ".md", "" | jsonify }},
+    "subject": {{ e.subject | jsonify }},
+    "body": {{ e.content | strip_html | normalize_whitespace | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

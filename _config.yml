@@ -13,6 +13,9 @@ collections:
   personas:
     output: true
     permalink: /personas/:slug/
+  emails:
+    output: true
+    permalink: /updates/archive/:path/
 
 sass:
   sass_dir: _sass
@@ -23,6 +26,7 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor
+  - email/
 
 defaults:
   - scope:
@@ -39,6 +43,11 @@ defaults:
       type: personas
     values:
       layout: persona
+  - scope:
+      path: ""
+      type: emails
+    values:
+      layout: email
 
 plugins:
   - jekyll-seo-tag
