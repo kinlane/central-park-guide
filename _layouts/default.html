@@ -3,15 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}{% if page.title %} | {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <meta property="og:title" content="{{ page.title | default: site.title }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
-  <meta property="og:image" content="{{ site.url }}/assets/images/og-image.avif">
-  <meta property="og:type" content="website">
   <link rel="icon" href="/assets/images/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/assets/images/webclip.png">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+
+  {% seo %}
+
+  {% if page.layout == "event" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": {{ page.title | jsonify }},
+    "startDate": "{{ page.date | date: '%Y-%m-%d' }}{% if page.time %}T{{ page.time }}:00{% endif %}",
+    {% if page.end_time %}"endDate": "{{ page.date | date: '%Y-%m-%d' }}T{{ page.end_time }}:00",{% endif %}
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": {{ page.location | default: "Central Park" | jsonify }},
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
+      }
+    },
+    "description": {{ page.description | jsonify }},
+    "image": "{{ site.url }}{{ page.image | default: '/assets/images/events-hero.avif' }}",
+    "organizer": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }}
+    },
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+  </script>
+  {% elsif page.layout == "email" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.subject | jsonify }},
+    "datePublished": "{{ page.sent_date | date: '%Y-%m-%d' }}",
+    "dateModified": "{{ page.sent_date | date: '%Y-%m-%d' }}",
+    "author": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "url": {{ site.url | jsonify }}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.title | jsonify }},
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/images/logo.png"
+      }
+    },
+    "audience": {
+      "@type": "Audience",
+      "audienceType": {{ page.audience | jsonify }}
+    },
+    "url": "{{ site.url }}{{ page.url }}"
+  }
+  </script>
+  {% elsif page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": {{ site.url | jsonify }},
+    "description": {{ site.description | jsonify }},
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ site.url }}/updates/archive/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  {% endif %}
 </head>
 <body>
   {% include header.html %}

@@ -1,7 +1,32 @@
 title: Central Park.Guide
-description: "Your everyday guide to the park that never sleeps."
+tagline: "Your everyday guide to the park that never sleeps."
+description: "Central Park.Guide is a community-powered, persona-tailored guide to events, closures, concerts, runs, family activities, and seasonal highlights across all 843 acres of Central Park, New York City."
 url: "https://centralpark.guide"
 baseurl: ""
+
+lang: en_US
+locale: en_US
+
+# SEO defaults (used by jekyll-seo-tag)
+author: centralparkguide
+
+authors:
+  centralparkguide:
+    name: Central Park.Guide
+    url: https://centralpark.guide
+
+social:
+  name: Central Park.Guide
+  links:
+    - https://centralpark.guide
+    - https://www.instagram.com/centralparkguide
+
+logo: /assets/images/logo.png
+
+# Default Open Graph image (used when a page doesn't define its own).
+# Use PNG/JPG/WEBP for og:image — AVIF is not yet broadly supported by Facebook,
+# LinkedIn, or X card validators.
+image: /assets/images/og-image.png
 
 permalink: pretty
 future: true
@@ -33,6 +58,7 @@ defaults:
       path: ""
     values:
       layout: default
+      image: /assets/images/og-image.png
   - scope:
       path: ""
       type: events
@@ -51,3 +77,17 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# jekyll-feed config — we already have hand-built event feeds at /events/feed.xml;
+# this generates a separate site-wide feed at /feed.xml with all collections.
+feed:
+  collections:
+    emails:
+      path: /updates/archive/feed.xml
+  excerpt_only: false
+
+# jekyll-sitemap config — exclude internal/dev pages
+defaults_for_sitemap: &sitemap_defaults
+  sitemap: true

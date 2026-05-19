@@ -1,0 +1,11 @@
+---
+layout: null
+permalink: /robots.txt
+---
+User-agent: *
+Allow: /
+
+# Crawlable but generally low value
+Disallow: /admin/
+
+Sitemap: {{ site.url }}/sitemap.xml

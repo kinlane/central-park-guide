@@ -2,6 +2,8 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.10"
 gem "jekyll-seo-tag"
+gem "jekyll-sitemap"
+gem "jekyll-feed"
 gem "base64"
 gem "kramdown-parser-gfm"
 gem "csv"
