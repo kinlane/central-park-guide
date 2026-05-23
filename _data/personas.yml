@@ -61,3 +61,27 @@ personas:
     blurb: "Closures and maintenance — alerts so you can route around the chaos."
     icon: /assets/images/personas/park-watcher.png
     tags: [Closures, Maintenance]
+
+  - id: history-buff
+    title: "History Buff"
+    blurb: "Seneca Village walks, Arsenal Gallery exhibits, Open House NY, and the park's deep-time programming."
+    icon: /assets/images/personas/history-buff.png
+    tags: [History, "Annual Tradition", Art, Talk, Commemoration, Juneteenth, Cultural]
+
+  - id: photographer
+    title: "Photographer"
+    blurb: "Arsenal Gallery shows, bloom and foliage windows, and golden-hour timing at Bow Bridge, Bethesda, and Gapstow."
+    icon: /assets/images/personas/photographer.png
+    tags: [Art, "Annual Tradition", History]
+
+  - id: first-timer
+    title: "First-Time Visitor"
+    blurb: "If you only have one day — the marquee free events and must-see landmarks worth planning a visit around."
+    icon: /assets/images/personas/first-timer.png
+    tags: [Free, "Annual Tradition", "Concerts & Performances", Theater, Shakespeare, Summerstage, Naumburg]
+
+  - id: picnicker
+    title: "Picnicker"
+    blurb: "Where the picnic permits land, which lawns are open, and what's playing within blanket-range."
+    icon: /assets/images/personas/picnicker.png
+    tags: [Picnic, Market, Free]

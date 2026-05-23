@@ -1,0 +1,53 @@
+# NYC Bird Alliance (formerly NYC Audubon) — recurring guided bird walks in
+# Central Park.
+#
+# Hand-curated seed file. NYC Bird Alliance's events page renders via JS so we
+# can't scrape it server-side. Most of their Central Park walks are recurring
+# weekly or monthly programs; we maintain them here and emit one event per date
+# in the season window.
+#
+# Source: https://nycbirdalliance.org/events-birding/programs-and-events/local-trips-classes
+#         (open in a browser, copy the schedule each season)
+#
+# Each entry expands into a series of dated events. The merge script generates
+# one Markdown file per occurrence between `season_start` and `season_end`,
+# subject to `weekday` (0=Mon, 6=Sun) and `cadence` (weekly, monthly, biweekly).
+
+walks:
+
+  # Add entries like this as the schedules are published.
+  # Example (real NYC Bird Alliance recurring offering):
+  #
+  # - name: "Birds of Central Park — Ramble Walk"
+  #   leader: "Gabriel Willow"
+  #   meet_location: "Naturalists' Gate (West 77th & Central Park West)"
+  #   place: "The Ramble"
+  #   season_start: 2026-03-01
+  #   season_end: 2026-06-30
+  #   weekday: 6        # Sunday
+  #   cadence: weekly
+  #   time: "08:00"
+  #   end_time: "10:30"
+  #   cost: "$10 (members), $15 (non-members)"
+  #   url: "https://nycbirdalliance.org/events-birding/programs-and-events/local-trips-classes"
+  #   tags:
+  #     - "Birds"
+  #     - "Nature"
+  #     - "Conservancy"
+  #
+  # - name: "Spring Migration in the Ramble"
+  #   leader: "NYC Bird Alliance staff"
+  #   meet_location: "Belvedere Castle"
+  #   place: "The Ramble"
+  #   season_start: 2026-04-15
+  #   season_end: 2026-05-31
+  #   weekday: 3        # Thursday
+  #   cadence: weekly
+  #   time: "07:30"
+  #   end_time: "10:00"
+  #   cost: "Free"
+  #   url: "https://nycbirdalliance.org/events-birding/programs-and-events/local-trips-classes"
+  #   tags:
+  #     - "Birds"
+  #     - "Nature"
+  #     - "Free"

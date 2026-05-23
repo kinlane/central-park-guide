@@ -1,6 +1,25 @@
-# Update Events from NYC Open Data, Central Park Conservancy, centralpark.com & curated charity walks
+# Update Events from NYC Open Data, NYC Parks, Conservancy, centralpark.com, SummerStage, Naumburg, NYRR, NYCC, and curated charity walks / Public Theater / NYC Bird Alliance
 
-Update Central Park Guide events by fetching permitted event data from four upstream sources plus a hand-curated charity-walks file, filtering against the Central Park places vocabulary, merging (with title cleanup and category mapping), and writing Jekyll collection files. All future events automatically display on the public site — no curation step.
+Update Central Park Guide events by fetching event data from a layered set of sources, filtering against the Central Park places vocabulary, merging (with title cleanup and category mapping), and writing Jekyll collection files. All future events automatically display on the public site — no curation step.
+
+## Source roster
+
+Sources fall into three groups:
+
+**Permits & official programming (machine-readable feeds):**
+1. **NYC Open Data — Permitted Events** (`data.cityofnewyork.us`) — every permit issued at Central Park
+2. **NYC Parks Department** (`nycgovparks.org/parks/central-park/events`) — official park-dept programming (Arsenal Gallery, NY Phil at the Great Lawn, It's My Park volunteer days)
+3. **SummerStage** (`cityparksfoundation.org/wp-json/tribe/events/v1/events`) — the City Parks Foundation's outdoor concert series at Rumsey Playfield + Dana Discovery Center
+4. **Central Park Conservancy** (`centralparknyc.org/activities.json`) — the Conservancy's own programs
+5. **Naumburg Orchestral Concerts** (`naumburgconcerts.org/concerts/`) — historic free classical series at the Bandshell (since 1905)
+6. **centralpark.com** — community events
+7. **NYRR enrichment** (`nyrr.org/races/...`) — adds course-map/distance/landmark data to races already in NYC Open Data
+8. **NYCC group rides** (`nycc.org/upcoming-rides`) — club cycling rides rolling out from the park
+
+**Curated seed files (hand-maintained YAML; sources that can't be scraped):**
+9. **`_data/charity-walks.yml`** — AIDS Walk NY etc.; affects-loop closures the permit feed misses
+10. **`_data/publictheater-seasons.yml`** — Public Theater's Shakespeare in the Park (their site is WAF-blocked); maintained by hand each spring when the season is announced. Expands into one event per performance date.
+11. **`_data/birding-walks.yml`** — NYC Bird Alliance recurring walks (their events page renders via JS so we can't scrape server-side). Expands by weekday + cadence within a season window.
 
 ## Quick start (NYC Open Data refresh)
 
@@ -47,10 +66,19 @@ print(f'Total: {len(combined)}')
 #    on. Re-run later when traffic clears.
 python3 .claude/skills/scripts/fetch_nyrr_races.py
 
-# 4. Run the merge — picks up NYRR enrichment from _data/nyrr-races.json.
+# 4. Refresh additional event caches (NYC Parks, SummerStage, Naumburg).
+#    Each writes a JSON cache under _data/. All three are idempotent and the
+#    merge tolerates a missing cache (it logs and continues).
+#    Note: NYC Parks is fronted by CloudFront WAF; if it returns a 202
+#    challenge response, wait an hour and re-run.
+python3 .claude/skills/scripts/fetch_nycparks_events.py
+python3 .claude/skills/scripts/fetch_summerstage_events.py
+python3 .claude/skills/scripts/fetch_naumburg_concerts.py
+
+# 5. Run the merge — picks up all caches plus the curated YAML files.
 python3 .claude/skills/scripts/merge_nyc_events.py
 
-# 5. Build to verify
+# 6. Build to verify
 bundle exec jekyll build
 ```
 
@@ -264,6 +292,60 @@ Fields on each entry (required unless noted):
 | `tags` | List of tag slugs. Always include `charity` and either `walk` or `race`. |
 
 **Maintenance pattern:** once per year (Feb/March), walk through the file and fill in the new year under each entry's `dates:` map. The build should warn when an entry has no `dates` value for the current year — those are knowable gaps that need filling before walk season.
+
+### Source 7: NYC Parks Department (`/parks/central-park/events`)
+
+The official NYC Parks Department per-park events page. Sister feed to the NYC Open Data permit listing — captures **NYC Parks-programmed** events (e.g. Arsenal Gallery exhibits, NY Phil at the Great Lawn, "It's My Park" volunteer days) that the permits feed doesn't always surface.
+
+- **URL pattern:** `https://www.nycgovparks.org/parks/central-park/events` and `/page/N` for additional pages (~7 pages typical)
+- **Format:** hCalendar microformat — `<div class="vevent">` with `.summary` title link, `.dtstart`/`.dtend` (ISO timestamps in `title="..."` attribute), `.location`, plus a free-text Category and a "Free!" marker
+- **Scraper:** [`.claude/skills/scripts/fetch_nycparks_events.py`](scripts/fetch_nycparks_events.py)
+- **Cache file:** `_data/nycparks-events.json`
+- **Event ID prefix:** `nycparks-`
+- **WAF caveat:** the site is fronted by CloudFront and starts returning `202 challenge` responses after rapid requests. The script paginates with 0.3 s delays, but if you've just been probing the site, give it an hour before re-running. The merge tolerates a missing cache.
+- **Location quirk:** every location ends with " (in Central Park)" — the scraper strips that suffix so `match_places()` sees the clean venue name. The Arsenal building has alternate names `Arsenal` and `Arsenal Gallery` in the places vocabulary to handle the recurring Sarah Yuster exhibit.
+
+### Source 8: SummerStage (City Parks Foundation)
+
+SummerStage is the City Parks Foundation's free outdoor concert series. **At Central Park** the program plays at **Rumsey Playfield** (mid-park, 72nd & 5th) and the **Charles A. Dana Discovery Center** (Harlem Meer) — but the program also runs in every other borough, so we filter aggressively.
+
+- **API endpoint:** `https://cityparksfoundation.org/wp-json/tribe/events/v1/events` (The Events Calendar WordPress plugin's REST API — paginated `?per_page=N&page=K`)
+- **Filter:** `categories=25` (the **SummerStage** taxonomy id; verified May 2026 — re-check if results look off). Then keep only events whose `title` + `description` matches the regex `rumsey|central park|dana discovery|harlem meer` (the venue field is just "Manhattan" so we can't filter on that).
+- **Scraper:** [`.claude/skills/scripts/fetch_summerstage_events.py`](scripts/fetch_summerstage_events.py)
+- **Cache file:** `_data/summerstage-events.json`
+- **Event ID prefix:** `summerstage-`
+- **Place hint:** `Rumsey Playfield` by default; switched to `Dana Discovery Center` when the description mentions Dana / Harlem Meer.
+
+### Source 9: Naumburg Orchestral Concerts
+
+Five free Tuesday-evening classical concerts at the Naumburg Bandshell each summer — the oldest free outdoor classical series in the US (founded 1905).
+
+- **URL:** `https://naumburgconcerts.org/concerts/`
+- **Platform:** Squarespace events module — events render inside `<article class="eventlist-event ...">` with `.eventlist-title-link`, `<time class="event-date" datetime="...">`, `<time class="event-time-localized">`.
+- **Scraper:** [`.claude/skills/scripts/fetch_naumburg_concerts.py`](scripts/fetch_naumburg_concerts.py)
+- **Cache file:** `_data/naumburg-events.json`
+- **Event ID prefix:** `naumburg-`
+- **Default times:** if the Squarespace markup omits a time, use historical convention `19:30` start, `21:00` end (90-min concerts at the Bandshell).
+- **Place:** `Naumburg Bandshell` (in places vocab; aliased to `Bandshell Plaza`).
+
+### Source 10: Public Theater seasons (`_data/publictheater-seasons.yml`)
+
+Shakespeare in the Park at the Delacorte Theater. The Public Theater's site is fronted by a strict Cloudflare WAF that rejects automated requests, so we maintain a hand-curated YAML seed each spring when the season is announced. The merge **expands one season into one event per performance date**, skipping the configured dark days (Monday is the Delacorte convention).
+
+- **Source file:** `_data/publictheater-seasons.yml` (hand-edited)
+- **Event ID prefix:** `publictheater-`
+- **Maintenance pattern:** open the Public Theater's Shakespeare in the Park page in a browser when the season is announced (typically March/April); copy the run dates into a new `- season:` entry. Fields: `production`, `author`, `director`, `first_preview`, `opening_night`, `closing_night`, `curtain`, `dark_days`, `url`, `notes`, `tags`.
+- **Place:** `Delacorte Theater` (in places vocab).
+
+### Source 11: NYC Bird Alliance walks (`_data/birding-walks.yml`)
+
+NYC Bird Alliance (formerly NYC Audubon) leads recurring guided bird walks in Central Park. Their events page renders entirely client-side via JS, so server-side scraping doesn't work without a headless browser. We maintain a YAML seed and **expand each entry by `weekday` + `cadence` between `season_start` and `season_end`**.
+
+- **Source file:** `_data/birding-walks.yml` (hand-edited)
+- **Event ID prefix:** `birding-`
+- **Cadence support:** `weekly`, `biweekly`, `monthly` (monthly snaps to the next matching weekday after ~28 days).
+- **Maintenance pattern:** check their `local-trips-classes` page when each season's schedule is posted (early spring + late summer); add entries per walk leader/place/weekday. Fields: `name`, `leader`, `meet_location`, `place`, `season_start`, `season_end`, `weekday` (0=Mon, 6=Sun), `cadence`, `time`, `end_time`, `cost`, `url`, `tags`.
+- **Place:** typically `The Ramble` or `North Woods`; whatever the walk's `place` field names must be in the places vocabulary.
 
 ## Steps
 

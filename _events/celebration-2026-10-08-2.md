@@ -1,0 +1,36 @@
+---
+title: "Celebration"
+date: 2026-10-08
+time: "14:00"
+end_time: "15:00"
+location: "Belvedere Castle Terrace"
+place: "Belvedere Castle"
+place_category: "buildings"
+image: "/assets/images/tags/celebration.png"
+description: "Celebration at Belvedere Castle Terrace in Central Park."
+event_id: "943169"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - "Celebration"
+  - "Private Booking"
+  - "Private Events"
+---
+
+Celebration takes place at Belvedere Castle Terrace in Central Park on Thursday, October 8, 2026.
+
+## Event Details
+
+- **Event:** Celebration
+- **Date:** Thursday, October 8, 2026
+- **Time:** 2:00 PM - 3:00 PM
+- **Location:** Belvedere Castle Terrace, Central Park
+- **Place:** Belvedere Castle
+- **Type:** Special Event
+- **Event ID:** 943169
+
+## About This Event
+
+Celebration is a permitted event taking place at Belvedere Castle Terrace in Central Park. Contact the event organizers for more details about attendance and participation.

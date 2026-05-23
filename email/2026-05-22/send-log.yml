@@ -1,0 +1,57 @@
+- timestamp: '2026-05-22T22:24:46.518858+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:47.709488+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Walking Plans: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:48.736003+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:49.683540+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:50.660348+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:51.563662+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Walking Plans: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:52.535490+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Fri May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent
+- timestamp: '2026-05-22T22:24:53.487356+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "Barefoot Shakespeare opens \"Our June 2026 Show\" at Summit Rock: Fri\
+    \ May 22 \u2013 Thu May 28"
+  week_of: '2026-05-22'
+  status: sent

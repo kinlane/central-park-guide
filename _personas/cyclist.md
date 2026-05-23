@@ -3,17 +3,17 @@ persona_id: "cyclist"
 title: "Cyclist"
 interests:
   wants:
-    - Road closures on East, West, and Center Drives
-    - CRCA series, charity rides, and organized cycling events
-    - Pedestrian congestion at key corners (72nd, 86th, Columbus Circle)
-    - Best riding windows by day and time
-    - Car-free hours and any deviations
-    - Skate Circle activations spilling onto West Drive
+    - Loop closures and Closures-tagged events on East Drive, West Drive, and Center Drive
+    - Runs & Races and charity rides that occupy the loop (NYRR, charity walks with affects-loop flag)
+    - Pedestrian congestion at Columbus Circle / Merchants' Gate, 72nd Street Cross Drive, and Engineers' Gate
+    - Best riding windows by day and time given the week's permit footprint
+    - Maintenance days that close drives or staging areas (North Meadow, Great Lawn) early
+    - Large gatherings at Bandshell Plaza, Rumsey Playfield, or Bethesda Terrace that push spectators onto the loop
   does_not_want:
-    - Theater, concert, and arts programming
-    - Wedding ceremonies and small celebrations
-    - Playground and family-event details
-    - Birding and seasonal nature notes
-    - Tennis and league sports field bookings
-    - Detailed walking-route suggestions
+    - Concerts & Performances and Theater programming (unless it closes a drive)
+    - Wedding, Ceremony, Reception, Birthday, and other Private Events / Private Booking
+    - Playground and Family & Community programming
+    - Tennis, Softball, T-Ball, Baseball, Kickball, and other field-bound Sports listings
+    - Education and School Program rosters
+    - Picnic permits and Market activations not tied to the loop
 ---

@@ -1,0 +1,50 @@
+# Public Theater — Shakespeare in the Park (Delacorte Theater)
+#
+# Hand-curated seed file. The Public Theater's website is fronted by Cloudflare
+# WAF and rejects automated requests, so we maintain this file by hand each
+# spring when the season is announced.
+#
+# Source: https://publictheater.org/programs/shakespeare-in-the-park/
+#         (open in a browser, copy the run dates)
+#
+# Each season produces ONE production at the Delacorte Theater. Add a new entry
+# under `seasons:` when the next season is announced. The merge script expands
+# each season into one event per performance date (skip Mondays, the traditional
+# dark day at the Delacorte).
+#
+# Fields:
+#   season:       free-form (e.g. "2026 Spring", "2025 Summer")
+#   production:   the play's title
+#   author:       Shakespeare or other playwright
+#   director:     director name
+#   first_preview: ISO date (YYYY-MM-DD)
+#   opening_night: ISO date
+#   closing_night: ISO date
+#   curtain:      typical curtain time HH:MM (24h)
+#   dark_days:    weekdays the production is dark, lowercase short names
+#                 ["monday"] is the Delacorte convention
+#   url:          permalink to the production page
+#   notes:        anything reader-facing (free tickets, lottery info, etc.)
+
+seasons:
+
+  # When the 2026 season is announced, add an entry here. Example shape:
+  #
+  # - season: "2026 Summer"
+  #   production: "Twelfth Night"
+  #   author: "William Shakespeare"
+  #   director: "Saheem Ali"
+  #   first_preview: 2026-06-09
+  #   opening_night: 2026-06-23
+  #   closing_night: 2026-08-30
+  #   curtain: "20:00"
+  #   dark_days: ["monday"]
+  #   url: "https://publictheater.org/productions/season/2526/twelfth-night/"
+  #   notes: |
+  #     Free tickets via TodayTix lottery and standby line at the Delacorte
+  #     starting at noon day-of.
+  #   tags:
+  #     - "Shakespeare"
+  #     - "Theater"
+  #     - "Free"
+  #     - "Annual Tradition"

@@ -276,8 +276,11 @@ buildings:
 
   - name: The Arsenal
     type: building/headquarters
+    alternate_names:
+      - Arsenal
+      - Arsenal Gallery
     location: Southern section, near the Central Park Zoo
-    description: Red-brick building designed by Martin E. Thompson in 1851 (predates the park). NYC Parks headquarters since 1934. Denesmouth Arch is nearby.
+    description: Red-brick building designed by Martin E. Thompson in 1851 (predates the park). NYC Parks headquarters since 1934. Houses the Arsenal Gallery on the third floor. Denesmouth Arch is nearby.
 
   - name: Bethesda Terrace and Fountain
     type: terrace/fountain

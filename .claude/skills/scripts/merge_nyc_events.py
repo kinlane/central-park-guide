@@ -32,6 +32,11 @@ EVENTS_DIR = os.path.join(REPO_ROOT, '_events')
 NYRR_JSON_PATH = os.path.join(REPO_ROOT, '_data', 'nyrr-races.json')
 CHARITY_WALKS_PATH = os.path.join(REPO_ROOT, '_data', 'charity-walks.yml')
 NYCC_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'nycc-rides.json')
+NYCPARKS_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'nycparks-events.json')
+SUMMERSTAGE_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'summerstage-events.json')
+NAUMBURG_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'naumburg-events.json')
+PUBLICTHEATER_SEASONS_PATH = os.path.join(REPO_ROOT, '_data', 'publictheater-seasons.yml')
+BIRDING_WALKS_PATH = os.path.join(REPO_ROOT, '_data', 'birding-walks.yml')
 
 BOROUGHS = ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island']
 
@@ -454,6 +459,34 @@ TAG_DISPLAY = {
 }
 
 
+# Event-name patterns for events that historically occupy the runner/cyclist loop.
+# Hits add both `race` (so runner/cyclist tag-includes catch them) and `affects-loop`
+# (the brand hard-include rule). These are events the permit feed lists with vague
+# tags like "Family & Community" but that materially close drives — the AIDS-Walk-gap
+# pattern. Keep this list small and specific; broad patterns over-tag.
+LOOP_IMPACT_NAME_PATTERNS = [
+    r'\bcorporate\s+challenge\b',                  # J.P. Morgan Corporate Challenge — Wed evening 3.5mi loop race
+    r'\baids\s+walk\b',                            # AIDS Walk NY — also in charity-walks.yml; defense in depth
+    r'\bachilles\s+hope\s+and\s+possibility\b',    # NYRR Achilles Hope & Possibility
+    r'\bnyc\s+marathon\b',
+    r"\bnyc\s+half\b",
+    r"\bwomen'?s\s+half\b",
+    r'\bmini\s+10k\b',
+    r'\bmidnight\s+run\b',
+    r'\bjoe\s+kleinerman\b',                       # NYRR Joe Kleinerman 10K (typical CP loop race)
+    r'\bted\s+corbitt\b',                          # NYRR Ted Corbitt 15K
+    r'\bmanhattan\s+10k\b',
+    r'\bhealthy\s+kidney\b',                       # NYRR Healthy Kidney 10K
+]
+
+
+def detects_loop_impact(name):
+    """Return True if the event name matches a known loop-occupying event pattern.
+    Used to override the affects-loop tag when the permit feed under-tags."""
+    text = (name or '').lower()
+    return any(re.search(p, text, re.IGNORECASE) for p in LOOP_IMPACT_NAME_PATTERNS)
+
+
 def get_tags(name, event_type, category=None):
     """Return a sorted list of Title Case tag values.
 
@@ -466,6 +499,10 @@ def get_tags(name, event_type, category=None):
     for pattern, tag in TAG_RULES:
         if re.search(pattern, text, re.IGNORECASE):
             slugs.add(tag)
+    # Known loop-occupying events the permit feed under-tags (Corporate Challenge etc.)
+    if detects_loop_impact(name):
+        slugs.add('affects-loop')
+        slugs.add('race')
     # Sport-type roll-up
     if event_type in ('Sport - Adult', 'Sport - Youth'):
         slugs.add('sports')
@@ -730,6 +767,8 @@ for event in latest:
     lines.append('event_borough: "Manhattan"')
     lines.append('community_board: "' + cb + '"')
     lines.append('police_precinct: "' + pp + '"')
+    if 'Affects Loop' in tags:
+        lines.append('affects_loop: true')
     lines.append('tags:')
     for tag in tags:
         lines.append('  - "' + yaml_safe(tag) + '"')
@@ -1087,6 +1126,379 @@ if nycc_cache_present:
                     pass
 
 
+# ── Helper for the new (NYC Parks / SummerStage / Naumburg) sources ───
+def _write_event_md(eid, name, date_str, time_str, end_time_str, location,
+                    description, event_type, source, source_url, image,
+                    extra_fm=None, tag_slugs=None, body_extra=None):
+    """Render a Markdown event file using the existing places-vocabulary +
+    tagging conventions. Returns ('created'|'updated'|'unchanged', filepath).
+    `extra_fm` is an ordered list of (key, value) tuples appended to the
+    front matter. `tag_slugs` is a set of slug-form tags; falls back to
+    get_tags() if None. `body_extra` is a list of extra markdown lines
+    appended after the standard body."""
+    if date_str < TODAY:
+        return ('past', None)
+    api_event_ids.add(eid)
+    all_places = match_places(location)
+    if not all_places:
+        unmatched_locs.add(location)
+        return ('unmatched', None)
+    place = all_places[0]
+    cat = categorize(name, event_type)
+    if tag_slugs is None:
+        tag_slugs = set()
+        for t in get_tags(name, event_type, cat):
+            tag_slugs.add(slugify(t))
+    tag_list = sorted({
+        TAG_DISPLAY.get(s, s.replace('-', ' ').title())
+        for s in tag_slugs
+    })
+    if not image:
+        image = get_image(cat, location, tag_list)
+    if not description:
+        description = make_description(name, event_type, location)
+    description = re.sub(r'\s+', ' ', description).strip()
+
+    key = (eid, date_str)
+    api_keys.add(key)
+    is_new = key not in existing_by_key
+    date_dt = datetime.strptime(date_str, '%Y-%m-%d')
+
+    lines = ['---', f'title: "{yaml_safe(name)}"', f'date: {date_str}',
+             f'time: "{time_str}"']
+    if end_time_str:
+        lines.append(f'end_time: "{end_time_str}"')
+    lines.append(f'location: "{yaml_safe(location)}"')
+    lines.append(f'place: "{yaml_safe(place["name"])}"')
+    lines.append(f'place_category: "{place["category"]}"')
+    if len(all_places) > 1:
+        lines.append('places:')
+        for p in all_places:
+            lines.append(f'  - "{yaml_safe(p["name"])}"')
+        lines.append('place_categories:')
+        for p in all_places:
+            lines.append(f'  - "{p["category"]}"')
+    lines.append(f'image: "{image}"')
+    lines.append(f'description: "{yaml_safe(description)}"')
+    lines.append(f'event_id: "{eid}"')
+    lines.append(f'event_type: "{event_type}"')
+    lines.append('event_borough: "Manhattan"')
+    lines.append(f'source: "{source}"')
+    if source_url:
+        lines.append(f'source_url: "{yaml_safe(source_url)}"')
+    for k, v in (extra_fm or []):
+        if v is None or v == '':
+            continue
+        if isinstance(v, bool):
+            lines.append(f'{k}: {"true" if v else "false"}')
+        elif isinstance(v, (int, float)):
+            lines.append(f'{k}: {v}')
+        else:
+            lines.append(f'{k}: "{yaml_safe(str(v))}"')
+    lines.append('tags:')
+    for tag in tag_list:
+        lines.append(f'  - "{yaml_safe(tag)}"')
+    lines.append('---')
+    lines.append('')
+    lines.append(description)
+    lines.append('')
+    lines.append('## Event Details')
+    lines.append('')
+    lines.append(f'- **Event:** {name}')
+    lines.append(f'- **Date:** {date_dt.strftime("%A, %B %-d, %Y")}')
+    lines.append(f'- **Time:** {time_str}' + (f' – {end_time_str}' if end_time_str else ''))
+    lines.append(f'- **Location:** {location}, Central Park')
+    if source_url:
+        lines.append(f'- **Official site:** {source_url}')
+    if body_extra:
+        lines.append('')
+        lines.extend(body_extra)
+    lines.append('')
+
+    new_content = '\n'.join(lines)
+    if is_new:
+        base_slug = slugify(name) + '-' + date_str
+        slug_counts[base_slug] += 1
+        slug = base_slug if slug_counts[base_slug] == 1 else f'{base_slug}-{slug_counts[base_slug]}'
+        filepath = os.path.join(EVENTS_DIR, slug + '.md')
+        with open(filepath, 'w') as f:
+            f.write(new_content)
+        return ('created', filepath)
+    existing_files = existing_by_key[key]
+    keeper = existing_files[0]
+    status = 'unchanged'
+    if keeper['content'] != new_content:
+        with open(keeper['path'], 'w') as f:
+            f.write(new_content)
+        status = 'updated'
+    for dup in existing_files[1:]:
+        try:
+            os.remove(dup['path'])
+        except FileNotFoundError:
+            pass
+    return (status, keeper['path'])
+
+
+# ── Source 7: NYC Parks Department (nycparks-events.json) ─────────────
+nycparks_created = nycparks_updated = nycparks_skipped = 0
+if os.path.exists(NYCPARKS_CACHE_PATH):
+    with open(NYCPARKS_CACHE_PATH) as f:
+        nycparks_data = json.load(f)
+    for rec in nycparks_data.get('events', []):
+        start_iso = rec.get('start_date') or ''
+        end_iso = rec.get('end_date') or ''
+        if 'T' not in start_iso:
+            nycparks_skipped += 1
+            continue
+        date_str, time_part = start_iso.split('T', 1)
+        time_str = time_part[:5]
+        end_time_str = end_iso.split('T', 1)[1][:5] if 'T' in end_iso else ''
+        category = rec.get('category', '') or ''
+        free = rec.get('free')
+        tag_slugs = set()
+        if free:
+            tag_slugs.add('free')
+        # Light category → tag mapping
+        for piece in [s.strip().lower() for s in category.split(',') if s.strip()]:
+            if piece in ('art', 'concerts', 'concert', 'music', 'film', 'theater',
+                         'volunteer', 'nature', 'fitness', 'family', 'history',
+                         'science', 'birds'):
+                tag_slugs.add(piece if piece != 'concert' else 'music')
+        # Always carry the NYC Parks origin tag
+        tag_slugs.add('nyc-parks')
+        result, _ = _write_event_md(
+            eid=rec['id'],
+            name=rec['title'],
+            date_str=date_str,
+            time_str=time_str,
+            end_time_str=end_time_str,
+            location=rec.get('location') or 'Central Park',
+            description=f"{rec['title']} at {rec.get('location','Central Park')}. NYC Parks Department event{(' — '+category) if category else ''}.",
+            event_type='NYC Parks Event',
+            source='nycgovparks.org',
+            source_url=rec.get('url'),
+            image=None,
+            tag_slugs=tag_slugs,
+        )
+        if result == 'created': nycparks_created += 1
+        elif result == 'updated': nycparks_updated += 1
+        elif result == 'unmatched': nycparks_skipped += 1
+
+
+# ── Source 8: SummerStage (summerstage-events.json) ───────────────────
+summerstage_created = summerstage_updated = summerstage_skipped = 0
+if os.path.exists(SUMMERSTAGE_CACHE_PATH):
+    with open(SUMMERSTAGE_CACHE_PATH) as f:
+        ss_data = json.load(f)
+    for rec in ss_data.get('events', []):
+        start = (rec.get('start_date') or '').replace('T', ' ')
+        if ' ' not in start:
+            summerstage_skipped += 1
+            continue
+        date_str, time_part = start.split(' ', 1)
+        time_str = time_part[:5]
+        end_time_str = ''
+        if rec.get('end_date'):
+            end_part = rec['end_date'].replace('T', ' ').split(' ', 1)
+            if len(end_part) == 2:
+                end_time_str = end_part[1][:5]
+        tag_slugs = set(rec.get('tags') or [])
+        tag_slugs.add('summerstage')
+        tag_slugs.add('music')
+        tag_slugs.add('concerts-performances')
+        if rec.get('cost') == '' or 'free' in (rec.get('cost') or '').lower():
+            tag_slugs.add('free')
+        location = rec.get('place_hint') or 'Rumsey Playfield'
+        result, _ = _write_event_md(
+            eid=rec['id'],
+            name=rec['title'],
+            date_str=date_str,
+            time_str=time_str,
+            end_time_str=end_time_str,
+            location=location,
+            description=(rec.get('description') or '')[:500],
+            event_type='SummerStage Concert',
+            source='cityparksfoundation.org',
+            source_url=rec.get('url'),
+            image=rec.get('image'),
+            tag_slugs=tag_slugs,
+            extra_fm=[('cost', rec.get('cost', ''))] if rec.get('cost') else None,
+        )
+        if result == 'created': summerstage_created += 1
+        elif result == 'updated': summerstage_updated += 1
+        elif result == 'unmatched': summerstage_skipped += 1
+
+
+# ── Source 9: Naumburg Orchestral Concerts (naumburg-events.json) ─────
+naumburg_created = naumburg_updated = naumburg_skipped = 0
+if os.path.exists(NAUMBURG_CACHE_PATH):
+    with open(NAUMBURG_CACHE_PATH) as f:
+        nb_data = json.load(f)
+    for rec in nb_data.get('events', []):
+        date_str = rec.get('date')
+        if not date_str:
+            naumburg_skipped += 1
+            continue
+        # Parse "7:30 PM" -> "19:30"
+        time_display = (rec.get('time_display') or '').strip()
+        time_str = '19:30'  # historical default
+        end_time_str = '21:00'
+        if time_display:
+            try:
+                t = datetime.strptime(time_display.replace(' ', ' ').strip(), '%I:%M %p')
+                time_str = t.strftime('%H:%M')
+                end_time_str = (t.replace(hour=(t.hour+2) % 24)).strftime('%H:%M')
+            except Exception:
+                pass
+        tag_slugs = {'music', 'concerts-performances', 'free', 'annual-tradition',
+                     'classical', 'orchestra', 'naumburg'}
+        result, _ = _write_event_md(
+            eid=rec['id'],
+            name=rec['title'],
+            date_str=date_str,
+            time_str=time_str,
+            end_time_str=end_time_str,
+            location='Naumburg Bandshell',
+            description=f"{rec['title']} — free Naumburg Orchestral Concert at the Naumburg Bandshell. Part of the annual summer series (since 1905).",
+            event_type='Naumburg Concert',
+            source='naumburgconcerts.org',
+            source_url=rec.get('url'),
+            image=rec.get('image'),
+            tag_slugs=tag_slugs,
+        )
+        if result == 'created': naumburg_created += 1
+        elif result == 'updated': naumburg_updated += 1
+        elif result == 'unmatched': naumburg_skipped += 1
+
+
+# ── Source 10: Public Theater seasons (publictheater-seasons.yml) ─────
+# Expand each season into one event per performance date, skipping dark days.
+publictheater_created = publictheater_updated = publictheater_skipped = 0
+publictheater_seasons_loaded = 0
+DARK_WEEKDAYS = {'monday': 0, 'tuesday': 1, 'wednesday': 2, 'thursday': 3,
+                 'friday': 4, 'saturday': 5, 'sunday': 6}
+if os.path.exists(PUBLICTHEATER_SEASONS_PATH):
+    with open(PUBLICTHEATER_SEASONS_PATH) as f:
+        pt_data = yaml.safe_load(f) or {}
+    from datetime import timedelta
+    for season in (pt_data.get('seasons') or []):
+        publictheater_seasons_loaded += 1
+        first = season.get('first_preview')
+        last = season.get('closing_night')
+        if not first or not last:
+            continue
+        if isinstance(first, str): first = datetime.strptime(first, '%Y-%m-%d').date()
+        if isinstance(last, str): last = datetime.strptime(last, '%Y-%m-%d').date()
+        dark = {DARK_WEEKDAYS[d.lower()] for d in (season.get('dark_days') or [])}
+        production = season.get('production') or 'Shakespeare in the Park'
+        author = season.get('author') or 'William Shakespeare'
+        director = season.get('director') or ''
+        curtain = season.get('curtain') or '20:00'
+        tag_slugs = {'shakespeare', 'theater', 'free', 'annual-tradition',
+                     'concerts-performances'}
+        for t in (season.get('tags') or []):
+            tag_slugs.add(slugify(t) if not t[0].islower() else t)
+        d = first
+        while d <= last:
+            if d.weekday() in dark:
+                d += timedelta(days=1)
+                continue
+            date_str = d.strftime('%Y-%m-%d')
+            eid = f"publictheater-{slugify(production)}-{date_str}"
+            desc = (f"{production} by {author}" + (f", directed by {director}" if director else "") +
+                    f", at the Delacorte Theater. Free Public Theater production; "
+                    f"tickets via TodayTix lottery and the day-of standby line.")
+            result, _ = _write_event_md(
+                eid=eid,
+                name=production,
+                date_str=date_str,
+                time_str=curtain,
+                end_time_str='',
+                location='Delacorte Theater',
+                description=desc,
+                event_type='Theater Production',
+                source='publictheater.org',
+                source_url=season.get('url'),
+                image=None,
+                tag_slugs=tag_slugs,
+            )
+            if result == 'created': publictheater_created += 1
+            elif result == 'updated': publictheater_updated += 1
+            elif result == 'unmatched': publictheater_skipped += 1
+            d += timedelta(days=1)
+
+
+# ── Source 11: NYC Bird Alliance recurring walks (birding-walks.yml) ──
+# Each entry expands by weekday + cadence between season_start and season_end.
+birding_created = birding_updated = birding_skipped = 0
+birding_walks_loaded = 0
+if os.path.exists(BIRDING_WALKS_PATH):
+    with open(BIRDING_WALKS_PATH) as f:
+        bw_data = yaml.safe_load(f) or {}
+    from datetime import timedelta
+    for walk in (bw_data.get('walks') or []):
+        birding_walks_loaded += 1
+        start = walk.get('season_start')
+        end = walk.get('season_end')
+        if not start or not end:
+            continue
+        if isinstance(start, str): start = datetime.strptime(start, '%Y-%m-%d').date()
+        if isinstance(end, str): end = datetime.strptime(end, '%Y-%m-%d').date()
+        weekday = walk.get('weekday')
+        cadence = (walk.get('cadence') or 'weekly').lower()
+        name = walk.get('name') or 'Bird Walk'
+        leader = walk.get('leader') or 'NYC Bird Alliance staff'
+        location = walk.get('place') or 'The Ramble'
+        meet = walk.get('meet_location') or location
+        time_str = walk.get('time') or '08:00'
+        end_time_str = walk.get('end_time') or ''
+        cost = walk.get('cost') or ''
+        tag_slugs = {'birds', 'nature', 'nyc-bird-alliance'}
+        if 'free' in (cost or '').lower():
+            tag_slugs.add('free')
+        for t in (walk.get('tags') or []):
+            tag_slugs.add(slugify(t) if not t[0].islower() else t)
+        # Iterate dates
+        step = 7 if cadence == 'weekly' else (14 if cadence == 'biweekly' else None)
+        d = start
+        # advance to the next matching weekday
+        if weekday is not None:
+            while d <= end and d.weekday() != int(weekday):
+                d += timedelta(days=1)
+        while d <= end:
+            date_str = d.strftime('%Y-%m-%d')
+            eid = f"birding-{slugify(name)}-{date_str}"
+            desc = (f"{name} led by {leader}. Meet at {meet}. "
+                    f"Hosted by NYC Bird Alliance.")
+            result, _ = _write_event_md(
+                eid=eid,
+                name=name,
+                date_str=date_str,
+                time_str=time_str,
+                end_time_str=end_time_str,
+                location=location,
+                description=desc,
+                event_type='Bird Walk',
+                source='nycbirdalliance.org',
+                source_url=walk.get('url'),
+                image=None,
+                tag_slugs=tag_slugs,
+                extra_fm=[('leader', leader), ('cost', cost)],
+            )
+            if result == 'created': birding_created += 1
+            elif result == 'updated': birding_updated += 1
+            elif result == 'unmatched': birding_skipped += 1
+            if cadence == 'monthly':
+                # advance ~30 days then snap to weekday
+                d += timedelta(days=28)
+                while d.weekday() != int(weekday) and d <= end:
+                    d += timedelta(days=1)
+            elif step:
+                d += timedelta(days=step)
+            else:
+                break
+
+
 # Clean titles + backfill missing descriptions in events left alone
 # (file not matched by an API record).
 title_only_cleaned = 0
@@ -1175,6 +1587,36 @@ if not nycc_cache_present:
 else:
     print(f"  Created: {nycc_created}, Updated: {nycc_updated}")
     print(f"  Skipped (location unmatched): {nycc_skipped_unmatched}")
+
+print(f"\nNYC Parks Dept (nycparks-events.json):")
+if os.path.exists(NYCPARKS_CACHE_PATH):
+    print(f"  Created: {nycparks_created}, Updated: {nycparks_updated}, Skipped: {nycparks_skipped}")
+else:
+    print(f"  Cache missing — run fetch_nycparks_events.py before merging.")
+
+print(f"\nSummerStage (summerstage-events.json):")
+if os.path.exists(SUMMERSTAGE_CACHE_PATH):
+    print(f"  Created: {summerstage_created}, Updated: {summerstage_updated}, Skipped: {summerstage_skipped}")
+else:
+    print(f"  Cache missing — run fetch_summerstage_events.py before merging.")
+
+print(f"\nNaumburg Concerts (naumburg-events.json):")
+if os.path.exists(NAUMBURG_CACHE_PATH):
+    print(f"  Created: {naumburg_created}, Updated: {naumburg_updated}, Skipped: {naumburg_skipped}")
+else:
+    print(f"  Cache missing — run fetch_naumburg_concerts.py before merging.")
+
+print(f"\nPublic Theater (publictheater-seasons.yml):")
+if publictheater_seasons_loaded == 0:
+    print(f"  No seasons configured. Edit publictheater-seasons.yml when the next season is announced.")
+else:
+    print(f"  Seasons: {publictheater_seasons_loaded}, Created: {publictheater_created}, Updated: {publictheater_updated}")
+
+print(f"\nNYC Bird Alliance walks (birding-walks.yml):")
+if birding_walks_loaded == 0:
+    print(f"  No walks configured. Edit birding-walks.yml when the season schedule is published.")
+else:
+    print(f"  Walks: {birding_walks_loaded}, Created: {birding_created}, Updated: {birding_updated}")
 if unmatched_locs:
     print(f"\n  Unmatched locations:")
     for loc in sorted(unmatched_locs):

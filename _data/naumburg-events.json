@@ -1,0 +1,50 @@
+{
+  "events": [
+    {
+      "id": "naumburg-upcoming-baroklyn",
+      "url": "https://naumburgconcerts.org/upcoming/baroklyn",
+      "title": "Baroklyn, Simone Dinnerstein, & Concora choir",
+      "date": "2026-06-09",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692236676-EJ9DSAYW2GU0FAGKIH9C/Simone+Dinnerstein+Baroklyn+by+Grayson+Dantzic+300-51b.jpg",
+      "venue": "Naumburg Bandshell"
+    },
+    {
+      "id": "naumburg-upcoming-theknights",
+      "url": "https://naumburgconcerts.org/upcoming/theknights",
+      "title": "The Knights",
+      "date": "2026-06-23",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692159322-LR6R7MBLFPVOGF5RQTJW/The+Knights+%28horizontal%29+by+Shervin+Lainez.jpg",
+      "venue": "Naumburg Bandshell"
+    },
+    {
+      "id": "naumburg-upcoming-deliriummusicum",
+      "url": "https://naumburgconcerts.org/upcoming/deliriummusicum",
+      "title": "Delirium Musicum",
+      "date": "2026-07-07",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692071008-8QLL83PA9EJXHPQS7WVJ/DM+Ensemble+Picture.jpg",
+      "venue": "Naumburg Bandshell"
+    },
+    {
+      "id": "naumburg-upcoming-osl",
+      "url": "https://naumburgconcerts.org/upcoming/osl",
+      "title": "Orchestra of St. Luke's",
+      "date": "2026-07-21",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776691946864-ORV0L98LQUWCZ9R0VL5N/0045_OSL-AdobeRGB-Horizontal.jpg",
+      "venue": "Naumburg Bandshell"
+    },
+    {
+      "id": "naumburg-upcoming-noskysbaroqueband",
+      "url": "https://naumburgconcerts.org/upcoming/noskysbaroqueband",
+      "title": "Nosky's Baroque Band",
+      "date": "2026-08-04",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776691854957-3OFST3ONB4K12V7GHSPG/Aisslinn+Nosky+by+Sian+Richards.jpg",
+      "venue": "Naumburg Bandshell"
+    }
+  ],
+  "fetched_at": "2026-05-22T19:26:11Z"
+}

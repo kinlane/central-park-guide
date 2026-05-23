@@ -3,11 +3,11 @@ title: "Softball - Adults"
 date: 2026-07-30
 time: "15:00"
 end_time: "17:00"
-location: "Great Lawn-Softball-08"
-place: "Great Lawn"
-place_category: "meadows_and_lawns"
+location: "Heckscher Fields-Softball-01"
+place: "Heckscher Fields"
+place_category: "event_venues"
 image: "/assets/images/tags/softball.png"
-description: "Softball - Adults at Great Lawn-Softball-08. Adult league permitted event in Central Park."
+description: "Softball - Adults at Heckscher Fields-Softball-01. Adult league permitted event in Central Park."
 event_id: "932830"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
@@ -19,18 +19,18 @@ tags:
   - "T-Ball"
 ---
 
-Softball - Adults takes place at Great Lawn-Softball-08 in Central Park on Thursday, July 30, 2026.
+Softball - Adults takes place at Heckscher Fields-Softball-01 in Central Park on Thursday, July 30, 2026.
 
 ## Event Details
 
 - **Event:** Softball - Adults
 - **Date:** Thursday, July 30, 2026
 - **Time:** 3:00 PM - 5:00 PM
-- **Location:** Great Lawn-Softball-08, Central Park
-- **Place:** Great Lawn
+- **Location:** Heckscher Fields-Softball-01, Central Park
+- **Place:** Heckscher Fields
 - **Type:** Sport - Adult
 - **Event ID:** 932830
 
 ## About This Event
 
-This is a permitted sport - adult event at Great Lawn-Softball-08. The area may have restricted access during the event period.
+This is a permitted sport - adult event at Heckscher Fields-Softball-01. The area may have restricted access during the event period.

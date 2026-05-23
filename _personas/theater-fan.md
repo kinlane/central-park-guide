@@ -3,17 +3,18 @@ persona_id: "theater-fan"
 title: "Theater Fan"
 interests:
   wants:
-    - Delacorte Theater and Public Theater / Shakespeare in the Park schedules
-    - Outdoor productions at The Pool, Bandshell, and other venues
-    - Barefoot Shakespeare, Hudson Warehouse, and pop-up companies
-    - Marionette Theatre programming
-    - Dance, physical performance, and ensemble work
-    - Run dates, dark days, opening/closing nights
+    - Shakespeare in the Park at Delacorte Theater (when publictheater-seasons.yml is filled in)
+    - Barefoot Shakespeare runs at The Pool and other outdoor venues (Theater + Shakespeare tags)
+    - Hudson Warehouse and pop-up companies tagged Theater / Performance
+    - Marionette Theatre programming at Swedish Cottage
+    - Dance, Ballet, Opera, and Performance-tagged work in the park
+    - Naumburg Orchestral Concerts at Bandshell Plaza when the program leans operatic / programmatic
+    - Run dates, dark days, opening/closing nights — first preview through final curtain
   does_not_want:
-    - Cycling and running event impact
-    - Sports field bookings and league play
-    - Playground closures and maintenance
-    - Bird migration and bloom updates
-    - Food markets and commercial activations
-    - Wedding ceremonies and small private bookings
+    - Cycling loop activity and Runs & Races
+    - Sport - Adult / Sport - Youth field play (Softball, T-Ball, Tennis, Baseball, Kickball, Soccer)
+    - Playground Closures and Maintenance
+    - Nature, Birds, Garden, and bloom updates
+    - Market activations and Picnic permits
+    - Wedding, Ceremony, Reception, Birthday, and other Private Events / Private Booking
 ---
