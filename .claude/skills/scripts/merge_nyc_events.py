@@ -182,6 +182,14 @@ def clean_title(name):
     """Clean up an event title from raw NYC data."""
     title = name.strip()
 
+    # All-numeric titles (e.g. "500247") are permit/order numbers, not event names.
+    # These almost always correspond to private bookings at scenic spots (Ladies'
+    # Pavilion, Cherry Hill, Cop Cot, Wagner Cove) where the permittee left the
+    # "event name" field blank and the system substituted a reference number.
+    # Substitute a meaningful title and let categorize() route them to private-events.
+    if re.fullmatch(r'\d+', title):
+        return 'Private Booking'
+
     # Strip "DBA Xxx" first (often comes after LLC) -- "...LLC, DBA SocRoc" -> "...LLC"
     title = re.sub(r',?\s+DBA\s+.*$', '', title, flags=re.IGNORECASE)
 
@@ -244,7 +252,8 @@ def categorize(name, event_type):
     # Private events: ceremonies, parties, picnics, weddings
     private_signals = ['celebration', 'wedding', 'elopement', 'ceremony',
                        'birthday', 'micro wedding', 'baptism', 'memorial',
-                       'bar mitzvah', 'bat mitzvah', 'reception']
+                       'bar mitzvah', 'bat mitzvah', 'reception',
+                       'private booking']
     if any(s in name_lower for s in private_signals):
         return 'private-events'
     if name_stripped in ('party', 'picnic', 'miscellaneous'):
