@@ -1,8 +1,8 @@
 {
   "source": "Central Park Conservancy - centralparknyc.org",
-  "crawl_date": "2026-05-22",
+  "crawl_date": "2026-05-24",
   "api_endpoint": "https://www.centralparknyc.org/activities.json",
-  "total_activities_on_site": 117,
+  "total_activities_on_site": 116,
   "total_events_extracted": 13,
   "pagination": {
     "total_pages": 8,
@@ -240,31 +240,153 @@
       }
     },
     {
-      "id": 3450029,
-      "title": "Wildlife Park Safari",
-      "url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari",
+      "id": 3450244,
+      "title": "Tour: Water in Focus",
+      "url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus",
       "type": "Events",
       "tags": [],
-      "summary": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
-      "description": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
+      "summary": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
+      "description": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
       "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=e0e25f76bf79ee7272384896c6c52cf2",
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=1a32c82f5e3f1e1895ac5d63cb7be579",
         "schema_image": "",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d, https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=5e1bb0377861510123c1f265f1ad58eb 2x"
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf, https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=6e58de5414c5fee5ae788970cfd6d9c2 2x"
       },
       "start_date": null,
       "event_instances": [],
       "nested_instances": {},
       "meta": {
-        "og_title": "Wildlife Park Safari",
-        "og_description": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.",
-        "og_url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari"
+        "og_title": "Tour: Water in Focus",
+        "og_description": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.",
+        "og_url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus"
       },
       "schema_org": null,
       "detail_page_data": {
         "cost": "Free",
-        "description_detail": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End."
+        "description_detail": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end."
+      }
+    },
+    {
+      "id": 3565020,
+      "title": "Founders’ Day: 200th Anniversary of Seneca Village",
+      "url": "https://www.centralparknyc.org/activities/events/foundersday",
+      "type": "Events",
+      "tags": [
+        "Seneca Village"
+      ],
+      "summary": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
+      "description": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874, https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=ad7d0c109bdee1ef67a68153eccc93f2 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Founders’ Day: 200th Anniversary of Seneca Village",
+        "og_description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in…",
+        "og_url": "https://www.centralparknyc.org/activities/events/foundersday"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/foundersday",
+        "name": "Founders’ Day: 200th Anniversary of Seneca Village",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/foundersday"
+      },
+      "detail_page_data": {
+        "location_detail": "Mother AME Zion Church, 140 West 137th Street, New York, NY 10030 200 years ago, on September 17, 1825, congregant Andrew Williams and the trustees of the AME Zion Church were among the first to purchase land in the area between West 82nd and 89th Streets, which would become Seneca Village. On Sunday, September 14, join the Central Park Conservancy for a music-filled service at the historic AME Zion Church in Harlem—the first Black church in New York City—to honor this significant anniversary (in collaboration with the James L. Varick Community Center, Inc.). Through the sermon, live music, and a conversation with historians, discover the communal roots of this thriving, predominantly African-American 19th-century community. Service will begin at 11:00 AM, followed by a discussion between AME Zion Church leaders and a Seneca Village historian. Members of the Institute for the Exploration of Seneca Village History and the Envisioning Seneca Village team will also be present to answer questions about their research. Light refreshments will be available after service. Event Schedule Church Service: 11:00 AM Refreshments / Open House: 12:30 PM–1:00 PM Dabney N. Montgomery Heritage Center (AME Zion History Museum) Institute for the Exploration of Seneca Village History Envisioning Seneca Village Discussion: 1:00 PM This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Sign Up",
+        "cost": "Free",
+        "description_detail": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village."
+      }
+    },
+    {
+      "id": 1169382,
+      "title": "Evening at the Water",
+      "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
+      "type": "Benefit Events",
+      "tags": [
+        "For Members"
+      ],
+      "summary": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
+      "description": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4, https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=91b01c44fd26c0e1e141865784f908d4 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Evening at the Water",
+        "og_description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary…",
+        "og_url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
+        "name": "Evening at the Water",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
+      },
+      "detail_page_data": {
+        "location_detail": "Conservatory Water We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all. Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more! Join the Greensward Circle Questions? Call 212.776.1061 or email [email protected] .",
+        "description_detail": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman"
+      }
+    },
+    {
+      "id": 27760,
+      "title": "Chess Lecture & Simul Series with Beginners Workshops",
+      "url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series",
+      "type": "Events, Activities",
+      "tags": [
+        "Kids and Families"
+      ],
+      "summary": "<p>Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of the game.</p>",
+      "description": "<p>Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of the game.</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c8d8cdf49e903939eac1991e97c113c5",
+        "schema_image": "",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90, https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=8f4cced81888d02f231cb8fccee9b223 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Chess Lecture & Simul Series with Beginners Workshops",
+        "og_description": "Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of…",
+        "og_url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series"
+      },
+      "schema_org": null,
+      "detail_page_data": {
+        "description_detail": "Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of…"
       }
     },
     {
@@ -361,6 +483,50 @@
       }
     },
     {
+      "id": 2698690,
+      "title": "Central Park Farm Stand",
+      "url": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project",
+      "type": "Events",
+      "tags": [],
+      "summary": "<p>The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms. </p>",
+      "description": "<p>The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms. </p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=36f8fedc586438694ef37aae3a7d1fce",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=36f8fedc586438694ef37aae3a7d1fce",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=45378ef368e24d62cbddd1d32845e9b9",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=45378ef368e24d62cbddd1d32845e9b9, https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=92624ecc003273d2f7da9712de3e5207 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Central Park Farm Stand",
+        "og_description": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms.",
+        "og_url": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=36f8fedc586438694ef37aae3a7d1fce"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project",
+        "name": "Central Park Farm Stand",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project"
+      },
+      "detail_page_data": {
+        "location_detail": "110th Street & Malcolm X Boulevard Note: The farm stand has closed for the season; check back here or sign up for our email newsletter to get the latest on 2026 farm stand dates and other Conservancy updates. The Central Park Conservancy is delighted to partner with Corbin Hill Food Project to bring fresh, healthy, and affordable food options to our neighbors through the Central Park Farm Stand in summer and fall. The stand accepts SNAP, EBT, FMNP, and WIC benefits, ensuring access for all. The Central Park Farm Stand offers locally sourced produce from BIPOC-owned farms in the Hudson Valley, promoting food access, sustainable agriculture, healthy eating habits, and environmental conservation through community engagement. This community-focused offering is part of a vibrant local food ecosystem, creating economic opportunities for BIPOC farmers and small producers while bringing fresh, locally grown produce to the community. From Farm to Market: Hear from Corbin Hill Farmers Over the Years Ismail “We create markets for growers to sell in the very communities they come from. Bringing Black- and Brown-grown products into this space is truly a joy—and we’re proud to have the farmers here with us. It’s a one-of-a-kind experience you can’t find anywhere else in the City.” –Ismail Samad, Corbin Hill Food Project Gaby “Our main goal—our mission—is to feed the community we belong to. For us, it’s deeply important to bring fresh food back into the City. You get the food you deserve at the price you deserve—while supporting your local economy and local farmers.” –Gaby, Farmer at Yara Farm Chef Louise “We’re approaching food sovereignty, we’re addressing food insecurity, and we’re bringing all these great things to people in the neighborhood that can utilize it.” –Chef Louise, Corbin Hill Food Project Ismail “We create markets for growers to sell in the very communities they come from. Bringing Black- and Brown-grown products into this space is truly a joy—and we’re proud to have the farmers here with us. It’s a one-of-a-kind experience you can’t find anywhere else in the City.” –Ismail Samad, Corbin Hill Food Project Gaby “Our main goal—our mission—is to feed the community we belong to. For us, it’s deeply important to bring fresh food back into the City. You get the food you deserve at the price you deserve—while supporting your local economy and local farmers.” –Gaby, Farmer at Yara Farm Chef Louise “We’re approaching food sovereignty, we’re addressing food insecurity, and we’re bringing all these great things to people in the neighborhood that can utilize it.” –Chef Louise, Corbin Hill Food Project",
+        "description_detail": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms."
+      }
+    },
+    {
       "id": 111335,
       "title": "29th Annual Central Park Holiday Lighting",
       "url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025",
@@ -408,197 +574,31 @@
       }
     },
     {
-      "id": 1169382,
-      "title": "Evening at the Water",
-      "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
-      "type": "Benefit Events",
-      "tags": [
-        "For Members"
-      ],
-      "summary": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
-      "description": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4, https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=91b01c44fd26c0e1e141865784f908d4 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Evening at the Water",
-        "og_description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary…",
-        "og_url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
-        "name": "Evening at the Water",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
-      },
-      "detail_page_data": {
-        "location_detail": "Conservatory Water We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all. Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more! Join the Greensward Circle Questions? Call 212.776.1061 or email [email protected] .",
-        "description_detail": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman"
-      }
-    },
-    {
-      "id": 3450244,
-      "title": "Tour: Water in Focus",
-      "url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus",
+      "id": 3450029,
+      "title": "Wildlife Park Safari",
+      "url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari",
       "type": "Events",
       "tags": [],
-      "summary": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
-      "description": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
+      "summary": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
+      "description": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
       "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=1a32c82f5e3f1e1895ac5d63cb7be579",
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=e0e25f76bf79ee7272384896c6c52cf2",
         "schema_image": "",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf, https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=6e58de5414c5fee5ae788970cfd6d9c2 2x"
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d, https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=5e1bb0377861510123c1f265f1ad58eb 2x"
       },
       "start_date": null,
       "event_instances": [],
       "nested_instances": {},
       "meta": {
-        "og_title": "Tour: Water in Focus",
-        "og_description": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.",
-        "og_url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus"
+        "og_title": "Wildlife Park Safari",
+        "og_description": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.",
+        "og_url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari"
       },
       "schema_org": null,
       "detail_page_data": {
         "cost": "Free",
-        "description_detail": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end."
-      }
-    },
-    {
-      "id": 3565020,
-      "title": "Founders’ Day: 200th Anniversary of Seneca Village",
-      "url": "https://www.centralparknyc.org/activities/events/foundersday",
-      "type": "Events",
-      "tags": [
-        "Seneca Village"
-      ],
-      "summary": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
-      "description": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874, https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=ad7d0c109bdee1ef67a68153eccc93f2 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Founders’ Day: 200th Anniversary of Seneca Village",
-        "og_description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in…",
-        "og_url": "https://www.centralparknyc.org/activities/events/foundersday"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village.",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/foundersday",
-        "name": "Founders’ Day: 200th Anniversary of Seneca Village",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/foundersday"
-      },
-      "detail_page_data": {
-        "location_detail": "Mother AME Zion Church, 140 West 137th Street, New York, NY 10030 200 years ago, on September 17, 1825, congregant Andrew Williams and the trustees of the AME Zion Church were among the first to purchase land in the area between West 82nd and 89th Streets, which would become Seneca Village. On Sunday, September 14, join the Central Park Conservancy for a music-filled service at the historic AME Zion Church in Harlem—the first Black church in New York City—to honor this significant anniversary (in collaboration with the James L. Varick Community Center, Inc.). Through the sermon, live music, and a conversation with historians, discover the communal roots of this thriving, predominantly African-American 19th-century community. Service will begin at 11:00 AM, followed by a discussion between AME Zion Church leaders and a Seneca Village historian. Members of the Institute for the Exploration of Seneca Village History and the Envisioning Seneca Village team will also be present to answer questions about their research. Light refreshments will be available after service. Event Schedule Church Service: 11:00 AM Refreshments / Open House: 12:30 PM–1:00 PM Dabney N. Montgomery Heritage Center (AME Zion History Museum) Institute for the Exploration of Seneca Village History Envisioning Seneca Village Discussion: 1:00 PM This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Sign Up",
-        "cost": "Free",
-        "description_detail": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village."
-      }
-    },
-    {
-      "id": 27760,
-      "title": "Chess Lecture & Simul Series with Beginners Workshops",
-      "url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series",
-      "type": "Events, Activities",
-      "tags": [
-        "Kids and Families"
-      ],
-      "summary": "<p>Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of the game.</p>",
-      "description": "<p>Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of the game.</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c8d8cdf49e903939eac1991e97c113c5",
-        "schema_image": "",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90, https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=8f4cced81888d02f231cb8fccee9b223 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Chess Lecture & Simul Series with Beginners Workshops",
-        "og_description": "Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of…",
-        "og_url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series"
-      },
-      "schema_org": null,
-      "detail_page_data": {
-        "description_detail": "Learn play techniques from world-renowned chess experts and put your skills to the test! After the lecture and simul, beginners can learn the basics of…"
-      }
-    },
-    {
-      "id": 2698690,
-      "title": "Central Park Farm Stand",
-      "url": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project",
-      "type": "Events",
-      "tags": [],
-      "summary": "<p>The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms. </p>",
-      "description": "<p>The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms. </p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=36f8fedc586438694ef37aae3a7d1fce",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=36f8fedc586438694ef37aae3a7d1fce",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=45378ef368e24d62cbddd1d32845e9b9",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=45378ef368e24d62cbddd1d32845e9b9, https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=92624ecc003273d2f7da9712de3e5207 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Central Park Farm Stand",
-        "og_description": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms.",
-        "og_url": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms.",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20240720_CorbinHillFoodProject_09.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=36f8fedc586438694ef37aae3a7d1fce"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project",
-        "name": "Central Park Farm Stand",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/central-park-farmstand-with-corbin-hill-food-project"
-      },
-      "detail_page_data": {
-        "location_detail": "110th Street & Malcolm X Boulevard Note: The farm stand has closed for the season; check back here or sign up for our email newsletter to get the latest on 2026 farm stand dates and other Conservancy updates. The Central Park Conservancy is delighted to partner with Corbin Hill Food Project to bring fresh, healthy, and affordable food options to our neighbors through the Central Park Farm Stand in summer and fall. The stand accepts SNAP, EBT, FMNP, and WIC benefits, ensuring access for all. The Central Park Farm Stand offers locally sourced produce from BIPOC-owned farms in the Hudson Valley, promoting food access, sustainable agriculture, healthy eating habits, and environmental conservation through community engagement. This community-focused offering is part of a vibrant local food ecosystem, creating economic opportunities for BIPOC farmers and small producers while bringing fresh, locally grown produce to the community. From Farm to Market: Hear from Corbin Hill Farmers Over the Years Ismail “We create markets for growers to sell in the very communities they come from. Bringing Black- and Brown-grown products into this space is truly a joy—and we’re proud to have the farmers here with us. It’s a one-of-a-kind experience you can’t find anywhere else in the City.” –Ismail Samad, Corbin Hill Food Project Gaby “Our main goal—our mission—is to feed the community we belong to. For us, it’s deeply important to bring fresh food back into the City. You get the food you deserve at the price you deserve—while supporting your local economy and local farmers.” –Gaby, Farmer at Yara Farm Chef Louise “We’re approaching food sovereignty, we’re addressing food insecurity, and we’re bringing all these great things to people in the neighborhood that can utilize it.” –Chef Louise, Corbin Hill Food Project Ismail “We create markets for growers to sell in the very communities they come from. Bringing Black- and Brown-grown products into this space is truly a joy—and we’re proud to have the farmers here with us. It’s a one-of-a-kind experience you can’t find anywhere else in the City.” –Ismail Samad, Corbin Hill Food Project Gaby “Our main goal—our mission—is to feed the community we belong to. For us, it’s deeply important to bring fresh food back into the City. You get the food you deserve at the price you deserve—while supporting your local economy and local farmers.” –Gaby, Farmer at Yara Farm Chef Louise “We’re approaching food sovereignty, we’re addressing food insecurity, and we’re bringing all these great things to people in the neighborhood that can utilize it.” –Chef Louise, Corbin Hill Food Project",
-        "description_detail": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms."
+        "description_detail": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End."
       }
     },
     {

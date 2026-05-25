@@ -16,7 +16,7 @@
       "Swedish Cottage"
     ],
     "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png?cb=857133857379d3f7e6f97f38deb350a3",
-    "start_date": "2026-05-23T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   },
   {
     "title": "Bird Watching with Birding Bob",
@@ -52,7 +52,7 @@
       "Walking Tours"
     ],
     "image_url": "https://www.centralpark.com/downloads/10951/download/bird-watching-birders.jpeg?cb=42f10e56c7429e134753013550fb01b5",
-    "start_date": "2026-05-22T00:00:00",
+    "start_date": "2026-05-24T00:00:00",
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
   },
   {
@@ -83,7 +83,7 @@
       "Winter Sports"
     ],
     "image_url": "https://www.centralpark.com/downloads/8118/download/FitToursNYC%20jump.jpg?cb=97cd3b0a82b07ecadaaaffb3dc4fe703",
-    "start_date": "2026-05-22T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   },
   {
     "title": "Central Park Model Yacht Club Races",
@@ -103,8 +103,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8929/download/model-sailboats.jpg?cb=22f9df28e3d9abe5666870363704333a",
-    "start_date": "2026-05-23T10:00:00",
-    "end_date": "2026-05-23T13:00:00"
+    "start_date": "2026-05-30T10:00:00",
+    "end_date": "2026-05-30T13:00:00"
   },
   {
     "title": "Central Park Zoo 4-D Theater",
@@ -124,8 +124,8 @@
       "Kids"
     ],
     "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg?cb=9a308b68dcf1925fb7c6e4ac07a7b8fd",
-    "start_date": "2026-05-22T10:15:00",
-    "end_date": "2026-05-22T17:00:00"
+    "start_date": "2026-05-25T10:15:00",
+    "end_date": "2026-05-25T17:00:00"
   },
   {
     "title": "Central Park Zoo Quests",
@@ -149,7 +149,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-05-22T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   },
   {
     "title": "Children's Programs at Central Park Zoo",
@@ -170,7 +170,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3",
-    "start_date": "2026-05-23T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   },
   {
     "title": "City Girls Who Walk",
@@ -189,8 +189,30 @@
       "Women"
     ],
     "image_url": "https://www.centralpark.com/downloads/10659/download/city-girls-who-walk-noelle-de-leeuw.jpg?cb=5876793eef0ad201a742d7b9c415afe6",
-    "start_date": "2026-05-24T12:00:00",
-    "end_date": "2026-05-24T13:30:00"
+    "start_date": "2026-05-31T12:00:00",
+    "end_date": "2026-05-31T13:30:00"
+  },
+  {
+    "title": "City Parks Seniors Fitness Free Tennis Lessons",
+    "url": "https://www.centralpark.com/events/cityparks-seniors-fitness-free-tennis-lessons/",
+    "source": "centralpark.com",
+    "description": "City Parks Foundation invites all senior citizens to join for free tennis lessons on Fridays in Central Park.",
+    "location": "Tennis Courts",
+    "coordinates": {
+      "lat": 40.7892582150875,
+      "lng": -73.9619237828596
+    },
+    "schedule": {
+      "raw": "Strawberry Fields | Central Park Zoo | Ice Skating | Horse & Carriage Rides | Bike Rentals | Yoga Classes"
+    },
+    "tags": [
+      "Fitness",
+      "Free Events",
+      "Tennis"
+    ],
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.263.post17.dev542374018055/static/images/blank.png",
+    "start_date": "2026-05-29T13:00:00",
+    "end_date": "2026-05-29T15:00:00"
   },
   {
     "title": "CPDSA Skate Circle Events",
@@ -217,8 +239,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3",
-    "start_date": "2026-05-23T14:45:00",
-    "end_date": "2026-05-23T18:45:00"
+    "start_date": "2026-05-25T14:45:00",
+    "end_date": "2026-05-25T18:45:00"
   },
   {
     "title": "Events on The Green at the Davis Center",
@@ -241,7 +263,7 @@
       "Wellness"
     ],
     "image_url": "https://www.centralpark.com/downloads/10914/download/davis-center.jpg?cb=5201cb32886adb8674330c968bf984b8",
-    "start_date": "2026-05-23T00:00:00"
+    "start_date": "2026-05-30T00:00:00"
   },
   {
     "title": "Fishing at the Harlem Meer",
@@ -262,8 +284,8 @@
       "Free Events"
     ],
     "image_url": "https://www.centralpark.com/downloads/1876/download/harlem-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-05-23T10:00:00",
-    "end_date": "2026-05-23T15:30:00"
+    "start_date": "2026-05-29T10:00:00",
+    "end_date": "2026-05-29T15:30:00"
   },
   {
     "title": "Free Shakespeare in the Park 2026",
@@ -283,8 +305,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/2334/download/romeo-juliet.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-05-22T20:00:00",
-    "end_date": "2026-05-22T22:00:00"
+    "start_date": "2026-05-24T20:00:00",
+    "end_date": "2026-05-24T22:00:00"
   },
   {
     "title": "Free Weekly Run with Central Park Running Club",
@@ -303,7 +325,26 @@
       "Sports & Recreation"
     ],
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543",
-    "start_date": "2026-05-23T00:00:00"
+    "start_date": "2026-05-26T00:00:00"
+  },
+  {
+    "title": "NY Classical Theatre: \"The Tragedy of Julius Caesar\"",
+    "url": "https://www.centralpark.com/events/ny-classical-theatre-free-shakespeare/",
+    "source": "centralpark.com",
+    "description": "Check out this fun FREE interactive alternative performance of Shakespeare's \"The Tragedy of Julius Caesar\" from June 2nd to 21st!",
+    "location": "West 103rd Street & Central Park West",
+    "coordinates": {
+      "lat": 40.7960429151746,
+      "lng": -73.9613622996643
+    },
+    "tags": [
+      "Free Events",
+      "NY Classical Theatre",
+      "Shakespeare"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10890/download/ny-classical-theatre.jpg?cb=98b589c63a957ce6867d254eabf47497",
+    "start_date": "2026-06-02T19:00:00",
+    "end_date": "2026-06-02T21:00:00"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -324,7 +365,7 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-05-22T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   },
   {
     "title": "Pickleball at Wollman Rink",
@@ -347,8 +388,8 @@
       "Wollman Rink"
     ],
     "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg?cb=d22be6a7cd3935c7aaf13233f26febe4",
-    "start_date": "2026-05-22T08:00:00",
-    "end_date": "2026-05-22T21:00:00"
+    "start_date": "2026-05-24T08:00:00",
+    "end_date": "2026-05-24T21:00:00"
   },
   {
     "title": "Sea Lion Feedings at Central Park Zoo",
@@ -369,7 +410,7 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg?cb=b7fbf5726a87802d056abe969b8ed073",
-    "start_date": "2026-05-22T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   },
   {
     "title": "Sunrise Wellness Walk",
@@ -396,8 +437,8 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d",
-    "start_date": "2026-05-23T08:00:00",
-    "end_date": "2026-05-23T09:30:00"
+    "start_date": "2026-05-30T08:00:00",
+    "end_date": "2026-05-30T09:30:00"
   },
   {
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
@@ -428,7 +469,28 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-05-22T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
+  },
+  {
+    "title": "YAI Central Park Challenge 2026",
+    "url": "https://www.centralpark.com/events/yai-central-park-challenge/",
+    "source": "centralpark.com",
+    "description": "YAI's Central Park Challenge is one of New York's largest celebrations of the intellectual and developmental disabilities community, bringing families together for a free morning of inclusive fun and a 3K walk.",
+    "location": "Naumburg Bandshell",
+    "coordinates": {
+      "lat": 40.7727049726675,
+      "lng": -73.9710345049975
+    },
+    "tags": [
+      "Charity & Cause Events",
+      "Featured Events",
+      "Free Events",
+      "Naumburg Bandshell",
+      "Walks"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10919/download/naumburg-bandshell.jpg?cb=85bf6fbda9a59642c8e7f5c66c1f6c45",
+    "start_date": "2026-05-30T08:00:00",
+    "end_date": "2026-05-30T12:00:00"
   },
   {
     "title": "Yoga Classes",
@@ -450,6 +512,6 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8886/download/yoga-sunset-pose.jpg?cb=4f2775ee35664485d10c0c4b83408a00",
-    "start_date": "2026-05-22T00:00:00"
+    "start_date": "2026-05-24T00:00:00"
   }
 ]

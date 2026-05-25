@@ -1,16 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-05-22-sarah-yuster-outside-voices",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/22/sarah-yuster-outside-voices",
-      "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
-      "start_date": "2026-05-22T09:00:00-04:00",
-      "end_date": "2026-05-22T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-05-25-sarah-yuster-outside-voices",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/25/sarah-yuster-outside-voices",
       "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
@@ -621,5 +611,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-05-22T19:26:07Z"
+  "fetched_at": "2026-05-24T23:09:22Z"
 }
