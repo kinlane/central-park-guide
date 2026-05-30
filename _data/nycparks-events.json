@@ -1,56 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-05-25-sarah-yuster-outside-voices",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/25/sarah-yuster-outside-voices",
-      "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
-      "start_date": "2026-05-25T09:00:00-04:00",
-      "end_date": "2026-05-25T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-05-26-sarah-yuster-outside-voices",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/26/sarah-yuster-outside-voices",
-      "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
-      "start_date": "2026-05-26T09:00:00-04:00",
-      "end_date": "2026-05-26T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-05-27-sarah-yuster-outside-voices",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/27/sarah-yuster-outside-voices",
-      "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
-      "start_date": "2026-05-27T09:00:00-04:00",
-      "end_date": "2026-05-27T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-05-28-sarah-yuster-outside-voices",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/28/sarah-yuster-outside-voices",
-      "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
-      "start_date": "2026-05-28T09:00:00-04:00",
-      "end_date": "2026-05-28T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-05-29-sarah-yuster-outside-voices",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/29/sarah-yuster-outside-voices",
-      "title": "Sarah Yuster: Outside Voices at the Arsenal Gallery",
-      "start_date": "2026-05-29T09:00:00-04:00",
-      "end_date": "2026-05-29T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-05-31-its-my-park-at-street-tree",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/31/its-my-park-at-street-tree",
       "title": "It's My Park at Malcolm X Blvd Plaza",
@@ -58,6 +8,96 @@
       "end_date": "2026-05-31T13:00:00-04:00",
       "location": "110th Street and Lenox Avenue",
       "category": "Volunteer, It's My Park",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-02-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/02/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-02T19:00:00-04:00",
+      "end_date": "2026-06-02T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-03-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/03/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-03T19:00:00-04:00",
+      "end_date": "2026-06-03T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-04-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/04/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-04T19:00:00-04:00",
+      "end_date": "2026-06-04T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-05-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/05/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-05T19:00:00-04:00",
+      "end_date": "2026-06-05T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-06-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/06/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-06T19:00:00-04:00",
+      "end_date": "2026-06-06T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-07-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/07/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-07T19:00:00-04:00",
+      "end_date": "2026-06-07T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-08-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/08/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-08T19:00:00-04:00",
+      "end_date": "2026-06-08T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-09-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/09/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-09T19:00:00-04:00",
+      "end_date": "2026-06-09T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-10-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/10/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-10T19:00:00-04:00",
+      "end_date": "2026-06-10T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
       "free": true
     },
     {
@@ -71,6 +111,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-06-11-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/11/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-11T19:00:00-04:00",
+      "end_date": "2026-06-11T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-06-12-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/12/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -81,6 +131,36 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-06-12-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/12/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-12T19:00:00-04:00",
+      "end_date": "2026-06-12T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-13-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/13/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-13T19:00:00-04:00",
+      "end_date": "2026-06-13T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-14-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/14/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-14T19:00:00-04:00",
+      "end_date": "2026-06-14T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-06-15-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/15/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -88,6 +168,16 @@
       "end_date": "2026-06-15T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-15-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/15/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-15T19:00:00-04:00",
+      "end_date": "2026-06-15T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
       "free": true
     },
     {
@@ -111,6 +201,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-06-16-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/16/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-16T19:00:00-04:00",
+      "end_date": "2026-06-16T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-06-17-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/17/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -121,6 +221,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-06-17-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/17/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-17T19:00:00-04:00",
+      "end_date": "2026-06-17T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-06-18-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/18/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -128,6 +238,16 @@
       "end_date": "2026-06-18T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-18-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/18/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-18T19:00:00-04:00",
+      "end_date": "2026-06-18T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
       "free": true
     },
     {
@@ -151,6 +271,26 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-06-19-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/19/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-19T19:00:00-04:00",
+      "end_date": "2026-06-19T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-20-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/20/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-20T19:00:00-04:00",
+      "end_date": "2026-06-20T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-06-21-fathers-day-forest-hike",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/21/fathers-day-forest-hike",
       "title": "Father's Day Forest Hike",
@@ -158,6 +298,16 @@
       "end_date": "2026-06-21T14:30:00-04:00",
       "location": "Entrance - West 100 Street and Central Park West",
       "category": "Nature, Urban Park Rangers, Father's Day, Hiking",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-06-21-ny-classical-the-tragedy-of-julius-caesar",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/21/ny-classical-the-tragedy-of-julius-caesar",
+      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
+      "start_date": "2026-06-21T19:00:00-04:00",
+      "end_date": "2026-06-21T20:45:00-04:00",
+      "location": "West 103rd Street and Central Park West",
+      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
       "free": true
     },
     {
@@ -311,6 +461,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-12-ranger-games-and-field-day",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/12/ranger-games-and-field-day",
+      "title": "Ranger Games: Nature World Cup",
+      "start_date": "2026-07-12T13:00:00-04:00",
+      "end_date": "2026-07-12T14:30:00-04:00",
+      "location": "Entrance - West 106th Street and Central Park West",
+      "category": "Nature, Best for Kids, Urban Park Rangers, Wildlife",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-13-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/13/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -358,6 +518,16 @@
       "end_date": "2026-07-17T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-18-family-camping-manhattan",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/18/family-camping-manhattan",
+      "title": "Family Camping: Manhattan",
+      "start_date": "2026-07-18T19:00:00-04:00",
+      "end_date": "2026-07-19T08:00:00-04:00",
+      "location": "Entrance - West 106th Street and Central Park West",
+      "category": "Urban Park Rangers, Family Camping with the Urban Park Rangers",
       "free": true
     },
     {
@@ -561,6 +731,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-14-family-camping-manhattan",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/14/family-camping-manhattan",
+      "title": "Family Camping: Manhattan",
+      "start_date": "2026-08-14T19:00:00-04:00",
+      "end_date": "2026-08-15T08:00:00-04:00",
+      "location": "Entrance - West 106th Street and Central Park West",
+      "category": "Urban Park Rangers, Family Camping with the Urban Park Rangers",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-17-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/17/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -611,5 +791,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-05-24T23:09:22Z"
+  "fetched_at": "2026-05-30T00:06:55Z"
 }

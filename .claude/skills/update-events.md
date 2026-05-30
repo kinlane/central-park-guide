@@ -1,4 +1,4 @@
-# Update Events from NYC Open Data, NYC Parks, Conservancy, centralpark.com, SummerStage, Naumburg, NYRR, NYCC, and curated charity walks / Public Theater / NYC Bird Alliance
+# Update Events from NYC Open Data, NYC Parks, Conservancy, centralpark.com, SummerStage, Naumburg, NYRR, NYCC, and curated charity walks / Public Theater / NYC Bird Alliance / Birding Bob
 
 Update Central Park Guide events by fetching event data from a layered set of sources, filtering against the Central Park places vocabulary, merging (with title cleanup and category mapping), and writing Jekyll collection files. All future events automatically display on the public site — no curation step.
 
@@ -20,6 +20,7 @@ Sources fall into three groups:
 9. **`_data/charity-walks.yml`** — AIDS Walk NY etc.; affects-loop closures the permit feed misses
 10. **`_data/publictheater-seasons.yml`** — Public Theater's Shakespeare in the Park (their site is WAF-blocked); maintained by hand each spring when the season is announced. Expands into one event per performance date.
 11. **`_data/birding-walks.yml`** — NYC Bird Alliance recurring walks (their events page renders via JS so we can't scrape server-side). Expands by weekday + cadence within a season window.
+12. **Birding Bob (`birdingbob.com/birdwalks`)** — Robert DeCandido's near-daily guided Central Park bird walks (Ramble, Strawberry Fields, Reservoir). Site is on Wix; scrape the rendered page, fall back to a curated YAML seed if Wix's JS hydration blocks server-side parsing. See Source 12 below — **not yet pulled; queued for next run**.
 
 ## Quick start (NYC Open Data refresh)
 
@@ -346,6 +347,35 @@ NYC Bird Alliance (formerly NYC Audubon) leads recurring guided bird walks in Ce
 - **Cadence support:** `weekly`, `biweekly`, `monthly` (monthly snaps to the next matching weekday after ~28 days).
 - **Maintenance pattern:** check their `local-trips-classes` page when each season's schedule is posted (early spring + late summer); add entries per walk leader/place/weekday. Fields: `name`, `leader`, `meet_location`, `place`, `season_start`, `season_end`, `weekday` (0=Mon, 6=Sun), `cadence`, `time`, `end_time`, `cost`, `url`, `tags`.
 - **Place:** typically `The Ramble` or `North Woods`; whatever the walk's `place` field names must be in the places vocabulary.
+
+### Source 12: Birding Bob walks (`birdingbob.com/birdwalks`)
+
+Robert DeCandido ("Birding Bob") runs one of the most prolific guided bird-walk programs in Central Park — multiple walks per week through spring and fall migration, plus regular Saturday/Sunday walks year-round. Typical meet points are **Strawberry Fields** (W 72nd & CPW), **The Ramble** (Belvedere Castle / Boathouse), and **the Reservoir**. Distinct from NYC Bird Alliance (Source 11) — Birding Bob's walks are independently led and run on a much denser schedule.
+
+- **Listing URL:** `https://www.birdingbob.com/birdwalks`
+- **Platform:** Wix site (server `Pepyaka`, `parastorage` assets). The HTML loads but most schedule content is hydrated client-side from Wix's `wix-warmup-data` JSON blob in the page source — try extracting that first before falling back to a headless-browser render.
+- **Cache file:** `_data/birdingbob-walks.json` (to be created on first successful fetch)
+- **Event ID prefix:** `birdingbob-` (e.g., `birdingbob-2026-05-30-ramble-spring-migration`)
+- **Filter:** all walks are in Central Park — no filter needed beyond confirming the meet point matches a place in `central-park-places.yml`.
+- **Fallback (if Wix scrape fails):** add a `_data/birdingbob-walks.yml` curated seed mirroring `birding-walks.yml`'s structure (season window + weekday + cadence). DeCandido's schedule is regular enough that a hand-maintained seed is viable.
+- **Output mapping:**
+
+| Field | Source |
+|---|---|
+| `title` | Walk name (e.g., "Spring Migration in the Ramble") |
+| `date` | Walk date |
+| `time` | Meet time (typically 07:30 or 09:00) |
+| `end_time` | Walk duration (default 3h if unspecified — DeCandido's walks run long) |
+| `location` | Meet point (Strawberry Fields / Boathouse / Belvedere / Reservoir) |
+| `event_type` | `"Bird Walk"` |
+| `source` | `"birdingbob.com"` |
+| `source_url` | `https://www.birdingbob.com/birdwalks` |
+| `cost` | Per the site (typically $10) |
+| `description` | Walk description from listing |
+| `tags` | Always `["Birds", "Nature"]`; add `"Free"` if cost is free |
+| `place` | Resolved via `match_places()` against the meet point |
+
+**Status:** queued — not yet fetched. First run should attempt a live fetch, write `_data/birdingbob-walks.json`, and if that fails leave a stub `_data/birdingbob-walks.yml` for hand-curation.
 
 ## Steps
 

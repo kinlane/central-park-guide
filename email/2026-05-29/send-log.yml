@@ -1,0 +1,105 @@
+- timestamp: '2026-05-30T00:42:09.129906+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Guide for Runners - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:10.267042+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Guide for Walkers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:11.317853+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Guide for Cyclists - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:12.211612+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Guide for Nature Lovers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:13.152046+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Guide for Runners - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:14.034187+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Guide for Walkers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:14.921413+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Guide for Cyclists - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:15.897004+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "Central Park Guide for Theater Fans - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:16.787722+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: music-fan
+  subject: "Central Park Guide for Music Fans - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:17.693684+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: family
+  subject: "Central Park Guide for Families - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:18.594313+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: sports-fan
+  subject: "Central Park Guide for Sports Fans - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:19.562343+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: wellness-seeker
+  subject: "Central Park Guide for Wellness Seekers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:20.454625+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: nature-lover
+  subject: "Central Park Guide for Nature Lovers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:21.340411+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: park-watcher
+  subject: "Central Park Guide for Park Watchers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
+- timestamp: '2026-05-30T00:42:22.231145+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  persona: park-watcher
+  subject: "Central Park Guide for Park Watchers - Fri May 29 \u2013 Thu Jun 4"
+  week_of: '2026-05-29'
+  status: sent
