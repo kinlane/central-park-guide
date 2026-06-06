@@ -1,8 +1,8 @@
 ---
 title: "Celebration"
 date: 2026-08-01
-time: "10:00"
-end_time: "12:00"
+time: "09:00"
+end_time: "23:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
 place_category: "event_venues"
@@ -25,7 +25,7 @@ Celebration takes place at Ladies' Pavilion in Central Park on Saturday, August 
 
 - **Event:** Celebration
 - **Date:** Saturday, August 1, 2026
-- **Time:** 10:00 AM - 12:00 PM
+- **Time:** 9:00 AM - 11:00 PM
 - **Location:** Ladies' Pavilion, Central Park
 - **Place:** Ladies' Pavilion
 - **Type:** Special Event

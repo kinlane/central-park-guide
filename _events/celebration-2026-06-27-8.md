@@ -1,8 +1,8 @@
 ---
 title: "Celebration"
 date: 2026-06-27
-time: "18:00"
-end_time: "19:00"
+time: "09:00"
+end_time: "11:00"
 location: "Wagner Cove, Cherry Hill"
 place: "Wagner Cove"
 place_category: "event_venues"
@@ -31,7 +31,7 @@ Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Saturday,
 
 - **Event:** Celebration
 - **Date:** Saturday, June 27, 2026
-- **Time:** 6:00 PM - 7:00 PM
+- **Time:** 9:00 AM - 11:00 AM
 - **Location:** Wagner Cove, Cherry Hill, Central Park
 - **Place:** Wagner Cove
 - **Type:** Special Event

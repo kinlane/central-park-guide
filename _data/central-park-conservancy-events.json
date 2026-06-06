@@ -1,90 +1,15 @@
 {
   "source": "Central Park Conservancy - centralparknyc.org",
-  "crawl_date": "2026-05-29",
+  "crawl_date": "2026-06-05",
   "api_endpoint": "https://www.centralparknyc.org/activities.json",
-  "total_activities_on_site": 117,
-  "total_events_extracted": 14,
+  "total_activities_on_site": 123,
+  "total_events_extracted": 19,
   "pagination": {
     "total_pages": 8,
     "items_per_page": 16,
     "all_pages_fetched": true
   },
   "events": [
-    {
-      "id": 4207340,
-      "title": "Seneca Village Photo Walk",
-      "url": "https://www.centralparknyc.org/activities/events/seneca-village-photo-walk",
-      "type": "Events",
-      "tags": [],
-      "summary": "<p>Join us for a guided walk through Seneca Village, where participants will explore the landscape of this historic site through the creative lens of photography.</p>",
-      "description": "<p>Join us for a guided walk through Seneca Village, where participants will explore the landscape of this historic site through the creative lens of photography.</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/West-Side-Landscape-Seneca-Village-Area-May-2018_34-sized.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=69cc2993b578626caf34c73d7998930c",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/West-Side-Landscape-Seneca-Village-Area-May-2018_34-sized.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=69cc2993b578626caf34c73d7998930c",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/West-Side-Landscape-Seneca-Village-Area-May-2018_34-sized.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.4978&fp-y=0.5593&h=318&q=80&w=424&s=8035c24ba80c021412b17d4159623488",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/West-Side-Landscape-Seneca-Village-Area-May-2018_34-sized.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.4978&fp-y=0.5593&h=318&q=80&w=424&s=8035c24ba80c021412b17d4159623488, https://d2wsrtli9cxkek.cloudfront.net/media/images/West-Side-Landscape-Seneca-Village-Area-May-2018_34-sized.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.4978&fp-y=0.5593&h=636&q=80&w=848&s=c2bc106a79507bf6d0c819322fb6d3db 2x"
-      },
-      "start_date": "2026-05-30T11:00:00-04:00",
-      "event_instances": [
-        {
-          "instanceId": 4207341,
-          "instanceDate": "2026-05-30T11:00:00-04:00",
-          "instanceDuration": 120,
-          "ticketLink": null,
-          "sessionId": null,
-          "isTicketure": false,
-          "ticketureCheckoutURL": "",
-          "manuallyEntered": true,
-          "isSoldOut": false
-        }
-      ],
-      "nested_instances": {
-        "2026-05-30": {
-          "11:00:00": [
-            {
-              "instanceId": 4207341,
-              "instanceDate": "2026-05-30T11:00:00-04:00",
-              "instanceDuration": 120,
-              "ticketLink": null,
-              "sessionId": null,
-              "isTicketure": false,
-              "ticketureCheckoutURL": "",
-              "manuallyEntered": true,
-              "isSoldOut": false
-            }
-          ]
-        }
-      },
-      "meta": {
-        "og_title": "Seneca Village Photo Walk",
-        "og_description": "Join us for a guided walk through Seneca Village, where participants will explore the landscape of this historic site through the creative lens of…",
-        "og_url": "https://www.centralparknyc.org/activities/events/seneca-village-photo-walk"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "Join us for a guided walk through Seneca Village, where participants will explore the landscape of this historic site through the creative lens of photography.",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/West-Side-Landscape-Seneca-Village-Area-May-2018_34-sized.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=69cc2993b578626caf34c73d7998930c"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/seneca-village-photo-walk",
-        "name": "Seneca Village Photo Walk",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/seneca-village-photo-walk"
-      },
-      "detail_page_data": {
-        "date_detail": "Saturday, May 30",
-        "time_detail": "11:00 am",
-        "location_detail": "West 85th Street and Central Park West, New York, NY 10024",
-        "cost": "Free",
-        "description_detail": "Join us for a guided walk through Seneca Village, where participants will explore the landscape of this historic site through the creative lens of photography."
-      }
-    },
     {
       "id": 4199523,
       "title": "Shaping Public Memory: Lessons from Columbus, LA, and NYC",
@@ -236,7 +161,7 @@
       "detail_page_data": {
         "date_detail": "Friday, June 19",
         "time_detail": "1:00 pm",
-        "location_detail": "Seneca Village Landscape This Juneteenth, celebrate with the Central Park Conservancy, Broadway’s DeWitt Fleming, Jr., and an intergenerational community of performers in the historic Seneca Village landscape in Central Park. Interpretive music, dance, and spoken word will transport you to Seneca Village in 1845, where Black New Yorkers built their own homes, churches, and a school. The performance will explore how Andrew Williams’s 1825 land purchase evolved into a thriving community, which existed along what is now the Park’s perimeter from West 82nd to 89th Streets. We invite you to engage with the unique history of Seneca Village—deepening our collective awareness of this significant 19th-century free Black community while bridging past and present. Directed by Tony Award-winning Broadway legend Ben Harney, the performance was written and conceived by DeWitt Fleming, Jr. and co-produced by DeW It Right Productions, with original works by Markeisha Ensley, Mikumari Caiyhe, and Mercedes White. No registration required for this free community event. The performance starts at 1:00 pm , featuring: Broadway performer DeWitt Fleming, Jr. Broadway performer Jennie Harney Fleming Trumpeter, composer, and educator Alphonso Horne Poet and emcee Mikumari Caiyhe Writer, composer, and singer Markeisha Ensley Master percussionist Kahlil Kwame Bell Christian Cultural Center drama students Harlem School of the Arts drama and music students Bring a blanket to sit on and enjoy the performance in comfort! The Seneca Village landscape is between West 85th Street and West Drive. Enter the Park at W 85th St. This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event updates, Seneca Village history, and more! Email Address *",
+        "location_detail": "Seneca Village Landscape This Juneteenth, celebrate with the Central Park Conservancy, Broadway’s DeWitt Fleming, Jr., and an intergenerational community of performers in the historic Seneca Village landscape in Central Park. Interpretive music, dance, and spoken word will transport you to Seneca Village in 1845, where Black New Yorkers built their own homes, churches, and a school. The performance will explore how Andrew Williams’s 1825 land purchase evolved into a thriving community, which existed along what is now the Park’s perimeter from West 82nd to 89th Streets. We invite you to engage with the unique history of Seneca Village—deepening our collective awareness of this significant 19th-century free Black community while bridging past and present. Directed by Tony Award-winning Broadway legend Ben Harney, the performance was written and conceived by DeWitt Fleming, Jr. and co-produced by DeW It Right Productions, with original works by Markeisha Ensley and Mikumari Caiyhe. No registration required for this free community event. The performance starts at 1:00 pm , featuring: Broadway performer DeWitt Fleming, Jr. Broadway performer Jennie Harney Fleming Trumpeter, composer, and educator Alphonso Horne Poet and emcee Mikumari Caiyhe Writer, composer, and singer Markeisha Ensley Master percussionist Kahlil Kwame Bell Christian Cultural Center drama department Harlem School of the Arts drama and music students Bring a blanket to sit on and enjoy the performance in comfort! The Seneca Village landscape is between West 85th Street and West Drive. Enter the Park at W 85th St. This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event updates, Seneca Village history, and more! Email Address *",
         "cost": "Free",
         "description_detail": "Celebrate the spirit of community and the history of Seneca Village with a special performance of music, dance, and spoken word."
       }
@@ -317,102 +242,465 @@
       }
     },
     {
-      "id": 887607,
-      "title": "Open House New York: The Blockhouse",
-      "url": "https://www.centralparknyc.org/activities/events/open-house-new-york",
+      "id": 4218108,
+      "title": "Casa Mantequilla",
+      "url": "https://www.centralparknyc.org/activities/events/casa-mantequilla",
       "type": "Events",
       "tags": [
-        "History",
-        "Staff Picks",
-        "Kids and Families",
-        "Art & Architecture"
+        "Performances"
       ],
-      "summary": "",
-      "description": "",
+      "summary": "<p>Jazz, Afro, World</p>",
+      "description": "<p>Jazz, Afro, World</p>",
       "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=2ea34b9aa5d7571b3d79cf50a391105c",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=2ea34b9aa5d7571b3d79cf50a391105c",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=0a6e8682ec3b20338f7915701402fe64",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=0a6e8682ec3b20338f7915701402fe64, https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=f74b2ac47493de4fe4197345b6209fe4 2x"
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c813c84009caaca0fa6520adfd5b7fe7",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c813c84009caaca0fa6520adfd5b7fe7",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=30196bfd22816a5f29d96a825ef2c91d",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=30196bfd22816a5f29d96a825ef2c91d, https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=e6328ec942824789089c99418f129e44 2x"
       },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
+      "start_date": "2026-07-12T14:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4218111,
+          "instanceDate": "2026-07-12T14:00:00-04:00",
+          "instanceDuration": 120,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-07-12": {
+          "14:00:00": [
+            {
+              "instanceId": 4218111,
+              "instanceDate": "2026-07-12T14:00:00-04:00",
+              "instanceDuration": 120,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
       "meta": {
-        "og_title": "Open House New York: The Blockhouse",
-        "og_description": "Event page for Open House New York at Chess & Checkers House in Central Park, NYC",
-        "og_url": "https://www.centralparknyc.org/activities/events/open-house-new-york"
+        "og_title": "Casa Mantequilla",
+        "og_description": "Jazz, Afro, World",
+        "og_url": "https://www.centralparknyc.org/activities/events/casa-mantequilla"
       },
       "schema_org": {
         "@type": "Event",
-        "description": "Event page for Open House New York at Chess & Checkers House in Central Park, NYC",
+        "description": "Jazz, Afro, World",
         "image": {
           "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=2ea34b9aa5d7571b3d79cf50a391105c"
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c813c84009caaca0fa6520adfd5b7fe7"
         },
         "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/open-house-new-york",
-        "name": "Open House New York: The Blockhouse",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/casa-mantequilla",
+        "name": "Casa Mantequilla",
         "potentialAction": {
           "@type": "SearchAction",
           "query-input": "required name=search_term_string",
           "target": "https://www.centralparknyc.org/search?q={search_term_string}"
         },
-        "url": "https://www.centralparknyc.org/activities/events/open-house-new-york"
+        "url": "https://www.centralparknyc.org/activities/events/casa-mantequilla"
       },
       "detail_page_data": {
-        "location_detail": "Blockhouse See inside Central Park’s oldest surviving structure! Located on a prominent rock outcrop in the North Woods, the Blockhouse was part of a fortification system built to defend New York from the British during the War of 1812. For one day only, join Open House New York and the Central Park Conservancy to explore the Blockhouse and learn about the history of the site with the Conservancy’s expert guides.",
-        "cost": "FREE",
-        "description_detail": "Event page for Open House New York at Chess & Checkers House in Central Park, NYC"
+        "date_detail": "Sunday, July 12",
+        "time_detail": "2:00 pm",
+        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Kicking off the Central Park Conservancy’s summer series on July 12, 2026, is cross-cultural music collective Casa Mantequilla. MEET THE ARTIST: A Q&A WITH CASA MANTEQUILLA How would you describe your music or performance style? Casa Mantequilla is a high-energy Harlem band of lifelong friends. Musicians from the United States, Puerto Rico, Nigeria, Belgium, and Congo blend West African, Latin, and American rhythms into joyful polyrhythmic grooves, sung in multiple languages for a vibrant, border-crossing sound. What does a live audience feel, hear, or experience when they see you perform? The band's energy is warm and communal—more like a neighborhood celebration where everyone is invited to dance, sing, and feel uplifted. We offer a mix of polyrhythmic grooves, rich harmonies, and infectious melodies that move both body and spirit. What inspires your work? Our music draws on traditional African and Caribbean styles, reimagined through a modern sound shaped by jazz and blues. What is the connection between your work and the Harlem community? Most of the band members have been living in Harlem for many years. We’re part of the neighborhood’s vibrant music scene and community, performing regularly at venues like Shrine, Silvana, and The Porch. ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
+        "cost": "Free",
+        "description_detail": "Jazz, Afro, World"
       }
     },
     {
-      "id": 3701962,
-      "title": "Before, there was Seneca Village!",
-      "url": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village",
-      "type": "Arts & Entertainment, Events",
+      "id": 4218231,
+      "title": "The Grace Young Experience",
+      "url": "https://www.centralparknyc.org/activities/events/the-grace-young-experience",
+      "type": "Events",
       "tags": [
-        "Community",
-        "Music",
-        "Seneca Village"
+        "Performances"
       ],
-      "summary": "<p>Watch as Seneca Village is brought to life through an interpretive performance.</p>",
-      "description": "<p>Watch as Seneca Village is brought to life through an interpretive performance.</p>",
+      "summary": "<p>Jazz, Blues, Gospel, Soul</p>",
+      "description": "<p>Jazz, Blues, Gospel, Soul</p>",
       "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=d6624f65c3201af0182dc89031324877",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=d6624f65c3201af0182dc89031324877",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=2258c351cb8c0c55987a16e7ad8e68ba",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=2258c351cb8c0c55987a16e7ad8e68ba, https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=1481450d1ec7b29321934a07e7d63a74 2x"
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/GraceYoung-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cc766e8acbcc423fc38b13b10a8edf4a",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/GraceYoung-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cc766e8acbcc423fc38b13b10a8edf4a",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/GraceYoung-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5009&fp-y=0.2994&h=318&q=80&w=424&s=28e2d98004c4d574c8acb452f9b566cf",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/GraceYoung-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5009&fp-y=0.2994&h=318&q=80&w=424&s=28e2d98004c4d574c8acb452f9b566cf, https://d2wsrtli9cxkek.cloudfront.net/media/images/GraceYoung-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5009&fp-y=0.2994&h=636&q=80&w=848&s=15010ac1e711b6df3d261ae9e9bb2776 2x"
       },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
+      "start_date": "2026-07-26T14:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4218233,
+          "instanceDate": "2026-07-26T14:00:00-04:00",
+          "instanceDuration": 120,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-07-26": {
+          "14:00:00": [
+            {
+              "instanceId": 4218233,
+              "instanceDate": "2026-07-26T14:00:00-04:00",
+              "instanceDuration": 120,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
       "meta": {
-        "og_title": "Before, there was Seneca Village!",
-        "og_description": "Watch as Seneca Village is brought to life through an interpretive performance.",
-        "og_url": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village"
+        "og_title": "The Grace Young Experience",
+        "og_description": "Jazz, Blues, Gospel, Soul",
+        "og_url": "https://www.centralparknyc.org/activities/events/the-grace-young-experience"
       },
       "schema_org": {
         "@type": "Event",
-        "description": "Watch as Seneca Village is brought to life through an interpretive performance.",
+        "description": "Jazz, Blues, Gospel, Soul",
         "image": {
           "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=d6624f65c3201af0182dc89031324877"
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/GraceYoung-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cc766e8acbcc423fc38b13b10a8edf4a"
         },
         "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village",
-        "name": "Before, there was Seneca Village!",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/the-grace-young-experience",
+        "name": "The Grace Young Experience",
         "potentialAction": {
           "@type": "SearchAction",
           "query-input": "required name=search_term_string",
           "target": "https://www.centralparknyc.org/search?q={search_term_string}"
         },
-        "url": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village"
+        "url": "https://www.centralparknyc.org/activities/events/the-grace-young-experience"
       },
       "detail_page_data": {
-        "location_detail": "Seneca Village Landscape Join us in the historic Seneca Village landscape in Central Park for a performance that takes you back to Seneca Village in 1845. Interpretive music, dance, and spoken word will bring to life a world where Black New Yorkers built their own homes, churches, and a school, exploring how Andrew Williams's and others’ 1825 land purchase evolved into a thriving community. Performances by: DeWitt Fleming, Jr., Broadway performer Alphonso Horne, musician Mikumari Caiyhe, spoken word artist Bring a blanket to sit on and enjoy the performance in comfort! The Seneca Village landscape is between West 85th Street and West Drive. Enter the Park at West 85th Street. This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Email Address *",
+        "date_detail": "Sunday, July 26",
+        "time_detail": "2:00 pm",
+        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Join the Central Park Conservancy on July 26, 2026, for a performance by gospel and Motown-inspired singer Grace Young. MEET THE ARTIST: A Q&A WITH THE GRACE YOUNG EXPERIENCE How would you describe your music or performance style? I bring a dynamic blend of theatrical storytelling and soulful musicality to every stage. A Detroit native and Juilliard-trained musical theatre artist, my sound is deeply influenced by the classic Motown era, enriched with jazz phrasing, R&B warmth, and the spiritual depth of gospel. My performances are both intimate and electrifying, combining expressive vocals, emotional authenticity, and a natural ability to engage audiences. Whether performing in theatre productions, Harlem venues, or on international stages, my style reflects a celebration of heritage, resilience, and joy. What does a live audience feel, hear, or experience when they see you perform? When audiences see me perform, they feel the soul of Detroit, the spirit of gospel, and the storytelling of theatre all in one experience. They hear music that’s rooted in Motown and shaped by jazz and R&B, but more importantly, they feel a connection. My goal is always to take listeners on a journey—to remind them of where they’ve been, inspire where they’re going, and leave them uplifted. When I perform, audiences feel a deep sense of nostalgia—especially through the Motown classics that bring back memories of family, love, and home. There is joy and upliftment in the room, rooted in my gospel foundation, creating an atmosphere of hope and celebration. What inspires your work? I am inspired by where I come from—Detroit, the heart of Motown—and by the music that filled my childhood home. Gospel music inspires my spirit, and theatre inspires the way I tell stories. But I am equally inspired by the children I teach every day. Their curiosity, resilience, and imagination remind me that music has the power to shape lives. My work is driven by the desire to uplift, educate, and create spaces where people feel seen and valued. What is the connection between your work and the Harlem community? My connection to the Harlem community is both artistic and educational. Harlem has been my home, my stage, and my classroom. I have performed in local venues, partnered with church communities, and used my creative voice to bring awareness to important social issues such as domestic violence. Beyond the stage, I work with young children in Harlem, helping to strengthen their language and literacy skills. My vision of creating libraries in students’ homes is rooted in my commitment to uplifting families in this community. Harlem is not just where I perform—it is where I serve. ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
         "cost": "Free",
-        "description_detail": "Watch as Seneca Village is brought to life through an interpretive performance."
+        "description_detail": "Jazz, Blues, Gospel, Soul"
+      }
+    },
+    {
+      "id": 4218334,
+      "title": "Kobie Dozier",
+      "url": "https://www.centralparknyc.org/activities/events/kobie-dozier",
+      "type": "Events",
+      "tags": [
+        "Performances"
+      ],
+      "summary": "<p>Jazz, Soul, Hip-hop</p>",
+      "description": "<p>Jazz, Soul, Hip-hop</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Kobie-Dozier-Select-1.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c992679ec8337adacc428e89f0c0804b",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Kobie-Dozier-Select-1.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c992679ec8337adacc428e89f0c0804b",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Kobie-Dozier-Select-1.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5264&fp-y=0.4557&h=318&q=80&w=424&s=d1398c7ab81f3903edf51f703bbdcbcf",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Kobie-Dozier-Select-1.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5264&fp-y=0.4557&h=318&q=80&w=424&s=d1398c7ab81f3903edf51f703bbdcbcf, https://d2wsrtli9cxkek.cloudfront.net/media/images/Kobie-Dozier-Select-1.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5264&fp-y=0.4557&h=636&q=80&w=848&s=9b7428023d8b02070fde857afc66a716 2x"
+      },
+      "start_date": "2026-08-02T14:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4218336,
+          "instanceDate": "2026-08-02T14:00:00-04:00",
+          "instanceDuration": 120,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-08-02": {
+          "14:00:00": [
+            {
+              "instanceId": 4218336,
+              "instanceDate": "2026-08-02T14:00:00-04:00",
+              "instanceDuration": 120,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
+      "meta": {
+        "og_title": "Kobie Dozier",
+        "og_description": "Jazz, Soul, Hip-hop",
+        "og_url": "https://www.centralparknyc.org/activities/events/kobie-dozier"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Jazz, Soul, Hip-hop",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Kobie-Dozier-Select-1.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c992679ec8337adacc428e89f0c0804b"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/kobie-dozier",
+        "name": "Kobie Dozier",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/kobie-dozier"
+      },
+      "detail_page_data": {
+        "date_detail": "Sunday, August 2",
+        "time_detail": "2:00 pm",
+        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Join the Central Park Conservancy on August 2, 2026, for a performance by saxophonist Kobie Dozier. MEET THE ARTIST: A Q&A WITH KOBIE DOZIER How would you describe your music or performance style? My music speaks to a commitment to music as a message of love and healing. My original music meshes genres ranging from the roots of jazz, rap, R&B, and funk. You’re guaranteed to be moved listening to my arrangements that have a message in the music. What does a live audience feel, hear, or experience when they see you perform? My audience tends to feel a sense of connection and empowerment from my music. I take inspiration from multiple cultures when composing my music, and I seek to create powerful communal experiences in my performances. Audience members can be seen dancing, singing, and enjoying each other’s presence in my performance spaces. What makes the experience memorable is not only the music, but the communal experience. My performances bring together a diverse audience of music enjoyers of all ages who consume jazz all at different levels. My goal with all of my shows is to show my roots in jazz while showcasing how I'm shaped in the sound of \"now.\" What inspires your work? I'm influenced by artists all across the diaspora. I take inspiration from musicians/artists such as Fela Kuti, Kamasi Washington, Venna, Cleo Sol, Kokoroko, Yussef Dayes, and more. I want to blend my roots in West Coast jazz with my taste in UK-inspired jazz and more. What is the connection between your work and the Harlem community? My music is inspired by Harlem’s legacy as a birthplace for Black art, culture, and jazz. Through performing and collaborating within my community, I try to carry that tradition forward while connecting with people today. This is my way of honoring the past and contributing to Harlem’s living musical culture. ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
+        "cost": "Free",
+        "description_detail": "Jazz, Soul, Hip-hop"
+      }
+    },
+    {
+      "id": 4218346,
+      "title": "Uptown Royalty",
+      "url": "https://www.centralparknyc.org/activities/events/uptown-royalty",
+      "type": "Events",
+      "tags": [
+        "Performances"
+      ],
+      "summary": "<p>Latin, Jazz, Dance</p>",
+      "description": "<p>Latin, Jazz, Dance</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Uptown-Royalty-Select.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=f6382ee77bb87b910453ac88d8b87c82",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Uptown-Royalty-Select.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=f6382ee77bb87b910453ac88d8b87c82",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Uptown-Royalty-Select.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=c7512e11eb01e08eceba122da9a0f186",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Uptown-Royalty-Select.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=c7512e11eb01e08eceba122da9a0f186, https://d2wsrtli9cxkek.cloudfront.net/media/images/Uptown-Royalty-Select.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=9c1a05ba5492a86b1025e52d23ca607a 2x"
+      },
+      "start_date": "2026-08-09T14:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4218348,
+          "instanceDate": "2026-08-09T14:00:00-04:00",
+          "instanceDuration": null,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-08-09": {
+          "14:00:00": [
+            {
+              "instanceId": 4218348,
+              "instanceDate": "2026-08-09T14:00:00-04:00",
+              "instanceDuration": null,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
+      "meta": {
+        "og_title": "Uptown Royalty",
+        "og_description": "Latin, Jazz, Dance",
+        "og_url": "https://www.centralparknyc.org/activities/events/uptown-royalty"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Latin, Jazz, Dance",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Uptown-Royalty-Select.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=f6382ee77bb87b910453ac88d8b87c82"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/uptown-royalty",
+        "name": "Uptown Royalty",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/uptown-royalty"
+      },
+      "detail_page_data": {
+        "date_detail": "Sunday, August 9",
+        "time_detail": "2:00 pm",
+        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Join the Central Park Conservancy on August 9, 2026, for a performance by Latin music husband-and-wife duo Uptown Royalty. MEET THE ARTIST: A Q&A WITH UPTOWN ROYALTY How would you describe your music or performance style? Uptown Royalty delivers a dynamic, genre-defying fusion of salsa, R&B, and jazz, creating a sound that is both timeless and electrifying. Founded by Bronx native Jodi Music and her husband, Washington Heights native Ron Renaissance, the band was built on a shared vision to craft unforgettable live music experiences that move audiences emotionally and physically. What does a live audience feel, hear, or experience when they see you perform? More than a performance, Uptown Royalty creates an immersive experience. We sing, play live instruments, and dance, bringing high-energy showmanship and authentic musicianship to every stage. Our connection with the audience transforms each event into a celebration, where rhythm, soul, and passion come alive. Audiences don’t just hear our music, they feel it. From the pulse of Latin percussion to the smooth soulfulness of R&B and the improvisational spirit of jazz, Uptown Royalty delivers a vibrant, engaging performance that leaves a lasting impression. Being a husband-and-wife band that also performs with our close friends makes this band extra special. We are rooted in love, and you can feel that from the moment you hear us. What inspires your work? Our work is inspired by all of our stories growing up in NYC and being kids in music programs. We were raised by after-school music programs and we never forget where we came from—it’s a big part of who we are. Rooted in the rich cultural heartbeat of New York City, our performances celebrate diversity, rhythm, and soul. We don’t just perform, we ignite the stage. With powerful vocals, vibrant choreography, and high-energy musicianship, we captivate audiences of all backgrounds and transform every festival into a celebration of life, love, and family—something we feel very strongly about, especially with the climate of the world today. What is the connection between your work and the Harlem community? Jodi Music is from the Bronx and Ron Renaissance is from Washington Heights, but we have collaborated with the National Jazz Museum in Harlem, Harlem Nights Festivals, the Victoria in Harlem, the New York City Marathon in Harlem—performing for the runners—and love Harlem very much! We’ve also performed at Melba’s summer block parties and at Red Rooster, where we began our relationship over eight years ago. Harlem is home for us! ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
+        "cost": "Free",
+        "description_detail": "Latin, Jazz, Dance"
+      }
+    },
+    {
+      "id": 4218356,
+      "title": "M.A.R. Quintet",
+      "url": "https://www.centralparknyc.org/activities/events/mar-quintet",
+      "type": "Events",
+      "tags": [
+        "Performances"
+      ],
+      "summary": "<p>Jazz</p>",
+      "description": "<p>Jazz</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/MAR-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=fd8b70fe8bda14bfd255c68b7552d213",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/MAR-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=fd8b70fe8bda14bfd255c68b7552d213",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/MAR-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=a081f5abc04fd7fc2ff31a6d20ab9ee2",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/MAR-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=a081f5abc04fd7fc2ff31a6d20ab9ee2, https://d2wsrtli9cxkek.cloudfront.net/media/images/MAR-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=978b728b15662a8a982e42d92feebb97 2x"
+      },
+      "start_date": "2026-08-16T14:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4218358,
+          "instanceDate": "2026-08-16T14:00:00-04:00",
+          "instanceDuration": 120,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-08-16": {
+          "14:00:00": [
+            {
+              "instanceId": 4218358,
+              "instanceDate": "2026-08-16T14:00:00-04:00",
+              "instanceDuration": 120,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
+      "meta": {
+        "og_title": "M.A.R. Quintet",
+        "og_description": "Jazz",
+        "og_url": "https://www.centralparknyc.org/activities/events/mar-quintet"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Jazz",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/MAR-Select.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=fd8b70fe8bda14bfd255c68b7552d213"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/mar-quintet",
+        "name": "M.A.R. Quintet",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/mar-quintet"
+      },
+      "detail_page_data": {
+        "date_detail": "Sunday, August 16",
+        "time_detail": "2:00 pm",
+        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Join the Central Park Conservancy on August 16, 2026, for a performance by jazz group M.A.R. Quintet. ABOUT M.A.R. QUINTET M. Alex Ramirez is a Colombian saxophonist, composer, producer, and educator based in New York City. His ideals on music focus on creating honest representations of his emotions while building a community that fosters innovation within the group and audience. Ramirez was awarded third place in the Carinthia International Jazz Award Competition in 2020. A recent graduate from NYU, Ramirez performs in venues all over New York City. His current mentors include Ben Wendel, Baptiste Herbin, Kris Urbanski, and Melissa Aldana. Ramirez recently released his debut EP, Coalescence , out on all streaming platforms. ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
+        "cost": "Free",
+        "description_detail": "Jazz"
+      }
+    },
+    {
+      "id": 4218384,
+      "title": "Ray Delgado Project",
+      "url": "https://www.centralparknyc.org/activities/events/ray-delgado-project",
+      "type": "Events",
+      "tags": [
+        "Performances"
+      ],
+      "summary": "<p>Jazz, Soul, Latin, World, Dance</p>",
+      "description": "<p>Jazz, Soul, Latin, World, Dance</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/RayDelgado-Select-Retouched.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=9a11d10d8eb623bec567f00580e53b0d",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/RayDelgado-Select-Retouched.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=9a11d10d8eb623bec567f00580e53b0d",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/RayDelgado-Select-Retouched.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=5e2747050a047d92022a24b2532a6a68",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/RayDelgado-Select-Retouched.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=5e2747050a047d92022a24b2532a6a68, https://d2wsrtli9cxkek.cloudfront.net/media/images/RayDelgado-Select-Retouched.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=764b564607b5d1dea2d9407412447385 2x"
+      },
+      "start_date": "2026-08-23T14:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4218386,
+          "instanceDate": "2026-08-23T14:00:00-04:00",
+          "instanceDuration": 120,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-08-23": {
+          "14:00:00": [
+            {
+              "instanceId": 4218386,
+              "instanceDate": "2026-08-23T14:00:00-04:00",
+              "instanceDuration": 120,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
+      "meta": {
+        "og_title": "Ray Delgado Project",
+        "og_description": "Jazz, Soul, Latin, World, Dance",
+        "og_url": "https://www.centralparknyc.org/activities/events/ray-delgado-project"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Jazz, Soul, Latin, World, Dance",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/RayDelgado-Select-Retouched.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=9a11d10d8eb623bec567f00580e53b0d"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/ray-delgado-project",
+        "name": "Ray Delgado Project",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/ray-delgado-project"
+      },
+      "detail_page_data": {
+        "date_detail": "Sunday, August 23",
+        "time_detail": "2:00 pm",
+        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Join the Central Park Conservancy on August 23, 2026, for a performance by salsa and Latin jazz ensemble the Ray Delgado Project. MEET THE ARTIST: A Q& A WITH THE RAY DELGADO PROJECT How would you describe your music or performance style? Led by percussionist Ray Delgado, our group features seven talented musicians on vibraphone, piano, bass, bongos, congas, timbales, and vocals, delivering a rich and authentic Latin sound rooted in New York’s musical tradition. I’d describe it as high-energy, rhythm-driven salsa with a strong live feel. What does a live audience feel, hear, or experience when they see you perform? The band connects directly with the audience—whether they’re dancers, listeners, or both. It’s not just about playing songs; it’s about creating a shared experience, where the rhythm builds, and the energy rises. What makes the Ray Delgado Project memorable is the connection—between the rhythm, the band, and the audience. The rhythm section locks in deep, creating that pulse that dancers feel immediately, while the arrangements breathe and evolve in real time. There’s a sense that the music is happening with the audience, not just for them. What inspires your work? I’m deeply inspired by the tradition of salsa and Latin jazz, but also by the idea of finding my own voice within it. I respect the masters, those who came before me and even after me, the sound of the streets, the dance floors, the barrios of the world. I love to keep our traditions going, that Afro-Caribbean sound mixed with the jazz of our African American roots. What is the connection between your work and the Harlem community? Harlem is my home. My music is my connection to all of Harlem. From Chick Webb to Tito Puente, from swing to bebop, and from mambo to cha-cha, this is where it all began for me. My work is deeply connected to Harlem because Harlem represents history, migration, and cultural exchange—the same forces that shape my music. That blend of rhythms, languages, and stories lives inside the music I play. ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
+        "cost": "Free",
+        "description_detail": "Jazz, Soul, Latin, World, Dance"
       }
     },
     {
@@ -460,96 +748,6 @@
         "location_detail": "Mother AME Zion Church, 140 West 137th Street, New York, NY 10030 200 years ago, on September 17, 1825, congregant Andrew Williams and the trustees of the AME Zion Church were among the first to purchase land in the area between West 82nd and 89th Streets, which would become Seneca Village. On Sunday, September 14, join the Central Park Conservancy for a music-filled service at the historic AME Zion Church in Harlem—the first Black church in New York City—to honor this significant anniversary (in collaboration with the James L. Varick Community Center, Inc.). Through the sermon, live music, and a conversation with historians, discover the communal roots of this thriving, predominantly African-American 19th-century community. Service will begin at 11:00 AM, followed by a discussion between AME Zion Church leaders and a Seneca Village historian. Members of the Institute for the Exploration of Seneca Village History and the Envisioning Seneca Village team will also be present to answer questions about their research. Light refreshments will be available after service. Event Schedule Church Service: 11:00 AM Refreshments / Open House: 12:30 PM–1:00 PM Dabney N. Montgomery Heritage Center (AME Zion History Museum) Institute for the Exploration of Seneca Village History Envisioning Seneca Village Discussion: 1:00 PM This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Sign Up",
         "cost": "Free",
         "description_detail": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village."
-      }
-    },
-    {
-      "id": 1169382,
-      "title": "Evening at the Water",
-      "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
-      "type": "Benefit Events",
-      "tags": [
-        "For Members"
-      ],
-      "summary": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
-      "description": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4, https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=91b01c44fd26c0e1e141865784f908d4 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Evening at the Water",
-        "og_description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary…",
-        "og_url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
-        "name": "Evening at the Water",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
-      },
-      "detail_page_data": {
-        "location_detail": "Conservatory Water We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all. Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more! Join the Greensward Circle Questions? Call 212.776.1061 or email [email protected] .",
-        "description_detail": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman"
-      }
-    },
-    {
-      "id": 1702545,
-      "title": "Central Park Conservancy's Annual Gala",
-      "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
-      "type": "Benefit Events, Arts & Entertainment",
-      "tags": [],
-      "summary": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
-      "description": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966, https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=65e644cac6229f7c207c0ad228bb051f 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Central Park Conservancy's Annual Gala",
-        "og_description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again…",
-        "og_url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org .",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
-        "name": "Central Park Conservancy's Annual Gala",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
-      },
-      "detail_page_data": {
-        "location_detail": "Rumsey Playfield Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or [email protected] .",
-        "description_detail": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org ."
       }
     },
     {
@@ -628,6 +826,56 @@
       }
     },
     {
+      "id": 887607,
+      "title": "Open House New York: The Blockhouse",
+      "url": "https://www.centralparknyc.org/activities/events/open-house-new-york",
+      "type": "Events",
+      "tags": [
+        "History",
+        "Staff Picks",
+        "Kids and Families",
+        "Art & Architecture"
+      ],
+      "summary": "",
+      "description": "",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=2ea34b9aa5d7571b3d79cf50a391105c",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=2ea34b9aa5d7571b3d79cf50a391105c",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=0a6e8682ec3b20338f7915701402fe64",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=0a6e8682ec3b20338f7915701402fe64, https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=f74b2ac47493de4fe4197345b6209fe4 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Open House New York: The Blockhouse",
+        "og_description": "Event page for Open House New York at Chess & Checkers House in Central Park, NYC",
+        "og_url": "https://www.centralparknyc.org/activities/events/open-house-new-york"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Event page for Open House New York at Chess & Checkers House in Central Park, NYC",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NorthWoods_Blockhouse_FallFoliage_20201105_2443_RT_2024-09-05-152214_gywh.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=2ea34b9aa5d7571b3d79cf50a391105c"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/open-house-new-york",
+        "name": "Open House New York: The Blockhouse",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/open-house-new-york"
+      },
+      "detail_page_data": {
+        "location_detail": "Blockhouse See inside Central Park’s oldest surviving structure! Located on a prominent rock outcrop in the North Woods, the Blockhouse was part of a fortification system built to defend New York from the British during the War of 1812. For one day only, join Open House New York and the Central Park Conservancy to explore the Blockhouse and learn about the history of the site with the Conservancy’s expert guides.",
+        "cost": "FREE",
+        "description_detail": "Event page for Open House New York at Chess & Checkers House in Central Park, NYC"
+      }
+    },
+    {
       "id": 3450244,
       "title": "Tour: Water in Focus",
       "url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus",
@@ -653,6 +901,52 @@
       "detail_page_data": {
         "cost": "Free",
         "description_detail": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end."
+      }
+    },
+    {
+      "id": 1169382,
+      "title": "Evening at the Water",
+      "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
+      "type": "Benefit Events",
+      "tags": [
+        "For Members"
+      ],
+      "summary": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
+      "description": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4, https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=91b01c44fd26c0e1e141865784f908d4 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Evening at the Water",
+        "og_description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary…",
+        "og_url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
+        "name": "Evening at the Water",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
+      },
+      "detail_page_data": {
+        "location_detail": "Conservatory Water We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all. Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more! Join the Greensward Circle Questions? Call 212.776.1061 or email [email protected] .",
+        "description_detail": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman"
       }
     },
     {
@@ -697,6 +991,99 @@
       "detail_page_data": {
         "location_detail": "110th Street & Malcolm X Boulevard Note: The farm stand has closed for the season; check back here or sign up for our email newsletter to get the latest on 2026 farm stand dates and other Conservancy updates. The Central Park Conservancy is delighted to partner with Corbin Hill Food Project to bring fresh, healthy, and affordable food options to our neighbors through the Central Park Farm Stand in summer and fall. The stand accepts SNAP, EBT, FMNP, and WIC benefits, ensuring access for all. The Central Park Farm Stand offers locally sourced produce from BIPOC-owned farms in the Hudson Valley, promoting food access, sustainable agriculture, healthy eating habits, and environmental conservation through community engagement. This community-focused offering is part of a vibrant local food ecosystem, creating economic opportunities for BIPOC farmers and small producers while bringing fresh, locally grown produce to the community. From Farm to Market: Hear from Corbin Hill Farmers Over the Years Ismail “We create markets for growers to sell in the very communities they come from. Bringing Black- and Brown-grown products into this space is truly a joy—and we’re proud to have the farmers here with us. It’s a one-of-a-kind experience you can’t find anywhere else in the City.” –Ismail Samad, Corbin Hill Food Project Gaby “Our main goal—our mission—is to feed the community we belong to. For us, it’s deeply important to bring fresh food back into the City. You get the food you deserve at the price you deserve—while supporting your local economy and local farmers.” –Gaby, Farmer at Yara Farm Chef Louise “We’re approaching food sovereignty, we’re addressing food insecurity, and we’re bringing all these great things to people in the neighborhood that can utilize it.” –Chef Louise, Corbin Hill Food Project Ismail “We create markets for growers to sell in the very communities they come from. Bringing Black- and Brown-grown products into this space is truly a joy—and we’re proud to have the farmers here with us. It’s a one-of-a-kind experience you can’t find anywhere else in the City.” –Ismail Samad, Corbin Hill Food Project Gaby “Our main goal—our mission—is to feed the community we belong to. For us, it’s deeply important to bring fresh food back into the City. You get the food you deserve at the price you deserve—while supporting your local economy and local farmers.” –Gaby, Farmer at Yara Farm Chef Louise “We’re approaching food sovereignty, we’re addressing food insecurity, and we’re bringing all these great things to people in the neighborhood that can utilize it.” –Chef Louise, Corbin Hill Food Project",
         "description_detail": "The Central Park Farm Stand offers fresh, seasonal produce grown with care by BIPOC-owned farms."
+      }
+    },
+    {
+      "id": 1702545,
+      "title": "Central Park Conservancy's Annual Gala",
+      "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
+      "type": "Benefit Events, Arts & Entertainment",
+      "tags": [],
+      "summary": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
+      "description": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966, https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=65e644cac6229f7c207c0ad228bb051f 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Central Park Conservancy's Annual Gala",
+        "og_description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again…",
+        "og_url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org .",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
+        "name": "Central Park Conservancy's Annual Gala",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
+      },
+      "detail_page_data": {
+        "location_detail": "Rumsey Playfield Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or [email protected] .",
+        "description_detail": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org ."
+      }
+    },
+    {
+      "id": 3701962,
+      "title": "Before, there was Seneca Village!",
+      "url": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village",
+      "type": "Arts & Entertainment, Events",
+      "tags": [
+        "Community",
+        "Music",
+        "Seneca Village"
+      ],
+      "summary": "<p>Watch as Seneca Village is brought to life through an interpretive performance.</p>",
+      "description": "<p>Watch as Seneca Village is brought to life through an interpretive performance.</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=d6624f65c3201af0182dc89031324877",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=d6624f65c3201af0182dc89031324877",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=2258c351cb8c0c55987a16e7ad8e68ba",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=2258c351cb8c0c55987a16e7ad8e68ba, https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=1481450d1ec7b29321934a07e7d63a74 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Before, there was Seneca Village!",
+        "og_description": "Watch as Seneca Village is brought to life through an interpretive performance.",
+        "og_url": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Watch as Seneca Village is brought to life through an interpretive performance.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/SenecaVillage_20210510_9672_RT_2025-10-17-140822_mkhk.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=d6624f65c3201af0182dc89031324877"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village",
+        "name": "Before, there was Seneca Village!",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/before-there-was-seneca-village"
+      },
+      "detail_page_data": {
+        "location_detail": "Seneca Village Landscape Join us in the historic Seneca Village landscape in Central Park for a performance that takes you back to Seneca Village in 1845. Interpretive music, dance, and spoken word will bring to life a world where Black New Yorkers built their own homes, churches, and a school, exploring how Andrew Williams's and others’ 1825 land purchase evolved into a thriving community. Performances by: DeWitt Fleming, Jr., Broadway performer Alphonso Horne, musician Mikumari Caiyhe, spoken word artist Bring a blanket to sit on and enjoy the performance in comfort! The Seneca Village landscape is between West 85th Street and West Drive. Enter the Park at West 85th Street. This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Email Address *",
+        "cost": "Free",
+        "description_detail": "Watch as Seneca Village is brought to life through an interpretive performance."
       }
     },
     {

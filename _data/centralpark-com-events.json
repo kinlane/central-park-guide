@@ -16,7 +16,7 @@
       "Swedish Cottage"
     ],
     "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png?cb=857133857379d3f7e6f97f38deb350a3",
-    "start_date": "2026-05-30T00:00:00"
+    "start_date": "2026-06-06T00:00:00"
   },
   {
     "title": "Bird Watching with Birding Bob",
@@ -52,8 +52,27 @@
       "Walking Tours"
     ],
     "image_url": "https://www.centralpark.com/downloads/10951/download/bird-watching-birders.jpeg?cb=42f10e56c7429e134753013550fb01b5",
-    "start_date": "2026-05-29T00:00:00",
+    "start_date": "2026-06-05T00:00:00",
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
+  },
+  {
+    "title": "Central Park Conservancy's Queer Central Park Tour",
+    "url": "https://www.centralpark.com/events/central-park-conservancys-queer-central-park-tour/",
+    "source": "centralpark.com",
+    "description": "Discover Central Park’s rich LGBTQ+ history on a guided tour highlighting the community’s lasting impact and stories.",
+    "location": "Bethesda Terrace",
+    "coordinates": {
+      "lat": 40.7738436358309,
+      "lng": -73.9708132046053
+    },
+    "tags": [
+      "Central Park History",
+      "New York History",
+      "Queer History"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/3534/download/bethesda-terrace.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
+    "start_date": "2026-06-07T10:00:00",
+    "end_date": "2026-06-07T11:30:00"
   },
   {
     "title": "Central Park Highlights Running Tour",
@@ -83,7 +102,7 @@
       "Winter Sports"
     ],
     "image_url": "https://www.centralpark.com/downloads/8118/download/FitToursNYC%20jump.jpg?cb=97cd3b0a82b07ecadaaaffb3dc4fe703",
-    "start_date": "2026-05-29T00:00:00"
+    "start_date": "2026-06-05T00:00:00"
   },
   {
     "title": "Central Park Model Yacht Club Races",
@@ -103,8 +122,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8929/download/model-sailboats.jpg?cb=22f9df28e3d9abe5666870363704333a",
-    "start_date": "2026-05-30T10:00:00",
-    "end_date": "2026-05-30T13:00:00"
+    "start_date": "2026-06-06T10:00:00",
+    "end_date": "2026-06-06T13:00:00"
   },
   {
     "title": "Central Park Zoo 4-D Theater",
@@ -124,8 +143,8 @@
       "Kids"
     ],
     "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg?cb=9a308b68dcf1925fb7c6e4ac07a7b8fd",
-    "start_date": "2026-05-30T10:15:00",
-    "end_date": "2026-05-30T17:00:00"
+    "start_date": "2026-06-06T10:15:00",
+    "end_date": "2026-06-06T17:00:00"
   },
   {
     "title": "Central Park Zoo Quests",
@@ -149,7 +168,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-05-29T00:00:00"
+    "start_date": "2026-06-05T00:00:00"
   },
   {
     "title": "Children's Programs at Central Park Zoo",
@@ -170,7 +189,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3",
-    "start_date": "2026-05-30T00:00:00"
+    "start_date": "2026-06-06T00:00:00"
   },
   {
     "title": "City Girls Who Walk",
@@ -189,8 +208,30 @@
       "Women"
     ],
     "image_url": "https://www.centralpark.com/downloads/10659/download/city-girls-who-walk-noelle-de-leeuw.jpg?cb=5876793eef0ad201a742d7b9c415afe6",
-    "start_date": "2026-05-31T12:00:00",
-    "end_date": "2026-05-31T13:30:00"
+    "start_date": "2026-06-07T12:00:00",
+    "end_date": "2026-06-07T13:30:00"
+  },
+  {
+    "title": "City Parks Seniors Fitness Free Tennis Lessons",
+    "url": "https://www.centralpark.com/events/cityparks-seniors-fitness-free-tennis-lessons/",
+    "source": "centralpark.com",
+    "description": "City Parks Foundation invites all senior citizens to join for free tennis lessons on Fridays in Central Park.",
+    "location": "Tennis Courts",
+    "coordinates": {
+      "lat": 40.7892582150875,
+      "lng": -73.9619237828596
+    },
+    "schedule": {
+      "raw": "Strawberry Fields | Central Park Zoo | Ice Skating | Horse & Carriage Rides | Bike Rentals | Yoga Classes"
+    },
+    "tags": [
+      "Fitness",
+      "Free Events",
+      "Tennis"
+    ],
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.263.post17.dev542374018055/static/images/blank.png",
+    "start_date": "2026-06-12T13:00:00",
+    "end_date": "2026-06-12T15:00:00"
   },
   {
     "title": "CPDSA Skate Circle Events",
@@ -217,8 +258,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3",
-    "start_date": "2026-05-30T14:45:00",
-    "end_date": "2026-05-30T18:45:00"
+    "start_date": "2026-06-06T14:45:00",
+    "end_date": "2026-06-06T18:45:00"
   },
   {
     "title": "Events on The Green at the Davis Center",
@@ -241,7 +282,7 @@
       "Wellness"
     ],
     "image_url": "https://www.centralpark.com/downloads/10914/download/davis-center.jpg?cb=5201cb32886adb8674330c968bf984b8",
-    "start_date": "2026-05-30T00:00:00"
+    "start_date": "2026-06-06T00:00:00"
   },
   {
     "title": "Fishing at the Harlem Meer",
@@ -262,8 +303,29 @@
       "Free Events"
     ],
     "image_url": "https://www.centralpark.com/downloads/1876/download/harlem-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-05-30T10:00:00",
-    "end_date": "2026-05-30T15:30:00"
+    "start_date": "2026-06-06T10:00:00",
+    "end_date": "2026-06-06T15:30:00"
+  },
+  {
+    "title": "Free Lawn Bowling Clinics in Central Park",
+    "url": "https://www.centralpark.com/events/free-lawn-bowling-clinics-in-central-park/",
+    "source": "centralpark.com",
+    "description": "Join the New York Lawn Bowling Club for free weekly clinics on the Central Park greens every Tuesday, Wednesday, and Thursday from 5:00 to 7:00 PM, May 1 through October 8. No experience needed.",
+    "location": "Bowling & Croquet Greens",
+    "coordinates": {
+      "lat": 40.7735463994522,
+      "lng": -73.9742790228416
+    },
+    "tags": [
+      "Corporate Events",
+      "Free Events",
+      "Lawn Bowling",
+      "Lawn Sports",
+      "Private Events"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10970/download/lawn-bowling-clinic-central-park-greens.jpg?cb=ade14adb0a14bd77532e1a69a7a08e90",
+    "start_date": "2026-06-09T17:00:00",
+    "end_date": "2026-06-09T19:00:00"
   },
   {
     "title": "Free Shakespeare in the Park 2026",
@@ -283,8 +345,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/2334/download/romeo-juliet.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-05-29T20:00:00",
-    "end_date": "2026-05-29T22:00:00"
+    "start_date": "2026-06-05T20:00:00",
+    "end_date": "2026-06-05T22:00:00"
   },
   {
     "title": "Free Weekly Run with Central Park Running Club",
@@ -303,7 +365,70 @@
       "Sports & Recreation"
     ],
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543",
-    "start_date": "2026-05-30T00:00:00"
+    "start_date": "2026-06-06T00:00:00"
+  },
+  {
+    "title": "Gladiators NYC",
+    "url": "https://www.centralpark.com/events/gladiators-nyc/",
+    "source": "centralpark.com",
+    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
+    "location": "Lawn Behind Met Museum",
+    "coordinates": {
+      "lat": 40.7784296398896,
+      "lng": -73.9655968372519
+    },
+    "tags": [
+      "Annual Events",
+      "Featured Events",
+      "Free Events",
+      "Metropolitan Museum Of Art"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb",
+    "start_date": "2026-06-13T14:00:00",
+    "end_date": "2026-06-13T16:00:00"
+  },
+  {
+    "title": "Mastercard® New York Mini 10K - Women's Race",
+    "url": "https://www.centralpark.com/events/mastercard-new-york-mini-10k-womens-race/",
+    "source": "centralpark.com",
+    "description": "Join in on the world’s original women-only road race and follow in the footsteps of legends!",
+    "location": "Central Park West",
+    "coordinates": {
+      "lat": 40.773901061147,
+      "lng": -73.9776584715955
+    },
+    "tags": [
+      "Races",
+      "Running",
+      "Sports & Recreation"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10952/download/NYRR_logo.jpg?cb=c7cbac9956db5b269e08f3d06c8d57cb",
+    "start_date": "2026-06-06T08:00:00",
+    "end_date": "2026-06-06T12:00:00"
+  },
+  {
+    "title": "Museum Mile Festival 2026",
+    "url": "https://www.centralpark.com/events/museum-mile-festival/",
+    "source": "centralpark.com",
+    "description": "The Museum Mile Festival turns Fifth Avenue into a free, car-free block party each June, with a group of museums open to the public for an evening of art, performances, and outdoor programming.",
+    "location": "Metropolitan Museum of Art",
+    "coordinates": {
+      "lat": 40.7796148144731,
+      "lng": -73.9632187339416
+    },
+    "tags": [
+      "5th Avenue",
+      "Featured Events",
+      "Free Events",
+      "Guggenheim Museum",
+      "Metropolitan Museum Of Art",
+      "Museum Mile",
+      "Museum Mile Festival",
+      "Museums"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/8549/download/Metropolitan%20Museum%20of%20Art-depositphoto.jpg?cb=6c7be52317f7a5790497f17eb27a2734",
+    "start_date": "2026-06-09T18:00:00",
+    "end_date": "2026-06-09T21:00:00"
   },
   {
     "title": "NY Classical Theatre: \"The Tragedy of Julius Caesar\"",
@@ -321,8 +446,50 @@
       "Shakespeare"
     ],
     "image_url": "https://www.centralpark.com/downloads/10969/download/Anique%20Clements%20and%20Carine%20Montbertrand%20in%20All%27s%20Well%20That%20Ends%20Well%20in%20Central%20Park%3B%20Photo%20by%20Colin%20Knapp.jpeg?cb=b297fec63e87607a781f088d60936a1c",
-    "start_date": "2026-06-02T19:00:00",
-    "end_date": "2026-06-02T21:00:00"
+    "start_date": "2026-06-05T19:00:00",
+    "end_date": "2026-06-05T21:00:00"
+  },
+  {
+    "title": "NY Classical Theatre: Dog Nights",
+    "url": "https://www.centralpark.com/events/ny-classical-theatre-dog-nights/",
+    "source": "centralpark.com",
+    "description": "NY Classical Theatre performs free Shakespeare in Central Park on two dog-friendly nights. Photo booth opens at 6:30 PM, performance at 7:00 PM. Reservations encouraged but not required.",
+    "location": "West 103rd Street & Central Park West",
+    "coordinates": {
+      "lat": 40.7960429151746,
+      "lng": -73.9613622996643
+    },
+    "tags": [
+      "Free Events",
+      "NY Classical Theatre",
+      "Shakespeare"
+    ],
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.263.post17.dev542374018055/static/images/blank.png",
+    "start_date": "2026-06-13T19:00:00"
+  },
+  {
+    "title": "NY Philharmonic Concert 2026",
+    "url": "https://www.centralpark.com/events/the-ny-philharmonic-concerts-in-the-park/",
+    "source": "centralpark.com",
+    "description": "Conductor Elim Chan leads the New York Philharmonic on the Great Lawn for a free summer evening of music featuring Principal Cello Carter Brey, a program spanning Copland, Saint-Saëns, Ravel, and more, capped by a post-concert fireworks display.",
+    "location": "Great Lawn",
+    "coordinates": {
+      "lat": 40.7812388527777,
+      "lng": -73.9664058932192
+    },
+    "tags": [
+      "Classical Music",
+      "Fireworks",
+      "Free Events",
+      "Great Lawn",
+      "Live Music",
+      "New York Philharmonic",
+      "Summer Activities",
+      "Summer Concerts"
+    ],
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.263.post17.dev542374018055/static/images/blank.png",
+    "start_date": "2026-06-10T18:00:00",
+    "end_date": "2026-06-10T22:00:00"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -343,7 +510,7 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-05-29T00:00:00"
+    "start_date": "2026-06-05T00:00:00"
   },
   {
     "title": "Pickleball at Wollman Rink",
@@ -366,8 +533,29 @@
       "Wollman Rink"
     ],
     "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg?cb=d22be6a7cd3935c7aaf13233f26febe4",
-    "start_date": "2026-05-29T08:00:00",
-    "end_date": "2026-05-29T21:00:00"
+    "start_date": "2026-06-05T08:00:00",
+    "end_date": "2026-06-05T21:00:00"
+  },
+  {
+    "title": "Puerto Rican Day Parade 2026",
+    "url": "https://www.centralpark.com/events/puerto-rican-day-parade/",
+    "source": "centralpark.com",
+    "description": "The 69th Annual National Puerto Rican Day Parade takes place Sunday, June 14, 2026 on Fifth Avenue from 44th to 79th Street, celebrating Puerto Rican history, culture, and achievement with more than one million participants and spectators.",
+    "location": "5th Avenue",
+    "coordinates": {
+      "lat": 40.7778421950467,
+      "lng": -73.9631093321871
+    },
+    "tags": [
+      "All Ages",
+      "Cultural",
+      "Free Events",
+      "Parades",
+      "Summer Attractions"
+    ],
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.263.post17.dev542374018055/static/images/blank.png",
+    "start_date": "2026-06-14T11:00:00",
+    "end_date": "2026-06-14T17:00:00"
   },
   {
     "title": "Sea Lion Feedings at Central Park Zoo",
@@ -388,7 +576,28 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg?cb=b7fbf5726a87802d056abe969b8ed073",
-    "start_date": "2026-05-29T00:00:00"
+    "start_date": "2026-06-05T00:00:00"
+  },
+  {
+    "title": "Simone Dinnerstein, Baroklyn & CONCORA | Naumburg Orchestral Concerts",
+    "url": "https://www.centralpark.com/events/simone-dinnerstein-baroklyn-concora-naumburg-orchestral-co/",
+    "source": "centralpark.com",
+    "description": "Pianist Simone Dinnerstein leads Baroklyn and the CONCORA choir in a free outdoor concert at the Naumburg Bandshell on June 9, featuring works by Bach and Philip Glass. No tickets needed.",
+    "location": "Naumburg Bandshell",
+    "coordinates": {
+      "lat": 40.7727049726675,
+      "lng": -73.9710345049975
+    },
+    "tags": [
+      "All Ages",
+      "Free Events",
+      "Live Music",
+      "Naumburg Orchestral Concerts",
+      "Summer Concerts"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10964/download/simone-dinnerstein-baroklyn-naumburg-concerts.jpeg?cb=63c2d07bccd3640f447599558acdf3a6",
+    "start_date": "2026-06-09T19:30:00",
+    "end_date": "2026-06-09T21:00:00"
   },
   {
     "title": "Sunrise Wellness Walk",
@@ -415,8 +624,8 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d",
-    "start_date": "2026-05-30T08:00:00",
-    "end_date": "2026-05-30T09:30:00"
+    "start_date": "2026-06-06T08:00:00",
+    "end_date": "2026-06-06T09:30:00"
   },
   {
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
@@ -447,28 +656,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-05-29T00:00:00"
-  },
-  {
-    "title": "YAI Central Park Challenge 2026",
-    "url": "https://www.centralpark.com/events/yai-central-park-challenge/",
-    "source": "centralpark.com",
-    "description": "YAI's Central Park Challenge is one of New York's largest celebrations of the intellectual and developmental disabilities community, bringing families together for a free morning of inclusive fun and a 3K walk.",
-    "location": "Naumburg Bandshell",
-    "coordinates": {
-      "lat": 40.7727049726675,
-      "lng": -73.9710345049975
-    },
-    "tags": [
-      "Charity & Cause Events",
-      "Featured Events",
-      "Free Events",
-      "Naumburg Bandshell",
-      "Walks"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10919/download/naumburg-bandshell.jpg?cb=85bf6fbda9a59642c8e7f5c66c1f6c45",
-    "start_date": "2026-05-30T08:00:00",
-    "end_date": "2026-05-30T12:00:00"
+    "start_date": "2026-06-05T00:00:00"
   },
   {
     "title": "Yoga Classes",
@@ -490,6 +678,6 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8886/download/yoga-sunset-pose.jpg?cb=4f2775ee35664485d10c0c4b83408a00",
-    "start_date": "2026-05-29T00:00:00"
+    "start_date": "2026-06-05T00:00:00"
   }
 ]

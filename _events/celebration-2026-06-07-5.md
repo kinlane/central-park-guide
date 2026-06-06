@@ -1,7 +1,7 @@
 ---
 title: "Celebration"
 date: 2026-06-07
-time: "15:00"
+time: "12:00"
 end_time: "17:00"
 location: "Cedar Hill"
 place: "Cedar Hill"
@@ -25,7 +25,7 @@ Celebration takes place at Cedar Hill in Central Park on Sunday, June 7, 2026.
 
 - **Event:** Celebration
 - **Date:** Sunday, June 7, 2026
-- **Time:** 3:00 PM - 5:00 PM
+- **Time:** 12:00 PM - 5:00 PM
 - **Location:** Cedar Hill, Central Park
 - **Place:** Cedar Hill
 - **Type:** Special Event

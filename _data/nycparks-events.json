@@ -1,46 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-05-31-its-my-park-at-street-tree",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/05/31/its-my-park-at-street-tree",
-      "title": "It's My Park at Malcolm X Blvd Plaza",
-      "start_date": "2026-05-31T11:00:00-04:00",
-      "end_date": "2026-05-31T13:00:00-04:00",
-      "location": "110th Street and Lenox Avenue",
-      "category": "Volunteer, It's My Park",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-02-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/02/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-02T19:00:00-04:00",
-      "end_date": "2026-06-02T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-03-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/03/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-03T19:00:00-04:00",
-      "end_date": "2026-06-03T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-04-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/04/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-04T19:00:00-04:00",
-      "end_date": "2026-06-04T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-06-05-ny-classical-the-tragedy-of-julius-caesar",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/05/ny-classical-the-tragedy-of-julius-caesar",
       "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
@@ -103,7 +63,7 @@
     {
       "id": "nycparks-parks-central-park-events-2026-06-10-ny-phil-harmonic-central-park",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/10/ny-phil-harmonic-central-park",
-      "title": "NY Phil Harmonic: Central Park",
+      "title": "New York Philharmonic Concerts in the Parks: Central Park, Manhattan",
       "start_date": "2026-06-10T20:00:00-04:00",
       "end_date": "2026-06-10T22:00:00-04:00",
       "location": "The Great Lawn",
@@ -791,5 +751,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-05-30T00:06:55Z"
+  "fetched_at": "2026-06-06T00:47:04Z"
 }
