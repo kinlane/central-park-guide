@@ -33,11 +33,42 @@ gates:
 
   - name: Naturalists' Gate
     type: gate
+    alternate_names:
+      - West 77th Street Entrance
+      - 77th Street Entrance
     location: 77th Street & Central Park West
     description: Western entrance near Eaglevale Bridge.
 
+  - name: Hunters' Gate
+    type: gate
+    alternate_names:
+      - West 81st Street and Central Park West
+      - 81st Street and Central Park West
+    location: West 81st Street & Central Park West
+    description: Western entrance at 81st Street, near the Diana Ross Playground and the American Museum of Natural History.
+
+  - name: Boys' Gate
+    type: gate
+    alternate_names:
+      - West 100 Street and Central Park West
+      - West 100th Street and Central Park West
+      - 100th Street and Central Park West
+    location: West 100th Street & Central Park West
+    description: Western entrance at 100th Street, near the North Meadow.
+
+  - name: Strangers' Gate
+    type: gate
+    alternate_names:
+      - West 106th Street and Central Park West
+      - 106th Street and Central Park West
+    location: West 106th Street & Central Park West
+    description: Northwestern entrance at 106th Street, with a stone staircase climbing toward the Great Hill.
+
   - name: Farmers' Gate
     type: gate
+    alternate_names:
+      - 110th and Lenox
+      - 110th Street and Lenox
     location: Lenox Avenue & 110th Street (south of)
     description: Northern entrance near Huddlestone Arch.
 
@@ -392,6 +423,16 @@ buildings:
 # ---------------------------------------------------------------------------
 recreation:
 
+  - name: Gottesman Pool at the Davis Center
+    type: swimming pool / ice rink
+    alternate_names:
+      - Gottesman Pool
+      - Davis Center
+      - The Davis Center
+      - Harlem Meer Center
+    location: Southeast corner of the Harlem Meer, northern section (110th Street)
+    description: Year-round recreation complex at the Harlem Meer that reopened in 2024 on the former Lasker Rink site — the Gottesman Pool in summer and an ice rink in winter, part of the Conservancy's Davis Center.
+
   - name: Wollman Rink
     type: ice skating rink
     location: Southern section, near 62nd-63rd Streets
@@ -555,6 +596,15 @@ rocks:
 # 29 sculptures have been erected within Central Park's boundaries.
 # ---------------------------------------------------------------------------
 monuments_and_sculptures:
+
+  - name: Hans Christian Andersen Statue
+    type: sculpture/statue
+    alternate_names:
+      - Hans Christian Anderson Statue
+      - Hans Christian Andersen
+      - Hans Christian Anderson
+    location: West side of Conservatory Water, near 74th Street
+    description: Bronze of the Danish storyteller reading "The Ugly Duckling" by Georg John Lober (1956). A summer storytelling venue on the west shore of the model-boat pond.
 
   - name: Angel of the Waters
     type: sculpture/fountain centerpiece
@@ -997,6 +1047,14 @@ other_features:
 # These are named sub-locations used in NYC Parks Department event permitting.
 # ---------------------------------------------------------------------------
 event_venues:
+
+  - name: West 103rd Street Entrance
+    type: park entrance
+    alternate_names:
+      - West 103rd Street and Central Park West
+      - 103rd Street and Central Park West
+    location: West 103rd Street & Central Park West
+    description: Western park entrance at 103rd Street, between the historic Boys' Gate (100th) and Strangers' Gate (106th). Not one of the original 1862 named gates.
 
   - name: Cop Cot
     type: rustic shelter

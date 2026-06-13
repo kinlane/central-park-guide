@@ -1,15 +1,6 @@
 {
   "events": [
     {
-      "id": "naumburg-upcoming-baroklyn",
-      "url": "https://naumburgconcerts.org/upcoming/baroklyn",
-      "title": "Baroklyn, Simone Dinnerstein, & CONCORA",
-      "date": "2026-06-09",
-      "time_display": "",
-      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692236676-EJ9DSAYW2GU0FAGKIH9C/Simone+Dinnerstein+Baroklyn+by+Grayson+Dantzic+300-51b.jpg",
-      "venue": "Naumburg Bandshell"
-    },
-    {
       "id": "naumburg-upcoming-theknights",
       "url": "https://naumburgconcerts.org/upcoming/theknights",
       "title": "The Knights",
@@ -44,7 +35,16 @@
       "time_display": "",
       "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776691854957-3OFST3ONB4K12V7GHSPG/Aisslinn+Nosky+by+Sian+Richards.jpg",
       "venue": "Naumburg Bandshell"
+    },
+    {
+      "id": "naumburg-upcoming-baroklyn",
+      "url": "https://naumburgconcerts.org/upcoming/baroklyn",
+      "title": "Baroklyn, Simone Dinnerstein, & CONCORA",
+      "date": "2026-06-09",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692236676-EJ9DSAYW2GU0FAGKIH9C/Simone+Dinnerstein+Baroklyn+by+Grayson+Dantzic+300-51b.jpg",
+      "venue": "Naumburg Bandshell"
     }
   ],
-  "fetched_at": "2026-06-06T00:46:59Z"
+  "fetched_at": "2026-06-13T11:55:52Z"
 }

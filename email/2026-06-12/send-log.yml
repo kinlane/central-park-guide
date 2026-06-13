@@ -1,0 +1,105 @@
+- timestamp: '2026-06-08T00:16:49.214091+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:50.212317+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Walk Notes: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:50.950945+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:51.654056+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:52.387285+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:53.058388+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Walk Notes: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:53.733734+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:54.637326+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "Central Park Theater: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:55.484569+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: music-fan
+  subject: "Central Park Music: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:56.174858+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: family
+  subject: "Central Park Family Plans: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:56.821789+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: sports-fan
+  subject: "Central Park Sports: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:57.531801+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: wellness-seeker
+  subject: "Central Park Wellness: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:58.206919+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:58.891608+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: park-watcher
+  subject: "Central Park Weekly Digest: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent
+- timestamp: '2026-06-08T00:16:59.615594+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  persona: park-watcher
+  subject: "Central Park Weekly Digest: Sat Jun 13 \u2013 Fri Jun 19"
+  week_of: '2026-06-12'
+  status: sent

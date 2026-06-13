@@ -1,106 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-06-05-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/05/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-05T19:00:00-04:00",
-      "end_date": "2026-06-05T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-06-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/06/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-06T19:00:00-04:00",
-      "end_date": "2026-06-06T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-07-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/07/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-07T19:00:00-04:00",
-      "end_date": "2026-06-07T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-08-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/08/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-08T19:00:00-04:00",
-      "end_date": "2026-06-08T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-09-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/09/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-09T19:00:00-04:00",
-      "end_date": "2026-06-09T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-10-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/10/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-10T19:00:00-04:00",
-      "end_date": "2026-06-10T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-10-ny-phil-harmonic-central-park",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/10/ny-phil-harmonic-central-park",
-      "title": "New York Philharmonic Concerts in the Parks: Central Park, Manhattan",
-      "start_date": "2026-06-10T20:00:00-04:00",
-      "end_date": "2026-06-10T22:00:00-04:00",
-      "location": "The Great Lawn",
-      "category": "Concerts, Film, Free Summer Concerts",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-11-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/11/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-11T19:00:00-04:00",
-      "end_date": "2026-06-11T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-12-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/12/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-12T09:00:00-04:00",
-      "end_date": "2026-06-12T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-12-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/12/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-12T19:00:00-04:00",
-      "end_date": "2026-06-12T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-06-13-ny-classical-the-tragedy-of-julius-caesar",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/13/ny-classical-the-tragedy-of-julius-caesar",
       "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
@@ -391,6 +291,36 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-07-session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/07/session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "title": "Session 1: Gottesman Pool - Children's Learn to Swim Level 2 (Class B)",
+      "start_date": "2026-07-07T12:00:00-04:00",
+      "end_date": "2026-07-07T13:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-07-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/07/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class A)",
+      "start_date": "2026-07-07T13:00:00-04:00",
+      "end_date": "2026-07-07T14:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-07-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/07/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)",
+      "start_date": "2026-07-07T13:40:00-04:00",
+      "end_date": "2026-07-07T14:40:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-08-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/08/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -408,6 +338,36 @@
       "end_date": "2026-07-09T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-09-session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/09/session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "title": "Session 1: Gottesman Pool - Children's Learn to Swim Level 2 (Class B)",
+      "start_date": "2026-07-09T12:00:00-04:00",
+      "end_date": "2026-07-09T13:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-09-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/09/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class A)",
+      "start_date": "2026-07-09T13:00:00-04:00",
+      "end_date": "2026-07-09T14:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-09-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/09/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)",
+      "start_date": "2026-07-09T13:40:00-04:00",
+      "end_date": "2026-07-09T14:40:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
       "free": true
     },
     {
@@ -451,6 +411,36 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-14-session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/14/session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "title": "Session 1: Gottesman Pool - Children's Learn to Swim Level 2 (Class B)",
+      "start_date": "2026-07-14T12:00:00-04:00",
+      "end_date": "2026-07-14T13:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-14-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/14/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class A)",
+      "start_date": "2026-07-14T13:00:00-04:00",
+      "end_date": "2026-07-14T14:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-14-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/14/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b1",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)",
+      "start_date": "2026-07-14T13:40:00-04:00",
+      "end_date": "2026-07-14T14:40:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-15-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/15/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -468,6 +458,36 @@
       "end_date": "2026-07-16T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-16-session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/16/session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "title": "Session 1: Gottesman Pool - Children's Learn to Swim Level 2 (Class B)",
+      "start_date": "2026-07-16T12:00:00-04:00",
+      "end_date": "2026-07-16T13:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-16-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/16/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class A)",
+      "start_date": "2026-07-16T13:00:00-04:00",
+      "end_date": "2026-07-16T14:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-16-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/16/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)",
+      "start_date": "2026-07-16T13:40:00-04:00",
+      "end_date": "2026-07-16T14:40:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
       "free": true
     },
     {
@@ -511,6 +531,36 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-21-session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/21/session-1-gottesman-pool-childrens-learn-to-swim-level-2-class-b",
+      "title": "Session 1: Gottesman Pool - Children's Learn to Swim Level 2 (Class B)",
+      "start_date": "2026-07-21T12:00:00-04:00",
+      "end_date": "2026-07-21T13:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-21-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/21/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-a",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class A)",
+      "start_date": "2026-07-21T13:00:00-04:00",
+      "end_date": "2026-07-21T14:00:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-21-session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/21/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b",
+      "title": "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)",
+      "start_date": "2026-07-21T13:40:00-04:00",
+      "end_date": "2026-07-21T14:40:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-22-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/22/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -538,6 +588,16 @@
       "end_date": "2026-07-24T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-24-meditation-marathon-peace-in-the-park",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/24/meditation-marathon-peace-in-the-park",
+      "title": "Meditation Marathon: Peace in the Park",
+      "start_date": "2026-07-24T12:00:00-04:00",
+      "end_date": "2026-07-24T18:00:00-04:00",
+      "location": "Naumburg Bandshell",
+      "category": "Festivals, Talks, Walking, Yoga & Pilates Classes",
       "free": true
     },
     {
@@ -751,5 +811,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-06-06T00:47:04Z"
+  "fetched_at": "2026-06-13T11:55:45Z"
 }
