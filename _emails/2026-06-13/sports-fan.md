@@ -55,6 +55,6 @@ Adult softball and baseball across Heckscher and the Great Lawn diamonds. Bowlin
 
 ## We need your feedback
 
-Hit reply — one sentence or a thousand.
+Hit reply — one sentence or whatever you need.
 
 — Central Park Guide

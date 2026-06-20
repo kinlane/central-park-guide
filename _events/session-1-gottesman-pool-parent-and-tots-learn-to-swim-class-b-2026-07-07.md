@@ -1,8 +1,8 @@
 ---
 title: "Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)"
 date: 2026-07-07
-time: "13:40"
-end_time: "14:40"
+time: "11:00"
+end_time: "12:00"
 location: "Gottesman Pool at the Davis Center"
 place: "Gottesman Pool at the Davis Center"
 place_category: "recreation"
@@ -24,6 +24,6 @@ Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B) at Gottesman
 
 - **Event:** Session 1: Gottesman Pool - Parent and Tots Learn to Swim (Class B)
 - **Date:** Tuesday, July 7, 2026
-- **Time:** 13:40 – 14:40
+- **Time:** 11:00 – 12:00
 - **Location:** Gottesman Pool at the Davis Center, Central Park
 - **Official site:** https://www.nycgovparks.org/parks/central-park/events/2026/07/07/session-1-gottesman-pool-parent-and-tots-learn-to-swim-class-b

@@ -55,6 +55,6 @@ If this is closing night, expect elevated energy at The Pool. **Juneteenth in Se
 
 ## We need your feedback
 
-Hit reply — one sentence or a thousand.
+Hit reply — one sentence or whatever you need.
 
 — Central Park Guide

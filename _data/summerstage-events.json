@@ -1,23 +1,23 @@
 {
   "events": [
     {
-      "id": "summerstage-17554",
-      "title": "The Martinez Brothers / Wakyin / Luna Mar",
-      "start_date": "2026-06-13 18:00:00",
-      "end_date": "2026-06-13 22:00:00",
-      "url": "https://cityparksfoundation.org/events/the-martinez-brothers/",
-      "description": "SummerStage Member  Presale:  Thursday, November 20 at 10AM  \n  Capital One Cardholder  Presale:  Thursday, November 20 at 10AM  \n General on-sale:  Friday, November 21 at 10AM  \n  Bronx DJ duo   The Martinez Brothers   will grace the Central Park stage on Saturday, June 13, 2026. The pair have long been considered among the greatest of house music jockeys, playing tear-the-roof-down shows everywhere from Randall\u2019s Island to Belgium. They\u2019ve collaborated with Nile Rodgers and Carnage, and have been staples of the New York club scene since before they were old enough to get in. Wakyin and Luna Mar will support.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/EMW-1920X1080-V2-copy-2.webp",
+      "id": "summerstage-20655",
+      "title": "NYC Commission on Racial Equity Presents a Juneteenth Celebration on Reparations & Racial Equity ft. Ja Rule, LeToya Luckett, and DJ Kid Capri",
+      "start_date": "2026-06-19 18:00:00",
+      "end_date": "2026-06-19 22:00:00",
+      "url": "https://cityparksfoundation.org/events/core-juneteenth/",
+      "description": "The New York City Commission on Racial Equity (NYC CORE) and SummerStage will host a free Juneteenth Celebration on Reparations & Racial Equity on June 19, 2026, at SummerStage in Central Park, bringing together culture, music, civic engagement, and public dialogue around some of the most consequential racial justice initiatives in New York City\u2019s history. The event will feature performances by hip-hop icon Ja Rule, GRAMMY award-winning singer LeToya Luckett, and the legendary DJ Kid Capri, while also serving as a platform to educate New Yorkers about the City\u2019s reparations mandates under Local Laws 91 and 92 and gather community feedback on the City\u2019s Preliminary Racial Equity Plan. More than a concert, the Juneteenth gathering represents a unique opportunity for New Yorkers to participate directly in shaping the future of racial equity policy, accountability, and reparative justice in New York City.",
+      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/Juneteenth-w-Ja-Rule-Web.webp",
       "cost": "",
       "venue": "Manhattan",
       "tags": [
-        "ticketed"
+        "free"
       ],
       "categories": [
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19761",
@@ -36,7 +36,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19762",
@@ -55,16 +55,16 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-18471",
-      "title": "Dreamland: Pride in Central Park with Purple Disco Machine / Kungs / Dani Brasil",
+      "title": "Dreamland: Pride in Central Park with SG Lewis / Kungs / Bob\u2019s Dance Shop / Dani Brasil / MkX",
       "start_date": "2026-06-28 15:00:00",
       "end_date": "2026-06-28 22:00:00",
       "url": "https://cityparksfoundation.org/events/dreamland-pride-pdm/",
-      "description": "SummerStage Member  Presale:  Friday, February 6 at 12PM  \n  Capital One Cardholder  Presale:  Friday, February 6 at 12PM  \n General on-sale:  Monday, February 9 at 10AM  \n  We\u2019re so excited to welcome back   Dreamland: Pride in Central Park  , produced by Jake Resnicow, for the fourth year in a row.  \n  This year, iconic German producer   Purple Disco Machine  , the \u201ccontemporary king of disco\u201d, returns to SummerStage after his sold-out show with us in 2023. His remix of Lizzo\u2019s anthem \u201cAbout Damn Time\u201d won him the 2023 GRAMMY award for Best Remix Performance, and he\u2019s been featured at some of the world\u2019s largest electronic music festivals including Tomorrowland, EDC, and Coachella. Additional guests include Kungs and Dani Brasil.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/DREAMLAND-PRIDE-26-1200x628-1.webp",
+      "description": "SummerStage Member  Presale:  Friday, February 6 at 12PM  \n  Capital One Cardholder  Presale:  Friday, February 6 at 12PM  \n General on-sale:  Monday, February 9 at 10AM  \n  We\u2019re so excited to welcome back   Dreamland: Pride in Central Park  , produced by Jake Resnicow, for the fourth year in a row.",
+      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/DREAMLAND-PRIDE-26-820x350-1.webp",
       "cost": "",
       "venue": "Manhattan",
       "tags": [
@@ -74,7 +74,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19765",
@@ -93,7 +93,26 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
+    },
+    {
+      "id": "summerstage-19767",
+      "title": "Shaggy\u2019s Yaad Live: Shaggy / Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powah / Nesta / Amber Lee / Matthew Malcolm / DJ Sets by Tropical Blendz and Afrique / Hosted by DJ Norie, Roxy Romeo, and Li\u2019l Nat",
+      "start_date": "2026-07-09 19:00:00",
+      "end_date": "2026-07-09 22:00:00",
+      "url": "https://cityparksfoundation.org/events/shaggys-yaad-live/",
+      "description": "VP Records, in association with Boombastic Radio, returns to Central Park on July 9th to present Shaggy\u2019s Yaad Live with reggae icon Shaggy and a newly announced expanded lineup including GRAMMY Award-winning singer-songwriter Robin Thicke, dancehall legends Tanto Metro & Devonte, reggae vocalist Rayvon, rising Jamaican artists Nowa Powah, Nesta, and Amber Lee, as well as country-reggae performer Matthew Malcom and additional surprise guests. The evening will also feature DJ sets from Tropical Blendz and Afrique and will be hosted by DJ Norie, Roxy Romeo, and Li\u2019l Nat.",
+      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/shaggynorie_marohagopian-9753.webp",
+      "cost": "Free",
+      "venue": "Manhattan",
+      "tags": [
+        "free"
+      ],
+      "categories": [
+        "summerstage"
+      ],
+      "place_hint": "Rumsey Playfield",
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-18565",
@@ -112,7 +131,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19776",
@@ -131,7 +150,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19778",
@@ -150,7 +169,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19783",
@@ -169,7 +188,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19784",
@@ -188,7 +207,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19785",
@@ -207,7 +226,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     },
     {
       "id": "summerstage-19786",
@@ -226,8 +245,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-13T11:55:52Z"
+      "fetched_at": "2026-06-20T19:16:11Z"
     }
   ],
-  "fetched_at": "2026-06-13T11:55:52Z"
+  "fetched_at": "2026-06-20T19:16:11Z"
 }

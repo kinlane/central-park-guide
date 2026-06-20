@@ -56,6 +56,6 @@ The coolest, cleanest walking day — do the long route. Great Lawn perimeter be
 
 ## We need your feedback
 
-Hit reply — one sentence or a thousand.
+Hit reply — one sentence or whatever you need.
 
 — Central Park Guide

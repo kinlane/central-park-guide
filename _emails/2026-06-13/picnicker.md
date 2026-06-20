@@ -55,6 +55,6 @@ The West Drive corridor between 82nd and 86th Street is the Juneteenth commemora
 
 ## We need your feedback
 
-Hit reply — one sentence or a thousand.
+Hit reply — one sentence or whatever you need.
 
 — Central Park Guide

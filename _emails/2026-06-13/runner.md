@@ -56,6 +56,6 @@ Have a strong week,
 
 ## We need your feedback
 
-Hit reply — one sentence or a thousand.
+Hit reply — one sentence or whatever you need.
 
 — Central Park Guide

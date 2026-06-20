@@ -49,7 +49,9 @@ with open(ENV_FILE) as f:
             k, v = line.split("=", 1)
             env[k.strip()] = v.strip().strip('"').strip("'")
 
-smtp_password = env["FASTMAIL_CENTRAL_PARK_GUIDE_KEY"]
+smtp_password = env.get("FASTMAIL_CENTRAL_PARK_GUIDE_KEY") or env.get("fastmail-key")
+if not smtp_password:
+    sys.exit("Missing Fastmail SMTP password: set FASTMAIL_CENTRAL_PARK_GUIDE_KEY (or fastmail-key) in .env")
 
 s3 = boto3.client(
     "s3",

@@ -54,6 +54,6 @@ A clean 78°F day with no headline history programming — a good chance to take
 
 ## We need your feedback
 
-Hit reply — one sentence or a thousand.
+Hit reply — one sentence or whatever you need.
 
 — Central Park Guide

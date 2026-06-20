@@ -75,6 +75,6 @@ See you at the Bandshell,
 
 ## We need your feedback
 
-These emails get better when you tell us what landed and what didn't. **What was useful? What was missing? What was weird?** Hit reply with one sentence or a thousand — every piece of feedback shapes next week's edition. We genuinely depend on it.
+These emails get better when you tell us what landed and what didn't. **What was useful? What was missing? What was weird?** Hit reply with one sentence or whatever you need — every piece of feedback shapes next week's edition. We genuinely depend on it.
 
 — Central Park Guide
