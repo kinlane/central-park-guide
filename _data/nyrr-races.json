@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-02T00:41:03+00:00",
+  "fetched_at": "2026-06-28T21:02:19+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -58,6 +58,32 @@
       "title": "2024 United Airlines NYC Half",
       "total_finishers": 27824,
       "year": 2024
+    },
+    "2026frontrunnersnewyorklgbtpriderun4m": {
+      "candidate_title": "Front Runners New York LGBT Pride Run 4m",
+      "fetched_at": "2026-06-26T21:51:05+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "frontrunnersnewyorklgbtpriderun4m",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026frontrunnersnewyorklgbtpriderun4m",
+        "https://www.nyrr.org/races/2026/frontrunnersnewyorklgbtpriderun4m",
+        "https://www.nyrr.org/races/frontrunnersnewyorklgbtpriderun4m"
+      ],
+      "year": 2026
+    },
+    "2026nyrrachilleshopeandpossibility4m": {
+      "candidate_title": "2026 NYRR Achilles Hope and Possibility 4M",
+      "fetched_at": "2026-06-28T21:02:17+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "nyrrachilleshopeandpossibility4m",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrrachilleshopeandpossibility4m",
+        "https://www.nyrr.org/races/2026/nyrrachilleshopeandpossibility4m",
+        "https://www.nyrr.org/races/nyrrachilleshopeandpossibility4m"
+      ],
+      "year": 2026
     },
     "2026nyrrbrooklynrun5k": {
       "candidate_title": "NYRR Brooklyn RUN 5k",

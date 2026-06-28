@@ -50,6 +50,75 @@ walks:
       - annual-tradition
       - lgbtq
 
+  - id: front-runners-pride-run
+    title: "Front Runners New York LGBT Pride Run 4M"
+    organizer: "Front Runners New York / New York Road Runners"
+    source_url: "https://www.nyrr.org/races/frontrunnersnewyorklgbtpriderun4m"
+    recurrence: "Last Saturday of June (typical)"
+    dates:
+      "2026": "2026-06-27"
+    start_time: "08:00"
+    end_time: "10:00"
+    location: "Naumburg Bandshell"
+    event_type: "Charity Run"
+    event_borough: "Manhattan"
+    expected_attendance: 6000
+    affects_loop: true
+    route_impact: >
+      NYRR 4-mile race on the park drives, start 8:00 AM Saturday. Race-Day
+      Central and number pickup (from 6:30 AM) at the Naumburg Bandshell. The
+      loop (East and West Drive) carries the race field roughly 7:30–10 AM;
+      run before 7:30 or after 10:30, or use the Bridle Path / Reservoir.
+    audience_relevance:
+      - runners
+      - cyclists
+      - walkers
+      - park-watcher
+    description: >
+      Front Runners New York's annual LGBTQ+ Pride Run, a 4-mile NYRR race in
+      Central Park. 2026 charity beneficiary is Housing Works.
+    tags:
+      - charity
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+      - lgbtq
+
+  - id: achilles-hope-possibility
+    title: "Achilles Hope & Possibility 4M"
+    organizer: "Achilles International / New York Road Runners (presented by TD Bank)"
+    source_url: "https://www.nyrr.org/races/achilleshopepossibility4mpresentedbytdbank"
+    recurrence: "Late-June Sunday (typical)"
+    dates:
+      "2026": "2026-06-28"
+    start_time: "08:15"
+    end_time: "10:30"
+    location: "Naumburg Bandshell"
+    event_type: "Charity Run"
+    event_borough: "Manhattan"
+    expected_attendance: 6000
+    affects_loop: true
+    route_impact: >
+      NYRR / Achilles International 4-mile inclusive race, start 8:15 AM Sunday,
+      with handcyclists, wounded veterans, and athletes of all abilities on the
+      drives. The loop carries the field roughly 7:30–10:30 AM; run before 7:30
+      or after 11, or use the Bridle Path / Reservoir.
+    audience_relevance:
+      - runners
+      - cyclists
+      - walkers
+      - park-watcher
+    description: >
+      Achilles International's flagship Hope & Possibility 4-miler, one of the
+      largest inclusive races in the U.S., operated by NYRR in Central Park.
+    tags:
+      - charity
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+
   # Template for future additions. Copy, fill in, and add to the `walks:` list
   # above when verified. Required fields: id, title, organizer, source_url,
   # recurrence, dates (with current year), location (must match a place in

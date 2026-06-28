@@ -1,5 +1,5 @@
 ---
-title: "Spoon / Ratboys / Bodega"
+title: "Spoon / Ratboys / Bodega / Alisa Ali"
 date: 2026-07-08
 time: "18:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ Spoon, Austin’s most esteemed rock ambassadors, have released ten albums to da
 
 ## Event Details
 
-- **Event:** Spoon / Ratboys / Bodega
+- **Event:** Spoon / Ratboys / Bodega / Alisa Ali
 - **Date:** Wednesday, July 8, 2026
 - **Time:** 18:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park

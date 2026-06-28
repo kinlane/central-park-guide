@@ -1,15 +1,6 @@
 {
   "events": [
     {
-      "id": "naumburg-upcoming-theknights",
-      "url": "https://naumburgconcerts.org/upcoming/theknights",
-      "title": "The Knights",
-      "date": "2026-06-23",
-      "time_display": "",
-      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692159322-LR6R7MBLFPVOGF5RQTJW/The+Knights+%28horizontal%29+by+Shervin+Lainez.jpg",
-      "venue": "Naumburg Bandshell"
-    },
-    {
       "id": "naumburg-upcoming-deliriummusicum",
       "url": "https://naumburgconcerts.org/upcoming/deliriummusicum",
       "title": "Delirium Musicum",
@@ -37,6 +28,15 @@
       "venue": "Naumburg Bandshell"
     },
     {
+      "id": "naumburg-upcoming-theknights",
+      "url": "https://naumburgconcerts.org/upcoming/theknights",
+      "title": "The Knights",
+      "date": "2026-06-23",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776692159322-LR6R7MBLFPVOGF5RQTJW/The+Knights+%28horizontal%29+by+Shervin+Lainez.jpg",
+      "venue": "Naumburg Bandshell"
+    },
+    {
       "id": "naumburg-upcoming-baroklyn",
       "url": "https://naumburgconcerts.org/upcoming/baroklyn",
       "title": "Baroklyn, Simone Dinnerstein, & CONCORA",
@@ -46,5 +46,5 @@
       "venue": "Naumburg Bandshell"
     }
   ],
-  "fetched_at": "2026-06-20T19:16:11Z"
+  "fetched_at": "2026-06-28T21:02:32Z"
 }

@@ -1,84 +1,14 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-06-20-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/20/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-20T19:00:00-04:00",
-      "end_date": "2026-06-20T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-21-fathers-day-forest-hike",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/21/fathers-day-forest-hike",
-      "title": "Father's Day Forest Hike",
-      "start_date": "2026-06-21T13:00:00-04:00",
-      "end_date": "2026-06-21T14:30:00-04:00",
-      "location": "Entrance - West 100 Street and Central Park West",
-      "category": "Nature, Urban Park Rangers, Father's Day, Hiking",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-21-ny-classical-the-tragedy-of-julius-caesar",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/21/ny-classical-the-tragedy-of-julius-caesar",
-      "title": "NY Classical: \"The Tragedy of Julius Caesar\"",
-      "start_date": "2026-06-21T19:00:00-04:00",
-      "end_date": "2026-06-21T20:45:00-04:00",
-      "location": "West 103rd Street and Central Park West",
-      "category": "Theater, LGBTQ+ Pride Month, Free Summer Theater",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-22-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/22/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-22T09:00:00-04:00",
-      "end_date": "2026-06-22T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-23-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/23/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-23T09:00:00-04:00",
-      "end_date": "2026-06-23T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-24-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/24/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-24T09:00:00-04:00",
-      "end_date": "2026-06-24T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-25-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/25/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-25T09:00:00-04:00",
-      "end_date": "2026-06-25T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-26-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/26/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-26T09:00:00-04:00",
-      "end_date": "2026-06-26T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
+      "id": "nycparks-parks-central-park-events-2026-06-28-dreamland-pride",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/28/dreamland-pride",
+      "title": "Dreamland Pride",
+      "start_date": "2026-06-28T15:00:00-04:00",
+      "end_date": "2026-06-28T22:00:00-04:00",
+      "location": "Rumsey Playfield",
+      "category": "Dance, Art, Festivals",
+      "free": false
     },
     {
       "id": "nycparks-parks-central-park-events-2026-06-29-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
@@ -131,6 +61,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-06-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/06/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-06T07:00:00-04:00",
+      "end_date": "2026-07-06T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-06-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/06/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -138,6 +78,16 @@
       "end_date": "2026-07-06T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-07-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/07/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-07T07:00:00-04:00",
+      "end_date": "2026-07-07T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -181,6 +131,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-08-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/08/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-08T07:00:00-04:00",
+      "end_date": "2026-07-08T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-08-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/08/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -188,6 +148,16 @@
       "end_date": "2026-07-08T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-09-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/09/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-09T07:00:00-04:00",
+      "end_date": "2026-07-09T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -231,6 +201,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-10-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/10/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-10T07:00:00-04:00",
+      "end_date": "2026-07-10T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-10-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/10/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -251,6 +231,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-13-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/13/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-13T07:00:00-04:00",
+      "end_date": "2026-07-13T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-13-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/13/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -258,6 +248,16 @@
       "end_date": "2026-07-13T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-14-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/14/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-14T07:00:00-04:00",
+      "end_date": "2026-07-14T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -301,6 +301,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-15-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/15/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-15T07:00:00-04:00",
+      "end_date": "2026-07-15T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-15-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/15/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -308,6 +318,16 @@
       "end_date": "2026-07-15T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-16-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/16/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-16T07:00:00-04:00",
+      "end_date": "2026-07-16T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -351,6 +371,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-17-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/17/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-17T07:00:00-04:00",
+      "end_date": "2026-07-17T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-17-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/17/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -371,6 +401,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-20-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/20/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-20T07:00:00-04:00",
+      "end_date": "2026-07-20T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-20-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/20/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -378,6 +418,16 @@
       "end_date": "2026-07-20T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-21-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/21/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-21T07:00:00-04:00",
+      "end_date": "2026-07-21T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -421,6 +471,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-22-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/22/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-22T07:00:00-04:00",
+      "end_date": "2026-07-22T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-22-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/22/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -431,6 +491,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-23-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/23/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-23T07:00:00-04:00",
+      "end_date": "2026-07-23T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-23-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/23/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -438,6 +508,16 @@
       "end_date": "2026-07-23T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-24-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/24/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-24T07:00:00-04:00",
+      "end_date": "2026-07-24T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -461,6 +541,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-27-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/27/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-27T07:00:00-04:00",
+      "end_date": "2026-07-27T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-27-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/27/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -468,6 +558,16 @@
       "end_date": "2026-07-27T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-28-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/28/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-28T07:00:00-04:00",
+      "end_date": "2026-07-28T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -481,6 +581,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-29-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/29/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-29T07:00:00-04:00",
+      "end_date": "2026-07-29T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-29-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/29/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -488,6 +598,16 @@
       "end_date": "2026-07-29T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-07-30-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/30/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-30T07:00:00-04:00",
+      "end_date": "2026-07-30T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -501,6 +621,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-07-31-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/31/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-07-31T07:00:00-04:00",
+      "end_date": "2026-07-31T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-07-31-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/31/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -508,6 +638,16 @@
       "end_date": "2026-07-31T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-03-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/03/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-03T07:00:00-04:00",
+      "end_date": "2026-08-03T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -521,6 +661,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-04-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/04/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-04T07:00:00-04:00",
+      "end_date": "2026-08-04T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-04-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/04/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -528,6 +678,16 @@
       "end_date": "2026-08-04T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-05-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/05/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-05T07:00:00-04:00",
+      "end_date": "2026-08-05T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -541,6 +701,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-06-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/06/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-06T07:00:00-04:00",
+      "end_date": "2026-08-06T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-06-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/06/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -548,6 +718,16 @@
       "end_date": "2026-08-06T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-07-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/07/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-07T07:00:00-04:00",
+      "end_date": "2026-08-07T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -561,6 +741,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-10-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/10/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-10T07:00:00-04:00",
+      "end_date": "2026-08-10T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-10-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/10/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -568,6 +758,16 @@
       "end_date": "2026-08-10T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-11-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/11/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-11T07:00:00-04:00",
+      "end_date": "2026-08-11T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -581,6 +781,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-12-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/12/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-12T07:00:00-04:00",
+      "end_date": "2026-08-12T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-12-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/12/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -591,6 +801,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-13-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/13/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-13T07:00:00-04:00",
+      "end_date": "2026-08-13T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-13-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/13/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -598,6 +818,16 @@
       "end_date": "2026-08-13T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-14-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/14/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-14T07:00:00-04:00",
+      "end_date": "2026-08-14T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -621,6 +851,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-17-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/17/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-17T07:00:00-04:00",
+      "end_date": "2026-08-17T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-17-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/17/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -628,6 +868,16 @@
       "end_date": "2026-08-17T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-18-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/18/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-18T07:00:00-04:00",
+      "end_date": "2026-08-18T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -641,6 +891,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-19-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/19/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-19T07:00:00-04:00",
+      "end_date": "2026-08-19T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-19-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/19/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -648,6 +908,16 @@
       "end_date": "2026-08-19T17:00:00-04:00",
       "location": "Arsenal",
       "category": "Art, History",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-20-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/20/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-20T07:00:00-04:00",
+      "end_date": "2026-08-20T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
       "free": true
     },
     {
@@ -661,6 +931,16 @@
       "free": true
     },
     {
+      "id": "nycparks-parks-central-park-events-2026-08-21-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/21/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-21T07:00:00-04:00",
+      "end_date": "2026-08-21T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
       "id": "nycparks-parks-central-park-events-2026-08-21-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/21/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
       "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
@@ -669,7 +949,57 @@
       "location": "Arsenal",
       "category": "Art, History",
       "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-24-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/24/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-24T07:00:00-04:00",
+      "end_date": "2026-08-24T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-25-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/25/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-25T07:00:00-04:00",
+      "end_date": "2026-08-25T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-26-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/26/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-26T07:00:00-04:00",
+      "end_date": "2026-08-26T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-27-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/27/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-27T07:00:00-04:00",
+      "end_date": "2026-08-27T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-08-28-gottesman-pool-lap-swim1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/28/gottesman-pool-lap-swim1",
+      "title": "Gottesman Pool: Lap Swim",
+      "start_date": "2026-08-28T07:00:00-04:00",
+      "end_date": "2026-08-28T08:30:00-04:00",
+      "location": "Gottesman Pool at the Davis Center",
+      "category": "Fitness, Swimming/Aquatics",
+      "free": true
     }
   ],
-  "fetched_at": "2026-06-20T19:16:09Z"
+  "fetched_at": "2026-06-28T21:02:31Z"
 }

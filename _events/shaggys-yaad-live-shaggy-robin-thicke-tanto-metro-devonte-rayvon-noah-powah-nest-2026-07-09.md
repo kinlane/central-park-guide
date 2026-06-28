@@ -1,5 +1,5 @@
 ---
-title: "Shaggy’s Yaad Live: Shaggy / Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powah / Nesta / Amber Lee / Matthew Malcolm / DJ Sets by Tropical Blendz and Afrique / Hosted by DJ Norie, Roxy Romeo, and Li’l Nat"
+title: "Shaggy’s Yaad: Shaggy with Special Guests Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powa / NESTA / Amber Lee / Matthew Malcolm / Shuga in Association with VP Records and Shaggy’s Boombastic Radio"
 date: 2026-07-09
 time: "19:00"
 end_time: "22:00"
@@ -7,7 +7,7 @@ location: "Rumsey Playfield"
 place: "Rumsey Playfield"
 place_category: "event_venues"
 image: "https://cityparksfoundation.org/wp-content/uploads/2026/06/shaggynorie_marohagopian-9753.webp"
-description: "VP Records, in association with Boombastic Radio, returns to Central Park on July 9th to present Shaggy’s Yaad Live with reggae icon Shaggy and a newly announced expanded lineup including GRAMMY Award-winning singer-songwriter Robin Thicke, dancehall legends Tanto Metro & Devonte, reggae vocalist Rayvon, rising Jamaican artists Nowa Powah, Nesta, and Amber Lee, as well as country-reggae performer Matthew Malcom and additional surprise guests. The evening will also feature DJ sets from Tropical B"
+description: "Fresh off the release of his new album Lottery, global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy’s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy’s Boombastic Radio (SiriusXM Channel 332) a s part of Capital One City Parks Foundation SummerStage’s 40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm and Shuga,"
 event_id: "summerstage-19767"
 event_type: "SummerStage Concert"
 event_borough: "Manhattan"
@@ -21,11 +21,11 @@ tags:
   - "Summerstage"
 ---
 
-VP Records, in association with Boombastic Radio, returns to Central Park on July 9th to present Shaggy’s Yaad Live with reggae icon Shaggy and a newly announced expanded lineup including GRAMMY Award-winning singer-songwriter Robin Thicke, dancehall legends Tanto Metro & Devonte, reggae vocalist Rayvon, rising Jamaican artists Nowa Powah, Nesta, and Amber Lee, as well as country-reggae performer Matthew Malcom and additional surprise guests. The evening will also feature DJ sets from Tropical B
+Fresh off the release of his new album Lottery, global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy’s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy’s Boombastic Radio (SiriusXM Channel 332) a s part of Capital One City Parks Foundation SummerStage’s 40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm and Shuga,
 
 ## Event Details
 
-- **Event:** Shaggy’s Yaad Live: Shaggy / Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powah / Nesta / Amber Lee / Matthew Malcolm / DJ Sets by Tropical Blendz and Afrique / Hosted by DJ Norie, Roxy Romeo, and Li’l Nat
+- **Event:** Shaggy’s Yaad: Shaggy with Special Guests Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powa / NESTA / Amber Lee / Matthew Malcolm / Shuga in Association with VP Records and Shaggy’s Boombastic Radio
 - **Date:** Thursday, July 9, 2026
 - **Time:** 19:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park

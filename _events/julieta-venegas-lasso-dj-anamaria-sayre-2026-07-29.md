@@ -1,5 +1,5 @@
 ---
-title: "Julieta Venegas / Lasso / DJ Anamaria Sayre"
+title: "Julieta Venegas / Lasso / Micro TDH / DJ Anamaria Sayre"
 date: 2026-07-29
 time: "18:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ A sampling of Spanish-language pop hits Central Park, in association with the La
 
 ## Event Details
 
-- **Event:** Julieta Venegas / Lasso / DJ Anamaria Sayre
+- **Event:** Julieta Venegas / Lasso / Micro TDH / DJ Anamaria Sayre
 - **Date:** Wednesday, July 29, 2026
 - **Time:** 18:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park

@@ -1,0 +1,36 @@
+---
+title: "Softball - Adults"
+date: 2026-07-09
+time: "11:30"
+end_time: "16:30"
+location: "Heckscher Fields-Softball-05"
+place: "Heckscher Fields"
+place_category: "event_venues"
+image: "/assets/images/tags/softball.png"
+description: "Softball - Adults at Heckscher Fields-Softball-05. Adult league permitted event in Central Park."
+event_id: "956287"
+event_type: "Sport - Adult"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - "Softball"
+  - "Sports"
+  - "T-Ball"
+---
+
+Softball - Adults takes place at Heckscher Fields-Softball-05 in Central Park on Thursday, July 9, 2026.
+
+## Event Details
+
+- **Event:** Softball - Adults
+- **Date:** Thursday, July 9, 2026
+- **Time:** 11:30 AM - 4:30 PM
+- **Location:** Heckscher Fields-Softball-05, Central Park
+- **Place:** Heckscher Fields
+- **Type:** Sport - Adult
+- **Event ID:** 956287
+
+## About This Event
+
+This is a permitted sport - adult event at Heckscher Fields-Softball-05. The area may have restricted access during the event period.
