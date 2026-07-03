@@ -16,7 +16,7 @@
       "Swedish Cottage"
     ],
     "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png?cb=857133857379d3f7e6f97f38deb350a3",
-    "start_date": "2026-06-27T00:00:00"
+    "start_date": "2026-07-04T00:00:00"
   },
   {
     "title": "Bird Watching with Birding Bob",
@@ -52,27 +52,8 @@
       "Walking Tours"
     ],
     "image_url": "https://www.centralpark.com/downloads/10951/download/bird-watching-birders.jpeg?cb=42f10e56c7429e134753013550fb01b5",
-    "start_date": "2026-06-26T00:00:00",
+    "start_date": "2026-07-03T00:00:00",
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
-  },
-  {
-    "title": "Central Park Conservancy's Queer Central Park Tour",
-    "url": "https://www.centralpark.com/events/central-park-conservancys-queer-central-park-tour/",
-    "source": "centralpark.com",
-    "description": "Discover Central Park’s rich LGBTQ+ history on a guided tour highlighting the community’s lasting impact and stories.",
-    "location": "Bethesda Terrace",
-    "coordinates": {
-      "lat": 40.7738436358309,
-      "lng": -73.9708132046053
-    },
-    "tags": [
-      "Central Park History",
-      "New York History",
-      "Queer History"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/3534/download/bethesda-terrace.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-06-27T10:00:00",
-    "end_date": "2026-06-27T11:30:00"
   },
   {
     "title": "Central Park Farm Stand",
@@ -94,8 +75,8 @@
       "Summer Attractions"
     ],
     "image_url": "https://www.centralpark.com/downloads/10918/download/fresh-produce-central-park-farm-stand.jpg?cb=e85c3e1cd00c5aad97ccbd12bea1a11b",
-    "start_date": "2026-06-27T10:00:00",
-    "end_date": "2026-06-27T19:00:00"
+    "start_date": "2026-07-04T10:00:00",
+    "end_date": "2026-07-04T19:00:00"
   },
   {
     "title": "Central Park Highlights Running Tour",
@@ -125,7 +106,7 @@
       "Winter Sports"
     ],
     "image_url": "https://www.centralpark.com/downloads/8118/download/FitToursNYC%20jump.jpg?cb=97cd3b0a82b07ecadaaaffb3dc4fe703",
-    "start_date": "2026-06-26T00:00:00"
+    "start_date": "2026-07-03T00:00:00"
   },
   {
     "title": "Central Park Model Yacht Club Races",
@@ -145,8 +126,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8929/download/model-sailboats.jpg?cb=22f9df28e3d9abe5666870363704333a",
-    "start_date": "2026-06-27T10:00:00",
-    "end_date": "2026-06-27T13:00:00"
+    "start_date": "2026-07-04T10:00:00",
+    "end_date": "2026-07-04T13:00:00"
   },
   {
     "title": "Central Park Zoo 4-D Theater",
@@ -166,8 +147,8 @@
       "Kids"
     ],
     "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg?cb=9a308b68dcf1925fb7c6e4ac07a7b8fd",
-    "start_date": "2026-06-27T10:15:00",
-    "end_date": "2026-06-27T17:00:00"
+    "start_date": "2026-07-04T10:15:00",
+    "end_date": "2026-07-04T17:00:00"
   },
   {
     "title": "Central Park Zoo Quests",
@@ -191,7 +172,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-06-26T00:00:00"
+    "start_date": "2026-07-03T00:00:00"
   },
   {
     "title": "Children's Programs at Central Park Zoo",
@@ -212,7 +193,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3",
-    "start_date": "2026-06-27T00:00:00"
+    "start_date": "2026-07-04T00:00:00"
   },
   {
     "title": "City Girls Who Walk",
@@ -231,8 +212,8 @@
       "Women"
     ],
     "image_url": "https://www.centralpark.com/downloads/10659/download/city-girls-who-walk-noelle-de-leeuw.jpg?cb=5876793eef0ad201a742d7b9c415afe6",
-    "start_date": "2026-06-28T12:00:00",
-    "end_date": "2026-06-28T13:30:00"
+    "start_date": "2026-07-05T12:00:00",
+    "end_date": "2026-07-05T13:30:00"
   },
   {
     "title": "CPDSA Skate Circle Events",
@@ -259,8 +240,29 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3",
-    "start_date": "2026-06-27T14:45:00",
-    "end_date": "2026-06-27T18:45:00"
+    "start_date": "2026-07-03T14:45:00",
+    "end_date": "2026-07-03T18:45:00"
+  },
+  {
+    "title": "Delirium Musicum | Naumburg Orchestral Concerts",
+    "url": "https://www.centralpark.com/events/the-knights-naumburg-orchestral-concerts_1/",
+    "source": "centralpark.com",
+    "description": "Delirium Musicum makes their Naumburg debut at the Bandshell on July 7, with a free concert spanning Kodály, Saint-Saëns, Max Richter, Vivaldi, and more, led by violinist and music director Etienne Gara. No tickets needed.",
+    "location": "Naumburg Bandshell",
+    "coordinates": {
+      "lat": 40.7727049726675,
+      "lng": -73.9710345049975
+    },
+    "tags": [
+      "All Ages",
+      "Free Events",
+      "Live Music",
+      "Naumburg Orchestral Concerts",
+      "Summer Concerts"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10965/download/delirium-musicum-naumburg-concerts.jpeg?cb=36cfad313574aa8ee3b1404ea7241261",
+    "start_date": "2026-07-07T19:30:00",
+    "end_date": "2026-07-07T21:00:00"
   },
   {
     "title": "Events on The Green at the Davis Center",
@@ -283,7 +285,7 @@
       "Wellness"
     ],
     "image_url": "https://www.centralpark.com/downloads/10914/download/davis-center.jpg?cb=5201cb32886adb8674330c968bf984b8",
-    "start_date": "2026-06-27T00:00:00"
+    "start_date": "2026-07-04T00:00:00"
   },
   {
     "title": "FIFA Arena: Free Soccer in Central Park",
@@ -302,9 +304,9 @@
       "Sports & Recreation",
       "Youth Programs"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10913/download/tavern-on-the-green.jpg?cb=f72fc8517d3909798cdc4058ae732cd0",
-    "start_date": "2026-06-26T10:00:00",
-    "end_date": "2026-06-26T20:00:00"
+    "image_url": "https://www.centralpark.com/downloads/11010/download/fifa-arena-central-park-empty-pitch.jpeg?cb=8a0f8f4ff5cefaf20e5f4a59f12d8a22",
+    "start_date": "2026-07-03T10:00:00",
+    "end_date": "2026-07-03T20:00:00"
   },
   {
     "title": "Fishing at the Harlem Meer",
@@ -325,8 +327,8 @@
       "Free Events"
     ],
     "image_url": "https://www.centralpark.com/downloads/2613/download/fishing-in-the-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-06-27T10:00:00",
-    "end_date": "2026-06-27T15:30:00"
+    "start_date": "2026-07-04T10:00:00",
+    "end_date": "2026-07-04T15:30:00"
   },
   {
     "title": "Free Lawn Bowling Clinics in Central Park",
@@ -344,29 +346,8 @@
       "Lawn Sports"
     ],
     "image_url": "https://www.centralpark.com/downloads/10970/download/lawn-bowling-clinic-central-park-greens.jpg?cb=ade14adb0a14bd77532e1a69a7a08e90",
-    "start_date": "2026-06-30T17:00:00",
-    "end_date": "2026-06-30T19:00:00"
-  },
-  {
-    "title": "Free Shakespeare in the Park 2026",
-    "url": "https://www.centralpark.com/events/free-shakespeare-in-the-park/",
-    "source": "centralpark.com",
-    "description": "Free Shakespeare in the Park returns to the newly renovated Delacorte Theater in 2026 with a whole new production of Romeo and Juliet and The Winter’s Tale.",
-    "location": "Delacorte Theater",
-    "coordinates": {
-      "lat": 40.780236962053,
-      "lng": -73.9687916460875
-    },
-    "tags": [
-      "Delacorte Theater",
-      "Free Events",
-      "Shakespeare In The Park",
-      "Spring Activities",
-      "Summer Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10968/download/delacorte-theater.png?cb=21a5b517c63d24d091a542b00491245f",
-    "start_date": "2026-06-26T20:00:00",
-    "end_date": "2026-06-26T22:00:00"
+    "start_date": "2026-07-08T17:00:00",
+    "end_date": "2026-07-08T19:00:00"
   },
   {
     "title": "Free Weekly Run with Central Park Running Club",
@@ -385,49 +366,27 @@
       "Sports & Recreation"
     ],
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543",
-    "start_date": "2026-06-27T00:00:00"
+    "start_date": "2026-07-04T00:00:00"
   },
   {
-    "title": "Live Music at Tavern on the Green",
-    "url": "https://www.centralpark.com/events/live-music-at-tavern-on-the-green-evenings/",
+    "title": "Gladiators NYC",
+    "url": "https://www.centralpark.com/events/gladiators-nyc/",
     "source": "centralpark.com",
-    "description": "Immerse yourself in the lush greenery and twinkling lights as a variety of talented musicians take the stage at Tavern on the Green.",
-    "location": "Tavern on the Green",
+    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
+    "location": "Lawn Behind Met Museum",
     "coordinates": {
-      "lat": 40.7725852999197,
-      "lng": -73.9772430740662
+      "lat": 40.7784296398896,
+      "lng": -73.9655968372519
     },
     "tags": [
+      "Annual Events",
+      "Featured Events",
       "Free Events",
-      "Live Music",
-      "Restaurants",
-      "Restaurants in Central Park",
-      "Tavern On The Green"
+      "Metropolitan Museum Of Art"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10913/download/tavern-on-the-green.jpg?cb=f72fc8517d3909798cdc4058ae732cd0",
-    "start_date": "2026-06-26T18:00:00",
-    "end_date": "2026-06-26T22:00:00"
-  },
-  {
-    "title": "Live Music at Tavern on the Green - Brunch",
-    "url": "https://www.centralpark.com/events/live-music-at-tavern-on-the-green-brunch/",
-    "source": "centralpark.com",
-    "description": "Enjoy worldly music while you brunch at Tavern on the Green, including guitar fusing Spanish, Classical, Flamenco and Acoustic styles.",
-    "location": "Tavern on the Green",
-    "coordinates": {
-      "lat": 40.7725852999197,
-      "lng": -73.9772430740662
-    },
-    "tags": [
-      "Free Events",
-      "Live Music",
-      "Restaurants",
-      "Restaurants in Central Park",
-      "Tavern On The Green"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10928/download/marco-trio-tavern.jpg?cb=417f955531312f841bed471a99cfcfed",
-    "start_date": "2026-06-28T12:00:00",
-    "end_date": "2026-06-28T16:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb",
+    "start_date": "2026-07-11T14:00:00",
+    "end_date": "2026-07-11T16:00:00"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -448,7 +407,7 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-06-26T00:00:00"
+    "start_date": "2026-07-03T00:00:00"
   },
   {
     "title": "Pickleball at Wollman Rink",
@@ -471,8 +430,8 @@
       "Wollman Rink"
     ],
     "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg?cb=d22be6a7cd3935c7aaf13233f26febe4",
-    "start_date": "2026-06-26T08:00:00",
-    "end_date": "2026-06-26T21:00:00"
+    "start_date": "2026-07-03T08:00:00",
+    "end_date": "2026-07-03T21:00:00"
   },
   {
     "title": "Sea Lion Feedings at Central Park Zoo",
@@ -493,7 +452,7 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg?cb=b7fbf5726a87802d056abe969b8ed073",
-    "start_date": "2026-06-26T00:00:00"
+    "start_date": "2026-07-03T00:00:00"
   },
   {
     "title": "Stories at the Hans Christian Anderson Statue",
@@ -517,8 +476,8 @@
       "Summer Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/10979/download/28537a8b-245e-44c4-9345-d65d2ba75431.jpeg?cb=5b6dfb2dff85662fec9eb30bedd86e7a",
-    "start_date": "2026-06-27T11:00:00",
-    "end_date": "2026-06-27T12:00:00"
+    "start_date": "2026-07-04T11:00:00",
+    "end_date": "2026-07-04T12:00:00"
   },
   {
     "title": "Sunrise Wellness Walk",
@@ -545,8 +504,8 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d",
-    "start_date": "2026-06-27T08:00:00",
-    "end_date": "2026-06-27T09:30:00"
+    "start_date": "2026-07-04T08:00:00",
+    "end_date": "2026-07-04T09:30:00"
   },
   {
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
@@ -577,25 +536,7 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-06-26T00:00:00"
-  },
-  {
-    "title": "The Wimbledon Court in Central Park",
-    "url": "https://www.centralpark.com/events/the-wimbledon-court-in-central-park/",
-    "source": "centralpark.com",
-    "description": "A four-day pop-up grass court at Wollman Rink, June 26 to 29, 2026. Free and open to the public after Friday's exhibition match, with tennis clinics, British food and drink, and a live screening of Wimbledon's opening day.",
-    "location": "Wollman Rink",
-    "coordinates": {
-      "lat": 40.7678877312757,
-      "lng": -73.974401746967
-    },
-    "tags": [
-      "Free Events",
-      "Tennis",
-      "Wollman Rink"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10980/download/grass-tennis-court-net.jpeg?cb=e60164788e5b101e9b1b9cc199ffeedb",
-    "start_date": "2026-06-26T00:00:00"
+    "start_date": "2026-07-03T00:00:00"
   },
   {
     "title": "Yoga Classes",
@@ -617,6 +558,6 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8886/download/yoga-sunset-pose.jpg?cb=4f2775ee35664485d10c0c4b83408a00",
-    "start_date": "2026-06-26T00:00:00"
+    "start_date": "2026-07-03T00:00:00"
   }
 ]

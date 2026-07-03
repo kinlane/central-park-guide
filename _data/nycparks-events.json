@@ -1,66 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-06-28-dreamland-pride",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/28/dreamland-pride",
-      "title": "Dreamland Pride",
-      "start_date": "2026-06-28T15:00:00-04:00",
-      "end_date": "2026-06-28T22:00:00-04:00",
-      "location": "Rumsey Playfield",
-      "category": "Dance, Art, Festivals",
-      "free": false
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-29-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/29/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-29T09:00:00-04:00",
-      "end_date": "2026-06-29T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-06-30-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/06/30/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-06-30T09:00:00-04:00",
-      "end_date": "2026-06-30T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-07-01-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/01/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-07-01T09:00:00-04:00",
-      "end_date": "2026-07-01T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-07-02-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/02/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-07-02T09:00:00-04:00",
-      "end_date": "2026-07-02T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-07-03-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/03/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-07-03T09:00:00-04:00",
-      "end_date": "2026-07-03T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-07-06-gottesman-pool-lap-swim1",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/06/gottesman-pool-lap-swim1",
       "title": "Gottesman Pool: Lap Swim",
@@ -1001,5 +941,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-06-28T21:02:31Z"
+  "fetched_at": "2026-07-03T22:29:54Z"
 }

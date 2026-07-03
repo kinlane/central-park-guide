@@ -1,44 +1,6 @@
 {
   "events": [
     {
-      "id": "summerstage-20815",
-      "title": "World Cup Watch Party: Panama v. England",
-      "start_date": "2026-06-27 17:00:00",
-      "end_date": "2026-06-27 21:00:00",
-      "url": "https://cityparksfoundation.org/events/world-cup-watch-party-panama-v-england/",
-      "description": "It\u2019s the summer of soccer! Join us and and the Manhattan Borough President Brad Hoylman-Sigal this Saturday, June 27, for a FREE watch party in Central Park as England takes on Panama in association with NYC Tourism. Food and drink will be available for purchase on-site.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/SS26_WHeader_2000x700.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
-    },
-    {
-      "id": "summerstage-18471",
-      "title": "Dreamland: Pride in Central Park with SG Lewis / Kungs / Bob\u2019s Dance Shop / Dani Brasil / MkX",
-      "start_date": "2026-06-28 15:00:00",
-      "end_date": "2026-06-28 22:00:00",
-      "url": "https://cityparksfoundation.org/events/dreamland-pride-pdm/",
-      "description": "SummerStage Member  Presale:  Friday, February 6 at 12PM  \n  Capital One Cardholder  Presale:  Friday, February 6 at 12PM  \n General on-sale:  Monday, February 9 at 10AM  \n  We\u2019re so excited to welcome back   Dreamland: Pride in Central Park  , produced by Jake Resnicow, for the fourth year in a row.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/DREAMLAND-PRIDE-26-820x350-1.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
-    },
-    {
       "id": "summerstage-19765",
       "title": "Spoon / Ratboys / Bodega / Alisa Ali",
       "start_date": "2026-07-08 18:00:00",
@@ -55,7 +17,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19767",
@@ -63,7 +25,7 @@
       "start_date": "2026-07-09 19:00:00",
       "end_date": "2026-07-09 22:00:00",
       "url": "https://cityparksfoundation.org/events/shaggys-yaad-live/",
-      "description": "Fresh off the release of his new album Lottery, global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy\u2019s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy\u2019s Boombastic Radio\u00a0(SiriusXM\u00a0Channel\u00a0332)\u00a0a s part of Capital One City Parks Foundation SummerStage\u2019s 40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm and Shuga, alongside special guests, DJs Tropical Blendz and Afrique, and hosts DJ Norie, Roxy Romeo and Li\u2019l Nat. Inspired by the Jamaican concept of \u201cyaad\u201d (home), the event brings together music, culture and community for an unforgettable summer night in the heart of New York City.",
+      "description": "Fresh off the release of his new album  Lottery , global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy\u2019s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy\u2019s Boombastic Radio\u00a0(SiriusXM\u00a0Channel\u00a0332)\u00a0a s part of our40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm, and Shuga, alongside special guests, DJs Tropical Blendz and Afrique, and hosts DJ Norie, Roxy Romeo and Li\u2019l Nat. Inspired by the Jamaican concept of \u201cyaad\u201d (home), the event brings together music, culture and community for an unforgettable summer night in the heart of New York City.",
       "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/shaggynorie_marohagopian-9753.webp",
       "cost": "Free",
       "venue": "Manhattan",
@@ -74,7 +36,26 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
+    },
+    {
+      "id": "summerstage-19772",
+      "title": "Morocco: From Dakhla to Casablanca: Hoba Hoba Spirit / Hamid El Kasri / Dakhla Casa Xpress / Mr ID / NDRK",
+      "start_date": "2026-07-15 18:00:00",
+      "end_date": "2026-07-15 22:00:00",
+      "url": "https://cityparksfoundation.org/events/morocco-from-dakhla-to-casablanca/",
+      "description": "In association with the Moroccan Ministry of Youth, Culture, and Communication, the Council of the Moroccan Community Abroad, and Maroc Festivals, SummerStage brings a handful of artists showcasing the diversity of sounds and rhythms from the North African nation to Central Park. Headlining is Hoba Hoba Spirit, a Moroccan rock band from Casablanca that fuses rock, reggae and Gnawa (a Sufi style brought from West Africa) into a sound they call \u201chaiha\u201d\u2014evoking the controlled chaos and randomness of their live experience. They joined by Hamid El Kasri, a Gnawa master trained in the Chemeli style with a distinctively deep and rich voice who performs with the three-stringed bass guembri; Dakhla Casa Xpress beginning with the stillness and warmth of the desert, and building toward the electric energy of the city; Mr ID, the DJ and producer who brought American rap beats, funk rhythms and the spirit of Jazz back home with him to Morocco, where he fused the sounds with violin airs and African percussion; and NDRK, a rising star on the dance floors of Marrakech, Casablanca, and Dubai, who also produces gems like the track selected as the anthem for the Paris 2024 Olympic Games",
+      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/morocco_webphoto.webp",
+      "cost": "Free",
+      "venue": "Manhattan",
+      "tags": [
+        "free"
+      ],
+      "categories": [
+        "summerstage"
+      ],
+      "place_hint": "Rumsey Playfield",
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-18565",
@@ -93,7 +74,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19776",
@@ -101,7 +82,7 @@
       "start_date": "2026-07-22 20:00:00",
       "end_date": "2026-07-22 22:00:00",
       "url": "https://cityparksfoundation.org/events/complexions-contemporary-ballet/",
-      "description": "The Joyce Theater brings three contemporary dance companies to Central Park, celebrating Jazz music through a wide range of styles. SummerStage alum Complexions Contemporary Ballet, founded in 1994 by Dwight Rhoden and Desmond Richardson, will perform Rhoden\u2019s latest company premiere  Midnight Riff,  which celebrates legendary female vocalists including Billie Holiday and Sarah Vaughn, set to recordings by New York Voices. Led by Artistic Director Michael Novak, The Paul Taylor Dance Company, founded in 1954, makes its festival debut with the vibrant work by Resident Choreographer, Robert Battle,  Under The Rhythm , set to music by Ella Fitzgerald, Wycliffe Gordon, and more. Finally, multi-Bessie award winner (2021/2023), New York Times lauded \u201cQueen of Social Dance\u201d and celebrated Best Dance & Breakout Star (2021) LaTasha Barnes is an internationally awarded and critically-acclaimed artist-scholar, curator, choreographer, and tradition-bearer of Black American Social Dance co-based in Phoenix, AZ and New York. A Richmond, VA native, she is globally celebrated for her musicality, athleticism, and joyful presence throughout the cultural traditions she bears: House Dance, Hip-Hop, Waacking, Authentic Jazz, and Lindy Hop, among them. Barnes\u2019 expansive artistic, performative and wordsmithing skills have made her a frequent collaborator to The New York Times, Summer Dance Forever & Foundation Hip-Hop Center Amsterdam, International Center for Prince Studies, Singapore-based Timbre Arts Group, Jacob\u2019s Pillow and many more. \n One of the only theaters built by dancers for dance, The Joyce Theater has garnered a well-deserved international reputation for cultivating and honoring emerging and established dance artists whose work represents a wide range of aesthetic interests. Since opening in 1982, The Joyce has supported the dance community by providing a home for more than 400 domestic and international companies and by offering an annual 45 to 48-week season which, each year, allows more than 150,000 audience members to experience diverse, popular and challenging performances. \n The Joyce\u2019s invaluable commitment to artists and audiences extends beyond the immense volume of work taking place on its stage. In an effort to make dance accessible to audiences throughout New York City, The Joyce has also expanded its reach beyond its Chelsea home through off-site presentations at venues ranging in scope from Lincoln Center\u2019s David H. Koch Theater, to Brooklyn\u2019s Invisible Dog Art Center, and to outdoor programming in such spaces as Hudson River Park. \n The Joyce anticipates many more years of success in sustaining dance by building robust, educated audiences who share a love of the art form and embrace its enduring power.",
+      "description": "The Joyce Theater brings three contemporary dance companies to Central Park, celebrating Jazz music through a wide range of styles. SummerStage alum Complexions Contemporary Ballet, founded in 1994 by Dwight Rhoden and Desmond Richardson, will perform Rhoden\u2019s latest company premiere  Midnight Riff,  which celebrates legendary female vocalists including Billie Holiday and Sarah Vaughn, set to recordings by New York Voices. Led by Artistic Director Michael Novak, The Paul Taylor Dance Company, founded in 1954, makes its festival debut with the vibrant work by Resident Choreographer, Robert Battle,  Under The Rhythm , set to music by Ella Fitzgerald, Wycliffe Gordon, and more. Finally, multi-Bessie award winner (2021/2023), New York Times-lauded \u201cQueen of Social Dance\u201d and celebrated Best Dance & Breakout Star (2021) LaTasha Barnes is an internationally awarded and critically-acclaimed artist-scholar, curator, choreographer, and tradition-bearer of Black American Social Dance, co-based in Phoenix, AZ, and New York. Barnes presents an excerpt from her full-length solo \u201c The Look of Love\u201d  that reflects on how love has shaped her life. Performed with a live band, this piece blends recorded voices from her chosen \u201cFramily\u201d into the soundscape, which Barnes experiences as a deeply embodied, physical sensation. Through hip-hop, swing, house, and funk, she creates a heartfelt love letter to her influences\u2014and a promise to those who came before her to love boldly and without fear. \n One of the only theaters built by dancers for dance, The Joyce Theater has garnered a well-deserved international reputation for cultivating and honoring emerging and established dance artists whose work represents a wide range of aesthetic interests. Since opening in 1982, The Joyce has supported the dance community by providing a home for more than 400 domestic and international companies and by offering an annual 45 to 48-week season which, each year, allows more than 150,000 audience members to experience diverse, popular and challenging performances. \n The Joyce\u2019s invaluable commitment to artists and audiences extends beyond the immense volume of work taking place on its stage. In an effort to make dance accessible to audiences throughout New York City, The Joyce has also expanded its reach beyond its Chelsea home through off-site presentations at venues ranging in scope from Lincoln Center\u2019s David H. Koch Theater, to Brooklyn\u2019s Invisible Dog Art Center, and to outdoor programming in such spaces as Hudson River Park. \n The Joyce anticipates many more years of success in sustaining dance by building robust, educated audiences who share a love of the art form and embrace its enduring power.",
       "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/dance_webphoto.webp",
       "cost": "Free",
       "venue": "Manhattan",
@@ -112,7 +93,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19778",
@@ -131,7 +112,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19783",
@@ -150,7 +131,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19784",
@@ -169,15 +150,15 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19785",
-      "title": "Andrew Bird with the Wordless Music Orchestra Perform 20th Anniversary of \u201cThe Mysterious Production of Eggs\u201d",
+      "title": "Andrew Bird with the Wordless Music Orchestra Perform 20th Anniversary of \u201cThe Mysterious Production of Eggs\u201d / Surma",
       "start_date": "2026-08-06 20:00:00",
       "end_date": "2026-08-06 22:00:00",
       "url": "https://cityparksfoundation.org/events/andrew-bird/",
-      "description": "The violinist, singer, songwriter, and composer Andrew Bird has stretched the musical boundaries of folk in an eclectic career that spans 18 albums, developing a multi-layered sound with diverse instrumentation. His most defining work is arguably 2005\u2019s  The Mysterious Production of Eggs , which demonstrated an avant-pop sophistication with a mastery of elaborate loops, multi-tracked violin, and his remarkable prowess as a whistler. Bird has headlined shows at iconic venues such as Carnegie Hall, the Sydney Opera House, Walt Disney Concert Hall, and Red Rocks Amphitheatre, but he\u2019ll celebrate the 20th anniversary of that record at SummerStage in Central Park with the Wordless Music Orchestra, performing the record for the first time in its entirety alongside a full orchestra, followed by a suite of fan-favorites from his nearly 30-year repertoire.",
+      "description": "The violinist, singer, songwriter, and composer Andrew Bird has stretched the musical boundaries of folk in an eclectic career that spans 18 albums, developing a multi-layered sound with diverse instrumentation. His most defining work is arguably 2005\u2019s  The Mysterious Production of Eggs , which demonstrated an avant-pop sophistication with a mastery of elaborate loops, multi-tracked violin, and his remarkable prowess as a whistler. Bird has headlined shows at iconic venues such as Carnegie Hall, the Sydney Opera House, Walt Disney Concert Hall, and Red Rocks Amphitheatre, but he\u2019ll celebrate the 20th anniversary of that record at SummerStage in Central Park with the Wordless Music Orchestra, performing the record for the first time in its entirety alongside a full orchestra, followed by a suite of fan-favorites from his nearly 30-year repertoire. Surma\u2019s presentation is presented with support from the Arte Institute. Learn more about Arte Institute at  https://arteinstitute.org/ .",
       "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/andrewbird_webphoto.webp",
       "cost": "Free",
       "venue": "Manhattan",
@@ -188,7 +169,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19786",
@@ -207,7 +188,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
     },
     {
       "id": "summerstage-19761",
@@ -226,8 +207,27 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-06-28T21:02:32Z"
+      "fetched_at": "2026-07-03T22:29:56Z"
+    },
+    {
+      "id": "summerstage-18362",
+      "title": "Odd Mob",
+      "start_date": "2027-05-29 17:30:00",
+      "end_date": "2027-05-29 22:00:00",
+      "url": "https://cityparksfoundation.org/events/odd-mob/",
+      "description": "Due to Friday\u2019s extreme heat threat (temps expected over 100\u00b0), the Odd Mob performance in Central Park on 7/3 has been rescheduled to 5/29/2027 . More information can be found at your point of purchase.  \n  Known for his genre-defying approach, Australian producer and DJ   Odd Mob   has cemented his place at the forefront of global electronic music. He broke through with the 2014 hit \u2018Is It A Banger\u2019; since then, Odd Mob has released a string of hits like \u2018LEFT TO RIGHT,\u2019 \u2018Get Busy,\u2019 and many more, pushing him past 400+ million streams across platforms. 2026 is looking to be his biggest year yet with a string of new releases and shows across the U.S.A, Asia, Europe, the U.K., and in his home region of Australia.",
+      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/01/FB-Event_OddMob.webp",
+      "cost": "",
+      "venue": "Manhattan",
+      "tags": [
+        "ticketed"
+      ],
+      "categories": [
+        "summerstage"
+      ],
+      "place_hint": "Rumsey Playfield",
+      "fetched_at": "2026-07-03T22:29:56Z"
     }
   ],
-  "fetched_at": "2026-06-28T21:02:32Z"
+  "fetched_at": "2026-07-03T22:29:56Z"
 }

@@ -1,5 +1,5 @@
 ---
-title: "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian"
+title: "40 in Focus: Summerstage Through the Lens of Photographer Jack Vartoogian"
 date: 2026-07-03
 time: "09:00"
 end_time: "17:00"
