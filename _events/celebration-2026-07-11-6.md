@@ -1,8 +1,8 @@
 ---
 title: "Celebration"
 date: 2026-07-11
-time: "15:00"
-end_time: "17:00"
+time: "14:00"
+end_time: "16:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
@@ -25,7 +25,7 @@ Celebration takes place at Cop Cot in Central Park on Saturday, July 11, 2026.
 
 - **Event:** Celebration
 - **Date:** Saturday, July 11, 2026
-- **Time:** 3:00 PM - 5:00 PM
+- **Time:** 2:00 PM - 4:00 PM
 - **Location:** Cop Cot, Central Park
 - **Place:** Cop Cot
 - **Type:** Special Event

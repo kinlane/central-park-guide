@@ -1,31 +1,12 @@
 {
   "events": [
     {
-      "id": "summerstage-19765",
-      "title": "Spoon / Ratboys / Bodega / Alisa Ali",
-      "start_date": "2026-07-08 18:00:00",
-      "end_date": "2026-07-08 22:00:00",
-      "url": "https://cityparksfoundation.org/events/spoon-ratboys-bodega/",
-      "description": "Spoon, Austin\u2019s most esteemed rock ambassadors, have released ten albums to date including a string of five straight top 10 records:  Ga Ga Ga Ga Ga  (2007),  Transference  (2010),  They Want My Soul  (2014),  Hot Thoughts  (2017), and  Lucifer on the Sofa  (2022). The latter earned the band its first-ever GRAMMY nomination (Best Rock Album) and was praised by  Rolling Stone  as \u201cthe best thing they\u2019ve ever done.\u201d Look for hits from the revered catalog and more when the band play SummerStage in Central Park. They\u2019re joined by Ratboys, a prolific rock band once dubbed \u201cthe nicest indie rock band in Chicago\u201d by  Pitchfork . They\u2019re touring behind their sixth album  Singin\u2019 to an Empty Chair,  a record built around a dialogue between Steiner and a close\u2014but estranged\u2014loved one, which swerves between bubbly power-pop and post-country Americana. Opening the show is Brooklyn\u2019s own BODEGA, the anti-consumerist rock band, jagged post-punk energy and social critique, whose new album will be coming out via Chrysalis Records later this Fall. Alisa Ali will DJ for the evening.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/Spoon_WebPhoto-1.webp",
-      "cost": "Free",
-      "venue": "Manhattan",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
-    },
-    {
       "id": "summerstage-19767",
-      "title": "Shaggy\u2019s Yaad: Shaggy with Special Guests Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powa / NESTA / Amber Lee / Matthew Malcolm / Shuga in Association with VP Records and Shaggy\u2019s Boombastic Radio",
+      "title": "Shaggy\u2019s Yaad: Shaggy with Special Guests Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powa / NESTA / Amber Lee / Matthew Malcolm / Shuga",
       "start_date": "2026-07-09 19:00:00",
       "end_date": "2026-07-09 22:00:00",
       "url": "https://cityparksfoundation.org/events/shaggys-yaad-live/",
-      "description": "Fresh off the release of his new album  Lottery , global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy\u2019s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy\u2019s Boombastic Radio\u00a0(SiriusXM\u00a0Channel\u00a0332)\u00a0a s part of our40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm, and Shuga, alongside special guests, DJs Tropical Blendz and Afrique, and hosts DJ Norie, Roxy Romeo and Li\u2019l Nat. Inspired by the Jamaican concept of \u201cyaad\u201d (home), the event brings together music, culture and community for an unforgettable summer night in the heart of New York City.",
+      "description": "Want to see the show from the best seats in the house? Try becoming a  SummerStage Member for a Day ! Enjoy skip-the-line entry, complimentary beverages, air-conditioned restrooms, and more. \n Fresh off the release of his new album  Lottery , global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy\u2019s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy\u2019s Boombastic Radio\u00a0(SiriusXM\u00a0Channel\u00a0332)\u00a0a s part of our40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm, and Shuga, alongside special guests, DJs Tropical Blendz and Afrique, and hosts DJ Norie, Roxy Romeo and Li\u2019l Nat. Inspired by the Jamaican concept of \u201cyaad\u201d (home), the event brings together music, culture and community for an unforgettable summer night in the heart of New York City.",
       "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/shaggynorie_marohagopian-9753.webp",
       "cost": "Free",
       "venue": "Manhattan",
@@ -36,7 +17,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19772",
@@ -55,7 +36,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-18565",
@@ -74,7 +55,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19776",
@@ -93,7 +74,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19778",
@@ -112,7 +93,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19783",
@@ -131,7 +112,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19784",
@@ -150,11 +131,11 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19785",
-      "title": "Andrew Bird with the Wordless Music Orchestra Perform 20th Anniversary of \u201cThe Mysterious Production of Eggs\u201d / Surma",
+      "title": "Andrew Bird with Wordless Music Orchestra 20th Anniversary Performance of \u201cThe Mysterious Production of Eggs\u201d / Surma",
       "start_date": "2026-08-06 20:00:00",
       "end_date": "2026-08-06 22:00:00",
       "url": "https://cityparksfoundation.org/events/andrew-bird/",
@@ -169,7 +150,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19786",
@@ -188,7 +169,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-19761",
@@ -207,7 +188,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     },
     {
       "id": "summerstage-18362",
@@ -226,8 +207,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-06T00:13:16Z"
+      "fetched_at": "2026-07-10T21:22:43Z"
     }
   ],
-  "fetched_at": "2026-07-06T00:13:16Z"
+  "fetched_at": "2026-07-10T21:22:43Z"
 }

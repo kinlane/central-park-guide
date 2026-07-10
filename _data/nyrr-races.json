@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-06-28T21:02:19+00:00",
+  "fetched_at": "2026-07-10T21:22:37+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -69,6 +69,19 @@
         "https://www.nyrr.org/races/2026frontrunnersnewyorklgbtpriderun4m",
         "https://www.nyrr.org/races/2026/frontrunnersnewyorklgbtpriderun4m",
         "https://www.nyrr.org/races/frontrunnersnewyorklgbtpriderun4m"
+      ],
+      "year": 2026
+    },
+    "2026nyrr911memorialmuseum4m": {
+      "candidate_title": "NYRR 911 Memorial & Museum 4M",
+      "fetched_at": "2026-07-10T21:22:35+00:00",
+      "last_error": "wayback_err_TimeoutError",
+      "parsed": false,
+      "slug": "nyrr911memorialmuseum4m",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrr911memorialmuseum4m",
+        "https://www.nyrr.org/races/2026/nyrr911memorialmuseum4m",
+        "https://www.nyrr.org/races/nyrr911memorialmuseum4m"
       ],
       "year": 2026
     },

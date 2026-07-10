@@ -1,5 +1,5 @@
 ---
-title: "Andrew Bird with the Wordless Music Orchestra Perform 20th Anniversary of “The Mysterious Production of Eggs” / Surma"
+title: "Andrew Bird with Wordless Music Orchestra 20th Anniversary Performance of “The Mysterious Production of Eggs” / Surma"
 date: 2026-08-06
 time: "20:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ The violinist, singer, songwriter, and composer Andrew Bird has stretched the mu
 
 ## Event Details
 
-- **Event:** Andrew Bird with the Wordless Music Orchestra Perform 20th Anniversary of “The Mysterious Production of Eggs” / Surma
+- **Event:** Andrew Bird with Wordless Music Orchestra 20th Anniversary Performance of “The Mysterious Production of Eggs” / Surma
 - **Date:** Thursday, August 6, 2026
 - **Time:** 20:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park
