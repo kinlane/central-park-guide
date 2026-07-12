@@ -1,26 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-07-10-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/10/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-07-10T09:00:00-04:00",
-      "end_date": "2026-07-10T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-07-12-ranger-games-and-field-day",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/12/ranger-games-and-field-day",
-      "title": "Ranger Games: Nature World Cup",
-      "start_date": "2026-07-12T13:00:00-04:00",
-      "end_date": "2026-07-12T14:30:00-04:00",
-      "location": "Entrance - West 106th Street and Central Park West",
-      "category": "Nature, Best for Kids, Urban Park Rangers, Wildlife",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-07-13-gottesman-pool-lap-swim1",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/13/gottesman-pool-lap-swim1",
       "title": "Gottesman Pool: Lap Swim",
@@ -791,5 +771,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-07-10T21:22:42Z"
+  "fetched_at": "2026-07-12T21:00:21Z"
 }

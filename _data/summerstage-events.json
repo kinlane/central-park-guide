@@ -1,25 +1,6 @@
 {
   "events": [
     {
-      "id": "summerstage-19767",
-      "title": "Shaggy\u2019s Yaad: Shaggy with Special Guests Robin Thicke / Tanto Metro & Devonte / Rayvon / Noah Powa / NESTA / Amber Lee / Matthew Malcolm / Shuga",
-      "start_date": "2026-07-09 19:00:00",
-      "end_date": "2026-07-09 22:00:00",
-      "url": "https://cityparksfoundation.org/events/shaggys-yaad-live/",
-      "description": "Want to see the show from the best seats in the house? Try becoming a  SummerStage Member for a Day ! Enjoy skip-the-line entry, complimentary beverages, air-conditioned restrooms, and more. \n Fresh off the release of his new album  Lottery , global reggae icon Shaggy brings an all-star lineup to Central Park for Shaggy\u2019s Yaad, a free, all-ages celebration of Caribbean music and culture. Presented by VP Records and Shaggy\u2019s Boombastic Radio\u00a0(SiriusXM\u00a0Channel\u00a0332)\u00a0a s part of our40th anniversary season, the concert will feature performances by Robin Thicke, Tanto Metro & Devonte, Rayvon, Noah Powah, NESTA, Amber Lee, Matthew Malcolm, and Shuga, alongside special guests, DJs Tropical Blendz and Afrique, and hosts DJ Norie, Roxy Romeo and Li\u2019l Nat. Inspired by the Jamaican concept of \u201cyaad\u201d (home), the event brings together music, culture and community for an unforgettable summer night in the heart of New York City.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/shaggynorie_marohagopian-9753.webp",
-      "cost": "Free",
-      "venue": "Manhattan",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
-    },
-    {
       "id": "summerstage-19772",
       "title": "Morocco: From Dakhla to Casablanca: Hoba Hoba Spirit / Hamid El Kasri / Dakhla Casa Xpress / Mr ID / NDRK",
       "start_date": "2026-07-15 18:00:00",
@@ -36,7 +17,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-18565",
@@ -55,7 +36,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19776",
@@ -74,7 +55,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19778",
@@ -93,7 +74,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19783",
@@ -112,7 +93,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19784",
@@ -131,7 +112,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19785",
@@ -150,7 +131,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19786",
@@ -169,7 +150,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-19761",
@@ -188,7 +169,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     },
     {
       "id": "summerstage-18362",
@@ -207,8 +188,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-10T21:22:43Z"
+      "fetched_at": "2026-07-12T21:00:22Z"
     }
   ],
-  "fetched_at": "2026-07-10T21:22:43Z"
+  "fetched_at": "2026-07-12T21:00:22Z"
 }
