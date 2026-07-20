@@ -1,0 +1,119 @@
+- timestamp: '2026-07-20T01:00:20.936270+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Jul 20\u201326 \u2014 heat's gone, Team\
+    \ Champs takes Sunday"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:21.807277+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Walking Plans: Jul 20\u201326 \u2014 the heat broke, and\
+    \ the Bandshell has a good week"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:22.593625+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Jul 20\u201326 \u2014 dry Monday, wet middle,\
+    \ race Sunday"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:23.400364+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Jul 20\u201326 \u2014 the heat breaks, and\
+    \ the Loch runs again"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:24.183732+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Jul 20\u201326 \u2014 heat's gone, Team\
+    \ Champs takes Sunday"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:24.876358+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Walking Plans: Jul 20\u201326 \u2014 the heat broke, and\
+    \ the Bandshell has a good week"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:25.687281+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Jul 20\u201326 \u2014 dry Monday, wet middle,\
+    \ race Sunday"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:26.400428+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "Paul Taylor and Complexions at Rumsey, free \u2014 Jul 20\u201326"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:27.167020+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: music-fan
+  subject: "Central Park Music & Performance: Jul 20\u201326 \u2014 Naumburg's 121st,\
+    \ SummerStage dance, a Great Lawn concert"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:27.872829+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: family
+  subject: "Central Park Family Plans: Jul 20\u201326 \u2014 free swim lessons, storytelling,\
+    \ and a stacked Saturday"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:28.701095+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: sports-fan
+  subject: "Central Park Sports This Week: Jul 20\u201326 \u2014 Team Champs Sunday,\
+    \ and a 75-permit Thursday"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:29.366253+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: wellness-seeker
+  subject: "Central Park Wellness Week: Jul 20\u201326 \u2014 Peace in the Park Friday,\
+    \ and dawn is comfortable again"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:30.093117+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Jul 20\u201326 \u2014 the heat breaks, and\
+    \ the Loch runs again"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:30.789130+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: park-watcher
+  subject: "Central Park Watcher's Digest: Jul 20\u201326 \u2014 the World Cup packs\
+    \ up, Team Champs arrives"
+  week_of: '2026-07-19'
+  status: sent
+- timestamp: '2026-07-20T01:00:31.511039+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  persona: park-watcher
+  subject: "Central Park Watcher's Digest: Jul 20\u201326 \u2014 the World Cup packs\
+    \ up, Team Champs arrives"
+  week_of: '2026-07-19'
+  status: sent

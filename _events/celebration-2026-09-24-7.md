@@ -3,11 +3,11 @@ title: "Celebration"
 date: 2026-09-24
 time: "13:00"
 end_time: "14:00"
-location: "Belvedere Castle Terrace"
-place: "Belvedere Castle"
-place_category: "buildings"
+location: "Cop Cot"
+place: "Cop Cot"
+place_category: "event_venues"
 image: "/assets/images/tags/celebration.png"
-description: "Celebration at Belvedere Castle Terrace in Central Park."
+description: "Celebration at Cop Cot in Central Park."
 event_id: "939389"
 event_type: "Special Event"
 event_borough: "Manhattan"
@@ -19,18 +19,18 @@ tags:
   - "Private Events"
 ---
 
-Celebration takes place at Belvedere Castle Terrace in Central Park on Thursday, September 24, 2026.
+Celebration takes place at Cop Cot in Central Park on Thursday, September 24, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Thursday, September 24, 2026
 - **Time:** 1:00 PM - 2:00 PM
-- **Location:** Belvedere Castle Terrace, Central Park
-- **Place:** Belvedere Castle
+- **Location:** Cop Cot, Central Park
+- **Place:** Cop Cot
 - **Type:** Special Event
 - **Event ID:** 939389
 
 ## About This Event
 
-Celebration is a permitted event taking place at Belvedere Castle Terrace in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Cop Cot in Central Park. Contact the event organizers for more details about attendance and participation.

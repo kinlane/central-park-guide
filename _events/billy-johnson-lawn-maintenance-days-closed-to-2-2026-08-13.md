@@ -1,0 +1,34 @@
+---
+title: "Billy Johnson Lawn - Maintenance Days - Closed to 2"
+date: 2026-08-13
+time: "00:00"
+end_time: "14:00"
+location: "Johnson Playground Lawns"
+place: "Johnson Playground"
+place_category: "event_venues"
+image: "/assets/images/tags/maintenance.png"
+description: "Billy Johnson Lawn - Maintenance Days - Closed to 2 at Johnson Playground Lawns in Central Park."
+event_id: "888321"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - "Maintenance"
+---
+
+Billy Johnson Lawn - Maintenance Days - Closed to 2 takes place at Johnson Playground Lawns in Central Park on Thursday, August 13, 2026.
+
+## Event Details
+
+- **Event:** Billy Johnson Lawn - Maintenance Days - Closed to 2
+- **Date:** Thursday, August 13, 2026
+- **Time:** 12:00 AM - 2:00 PM
+- **Location:** Johnson Playground Lawns, Central Park
+- **Place:** Johnson Playground
+- **Type:** Special Event
+- **Event ID:** 888321
+
+## About This Event
+
+Billy Johnson Lawn - Maintenance Days - Closed to 2 is a permitted event taking place at Johnson Playground Lawns in Central Park. Contact the event organizers for more details about attendance and participation.

@@ -1,6 +1,6 @@
 {
   "source": "Central Park Conservancy - centralparknyc.org",
-  "crawl_date": "2026-07-03",
+  "crawl_date": "2026-07-19",
   "api_endpoint": "https://www.centralparknyc.org/activities.json",
   "total_activities_on_site": 123,
   "total_events_extracted": 17,
@@ -10,83 +10,6 @@
     "all_pages_fetched": true
   },
   "events": [
-    {
-      "id": 4218108,
-      "title": "Casa Mantequilla",
-      "url": "https://www.centralparknyc.org/activities/events/casa-mantequilla",
-      "type": "Events",
-      "tags": [
-        "Performances"
-      ],
-      "summary": "<p>Jazz, Afro, World</p>",
-      "description": "<p>Jazz, Afro, World</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c813c84009caaca0fa6520adfd5b7fe7",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c813c84009caaca0fa6520adfd5b7fe7",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=30196bfd22816a5f29d96a825ef2c91d",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=30196bfd22816a5f29d96a825ef2c91d, https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=e6328ec942824789089c99418f129e44 2x"
-      },
-      "start_date": "2026-07-12T14:00:00-04:00",
-      "event_instances": [
-        {
-          "instanceId": 4218111,
-          "instanceDate": "2026-07-12T14:00:00-04:00",
-          "instanceDuration": 120,
-          "ticketLink": null,
-          "sessionId": null,
-          "isTicketure": false,
-          "ticketureCheckoutURL": "",
-          "manuallyEntered": true,
-          "isSoldOut": false
-        }
-      ],
-      "nested_instances": {
-        "2026-07-12": {
-          "14:00:00": [
-            {
-              "instanceId": 4218111,
-              "instanceDate": "2026-07-12T14:00:00-04:00",
-              "instanceDuration": 120,
-              "ticketLink": null,
-              "sessionId": null,
-              "isTicketure": false,
-              "ticketureCheckoutURL": "",
-              "manuallyEntered": true,
-              "isSoldOut": false
-            }
-          ]
-        }
-      },
-      "meta": {
-        "og_title": "Casa Mantequilla",
-        "og_description": "Jazz, Afro, World",
-        "og_url": "https://www.centralparknyc.org/activities/events/casa-mantequilla"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "Jazz, Afro, World",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/CasaMantequilla_3872.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c813c84009caaca0fa6520adfd5b7fe7"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/casa-mantequilla",
-        "name": "Casa Mantequilla",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/casa-mantequilla"
-      },
-      "detail_page_data": {
-        "date_detail": "Sunday, July 12",
-        "time_detail": "2:00 pm",
-        "location_detail": "Charles A. Dana Discovery Center The Harlem Meer Performance Festival is back with a fresh new lineup! Kicking off the Central Park Conservancy’s summer series on July 12, 2026, is cross-cultural music collective Casa Mantequilla. MEET THE ARTIST: A Q&A WITH CASA MANTEQUILLA How would you describe your music or performance style? Casa Mantequilla is a high-energy Harlem band of lifelong friends. Musicians from the United States, Puerto Rico, Nigeria, Belgium, and Congo blend West African, Latin, and American rhythms into joyful polyrhythmic grooves, sung in multiple languages for a vibrant, border-crossing sound. What does a live audience feel, hear, or experience when they see you perform? The band's energy is warm and communal—more like a neighborhood celebration where everyone is invited to dance, sing, and feel uplifted. We offer a mix of polyrhythmic grooves, rich harmonies, and infectious melodies that move both body and spirit. What inspires your work? Our music draws on traditional African and Caribbean styles, reimagined through a modern sound shaped by jazz and blues. What is the connection between your work and the Harlem community? Most of the band members have been living in Harlem for many years. We’re part of the neighborhood’s vibrant music scene and community, performing regularly at venues like Shrine, Silvana, and The Porch. ABOUT THE HARLEM MEER PERFORMANCE FESTIVAL The Harlem Meer Performance Festival is a beloved annual tradition, filling Central Park with music and movement on select Sundays throughout the summer. The festival is free, and all ages are welcome. Check out our Event FAQs for more information and join our mailing list to receive event updates. COMMUNITY EVENTS BY THE CENTRAL PARK CONSERVANCY Central Park Conservancy community events reflect the spirit of the Park itself: fun, free, and open to all. Join us all year for family-friendly programs across Central Park—featuring music, movement, art, film, and more—creating a culture of connection in the Park we all love. See All Upcoming Events",
-        "cost": "Free",
-        "description_detail": "Jazz, Afro, World"
-      }
-    },
     {
       "id": 4232985,
       "title": "World Cup Final Watch Party on the Great Lawn",
@@ -170,6 +93,7 @@
       "url": "https://www.centralparknyc.org/activities/events/the-grace-young-experience",
       "type": "Events",
       "tags": [
+        "Parkwide",
         "Performances"
       ],
       "summary": "<p>Jazz, Blues, Gospel, Soul</p>",
@@ -247,6 +171,7 @@
       "url": "https://www.centralparknyc.org/activities/events/kobie-dozier",
       "type": "Events",
       "tags": [
+        "Parkwide",
         "Performances"
       ],
       "summary": "<p>Jazz, Soul, Hip-hop</p>",
@@ -324,6 +249,7 @@
       "url": "https://www.centralparknyc.org/activities/events/uptown-royalty",
       "type": "Events",
       "tags": [
+        "Parkwide",
         "Performances"
       ],
       "summary": "<p>Latin, Jazz, Dance</p>",
@@ -396,11 +322,91 @@
       }
     },
     {
+      "id": 4242571,
+      "title": "Chess Lecture & Simul with Michael Rohde",
+      "url": "https://www.centralparknyc.org/activities/events/chess-lecture-simul-with-michael-rohde",
+      "type": "Events",
+      "tags": [
+        "Games",
+        "Chess",
+        "Parkwide"
+      ],
+      "summary": "",
+      "description": "",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/ChessLectureSimul_MichaelRhodeHeader_2026.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=320693173f77bea7e137eff9b9e99c78",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/ChessLectureSimul_MichaelRhodeHeader_2026.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=320693173f77bea7e137eff9b9e99c78",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/ChessLectureSimul_MichaelRhodeHeader_2026.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.1776&fp-y=0.3058&h=318&q=80&w=424&s=2ac01fb654fd4768cf24ccdd75f17b26",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/ChessLectureSimul_MichaelRhodeHeader_2026.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.1776&fp-y=0.3058&h=318&q=80&w=424&s=2ac01fb654fd4768cf24ccdd75f17b26, https://d2wsrtli9cxkek.cloudfront.net/media/images/ChessLectureSimul_MichaelRhodeHeader_2026.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.1776&fp-y=0.3058&h=636&q=80&w=848&s=4ab66d6ea09bdbf752640904300d4d34 2x"
+      },
+      "start_date": "2026-08-15T11:00:00-04:00",
+      "event_instances": [
+        {
+          "instanceId": 4242572,
+          "instanceDate": "2026-08-15T11:00:00-04:00",
+          "instanceDuration": null,
+          "ticketLink": null,
+          "sessionId": null,
+          "isTicketure": false,
+          "ticketureCheckoutURL": "",
+          "manuallyEntered": true,
+          "isSoldOut": false
+        }
+      ],
+      "nested_instances": {
+        "2026-08-15": {
+          "11:00:00": [
+            {
+              "instanceId": 4242572,
+              "instanceDate": "2026-08-15T11:00:00-04:00",
+              "instanceDuration": null,
+              "ticketLink": null,
+              "sessionId": null,
+              "isTicketure": false,
+              "ticketureCheckoutURL": "",
+              "manuallyEntered": true,
+              "isSoldOut": false
+            }
+          ]
+        }
+      },
+      "meta": {
+        "og_title": "Chess Lecture & Simul with Michael Rohde",
+        "og_description": "The organization that cares for NYC’s iconic 843-acre park offers public tours, family activities, and expert insight to help you get to know our beloved…",
+        "og_url": "https://www.centralparknyc.org/activities/events/chess-lecture-simul-with-michael-rohde"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "The organization that cares for NYC’s iconic 843-acre park offers public tours, family activities, and expert insight to help you get to know our beloved greenspace.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/ChessLectureSimul_MichaelRhodeHeader_2026.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=320693173f77bea7e137eff9b9e99c78"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/chess-lecture-simul-with-michael-rohde",
+        "name": "Chess Lecture & Simul with Michael Rohde",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/chess-lecture-simul-with-michael-rohde"
+      },
+      "detail_page_data": {
+        "date_detail": "Saturday, August 15",
+        "time_detail": "11:00 am",
+        "location_detail": "Chess & Checkers House Chess & Checkers House (mid-Park at 64th Street) Saturday, August 15 Start: 11:00 am Join Grandmaster Michael Rohde for a 30-minute lecture, followed by a simul. Register to Attend Michael Rohde is a former junior chess champion, having been rated as a master at 13. He gained the International Master title in 1976, followed by that of Grandmaster in 1988. At one point, he was ranked as high as 59th in the world. In recent years, Rohde has played in many tournaments in NYC’s Marshall Chess Club. He won the Marshall Chess Club Championship in 1990 and 1994, and tied for first in 2012. This event is free and open to players ages 6 and up. Register in advance to secure your spot. Registration opens one month prior to each scheduled program date. Participation is limited to 30 players. A limited number of walk-up spaces will be available on a first-come-first-served basis. Prior chess experience is required to participate. Beginners are welcome to watch. GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
+        "cost": "Free",
+        "description_detail": "The organization that cares for NYC’s iconic 843-acre park offers public tours, family activities, and expert insight to help you get to know our beloved greenspace."
+      }
+    },
+    {
       "id": 4218356,
       "title": "M.A.R. Quintet",
       "url": "https://www.centralparknyc.org/activities/events/mar-quintet",
       "type": "Events",
       "tags": [
+        "Parkwide",
         "Performances"
       ],
       "summary": "<p>Jazz</p>",
@@ -478,6 +484,7 @@
       "url": "https://www.centralparknyc.org/activities/events/ray-delgado-project",
       "type": "Events",
       "tags": [
+        "Parkwide",
         "Performances"
       ],
       "summary": "<p>Jazz, Soul, Latin, World, Dance</p>",
@@ -550,6 +557,82 @@
       }
     },
     {
+      "id": 111335,
+      "title": "29th Annual Central Park Holiday Lighting",
+      "url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025",
+      "type": "Events",
+      "tags": [
+        "Best for Kids",
+        "Kids and Families"
+      ],
+      "summary": "<p>Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities.</p>",
+      "description": "<p>Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities.</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=4759a9efcbe8622b395423c6053a205f",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=4759a9efcbe8622b395423c6053a205f",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=23d7f340603d59eaf1473dc35990e86c",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=23d7f340603d59eaf1473dc35990e86c, https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=f28819626d7d00b8562cb8bccbcbf83f 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "29th Annual Central Park Holiday Lighting",
+        "og_description": "Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa…",
+        "og_url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=4759a9efcbe8622b395423c6053a205f"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025",
+        "name": "29th Annual Central Park Holiday Lighting",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025"
+      },
+      "detail_page_data": {
+        "location_detail": "Charles A. Dana Discovery Center This year’s Holiday Lighting has concluded. Please subscribe to the Conservancy’s Programs and Events email list to be notified when details are released for the 2026 event. Download Holiday Activities Coloring Pages Carols Recipes GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
+        "description_detail": "Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities."
+      }
+    },
+    {
+      "id": 27760,
+      "title": "Chess Lecture & Simul Series",
+      "url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series",
+      "type": "Events, Activities",
+      "tags": [
+        "Kids and Families"
+      ],
+      "summary": "<p>Learn techniques from world-renowned chess experts, then put your skills to the test!</p>",
+      "description": "<p>Learn techniques from world-renowned chess experts, then put your skills to the test!</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c8d8cdf49e903939eac1991e97c113c5",
+        "schema_image": "",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90, https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=8f4cced81888d02f231cb8fccee9b223 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Chess Lecture & Simul Series",
+        "og_description": "Learn techniques from world-renowned chess experts, then put your skills to the test!",
+        "og_url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series"
+      },
+      "schema_org": null,
+      "detail_page_data": {
+        "description_detail": "Learn techniques from world-renowned chess experts, then put your skills to the test!"
+      }
+    },
+    {
       "id": 4228766,
       "title": "Central Park Farm Stand",
       "url": "https://www.centralparknyc.org/activities/events/central-park-farm-stand",
@@ -597,78 +680,93 @@
       }
     },
     {
-      "id": 3450244,
-      "title": "Tour: Water in Focus",
-      "url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus",
-      "type": "Events",
-      "tags": [],
-      "summary": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
-      "description": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=1a32c82f5e3f1e1895ac5d63cb7be579",
-        "schema_image": "",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf, https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=6e58de5414c5fee5ae788970cfd6d9c2 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Tour: Water in Focus",
-        "og_description": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.",
-        "og_url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus"
-      },
-      "schema_org": null,
-      "detail_page_data": {
-        "cost": "Free",
-        "description_detail": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end."
-      }
-    },
-    {
-      "id": 3565020,
-      "title": "Founders’ Day: 200th Anniversary of Seneca Village",
-      "url": "https://www.centralparknyc.org/activities/events/foundersday",
-      "type": "Events",
+      "id": 1169382,
+      "title": "Evening at the Water",
+      "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
+      "type": "Benefit Events",
       "tags": [
-        "Seneca Village"
+        "For Members"
       ],
-      "summary": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
-      "description": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
+      "summary": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
+      "description": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
       "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874, https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=ad7d0c109bdee1ef67a68153eccc93f2 2x"
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4, https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=91b01c44fd26c0e1e141865784f908d4 2x"
       },
       "start_date": null,
       "event_instances": [],
       "nested_instances": {},
       "meta": {
-        "og_title": "Founders’ Day: 200th Anniversary of Seneca Village",
-        "og_description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in…",
-        "og_url": "https://www.centralparknyc.org/activities/events/foundersday"
+        "og_title": "Evening at the Water",
+        "og_description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary…",
+        "og_url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
       },
       "schema_org": {
         "@type": "Event",
-        "description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village.",
+        "description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman",
         "image": {
           "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f"
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4"
         },
         "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/foundersday",
-        "name": "Founders’ Day: 200th Anniversary of Seneca Village",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
+        "name": "Evening at the Water",
         "potentialAction": {
           "@type": "SearchAction",
           "query-input": "required name=search_term_string",
           "target": "https://www.centralparknyc.org/search?q={search_term_string}"
         },
-        "url": "https://www.centralparknyc.org/activities/events/foundersday"
+        "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
       },
       "detail_page_data": {
-        "location_detail": "Mother AME Zion Church, 140 West 137th Street, New York, NY 10030 200 years ago, on September 17, 1825, congregant Andrew Williams and the trustees of the AME Zion Church were among the first to purchase land in the area between West 82nd and 89th Streets, which would become Seneca Village. On Sunday, September 14, join the Central Park Conservancy for a music-filled service at the historic AME Zion Church in Harlem—the first Black church in New York City—to honor this significant anniversary (in collaboration with the James L. Varick Community Center, Inc.). Through the sermon, live music, and a conversation with historians, discover the communal roots of this thriving, predominantly African-American 19th-century community. Service will begin at 11:00 AM, followed by a discussion between AME Zion Church leaders and a Seneca Village historian. Members of the Institute for the Exploration of Seneca Village History and the Envisioning Seneca Village team will also be present to answer questions about their research. Light refreshments will be available after service. Event Schedule Church Service: 11:00 AM Refreshments / Open House: 12:30 PM–1:00 PM Dabney N. Montgomery Heritage Center (AME Zion History Museum) Institute for the Exploration of Seneca Village History Envisioning Seneca Village Discussion: 1:00 PM This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Sign Up GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
-        "cost": "Free",
-        "description_detail": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village."
+        "location_detail": "Conservatory Water We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all. Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more! Join the Greensward Circle Questions? Call 212.776.1061 or email [email protected] .",
+        "description_detail": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman"
+      }
+    },
+    {
+      "id": 1702545,
+      "title": "Central Park Conservancy's Annual Gala",
+      "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
+      "type": "Benefit Events, Arts & Entertainment",
+      "tags": [],
+      "summary": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
+      "description": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966, https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=65e644cac6229f7c207c0ad228bb051f 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Central Park Conservancy's Annual Gala",
+        "og_description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again…",
+        "og_url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
+      },
+      "schema_org": {
+        "@type": "Event",
+        "description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org .",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8"
+        },
+        "inLanguage": "en-us",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
+        "name": "Central Park Conservancy's Annual Gala",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "query-input": "required name=search_term_string",
+          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
+        },
+        "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
+      },
+      "detail_page_data": {
+        "location_detail": "Rumsey Playfield Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or [email protected] . GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
+        "description_detail": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org ."
       }
     },
     {
@@ -722,47 +820,106 @@
       }
     },
     {
-      "id": 1702545,
-      "title": "Central Park Conservancy's Annual Gala",
-      "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
-      "type": "Benefit Events, Arts & Entertainment",
+      "id": 3450244,
+      "title": "Tour: Water in Focus",
+      "url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus",
+      "type": "Events",
       "tags": [],
-      "summary": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
-      "description": "<p>This year’s event, the Central Park Supper Club, will be an unforgettable evening of cocktails, dinner, dancing and entertainment.<br /></p>",
+      "summary": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
+      "description": "<p>Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.</p>",
       "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=3cd5fefabdc3d7fefcc5f04da77de966, https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=65e644cac6229f7c207c0ad228bb051f 2x"
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=1a32c82f5e3f1e1895ac5d63cb7be579",
+        "schema_image": "",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=4cda3c513195c2a7738984b66553d3cf, https://d2wsrtli9cxkek.cloudfront.net/media/images/locations/ConservatoryGarden_20240419_39.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=6e58de5414c5fee5ae788970cfd6d9c2 2x"
       },
       "start_date": null,
       "event_instances": [],
       "nested_instances": {},
       "meta": {
-        "og_title": "Central Park Conservancy's Annual Gala",
-        "og_description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again…",
-        "og_url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
+        "og_title": "Tour: Water in Focus",
+        "og_description": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end.",
+        "og_url": "https://www.centralparknyc.org/activities/tours/tour-water-in-focus"
+      },
+      "schema_org": null,
+      "detail_page_data": {
+        "cost": "Free",
+        "description_detail": "Join us for a spotlight on how water shapes the visitor experience in the Park’s north end."
+      }
+    },
+    {
+      "id": 3450029,
+      "title": "Wildlife Park Safari",
+      "url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari",
+      "type": "Events",
+      "tags": [],
+      "summary": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
+      "description": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=e0e25f76bf79ee7272384896c6c52cf2",
+        "schema_image": "",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d, https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=5e1bb0377861510123c1f265f1ad58eb 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Wildlife Park Safari",
+        "og_description": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.",
+        "og_url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari"
+      },
+      "schema_org": null,
+      "detail_page_data": {
+        "cost": "Free",
+        "description_detail": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End."
+      }
+    },
+    {
+      "id": 3565020,
+      "title": "Founders’ Day: 200th Anniversary of Seneca Village",
+      "url": "https://www.centralparknyc.org/activities/events/foundersday",
+      "type": "Events",
+      "tags": [
+        "Seneca Village"
+      ],
+      "summary": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
+      "description": "<p>Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village. </p>",
+      "image": {
+        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
+        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f",
+        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874",
+        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1f7ff957f1098ed172c163f48c3ec874, https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=ad7d0c109bdee1ef67a68153eccc93f2 2x"
+      },
+      "start_date": null,
+      "event_instances": [],
+      "nested_instances": {},
+      "meta": {
+        "og_title": "Founders’ Day: 200th Anniversary of Seneca Village",
+        "og_description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in…",
+        "og_url": "https://www.centralparknyc.org/activities/events/foundersday"
       },
       "schema_org": {
         "@type": "Event",
-        "description": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org .",
+        "description": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village.",
         "image": {
           "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20241120_FortunesFeteGetty_4008098.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=cdfab66aec1196a2daf273bdc26626d8"
+          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/NYLMC-_5050_MOTHER-AME-16_photo-by-Noel-Sutherland.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=5869291f40d1fd955d16419a22eaf14f"
         },
         "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala",
-        "name": "Central Park Conservancy's Annual Gala",
+        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/foundersday",
+        "name": "Founders’ Day: 200th Anniversary of Seneca Village",
         "potentialAction": {
           "@type": "SearchAction",
           "query-input": "required name=search_term_string",
           "target": "https://www.centralparknyc.org/search?q={search_term_string}"
         },
-        "url": "https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala"
+        "url": "https://www.centralparknyc.org/activities/events/foundersday"
       },
       "detail_page_data": {
-        "location_detail": "Rumsey Playfield Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or [email protected] . GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
-        "description_detail": "Thank you to the guests and patrons who supported the Central Park Conservancy's 2025 Annual Gala. We hope you enjoyed the evening and can join us again in 2026! For more information, please contact the Special Events department at 212.446.2242 or specialevents@centralparknyc.org ."
+        "location_detail": "Mother AME Zion Church, 140 West 137th Street, New York, NY 10030 200 years ago, on September 17, 1825, congregant Andrew Williams and the trustees of the AME Zion Church were among the first to purchase land in the area between West 82nd and 89th Streets, which would become Seneca Village. On Sunday, September 14, join the Central Park Conservancy for a music-filled service at the historic AME Zion Church in Harlem—the first Black church in New York City—to honor this significant anniversary (in collaboration with the James L. Varick Community Center, Inc.). Through the sermon, live music, and a conversation with historians, discover the communal roots of this thriving, predominantly African-American 19th-century community. Service will begin at 11:00 AM, followed by a discussion between AME Zion Church leaders and a Seneca Village historian. Members of the Institute for the Exploration of Seneca Village History and the Envisioning Seneca Village team will also be present to answer questions about their research. Light refreshments will be available after service. Event Schedule Church Service: 11:00 AM Refreshments / Open House: 12:30 PM–1:00 PM Dabney N. Montgomery Heritage Center (AME Zion History Museum) Institute for the Exploration of Seneca Village History Envisioning Seneca Village Discussion: 1:00 PM This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Sign Up GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
+        "cost": "Free",
+        "description_detail": "Join the Central Park Conservancy for a music-filled service at AME Zion Church in Harlem to honor the 200th anniversary of the first land purchase in Seneca Village."
       }
     },
     {
@@ -812,156 +969,6 @@
         "location_detail": "Seneca Village Landscape Join us in the historic Seneca Village landscape in Central Park for a performance that takes you back to Seneca Village in 1845. Interpretive music, dance, and spoken word will bring to life a world where Black New Yorkers built their own homes, churches, and a school, exploring how Andrew Williams's and others’ 1825 land purchase evolved into a thriving community. Performances by: DeWitt Fleming, Jr., Broadway performer Alphonso Horne, musician Mikumari Caiyhe, spoken word artist Bring a blanket to sit on and enjoy the performance in comfort! The Seneca Village landscape is between West 85th Street and West Drive. Enter the Park at West 85th Street. This event is part of Seneca Village: Toward a Permanent Commemoration , an ongoing program series funded by the Mellon Foundation. This series will culminate in a community-informed framework guiding the future design of a permanent commemoration of Seneca Village in Central Park. Join the Seneca Village mailing list to receive event news, Seneca Village history, and more! Email Address *",
         "cost": "Free",
         "description_detail": "Watch as Seneca Village is brought to life through an interpretive performance."
-      }
-    },
-    {
-      "id": 3450029,
-      "title": "Wildlife Park Safari",
-      "url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari",
-      "type": "Events",
-      "tags": [],
-      "summary": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
-      "description": "<p>Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=e0e25f76bf79ee7272384896c6c52cf2",
-        "schema_image": "",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=46bb56d77550dfa159cee8b0cfe31b1d, https://d2wsrtli9cxkek.cloudfront.net/media/images/davis-center/Wildlife_hoodedmerganser_mallard_20230206.jpeg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=5e1bb0377861510123c1f265f1ad58eb 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Wildlife Park Safari",
-        "og_description": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End.",
-        "og_url": "https://www.centralparknyc.org/activities/tours/wildlife-park-safari"
-      },
-      "schema_org": null,
-      "detail_page_data": {
-        "cost": "Free",
-        "description_detail": "Join us for a tour highlighting the interconnected, viable ecosystems of the Park's North End."
-      }
-    },
-    {
-      "id": 1169382,
-      "title": "Evening at the Water",
-      "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
-      "type": "Benefit Events",
-      "tags": [
-        "For Members"
-      ],
-      "summary": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
-      "description": "Thank you for joining the Greensward Circle, the Central Park Conservancy’s network of young professionals, at their summer benefit: Evening at the Water.",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=350551db811caf9fed6197a6b55282f4, https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=91b01c44fd26c0e1e141865784f908d4 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Evening at the Water",
-        "og_description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary…",
-        "og_url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/Conservatory-Water_20190612_02.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=83a7646db8fbb21eac70d93ee256ebb4"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/evening-at-the-water",
-        "name": "Evening at the Water",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/evening-at-the-water"
-      },
-      "detail_page_data": {
-        "location_detail": "Conservatory Water We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all. Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more! Join the Greensward Circle Questions? Call 212.776.1061 or email [email protected] .",
-        "description_detail": "We hope you enjoyed the evening and can join us again in 2025! Your support enables the Conservancy to preserve and celebrate Central Park as a sanctuary from the pace and pressures of city life, enhancing the enjoyment and wellbeing of all.  Join today for exclusive access to upcoming Greensward Circle events such as Yoga in the Park, volunteer days, happy hours, and more!   Questions? Call 212.776.1061 or email greenswardcircle@centralparknyc.org .   Greensward Circle Co-Chairs  Alice Cash & Rebecca Malizia   Host Committee: Brittany Beyer Harwin Blythe Bonan Alice Cash Caroline Colella Elaine Dealy Whitney Dosik Naomi Drucker Lindsay Hoeppner Courtney Kelly Madison Ladymon Kaitlyn Lynch Rebecca Malizia Jeffrey McHugh Ashely Post Alayna Putterman Brian Reinke Raquel Ringgold Lauren Kiana Souchère Katie Turner Ruth Zapata Megan Zuckerman"
-      }
-    },
-    {
-      "id": 27760,
-      "title": "Chess Lecture & Simul Series",
-      "url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series",
-      "type": "Events, Activities",
-      "tags": [
-        "Kids and Families"
-      ],
-      "summary": "<p>Learn techniques from world-renowned chess experts, then put your skills to the test!</p>",
-      "description": "<p>Learn techniques from world-renowned chess experts, then put your skills to the test!</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=c8d8cdf49e903939eac1991e97c113c5",
-        "schema_image": "",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=1337aa7b5a089e0a5bd5337cb4c9fa90, https://d2wsrtli9cxkek.cloudfront.net/media/images/20230722_ChessSimul_113_2025-05-30-193021_ugyc.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=8f4cced81888d02f231cb8fccee9b223 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "Chess Lecture & Simul Series",
-        "og_description": "Learn techniques from world-renowned chess experts, then put your skills to the test!",
-        "og_url": "https://www.centralparknyc.org/activities/guides/chess-lecture-and-simul-series"
-      },
-      "schema_org": null,
-      "detail_page_data": {
-        "description_detail": "Learn techniques from world-renowned chess experts, then put your skills to the test!"
-      }
-    },
-    {
-      "id": 111335,
-      "title": "29th Annual Central Park Holiday Lighting",
-      "url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025",
-      "type": "Events",
-      "tags": [
-        "Best for Kids",
-        "Kids and Families"
-      ],
-      "summary": "<p>Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities.</p>",
-      "description": "<p>Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities.</p>",
-      "image": {
-        "og_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=4759a9efcbe8622b395423c6053a205f",
-        "schema_image": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=4759a9efcbe8622b395423c6053a205f",
-        "thumbnail": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=23d7f340603d59eaf1473dc35990e86c",
-        "thumbnail_srcset": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=318&q=80&w=424&s=23d7f340603d59eaf1473dc35990e86c, https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=636&q=80&w=848&s=f28819626d7d00b8562cb8bccbcbf83f 2x"
-      },
-      "start_date": null,
-      "event_instances": [],
-      "nested_instances": {},
-      "meta": {
-        "og_title": "29th Annual Central Park Holiday Lighting",
-        "og_description": "Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa…",
-        "og_url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025"
-      },
-      "schema_org": {
-        "@type": "Event",
-        "description": "Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities.",
-        "image": {
-          "@type": "ImageObject",
-          "url": "https://d2wsrtli9cxkek.cloudfront.net/media/images/20211202_HolidayLighting-2.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=4759a9efcbe8622b395423c6053a205f"
-        },
-        "inLanguage": "en-us",
-        "mainEntityOfPage": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025",
-        "name": "29th Annual Central Park Holiday Lighting",
-        "potentialAction": {
-          "@type": "SearchAction",
-          "query-input": "required name=search_term_string",
-          "target": "https://www.centralparknyc.org/search?q={search_term_string}"
-        },
-        "url": "https://www.centralparknyc.org/activities/events/holiday-lighting-2025"
-      },
-      "detail_page_data": {
-        "location_detail": "Charles A. Dana Discovery Center This year’s Holiday Lighting has concluded. Please subscribe to the Conservancy’s Programs and Events email list to be notified when details are released for the 2026 event. Download Holiday Activities Coloring Pages Carols Recipes GET YOUR SUMMER GUIDE Make it a Central Park summer to remember with the official Summer Guide. Sign up and get it for free. Email Address Submit This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.",
-        "description_detail": "Celebrate the season with the 29th Annual Holiday Lighting in Central Park! Meet Santa and friends, sing carols on the plaza, and warm up with hot cocoa while enjoying a variety of seasonal activities."
       }
     }
   ]

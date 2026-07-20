@@ -1,7 +1,7 @@
 ---
 title: "Celebration"
 date: 2026-10-25
-time: "12:30"
+time: "11:30"
 end_time: "13:30"
 location: "Cop Cot"
 place: "Cop Cot"
@@ -25,7 +25,7 @@ Celebration takes place at Cop Cot in Central Park on Sunday, October 25, 2026.
 
 - **Event:** Celebration
 - **Date:** Sunday, October 25, 2026
-- **Time:** 12:30 PM - 1:30 PM
+- **Time:** 11:30 AM - 1:30 PM
 - **Location:** Cop Cot, Central Park
 - **Place:** Cop Cot
 - **Type:** Special Event

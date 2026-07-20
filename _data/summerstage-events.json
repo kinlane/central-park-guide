@@ -1,31 +1,12 @@
 {
   "events": [
     {
-      "id": "summerstage-19772",
-      "title": "Morocco: From Dakhla to Casablanca: Hoba Hoba Spirit / Hamid El Kasri / Dakhla Casa Xpress / Mr ID / NDRK",
-      "start_date": "2026-07-15 18:00:00",
-      "end_date": "2026-07-15 22:00:00",
-      "url": "https://cityparksfoundation.org/events/morocco-from-dakhla-to-casablanca/",
-      "description": "In association with the Moroccan Ministry of Youth, Culture, and Communication, the Council of the Moroccan Community Abroad, and Maroc Festivals, SummerStage brings a handful of artists showcasing the diversity of sounds and rhythms from the North African nation to Central Park. Headlining is Hoba Hoba Spirit, a Moroccan rock band from Casablanca that fuses rock, reggae and Gnawa (a Sufi style brought from West Africa) into a sound they call \u201chaiha\u201d\u2014evoking the controlled chaos and randomness of their live experience. They joined by Hamid El Kasri, a Gnawa master trained in the Chemeli style with a distinctively deep and rich voice who performs with the three-stringed bass guembri; Dakhla Casa Xpress beginning with the stillness and warmth of the desert, and building toward the electric energy of the city; Mr ID, the DJ and producer who brought American rap beats, funk rhythms and the spirit of Jazz back home with him to Morocco, where he fused the sounds with violin airs and African percussion; and NDRK, a rising star on the dance floors of Marrakech, Casablanca, and Dubai, who also produces gems like the track selected as the anthem for the Paris 2024 Olympic Games",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/06/morocco_webphoto.webp",
-      "cost": "Free",
-      "venue": "Manhattan",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
-    },
-    {
       "id": "summerstage-18565",
-      "title": "Anjunadeep: Open Air New York City: Because of Art / Durante / Ezequiel Arias / James Grant & Jody Wisternoff / Marsh / Romain Garcia / SunrYse",
+      "title": "(POSTPONED) Anjunadeep: Open Air New York City: Because of Art / Durante / Ezequiel Arias / James Grant & Jody Wisternoff / Marsh / Romain Garcia / SunrYse",
       "start_date": "2026-07-18 15:00:00",
       "end_date": "2026-07-18 22:00:00",
       "url": "https://cityparksfoundation.org/events/anjunadeep/",
-      "description": "SummerStage Member  Presale:  Tuesday, February 17 at 12PM  \n  Capital One Cardholder  Presale:  Tuesday, February 17 at 12PM  \n General on-sale:  Wednesday, February 18 at 12PM  \n  Founded in 2005, Anjunadeep is the supergroup Above & Beyond\u2019s label, dedicated to highlighting deeper, more progressive sounds in the club and electronic music scene. With a catalogue spanning nearly 15 years, the label has brought artists such as Lane 8, Ben B\u00f6hmer, Dusky, and Eli & Fur to the world stage. Their shows have drawn audiences from Brooklyn to London, selling out across 15 countries and five continents with their friendly, welcoming, and always bumping party vibe. With releases that range from melodic house, electronic, ambient, to techno, the diversity and integrity of the label\u2019s sound has earned Anjunadeep a fiercely loyal following around the globe and a reputation as one of dance music\u2019s most respected imprints. For their show in Central Park, they\u2019re sure to bring some of their best beats.",
+      "description": "Due to extreme weather conditions, tonight\u2019s Anjunadeep Open Air New York City on 7/18 has been postponed to a new date. We will share an update as soon as possible. Your current tickets will be automatically valid for the new date, or if you cannot make the new date, refunds will be available at your point of purchase. Please contact your point of purchase for any questions.  \n  Founded in 2005, Anjunadeep is the supergroup Above & Beyond\u2019s label, dedicated to highlighting deeper, more progressive sounds in the club and electronic music scene. With a catalogue spanning nearly 15 years, the label has brought artists such as Lane 8, Ben B\u00f6hmer, Dusky, and Eli & Fur to the world stage. Their shows have drawn audiences from Brooklyn to London, selling out across 15 countries and five continents with their friendly, welcoming, and always bumping party vibe. With releases that range from melodic house, electronic, ambient, to techno, the diversity and integrity of the label\u2019s sound has earned Anjunadeep a fiercely loyal following around the globe and a reputation as one of dance music\u2019s most respected imprints. For their show in Central Park, they\u2019re sure to bring some of their best beats.",
       "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/Copy-of-OA-NYC-Lineup-16x9-1.webp",
       "cost": "",
       "venue": "Manhattan",
@@ -36,7 +17,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19776",
@@ -55,7 +36,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19778",
@@ -74,7 +55,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19783",
@@ -93,7 +74,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19784",
@@ -112,7 +93,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19785",
@@ -131,7 +112,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19786",
@@ -150,7 +131,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-19761",
@@ -169,7 +150,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     },
     {
       "id": "summerstage-18362",
@@ -188,8 +169,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-07-12T21:00:22Z"
+      "fetched_at": "2026-07-19T23:33:06Z"
     }
   ],
-  "fetched_at": "2026-07-12T21:00:22Z"
+  "fetched_at": "2026-07-19T23:33:06Z"
 }
