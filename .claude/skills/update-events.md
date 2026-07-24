@@ -612,23 +612,16 @@ Event body content with details, about section, etc.
 | `community_board` | from API | — | — |
 | `police_precinct` | from API | — | — |
 
-### 10. Stale events
+### 10. Stale & past events
 
-The merge intentionally **does NOT remove** events that are no longer in the API response, because:
-- The user manually curates events via `/admin/`. Removing files would lose their curation.
-- Past events naturally drop off the public site via the date filter (`event_date >= now`) on the events page and homepage.
+**Past events are purged automatically.** Before processing the API response, the merge deletes **every** event file whose `date` is before today (`date < TODAY`), regardless of source — including curated `cpc-`/`cpcom-`/`charity-`/`naumburg-` entries. This is an unconditional housekeeping pass at the top of the merge (see the `_purged_past` loop in `merge_nyc_events.py`), and it prints `Purged N past event files (date < YYYY-MM-DD)`. Past events don't display anyway (the `event_date >= now` build-time filter already hides them on the public `/events/` page and homepage), so purging keeps the `_events/` collection lean rather than letting it grow without bound. A deployed **daily rebuild** job runs this same merge and commits the result, so past-date churn in `git status` on any given day is expected and safe.
 
-However, you should still touch these orphaned files for two maintenance passes:
+**Consequence for curation:** because the purge is by date and not by source, hand-curated past events are NOT preserved. Curation only survives for **future-dated** events — those are never touched by the purge. If you need a past event to persist (e.g. an archive/history page), it must live outside `_events/` or carry a future/sentinel date.
+
+**Non-past events that are no longer in the API response are still preserved** (not deleted) — the merge only removes files by past date, never by "missing from the current API pull." For those surviving orphan files, the merge runs two maintenance passes:
 
 1. **Clean titles** — apply the rules from step 7.
-2. **Backfill `description:`** — if an orphan file is missing the field or its value is empty, generate one with `make_description(title, event_type, location)` (reading those values from the file's existing front matter, defaulting `event_type` to `""` and `location` to `"Central Park"` if absent). This is what the merge script does in its orphan-cleanup pass; the rule exists so the schema invariant "every event has a non-empty description" never breaks even when files are added or hand-edited outside the merge.
-
-If the user explicitly asks to "purge" or "reset" events, you can offer to delete files where:
-- `event_id` does NOT have a `cpc-` or `cpcom-` prefix (so we don't touch Conservancy/centralpark.com)
-- AND `event_id` is not in the current API response
-- AND `date` is in the past
-
-But default behavior is preservation.
+2. **Backfill `description:`** — if an orphan file is missing the field or its value is empty, generate one with `make_description(title, event_type, location)` (reading those values from the file's existing front matter, defaulting `event_type` to `""` and `location` to `"Central Park"` if absent). The rule exists so the schema invariant "every event has a non-empty description" never breaks even when files are added or hand-edited outside the merge.
 
 ### 11. Build and verify
 
