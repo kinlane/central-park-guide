@@ -7,7 +7,7 @@ location: "Rumsey Playfield"
 place: "Rumsey Playfield"
 place_category: "event_venues"
 image: "https://cityparksfoundation.org/wp-content/uploads/2026/04/julietavenegas_webphoto.webp"
-description: "A sampling of Spanish-language pop hits Central Park, in association with the Latin Alternative Music Conference. GRAMMY-winning Mexican singer-songwriter Julieta Venegas has been a mainstay of Mexican pop since her breakout 2003 LP Sí , a lovestruck collection of sun-drenched hits that’s been described as “relentlessly perky.” She’s best known for the catchy pop found on that record and its follow-up Limon y Sal, but the one-time member of ska band Tijuana No! debuted with the significantly"
+description: "Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. A sampling of Spanish-language pop hits Central Park, in association with the Latin Alternative Music Conference. GRAMMY-winning Mexican singer-songwriter Julieta Venegas has been a mainstay of Mexican pop since her breakout 2003 LP Sí , a lovestruck collection of sun-drenched hits that’s been described"
 event_id: "summerstage-19778"
 event_type: "SummerStage Concert"
 event_borough: "Manhattan"
@@ -21,7 +21,7 @@ tags:
   - "Summerstage"
 ---
 
-A sampling of Spanish-language pop hits Central Park, in association with the Latin Alternative Music Conference. GRAMMY-winning Mexican singer-songwriter Julieta Venegas has been a mainstay of Mexican pop since her breakout 2003 LP Sí , a lovestruck collection of sun-drenched hits that’s been described as “relentlessly perky.” She’s best known for the catchy pop found on that record and its follow-up Limon y Sal, but the one-time member of ska band Tijuana No! debuted with the significantly
+Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. A sampling of Spanish-language pop hits Central Park, in association with the Latin Alternative Music Conference. GRAMMY-winning Mexican singer-songwriter Julieta Venegas has been a mainstay of Mexican pop since her breakout 2003 LP Sí , a lovestruck collection of sun-drenched hits that’s been described
 
 ## Event Details
 

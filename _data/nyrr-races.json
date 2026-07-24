@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-10T21:22:37+00:00",
+  "fetched_at": "2026-07-24T22:02:34+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -304,6 +304,32 @@
         "https://www.nyrr.org/races/2026/nyrrpremarathonyouthevent",
         "https://www.nyrr.org/races/nyrrpremarathonyouthevent"
       ],
+      "year": 2026
+    },
+    "2026nyrrteamchampionships5m": {
+      "candidate_title": "NYRR Team Championships 5M",
+      "course_map": "https://prodsitecore.blob.core.windows.net/nyrrsitecoreblob/nyrr/pdf/race-course-maps/teamchamps24_map_052924_rd2.pdf",
+      "date": "July 28, 2024 7:30 AM",
+      "description": "About This race is completed. 4,732 Total Finishers 2,559 Men | 2,150 Women | 23 Non-Binary View official results from this race. View race-day photo gallery . NYRR Team Championships 5M is now open to everyone. Register for this 9+1 race today! The NYRR Team Championships is a club favorite featuring men's, women's, and non-binary club points races worth double points in the 2024 NYRR Club Points Series . Race alongside NYC's quickest running teams as they compete for bragging rights in this five-miler on Sunday, July 28. Registration for NYRR Team Championships (Sunday, July 28th) is open to club members ONLY beginning March 4th. Should entries remain as of July 9, the race will be opened for registration to non-affiliated runners. Please reach out to your club representative if you have any additional questions or concerns. Why Race with New York Road Runners? When you run with NYRR, you do more than compete in a world-class race\u2014your support and participation play a role in fulfilling our vision to build healthier lives and stronger communities through the transformative power of running, and benefit NYRR's free youth and community programs, including Rising New York Road Runners , NYRR Striders , Open Run , and more. Pre-Race Accessibility NYRR strives to host inclusive, sustainable, and accessible events that enable all individuals to engage. To request reasonable accommodations or for inquiries about accessibility for attending this event, please email accessibility@nyrr.org . To learn more about NYRR accessibility, please visit the NYRR Disability Inclusion &amp; Accessibility Resource page .",
+      "distance": "5 Miles",
+      "event_item_id": "8E35699D-3C4A-4D3B-805D-71345B02A7C6",
+      "fetch_source": "wayback",
+      "fetched_at": "2026-07-24T22:02:32+00:00",
+      "hashtag": "#NYRRTeamChamps",
+      "ical_url": "https://www.nyrr.org/api/feature/racedetail/ExportIcal?eventItemId=8E35699D-3C4A-4D3B-805D-71345B02A7C6",
+      "location": "Central Park",
+      "parsed": true,
+      "race_logo": "https://prodsitecoreimage.nyrr.org/nyrrsitecoreblob/nyrr/logo/t2-race-logos/team-champs_stacked.png",
+      "race_photo": "https://prodsitecoreimage.nyrr.org/nyrrsitecoreblob/nyrr/image/racepage/photos/2024/t2/adults/teamchamps23_dpl_082-r2.jpg",
+      "slug": "nyrrteamchampionships5m",
+      "source_url": "https://www.nyrr.org/races/nyrrteamchampionships5m",
+      "sponsors": [
+        "tcs newlogo",
+        "nb 072023 1180x"
+      ],
+      "strava_club": "https://www.strava.com/clubs/new-york-road-runners-108605",
+      "title": "NYRR Team Championships 5M",
+      "total_finishers": 4732,
       "year": 2026
     },
     "2026rbcbrooklynhalf": {

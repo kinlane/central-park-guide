@@ -1048,6 +1048,21 @@ other_features:
 # ---------------------------------------------------------------------------
 event_venues:
 
+  - name: Graywacke Arch Lawn
+    type: lawn
+    alternate_names:
+      - Graywacke Arch
+    location: Mid-park near the 79th Street Transverse, west of the Metropolitan Museum
+    description: Open lawn beside Graywacke Arch, the rustic sandstone archway carrying the 79th Street Transverse over the East Drive path near the Met. Used for permitted picnics and small gatherings.
+
+  - name: Minton Arcade
+    type: arcade/passage
+    alternate_names:
+      - Bethesda Terrace Arcade
+      - Minton Tile Arcade
+    location: Mid-park at Bethesda Terrace, beneath the 72nd Street Cross Drive
+    description: The vaulted passage under Bethesda Terrace, famous for its restored Minton encaustic-tile ceiling. A popular permitted venue for celebrations and receptions.
+
   - name: West 103rd Street Entrance
     type: park entrance
     alternate_names:

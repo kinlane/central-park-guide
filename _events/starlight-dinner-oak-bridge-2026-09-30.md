@@ -4,8 +4,14 @@ date: 2026-09-30
 time: "18:00"
 end_time: "21:00"
 location: "Minton Arcade, West 77th Street Entrance"
-place: "Naturalists' Gate"
-place_category: "gates"
+place: "Minton Arcade"
+place_category: "event_venues"
+places:
+  - "Minton Arcade"
+  - "Naturalists' Gate"
+place_categories:
+  - "event_venues"
+  - "gates"
 image: "/assets/images/categories/family-community.png"
 description: "Starlight Dinner - Oak Bridge at Minton Arcade, West 77th Street Entrance in Central Park."
 event_id: "955529"
@@ -25,7 +31,7 @@ Starlight Dinner - Oak Bridge takes place at Minton Arcade, West 77th Street Ent
 - **Date:** Wednesday, September 30, 2026
 - **Time:** 6:00 PM - 9:00 PM
 - **Location:** Minton Arcade, West 77th Street Entrance, Central Park
-- **Place:** Naturalists' Gate
+- **Place:** Minton Arcade
 - **Type:** Special Event
 - **Event ID:** 955529
 

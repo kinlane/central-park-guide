@@ -7,7 +7,7 @@ location: "Rumsey Playfield"
 place: "Rumsey Playfield"
 place_category: "event_venues"
 image: "https://cityparksfoundation.org/wp-content/uploads/2026/04/trueno_webphoto.webp"
-description: "A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none has shined brighter than Trueno, the son of Uruguayan rapper Peligro and a veteran of the scene’s battle rap circuit. His early appearance on producer Bizarrap’s freestyle show BZRP Freestyle Sessions launched him to nationwide fame and helped establish the show as a chart-topping vehicle"
+description: "Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none has shined brighter than Trueno, the son of Uruguayan rapper Peligro and a veteran of the scene’s"
 event_id: "summerstage-19783"
 event_type: "SummerStage Concert"
 event_borough: "Manhattan"
@@ -21,7 +21,7 @@ tags:
   - "Summerstage"
 ---
 
-A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none has shined brighter than Trueno, the son of Uruguayan rapper Peligro and a veteran of the scene’s battle rap circuit. His early appearance on producer Bizarrap’s freestyle show BZRP Freestyle Sessions launched him to nationwide fame and helped establish the show as a chart-topping vehicle
+Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none has shined brighter than Trueno, the son of Uruguayan rapper Peligro and a veteran of the scene’s
 
 ## Event Details
 

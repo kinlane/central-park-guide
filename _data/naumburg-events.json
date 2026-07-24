@@ -1,21 +1,21 @@
 {
   "events": [
     {
-      "id": "naumburg-upcoming-osl",
-      "url": "https://naumburgconcerts.org/upcoming/osl",
-      "title": "Orchestra of St. Luke's",
-      "date": "2026-07-21",
-      "time_display": "",
-      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776691946864-ORV0L98LQUWCZ9R0VL5N/0045_OSL-AdobeRGB-Horizontal.jpg",
-      "venue": "Naumburg Bandshell"
-    },
-    {
       "id": "naumburg-upcoming-noskysbaroqueband",
       "url": "https://naumburgconcerts.org/upcoming/noskysbaroqueband",
       "title": "Nosky's Baroque Band",
       "date": "2026-08-04",
       "time_display": "",
       "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776691854957-3OFST3ONB4K12V7GHSPG/Aisslinn+Nosky+by+Sian+Richards.jpg",
+      "venue": "Naumburg Bandshell"
+    },
+    {
+      "id": "naumburg-upcoming-osl",
+      "url": "https://naumburgconcerts.org/upcoming/osl",
+      "title": "Orchestra of St. Luke's",
+      "date": "2026-07-21",
+      "time_display": "",
+      "image": "https://images.squarespace-cdn.com/content/v1/60807e133eee6a0f9fac0aec/1776691946864-ORV0L98LQUWCZ9R0VL5N/0045_OSL-AdobeRGB-Horizontal.jpg",
       "venue": "Naumburg Bandshell"
     },
     {
@@ -46,5 +46,5 @@
       "venue": "Naumburg Bandshell"
     }
   ],
-  "fetched_at": "2026-07-19T23:33:08Z"
+  "fetched_at": "2026-07-24T22:00:47Z"
 }
