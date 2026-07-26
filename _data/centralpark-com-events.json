@@ -15,8 +15,7 @@
       "Marionette Theatre",
       "Swedish Cottage"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png?cb=857133857379d3f7e6f97f38deb350a3",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png?cb=857133857379d3f7e6f97f38deb350a3"
   },
   {
     "title": "\"Wild Inside\" World Premiere at Central Park's Great Hill",
@@ -69,7 +68,6 @@
       "Walking Tours"
     ],
     "image_url": "https://www.centralpark.com/downloads/10951/download/bird-watching-birders.jpeg?cb=42f10e56c7429e134753013550fb01b5",
-    "start_date": "2026-07-19T00:00:00",
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
   },
   {
@@ -91,9 +89,7 @@
       "Summer Activities",
       "Summer Attractions"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10918/download/fresh-produce-central-park-farm-stand.jpg?cb=e85c3e1cd00c5aad97ccbd12bea1a11b",
-    "start_date": "2026-07-25T10:00:00",
-    "end_date": "2026-07-25T19:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10918/download/fresh-produce-central-park-farm-stand.jpg?cb=e85c3e1cd00c5aad97ccbd12bea1a11b"
   },
   {
     "title": "Central Park Highlights Running Tour",
@@ -122,8 +118,7 @@
       "Winter Activities",
       "Winter Sports"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8118/download/FitToursNYC%20jump.jpg?cb=97cd3b0a82b07ecadaaaffb3dc4fe703",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/8118/download/FitToursNYC%20jump.jpg?cb=97cd3b0a82b07ecadaaaffb3dc4fe703"
   },
   {
     "title": "Central Park Model Yacht Club Races",
@@ -142,9 +137,7 @@
       "Races",
       "Summer Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8929/download/model-sailboats.jpg?cb=22f9df28e3d9abe5666870363704333a",
-    "start_date": "2026-07-25T10:00:00",
-    "end_date": "2026-07-25T13:00:00"
+    "image_url": "https://www.centralpark.com/downloads/8929/download/model-sailboats.jpg?cb=22f9df28e3d9abe5666870363704333a"
   },
   {
     "title": "Central Park Zoo 4-D Theater",
@@ -163,9 +156,7 @@
       "Family Activities",
       "Kids"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg?cb=9a308b68dcf1925fb7c6e4ac07a7b8fd",
-    "start_date": "2026-07-20T10:15:00",
-    "end_date": "2026-07-20T17:00:00"
+    "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg?cb=9a308b68dcf1925fb7c6e4ac07a7b8fd"
   },
   {
     "title": "Central Park Zoo Quests",
@@ -188,8 +179,7 @@
       "Summer Activities",
       "Winter Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
   },
   {
     "title": "Children's Programs at Central Park Zoo",
@@ -209,14 +199,13 @@
       "Tisch Children's Zoo",
       "Winter Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3"
   },
   {
     "title": "City Girls Who Walk",
     "url": "https://www.centralpark.com/events/city-girls-who-walk/",
     "source": "centralpark.com",
-    "description": "Join a safe and fun Central Park walking group for women to meet new friends! Sundays at 12 PM.",
+    "description": "Join a safe and fun Central Park walking group for women to meet new friends!",
     "location": "Central Park West & 72nd Street",
     "coordinates": {
       "lat": 40.7762341961636,
@@ -228,9 +217,7 @@
       "Walks",
       "Women"
     ],
-    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png",
-    "start_date": "2026-07-26T12:00:00",
-    "end_date": "2026-07-26T13:30:00"
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png"
   },
   {
     "title": "CPDSA Skate Circle Events",
@@ -256,31 +243,7 @@
       "Spring Activities",
       "Summer Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3",
-    "start_date": "2026-07-25T14:45:00",
-    "end_date": "2026-07-25T18:45:00"
-  },
-  {
-    "title": "Dance Is Life at the Naumburg Bandshell 2026",
-    "url": "https://www.centralpark.com/events/dance-is-life-naumburg-bandshell/",
-    "source": "centralpark.com",
-    "description": "Dance Is Life returns to the Naumburg Bandshell in Central Park on Monday, July 20, 2026, from 5:00 PM to 8:30 PM. Free, all ages, hosted by Natasha Diggs and Abdiel.",
-    "location": "Naumburg Bandshell",
-    "coordinates": {
-      "lat": 40.7727049726675,
-      "lng": -73.9710345049975
-    },
-    "tags": [
-      "Dance",
-      "Dance Is Life",
-      "Dancing",
-      "Free Events",
-      "Live DJ Sets",
-      "Summer Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10919/download/naumburg-bandshell.jpg?cb=85bf6fbda9a59642c8e7f5c66c1f6c45",
-    "start_date": "2026-07-20T17:00:00",
-    "end_date": "2026-07-20T20:30:00"
+    "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3"
   },
   {
     "title": "Events on The Green at the Davis Center",
@@ -302,8 +265,7 @@
       "The Green",
       "Wellness"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10914/download/davis-center.jpg?cb=5201cb32886adb8674330c968bf984b8",
-    "start_date": "2026-07-25T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10914/download/davis-center.jpg?cb=5201cb32886adb8674330c968bf984b8"
   },
   {
     "title": "Fishing at the Harlem Meer",
@@ -323,9 +285,7 @@
       "Fishing",
       "Free Events"
     ],
-    "image_url": "https://www.centralpark.com/downloads/2613/download/fishing-in-the-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-07-24T10:00:00",
-    "end_date": "2026-07-24T15:30:00"
+    "image_url": "https://www.centralpark.com/downloads/2613/download/fishing-in-the-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
   },
   {
     "title": "Free Lawn Bowling Clinics in Central Park",
@@ -342,9 +302,7 @@
       "Lawn Bowling",
       "Lawn Sports"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10970/download/lawn-bowling-clinic-central-park-greens.jpg?cb=ade14adb0a14bd77532e1a69a7a08e90",
-    "start_date": "2026-07-22T17:00:00",
-    "end_date": "2026-07-22T19:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10970/download/lawn-bowling-clinic-central-park-greens.jpg?cb=ade14adb0a14bd77532e1a69a7a08e90"
   },
   {
     "title": "Free Shakespeare in the Park 2026",
@@ -363,9 +321,7 @@
       "Spring Activities",
       "Summer Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10968/download/delacorte-theater.png?cb=21a5b517c63d24d091a542b00491245f",
-    "start_date": "2026-07-25T20:00:00",
-    "end_date": "2026-07-25T22:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10968/download/delacorte-theater.png?cb=21a5b517c63d24d091a542b00491245f"
   },
   {
     "title": "Free Weekly Run with Central Park Running Club",
@@ -383,14 +339,13 @@
       "Running Classes",
       "Sports & Recreation"
     ],
-    "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543",
-    "start_date": "2026-07-21T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
   },
   {
-    "title": "Orchestra of St. Luke's | Naumburg Orchestral Concerts",
-    "url": "https://www.centralpark.com/events/orchestra-of-st-lukes-naumburg-orchestral-concerts/",
+    "title": "Nosky's Baroque Band | Naumburg Orchestral Concerts",
+    "url": "https://www.centralpark.com/events/nosky-s-baroque-band-naumburg-orchestral-concerts/",
     "source": "centralpark.com",
-    "description": "The Orchestra of St. Luke's performs a free all-Mozart concert at the Naumburg Bandshell on July 21, featuring mezzo-soprano Erin Wagner and conductor Brad Lubman. The program includes Eine Kleine Nachtmusik and Mozart arias. No tickets needed.",
+    "description": "Aisslinn Nosky leads Nosky's Baroque Band in a free all-Baroque concert at the Naumburg Bandshell on August 4, closing the 2026 season with works by Torelli, Corelli, Telemann, and Bach, featuring trumpet soloist Steve Marquardt. No tickets needed.",
     "location": "Naumburg Bandshell",
     "coordinates": {
       "lat": 40.7727049726675,
@@ -403,9 +358,9 @@
       "Naumburg Orchestral Concerts",
       "Summer Concerts"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10963/download/orchestra-of-st-lukes-naumburg-concerts.jpeg?cb=01b385172e7d080f1b79e00aa3324c8a",
-    "start_date": "2026-07-21T19:30:00",
-    "end_date": "2026-07-21T21:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10966/download/noskys-baroque-band-naumburg-concerts.jpeg?cb=7dcb1936be6f3371278f511d2814ae63",
+    "start_date": "2026-08-04T19:30:00",
+    "end_date": "2026-08-04T21:00:00"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -425,8 +380,7 @@
       "Runs Every Day",
       "Zoo Animals"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
   },
   {
     "title": "Pickleball at Wollman Rink",
@@ -448,9 +402,7 @@
       "Summer Activities",
       "Wollman Rink"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg?cb=d22be6a7cd3935c7aaf13233f26febe4",
-    "start_date": "2026-07-19T08:00:00",
-    "end_date": "2026-07-19T21:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg?cb=d22be6a7cd3935c7aaf13233f26febe4"
   },
   {
     "title": "Sea Lion Feedings at Central Park Zoo",
@@ -470,8 +422,7 @@
       "Sea Lions",
       "Zoo Animals"
     ],
-    "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg?cb=b7fbf5726a87802d056abe969b8ed073",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg?cb=b7fbf5726a87802d056abe969b8ed073"
   },
   {
     "title": "Stories at the Hans Christian Anderson Statue",
@@ -494,9 +445,7 @@
       "Model Sailboats",
       "Summer Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10979/download/storyteller-hans-christian-andersen-statue.jpeg?cb=0ae54700998023ce7917eaa7fd66fe1c",
-    "start_date": "2026-07-25T11:00:00",
-    "end_date": "2026-07-25T12:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10979/download/storyteller-hans-christian-andersen-statue.jpeg?cb=0ae54700998023ce7917eaa7fd66fe1c"
   },
   {
     "title": "Sunrise Wellness Walk",
@@ -522,9 +471,7 @@
       "Yoga",
       "Yoga Classes"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d",
-    "start_date": "2026-07-25T08:00:00",
-    "end_date": "2026-07-25T09:30:00"
+    "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d"
   },
   {
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
@@ -554,8 +501,7 @@
       "Summer Activities",
       "Winter Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
   },
   {
     "title": "Yoga Classes",
@@ -576,7 +522,6 @@
       "Yoga",
       "Yoga Classes"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8886/download/yoga-sunset-pose.jpg?cb=4f2775ee35664485d10c0c4b83408a00",
-    "start_date": "2026-07-19T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/8886/download/yoga-sunset-pose.jpg?cb=4f2775ee35664485d10c0c4b83408a00"
   }
 ]

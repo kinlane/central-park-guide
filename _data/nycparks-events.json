@@ -1,16 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-07-24-meditation-marathon-peace-in-the-park",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/24/meditation-marathon-peace-in-the-park",
-      "title": "Meditation Marathon: Peace in the Park",
-      "start_date": "2026-07-24T12:00:00-04:00",
-      "end_date": "2026-07-24T18:00:00-04:00",
-      "location": "Naumburg Bandshell",
-      "category": "Festivals, Talks, Walking, Yoga & Pilates Classes",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-07-27-gottesman-pool-lap-swim1",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/07/27/gottesman-pool-lap-swim1",
       "title": "Gottesman Pool: Lap Swim",
@@ -471,5 +461,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-07-24T22:00:46Z"
+  "fetched_at": "2026-07-26T21:40:14Z"
 }
