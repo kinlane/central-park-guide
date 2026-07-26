@@ -76,6 +76,10 @@ python3 .claude/skills/scripts/fetch_nycparks_events.py
 python3 .claude/skills/scripts/fetch_summerstage_events.py
 python3 .claude/skills/scripts/fetch_naumburg_concerts.py
 
+# 4b. Refresh the Conservancy + centralpark.com caches.
+python3 .claude/skills/scripts/fetch_conservancy_events.py
+python3 .claude/skills/scripts/fetch_centralpark_com_events.py
+
 # 5. Run the merge — picks up all caches plus the curated YAML files.
 python3 .claude/skills/scripts/merge_nyc_events.py
 
@@ -146,7 +150,11 @@ Fields parsed from each detail page (when present):
 
 - **API endpoint:** `https://www.centralparknyc.org/activities.json`
 - **Pagination:** 16 items per page, paginate with `?page=N` until no more results
-- **Filter:** Only items where `type` contains "Event" (includes "Events", "Benefit Events", "Arts & Entertainment, Events", "Events, Activities")
+- **Filter:** items where `type` contains "Event" **or "Tour"** — "Events", "Benefit Events", "Arts & Entertainment, Events", "Events, Activities", "Tours", "Tours, Nature". `"Guide"`-typed items are excluded (evergreen articles, not events).
+- **Tours were missing until 2026-07-26.** The filter matched only "Event", so the Conservancy's guided walks — Queer Central Park, Activism in Central Park, Iconic Views, Seneca Village, Conservatory Garden, the Ramble woodland walk, Summer Pollinator Walk — never entered the pipeline. They are *not* in a separate booking system as previously assumed: they sit in `activities.json` with full dated `eventInstances`.
+- **The merge never read this cache until 2026-07-26.** `fetch_conservancy_events.py` had been writing `_data/central-park-conservancy-events.json` for months, but `merge_nyc_events.py` had no ingest path for it — verified by zero `cpc-` event ids in `_events/`. Source 3 in the merge now expands the cache.
+- **A record is a program, not an occurrence.** `eventInstances` carries every scheduled date (Iconic Views alone runs 17). The merge writes one event file per instance; the `(event_id, date)` key keeps them distinct off a single `cpc-{id}`. Records with no instances and no `startDate` are evergreen self-guided tour pages and are skipped (~54 of 67).
+- **Tour meet points** live in a `<dt><h3>Starting Location</h3></dt><dd>…</dd>` block, not the `<strong>Label:</strong>` paragraph the event pages use — `derive_detail_page_data()` checks both. Tour length comes from the same shape (`Tour Length`), and `cost` is truncated before the booking call-to-action ("$33 (20% off for members) Learn about or book a private tour here." → "$33 (20% off for members)").
 - **Event ID prefix:** `cpc-` (e.g., `cpc-887607`) to avoid collisions with NYC Open Data IDs
 - **Detail pages:** Each event has a detail URL; fetch it to extract `detail_page_data` including `location_detail`, `date_detail`, `time_detail`, `cost`, and `description_detail`
 
@@ -210,6 +218,8 @@ Each event page/record has:
 
 **The raw data is cached to `_data/centralpark-com-events.json` for reference.**
 
+> **Not yet wired into the merge (as of 2026-07-26).** `fetch_centralpark_com_events.py` writes the cache, but `merge_nyc_events.py` has no ingest path for it, so no `cpcom-` event reaches `_events/`. The blocker is dates: the cached records carry `title`, `url`, `description`, `location`, `coordinates`, `tags`, and `image_url` but **no date field at all** — they're recurring listings ("Saturdays, April through November"), not occurrences. Wiring it up means either expanding a recurrence pattern into dates the way Sources 10/11 do, or having the fetcher parse each detail page's schedule into concrete dates. The placeholder-date convention described above is a leftover from an earlier implementation and is not in force.
+
 ### Source 5: New York Cycle Club rides (nycc.org/upcoming-rides)
 
 NYCC publishes its weekly group-ride calendar at `https://nycc.org/upcoming-rides`. Most rides start outside Central Park (Long Island, Jersey, etc.), but a meaningful share roll out from **Loeb Boathouse**, the **72nd Street Transverse**, or **Engineers' Gate (90th & 5th)** — and they briefly occupy East Drive on the way out. Useful in the cyclist and runner persona emails as a heads-up about peloton activity in the early-morning loop.
@@ -265,6 +275,12 @@ Example rows confirmed from the Feb 2026 snapshot:
 
 Annual third-party charity walks/runs that use Central Park as a venue but are missed by Sources 1–5. The triggering miss was AIDS Walk New York (5/17/2026 — ~30K participants, opening at Naumburg Bandshell, route across East Drive and the Mall) — absent from `tvpp-9vvx` entirely, with no centralpark.com or Conservancy listing either, because the Parks Department permitting for large private venue bookings doesn't flow to NYC Open Data.
 
+This file is also where **NYRR Central Park races** live. NYRR enrichment (Source 2) only *enhances* races already in NYC Open Data, and the permit feed doesn't carry them, so each race has to be seeded here by hand. `nyrr.org` is behind Queue-It and its race calendar is JS-rendered (the Wayback snapshot has no race data), but **`events.nyrr.org/{race-slug}` is not queued** — that's where to verify each race's date, time, distance, and whether it's actually in Central Park. As of 2026-07-26 the file carries the marathon training series 12M/18M, Grete's Great Gallop, the TCS NYC Marathon, Ted Corbitt 15K, and the Midnight Run. Watch for false positives when seeding: the Summer Speed Series is at Icahn Stadium on Randall's Island and the Frosty 5K is in Prospect Park.
+
+NYRR publishes start lines and course maps only close to race day ("check back closer to the race"), so use the **Ted Corbitt Loop** — the officially named 6.02-mile circuit of the park drives, in the places vocabulary under `paths_and_drives` — as `location` unless the race page names a specific drive.
+
+**Duplicate risk:** when a race later shows up in the permit feed you get two events for the same race from different sources (this happened with the NYRR Team Championships 5M on 2026-07-26 — `charity-nyrr-team-championships-…` and Open Data `892304`). The `(event_id, date)` dedupe can't catch it because the ids come from different namespaces. Drop the curated entry once Open Data carries the race reliably.
+
 - **Source file:** `_data/charity-walks.yml` (checked into git, hand-edited)
 - **Event ID prefix:** `charity-` (e.g., `charity-aids-walk-ny-2026-05-17`) to avoid collisions with the other four sources
 - **Structure:** a top-level `walks:` list. Each entry is one annually recurring event, with a `dates:` map keyed by year. An entry expands to one event per year-with-a-non-null-date.
@@ -311,7 +327,12 @@ The official NYC Parks Department per-park events page. Sister feed to the NYC O
 SummerStage is the City Parks Foundation's free outdoor concert series. **At Central Park** the program plays at **Rumsey Playfield** (mid-park, 72nd & 5th) and the **Charles A. Dana Discovery Center** (Harlem Meer) — but the program also runs in every other borough, so we filter aggressively.
 
 - **API endpoint:** `https://cityparksfoundation.org/wp-json/tribe/events/v1/events` (The Events Calendar WordPress plugin's REST API — paginated `?per_page=N&page=K`)
-- **Filter:** `categories=25` (the **SummerStage** taxonomy id; verified May 2026 — re-check if results look off). Then keep only events whose `title` + `description` matches the regex `rumsey|central park|dana discovery|harlem meer` (the venue field is just "Manhattan" so we can't filter on that).
+- **Filter:** `categories=25` (the **SummerStage** taxonomy id; verified May 2026 — re-check if results look off), then **confirm the park on each event's detail page** (rewritten 2026-07-26, see below).
+- **Why the venue needs a second request:** the API's `venue` object is only the borough (`"Manhattan"`), and most concert descriptions never name the park. The original keyword filter (`rumsey|central park|dana discovery|harlem meer` over title + description) therefore kept 7 of 33 upcoming Manhattan shows and silently dropped Blues Traveler, Chance the Rapper, Danny Elfman, Of Monsters and Men and the rest of the season. Blanket-keeping Manhattan is equally wrong — SummerStage's Manhattan dates include Marcus Garvey Park (Charlie Parker Jazz Festival), Tompkins Square Park, and the CPJF ancillary series at East Village / New School venues.
+- **Detail-page venue:** each event page renders the park and street address as two consecutive Elementor text widgets — `Central Park` then `Rumsey Playfield, New York, NY, 10021` (or `E. 71st Street, New York, NY`). `parse_venue()` walks the `elementor-widget-container` blocks, prefers a venue-looking block that is *followed by* a street address (blocks with no address behind them are usually ad copy that happens to contain "Park"), and the `CP_PATTERNS` regex then decides Central Park membership from that text.
+- **Cloudflare:** the detail pages 403 a bare request but pass with a browser `User-Agent` + `Accept` / `Accept-Language` headers. The `wp-json` API itself only needs a `User-Agent`.
+- **Failure behavior:** a detail fetch that errors, or a page whose venue can't be parsed, falls back to the old title/description keyword match; `venue_source` on each cached record records which path ran (`detail` / `keyword-fallback`). Every fallback event is **printed at the end of the run with its keep/drop verdict** so a drop is never silent — check that list by hand if a Central Park show looks missing.
+- **Past events** are skipped at fetch time (the merge purges them anyway).
 - **Scraper:** [`.claude/skills/scripts/fetch_summerstage_events.py`](scripts/fetch_summerstage_events.py)
 - **Cache file:** `_data/summerstage-events.json`
 - **Event ID prefix:** `summerstage-`

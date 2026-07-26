@@ -31,6 +31,25 @@ gates:
     location: Fifth Avenue & 110th Street, northeastern corner
     description: Adjacent to Duke Ellington Circle at the northeastern corner.
 
+  - name: Women's Gate
+    type: gate
+    alternate_names:
+      - West 72nd Street and Central Park West
+      - 72nd Street and Central Park West
+      - West 72nd Street Entrance
+    location: West 72nd Street & Central Park West
+    description: One of the eighteen gates named by the Park's commissioners in 1862, with the names chiseled into the stone in the 1990s. The Central Park West entrance opposite the Dakota, and the meeting point for Conservancy tours that start on the West Side.
+
+  - name: Mariners' Gate
+    type: gate
+    alternate_names:
+      - Mariner's Gate
+      - West 85th St. and Central Park West
+      - West 85th Street and Central Park West
+      - 85th Street and Central Park West
+    location: West 85th Street & Central Park West
+    description: One of the eighteen gates named in 1862, for the sailors and shipping trades of the port city. The Conservancy's Seneca Village Tour meets here.
+
   - name: Naturalists' Gate
     type: gate
     alternate_names:
@@ -499,6 +518,16 @@ paths_and_drives:
     type: walkway/sculpture area
     location: Adjacent to the Central Park Mall
     description: Section of the Mall containing busts of authors and poets.
+
+  - name: Ted Corbitt Loop
+    type: scenic drive circuit
+    alternate_names:
+      - Central Park Loop
+      - Park Drive Loop
+      - Full Loop
+      - 6-Mile Loop
+    location: Full 6.02-mile circuit of the park drives (East Drive, West Drive, and the north end over Harlem Hill)
+    description: The complete loop of the Central Park drives, officially named the Ted Corbitt Loop by NYC Parks in 2021 for Ted Corbitt — the first African American Olympic marathoner and founding president of New York Road Runners. Six landmark signs mark the 6.02-mile route, with a routed sign at the base of Harlem Hill. This is the circuit nearly every NYRR Central Park race and the park's running and cycling traffic use.
 
   - name: West Drive
     type: scenic drive

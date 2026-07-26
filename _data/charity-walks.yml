@@ -157,6 +157,217 @@ walks:
       - affects-loop
       - annual-tradition
 
+  # ── NYRR Central Park races ────────────────────────────────────────────
+  # NYRR races reach this file because the NYRR enrichment step only *enhances*
+  # races already present in NYC Open Data, and the permit feed doesn't carry
+  # them. nyrr.org itself sits behind Queue-It, so each entry below was verified
+  # on the (unqueued) events.nyrr.org detail page linked in `source_url`.
+  # Verified 2026-07-26. NYRR publishes start lines and course maps close to
+  # race day ("check back closer to the race"), so `location` uses the Ted
+  # Corbitt Loop — the officially named full circuit of the park drives — unless
+  # a specific drive is confirmed on the race page.
+
+  - id: nyrr-marathon-training-12m
+    title: "TCS New York City Marathon Training Series 12M"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/tcs-new-york-city-marathon-training-series-12m"
+    recurrence: "Mid-August, ~11 weeks before marathon weekend"
+    dates:
+      "2026": "2026-08-15"
+    start_time: "07:00"
+    end_time: "10:30"
+    location: "East Drive, 102nd Street Cross Drive"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      First of the marathon training-series runs — two loops of the park drives
+      at marathon pace, starting 7 AM. Race-Day Central is behind the backstop
+      of Ballfield #8 near East Drive and 102nd Street, so the north end carries
+      staging from around 5:30 AM. Expect the full loop to be busy with runners
+      until mid-morning; the loop is not closed to the public, but it will be
+      crowded and slow for cyclists.
+    audience_relevance:
+      - runners
+      - cyclists
+      - park-watcher
+    description: >
+      New York Road Runners' 12-mile marathon training run in Central Park, the
+      first of the two-race TCS New York City Marathon Training Series.
+    tags:
+      - race
+      - running
+      - marathon
+      - affects-loop
+      - annual-tradition
+
+  - id: nyrr-gretes-great-gallop-10k
+    title: "NYRR Grete's Great Gallop 10K"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/nyrr-grete-s-great-gallop-10k"
+    recurrence: "Late August (members-only race)"
+    dates:
+      "2026": "2026-08-22"
+    start_time: "07:30"
+    end_time: "10:00"
+    location: "Ted Corbitt Loop"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      NYRR members-only 10K on the course where Grete Waitz won her five New
+      York Mini 10K titles. Start line and course map are published closer to
+      race day; plan on the park drives carrying race traffic roughly
+      7–10 AM on Saturday morning.
+    audience_relevance:
+      - runners
+      - cyclists
+      - park-watcher
+    description: >
+      An NYRR members-only 10K celebrating the legacy of Grete Waitz, nine-time
+      New York City Marathon champion, run on her old Mini 10K course through
+      Central Park.
+    tags:
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+
+  - id: nyrr-marathon-training-18m
+    title: "TCS New York City Marathon Training Series 18M"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/tcs-new-york-city-marathon-training-series-18m"
+    recurrence: "Late September, ~6 weeks before marathon weekend"
+    dates:
+      "2026": "2026-09-20"
+    start_time: "07:00"
+    end_time: "12:00"
+    location: "Ted Corbitt Loop"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      The longest training run of the series — three loops of the park drives,
+      starting 7 AM on a Sunday and running well into the late morning. The
+      single busiest non-race morning on the loop before marathon day. Start
+      line and course map are published closer to race day.
+    audience_relevance:
+      - runners
+      - cyclists
+      - park-watcher
+    description: >
+      New York Road Runners' 18-mile marathon training run in Central Park, the
+      second and longer leg of the TCS New York City Marathon Training Series.
+    tags:
+      - race
+      - running
+      - marathon
+      - affects-loop
+      - annual-tradition
+
+  - id: tcs-nyc-marathon
+    title: "TCS New York City Marathon"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/tcs-new-york-city-marathon"
+    recurrence: "First Sunday of November"
+    dates:
+      "2026": "2026-11-01"
+    start_time: "08:00"
+    end_time: "17:00"
+    location: "Ted Corbitt Loop"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    expected_attendance: 55000
+    affects_loop: true
+    route_impact: >
+      The marathon starts on Staten Island at 8 AM and runs all five boroughs;
+      its final miles come into Central Park, where the race finishes. The park
+      is given over to the race and its spectators from early morning into the
+      afternoon — treat the drives, the south end, and Central Park West as
+      unusable for running or riding all day. NYRR publishes the closure map and
+      spectator guidance closer to race day.
+    audience_relevance:
+      - runners
+      - cyclists
+      - walkers
+      - sports-fan
+      - park-watcher
+    description: >
+      The TCS New York City Marathon, the world's largest marathon — 26.2 miles
+      across all five boroughs, starting on Staten Island and finishing in
+      Central Park.
+    tags:
+      - race
+      - running
+      - marathon
+      - affects-loop
+      - annual-tradition
+
+  - id: nyrr-ted-corbitt-15k
+    title: "NYRR Ted Corbitt 15K"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/nyrr-ted-corbitt-15k"
+    recurrence: "Early December"
+    dates:
+      "2026": "2026-12-05"
+    start_time: "08:00"
+    end_time: "10:30"
+    location: "Ted Corbitt Loop"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      The 18th annual running of the race honoring Ted Corbitt (1919–2007), the
+      NYRR founding president the park's 6.02-mile loop is named for. Roughly a
+      loop and a half of the drives from 8 AM on a Saturday morning. Start line
+      and course map are published closer to race day.
+    audience_relevance:
+      - runners
+      - cyclists
+      - park-watcher
+    description: >
+      New York Road Runners' 15K in Central Park honoring the life and legacy of
+      Ted Corbitt, the first African American Olympic marathoner and NYRR's
+      founding president.
+    tags:
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+
+  - id: nyrr-midnight-run
+    title: "NYRR Midnight Run"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/nyrr-midnight-run"
+    recurrence: "New Year's Eve, starting at midnight"
+    dates:
+      "2026": "2026-12-31"
+    start_time: "23:59"
+    end_time: "01:30"
+    location: "Ted Corbitt Loop"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      New Year's Eve four-miler that starts as the clock strikes midnight, with
+      a fireworks display over the park to send the field off. A costume party
+      and pre-race dance run in the hours before. The park's south end and the
+      drives carry crowds from late evening through roughly 1:30 AM on New
+      Year's Day.
+    audience_relevance:
+      - runners
+      - walkers
+      - park-watcher
+    description: >
+      New York Road Runners' New Year's Eve four-mile run through Central Park,
+      starting at midnight under fireworks.
+    tags:
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+      - holiday
+
   # Template for future additions. Copy, fill in, and add to the `walks:` list
   # above when verified. Required fields: id, title, organizer, source_url,
   # recurrence, dates (with current year), location (must match a place in

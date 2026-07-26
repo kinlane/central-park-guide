@@ -66,10 +66,22 @@ def fetch_json(url: str) -> dict:
 # Listing
 
 def is_event_type(type_str: str) -> bool:
-    """Conservancy `type` field is comma-separated; match any "Event" token."""
+    """Conservancy `type` field is comma-separated; keep events AND tours.
+
+    Types seen in the feed: "Events", "Benefit Events", "Arts & Entertainment,
+    Events", "Events, Activities", "Tours", "Tours, Nature", "Guide".
+
+    Tours were excluded until 2026-07-26, which is why the Conservancy's
+    guided walks (Queer Central Park, Activism in Central Park, Iconic Views,
+    Seneca Village, Conservatory Garden, the Ramble woodland walk, Summer
+    Pollinator Walk) never reached the site. They are ordinary scheduled
+    programming with dated ``eventInstances`` — they belong on the calendar.
+    "Guide" is still excluded: those are evergreen articles, not events.
+    """
     if not type_str:
         return False
-    return "event" in type_str.lower()
+    lowered = type_str.lower()
+    return "event" in lowered or "tour" in lowered
 
 
 def normalize_listing(item: dict) -> dict:
@@ -292,7 +304,11 @@ def derive_detail_page_data(html: str, schema_obj: dict | None) -> dict[str, str
         detail["time_detail"] = time_val
 
     # location_detail
-    loc_val = first_present(h3, ["location", "where"]) or first_present(
+    # Tour pages label the meet point "Starting Location" in a <dt><h3> block;
+    # event pages use "Location"/"Where". Check both shapes.
+    loc_val = first_present(
+        h3, ["location", "where", "starting location", "meeting location"]
+    ) or first_present(
         strong,
         [
             "location",
@@ -310,10 +326,20 @@ def derive_detail_page_data(html: str, schema_obj: dict | None) -> dict[str, str
         strong, ["cost", "price", "admission", "tickets"]
     )
     if cost_val:
-        detail["cost"] = cost_val
+        # Tour pages run booking copy straight on from the price, e.g.
+        # "$33 (20% off for members) Learn about or book a private tour here ."
+        # Keep the price clause, drop the call to action.
+        cost_val = re.split(
+            r"\s*(?:Learn (?:about|more)|Book |Reserve |Tickets? available|Register)",
+            cost_val,
+            maxsplit=1,
+        )[0]
+        detail["cost"] = cost_val.strip(" .")
 
     # duration
-    dur_val = first_present(h3, ["duration"]) or first_present(strong, ["duration"])
+    dur_val = first_present(h3, ["duration", "tour length"]) or first_present(
+        strong, ["duration", "tour length"]
+    )
     if dur_val:
         detail["duration"] = dur_val
 

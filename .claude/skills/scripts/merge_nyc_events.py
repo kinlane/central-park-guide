@@ -21,6 +21,7 @@ import os
 import re
 from datetime import datetime
 from collections import defaultdict
+from html import unescape
 
 # Resolve paths relative to script location (../../.. is the repo root)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -35,6 +36,7 @@ NYCC_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'nycc-rides.json')
 NYCPARKS_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'nycparks-events.json')
 SUMMERSTAGE_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'summerstage-events.json')
 NAUMBURG_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'naumburg-events.json')
+CONSERVANCY_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'central-park-conservancy-events.json')
 PUBLICTHEATER_SEASONS_PATH = os.path.join(REPO_ROOT, '_data', 'publictheater-seasons.yml')
 BIRDING_WALKS_PATH = os.path.join(REPO_ROOT, '_data', 'birding-walks.yml')
 
@@ -1380,6 +1382,80 @@ if os.path.exists(NAUMBURG_CACHE_PATH):
         elif result == 'unmatched': naumburg_skipped += 1
 
 
+# ── Source 3: Central Park Conservancy (central-park-conservancy-events.json) ──
+# The Conservancy fetcher has written this cache for a long time but nothing
+# ever read it, so no cpc- event ever reached _events/ (verified 2026-07-26:
+# zero files with a cpc- event_id). This block ingests it.
+#
+# A Conservancy record is a *program*, not an occurrence: `event_instances`
+# carries every scheduled date (the Iconic Views tour alone runs 17 of them).
+# We expand one event file per instance; the (event_id, date) merge key keeps
+# them distinct. Records with no instances and no startDate are evergreen
+# self-guided tour pages — skipped, not events.
+conservancy_created = conservancy_updated = conservancy_skipped = 0
+conservancy_undated = 0
+if os.path.exists(CONSERVANCY_CACHE_PATH):
+    with open(CONSERVANCY_CACHE_PATH) as f:
+        cpc_data = json.load(f)
+    for rec in cpc_data.get('events', []):
+        # Date first: an evergreen self-guided tour page with no schedule isn't
+        # a missing-location problem, it just isn't an event.
+        instances = rec.get('event_instances') or []
+        stamps = [i.get('instanceDate') for i in instances if i.get('instanceDate')]
+        if not stamps and rec.get('start_date'):
+            stamps = [rec['start_date']]
+        if not stamps:
+            conservancy_undated += 1
+            continue
+
+        detail = rec.get('detail_page_data') or {}
+        location = (detail.get('location_detail') or '').strip()
+        if not location:
+            conservancy_skipped += 1
+            unmatched_locs.add(f'(conservancy, no location) {rec.get("title", "")}')
+            continue
+
+        is_tour = 'tour' in (rec.get('type') or '').lower()
+        img = rec.get('image') or {}
+        image = (img.get('schema_image') or img.get('og_image')
+                 or img.get('thumbnail') or '')
+        description = (detail.get('description_detail')
+                       or re.sub(r'<[^>]+>', ' ', rec.get('summary') or ''))
+        description = unescape(re.sub(r'\s+', ' ', description)).strip()
+
+        tag_slugs = {'conservancy'}
+        tag_slugs.add('tour' if is_tour else 'family-community')
+        for t in (rec.get('tags') or []):
+            if isinstance(t, str) and t.strip():
+                tag_slugs.add(slugify(t))
+        cost = (detail.get('cost') or '')
+        if 'free' in cost.lower():
+            tag_slugs.add('free')
+
+        for stamp in stamps:
+            # "2026-07-30T10:00:00-04:00" -> date + local start time
+            date_str = stamp[:10]
+            time_str = stamp[11:16] if len(stamp) >= 16 else '10:00'
+            result, _ = _write_event_md(
+                eid=f'cpc-{rec.get("id")}',
+                name=rec.get('title') or '',
+                date_str=date_str,
+                time_str=time_str,
+                end_time_str='',
+                location=location,
+                description=description[:500],
+                event_type='Conservancy Tour' if is_tour else 'Conservancy Event',
+                source='centralparknyc.org',
+                source_url=rec.get('url'),
+                image=image,
+                tag_slugs=tag_slugs,
+                extra_fm=[('cost', cost)] if cost else None,
+            )
+            if result == 'created': conservancy_created += 1
+            elif result == 'updated': conservancy_updated += 1
+            elif result == 'unmatched': conservancy_skipped += 1
+
+
 # ── Source 10: Public Theater seasons (publictheater-seasons.yml) ─────
 # Expand each season into one event per performance date, skipping dark days.
 publictheater_created = publictheater_updated = publictheater_skipped = 0
@@ -1614,6 +1690,13 @@ if os.path.exists(NAUMBURG_CACHE_PATH):
     print(f"  Created: {naumburg_created}, Updated: {naumburg_updated}, Skipped: {naumburg_skipped}")
 else:
     print(f"  Cache missing — run fetch_naumburg_concerts.py before merging.")
+
+print(f"\nCentral Park Conservancy (central-park-conservancy-events.json):")
+if os.path.exists(CONSERVANCY_CACHE_PATH):
+    print(f"  Created: {conservancy_created}, Updated: {conservancy_updated}, Skipped: {conservancy_skipped}")
+    print(f"  Skipped (no scheduled dates — evergreen self-guided tour pages): {conservancy_undated}")
+else:
+    print(f"  Cache missing — run fetch_conservancy_events.py before merging.")
 
 print(f"\nPublic Theater (publictheater-seasons.yml):")
 if publictheater_seasons_loaded == 0:
