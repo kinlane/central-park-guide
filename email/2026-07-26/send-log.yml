@@ -1,0 +1,120 @@
+- timestamp: '2026-07-26T22:26:39.356237+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Jul 27 \u2013 Aug 2 \u2014 nothing on the\
+    \ drives all week, so run the weather"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:40.376548+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Walking Plans: Jul 27 \u2013 Aug 2 \u2014 three Conservancy\
+    \ tours return to the calendar"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:41.570537+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Jul 27 \u2013 Aug 2 \u2014 clear drives\
+    \ all week, wet Tue/Wed, dry weekend"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:42.490090+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Jul 27 \u2013 Aug 2 \u2014 two wet days in\
+    \ the Ramble, and the Seneca Village walk returns"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:43.502343+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Jul 27 \u2013 Aug 2 \u2014 nothing on the\
+    \ drives all week, so run the weather"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:44.402389+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Walking Plans: Jul 27 \u2013 Aug 2 \u2014 three Conservancy\
+    \ tours return to the calendar"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:45.439757+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Jul 27 \u2013 Aug 2 \u2014 clear drives\
+    \ all week, wet Tue/Wed, dry weekend"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:46.373430+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "National Dance Institute turns 50 at the Bandshell: Jul 27 \u2013 Aug\
+    \ 2"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:47.274360+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: music-fan
+  subject: "Central Park Music & Performance: Jul 27 \u2013 Aug 2 \u2014 four SummerStage\
+    \ nights at Rumsey, all free"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:48.191898+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: family
+  subject: "Central Park Family Plans: Jul 27 \u2013 Aug 2 \u2014 a movie on the Great\
+    \ Lawn Monday, chess and model yachts Saturday"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:49.089720+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: sports-fan
+  subject: "Central Park Sports This Week: Jul 27 \u2013 Aug 2 \u2014 the annual softball\
+    \ event takes Heckscher Wednesday"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:49.995497+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: wellness-seeker
+  subject: "Central Park Wellness Week: Jul 27 \u2013 Aug 2 \u2014 two cool wet days,\
+    \ and the north end stays quiet"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:50.906840+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Jul 27 \u2013 Aug 2 \u2014 two wet days in\
+    \ the Ramble, and the Seneca Village walk returns"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:51.837543+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: park-watcher
+  subject: "Central Park Watcher's Digest: Jul 27 \u2013 Aug 2 \u2014 the Conservancy\
+    \ tours reappear, and a week with nothing on the drives"
+  week_of: '2026-07-26'
+  status: sent
+- timestamp: '2026-07-26T22:26:52.807106+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  persona: park-watcher
+  subject: "Central Park Watcher's Digest: Jul 27 \u2013 Aug 2 \u2014 the Conservancy\
+    \ tours reappear, and a week with nothing on the drives"
+  week_of: '2026-07-26'
+  status: sent
