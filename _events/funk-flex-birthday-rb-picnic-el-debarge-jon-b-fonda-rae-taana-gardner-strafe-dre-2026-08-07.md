@@ -1,5 +1,5 @@
 ---
-title: "Funk Flex Birthday R&B Picnic: El DeBarge / Jon B / Fonda Rae / Taana Gardner / Strafe / Dres From Blacksheep / DJ M U / Music by Funk Flex"
+title: "Funk Flex Birthday R&B Picnic: Jon B / Fonda Rae / Taana Gardner / Strafe / Dres From Blacksheep / DJ M U / Music by Funk Flex"
 date: 2026-08-07
 time: "19:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ Funk Flex has been spinning hip-hop and R&B across NYC’s airwaves for the bett
 
 ## Event Details
 
-- **Event:** Funk Flex Birthday R&B Picnic: El DeBarge / Jon B / Fonda Rae / Taana Gardner / Strafe / Dres From Blacksheep / DJ M U / Music by Funk Flex
+- **Event:** Funk Flex Birthday R&B Picnic: Jon B / Fonda Rae / Taana Gardner / Strafe / Dres From Blacksheep / DJ M U / Music by Funk Flex
 - **Date:** Friday, August 7, 2026
 - **Time:** 19:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park

@@ -1,5 +1,5 @@
 ---
-title: "Central Park Woodland Walk: The Ramble"
+title: "Central Park Woodland Walk: the Ramble"
 date: 2026-08-14
 time: "11:00"
 location: "Belvedere Castle"

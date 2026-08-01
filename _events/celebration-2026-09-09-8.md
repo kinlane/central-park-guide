@@ -3,11 +3,17 @@ title: "Celebration"
 date: 2026-09-09
 time: "10:00"
 end_time: "12:00"
-location: "Wagner Cove"
+location: "Wagner Cove, Cherry Hill"
 place: "Wagner Cove"
 place_category: "event_venues"
+places:
+  - "Wagner Cove"
+  - "Cherry Hill"
+place_categories:
+  - "event_venues"
+  - "natural_areas"
 image: "/assets/images/tags/celebration.png"
-description: "Celebration at Wagner Cove in Central Park."
+description: "Celebration at Wagner Cove, Cherry Hill in Central Park."
 event_id: "959552"
 event_type: "Special Event"
 event_borough: "Manhattan"
@@ -19,18 +25,18 @@ tags:
   - "Private Events"
 ---
 
-Celebration takes place at Wagner Cove in Central Park on Wednesday, September 9, 2026.
+Celebration takes place at Wagner Cove, Cherry Hill in Central Park on Wednesday, September 9, 2026.
 
 ## Event Details
 
 - **Event:** Celebration
 - **Date:** Wednesday, September 9, 2026
 - **Time:** 10:00 AM - 12:00 PM
-- **Location:** Wagner Cove, Central Park
+- **Location:** Wagner Cove, Cherry Hill, Central Park
 - **Place:** Wagner Cove
 - **Type:** Special Event
 - **Event ID:** 959552
 
 ## About This Event
 
-Celebration is a permitted event taking place at Wagner Cove in Central Park. Contact the event organizers for more details about attendance and participation.
+Celebration is a permitted event taking place at Wagner Cove, Cherry Hill in Central Park. Contact the event organizers for more details about attendance and participation.

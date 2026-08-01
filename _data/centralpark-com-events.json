@@ -18,23 +18,6 @@
     "image_url": "https://www.centralpark.com/downloads/10948/download/little-reds-hood-cityparksfoundation.png?cb=857133857379d3f7e6f97f38deb350a3"
   },
   {
-    "title": "\"Wild Inside\" World Premiere at Central Park's Great Hill",
-    "url": "https://www.centralpark.com/events/wild-inside-world-premiere/",
-    "source": "centralpark.com",
-    "description": "Free outdoor screening of Wild Inside, the world premiere documentary about Flaco the owl, at Central Park's Great Hill on July 29. Lawn opens at 7:30 PM, film starts at 8:30 PM. Presented by Sandbox Films and Rooftop Films.",
-    "location": "Great Hill",
-    "coordinates": {
-      "lat": 40.7969510408488,
-      "lng": -73.9589240404755
-    },
-    "tags": [
-      "Free Events"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/6479/download/7-picnic-great-hill.jpg.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
-    "start_date": "2026-07-29T20:30:00",
-    "end_date": "2026-07-29T22:00:00"
-  },
-  {
     "title": "Bird Watching with Birding Bob",
     "url": "https://www.centralpark.com/events/bird-watching-with-birding-bob/",
     "source": "centralpark.com",
@@ -288,23 +271,6 @@
     "image_url": "https://www.centralpark.com/downloads/2613/download/fishing-in-the-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
   },
   {
-    "title": "Free Lawn Bowling Clinics in Central Park",
-    "url": "https://www.centralpark.com/events/free-lawn-bowling-clinics-in-central-park/",
-    "source": "centralpark.com",
-    "description": "Join the New York Lawn Bowling Club for free weekly clinics on the Central Park greens every Tuesday, Wednesday, and Thursday from 5:00 to 7:00 PM, May through July. No experience needed.",
-    "location": "Bowling & Croquet Greens",
-    "coordinates": {
-      "lat": 40.7735463994522,
-      "lng": -73.9742790228416
-    },
-    "tags": [
-      "Free Events",
-      "Lawn Bowling",
-      "Lawn Sports"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10970/download/lawn-bowling-clinic-central-park-greens.jpg?cb=ade14adb0a14bd77532e1a69a7a08e90"
-  },
-  {
     "title": "Free Shakespeare in the Park 2026",
     "url": "https://www.centralpark.com/events/free-shakespeare-in-the-park/",
     "source": "centralpark.com",
@@ -345,7 +311,7 @@
     "title": "Nosky's Baroque Band | Naumburg Orchestral Concerts",
     "url": "https://www.centralpark.com/events/nosky-s-baroque-band-naumburg-orchestral-concerts/",
     "source": "centralpark.com",
-    "description": "Aisslinn Nosky leads Nosky's Baroque Band in a free all-Baroque concert at the Naumburg Bandshell on August 4, closing the 2026 season with works by Torelli, Corelli, Telemann, and Bach, featuring trumpet soloist Steve Marquardt. No tickets needed.",
+    "description": "Aisslinn Nosky leads Nosky's Baroque Band in a free all-Baroque concert at the Naumburg Bandshell on August 4, closing the 2026 season with works by Torelli, Corelli, Telemann, and Bach, featuring trumpet soloist Steve Marquardt.",
     "location": "Naumburg Bandshell",
     "coordinates": {
       "lat": 40.7727049726675,
@@ -501,7 +467,7 @@
       "Summer Activities",
       "Winter Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/3441/download/gno-houston-scavenger-hunt.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
+    "image_url": "https://www.centralpark.com/downloads/3441/download/central-park-scavenger-hunt.jpe?cb=7066e140bd94dce4d2f0dc3e50e72849"
   },
   {
     "title": "Yoga Classes",

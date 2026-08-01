@@ -7,7 +7,7 @@ location: "Rumsey Playfield"
 place: "Rumsey Playfield"
 place_category: "event_venues"
 image: "https://cityparksfoundation.org/wp-content/uploads/2026/04/trueno_webphoto.webp"
-description: "Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none has shined brighter than Trueno, the son of Uruguayan rapper Peligro and a veteran of the scene’s"
+description: "Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. Memberships bought the day of a show do not guarantee entry — RSVP confirmation required. A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none h"
 event_id: "summerstage-19783"
 event_type: "SummerStage Concert"
 event_borough: "Manhattan"
@@ -21,7 +21,7 @@ tags:
   - "Summerstage"
 ---
 
-Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none has shined brighter than Trueno, the son of Uruguayan rapper Peligro and a veteran of the scene’s
+Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line privileges, complimentary beverages, and air-conditioned restrooms. Memberships bought the day of a show do not guarantee entry — RSVP confirmation required. A trio of rising Latin hip-hop stars head to Central Park for this show, presented in association with the Latin Alternative Music Conference. Of the various figures in the red hot Argentinian rap scene, none h
 
 ## Event Details
 
