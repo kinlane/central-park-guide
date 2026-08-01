@@ -1,0 +1,120 @@
+- timestamp: '2026-08-01T02:19:01.211263+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Jul 31 \u2013 Aug 6 \u2014 a half marathon\
+    \ on East Drive Saturday, crit racing Sunday dawn"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:02.132254+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: walker
+  subject: "Central Park Walking Plans: Jul 31 \u2013 Aug 6 \u2014 Bethesda Terrace\
+    \ closes for the month, and Saturday is the full-calendar day"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:02.906913+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Jul 31 \u2013 Aug 6 \u2014 CRCA has East\
+    \ Drive Sunday at 4 AM, a half marathon has it Saturday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:03.589134+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Jul 31 \u2013 Aug 6 \u2014 a wet Monday in\
+    \ the Ramble, and the Seneca Village walk Saturday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:04.387810+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: runner
+  subject: "Central Park Running Heads-Up: Jul 31 \u2013 Aug 6 \u2014 a half marathon\
+    \ on East Drive Saturday, crit racing Sunday dawn"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:05.082659+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: walker
+  subject: "Central Park Walking Plans: Jul 31 \u2013 Aug 6 \u2014 Bethesda Terrace\
+    \ closes for the month, and Saturday is the full-calendar day"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:05.768022+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: cyclist
+  subject: "Central Park Cycling Heads-Up: Jul 31 \u2013 Aug 6 \u2014 CRCA has East\
+    \ Drive Sunday at 4 AM, a half marathon has it Saturday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:06.457383+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: theater-fan
+  subject: "Tango at the Shakespeare statue, and Andrew Bird stages Eggs at 20: Jul\
+    \ 31 \u2013 Aug 6"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:07.305144+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: music-fan
+  subject: "Central Park Music & Performance: Jul 31 \u2013 Aug 6 \u2014 Naumburg's\
+    \ baroque night, and Andrew Bird brings an orchestra to Rumsey"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:07.980457+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: family
+  subject: "Central Park Family Plans: Jul 31 \u2013 Aug 6 \u2014 model yachts and\
+    \ storytelling Saturday, the Harlem Meer all day Sunday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:08.700776+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: sports-fan
+  subject: "Central Park Sports This Week: Jul 31 \u2013 Aug 6 \u2014 a half marathon\
+    \ Saturday, crit racing Sunday, and 70 softball slots Thursday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:09.363888+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: wellness-seeker
+  subject: "Central Park Wellness Week: Jul 31 \u2013 Aug 6 \u2014 pilates at Graywacke\
+    \ Arch Saturday, and a wide-open Wednesday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:10.028845+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: nature-lover
+  subject: "Central Park Nature Notes: Jul 31 \u2013 Aug 6 \u2014 a wet Monday in\
+    \ the Ramble, and the Seneca Village walk Saturday"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:10.771950+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  persona: park-watcher
+  subject: "Central Park Watcher's Digest: Jul 31 \u2013 Aug 6 \u2014 Bethesda Terrace\
+    \ goes offline for the month, and both weekend mornings are permitted to races"
+  week_of: '2026-07-31'
+  status: sent
+- timestamp: '2026-08-01T02:19:11.477502+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  persona: park-watcher
+  subject: "Central Park Watcher's Digest: Jul 31 \u2013 Aug 6 \u2014 Bethesda Terrace\
+    \ goes offline for the month, and both weekend mornings are permitted to races"
+  week_of: '2026-07-31'
+  status: sent
