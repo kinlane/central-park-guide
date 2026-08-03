@@ -498,12 +498,50 @@ def detects_loop_impact(name):
     return any(re.search(p, text, re.IGNORECASE) for p in LOOP_IMPACT_NAME_PATTERNS)
 
 
-def get_tags(name, event_type, category=None):
+# Canonical place names that ARE the runner/cyclist loop. A permit whose primary
+# matched place is one of these is occupying road, whatever the permit feed calls
+# the event — so it gets `affects-loop` regardless of title or tags.
+#
+# This exists because LOOP_IMPACT_NAME_PATTERNS is a name allow-list and can only
+# catch events we already know by name. The CRCA Central Park Racing Series held
+# East Drive 4:00–8:30 AM on four August 2026 dates tagged nothing but
+# "Family & Community" — it was caught by hand, not by the pipeline, which is the
+# exact failure the affects-loop rule exists to prevent. Location is the durable
+# signal: you cannot hold East Drive without affecting the loop.
+#
+# Deliberately excludes the transverses and cross drives (66th/79th/86th/97th,
+# Terrace Drive, 102nd Street Cross Drive) — those carry staging permits that
+# don't close the loop itself, and including them over-tags.
+LOOP_PLACE_NAMES = {
+    'East Drive',
+    'West Drive',
+    'Center Drive',
+    'Ted Corbitt Loop',
+}
+
+
+def occupies_loop(places):
+    """Return True if the event's primary matched place is a park drive.
+
+    `places` is the match_places() result — a list of {'name', 'category'} dicts
+    in source order. Only the primary (first) match counts: a drive appearing as
+    a secondary landmark usually means the description mentioned it in passing,
+    not that the permit took the road.
+    """
+    if not places:
+        return False
+    return places[0].get('name') in LOOP_PLACE_NAMES
+
+
+def get_tags(name, event_type, category=None, places=None):
     """Return a sorted list of Title Case tag values.
 
     `category` is an internal slug (still used for category-based tag emission
     and for the closure/maintenance/education roll-up rules); it is not written
     to the event file as a separate field — it's folded into tags.
+
+    `places` is the match_places() result, used to force `affects-loop` on
+    permits sited on a park drive. See LOOP_PLACE_NAMES.
     """
     text = (name + ' ' + (event_type or '')).lower()
     slugs = set()
@@ -512,6 +550,10 @@ def get_tags(name, event_type, category=None):
             slugs.add(tag)
     # Known loop-occupying events the permit feed under-tags (Corporate Challenge etc.)
     if detects_loop_impact(name):
+        slugs.add('affects-loop')
+        slugs.add('race')
+    # Sited on a park drive — the permit takes road no matter what it's called.
+    if occupies_loop(places):
         slugs.add('affects-loop')
         slugs.add('race')
     # Sport-type roll-up
@@ -735,7 +777,7 @@ for event in latest:
                 existing_names.add(p['name'])
 
     category = categorize(name, event_type)
-    tags = get_tags(name, event_type, category)
+    tags = get_tags(name, event_type, category, all_places)
     image = get_image(category, location, tags)
     description = make_description(name, event_type, location)
     date_str = start.strftime('%Y-%m-%d')
@@ -1158,8 +1200,12 @@ def _write_event_md(eid, name, date_str, time_str, end_time_str, location,
     cat = categorize(name, event_type)
     if tag_slugs is None:
         tag_slugs = set()
-        for t in get_tags(name, event_type, cat):
+        for t in get_tags(name, event_type, cat, all_places):
             tag_slugs.add(slugify(t))
+    elif occupies_loop(all_places):
+        # Caller supplied its own tags, but the permit is sited on a drive —
+        # affects-loop is not the caller's to opt out of.
+        tag_slugs = set(tag_slugs) | {'affects-loop', 'race'}
     tag_list = sorted({
         TAG_DISPLAY.get(s, s.replace('-', ' ').title())
         for s in tag_slugs

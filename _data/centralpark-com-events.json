@@ -308,6 +308,24 @@
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
   },
   {
+    "title": "Gladiators NYC",
+    "url": "https://www.centralpark.com/events/gladiators-nyc/",
+    "source": "centralpark.com",
+    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
+    "location": "Lawn Behind Met Museum",
+    "coordinates": {
+      "lat": 40.7784296398896,
+      "lng": -73.9655968372519
+    },
+    "tags": [
+      "Annual Events",
+      "Featured Events",
+      "Free Events",
+      "Metropolitan Museum Of Art"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb"
+  },
+  {
     "title": "Nosky's Baroque Band | Naumburg Orchestral Concerts",
     "url": "https://www.centralpark.com/events/nosky-s-baroque-band-naumburg-orchestral-concerts/",
     "source": "centralpark.com",

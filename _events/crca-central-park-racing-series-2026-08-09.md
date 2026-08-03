@@ -6,15 +6,18 @@ end_time: "08:30"
 location: "East Drive"
 place: "East Drive"
 place_category: "paths_and_drives"
-image: "/assets/images/categories/family-community.png"
+image: "/assets/images/tags/race.png"
 description: "Crca Central Park Racing Series at East Drive in Central Park."
 event_id: "899328"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
+affects_loop: true
 tags:
+  - "Affects Loop"
   - "Family & Community"
+  - "Race"
 ---
 
 Crca Central Park Racing Series takes place at East Drive in Central Park on Sunday, August 9, 2026.

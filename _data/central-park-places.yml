@@ -123,6 +123,14 @@ plazas:
     location: Southeastern corner, junction of Fifth Avenue & 59th Street
     description: Square plaza. Contains the Pulitzer Fountain (1916) and the William Tecumseh Sherman statue (1903).
 
+  - name: Doris C. Freedman Plaza
+    type: plaza
+    location: Southeast entrance to the park, East 60th Street & Fifth Avenue
+    description: Plaza just inside the Scholars' Gate entrance, adjoining Grand Army Plaza. Named for the founder of the Public Art Fund, whose rotating commissions are installed here. The Conservancy's Iconic Views and Who Built Central Park tours meet at this plaza.
+    alternate_names:
+      - Doris Freedman Plaza
+      - Doris C Freedman Plaza
+
   - name: Duke Ellington Circle
     type: plaza/circle
     location: Northeastern corner, junction of Fifth Avenue & Central Park North/110th Street

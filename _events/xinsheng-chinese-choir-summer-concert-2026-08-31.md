@@ -1,8 +1,8 @@
 ---
 title: "Xinsheng Chinese Choir Summer Concert"
 date: 2026-08-31
-time: "16:00"
-end_time: "18:00"
+time: "18:00"
+end_time: "19:30"
 location: "Bandshell Plaza"
 place: "Bandshell Plaza"
 place_category: "event_venues"
@@ -25,7 +25,7 @@ Xinsheng Chinese Choir Summer Concert takes place at Bandshell Plaza in Central 
 
 - **Event:** Xinsheng Chinese Choir Summer Concert
 - **Date:** Monday, August 31, 2026
-- **Time:** 4:00 PM - 6:00 PM
+- **Time:** 6:00 PM - 7:30 PM
 - **Location:** Bandshell Plaza, Central Park
 - **Place:** Bandshell Plaza
 - **Type:** Special Event
