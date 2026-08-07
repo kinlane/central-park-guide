@@ -9,10 +9,17 @@ of their personas asked for it, grouped by day.
 The output is a structured brief — NOT the finished email. A human (or Claude)
 writes the prose from it, following draft-persona-email.md's editorial rules.
 
+Window rule: pass --send-date and the window starts the DAY AFTER and runs 7
+days in calendar order. The send day is never covered — the reader opens the
+email that evening and acts from tomorrow on. Both cadences come from that one
+rule: a Friday send covers Sat, Sun, then Mon-Fri; a Sunday send covers Mon-Fri,
+then Sat and Sun. Day sections in the finished email stay in calendar order —
+never promote a day because its events ranked higher.
+
 Usage:
-  python3 build_digest.py --personas runner,cyclist --start 2026-08-07 [--days 7]
-  python3 build_digest.py --subscriber kinlane@gmail.com --start 2026-08-07
-  python3 build_digest.py --all-subscribers --start 2026-08-07 --stats-only
+  python3 build_digest.py --personas runner,cyclist --send-date 2026-08-07
+  python3 build_digest.py --subscriber kinlane@gmail.com --send-date 2026-08-07
+  python3 build_digest.py --all-subscribers --start 2026-08-08 --stats-only
 
 Persona filters come from _data/personas.yml `email_filter:` blocks, which encode
 the include-lists in .claude/skills/draft-persona-email.md.
@@ -261,7 +268,9 @@ def render_email_brief(r):
              f"+ {len(c['junk'])} junk-title suppressed")
     L.append("")
 
-    L.append("## LEAD WITH THESE")
+    L.append("## LEAD WITH THESE (for the opening paragraph and recap ONLY)")
+    L.append("## Day sections in the email stay in CALENDAR order — never reorder")
+    L.append("## a day up because its events scored higher.")
     for ev in c['headline']:
         star = " **AFFECTS LOOP**" if ev['_affects_loop'] else ""
         L.append(f"- {ev['_date']:%a %b %-d} {fmt_time(ev)} — {ev.get('title')}{star}")
@@ -412,14 +421,26 @@ def main():
     ap.add_argument('--personas')
     ap.add_argument('--subscriber')
     ap.add_argument('--all-subscribers', action='store_true')
-    ap.add_argument('--start', required=True)
+    ap.add_argument('--start', help='first day covered (explicit window)')
+    ap.add_argument('--send-date', help='date the email drops; window starts the '
+                    'NEXT day and runs 7 days, in calendar order. The send day '
+                    'is never covered — the reader opens it that evening and '
+                    'acts from tomorrow on. Both cadences fall out of this one '
+                    'rule: a Friday send covers Sat, Sun, then the business '
+                    'week; a Sunday send covers the business week, then Sat '
+                    'and Sun.')
     ap.add_argument('--days', type=int, default=7)
     ap.add_argument('--json', action='store_true')
     ap.add_argument('--email-brief', action='store_true')
     ap.add_argument('--stats-only', action='store_true')
     a = ap.parse_args()
 
-    start = datetime.date.fromisoformat(a.start)
+    if a.send_date:
+        start = datetime.date.fromisoformat(a.send_date) + datetime.timedelta(days=1)
+    elif a.start:
+        start = datetime.date.fromisoformat(a.start)
+    else:
+        sys.exit("Need --start or --send-date")
 
     if a.all_subscribers:
         for sub in subscribers_from_s3():

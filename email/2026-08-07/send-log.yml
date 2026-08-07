@@ -30,3 +30,16 @@
     \ goes car-free Saturday, and it's 90\xB0 all week"
   week_of: '2026-08-07'
   status: sent
+- timestamp: '2026-08-07T22:28:42.686144+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Aug 8\u201314: 110th goes car-free Saturday, bike racers\
+    \ own East Drive at dawn Sunday, and 90\xB0 all week"
+  week_of: '2026-08-07'
+  status: sent
