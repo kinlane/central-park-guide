@@ -1,0 +1,19 @@
+- timestamp: '2026-08-07T21:52:06.258634+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Aug 7\u201313: Summer Streets hits 110th, Funk Flex tonight,\
+    \ and a week that never drops below 86\xB0"
+  week_of: '2026-08-07'
+  status: sent

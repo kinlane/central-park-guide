@@ -7,81 +7,140 @@ personas:
     blurb: "Race calendars, route closures, and the long-loop traffic windows."
     icon: /assets/images/personas/runner.png
     tags: [Running, Race, Marathon, "Runs & Races"]
+    email_filter:
+      audience: "runners"
+      hard_include_affects_loop: true
+      include_tags: [Running, Race, Marathon, "Runs & Races", "Affects Loop", Walk, Closures, Maintenance]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration, "Concerts & Performances", Theater, Picnic, Market, Tennis, Softball, T-Ball, Baseball, Kickball, Soccer, "Family & Community", Education, "School Program"]
 
   - id: walker
     title: "Walker"
     blurb: "Charity walks, history-walks, and quiet routes when the cyclists thin out."
     icon: /assets/images/personas/walker.png
     tags: [Walk, Hike]
+    email_filter:
+      audience: "walkers"
+      hard_include_affects_loop: true
+      include_tags: [Walk, Hike, Tour, "Daily Tours", "Affects Loop", Nature, Garden, "Annual Tradition", Free, "Concerts & Performances", Festival, Closures]
 
   - id: cyclist
     title: "Cyclist"
     blurb: "Bike-loop closures, group rides, and the days the park goes car-free."
     icon: /assets/images/personas/cyclist.png
     tags: [Cycling]
+    email_filter:
+      audience: "cyclists"
+      hard_include_affects_loop: true
+      include_tags: [Cycling, "Affects Loop", NYCC, "Group Ride", Race, Closures]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration, Picnic, Market, "School Program"]
 
   - id: theater-fan
     title: "Theater Fan"
     blurb: "Shakespeare in the Park, marionette shows, and outdoor performances."
     icon: /assets/images/personas/theater-fan.png
     tags: [Theater, Shakespeare, Puppet, Comedy]
+    email_filter:
+      audience: "theater fans"
+      include_tags: [Theater, Shakespeare, Puppet, Performance, Comedy, Film]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: music-fan
     title: "Music Fan"
     blurb: "Concerts, jazz nights, salsa socials, and SummerStage lineups."
     icon: /assets/images/personas/music-fan.png
     tags: [Music, Jazz, Salsa, Folk, "Hip-Hop", Gospel, Blues, "World Music", "Latin Music", Opera, "Concerts & Performances"]
+    email_filter:
+      audience: "music fans"
+      include_tags: [Music, "Concerts & Performances", Jazz, Salsa, Folk, "Latin Music", Gospel, Blues, Hip-Hop, "World Music", Opera, Free]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: family
     title: "Family"
     blurb: "Kid-friendly events, school programs, picnics, and birthday-friendly lawns."
     icon: /assets/images/personas/family.png
     tags: [Family, "Family & Community", Birthday, "School Program", Picnic]
+    email_filter:
+      audience: "families"
+      include_tags: [Family, "Family & Community", "Kids and Families", Free, Festival, "School Program", Picnic, "Annual Tradition"]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Memorial, Rally]
 
   - id: sports-fan
     title: "Sports Fan"
     blurb: "League games, pickup spots, and which fields are reserved when."
     icon: /assets/images/personas/sports-fan.png
     tags: [Sports, Softball, Baseball, "T-Ball", Tennis, Soccer, Kickball, Pickleball, Basketball, Volleyball]
+    email_filter:
+      audience: "sports fans"
+      hard_include_affects_loop: true
+      include_tags: ["Affects Loop", Sports, Softball, Baseball, T-Ball, Soccer, Tennis, Kickball, Pickleball, Basketball, Volleyball, Race, Cycling, Skating]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: wellness-seeker
     title: "Wellness Seeker"
     blurb: "Yoga in the meadow, meditation circles, and free fitness classes."
     icon: /assets/images/personas/wellness-seeker.png
     tags: [Yoga, Meditation, Wellness, Fitness, "Support Group"]
+    email_filter:
+      audience: "wellness seekers"
+      include_tags: [Wellness, Yoga, Meditation, Fitness, "Support Group", Nature, Birds]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: nature-lover
     title: "Nature Lover"
     blurb: "Bird walks, garden tours, fishing days, and quiet ramble routes."
     icon: /assets/images/personas/nature-lover.png
     tags: [Birds, Nature, Garden, Fishing, Boating, Dogs]
+    email_filter:
+      audience: "nature lovers"
+      include_tags: [Birds, Nature, Garden, Boating, Fishing, Conservancy, Dogs]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: park-watcher
     title: "Park Watcher"
     blurb: "Closures and maintenance — alerts so you can route around the chaos."
     icon: /assets/images/personas/park-watcher.png
     tags: [Closures, Maintenance]
+    email_filter:
+      audience: "park watchers"
+      hard_include_affects_loop: true
+      include_tags: ["Affects Loop", Closures, Maintenance, "Annual Tradition", Charity, Race, Festival, Parade, Rally, Commemoration]
 
   - id: history-buff
     title: "History Buff"
     blurb: "Seneca Village walks, Arsenal Gallery exhibits, Open House NY, and the park's deep-time programming."
     icon: /assets/images/personas/history-buff.png
     tags: [History, "Annual Tradition", Art, Talk, Commemoration, Juneteenth, Cultural]
+    email_filter:
+      audience: "history buffs"
+      include_tags: [History, "Annual Tradition", Art, Talk, Commemoration, Juneteenth, Cultural]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: photographer
     title: "Photographer"
     blurb: "Arsenal Gallery shows, bloom and foliage windows, and golden-hour timing at Bow Bridge, Bethesda, and Gapstow."
     icon: /assets/images/personas/photographer.png
     tags: [Art, "Annual Tradition", History]
+    email_filter:
+      audience: "photographers"
+      include_tags: [Art, "Annual Tradition", History, Festival, Parade, Nature, Garden]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: first-timer
     title: "First-Time Visitor"
     blurb: "If you only have one day — the marquee free events and must-see landmarks worth planning a visit around."
     icon: /assets/images/personas/first-timer.png
     tags: [Free, "Annual Tradition", "Concerts & Performances", Theater, Shakespeare, Summerstage, Naumburg]
+    email_filter:
+      audience: "first-time visitors"
+      include_tags: [Free, "Annual Tradition", "Concerts & Performances", Theater, Shakespeare, Summerstage, Naumburg, Festival]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
 
   - id: picnicker
     title: "Picnicker"
     blurb: "Where the picnic permits land, which lawns are open, and what's playing within blanket-range."
     icon: /assets/images/personas/picnicker.png
     tags: [Picnic, Market, Free]
+    email_filter:
+      audience: "picnickers"
+      include_tags: [Picnic, Market, Free, Food, Festival]
+      exclude_tags: ["Private Events", "Private Booking", Wedding, Ceremony, Reception, Birthday, Celebration]
