@@ -7,7 +7,7 @@ personas: [runner, walker, cyclist, theater-fan, music-fan, family, sports-fan, 
 subject: "Central Park, Aug 7–13: Summer Streets hits 110th, Funk Flex tonight, and a week that never drops below 86°"
 ---
 
-One email this week instead of ten — everything below is drawn from all the interests you picked, sorted by day rather than by topic. Tonight is a free SummerStage show, Saturday morning the park's northern edge goes car-free, and Sunday before dawn the bike racers have East Drive. The rest of the week is heat.
+Tonight is a free SummerStage show, Saturday morning the park's northern edge goes car-free, and Sunday before dawn the bike racers have East Drive. The rest of the week is heat.
 
 ## Weather this week
 

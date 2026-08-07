@@ -299,6 +299,14 @@ TAG_RULES = [
     (r'\b(yacht\s*racing|model\s*yacht)\b', 'model-yachting'),
     (r'\b(skating|skate\s*circle|cpdsa|roller)\b', 'skating'),
     (r'\bbowling\b(?!.*\bgreen\b)', 'bowling'),
+    # Open streets — NYC DOT hands a perimeter street to people on foot and on
+    # bikes for the morning. Not a loop closure (the drives are already
+    # car-free), so it must NOT get 'affects-loop' and its "loop is unusable"
+    # framing — it's an opportunity, tagged for the people who'd want it.
+    (r'\bsummer\s*streets\b', 'walk'),
+    (r'\bsummer\s*streets\b', 'cycling'),
+    (r'\bsummer\s*streets\b', 'free'),
+    (r'\b(open\s*streets|car[\s-]*free)\b', 'walk'),
     # Walking / running / racing
     (r'\bwalk\b', 'walk'),
     (r'\bhike\b', 'hike'),

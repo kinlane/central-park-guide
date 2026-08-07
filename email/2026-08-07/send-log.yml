@@ -17,3 +17,16 @@
     \ and a week that never drops below 86\xB0"
   week_of: '2026-08-07'
   status: sent
+- timestamp: '2026-08-07T22:19:51.306702+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Aug 7\u201313: bike racers own East Drive Sunday dawn, 110th\
+    \ goes car-free Saturday, and it's 90\xB0 all week"
+  week_of: '2026-08-07'
+  status: sent
