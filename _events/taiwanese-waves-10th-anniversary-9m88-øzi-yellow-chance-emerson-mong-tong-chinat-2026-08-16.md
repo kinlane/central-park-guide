@@ -7,7 +7,7 @@ location: "Rumsey Playfield"
 place: "Rumsey Playfield"
 place_category: "event_venues"
 image: "https://cityparksfoundation.org/wp-content/uploads/2026/04/taiwanese_waves_webphoto.webp"
-description: "Taiwanese Waves is celebrating its 10th anniversary by showcasing a diverse lineup of artists from across the musical spectrum. This year’s program includes a trio of R&B and hip-hop acts: 9m88 (pronounced “Jo-m-Baba”), a jazzy singer-songwriter with strong R&B, neo-soul, and hip-hop influences; ØZI, a singer-songwriter and rapper known for blending urban American styles with Mandopop; and YELLOW 黃宣, the fashion-forward avant pop artist with a flair for the dramatic. You’re likely to hear some o"
+description: "Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line, complimentary drinks, and air-conditioned restrooms. Taiwanese Waves is celebrating its 10th anniversary by showcasing a diverse lineup of artists from across the musical spectrum. This year’s program includes a trio of R&B and hip-hop acts: 9m88 (pronounced “Jo-m-Baba”), a jazzy singer-songwriter with strong R&B, neo-soul, and hip-hop influences; ØZI, a singer-songwri"
 event_id: "summerstage-19789"
 event_type: "SummerStage Concert"
 event_borough: "Manhattan"
@@ -21,7 +21,7 @@ tags:
   - "Summerstage"
 ---
 
-Taiwanese Waves is celebrating its 10th anniversary by showcasing a diverse lineup of artists from across the musical spectrum. This year’s program includes a trio of R&B and hip-hop acts: 9m88 (pronounced “Jo-m-Baba”), a jazzy singer-songwriter with strong R&B, neo-soul, and hip-hop influences; ØZI, a singer-songwriter and rapper known for blending urban American styles with Mandopop; and YELLOW 黃宣, the fashion-forward avant pop artist with a flair for the dramatic. You’re likely to hear some o
+Want to see the show from the best seats in the house? Try becoming a SummerStage Member for a Day ! Enjoy skip-the-line, complimentary drinks, and air-conditioned restrooms. Taiwanese Waves is celebrating its 10th anniversary by showcasing a diverse lineup of artists from across the musical spectrum. This year’s program includes a trio of R&B and hip-hop acts: 9m88 (pronounced “Jo-m-Baba”), a jazzy singer-songwriter with strong R&B, neo-soul, and hip-hop influences; ØZI, a singer-songwri
 
 ## Event Details
 

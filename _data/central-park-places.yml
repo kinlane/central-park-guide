@@ -1443,6 +1443,13 @@ event_venues:
     location: Western border, Central Park West between 59th and 110th Streets
     description: Sidewalks along the western perimeter of the park.
 
+  - name: Central Park North
+    type: perimeter street
+    alternate_names:
+      - 110th-Frederick Douglass-Adam Clayton Powell
+    location: Northern border, 110th Street between Frederick Douglass Circle and Duke Ellington Circle
+    description: The park's northern boundary street, running along 110th Street from Frederick Douglass Circle at the northwest corner to Duke Ellington Circle at the northeast. Carries the northern perimeter sidewalk and the Warriors' Gate and Farmers' Gate entrances. Closed to cars for the Central Park leg of NYC DOT's Summer Streets.
+
   - name: Dairy Lawn
     type: lawn
     alternate_names:

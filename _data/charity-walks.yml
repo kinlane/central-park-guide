@@ -303,6 +303,72 @@ walks:
       - affects-loop
       - annual-tradition
 
+  - id: nyrr-abbott-dash-to-the-finish-line-5k
+    title: "Abbott Dash to the Finish Line 5K"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/abbott-dash-to-the-finish-line-5k"
+    recurrence: "Marathon eve — the Saturday before the TCS New York City Marathon"
+    dates:
+      "2026": "2026-10-31"
+    start_time: "08:45"
+    end_time: "11:00"
+    location: "Ted Corbitt Loop"
+    event_type: "Race"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      The race starts in Midtown and runs east-to-west across 42nd Street before
+      entering the park and finishing at the TCS New York City Marathon finish
+      line near Tavern on the Green. Expect the West Drive and the park's south
+      end to carry race traffic and marathon-weekend build-out through late
+      morning. NYRR publishes the start line closer to race day.
+    audience_relevance:
+      - runners
+      - cyclists
+      - walkers
+      - park-watcher
+    description: >
+      A 5K through the streets of Midtown Manhattan that finishes at the TCS New
+      York City Marathon finish line in Central Park, run the day before the
+      marathon itself.
+    tags:
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+
+  - id: nyrr-race-to-deliver
+    title: "Race to Deliver 4M to Benefit God's Love We Deliver"
+    organizer: "New York Road Runners"
+    source_url: "https://events.nyrr.org/race-to-deliver-4m-to-benefit-god-s-love-we-deliver"
+    recurrence: "Third or fourth Sunday of November"
+    dates:
+      "2026": "2026-11-22"
+    start_time: "08:00"
+    end_time: "10:00"
+    location: "Ted Corbitt Loop"
+    event_type: "Charity Run"
+    event_borough: "Manhattan"
+    affects_loop: true
+    route_impact: >
+      A four-mile race on the park drives on a Sunday morning; plan on race
+      traffic on the loop roughly 8–10 AM. NYRR publishes the start line and
+      course map closer to race day.
+    audience_relevance:
+      - runners
+      - cyclists
+      - park-watcher
+    description: >
+      The 33rd running of the Race to Deliver, a four-mile Central Park race
+      benefiting God's Love We Deliver, which cooks and delivers meals to New
+      Yorkers living with severe and chronic illness.
+    tags:
+      - charity
+      - race
+      - running
+      - affects-loop
+      - annual-tradition
+
   - id: nyrr-ted-corbitt-15k
     title: "NYRR Ted Corbitt 15K"
     organizer: "New York Road Runners"
