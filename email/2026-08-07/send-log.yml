@@ -43,3 +43,48 @@
     \ own East Drive at dawn Sunday, and 90\xB0 all week"
   week_of: '2026-08-07'
   status: sent
+- timestamp: '2026-08-07T22:35:30.973222+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Aug 8\u201314: a packed Saturday, Latin jazz at the Meer\
+    \ Sunday, and a quiet 90\xB0 week after that"
+  week_of: '2026-08-07'
+  status: sent
+- timestamp: '2026-08-07T22:35:31.823937+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Aug 8\u201314: a heavy turf-maintenance\
+    \ week, and SummerStage holds Rumsey six days out of seven"
+  week_of: '2026-08-07'
+  status: sent
+- timestamp: '2026-08-07T22:36:25.058261+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Aug 8\u201314: 110th goes car-free Saturday, Latin jazz\
+    \ at the Meer Sunday, and 90\xB0 all week"
+  week_of: '2026-08-07'
+  status: sent

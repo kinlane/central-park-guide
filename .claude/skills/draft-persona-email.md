@@ -1,14 +1,65 @@
-# Draft a Persona-Specific Weekly Email
+# Draft the Weekly Central Park Guide Email
 
-Drop a weekly edition for one of the ten Central Park personas, covering the seven days from the send date. Emails are hand-drafted (no generator script). This skill is the spec: file layout, subject-line rules, voice, weather inclusion, persona-interest alignment, and — most importantly — the event-filtering rules that determine what goes in and what stays out.
+**As of 2026-08-07 the Friday-evening and Sunday-evening drops are ONE COMBINED
+EMAIL PER SUBSCRIBER, not one email per persona.** A subscriber who picked seven
+personas used to get seven separate messages in one evening. They now get a
+single edition assembled from the union of everything their personas want.
+Approved by Kin after a live test with two subscribers on 2026-08-07.
+
+The per-persona rules below (interests, tag include-lists, hard-includes,
+soft-excludes, voice, weather) all still apply — they are what decides whether an
+event belongs to a persona. What changed is that the matched sets are merged into
+one message instead of being mailed separately.
+
+## The window rule
+
+**The window starts the DAY AFTER the send and runs 7 days, in calendar order.**
+The send day is never covered: the reader opens the email that evening and acts
+from tomorrow onward. Both cadences fall out of that single rule:
+
+| Send | Covers |
+|---|---|
+| Friday evening | Sat, Sun, then Mon–Fri |
+| Sunday evening | Mon–Fri, then Sat, Sun |
+
+`build_digest.py --send-date <the send date>` derives it. Do not hand-pass a
+window; do not include the send day.
+
+**Day sections stay in calendar order.** The brief's "LEAD WITH THESE" block
+ranks events for the opening paragraph and the recap only — never reorder a day
+section upward because its events scored higher. (This shipped wrong once: a
+Friday edition ran Sat, Sun, then Fri.)
+
+## Build the digest first
+
+```bash
+python3 .claude/skills/scripts/build_digest.py --subscriber <email> \
+  --send-date YYYY-MM-DD --email-brief
+```
+
+The brief tells you what leads, what's day-by-day, what collapses into "steady
+all week," and what got suppressed. **A naive union is not an email** — ten
+personas produced 73 rows for one week but only 35 distinct titles, the rest
+being the same recurring permit reprinted daily. The builder handles the
+collapse; you write the prose from what survives.
+
+Check the brief's warning blocks before drafting: `!! BLOCKED` means an event
+sits in another park entirely and must never be described, and personas listed as
+contributing nothing are a signal their filter is wrong.
 
 ## When to invoke
 
-- User asks for a "weekly email" for a specific persona, or asks to drop the full batch (one email per persona).
-- Two cadences are in use:
-  - **Friday-evening edition** — `week_of` = today (Friday); body covers Friday → next Thursday inclusive.
-  - **Sunday-evening edition** — `week_of` = today (Sunday); body covers **Monday → next Sunday** (a "look-ahead" week excluding the send day). The send day's events are intentionally omitted because the reader is opening on Sunday night and acting from Monday onward.
-- One email per persona per drop. They live in different folders by persona; don't conflate them.
+- User asks for the weekly drop, or names a subscriber to send to.
+- One email per **subscriber** per drop, written from their persona set.
+- File: `_emails/{YYYY-MM-DD}/combined-{persona-set}.md`, sent with
+  `send_combined.py {week} --to <email> --file <name>`. That sender takes one
+  named, verified recipient — there is deliberately no broadcast mode.
+
+## Legacy: per-persona editions
+
+The old one-email-per-persona layout (`_emails/{week}/{persona}.md`, sent by
+`send_updates.py`) is retained for reference and for any future single-interest
+send. It is not the default cadence any more.
 
 ## Read the persona's interests YAML first
 
