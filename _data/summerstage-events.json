@@ -1,28 +1,6 @@
 {
   "events": [
     {
-      "id": "summerstage-19786",
-      "title": "Funk Flex Birthday R&B Picnic: Jon B / Kurtis Blow / Fonda Rae / Taana Gardner / Strafe / Dres From Blacksheep / DJ M U / Music by Funk Flex",
-      "start_date": "2026-08-07 19:00:00",
-      "end_date": "2026-08-07 22:00:00",
-      "url": "https://cityparksfoundation.org/events/funk-flex-birthday-rb-picnic/",
-      "description": "Want to see the show from the best seats in the house? Try becoming a  SummerStage Member for a Day ! Enjoy skip-the-line, complimentary drinks, and air-conditioned restrooms. \n \u00a0 \n Funk Flex has been spinning hip-hop and R&B across NYC\u2019s airwaves for the better part of four decades, becoming a hip-hop institution. His R&B picnic in Central Park celebrates his birthday and this year he is bringing some R&B heavy-hitters for a not-to-be-missed throwback show. They include Jon B, a platinum-selling R&B artist discovered by Babyface whose first three LPs climbed the  Billboard  200 album chart and whose collaboration with 2Pac, \u201dAre U Still Down,\u201d was among the late rapper\u2019s final recordings; Fonda Rae, an American R&B singer best known for her club hits like \u201cOver Like a Fat Rat\u201d and \u201cTouch Me\u201d; Taana Gardner, who saw early success in disco with West End Records in the late \u201870s-early \u201880s, and whose 1981 single \u201cHeartbeat\u201d was famously remixed by Larry Levan into a staple at the Paradise Garage; Strafe, aka Brooklyn native and producer Steve Standard, who is best known for the 1984 single \u201cSet It Off,\u201d which has been extensively sampled in hip-hop, house, and techno circles; and Dres, best known as one half of the duo Black Sheep, the Native Tongues group whose debut LP  A Wolf in Sheep\u2019s Clothing  remains a foundation of New York City\u2019s early \u201890s boom-bap era. Joining Flex on the ones and twos spinning records between sets is his fellow Hot97 DJ M U.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/ffjb.webp",
-      "cost": "Free",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "Rumsey Playfield, New York, NY, 10021",
-      "venue_source": "detail",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:33:51Z"
-    },
-    {
       "id": "summerstage-18227",
       "title": "Blues Traveler / Gin Blossoms / Spin Doctors",
       "start_date": "2026-08-15 18:00:00",
@@ -42,7 +20,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:33:53Z"
+      "fetched_at": "2026-08-10T00:25:26Z"
     },
     {
       "id": "summerstage-19789",
@@ -64,7 +42,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:33:53Z"
+      "fetched_at": "2026-08-10T00:25:27Z"
     },
     {
       "id": "summerstage-20251",
@@ -86,7 +64,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:33:54Z"
+      "fetched_at": "2026-08-10T00:25:27Z"
     },
     {
       "id": "summerstage-18563",
@@ -108,7 +86,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:33:54Z"
+      "fetched_at": "2026-08-10T00:25:28Z"
     },
     {
       "id": "summerstage-21440",
@@ -130,7 +108,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:00Z"
+      "fetched_at": "2026-08-10T00:25:31Z"
     },
     {
       "id": "summerstage-19792",
@@ -152,7 +130,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:01Z"
+      "fetched_at": "2026-08-10T00:25:31Z"
     },
     {
       "id": "summerstage-19189",
@@ -174,7 +152,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:03Z"
+      "fetched_at": "2026-08-10T00:25:33Z"
     },
     {
       "id": "summerstage-19796",
@@ -196,7 +174,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:08Z"
+      "fetched_at": "2026-08-10T00:25:48Z"
     },
     {
       "id": "summerstage-18980",
@@ -218,7 +196,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:09Z"
+      "fetched_at": "2026-08-10T00:25:48Z"
     },
     {
       "id": "summerstage-21046",
@@ -240,7 +218,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:09Z"
+      "fetched_at": "2026-08-10T00:25:50Z"
     },
     {
       "id": "summerstage-20939",
@@ -262,7 +240,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:10Z"
+      "fetched_at": "2026-08-10T00:25:50Z"
     },
     {
       "id": "summerstage-19761",
@@ -284,7 +262,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:13Z"
+      "fetched_at": "2026-08-10T00:25:52Z"
     },
     {
       "id": "summerstage-19369",
@@ -306,7 +284,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:14Z"
+      "fetched_at": "2026-08-10T00:25:52Z"
     },
     {
       "id": "summerstage-20943",
@@ -328,7 +306,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:15Z"
+      "fetched_at": "2026-08-10T00:25:53Z"
     },
     {
       "id": "summerstage-18861",
@@ -350,7 +328,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:16Z"
+      "fetched_at": "2026-08-10T00:25:53Z"
     },
     {
       "id": "summerstage-18362",
@@ -372,8 +350,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-07T21:34:17Z"
+      "fetched_at": "2026-08-10T00:25:54Z"
     }
   ],
-  "fetched_at": "2026-08-07T21:34:17Z"
+  "fetched_at": "2026-08-10T00:25:54Z"
 }
