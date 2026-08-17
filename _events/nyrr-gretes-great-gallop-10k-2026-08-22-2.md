@@ -12,6 +12,8 @@ places:
 place_categories:
   - "event_venues"
   - "paths_and_drives"
+boroughs:
+  - "Manhattan"
 image: "/assets/images/tags/race.png"
 description: "NYRR Grete's Great Gallop 10K at 72nd Street Cross Drive, West Drive in Central Park."
 event_id: "892315"
@@ -22,6 +24,9 @@ police_precinct: "22"
 tags:
   - "Race"
   - "Runs & Races"
+nyrr:
+  distance: "10 Kilometers"
+  source_url: "https://events.nyrr.org/nyrr-grete-s-great-gallop-10k"
 ---
 
 NYRR Grete's Great Gallop 10K takes place at 72nd Street Cross Drive, West Drive in Central Park on Saturday, August 22, 2026.

@@ -209,16 +209,24 @@ walks:
     dates:
       "2026": "2026-08-22"
     start_time: "07:30"
-    end_time: "10:00"
-    location: "Ted Corbitt Loop"
+    # Permit 892315 runs to 12:00, not 10:00 — the extra two hours are the
+    # post-race Member Week festival at Bandshell Plaza, confirmed against the
+    # NYRR race page. Do not shorten this back to the race window.
+    end_time: "12:00"
+    # The permit names five locations: 72nd Street Cross Drive, West Drive,
+    # East Drive, Bandshell Plaza, Center Loop. Ted Corbitt Loop is the
+    # standing stand-in for "the drives" per the skill's rule; Bandshell Plaza
+    # is the festival site.
+    location: "Ted Corbitt Loop, Bandshell Plaza"
     event_type: "Race"
     event_borough: "Manhattan"
     affects_loop: true
     route_impact: >
       NYRR members-only 10K on the course where Grete Waitz won her five New
-      York Mini 10K titles. Start line and course map are published closer to
-      race day; plan on the park drives carrying race traffic roughly
-      7–10 AM on Saturday morning.
+      York Mini 10K titles. The permit covers West Drive, East Drive and the
+      Center Loop from 7:30 AM, with Bandshell Plaza held for the post-race
+      festival until noon — so the loop is compromised for runners and cyclists
+      well past the finish, roughly 7:30 AM to 12 PM, not just the race window.
     audience_relevance:
       - runners
       - cyclists
@@ -226,12 +234,16 @@ walks:
     description: >
       An NYRR members-only 10K celebrating the legacy of Grete Waitz, nine-time
       New York City Marathon champion, run on her old Mini 10K course through
-      Central Park.
+      Central Park. Closes NYRR Member Week (August 17–22) with a post-race
+      festival. Registration is sold out and the member standby list is full —
+      this is a spectating event unless you already hold a bib. A free Rising
+      New York Road Runners race for kids ages 2 to 11 runs alongside it.
     tags:
       - race
       - running
       - affects-loop
       - annual-tradition
+      - sold-out
 
   - id: nyrr-marathon-training-18m
     title: "TCS New York City Marathon Training Series 18M"
