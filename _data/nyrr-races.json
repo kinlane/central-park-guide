@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-26T21:40:07+00:00",
+  "fetched_at": "2026-08-17T01:10:17+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -108,6 +108,19 @@
         "https://www.nyrr.org/races/2026nyrrbrooklynrun5k",
         "https://www.nyrr.org/races/2026/nyrrbrooklynrun5k",
         "https://www.nyrr.org/races/nyrrbrooklynrun5k"
+      ],
+      "year": 2026
+    },
+    "2026nyrrgretesgreatgallop10k": {
+      "candidate_title": "NYRR Grete's Great Gallop 10K",
+      "fetched_at": "2026-08-17T01:10:15+00:00",
+      "last_error": "wayback_err_HTTPError",
+      "parsed": false,
+      "slug": "nyrrgretesgreatgallop10k",
+      "urls_tried": [
+        "https://www.nyrr.org/races/2026nyrrgretesgreatgallop10k",
+        "https://www.nyrr.org/races/2026/nyrrgretesgreatgallop10k",
+        "https://www.nyrr.org/races/nyrrgretesgreatgallop10k"
       ],
       "year": 2026
     },

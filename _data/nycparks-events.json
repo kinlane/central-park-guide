@@ -1,116 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-08-10-gottesman-pool-lap-swim1",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/10/gottesman-pool-lap-swim1",
-      "title": "Gottesman Pool: Lap Swim",
-      "start_date": "2026-08-10T07:00:00-04:00",
-      "end_date": "2026-08-10T08:30:00-04:00",
-      "location": "Gottesman Pool at the Davis Center",
-      "category": "Fitness, Swimming/Aquatics",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-10-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/10/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-08-10T09:00:00-04:00",
-      "end_date": "2026-08-10T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-11-gottesman-pool-lap-swim1",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/11/gottesman-pool-lap-swim1",
-      "title": "Gottesman Pool: Lap Swim",
-      "start_date": "2026-08-11T07:00:00-04:00",
-      "end_date": "2026-08-11T08:30:00-04:00",
-      "location": "Gottesman Pool at the Davis Center",
-      "category": "Fitness, Swimming/Aquatics",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-11-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/11/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-08-11T09:00:00-04:00",
-      "end_date": "2026-08-11T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-12-gottesman-pool-lap-swim1",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/12/gottesman-pool-lap-swim1",
-      "title": "Gottesman Pool: Lap Swim",
-      "start_date": "2026-08-12T07:00:00-04:00",
-      "end_date": "2026-08-12T08:30:00-04:00",
-      "location": "Gottesman Pool at the Davis Center",
-      "category": "Fitness, Swimming/Aquatics",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-12-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/12/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-08-12T09:00:00-04:00",
-      "end_date": "2026-08-12T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-13-gottesman-pool-lap-swim1",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/13/gottesman-pool-lap-swim1",
-      "title": "Gottesman Pool: Lap Swim",
-      "start_date": "2026-08-13T07:00:00-04:00",
-      "end_date": "2026-08-13T08:30:00-04:00",
-      "location": "Gottesman Pool at the Davis Center",
-      "category": "Fitness, Swimming/Aquatics",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-13-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/13/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-08-13T09:00:00-04:00",
-      "end_date": "2026-08-13T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-14-gottesman-pool-lap-swim1",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/14/gottesman-pool-lap-swim1",
-      "title": "Gottesman Pool: Lap Swim",
-      "start_date": "2026-08-14T07:00:00-04:00",
-      "end_date": "2026-08-14T08:30:00-04:00",
-      "location": "Gottesman Pool at the Davis Center",
-      "category": "Fitness, Swimming/Aquatics",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-14-40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/14/40-in-focus-summerstage-through-the-lens-of-photographer-jack-vartoogian",
-      "title": "40 in Focus: SummerStage through the Lens of Photographer Jack Vartoogian",
-      "start_date": "2026-08-14T09:00:00-04:00",
-      "end_date": "2026-08-14T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Art, History",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-08-14-family-camping-manhattan",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/14/family-camping-manhattan",
-      "title": "Family Camping: Manhattan",
-      "start_date": "2026-08-14T19:00:00-04:00",
-      "end_date": "2026-08-15T08:00:00-04:00",
-      "location": "Entrance - West 106th Street and Central Park West",
-      "category": "Urban Park Rangers, Family Camping with the Urban Park Rangers",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-08-17-gottesman-pool-lap-swim1",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/08/17/gottesman-pool-lap-swim1",
       "title": "Gottesman Pool: Lap Swim",
@@ -271,5 +161,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-08-10T00:25:24Z"
+  "fetched_at": "2026-08-17T01:10:22Z"
 }

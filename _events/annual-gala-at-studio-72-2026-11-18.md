@@ -1,7 +1,7 @@
 ---
 title: "Annual Gala at Studio 72"
 date: 2026-11-18
-time: "00:00"
+time: "19:00"
 location: "Rumsey Playfield Join us for the Central Park Conservancy's 2026 Annual Gala at Studio 72. Inspired by the glamour and energy of New York’s most iconic disco era, Studio 72 will be a dazzling evening of drinks, dinner, and dancing in Central Park. Event Co-Chairs : Abigail & Joseph Baratta, Eliza & Michael Fisch, Gillian & Sylvester Miniter, Elaine & Donald Textor Presented by Purchase Tickets & Tables For more information, please contact the Special Events department at 212.446.2242 or [email protected] ."
 place: "Rumsey Playfield"
 place_category: "event_venues"
@@ -23,6 +23,6 @@ Join us for the Central Park Conservancy's 2026 Annual Gala at Studio 72. Inspir
 
 - **Event:** Annual Gala at Studio 72
 - **Date:** Wednesday, November 18, 2026
-- **Time:** 00:00
+- **Time:** 19:00
 - **Location:** Rumsey Playfield Join us for the Central Park Conservancy's 2026 Annual Gala at Studio 72. Inspired by the glamour and energy of New York’s most iconic disco era, Studio 72 will be a dazzling evening of drinks, dinner, and dancing in Central Park. Event Co-Chairs : Abigail & Joseph Baratta, Eliza & Michael Fisch, Gillian & Sylvester Miniter, Elaine & Donald Textor Presented by Purchase Tickets & Tables For more information, please contact the Special Events department at 212.446.2242 or [email protected] ., Central Park
 - **Official site:** https://www.centralparknyc.org/activities/events/central-park-conservancy-annual-gala

@@ -1,28 +1,6 @@
 {
   "events": [
     {
-      "id": "summerstage-18227",
-      "title": "Blues Traveler / Gin Blossoms / Spin Doctors",
-      "start_date": "2026-08-15 18:00:00",
-      "end_date": "2026-08-15 22:00:00",
-      "url": "https://cityparksfoundation.org/events/blues-traveler-gin-blossoms/",
-      "description": "SummerStage Member  Presale:  Thursday, January 22 at 10AM  \n  Capital One Cardholder  Presale:  Thursday, January 22 at 10AM  \n General on-sale:  Friday, January 23 at 10AM  \n  This \u201890s throwback night features   Blues Traveler  , a Jersey band known for songs like \u201cHook,\u201d \u201cBut Anyway\u201d, and \u201cRun-Around\u201d. Their folksy rock sound earned them GRAMMY nominations and a platinum album six times over. They\u2019re co-headlining the show with   Gin Blossoms  , the hitmakers behind \u201cHey Jealousy\u201d and \u201cTil I Hear It From You\u201d that landed them spots on the    Billboard    Top 100 as well as countless movie soundtracks.   Spin Doctors  , of \u201cTwo Princes\u201d fame, will open the evening, making the night a super-stacked lineup for the ages.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/01/Static_Social-FacebookPR_1200x630_BluesTraveler_2026_Regional_CentralPark_0815-1.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:26Z"
-    },
-    {
       "id": "summerstage-19789",
       "title": "Taiwanese Waves 10th Anniversary: 9m88 + \u00d8ZI + YELLOW / Chance Emerson / Mong Tong / Chinatown Records",
       "start_date": "2026-08-16 18:00:00",
@@ -42,7 +20,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:27Z"
+      "fetched_at": "2026-08-17T01:10:27Z"
     },
     {
       "id": "summerstage-20251",
@@ -64,7 +42,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:27Z"
+      "fetched_at": "2026-08-17T01:10:28Z"
     },
     {
       "id": "summerstage-18563",
@@ -86,7 +64,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:28Z"
+      "fetched_at": "2026-08-17T01:10:28Z"
     },
     {
       "id": "summerstage-21440",
@@ -108,7 +86,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:31Z"
+      "fetched_at": "2026-08-17T01:10:31Z"
     },
     {
       "id": "summerstage-19792",
@@ -130,7 +108,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:31Z"
+      "fetched_at": "2026-08-17T01:10:31Z"
     },
     {
       "id": "summerstage-19189",
@@ -152,7 +130,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:33Z"
+      "fetched_at": "2026-08-17T01:10:36Z"
     },
     {
       "id": "summerstage-19796",
@@ -174,7 +152,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:48Z"
+      "fetched_at": "2026-08-17T01:10:42Z"
     },
     {
       "id": "summerstage-18980",
@@ -196,7 +174,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:48Z"
+      "fetched_at": "2026-08-17T01:10:43Z"
     },
     {
       "id": "summerstage-21046",
@@ -218,7 +196,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:50Z"
+      "fetched_at": "2026-08-17T01:10:43Z"
     },
     {
       "id": "summerstage-20939",
@@ -240,7 +218,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:50Z"
+      "fetched_at": "2026-08-17T01:10:44Z"
     },
     {
       "id": "summerstage-19761",
@@ -262,7 +240,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:52Z"
+      "fetched_at": "2026-08-17T01:10:44Z"
     },
     {
       "id": "summerstage-19369",
@@ -284,7 +262,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:52Z"
+      "fetched_at": "2026-08-17T01:10:45Z"
     },
     {
       "id": "summerstage-20943",
@@ -306,7 +284,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:53Z"
+      "fetched_at": "2026-08-17T01:10:45Z"
     },
     {
       "id": "summerstage-18861",
@@ -328,7 +306,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:53Z"
+      "fetched_at": "2026-08-17T01:10:46Z"
     },
     {
       "id": "summerstage-18362",
@@ -350,8 +328,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-08-10T00:25:54Z"
+      "fetched_at": "2026-08-17T01:10:46Z"
     }
   ],
-  "fetched_at": "2026-08-10T00:25:54Z"
+  "fetched_at": "2026-08-17T01:10:46Z"
 }

@@ -1,5 +1,5 @@
 ---
-title: "Design Your Financial Future: A Vision Boarding Workshop"
+title: "Design Your Financial Future: a Vision Boarding Workshop"
 date: 2026-09-22
 time: "18:00"
 location: "Charles A. Dana Discovery Center Join us for Design Your Financial Future: A Vision Boarding Workshop at the Dana Center, where you’ll use the visual power of collaging to map out your financial future, including savings goals, financial priorities, and more. Get Directions Secure Your Spot"
