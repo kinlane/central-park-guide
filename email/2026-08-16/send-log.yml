@@ -1,0 +1,58 @@
+- timestamp: '2026-08-17T01:31:24.420578+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Aug 17\u201323: two clean hot mornings, Chance and Kidjo\
+    \ at Rumsey, and a sold-out 10K that holds the loop till noon Saturday"
+  week_of: '2026-08-16'
+  status: sent
+- timestamp: '2026-08-17T01:31:30.413597+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Aug 17\u201323: five clean loop mornings, then a sold-out\
+    \ 10K holds the drives till noon Saturday"
+  week_of: '2026-08-16'
+  status: sent
+- timestamp: '2026-08-17T01:31:31.819596+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Aug 17\u201323: Chance the Rapper Tuesday, Ang\xE9lique\
+    \ Kidjo Sunday, and a Saturday with something on every lawn"
+  week_of: '2026-08-16'
+  status: sent
+- timestamp: '2026-08-17T01:31:32.719611+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Aug 17\u201323: NYRR takes a whole week,\
+    \ and closes it with a race the public can't enter"
+  week_of: '2026-08-16'
+  status: sent
