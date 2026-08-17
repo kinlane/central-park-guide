@@ -206,6 +206,12 @@ walks:
     organizer: "New York Road Runners"
     source_url: "https://events.nyrr.org/nyrr-grete-s-great-gallop-10k"
     recurrence: "Late August (members-only race)"
+    # Open Data now carries this race as permit 892315. Claim it so the merge
+    # drops the permit-generated file — that one has the right parcels but
+    # boilerplate copy, and the editorial fields below are what readers need.
+    # Re-check each year: the permit id changes annually.
+    supersedes_permit_ids:
+      - "892315"
     dates:
       "2026": "2026-08-22"
     start_time: "07:30"

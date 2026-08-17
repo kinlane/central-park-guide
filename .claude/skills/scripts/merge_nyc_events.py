@@ -763,6 +763,37 @@ with open(LATEST_JSON) as f:
 
 print(f"Loaded {len(latest)} latest events from API")
 
+
+def load_superseded_permit_ids():
+    """Permit IDs a curated charity-walks.yml entry has claimed.
+
+    When a curated race later appears in the permit feed you get two events for
+    the same race from different ID namespaces, and the (event_id, date) dedupe
+    cannot catch it — they are legitimately different ids. Both then render on
+    /events/ and both land in the weekly email brief.
+
+    Dropping the curated entry (the old advice) is the wrong trade: the permit
+    record carries generic boilerplate, while the curated entry carries the
+    organizer, the route impact, the registration status and the audience tags.
+    So the curated entry wins and names the permit it supersedes here.
+    """
+    claimed = {}
+    if not os.path.exists(CHARITY_WALKS_PATH):
+        return claimed
+    with open(CHARITY_WALKS_PATH) as fh:
+        data = yaml.safe_load(fh) or {}
+    for entry in (data.get('walks') or []):
+        for pid in (entry.get('supersedes_permit_ids') or []):
+            claimed[str(pid)] = entry.get('id', '?')
+    return claimed
+
+
+SUPERSEDED_PERMIT_IDS = load_superseded_permit_ids()
+superseded_skipped = 0
+if SUPERSEDED_PERMIT_IDS:
+    print(f"Superseded permit ids (curated entry wins): "
+          f"{', '.join(sorted(SUPERSEDED_PERMIT_IDS))}")
+
 slug_counts = defaultdict(int)
 created = 0
 updated = 0
@@ -786,6 +817,18 @@ for event in latest:
     eid = event.get('event_id', '')
     if not eid:
         skipped_invalid += 1
+        continue
+
+    # A curated charity-walks.yml entry already covers this permit, with better
+    # copy. Skip it and delete any file a previous run wrote for it.
+    if eid in SUPERSEDED_PERMIT_IDS:
+        superseded_skipped += 1
+        for _key in [k for k in existing_by_key if k[0] == eid]:
+            for _info in existing_by_key.pop(_key):
+                if os.path.exists(_info['path']):
+                    os.remove(_info['path'])
+                    print(f"  superseded: removed {_info['fname']} "
+                          f"(permit {eid} -> {SUPERSEDED_PERMIT_IDS[eid]})")
         continue
 
     api_event_ids.add(eid)
@@ -1758,6 +1801,7 @@ print(f"  Skipped (invalid data): {skipped_invalid}")
 print(f"  Skipped (past date): {skipped_past}")
 print(f"\nCharity walks (charity-walks.yml):")
 print(f"  Created: {charity_created}, Updated: {charity_updated}")
+print(f"  Permits superseded by a curated entry: {superseded_skipped}")
 print(f"  Skipped (no date for {current_year}): {charity_skipped_no_date}")
 print(f"  Skipped (location unmatched): {charity_skipped_unmatched}")
 print(f"\nNYCC group rides (nycc-rides.json):")
