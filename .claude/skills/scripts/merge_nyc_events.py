@@ -528,20 +528,32 @@ LOOP_PLACE_NAMES = {
 }
 
 
-def occupies_loop(places):
-    """Return True if the event's primary matched place is a park drive.
+def occupies_loop(places, permit_sourced=False):
+    """Return True if the event is sited on a park drive.
 
     `places` is the match_places() result — a list of {'name', 'category'} dicts
-    in source order. Only the primary (first) match counts: a drive appearing as
-    a secondary landmark usually means the description mentioned it in passing,
-    not that the permit took the road.
+    in source order.
+
+    By default only the primary (first) match counts: a drive appearing as a
+    secondary landmark usually means prose mentioned it in passing, not that the
+    permit took the road. That guard is about *narrative* place lists — NYRR race
+    descriptions, Conservancy blurbs, venue names.
+
+    `permit_sourced=True` widens it to ANY match, and is correct only when
+    `places` came from a permit's own `event_location` field. That field is not
+    prose: every comma-separated part is ground the permit actually covers, so a
+    drive in position four is as real as one in position one. Grete's Great
+    Gallop lists the cross drive first and West/East Drive and Center Loop after
+    it — primary-only read that as "not on the loop," which is exactly backwards.
     """
     if not places:
         return False
+    if permit_sourced:
+        return any(p.get('name') in LOOP_PLACE_NAMES for p in places)
     return places[0].get('name') in LOOP_PLACE_NAMES
 
 
-def get_tags(name, event_type, category=None, places=None):
+def get_tags(name, event_type, category=None, places=None, permit_sourced=False):
     """Return a sorted list of Title Case tag values.
 
     `category` is an internal slug (still used for category-based tag emission
@@ -550,6 +562,9 @@ def get_tags(name, event_type, category=None, places=None):
 
     `places` is the match_places() result, used to force `affects-loop` on
     permits sited on a park drive. See LOOP_PLACE_NAMES.
+
+    `permit_sourced` marks `places` as coming from a permit's own location list
+    rather than from prose — see occupies_loop().
     """
     text = (name + ' ' + (event_type or '')).lower()
     slugs = set()
@@ -561,7 +576,7 @@ def get_tags(name, event_type, category=None, places=None):
         slugs.add('affects-loop')
         slugs.add('race')
     # Sited on a park drive — the permit takes road no matter what it's called.
-    if occupies_loop(places):
+    if occupies_loop(places, permit_sourced=permit_sourced):
         slugs.add('affects-loop')
         slugs.add('race')
     # Sport-type roll-up
@@ -593,14 +608,38 @@ def get_tags(name, event_type, category=None, places=None):
     return sorted({TAG_DISPLAY.get(s, s.replace('-', ' ').title()) for s in slugs})
 
 
-def clean_location(loc):
-    parts = [p.strip() for p in loc.split(',')]
-    cleaned = []
-    for p in parts:
+def _location_parts(loc):
+    """Split a raw permit location into cleaned, de-prefixed parts."""
+    parts = []
+    for p in loc.split(','):
         p = re.sub(r'^Central Park:\s*', '', p.strip())
         if p:
-            cleaned.append(p)
-    return ', '.join(cleaned[:2])
+            parts.append(p)
+    return parts
+
+
+def clean_location(loc):
+    """DISPLAY form — first two parts only, to keep event cards readable.
+
+    Deliberately lossy. Never match places against this; use
+    clean_location_full() for that. See the note on clean_location_full().
+    """
+    return ', '.join(_location_parts(loc)[:2])
+
+
+def clean_location_full(loc):
+    """MATCHING form — every part the permit names, nothing dropped.
+
+    The permit feed lists each parcel a permit covers, comma-separated. Truncating
+    to two before match_places() ran was silently discarding real permitted ground:
+    NYRR Grete's Great Gallop 10K (permit 892315) names five locations — 72nd Street
+    Cross Drive, West Drive, East Drive, Bandshell Plaza, Center Loop — and the
+    merge only ever saw the first two. That cost the event its `affects-loop` tag,
+    because the surviving primary match was a cross drive, which LOOP_PLACE_NAMES
+    deliberately excludes. 21 of 1,817 records in the 2026-08-16 pull carry more
+    than two parts, so display stays truncated and only matching sees the full list.
+    """
+    return ', '.join(_location_parts(loc))
 
 
 CAT_IMAGES_DIR = '/assets/images/categories'
@@ -755,7 +794,8 @@ for event in latest:
     raw_name = event.get('event_name', 'Event')
     name = clean_title(raw_name)
     raw_location = event.get('event_location', '')
-    location = clean_location(raw_location)
+    location = clean_location(raw_location)          # display
+    match_location = clean_location_full(raw_location)  # matching — see docstring
     event_type = event.get('event_type', '')
 
     try:
@@ -765,10 +805,10 @@ for event in latest:
         skipped_invalid += 1
         continue
 
-    all_places = match_places(location)
+    all_places = match_places(match_location)
     if not all_places:
         skipped_unmatched += 1
-        unmatched_locs.add(location)
+        unmatched_locs.add(match_location)
         continue
     place = all_places[0]
 
@@ -785,7 +825,7 @@ for event in latest:
                 existing_names.add(p['name'])
 
     category = categorize(name, event_type)
-    tags = get_tags(name, event_type, category, all_places)
+    tags = get_tags(name, event_type, category, all_places, permit_sourced=True)
     image = get_image(category, location, tags)
     description = make_description(name, event_type, location)
     date_str = start.strftime('%Y-%m-%d')

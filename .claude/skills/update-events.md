@@ -424,7 +424,12 @@ Build a lookup of all place names and alternate names (lowercased) mapped to the
 
 ### 3. Clean event locations
 
-**NYC Open Data:** Strip the `Central Park: ` prefix from `event_location`. If the location has multiple comma-separated parts, take the first two.
+**NYC Open Data:** Strip the `Central Park: ` prefix from `event_location`. Then split display from matching:
+
+- **Display** (`clean_location()`) — first two comma-separated parts, so event cards stay readable. This is what lands in `location:` on the event file.
+- **Matching** (`clean_location_full()`) — every part, nothing dropped. This is what `match_places()` sees.
+
+Never match against the display form. Truncating before matching silently discarded permitted ground: Grete's Great Gallop (permit `892315`) names five locations and the merge only saw two, which cost it the `affects-loop` tag because the surviving primary match was a cross drive. 21 of 1,817 records in the 2026-08-16 pull carry more than two parts.
 
 **Conservancy:** Use `detail_page_data.location_detail`. Strip "Central Park" suffixes. Match the location string against the places vocabulary.
 

@@ -6,6 +6,12 @@ end_time: "23:59"
 location: "East Meadow, East Meadow Picnic Zone"
 place: "East Meadow"
 place_category: "event_venues"
+places:
+  - "East Meadow"
+  - "East 96th Street Playground"
+place_categories:
+  - "event_venues"
+  - "event_venues"
 image: "/assets/images/categories/closures.png"
 description: "Scheduled lawn closure at East Meadow, East Meadow Picnic Zone for maintenance and restoration."
 event_id: "884734"

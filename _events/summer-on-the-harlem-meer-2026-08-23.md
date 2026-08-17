@@ -6,6 +6,12 @@ end_time: "18:00"
 location: "Dana Discovery Center Plaza, Dana Discovery Center Lawn"
 place: "Dana Discovery Center"
 place_category: "event_venues"
+places:
+  - "Dana Discovery Center"
+  - "Harlem Meer"
+place_categories:
+  - "event_venues"
+  - "water_bodies"
 image: "/assets/images/categories/family-community.png"
 description: "Summer on the Harlem Meer at Dana Discovery Center Plaza, Dana Discovery Center Lawn in Central Park."
 event_id: "886833"

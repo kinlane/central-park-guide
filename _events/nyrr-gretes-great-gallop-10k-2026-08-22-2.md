@@ -9,9 +9,13 @@ place_category: "event_venues"
 places:
   - "72nd Street Cross Drive"
   - "West Drive"
+  - "East Drive"
+  - "Bandshell Plaza"
 place_categories:
   - "event_venues"
   - "paths_and_drives"
+  - "paths_and_drives"
+  - "event_venues"
 boroughs:
   - "Manhattan"
 image: "/assets/images/tags/race.png"
@@ -21,7 +25,9 @@ event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
+affects_loop: true
 tags:
+  - "Affects Loop"
   - "Race"
   - "Runs & Races"
 nyrr:
