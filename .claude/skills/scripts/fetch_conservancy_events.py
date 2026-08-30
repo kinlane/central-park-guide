@@ -150,8 +150,16 @@ JSONLD_RE = re.compile(
     r'<script\s+type="application/ld\+json"[^>]*>(.*?)</script>',
     re.DOTALL | re.IGNORECASE,
 )
+# The labels live in a <dt><h3>Label</h3></dt><dd>value</dd> list, so </dd> and
+# </dl> are real value boundaries and must terminate the capture. Without them
+# the LAST label on a page (usually "Location") has no following <h3> to stop
+# at and swallows the article body: "Location" on the vision-boarding workshop
+# came back as 1,239 characters of event description, which then rendered as
+# the location line on the public event page. Nine cached records carried a
+# location longer than 120 characters before this boundary was added.
 H3_BLOCK_RE = re.compile(
-    r'<h3[^>]*>([^<]+)</h3>(.*?)(?=<h3\b|</section\b|</article\b|<footer\b)',
+    r'<h3[^>]*>([^<]+)</h3>(.*?)'
+    r'(?=<h3\b|</dd\b|</dl\b|</section\b|</article\b|<footer\b)',
     re.DOTALL | re.IGNORECASE,
 )
 STRONG_PAIRS_RE = re.compile(
