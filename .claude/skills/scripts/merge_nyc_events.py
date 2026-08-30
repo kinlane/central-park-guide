@@ -37,6 +37,7 @@ NYCPARKS_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'nycparks-events.json')
 SUMMERSTAGE_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'summerstage-events.json')
 NAUMBURG_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'naumburg-events.json')
 CONSERVANCY_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'central-park-conservancy-events.json')
+CENTRALPARK_COM_CACHE_PATH = os.path.join(REPO_ROOT, '_data', 'centralpark-com-events.json')
 PUBLICTHEATER_SEASONS_PATH = os.path.join(REPO_ROOT, '_data', 'publictheater-seasons.yml')
 BIRDING_WALKS_PATH = os.path.join(REPO_ROOT, '_data', 'birding-walks.yml')
 
@@ -436,6 +437,7 @@ TAG_RULES = [
 # Slug → Title Case display value. The site stores tags in this human-readable
 # Title Case form (single metadata system, no separate `category` field).
 TAG_DISPLAY = {
+    'centralpark-com': 'centralpark.com',
     'annual-tradition': 'Annual Tradition', 'baseball': 'Baseball', 'birds': 'Birds',
     'birthday': 'Birthday', 'bowling': 'Bowling', 'celebration': 'Celebration',
     'ceremony': 'Ceremony', 'chess': 'Chess', 'closures': 'Closures',
@@ -1593,6 +1595,139 @@ if os.path.exists(CONSERVANCY_CACHE_PATH):
             elif result == 'unmatched': conservancy_skipped += 1
 
 
+# ── Source 4: centralpark.com community events (centralpark-com-events.json) ──
+# Same story as the Conservancy block above: the fetcher has written this cache
+# since May 2026 but nothing ever read it, so no cpcom- event ever reached
+# _events/ (verified 2026-08-30: zero files with a cpcom- event_id).
+#
+# Most centralpark.com listings are EVERGREEN attractions, not occurrences —
+# "Penguin Feedings at Central Park Zoo", "Yoga Classes", "Pickleball at
+# Wollman Rink" carry no date, no schedule and no recurrence. Those are skipped
+# and counted, exactly like the Conservancy's self-guided tour pages; inventing
+# dates for them would be fabrication.
+#
+# What IS ingestable is a listing with a weekday `schedule` map (e.g. Birding
+# Bob's Mon/Thu/Fri/Sat/Sun walks). Those expand weekly across CPCOM_HORIZON_DAYS
+# from today. A `schedule` carrying only a "raw" key is site furniture, not a
+# schedule — treated as undated.
+CPCOM_HORIZON_DAYS = 56
+CPCOM_WEEKDAYS = {'mondays': 0, 'tuesdays': 1, 'wednesdays': 2, 'thursdays': 3,
+                  'fridays': 4, 'saturdays': 5, 'sundays': 6}
+
+cpcom_created = cpcom_updated = cpcom_skipped = 0
+cpcom_undated = 0
+if os.path.exists(CENTRALPARK_COM_CACHE_PATH):
+    from datetime import timedelta
+    with open(CENTRALPARK_COM_CACHE_PATH) as f:
+        cpcom_data = json.load(f)
+    # The fetcher writes a bare list; tolerate a dict wrapper too.
+    cpcom_records = (cpcom_data if isinstance(cpcom_data, list)
+                     else cpcom_data.get('events') or [])
+    today_date = datetime.strptime(TODAY, '%Y-%m-%d').date()
+    horizon_end = today_date + timedelta(days=CPCOM_HORIZON_DAYS)
+
+    for rec in cpcom_records:
+        schedule = rec.get('schedule') or {}
+        if not isinstance(schedule, dict):
+            schedule = {}
+        day_slots = {k.lower(): v for k, v in schedule.items()
+                     if k.lower() in CPCOM_WEEKDAYS and v}
+        if not day_slots:
+            # Evergreen attraction page — no schedule to expand.
+            cpcom_undated += 1
+            continue
+
+        title = (rec.get('title') or '').strip()
+        base_location = (rec.get('location') or '').strip()
+        meeting_points = rec.get('meeting_points') or {}
+        if not isinstance(meeting_points, dict):
+            meeting_points = {}
+        meeting_points = {k.lower(): v for k, v in meeting_points.items()}
+        cost = (rec.get('cost') or '').strip()
+        base_desc = unescape(re.sub(r'\s+', ' ',
+                                    rec.get('description') or '')).strip()
+
+        tag_slugs = {'centralpark-com'}
+        for t in (rec.get('tags') or []):
+            if isinstance(t, str) and t.strip():
+                tag_slugs.add(slugify(t))
+        if 'free' in cost.lower():
+            tag_slugs.add('free')
+        is_bird = 'bird' in title.lower() or 'bird-watching' in tag_slugs
+        event_type = 'Bird Walk' if is_bird else 'Community Event'
+
+        for day_key, slot in day_slots.items():
+            weekday = CPCOM_WEEKDAYS[day_key]
+            # "7:30 AM & 9:30 AM" -> 07:30, and keep the rest for the body.
+            times = re.findall(r'(\d{1,2}):(\d{2})\s*([AaPp])\.?[Mm]', str(slot))
+            if not times:
+                cpcom_skipped += 1
+                continue
+            hh, mm, ap = times[0]
+            hh = int(hh) % 12 + (12 if ap.lower() == 'p' else 0)
+            time_str = f'{hh:02d}:{mm}'
+            extra_times = [f'{int(h) % 12 + (12 if a.lower() == "p" else 0):02d}:{m}'
+                           for h, m, a in times[1:]]
+            # A parenthetical on the slot is a note, e.g. "(led by Ms. Deborah Allen)".
+            slot_note = ''
+            note_match = re.search(r'\(([^)]*)\)', str(slot))
+            if note_match:
+                slot_note = note_match.group(1).strip()
+
+            # Meet point resolves the place. The raw string carries a
+            # cross-street parenthetical that mis-matches the vocabulary
+            # ("...along the East Drive" would claim East Drive and drag in the
+            # affects-loop/race tags), so strip it before matching and fall
+            # back to the listing's own location when nothing matches.
+            meet_raw = (meeting_points.get(day_key) or '').strip()
+            meet_clean = re.sub(r'\s*\([^)]*\)', '', meet_raw).strip()
+            location = meet_clean if (meet_clean and match_places(meet_clean)) else base_location
+            if not location:
+                cpcom_skipped += 1
+                unmatched_locs.add(f'(centralpark.com, no location) {title}')
+                continue
+
+            desc_bits = [base_desc] if base_desc else []
+            if meet_raw:
+                desc_bits.append(f'Meet at {meet_raw}.')
+            if slot_note:
+                desc_bits.append(f'{slot_note[0].upper()}{slot_note[1:]}.')
+            description = ' '.join(desc_bits).strip()
+
+            body_extra = []
+            if extra_times:
+                body_extra.append('- **Additional start times:** '
+                                  + ', '.join(extra_times))
+            if meet_raw:
+                body_extra.append(f'- **Meeting point:** {meet_raw}')
+
+            d = today_date
+            while d.weekday() != weekday:
+                d += timedelta(days=1)
+            while d <= horizon_end:
+                date_str = d.strftime('%Y-%m-%d')
+                result, _ = _write_event_md(
+                    eid=f'cpcom-{slugify(title)}-{day_key}',
+                    name=title,
+                    date_str=date_str,
+                    time_str=time_str,
+                    end_time_str='',
+                    location=location,
+                    description=description[:500],
+                    event_type=event_type,
+                    source='centralpark.com',
+                    source_url=rec.get('url'),
+                    image=rec.get('image_url') or None,
+                    tag_slugs=tag_slugs,
+                    extra_fm=[('cost', cost), ('meeting_point', meet_raw)],
+                    body_extra=body_extra or None,
+                )
+                if result == 'created': cpcom_created += 1
+                elif result == 'updated': cpcom_updated += 1
+                elif result == 'unmatched': cpcom_skipped += 1
+                d += timedelta(days=7)
+
+
 # ── Source 10: Public Theater seasons (publictheater-seasons.yml) ─────
 # Expand each season into one event per performance date, skipping dark days.
 publictheater_created = publictheater_updated = publictheater_skipped = 0
@@ -1835,6 +1970,13 @@ if os.path.exists(CONSERVANCY_CACHE_PATH):
     print(f"  Skipped (no scheduled dates — evergreen self-guided tour pages): {conservancy_undated}")
 else:
     print(f"  Cache missing — run fetch_conservancy_events.py before merging.")
+
+print(f"\ncentralpark.com (centralpark-com-events.json):")
+if os.path.exists(CENTRALPARK_COM_CACHE_PATH):
+    print(f"  Created: {cpcom_created}, Updated: {cpcom_updated}, Skipped: {cpcom_skipped}")
+    print(f"  Skipped (evergreen attraction pages — no date, no schedule): {cpcom_undated}")
+else:
+    print(f"  Cache missing — run fetch_centralpark_com_events.py before merging.")
 
 print(f"\nPublic Theater (publictheater-seasons.yml):")
 if publictheater_seasons_loaded == 0:

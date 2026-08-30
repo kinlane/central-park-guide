@@ -20,7 +20,7 @@ Sources fall into three groups:
 9. **`_data/charity-walks.yml`** — AIDS Walk NY etc.; affects-loop closures the permit feed misses
 10. **`_data/publictheater-seasons.yml`** — Public Theater's Shakespeare in the Park (their site is WAF-blocked); maintained by hand each spring when the season is announced. Expands into one event per performance date.
 11. **`_data/birding-walks.yml`** — NYC Bird Alliance recurring walks (their events page renders via JS so we can't scrape server-side). Expands by weekday + cadence within a season window.
-12. **Birding Bob (`birdingbob.com/birdwalks`)** — Robert DeCandido's near-daily guided Central Park bird walks (Ramble, Strawberry Fields, Reservoir). Site is on Wix; scrape the rendered page, fall back to a curated YAML seed if Wix's JS hydration blocks server-side parsing. See Source 12 below — **not yet pulled; queued for next run**.
+12. **Birding Bob (`birdingbob.com/birdwalks`)** — Robert DeCandido's near-daily guided Central Park bird walks (Ramble, Strawberry Fields, Reservoir). Site is on Wix; scrape the rendered page, fall back to a curated YAML seed if Wix's JS hydration blocks server-side parsing. See Source 12 below — **not pulled from birdingbob.com, but his walks now arrive via Source 4 (centralpark.com); read the dedup hazard there before wiring this one**.
 
 ## Quick start (NYC Open Data refresh)
 
@@ -205,9 +205,9 @@ Each event page/record has:
 **Key characteristics of centralpark.com events:**
 - Many are **recurring** (daily, weekly, seasonal) rather than one-off dates
 - Include commercial tours, zoo programs, community fitness groups, and seasonal activities
-- Use a `recurrence` front matter field to store the schedule pattern (e.g., "Saturdays, April through November")
-- Events without a specific start date use `2026-04-15` as a placeholder
-- The `event_type` is set to `"Community Event"` for all centralpark.com events
+- Recurring listings are expanded per weekday by the merge (see below); the source's own `recurrence` string is kept for reference in the cache
+- Events without a schedule are skipped, not given a placeholder date
+- `event_type` is `"Community Event"`, or `"Bird Walk"` when the title/tags say birds
 
 **Location matching notes:**
 - Zoo events match to "Central Park Zoo" in the `buildings` vocabulary category
@@ -218,7 +218,14 @@ Each event page/record has:
 
 **The raw data is cached to `_data/centralpark-com-events.json` for reference.**
 
-> **Not yet wired into the merge (as of 2026-07-26).** `fetch_centralpark_com_events.py` writes the cache, but `merge_nyc_events.py` has no ingest path for it, so no `cpcom-` event reaches `_events/`. The blocker is dates: the cached records carry `title`, `url`, `description`, `location`, `coordinates`, `tags`, and `image_url` but **no date field at all** — they're recurring listings ("Saturdays, April through November"), not occurrences. Wiring it up means either expanding a recurrence pattern into dates the way Sources 10/11 do, or having the fetcher parse each detail page's schedule into concrete dates. The placeholder-date convention described above is a leftover from an earlier implementation and is not in force.
+**Wired into the merge on 2026-08-30** (it had been fetch-only since May 2026 — the cache was written every run and never read, so no `cpcom-` event ever reached `_events/`). The blocker was dates, and the resolution splits the cache in two:
+
+- **Listings with a weekday `schedule` map are expanded.** A record like Birding Bob's carries `schedule: {mondays: "8:30 AM", saturdays: "7:30 AM & 9:30 AM", ...}`. The merge expands each weekday weekly across `CPCOM_HORIZON_DAYS` (56) from today, one event file per date, `event_id = cpcom-{slug}-{weekday}`. Re-running the merge rolls the window forward; the `(event_id, date)` key keeps it idempotent. The first time slot becomes `time:`; any others are listed under **Additional start times** in the body.
+- **Evergreen attraction pages are skipped and counted**, exactly like the Conservancy's self-guided tour pages. 17 of the 18 cached records are this class — "Penguin Feedings at Central Park Zoo", "Yoga Classes", "Pickleball at Wollman Rink" — carrying no date, no `schedule` and no `recurrence`. They are things you can do, not occurrences, and dating them would be fabrication. A `schedule` holding only a `raw` key (CPDSA Skate Circle's is a nav strip) counts as undated too.
+
+**Meet-point matching gotcha.** `meeting_points` values carry a cross-street parenthetical that mis-resolves against the places vocabulary: `"Boathouse Restaurant/Cafe (near 74th Street along the East Drive)"` matches **East Drive**, which would then trip `occupies_loop()` and stamp a bird walk with `Affects Loop` + `Race`. The merge strips the parenthetical before matching, and falls back to the record's own `location` when the stripped form matches nothing (`"Boathouse Restaurant/Cafe"` → no match → `"Central Park Boathouse"` → Loeb Boathouse). The full raw string is preserved in a `meeting_point` front-matter field and in the body. Per-day meet points are honored, so Monday sites at Strawberry Fields and Friday at Conservatory Garden while the weekend walks site at the Boathouse.
+
+The placeholder-date convention described above is a leftover from an earlier implementation and is not in force — a record without dates is skipped, never given a stand-in date.
 
 ### Source 5: New York Cycle Club rides (nycc.org/upcoming-rides)
 
@@ -396,7 +403,9 @@ Robert DeCandido ("Birding Bob") runs one of the most prolific guided bird-walk 
 | `tags` | Always `["Birds", "Nature"]`; add `"Free"` if cost is free |
 | `place` | Resolved via `match_places()` against the meet point |
 
-**Status:** queued — not yet fetched. First run should attempt a live fetch, write `_data/birdingbob-walks.json`, and if that fails leave a stub `_data/birdingbob-walks.yml` for hand-curation.
+**Status:** still not fetched from birdingbob.com — but **his walks now reach `_events/` via Source 4**. centralpark.com's "Bird Watching with Birding Bob" listing carries the full weekday schedule, per-day meet points and cost, and the merge expands it (41 events as of 2026-08-30, Mon/Thu/Fri/Sat/Sun over an 8-week horizon).
+
+⚠️ **Dedup hazard before wiring this source.** A `birdingbob-` ingest would re-create the same walks under a different `event_id`, and the merge key is `(event_id, date)` — so identical walks would show up twice on the same day with no dedup to catch it. Wiring birdingbob.com means either superseding the `cpcom-bird-watching-with-birding-bob-*` records (the way `charity-walks.yml` supersedes permit twins via `load_superseded_permit_ids()`), or dropping the centralpark.com listing from Source 4. Only take this on if birdingbob.com carries walks the centralpark.com listing misses — a denser migration-season schedule is the likely reason to bother.
 
 ## Steps
 

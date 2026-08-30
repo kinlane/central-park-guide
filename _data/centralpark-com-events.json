@@ -139,7 +139,7 @@
       "Family Activities",
       "Kids"
     ],
-    "image_url": "https://www.centralpark.com/downloads/8492/download/4d%20theater.jpg?cb=9a308b68dcf1925fb7c6e4ac07a7b8fd"
+    "image_url": "https://www.centralpark.com/downloads/5252/download/central-park-zoo.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
   },
   {
     "title": "Central Park Zoo Quests",
@@ -163,26 +163,6 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
-  },
-  {
-    "title": "Children's Programs at Central Park Zoo",
-    "url": "https://www.centralpark.com/events/childrens-programs-at-central-park-zoo/",
-    "source": "centralpark.com",
-    "description": "Interactive children’s programs offer hands-on animal learning, fun activities, and early wildlife exploration for all ages at the zoo.",
-    "location": "Central Park Zoo",
-    "coordinates": {
-      "lat": 40.7676906686356,
-      "lng": -73.9718115378346
-    },
-    "tags": [
-      "Central Park Zoo",
-      "Children's Activities",
-      "Fall Activities",
-      "Spring Activities",
-      "Tisch Children's Zoo",
-      "Winter Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3"
   },
   {
     "title": "City Girls Who Walk",
@@ -271,25 +251,6 @@
     "image_url": "https://www.centralpark.com/downloads/2613/download/fishing-in-the-meer.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
   },
   {
-    "title": "Free Shakespeare in the Park 2026",
-    "url": "https://www.centralpark.com/events/free-shakespeare-in-the-park/",
-    "source": "centralpark.com",
-    "description": "Free Shakespeare in the Park returns to the newly renovated Delacorte Theater in 2026 with a whole new production of Romeo and Juliet and The Winter’s Tale.",
-    "location": "Delacorte Theater",
-    "coordinates": {
-      "lat": 40.780236962053,
-      "lng": -73.9687916460875
-    },
-    "tags": [
-      "Delacorte Theater",
-      "Free Events",
-      "Shakespeare In The Park",
-      "Spring Activities",
-      "Summer Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10968/download/delacorte-theater.png?cb=21a5b517c63d24d091a542b00491245f"
-  },
-  {
     "title": "Free Weekly Run with Central Park Running Club",
     "url": "https://www.centralpark.com/events/free-weekly-run-from-central-park-running-club/",
     "source": "centralpark.com",
@@ -367,30 +328,7 @@
       "Sea Lions",
       "Zoo Animals"
     ],
-    "image_url": "https://www.centralpark.com/downloads/7934/download/zoo.jpg?cb=c017f23d33576a0d3b95f1c13f5ba1e4"
-  },
-  {
-    "title": "Stories at the Hans Christian Anderson Statue",
-    "url": "https://www.centralpark.com/events/stories-hans-christian-anderson-statue/",
-    "source": "centralpark.com",
-    "description": "Free Saturday storytelling returns to the Hans Christian Andersen statue from June 6 through August 29, 2026, with Andersen's fairy tales and folktales from around the world for all ages.",
-    "location": "Hans Christian Andersen",
-    "coordinates": {
-      "lat": 40.7744698924139,
-      "lng": -73.9676935320175
-    },
-    "schedule": {
-      "raw": "Strawberry Fields | Central Park Zoo | Ice Skating | Horse & Carriage Rides | Bike Rentals | Yoga Classes"
-    },
-    "tags": [
-      "Children's Activities",
-      "Conservatory Water",
-      "Free Events",
-      "Hans Christian Andersen",
-      "Model Sailboats",
-      "Summer Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10979/download/storyteller-hans-christian-andersen-statue.jpeg?cb=0ae54700998023ce7917eaa7fd66fe1c"
+    "image_url": "https://www.centralpark.com/downloads/5252/download/central-park-zoo.jpe?cb=783665e2e86dabe11fdbe675f24e26c4"
   },
   {
     "title": "Sunrise Wellness Walk",

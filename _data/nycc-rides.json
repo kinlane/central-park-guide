@@ -3,7 +3,7 @@
     {
       "date": "2027-02-15",
       "day_date_raw": "Sun, Feb 15",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_TimeoutError",
       "detail_url": "https://nycc.org/node/238969",
       "distance": "40 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -33,7 +33,7 @@
     {
       "date": "2027-02-15",
       "day_date_raw": "Sun, Feb 15",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_TimeoutError",
       "detail_url": "https://nycc.org/node/238973",
       "distance": "30 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -48,7 +48,7 @@
     {
       "date": "2027-02-15",
       "day_date_raw": "Sun, Feb 15",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_HTTPError",
       "detail_url": "https://nycc.org/node/238036",
       "distance": "24 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -63,7 +63,7 @@
     {
       "date": "2027-02-16",
       "day_date_raw": "Mon, Feb 16",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_TimeoutError",
       "detail_url": "https://nycc.org/node/237521",
       "distance": "18 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -78,7 +78,7 @@
     {
       "date": "2027-02-17",
       "day_date_raw": "Tue, Feb 17",
-      "detail_fetch": "wayback_cdx_err_TimeoutError",
+      "detail_fetch": "no_wayback",
       "detail_url": "https://nycc.org/node/237965",
       "distance": "20 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -93,7 +93,7 @@
     {
       "date": "2027-02-17",
       "day_date_raw": "Tue, Feb 17",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_TimeoutError",
       "detail_url": "https://nycc.org/node/238810",
       "distance": "18 to 24 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -108,7 +108,7 @@
     {
       "date": "2027-02-18",
       "day_date_raw": "Wed, Feb 18",
-      "detail_fetch": "wayback_cdx_err_TimeoutError",
+      "detail_fetch": "no_wayback",
       "detail_url": "https://nycc.org/node/237612",
       "distance": "18-24 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -123,7 +123,7 @@
     {
       "date": "2027-02-18",
       "day_date_raw": "Wed, Feb 18",
-      "detail_fetch": "wayback_cdx_err_TimeoutError",
+      "detail_fetch": "no_wayback",
       "detail_url": "https://nycc.org/node/237626",
       "distance": "24+ Miles",
       "filter_reason": "detail_fetch_failed",
@@ -138,7 +138,7 @@
     {
       "date": "2027-02-18",
       "day_date_raw": "Wed, Feb 18",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_TimeoutError",
       "detail_url": "https://nycc.org/node/237805",
       "distance": "15-30 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -153,7 +153,7 @@
     {
       "date": "2027-02-19",
       "day_date_raw": "Thu, Feb 19",
-      "detail_fetch": "wayback_cdx_err_HTTPError",
+      "detail_fetch": "no_wayback",
       "detail_url": "https://nycc.org/node/238811",
       "distance": "18 to 24 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -168,7 +168,7 @@
     {
       "date": "2027-02-20",
       "day_date_raw": "Fri, Feb 20",
-      "detail_fetch": "wayback_cdx_err_TimeoutError",
+      "detail_fetch": "wayback_cdx_err_HTTPError",
       "detail_url": "https://nycc.org/node/237741",
       "distance": "18 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -183,7 +183,7 @@
     {
       "date": "2027-02-21",
       "day_date_raw": "Sat, Feb 21",
-      "detail_fetch": "wayback_cdx_err_TimeoutError",
+      "detail_fetch": "wayback_cdx_err_HTTPError",
       "detail_url": "https://nycc.org/node/238959",
       "distance": "50 ish Miles",
       "filter_reason": "detail_fetch_failed",
@@ -198,7 +198,7 @@
     {
       "date": "2027-02-22",
       "day_date_raw": "Sun, Feb 22",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_HTTPError",
       "detail_url": "https://nycc.org/node/237582",
       "distance": "27 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -213,7 +213,7 @@
     {
       "date": "2027-02-23",
       "day_date_raw": "Mon, Feb 23",
-      "detail_fetch": "wayback_cdx_err_TimeoutError",
+      "detail_fetch": "wayback_cdx_err_HTTPError",
       "detail_url": "https://nycc.org/node/237522",
       "distance": "18 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -228,7 +228,7 @@
     {
       "date": "2027-02-24",
       "day_date_raw": "Tue, Feb 24",
-      "detail_fetch": "no_wayback",
+      "detail_fetch": "wayback_cdx_err_HTTPError",
       "detail_url": "https://nycc.org/node/237966",
       "distance": "20 Miles",
       "filter_reason": "detail_fetch_failed",
@@ -242,7 +242,7 @@
     }
   ],
   "fetch_source": "wayback",
-  "fetched_at": "2026-08-10T00:31:46+00:00",
+  "fetched_at": "2026-08-30T22:11:47+00:00",
   "listing_url": "https://nycc.org/upcoming-rides",
   "rides": []
 }
