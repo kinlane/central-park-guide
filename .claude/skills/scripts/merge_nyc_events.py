@@ -1614,6 +1614,45 @@ CPCOM_HORIZON_DAYS = 56
 CPCOM_WEEKDAYS = {'mondays': 0, 'tuesdays': 1, 'wednesdays': 2, 'thursdays': 3,
                   'fridays': 4, 'saturdays': 5, 'sundays': 6}
 
+# centralpark.com tags its listings with its own folksonomy, which does NOT
+# join this site's vocabulary — the personas filter on `Birds`, `Walk`, `Tour`,
+# `Yoga`; centralpark.com says `Bird Watching`, `Walking Tours`, `Yoga Classes`.
+# Passing the source tags straight through made Birding Bob's 41 walks
+# invisible to the nature-lover and walker personas (caught 2026-08-30 while
+# building the weekly briefs: neither persona's digest contained a single one).
+# Source tags are kept as-is for fidelity; these add the canonical equivalents.
+CPCOM_TAG_ALIASES = {
+    'bird-watching': {'birds', 'nature'},
+    'walking-tours': {'walk', 'tour'},
+    'central-park-walking-tours': {'walk', 'tour'},
+    'walks': {'walk'},
+    'sightseeing-tours': {'tour'},
+    'group-tours': {'tour'},
+    'running': {'running'},
+    'running-classes': {'running'},
+    'running-fitness-tours': {'running', 'fitness'},
+    'races': {'race', 'runs-races'},
+    'yoga': {'yoga', 'wellness'},
+    'yoga-classes': {'yoga', 'wellness'},
+    'fitness': {'fitness', 'wellness'},
+    'fitness-classes': {'fitness', 'wellness'},
+    'wellness': {'wellness'},
+    'free-events': {'free'},
+    'family-activities': {'family'},
+    'childrens-activities': {'family', 'youth'},
+    'kids': {'family', 'youth'},
+    'fishing': {'fishing', 'nature'},
+    'catch-release-fishing': {'fishing', 'nature'},
+    'pickleball': {'pickleball', 'sports'},
+    'sports-recreation': {'sports'},
+    'music': {'music'},
+    'live-dj-sets': {'music'},
+    'marionette-theatre': {'puppet', 'theater'},
+    'roller-skating': {'skating'},
+    'roller-dancing': {'skating'},
+    'model-sailboats': {'model-yachting'},
+}
+
 cpcom_created = cpcom_updated = cpcom_skipped = 0
 cpcom_undated = 0
 if os.path.exists(CENTRALPARK_COM_CACHE_PATH):
@@ -1650,10 +1689,15 @@ if os.path.exists(CENTRALPARK_COM_CACHE_PATH):
         tag_slugs = {'centralpark-com'}
         for t in (rec.get('tags') or []):
             if isinstance(t, str) and t.strip():
-                tag_slugs.add(slugify(t))
+                s = slugify(t)
+                tag_slugs.add(s)
+                tag_slugs |= CPCOM_TAG_ALIASES.get(s, set())
         if 'free' in cost.lower():
             tag_slugs.add('free')
         is_bird = 'bird' in title.lower() or 'bird-watching' in tag_slugs
+        if is_bird:
+            # A bird walk is a nature event whatever the source called it.
+            tag_slugs |= {'birds', 'nature'}
         event_type = 'Bird Walk' if is_bird else 'Community Event'
 
         for day_key, slot in day_slots.items():
