@@ -6,7 +6,7 @@ end_time: "17:45"
 location: "Dene Lawn"
 place: "Dene Lawn"
 place_category: "event_venues"
-image: "/assets/images/categories/family-community.png"
+image: "/assets/images/categories/private-events.png"
 description: "Proposal: Carlos Roman Sept 13th 5PM at Dene Lawn in Central Park."
 event_id: "970134"
 event_type: "Special Event"
@@ -14,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - "Family & Community"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Proposal: Carlos Roman Sept 13th 5PM takes place at Dene Lawn in Central Park on Sunday, September 13, 2026.

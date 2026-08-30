@@ -6,7 +6,7 @@ end_time: "19:00"
 location: "Shakespeare Garden"
 place: "Shakespeare Garden"
 place_category: "natural_areas"
-image: "/assets/images/categories/family-community.png"
+image: "/assets/images/categories/private-events.png"
 description: "Gurveer's Proposal at Shakespeare Garden in Central Park."
 event_id: "970414"
 event_type: "Special Event"
@@ -14,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - "Family & Community"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Gurveer's Proposal takes place at Shakespeare Garden in Central Park on Thursday, September 10, 2026.

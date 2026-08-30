@@ -226,7 +226,46 @@ SPORT_KEYWORDS = ['softball', 'baseball', 'kickball', 'soccer', 'tennis',
                   'lacrosse', 'rugby', 'cricket', 'frisbee', 'ultimate',
                   'football', 'flag football']
 
-def categorize(name, event_type):
+# Venues where a private booking is the DOMINANT use, derived from the corpus
+# rather than guessed: each of these runs >=65% private-tagged events (Ladies'
+# Pavilion 101/101, Cop Cot 88/90, Dene Lawn 41/42, Wagner Cove 34/35, Bow
+# Bridge 9/9, Gapstow 7/7...). Deliberately EXCLUDES the big mixed-use spaces —
+# Great Lawn (10% private), Heckscher Fields (3%), Levin Playground (9%) —
+# where a pair of names in a title is far more likely to be a public program.
+CEREMONY_PLACES = {
+    "Ladies' Pavilion", 'Cop Cot', 'Dene Lawn', 'Wagner Cove', 'Belvedere Castle',
+    'Shakespeare Garden', 'Mineral Springs', 'Cherry Hill', 'Bow Bridge',
+    'Ross Pinetum', 'The Pool', 'Cedar Hill', 'Gapstow Bridge', 'Summit Rock',
+    'The Pond', 'Great Hill',
+}
+
+# "Kushal and Taniah", "Matthew and Vanessa" — a bare pair of personal names with
+# no event noun. Permittees leave the event-name field as just the couple, so the
+# permit carries no wedding/ceremony word for private_signals to match and
+# categorize() used to hand it the family-community catch-all. Two named private
+# citizens then reached the family digest (caught 2026-08-30 pre-send).
+#
+# The shape alone is NOT enough — "Chess Lecture and Simul Series" matches it too
+# — so it only counts at a CEREMONY_PLACES venue. Across 1,587 events the shape
+# hits 5 titles, and that venue gate is exactly what separates the chess series
+# from the four ceremonies.
+PERSONAL_NAME_PAIR_RE = re.compile(
+    r"[A-Z][a-z\u00e0-\u00ff'\u2019\-]+(?:\s[A-Z][a-z\u00e0-\u00ff'\u2019\-]+)?"
+    r"\s(?:and|&|\+)\s"
+    r"[A-Z][a-z\u00e0-\u00ff'\u2019\-]+(?:\s[A-Z][a-z\u00e0-\u00ff'\u2019\-]+)?"
+)
+
+
+def looks_like_private_ceremony(name, places):
+    """True when a bare pair of personal names is booked at a ceremony venue."""
+    if not places:
+        return False
+    if not PERSONAL_NAME_PAIR_RE.fullmatch(name.strip()):
+        return False
+    return any(p.get('name') in CEREMONY_PLACES for p in places)
+
+
+def categorize(name, event_type, places=None):
     name_lower = name.lower()
     name_stripped = name_lower.strip()
 
@@ -256,10 +295,13 @@ def categorize(name, event_type):
     private_signals = ['celebration', 'wedding', 'elopement', 'ceremony',
                        'birthday', 'micro wedding', 'baptism', 'memorial',
                        'bar mitzvah', 'bat mitzvah', 'reception',
-                       'private booking']
+                       'private booking', 'proposal']
     if any(s in name_lower for s in private_signals):
         return 'private-events'
     if name_stripped in ('party', 'picnic', 'miscellaneous'):
+        return 'private-events'
+    # A bare pair of names at a ceremony venue, with no word above to match on.
+    if looks_like_private_ceremony(name, places):
         return 'private-events'
 
     # Sports: leagues (event_type) or sport keywords
@@ -869,7 +911,7 @@ for event in latest:
                 all_places.append(p)
                 existing_names.add(p['name'])
 
-    category = categorize(name, event_type)
+    category = categorize(name, event_type, all_places)
     tags = get_tags(name, event_type, category, all_places, permit_sourced=True)
     image = get_image(category, location, tags)
     description = make_description(name, event_type, location)
@@ -1290,7 +1332,7 @@ def _write_event_md(eid, name, date_str, time_str, end_time_str, location,
         unmatched_locs.add(location)
         return ('unmatched', None)
     place = all_places[0]
-    cat = categorize(name, event_type)
+    cat = categorize(name, event_type, all_places)
     if tag_slugs is None:
         tag_slugs = set()
         for t in get_tags(name, event_type, cat, all_places):

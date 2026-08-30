@@ -6,7 +6,7 @@ end_time: "12:00"
 location: "Cop Cot"
 place: "Cop Cot"
 place_category: "event_venues"
-image: "/assets/images/categories/family-community.png"
+image: "/assets/images/categories/private-events.png"
 description: "Kushal and Taniah at Cop Cot in Central Park."
 event_id: "929446"
 event_type: "Special Event"
@@ -14,7 +14,8 @@ event_borough: "Manhattan"
 community_board: "64"
 police_precinct: "22"
 tags:
-  - "Family & Community"
+  - "Private Booking"
+  - "Private Events"
 ---
 
 Kushal and Taniah takes place at Cop Cot in Central Park on Sunday, September 6, 2026.

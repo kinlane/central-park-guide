@@ -461,13 +461,22 @@ There is no `category:` field on event files. Categorization still happens inter
 1. `event_name` contains "maintenance" → `maintenance`
 2. `event_name` contains "lawn closure" or "meadow closure" → `closures`
 3. `event_name` contains SSS CPE/CPW, mini-camp, soccer training, sports training, socroc → `education`
-4. `event_name` contains celebration/wedding/elopement/ceremony/birthday/baptism/memorial/bar mitzvah/reception, OR is exactly "party"/"picnic"/"miscellaneous" → `private-events`
+4. `event_name` contains celebration/wedding/elopement/ceremony/birthday/baptism/memorial/bar mitzvah/reception/**proposal**, OR is exactly "party"/"picnic"/"miscellaneous" → `private-events`
+4b. `event_name` is a **bare pair of personal names** ("Kushal and Taniah", "Matthew and Vanessa") **and** the event sits at a venue in `CEREMONY_PLACES` → `private-events`
 5. `event_type` is "Sport - Adult" or "Sport - Youth" OR `event_name` contains softball/baseball/t-ball/kickball/soccer/tennis/pickleball/frisbee/volleyball/basketball/lacrosse/rugby/bowling/yacht/skating → `sports`
 6. `event_name` contains concert/music/jazz/salsa/band/choir/festival/dance/theater/songwriters/dj/entertainment/opera/symphonic/marching/shakespeare/marionette/puppet → `concerts-performances`
 7. `event_name` contains walk/run/race/5k/10k/15k/half/marathon/jog (word-boundary match; "half" catches NYC/Brooklyn/Women's Half) → `runs-races`
 8. Default → `family-community`
 
 **Why the order matters:** A "Soccer Training Mini-Camp" should be `education`, not `sports`. A "Birthday Party" hosted on a softball field should be `private-events`, not `sports`.
+
+**Why rule 4b exists (added 2026-08-30).** Permittees routinely leave the event-name field as just the couple's names, so the permit carries no wedding/ceremony word for rule 4 to match and it fell through to the `family-community` catch-all — which is how a stranger's ceremony reached the family sections of two subscribers' digest briefs on 2026-08-30, and the same shape ("Proposal" @ Cop Cot, "Anushma and Craig" @ Ladies' Pavilion) had been caught by hand twice before. `build_digest.py`'s `PRIVATE_TAGS` suppression was never the problem: it works, it just had no private tag to match on.
+
+**The name shape alone is not sufficient** — "Chess Lecture and Simul Series" matches it too — so 4b also requires a ceremony venue. `CEREMONY_PLACES` is derived from the corpus, not guessed: every venue in it runs ≥65% private-tagged events (Ladies' Pavilion 101/101, Cop Cot 88/90, Dene Lawn 41/42, Wagner Cove 34/35, Bow Bridge 9/9, Gapstow Bridge 7/7). It deliberately excludes the big mixed-use spaces — Great Lawn (10% private), Heckscher Fields (3%), Levin Playground (9%) — where a pair of names is far likelier to be a public program. Across 1,587 events the shape hits 5 titles, and the venue gate is exactly what separates the chess series from the four ceremonies.
+
+**Known failure mode:** a *public* event whose title is two capitalized words joined by "and", staged at a ceremony venue — "Tango and Milonga" at Cop Cot, say — would be wrongly marked private and vanish from every persona but walker and park-watcher. No such event exists in the corpus today. If one appears, give it a real tag at the source rather than loosening 4b; a false private is a lost listing, while a false public is a stranger's wedding in a newsletter.
+
+**`proposal` was added to rule 4 at the same time**, catching three real proposals that were sitting untagged. `anniversary` was considered and rejected — it would have swept up SummerStage's "Samara Joy and Christian McBride Celebrate Verve's 70th Anniversary".
 
 **Conservancy:**
 - `type` contains "Arts & Entertainment" → `concerts-performances`
