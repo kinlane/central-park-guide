@@ -1,0 +1,58 @@
+- timestamp: '2026-08-30T22:34:15.530690+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Aug 31\u2013Sep 6: Samara Joy and Christian McBride free\
+    \ at Rumsey, and the first week since June with nothing on the drives"
+  week_of: '2026-08-30'
+  status: sent
+- timestamp: '2026-08-30T22:34:20.690490+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Aug 31\u2013Sep 6: seven clear mornings on the drives, and\
+    \ fall migration starts at Belvedere"
+  week_of: '2026-08-30'
+  status: sent
+- timestamp: '2026-08-30T22:34:40.750763+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Aug 31\u2013Sep 6: Samara Joy and Christian McBride free\
+    \ at Rumsey Wednesday, and a Saturday with something on every lawn"
+  week_of: '2026-08-30'
+  status: sent
+- timestamp: '2026-08-30T22:35:07.754837+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Aug 31\u2013Sep 6: the summer permit season\
+    \ ends, and six lawns go out for repair"
+  week_of: '2026-08-30'
+  status: sent
