@@ -1,5 +1,5 @@
 ---
-title: "(RESCHEDULED) New York Sings Yiddish: Passing the Torch to a New Generation Featuring The Shvesters / YidLife Crisis / Yair Keydar / Riki Rose + More"
+title: "(RESCHEDULED) New York Sings Yiddish: Passing the Torch to a New Generation Featuring YidLife Crisis / Yair Keydar / Riki Rose / Daniella Rabbani + More"
 date: 2026-09-17
 time: "19:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ IMPORTANT UPDATE: Due to the threat of severe weather, New York Sings Yiddish ha
 
 ## Event Details
 
-- **Event:** (RESCHEDULED) New York Sings Yiddish: Passing the Torch to a New Generation Featuring The Shvesters / YidLife Crisis / Yair Keydar / Riki Rose + More
+- **Event:** (RESCHEDULED) New York Sings Yiddish: Passing the Torch to a New Generation Featuring YidLife Crisis / Yair Keydar / Riki Rose / Daniella Rabbani + More
 - **Date:** Thursday, September 17, 2026
 - **Time:** 19:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park

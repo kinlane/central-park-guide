@@ -6,7 +6,7 @@ location: "Belvedere Castle"
 place: "Belvedere Castle"
 place_category: "buildings"
 image: "https://d2wsrtli9cxkek.cloudfront.net/media/images/Tours_BirdingBasics_20220519-30.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=630&q=82&w=1200&s=778ec36c759baee88c3ca544f33072ec"
-description: "Central Park is a birding haven! Join us this season to make the most out of spring migration."
+description: "Central Park is a birding haven! Join us this season to make the most of fall migration."
 event_id: "cpc-581334"
 event_type: "Conservancy Tour"
 event_borough: "Manhattan"
@@ -20,7 +20,7 @@ tags:
   - "Wildlife"
 ---
 
-Central Park is a birding haven! Join us this season to make the most out of spring migration.
+Central Park is a birding haven! Join us this season to make the most of fall migration.
 
 ## Event Details
 

@@ -1,0 +1,34 @@
+---
+title: "SSS CPE78 Fall October"
+date: 2026-10-01
+time: "15:30"
+end_time: "17:30"
+location: "Lawn North of Levin Playground"
+place: "Levin Playground"
+place_category: "event_venues"
+image: "/assets/images/tags/education.png"
+description: "SSS CPE78 Fall October at Lawn North of Levin Playground in Central Park."
+event_id: "892244"
+event_type: "Special Event"
+event_borough: "Manhattan"
+community_board: "64"
+police_precinct: "22"
+tags:
+  - "Education"
+---
+
+SSS CPE78 Fall October takes place at Lawn North of Levin Playground in Central Park on Thursday, October 1, 2026.
+
+## Event Details
+
+- **Event:** SSS CPE78 Fall October
+- **Date:** Thursday, October 1, 2026
+- **Time:** 3:30 PM - 5:30 PM
+- **Location:** Lawn North of Levin Playground, Central Park
+- **Place:** Levin Playground
+- **Type:** Special Event
+- **Event ID:** 892244
+
+## About This Event
+
+SSS CPE78 Fall October is a permitted event taking place at Lawn North of Levin Playground in Central Park. Contact the event organizers for more details about attendance and participation.
