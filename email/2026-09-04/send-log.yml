@@ -1,0 +1,58 @@
+- timestamp: '2026-09-04T22:11:36.093656+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 5\u201311: a second clear week on the drives, a perfect\
+    \ Labor Day, and Bethesda Terrace closed all seven days"
+  week_of: '2026-09-04'
+  status: sent
+- timestamp: '2026-09-04T22:11:37.118329+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 5\u201311: a second clear week on the road, and a Labor\
+    \ Day made for the long one"
+  week_of: '2026-09-04'
+  status: sent
+- timestamp: '2026-09-04T22:11:39.131354+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 5\u201311: Barefoot Shakespeare at Summit Rock, a perfect\
+    \ Labor Day, and New Dendrology opens at the Arsenal"
+  week_of: '2026-09-04'
+  status: sent
+- timestamp: '2026-09-04T22:11:40.242603+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 5\u201311: two clear weeks on the drives,\
+    \ and Bethesda Terrace closed for seven straight days"
+  week_of: '2026-09-04'
+  status: sent
