@@ -32,6 +32,12 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
+from html import unescape
+
+try:
+    from zoneinfo import ZoneInfo
+except ImportError:  # pragma: no cover - stdlib since 3.9
+    ZoneInfo = None
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.normpath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
@@ -89,15 +95,61 @@ def derive_slug(title):
     return re.sub(r'[^A-Za-z0-9]', '', t).lower()
 
 
-def url_candidates(title, year):
-    slug = derive_slug(title)
-    if not slug:
+# NYRR moved race detail pages off www.nyrr.org/races/<slug> onto the Haku
+# platform at events.nyrr.org/<hyphenated-slug>. The old path is now a blanket
+# 301 to /run/race-calendar for EVERY race, 2023 editions included, so it is a
+# migration and not race-day throttling. Legacy URLs stay in the candidate list
+# below the new ones so Wayback can still serve archived copies of old races.
+ORDINAL_WORDS = {
+    'first': '1st', 'second': '2nd', 'third': '3rd', 'fourth': '4th',
+    'fifth': '5th', 'sixth': '6th', 'seventh': '7th', 'eighth': '8th',
+    'ninth': '9th', 'tenth': '10th',
+}
+
+
+def hyphen_slug(title):
+    """events.nyrr.org slugs keep word boundaries as hyphens."""
+    t = re.sub(r'^\s*20\d\d\s+', '', title)
+    t = re.sub(r"['’]", '', t)
+    return re.sub(r'[^A-Za-z0-9]+', '-', t).strip('-').lower()
+
+
+def events_slug_candidates(title):
+    """Slug guesses for events.nyrr.org, most-likely first.
+
+    Haku writes ordinals as digits ("5th-avenue") where the permit feed spells
+    them out ("Fifth Avenue"), and the same race answers to both a
+    sponsor-prefixed name and an `nyrr-` one: new-balance-5th-avenue-mile and
+    nyrr-fifth-avenue-mile are both live.
+    """
+    base = hyphen_slug(title)
+    if not base:
         return []
+    out = [base]
+    numeric = base
+    for word, digit in ORDINAL_WORDS.items():
+        numeric = re.sub(r'\b' + word + r'\b', digit, numeric)
+    if numeric != base:
+        out.append(numeric)
+    for s in list(out):
+        out.append('nyrr-' + s)
+        parts = s.split('-')
+        if len(parts) > 2:            # drop a two-word sponsor prefix
+            out.append('nyrr-' + '-'.join(parts[2:]))
+    seen = set()
+    return [s for s in out if not (s in seen or seen.add(s))]
+
+
+def url_candidates(title, year):
     out = []
-    if year:
-        out.append(f'https://www.nyrr.org/races/{year}{slug}')
-        out.append(f'https://www.nyrr.org/races/{year}/{slug}')
-    out.append(f'https://www.nyrr.org/races/{slug}')
+    for s in events_slug_candidates(title):
+        out.append(f'https://events.nyrr.org/{s}')
+    slug = derive_slug(title)
+    if slug:
+        if year:
+            out.append(f'https://www.nyrr.org/races/{year}{slug}')
+            out.append(f'https://www.nyrr.org/races/{year}/{slug}')
+        out.append(f'https://www.nyrr.org/races/{slug}')
     return out
 
 
@@ -174,10 +226,84 @@ def _strip_wb_url_prefix(url):
 
 def _text_of(html_fragment):
     text = re.sub(r'<[^>]+>', ' ', html_fragment)
-    text = re.sub(r'&nbsp;|&#160;', ' ', text)
-    text = re.sub(r'&rsquo;', "'", text)
-    text = re.sub(r'&mdash;', '—', text)
+    # Unescape twice: JSON-LD values arrive double-encoded from Haku
+    # ("&amp;nbsp;"), so one pass leaves a literal "&nbsp;" in the output.
+    # html.unescape covers every named/numeric entity, not a hand-kept list.
+    for _ in range(2):
+        new = unescape(text)
+        if new == text:
+            break
+        text = new
+    text = text.replace('\xa0', ' ')
     return re.sub(r'\s+', ' ', text).strip()
+
+
+def _format_start_date(iso):
+    """schema.org startDate -> the cache's human 'Month D, YYYY H:MM AM' form.
+
+    Haku publishes startDate in UTC ("2026-09-13T11:25:00Z"); a gun time is only
+    meaningful in race-local time, so convert to America/New_York.
+    """
+    try:
+        dt = datetime.fromisoformat(iso.strip().replace('Z', '+00:00'))
+    except Exception:
+        return iso
+    try:
+        if dt.tzinfo is not None:
+            dt = dt.astimezone(ZoneInfo('America/New_York'))
+    except Exception:
+        pass  # no tzdata — fall through and report UTC rather than lose the time
+    return dt.strftime('%B %-d, %Y %-I:%M %p')
+
+
+def parse_jsonld_race(html):
+    """Extract a schema.org Event block into cache field names. {} if absent."""
+    rec = {}
+    for m in re.finditer(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html, re.S | re.I,
+    ):
+        try:
+            data = json.loads(m.group(1).strip())
+        except Exception:
+            continue
+        for node in (data if isinstance(data, list) else [data]):
+            if not isinstance(node, dict) or node.get('@type') != 'Event':
+                continue
+            if node.get('name'):
+                rec['title'] = re.sub(r'\s+', ' ', str(node['name'])).strip()
+            if node.get('description'):
+                rec['description'] = _text_of(str(node['description']))[:3000]
+            if node.get('startDate'):
+                rec['date'] = _format_start_date(str(node['startDate']))
+            loc = node.get('location')
+            if isinstance(loc, dict):
+                if loc.get('name'):
+                    rec['location'] = str(loc['name']).strip()
+                addr = loc.get('address')
+                if isinstance(addr, dict) and addr.get('streetAddress'):
+                    rec['course_text'] = str(addr['streetAddress'])[:3000]
+            if node.get('image'):
+                rec['race_photo'] = str(node['image']).split('?')[0]
+            return rec
+    return rec
+
+
+def parse_haku_distance(html):
+    """Haku renders the distance in its own chip: <div class="...distance-tag...">1 Mile</div>.
+
+    Read it rather than inferring one from the race name — "Fifth Avenue Mile"
+    happens to name its distance, but "Grete's Great Gallop" does not.
+    """
+    m = re.search(
+        r'<div[^>]*class="[^"]*distance-tag[^"]*"[^>]*>(.*?)</div>',
+        html, re.S | re.I,
+    )
+    if m:
+        val = _text_of(m.group(1))
+        if val and len(val) < 40:
+            return val
+    return None
 
 
 def parse_race_detail(html):
@@ -281,6 +407,15 @@ def parse_race_detail(html):
     if m:
         rec['total_finishers'] = int(m.group(1).replace(',', ''))
 
+    # events.nyrr.org (Haku) pages carry none of the race_detail-* markup the
+    # regexes above target — their facts live in a schema.org Event JSON-LD
+    # block instead. Overlay it last so both page generations parse through one
+    # path and JSON-LD wins where it has a value.
+    rec.update({k: v for k, v in parse_jsonld_race(html).items() if v})
+    haku_distance = parse_haku_distance(html)
+    if haku_distance:
+        rec['distance'] = haku_distance
+
     # Borough mentions in the description+course text
     text_for_boroughs = ' '.join(
         v for k, v in rec.items()
@@ -303,6 +438,31 @@ def parse_race_detail(html):
     return rec
 
 
+# Landmarks that are inside or on the edge of Central Park and appear in NYRR
+# venue addresses. Deliberately specific: every entry is unambiguous enough that
+# a race naming it is staging in the park. No bare street names — "Fifth Avenue"
+# alone runs the length of Manhattan.
+CP_LANDMARK_SIGNALS = (
+    '79th street transverse', '86th street transverse', '65th street transverse',
+    '97th street transverse', 'heckscher', 'naumburg', 'bandshell',
+    'engineers gate', "engineer's gate", 'tavern on the green',
+    'grand army plaza', 'east drive', 'west drive', 'bethesda',
+    'cherry hill', 'belvedere castle', 'the great lawn',
+)
+
+
+def is_usable_race_record(rec):
+    """True when a parse produced an actual race, not a soft-200 landing page.
+
+    A missing title means no Event JSON-LD and no og:title — nothing that
+    identifies a race. A title alone is not enough either: require at least one
+    substantive fact behind it.
+    """
+    if not rec or not rec.get('title'):
+        return False
+    return any(rec.get(f) for f in ('date', 'description', 'course_text', 'distance'))
+
+
 def looks_like_central_park(rec):
     """Decide whether to keep a parsed record."""
     loc = (rec.get('location') or '').lower()
@@ -313,6 +473,14 @@ def looks_like_central_park(rec):
         if isinstance(v, str) and k in ('description', 'course_text')
     ).lower()
     if 'central park' in blob:
+        return True
+    # Haku pages give a postal address rather than prose, and that address names
+    # a park landmark without ever saying "Central Park" — the 5th Avenue Mile
+    # lists "Heckscher East Playground, 79th Street Transverse". Match the
+    # landmark instead, or a real Central Park race is dropped after a
+    # successful fetch.
+    addr_blob = blob + ' ' + (rec.get('location') or '').lower()
+    if any(sig in addr_blob for sig in CP_LANDMARK_SIGNALS):
         return True
     # Multi-borough races that *finish in Central Park*. Brooklyn Half is
     # explicitly NOT here — it finishes at Coney Island, never enters the park.
@@ -387,20 +555,33 @@ def main(argv):
             continue
 
         urls = url_candidates(c['title'], c['year'])
-        html, src = None, None
+        # events.nyrr.org answers an unknown slug with a soft 200 — a real page
+        # carrying no Event JSON-LD — so "first URL that returns bytes" picks
+        # the junk page and the race is then dropped as non-Central-Park. Accept
+        # a candidate only once it PARSES into a usable race record, and keep
+        # walking the list otherwise.
+        html, src, rec = None, None, None
         if not wayback_only:
             for u in urls:
-                html, src = fetch_url(u, timeout=15)
-                if html:
-                    chosen = u
-                    break
+                h, s = fetch_url(u, timeout=15)
+                if h:
+                    r = parse_race_detail(h)
+                    if is_usable_race_record(r):
+                        html, src, rec, chosen = h, s, r, u
+                        break
+                    s = 'soft200_no_race_data'
+                src = s
                 time.sleep(0.5)
         if not html:
             for u in urls:
-                html, src = fetch_with_wayback(u, timeout=25)
-                if html:
-                    chosen = u
-                    break
+                h, s = fetch_with_wayback(u, timeout=25)
+                if h:
+                    r = parse_race_detail(h)
+                    if is_usable_race_record(r):
+                        html, src, rec, chosen = h, s, r, u
+                        break
+                    s = 'soft200_no_race_data'
+                src = s
                 time.sleep(0.5)
 
         if not html:
@@ -418,7 +599,8 @@ def main(argv):
             time.sleep(WAIT_BETWEEN)
             continue
 
-        rec = parse_race_detail(html)
+        if rec is None:
+            rec = parse_race_detail(html)
         if not looks_like_central_park(rec):
             stats['filtered_out'] += 1
             races[key] = {

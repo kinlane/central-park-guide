@@ -27,6 +27,7 @@ tags:
   - "Runs & Races"
 nyrr:
   distance: "1 Mile"
+  race_photo: "https://s3.amazonaws.com/hakuapps/prod/145c831a2f7b697bc13494a6fe7a8e4834ecb19a.png"
   source_url: "https://events.nyrr.org/new-balance-5th-avenue-mile"
   date: "September 13, 2026 7:25 AM"
 ---
