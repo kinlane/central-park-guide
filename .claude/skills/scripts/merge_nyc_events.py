@@ -968,9 +968,14 @@ for event in latest:
         lines.append('  - "' + yaml_safe(tag) + '"')
     if nyrr_rec:
         lines.append('nyrr:')
+        # `date` carries NYRR's official race date and gun time (e.g.
+        # "September 13, 2026 7:25 AM"). The top-level time/end_time come from
+        # the permit, which for a race is an all-day road-closure footprint
+        # (00:00-23:59) and says nothing about when the race actually starts.
+        # Both are true; this is the one a runner needs.
         for fld in ('event_item_id', 'distance', 'hashtag',
                     'course_map', 'race_photo', 'race_logo',
-                    'ical_url', 'strava_club', 'source_url'):
+                    'ical_url', 'strava_club', 'source_url', 'date'):
             val = nyrr_rec.get(fld)
             if val:
                 lines.append('  ' + fld + ': "' + yaml_safe(str(val)) + '"')

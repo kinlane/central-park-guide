@@ -28,6 +28,7 @@ tags:
 nyrr:
   distance: "1 Mile"
   source_url: "https://events.nyrr.org/new-balance-5th-avenue-mile"
+  date: "September 13, 2026 7:25 AM"
 ---
 
 2026 New Balance Fifth Avenue Mile takes place at Grand Army Plaza - Pulitzer Fountain, Grand Army Plaza - Sherman Statue in Central Park on Saturday, September 12, 2026.

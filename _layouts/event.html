@@ -50,6 +50,17 @@ layout: default
           <div style="margin-bottom: 20px;">
             <p style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: rgba(0,0,0,0.5); margin-bottom: 4px;">Time</p>
             <p style="font-weight: 600; margin: 0;">{{ page.time }}{% if page.end_time %} - {{ page.end_time }}{% endif %}</p>
+            {%- comment -%}
+              A race permit is an all-day road-closure footprint, so page.time
+              reads 00:00-23:59 and hides the one time a runner needs. When the
+              NYRR record carries an official race date and gun time, show it
+              under the permit window rather than in place of it — both are true.
+            {%- endcomment -%}
+            {% if page.nyrr.date %}
+            <p style="font-size: 0.85rem; margin: 6px 0 0 0; color: rgba(0,0,0,0.7);">
+              Race start: {{ page.nyrr.date }}{% if page.nyrr.distance %} &middot; {{ page.nyrr.distance }}{% endif %}
+            </p>
+            {% endif %}
           </div>
 
           <div style="margin-bottom: 20px;">
