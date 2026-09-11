@@ -279,7 +279,13 @@ def categorize(name, event_type, places=None):
 
     # Runs / races / walks (BEFORE sports/concerts so "Band of Parents 4 Mile Run Walk"
     # doesn't fall into concerts-performances on "band")
-    if re.search(r'\b(walk|run|race|5k|10k|15k|half|marathon|jog)\b', name_lower):
+    #
+    # `mile` is singular on purpose: it catches races named only by a mile
+    # distance ("New Balance Fifth Avenue Mile"), which otherwise fell through to
+    # the family-community catch-all and went invisible to every runner/cyclist/
+    # walker tag-include. `\bmiles\b` is deliberately NOT matched — it would
+    # over-tag a name like "Miles Davis" at a concert venue.
+    if re.search(r'\b(walk|run|race|5k|10k|15k|half|marathon|jog|mile)\b', name_lower):
         # but skip if it's actually a training/lesson/class
         if not any(w in name_lower for w in ['training', 'lesson', 'class ', 'course']):
             return 'runs-races'
