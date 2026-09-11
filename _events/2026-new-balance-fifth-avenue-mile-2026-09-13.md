@@ -16,14 +16,17 @@ place_categories:
   - "paths_and_drives"
 boroughs:
   - "Manhattan"
-image: "/assets/images/categories/runs-races.png"
+image: "/assets/images/tags/race.png"
 description: "2026 New Balance Fifth Avenue Mile at Grand Army Plaza - Pulitzer Fountain, Grand Army Plaza - Sherman Statue in Central Park."
 event_id: "893055"
 event_type: "Special Event"
 event_borough: "Manhattan"
 community_board: "5, 64"
 police_precinct: "18, 22"
+affects_loop: true
 tags:
+  - "Affects Loop"
+  - "Race"
   - "Runs & Races"
 nyrr:
   distance: "1 Mile"

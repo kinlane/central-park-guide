@@ -1,0 +1,58 @@
+- timestamp: '2026-09-11T23:34:08.457812+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 12\u201318: three races in two days, thunderstorms on\
+    \ top of Sunday, and five nights at SummerStage"
+  week_of: '2026-09-11'
+  status: sent
+- timestamp: '2026-09-11T23:34:18.355007+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 12\u201318: the loop is gone Sunday morning \u2014 two\
+    \ races and thunderstorms \u2014 then three perfect empty days"
+  week_of: '2026-09-11'
+  status: sent
+- timestamp: '2026-09-11T23:34:39.138229+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 12\u201318: five nights of SummerStage, a chess master\
+    \ against thirty players, and a wet Sunday"
+  week_of: '2026-09-11'
+  status: sent
+- timestamp: '2026-09-11T23:34:50.062971+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 12\u201318: the clear run ends with\
+    \ three races in two days, and Bethesda hits 21 straight days closed"
+  week_of: '2026-09-11'
+  status: sent

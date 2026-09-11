@@ -546,6 +546,9 @@ LOOP_IMPACT_NAME_PATTERNS = [
     r'\bted\s+corbitt\b',                          # NYRR Ted Corbitt 15K
     r'\bmanhattan\s+10k\b',
     r'\bhealthy\s+kidney\b',                       # NYRR Healthy Kidney 10K
+    r'\brace\s+for\s+the\s+cure\b',                # Susan G. Komen — Bandshell staging, full loop
+    r'\bbuddy\s+walk\b',                           # NDSS NYC Buddy Walk — Bandshell + Dead Road
+    r'\bfifth\s+avenue\s+mile\b',                  # NYRR 5th Ave Mile — closes the SE corner approaches
 ]
 
 
