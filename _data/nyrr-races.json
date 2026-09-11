@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-11T22:13:14+00:00",
+  "fetched_at": "2026-09-11T22:29:59+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -73,16 +73,21 @@
       "year": 2026
     },
     "2026newbalancefifthavenuemile": {
-      "candidate_title": "2026 New Balance Fifth Avenue Mile",
-      "fetched_at": "2026-09-11T22:13:12+00:00",
-      "last_error": "http_302",
-      "parsed": false,
-      "slug": "newbalancefifthavenuemile",
-      "urls_tried": [
-        "https://www.nyrr.org/races/2026newbalancefifthavenuemile",
-        "https://www.nyrr.org/races/2026/newbalancefifthavenuemile",
-        "https://www.nyrr.org/races/newbalancefifthavenuemile"
+      "boroughs": [
+        "Manhattan"
       ],
+      "candidate_title": "2026 New Balance Fifth Avenue Mile",
+      "course_text": "Ruth and Arthur Smadbeck-Heckscher East Playground, 79th Street Transverse, New York, NY, USA",
+      "date": "September 13, 2026 7:25 AM",
+      "description": "Run your fastest mile through the heart of Manhattan at the New Balance 5th Avenue Mile on Sunday, September 13.",
+      "distance": "1 Mile",
+      "fetch_source": "manual_jsonld",
+      "fetched_at": "2026-09-11T22:30:17+00:00",
+      "location": "Fifth Avenue",
+      "parsed": true,
+      "slug": "newbalancefifthavenuemile",
+      "source_url": "https://events.nyrr.org/new-balance-5th-avenue-mile",
+      "title": "New Balance 5th Avenue Mile",
       "year": 2026
     },
     "2026nyrr911memorialmuseum4m": {

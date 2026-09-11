@@ -9,9 +9,13 @@ place_category: "plazas"
 places:
   - "Grand Army Plaza"
   - "Pulitzer Fountain"
+  - "79th Street Transverse"
 place_categories:
   - "plazas"
   - "monuments_and_sculptures"
+  - "paths_and_drives"
+boroughs:
+  - "Manhattan"
 image: "/assets/images/categories/runs-races.png"
 description: "2026 New Balance Fifth Avenue Mile at Grand Army Plaza - Pulitzer Fountain, Grand Army Plaza - Sherman Statue in Central Park."
 event_id: "893055"
@@ -21,6 +25,9 @@ community_board: "5, 64"
 police_precinct: "18, 22"
 tags:
   - "Runs & Races"
+nyrr:
+  distance: "1 Mile"
+  source_url: "https://events.nyrr.org/new-balance-5th-avenue-mile"
 ---
 
 2026 New Balance Fifth Avenue Mile takes place at Grand Army Plaza - Pulitzer Fountain, Grand Army Plaza - Sherman Statue in Central Park on Sunday, September 13, 2026.
