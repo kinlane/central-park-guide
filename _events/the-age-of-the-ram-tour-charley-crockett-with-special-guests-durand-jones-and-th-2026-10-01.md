@@ -1,5 +1,5 @@
 ---
-title: "The Age of the Ram Tour: Charley Crockett with special guests Durand Jones and the Indications"
+title: "The Age of the Ram Tour: Charley Crockett with special guests Durand Jones and the Indications / Honky Tonkin’ in Queens"
 date: 2026-10-01
 time: "19:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ SummerStage Member Presale: Thursday, March 5 at 12PM Capital One Cardholder Pre
 
 ## Event Details
 
-- **Event:** The Age of the Ram Tour: Charley Crockett with special guests Durand Jones and the Indications
+- **Event:** The Age of the Ram Tour: Charley Crockett with special guests Durand Jones and the Indications / Honky Tonkin’ in Queens
 - **Date:** Thursday, October 1, 2026
 - **Time:** 19:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park
