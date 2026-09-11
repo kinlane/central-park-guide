@@ -1,0 +1,19 @@
+- timestamp: '2026-09-06T19:49:10.897494+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 7\u201313: SummerStage comes back for two nights, and\
+    \ a third clear week on the drives"
+  week_of: '2026-09-06'
+  status: sent
