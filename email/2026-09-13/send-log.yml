@@ -1,0 +1,58 @@
+- timestamp: '2026-09-14T01:24:01.701633+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 14\u201320: an 18-mile training run takes the loop Sunday,\
+    \ and Bethesda's closure finally has an end date"
+  week_of: '2026-09-13'
+  status: sent
+- timestamp: '2026-09-14T01:24:05.798691+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 14\u201320: three perfect midweek days, then an 18-mile\
+    \ training run owns the loop Sunday"
+  week_of: '2026-09-13'
+  status: sent
+- timestamp: '2026-09-14T01:24:10.691927+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 14\u201320: Pinocchio at the Marionette Theatre, jazz\
+    \ at the Bandshell, and the month's best three days"
+  week_of: '2026-09-13'
+  status: sent
+- timestamp: '2026-09-14T01:24:15.042434+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 14\u201320: Bethesda's closure has\
+    \ an end date, and the leagues have moved to Heckscher"
+  week_of: '2026-09-13'
+  status: sent
