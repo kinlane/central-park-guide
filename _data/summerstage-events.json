@@ -1,100 +1,12 @@
 {
   "events": [
     {
-      "id": "summerstage-21046",
-      "title": "Young Thug: The New Generation Tour with NAV",
-      "start_date": "2026-09-13 20:00:00",
-      "end_date": "2026-09-13 22:00:00",
-      "url": "https://cityparksfoundation.org/events/young-thug/",
-      "description": "SummerStage Member   Presale:  Thursday, July 16 at 10AM  \n  Capital One Cardholder Presale:  Wednesday, July 15 at 12PM   \n General Onsale:  Friday, July 17 at 10AM  \n Young Thug  will be bringing The New Generation tour to SummerStage on Sunday, September 13, with support from   NAV  . The Atlanta-born rapper has been putting out hit songs like \u201cOld English\u201d and \u201cDanny Glover\u201d since bursting onto the scene and has collaborated with stars including J. Cole and Lil Wayne.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/08/Static_Social-FacebookPR_1200x630_YoungThug_2026_Regional_SummerStageinCentralPark_0913-1.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:04Z"
-    },
-    {
-      "id": "summerstage-20939",
-      "title": "Danny Elfman",
-      "start_date": "2026-09-15 20:30:00",
-      "end_date": "2026-09-15 22:00:00",
-      "url": "https://cityparksfoundation.org/events/danny-elfman/",
-      "description": "Capital One Presale: Wednesday, July 8 at 12PM \n SummerStage Member Presale: Thursday, July 9 at 10AM. \n General onsale: Friday, July 10 at 10AM. \n The internationally acclaimed film and classical composer has enjoyed a longstanding partnership with Tim Burton, scoring films like  Edward Scissorhands  and  Pee-wee\u2019s Big Adventure . More recently, he\u2019s returned to his legendary rock roots (formerly of new wave icon Oingo Boingo) with his album  Big   Mess  and his forthcoming fall album, which he will bring to SummerStage.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/07/Static_Social-FacebookPR_1200x630_DannyElfman_2026_Regional_SummerStageinCentralPark_0915.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:04Z"
-    },
-    {
-      "id": "summerstage-19761",
-      "title": "(RESCHEDULED) New York Sings Yiddish: Passing the Torch to a New Generation Featuring YidLife Crisis / Yair Keydar / Riki Rose / Daniella Rabbani + More",
-      "start_date": "2026-09-17 19:00:00",
-      "end_date": "2026-09-17 22:00:00",
-      "url": "https://cityparksfoundation.org/events/new-york-sings-yiddish-26/",
-      "description": "IMPORTANT UPDATE: Due to the threat of severe weather, New York Sings Yiddish has been rescheduled from Monday, June 22 to Thursday, September 17 at 7 PM.  \n  While we\u2019re disappointed not to gather with you tomorrow evening, the good news is that we\u2019ll still be celebrating together this fall with an unforgettable night of Yiddish music under the stars at SummerStage in Central Park.  \n  We look forward to seeing you on September 17!  \n \u00a0 \n The National Yiddish Theatre Folksbiene returns to Central Park with a bold, joyful lineup of emerging talent and distinctive voices. Musical director Zalmen Mlotek leads a fresh wave of artists shaping the sound of today. Mlotek is a conductor, pianist, musical arranger, accompanist, composer, and the Artistic Director of the NYTF, the longest continuously running Yiddish theatre in the world. \n The performance features an exciting roster of rising stars, including Yair Keydar, the 13-year-old Star Search veteran; Yosef Kogan, the 13-year-old violin prodigy who has performed at Carnegie Hall, Merkin Hall, and the Prague String Festival; The Mamales, a dynamic trio of young women singers who met while performing  Fiddler on the Roof  in Yiddish; Riki Rose, a Yiddish singer, songwriter, comedian from Williamsburg\u2019s Satmar community; and Margot Weintraub, the young actress and singer best known for roles in the Amazon series  Hunters  and Sarah Silverman\u2019s Off-Broadway show  The Bedwetter . Serving as masters of ceremony are the stars of the Canadian web series YidLife Crisis, collaborating with Frank London\u2019s Klezmer All Stars, a brass group that blends Yiddish, Hasidic music, and Klezmer with electronic beats.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/04/nytf_webphoto.webp",
-      "cost": "Free",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "Rumsey Playfield, New York, NY, 10021",
-      "venue_source": "detail",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:06Z"
-    },
-    {
-      "id": "summerstage-19369",
-      "title": "RESCHEDULED: SOLD OUT: Yeat: The LOVE/LYFE Tour / Glokk40Spaz",
-      "start_date": "2026-09-18 20:00:00",
-      "end_date": "2026-09-18 22:00:00",
-      "url": "https://cityparksfoundation.org/events/yeat/",
-      "description": "This show has been rescheduled to Friday, September 18.   \n Yeat\u2019s latest album  ADL (A Dangerous Lyfe / A Dangerous Love ), released just this past Friday, features an all-star list of collaborators ranging from Elton John to 070 Shake to Grimes, showcasing his talent for bringing together unique sounds and pushing the boundaries of his genre. Since 2018, he has gained a huge social media following and a loyal Gen Z fanbase in the process. Glokk40Spaz will support the evening.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/07/Static_Social-FacebookPR_1200x630_Yeat_2026_Regional_SummerStageinCentralPark_0723-1.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:06Z"
-    },
-    {
       "id": "summerstage-21630",
-      "title": "Music for Action, a Climate Week Concert: Young the Giant / St. Lucia",
+      "title": "Music for Action, a Climate Week Concert: Young the Giant / St. Lucia / DREEEMY DJ Set",
       "start_date": "2026-09-22 19:00:00",
       "end_date": "2026-09-22 22:00:00",
       "url": "https://cityparksfoundation.org/events/music-for-action/",
-      "description": "Turning up the Volume on Climate Change & Tick-Borne Disease: This show  is raising awareness about climate change and the resulting increase in tick-borne diseases, including in urban areas and city parks. Concert-goers will leave equipped to stay safe while enjoying the outdoors. \n  Performing for the evening is multi-platinum Southern California rock band   Young the Giant  , known for their hit songs like \u201cCough Syrup\u201d and \u201cMy Body.\u201d Their sixth full-length album,    Victory Garden   , explores themes of resilience and connection, culminating their years of advocacy and music. The group has made environmental action a priority on the road, partnering with environmental nonprofit REVERB to reduce the impact of its tours by calculating its tour-related carbon footprint, supporting local climate and social nonprofits in the communities it visits, and contributing a portion of ticket proceeds to REVERB\u2019s Climate Project Portfolio. Joining the bill is Jean-Philip Grobler and Patti Beranek\u2019s alt-pop project   St. Lucia  , performing work from their album    Dusk   .\u00a0  \n  For a chance to win VIP tickets to Music for Action, a Climate Week Concert, you can RSVP for the show  here , although as all SummerStage shows, this one remains free, first come, first served until we fill up. RSVP is\u00a0 not required  to attend this show and does not guarantee entry.",
+      "description": "Turning up the Volume on Climate Change & Tick-Borne Disease: This show  is raising awareness about climate change and the resulting increase in tick-borne diseases, including in urban areas and city parks. Concert-goers will leave equipped to stay safe while enjoying the outdoors. \n  Performing for the evening is multi-platinum Southern California rock band   Young the Giant  , known for their hit songs like \u201cCough Syrup\u201d and \u201cMy Body.\u201d Their sixth full-length album,    Victory Garden   , explores themes of resilience and connection, culminating their years of advocacy and music. The group has made environmental action a priority on the road, partnering with environmental nonprofit REVERB to reduce the impact of its tours by calculating its tour-related carbon footprint, supporting local climate and social nonprofits in the communities it visits, and contributing a portion of ticket proceeds to REVERB\u2019s Climate Project Portfolio. Joining the bill is Jean-Philip Grobler and Patti Beranek\u2019s alt-pop project   St. Lucia  , performing work from their album    Dusk   . DREEEMY will kick off the evening with a DJ set.\u00a0  \n  For a chance to win VIP tickets to Music for Action, a Climate Week Concert, you can RSVP for the show  here , although as all SummerStage shows, this one remains free, first come, first served until we fill up. RSVP is\u00a0 not required  to attend this show and does not guarantee entry.",
       "image": "https://cityparksfoundation.org/wp-content/uploads/2026/08/mfa-ytg_web.webp",
       "cost": "Free",
       "venue": "Manhattan",
@@ -108,7 +20,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:07Z"
+      "fetched_at": "2026-09-19T10:06:36Z"
     },
     {
       "id": "summerstage-20943",
@@ -130,7 +42,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:09Z"
+      "fetched_at": "2026-09-19T10:06:36Z"
     },
     {
       "id": "summerstage-18861",
@@ -152,7 +64,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:09Z"
+      "fetched_at": "2026-09-19T10:06:37Z"
     },
     {
       "id": "summerstage-18362",
@@ -174,8 +86,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-14T01:14:11Z"
+      "fetched_at": "2026-09-19T10:06:37Z"
     }
   ],
-  "fetched_at": "2026-09-14T01:14:11Z"
+  "fetched_at": "2026-09-19T10:06:37Z"
 }

@@ -1,5 +1,5 @@
 ---
-title: "Music for Action, a Climate Week Concert: Young the Giant / St. Lucia"
+title: "Music for Action, a Climate Week Concert: Young the Giant / St. Lucia / DREEEMY DJ Set"
 date: 2026-09-22
 time: "19:00"
 end_time: "22:00"
@@ -25,7 +25,7 @@ Turning up the Volume on Climate Change & Tick-Borne Disease: This show is raisi
 
 ## Event Details
 
-- **Event:** Music for Action, a Climate Week Concert: Young the Giant / St. Lucia
+- **Event:** Music for Action, a Climate Week Concert: Young the Giant / St. Lucia / DREEEMY DJ Set
 - **Date:** Tuesday, September 22, 2026
 - **Time:** 19:00 – 22:00
 - **Location:** Rumsey Playfield, Central Park

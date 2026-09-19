@@ -2,7 +2,7 @@
 title: "Baseball - 12 and Under (Little League)"
 date: 2026-09-19
 time: "09:00"
-end_time: "13:00"
+end_time: "14:00"
 location: "Great Lawn-Softball-06"
 place: "Great Lawn"
 place_category: "meadows_and_lawns"
@@ -25,7 +25,7 @@ Baseball - 12 and Under (Little League) takes place at Great Lawn-Softball-06 in
 
 - **Event:** Baseball - 12 and Under (Little League)
 - **Date:** Saturday, September 19, 2026
-- **Time:** 9:00 AM - 1:00 PM
+- **Time:** 9:00 AM - 2:00 PM
 - **Location:** Great Lawn-Softball-06, Central Park
 - **Place:** Great Lawn
 - **Type:** Sport - Youth

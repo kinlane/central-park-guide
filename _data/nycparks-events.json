@@ -1,56 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-09-14-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/14/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-14T09:00:00-04:00",
-      "end_date": "2026-09-14T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-15-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/15/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-15T09:00:00-04:00",
-      "end_date": "2026-09-15T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-16-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/16/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-16T09:00:00-04:00",
-      "end_date": "2026-09-16T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-17-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/17/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-17T09:00:00-04:00",
-      "end_date": "2026-09-17T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-18-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/18/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-18T09:00:00-04:00",
-      "end_date": "2026-09-18T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-09-21-new-dendrology-at-the-arsenal-gallery",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/21/new-dendrology-at-the-arsenal-gallery",
       "title": "New Dendrology at the Arsenal Gallery",
@@ -441,5 +391,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-09-14T01:14:03Z"
+  "fetched_at": "2026-09-19T10:06:35Z"
 }
