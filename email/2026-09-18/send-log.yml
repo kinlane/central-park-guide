@@ -1,0 +1,58 @@
+- timestamp: '2026-09-19T10:13:47.182987+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 19\u201325: fall arrives this weekend \u2014 Saturday\
+    \ is the only dry day, and Sunday brings rain onto an 18-mile run"
+  week_of: '2026-09-18'
+  status: sent
+- timestamp: '2026-09-19T10:13:51.514536+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 19\u201325: Saturday is the last dry day, Sunday is\
+    \ 18 miles in the rain, and Monday the park is empty"
+  week_of: '2026-09-18'
+  status: sent
+- timestamp: '2026-09-19T10:13:56.613896+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 19\u201325: the Chess-in-the-Park Rapid Open turns 25,\
+    \ and Climate Week brings two concerts"
+  week_of: '2026-09-18'
+  status: sent
+- timestamp: '2026-09-19T10:14:01.361462+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 19\u201325: the Great Lawn has emptied\
+    \ out, and nothing in the permit record says why"
+  week_of: '2026-09-18'
+  status: sent
