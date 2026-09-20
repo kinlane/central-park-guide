@@ -1,0 +1,58 @@
+- timestamp: '2026-09-20T21:10:25.819112+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 21\u201327: the Global Citizen Festival takes the Great\
+    \ Lawn Saturday, and the whole lawn is held for eleven days"
+  week_of: '2026-09-20'
+  status: sent
+- timestamp: '2026-09-20T21:10:30.723962+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 21\u201327: Monday is the week, and Saturday the Global\
+    \ Citizen Festival swallows mid-park"
+  week_of: '2026-09-20'
+  status: sent
+- timestamp: '2026-09-20T21:10:36.272802+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 21\u201327: the Global Citizen Festival, free opera\
+    \ Monday, and SummerStage's final two nights"
+  week_of: '2026-09-20'
+  status: sent
+- timestamp: '2026-09-20T21:10:40.845809+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 21\u201327: the Great Lawn mystery\
+    \ is solved \u2014 Global Citizen, and the permit posted six days out"
+  week_of: '2026-09-20'
+  status: sent
