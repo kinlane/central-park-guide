@@ -1,0 +1,58 @@
+- timestamp: '2026-09-26T11:48:06.288235+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 26\u2013Oct 2: the Global Citizen Festival gets soaked,\
+    \ then four beautiful days and SummerStage's last night"
+  week_of: '2026-09-25'
+  status: sent
+- timestamp: '2026-09-26T11:48:11.182941+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 26\u2013Oct 2: write off the weekend, then four straight\
+    \ days of 72\u201377\xB0 and sunshine"
+  week_of: '2026-09-25'
+  status: sent
+- timestamp: '2026-09-26T11:48:16.105479+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 26\u2013Oct 2: a soaked Global Citizen Festival, marionettes\
+    \ on a wet Sunday, and Charley Crockett closes the season"
+  week_of: '2026-09-25'
+  status: sent
+- timestamp: '2026-09-26T11:48:21.562935+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 26\u2013Oct 2: Bethesda's end date\
+    \ moved twelve days, and the season closes Thursday"
+  week_of: '2026-09-25'
+  status: sent
