@@ -1,50 +1,6 @@
 {
   "events": [
     {
-      "id": "summerstage-21630",
-      "title": "Music for Action, a Climate Week Concert: Young the Giant / St. Lucia / DREEEMY DJ Set",
-      "start_date": "2026-09-22 19:00:00",
-      "end_date": "2026-09-22 22:00:00",
-      "url": "https://cityparksfoundation.org/events/music-for-action/",
-      "description": "Turning up the Volume on Climate Change & Tick-Borne Disease: This show  is raising awareness about climate change and the resulting increase in tick-borne diseases, including in urban areas and city parks. Concert-goers will leave equipped to stay safe while enjoying the outdoors. \n  Performing for the evening is multi-platinum Southern California rock band   Young the Giant  , known for their hit songs like \u201cCough Syrup\u201d and \u201cMy Body.\u201d Their sixth full-length album,    Victory Garden   , explores themes of resilience and connection, culminating their years of advocacy and music. The group has made environmental action a priority on the road, partnering with environmental nonprofit REVERB to reduce the impact of its tours by calculating its tour-related carbon footprint, supporting local climate and social nonprofits in the communities it visits, and contributing a portion of ticket proceeds to REVERB\u2019s Climate Project Portfolio. Joining the bill is Jean-Philip Grobler and Patti Beranek\u2019s alt-pop project   St. Lucia  , performing work from their album    Dusk   . DREEEMY will kick off the evening with a DJ set.\u00a0  \n  For a chance to win VIP tickets to Music for Action, a Climate Week Concert, you can RSVP for the show  here , although as all SummerStage shows, this one remains free, first come, first served until we fill up. RSVP is\u00a0 not required  to attend this show and does not guarantee entry.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/08/mfa-ytg_web.webp",
-      "cost": "Free",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "free"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-20T19:43:51Z"
-    },
-    {
-      "id": "summerstage-20943",
-      "title": "Of Monsters and Men / August Ponthier",
-      "start_date": "2026-09-23 19:00:00",
-      "end_date": "2026-09-23 22:00:00",
-      "url": "https://cityparksfoundation.org/events/of-monsters-and-men-august-ponthier/",
-      "description": "The Icelandic indie band broke onto the scene in 2011 with their hit \u201cLittle Talks,\u201d which led to more than a billion Spotify streams and a    Saturday Night Live    performance. Since then, they\u2019ve run the gamut of performance from cameos on    HBO   \u2019s    Game of Thrones    to sets at Coachella, Glastonbury, and Lollapalooza. After some time pursuing solo projects, they\u2019re reuniting for The Mouse Parade Tour, named for their most recent 2025 album. Indie singer songwriter August Ponthier will open the evening.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/07/Static_Social-X-Twitter_800x419_OfMonstersandMen_2026_Regional_SummerStage-in-Central-Park_0923.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-20T19:43:51Z"
-    },
-    {
       "id": "summerstage-18861",
       "title": "The Age of the Ram Tour: Charley Crockett with special guests Durand Jones and the Indications / Honky Tonkin\u2019 in Queens",
       "start_date": "2026-10-01 19:00:00",
@@ -64,7 +20,7 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-20T19:43:52Z"
+      "fetched_at": "2026-09-26T11:33:31Z"
     },
     {
       "id": "summerstage-18362",
@@ -86,8 +42,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-20T19:43:54Z"
+      "fetched_at": "2026-09-26T11:33:31Z"
     }
   ],
-  "fetched_at": "2026-09-20T19:43:54Z"
+  "fetched_at": "2026-09-26T11:33:31Z"
 }

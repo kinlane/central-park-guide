@@ -16,6 +16,7 @@ cost: "Free"
 tags:
   - "Conservancy"
   - "Family & Community"
+  - "Fitness"
   - "Free"
 ---
 

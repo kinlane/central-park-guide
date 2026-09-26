@@ -277,7 +277,7 @@
     "title": "Global Citizen Festival 2026",
     "url": "https://www.centralpark.com/events/global-citizen-festival/",
     "source": "centralpark.com",
-    "description": "Top artists and world leaders will come together to fight the global food crisis and relieve crushing debts. Find out how to win tickets!",
+    "description": "Top artists and world leaders will come together on September 26 to fight the global food crisis and relieve crushing debts. Find out how to win tickets!",
     "location": "Great Lawn",
     "coordinates": {
       "lat": 40.7812388527777,
@@ -289,28 +289,7 @@
       "Global Citizen Festival",
       "Great Lawn"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10847/download/global-citizen-festival-central-park-2024.jpg?cb=d4390d1977936369cc1e67f0975011f8",
-    "start_date": "2026-09-26T14:00:00",
-    "end_date": "2026-09-26T22:00:00"
-  },
-  {
-    "title": "Music for Action: A Climate Week Concert with Young the Giant and St. Lucia",
-    "url": "https://www.centralpark.com/events/music-for-action-a-climate-week-concert-with-young-the-giant/",
-    "source": "centralpark.com",
-    "description": "Young the Giant and St. Lucia headline a free Climate Week concert at SummerStage on September 22, raising awareness for tick-borne disease alongside LymeLnk",
-    "location": "Rumsey Playfield",
-    "coordinates": {
-      "lat": 40.7726633475736,
-      "lng": -73.970228695111
-    },
-    "tags": [
-      "Free Events",
-      "Great Lawn",
-      "SummerStage 2026"
-    ],
-    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png",
-    "start_date": "2026-09-22T18:00:00",
-    "end_date": "2026-09-22T22:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10847/download/global-citizen-festival-central-park-2024.jpg?cb=d4390d1977936369cc1e67f0975011f8"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -393,6 +372,7 @@
       "Sports & Recreation",
       "Sunrise",
       "Sunrise Wellness Walk",
+      "Sunrise Yoga",
       "Walking Tours",
       "Wellness",
       "Yoga",

@@ -1,66 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-09-21-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/21/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-21T09:00:00-04:00",
-      "end_date": "2026-09-21T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-22-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/22/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-22T09:00:00-04:00",
-      "end_date": "2026-09-22T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-23-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/23/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-23T09:00:00-04:00",
-      "end_date": "2026-09-23T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-24-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/24/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-24T09:00:00-04:00",
-      "end_date": "2026-09-24T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-24-building-crosssector-ecosystems-for-climate-action-panel-dis",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/24/building-crosssector-ecosystems-for-climate-action-panel-dis",
-      "title": "Building Cross-Sector Ecosystems for Climate Action Panel Discussion",
-      "start_date": "2026-09-24T18:00:00-04:00",
-      "end_date": "2026-09-24T20:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-09-25-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/25/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-09-25T09:00:00-04:00",
-      "end_date": "2026-09-25T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-09-28-new-dendrology-at-the-arsenal-gallery",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/09/28/new-dendrology-at-the-arsenal-gallery",
       "title": "New Dendrology at the Arsenal Gallery",
@@ -391,5 +331,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-09-20T19:43:50Z"
+  "fetched_at": "2026-09-26T11:33:30Z"
 }
