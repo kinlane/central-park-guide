@@ -1,0 +1,58 @@
+- timestamp: '2026-09-27T20:28:27.693257+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Sep 28\u2013Oct 4: five clear days and 80\xB0 Thursday,\
+    \ SummerStage closes, and City of Forest Day in the North Woods"
+  week_of: '2026-09-27'
+  status: sent
+- timestamp: '2026-09-27T20:29:24.739602+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Sep 28\u2013Oct 4: one wet Monday, then five clear days\
+    \ and 80\xB0 Thursday"
+  week_of: '2026-09-27'
+  status: sent
+- timestamp: '2026-09-27T20:29:30.287142+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Sep 28\u2013Oct 4: City of Forest Day in the North Woods,\
+    \ and Charley Crockett closes SummerStage"
+  week_of: '2026-09-27'
+  status: sent
+- timestamp: '2026-09-27T20:29:35.212762+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Sep 28\u2013Oct 4: the Great Lawn is off\
+    \ the league calendar for the season, and Bethesda extends again"
+  week_of: '2026-09-27'
+  status: sent
