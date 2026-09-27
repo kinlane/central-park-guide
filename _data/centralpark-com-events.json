@@ -36,6 +36,25 @@
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
   },
   {
+    "title": "Central Park Conservancy Film Festival 2026",
+    "url": "https://www.centralpark.com/events/central-park-conservancy-film-festival/",
+    "source": "centralpark.com",
+    "description": "Bring a blanket and a picnic and enjoy watching a movie under the stars!",
+    "location": "Sheep Meadow",
+    "coordinates": {
+      "lat": 40.7719207940189,
+      "lng": -73.9752120943934
+    },
+    "cost": "Free – no tickets required",
+    "tags": [
+      "Central Park Film Festival",
+      "Free Events"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/5696/download/cpfilmfestival_lit.jpg.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
+    "start_date": "2026-10-06T18:30:00",
+    "end_date": "2026-10-06T20:30:00"
+  },
+  {
     "title": "Central Park Farm Stand",
     "url": "https://www.centralpark.com/events/central-park-farm-stand/",
     "source": "centralpark.com",
@@ -274,22 +293,22 @@
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
   },
   {
-    "title": "Global Citizen Festival 2026",
-    "url": "https://www.centralpark.com/events/global-citizen-festival/",
+    "title": "Gladiators NYC",
+    "url": "https://www.centralpark.com/events/gladiators-nyc/",
     "source": "centralpark.com",
-    "description": "Top artists and world leaders will come together on September 26 to fight the global food crisis and relieve crushing debts. Find out how to win tickets!",
-    "location": "Great Lawn",
+    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
+    "location": "Lawn Behind Met Museum",
     "coordinates": {
-      "lat": 40.7812388527777,
-      "lng": -73.9664058932192
+      "lat": 40.7784296398896,
+      "lng": -73.9655968372519
     },
     "tags": [
-      "Benefit Concerts",
+      "Annual Events",
+      "Featured Events",
       "Free Events",
-      "Global Citizen Festival",
-      "Great Lawn"
+      "Metropolitan Museum Of Art"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10847/download/global-citizen-festival-central-park-2024.jpg?cb=d4390d1977936369cc1e67f0975011f8"
+    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -409,6 +428,24 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/3441/download/central-park-scavenger-hunt.jpe?cb=7066e140bd94dce4d2f0dc3e50e72849"
+  },
+  {
+    "title": "We Belong Here Festival Experience",
+    "url": "https://www.centralpark.com/events/we-belong-here-festival-experience-central-park/",
+    "source": "centralpark.com",
+    "description": "The We Belong Here three-day music festival experience returns to Wollman Rink from October 2-4.",
+    "location": "Wollman Rink",
+    "coordinates": {
+      "lat": 40.7678877312757,
+      "lng": -73.974401746967
+    },
+    "tags": [
+      "Dancing",
+      "Wollman Rink"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10818/download/we-belong-here-central-park.jpg?cb=e182897b92622749099c7d2ccaf81446",
+    "start_date": "2026-10-02T00:00:00",
+    "end_date": "2026-10-03T00:00:00"
   },
   {
     "title": "Yoga Classes",
