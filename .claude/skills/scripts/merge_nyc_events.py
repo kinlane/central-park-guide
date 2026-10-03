@@ -578,6 +578,12 @@ LOOP_PLACE_NAMES = {
     'West Drive',
     'Center Drive',
     'Ted Corbitt Loop',
+    # The southern 1.7-mile loop, and a place name the permit feed uses outright:
+    # the Terry Fox Run's event_location reads "Bandshell Plaza, Lower Loop" and
+    # still scored no loop impact until this was added. It is the loop itself, not
+    # a transverse or cross drive, so it belongs here by the same rule as the
+    # drives above.
+    'Lower Loop',
 }
 
 

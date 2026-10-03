@@ -184,9 +184,7 @@
       "Tisch Children's Zoo",
       "Winter Activities"
     ],
-    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3",
-    "start_date": "2026-09-27T00:00:00",
-    "end_date": "2026-09-28T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3"
   },
   {
     "title": "City Girls Who Walk",
@@ -331,28 +329,6 @@
     "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
   },
   {
-    "title": "Pickleball at Wollman Rink",
-    "url": "https://www.centralpark.com/events/pickleball-at-wollman-rink/",
-    "source": "centralpark.com",
-    "description": "Play the nation's fastest growing sport at Wollman Rink, now with 14 permanent pickleball courts.",
-    "location": "Wollman Rink",
-    "coordinates": {
-      "lat": 40.7678877312757,
-      "lng": -73.974401746967
-    },
-    "tags": [
-      "Activities",
-      "Fall Activities",
-      "Pickleball",
-      "Recreation",
-      "Sports & Recreation",
-      "Spring Activities",
-      "Summer Activities",
-      "Wollman Rink"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10903/download/pickleball-wollman.jpg?cb=d22be6a7cd3935c7aaf13233f26febe4"
-  },
-  {
     "title": "Sea Lion Feedings at Central Park Zoo",
     "url": "https://www.centralpark.com/events/central-park-zoo-sea-lion-feedings/",
     "source": "centralpark.com",
@@ -443,9 +419,7 @@
       "Dancing",
       "Wollman Rink"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10818/download/we-belong-here-central-park.jpg?cb=e182897b92622749099c7d2ccaf81446",
-    "start_date": "2026-10-02T00:00:00",
-    "end_date": "2026-10-03T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10818/download/we-belong-here-central-park.jpg?cb=e182897b92622749099c7d2ccaf81446"
   },
   {
     "title": "Yoga Classes",

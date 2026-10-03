@@ -1,28 +1,6 @@
 {
   "events": [
     {
-      "id": "summerstage-18861",
-      "title": "The Age of the Ram Tour: Charley Crockett with special guests Durand Jones and the Indications / Honky Tonkin\u2019 in Queens",
-      "start_date": "2026-10-01 19:00:00",
-      "end_date": "2026-10-01 22:00:00",
-      "url": "https://cityparksfoundation.org/events/charley-crockett/",
-      "description": "SummerStage Member  Presale:  Thursday, March 5 at 12PM  \n  Capital One Cardholder  Presale:  Tuesday, March 3 at 11AM   \n General on-sale:  Friday, March 6 at 10AM  \n \u201cStreet busker turned critically acclaimed singer-songwriter turned actual country star\u201d ( Rolling   Stone ), Charley Crockett\u2019s particular brand of country has earned him millions of streams and several GRAMMY nominations. His deep voice and Americana style on songs like \u201cLonesome Drifter\u201d and \u201cI\u2019m Just a Clown\u201d evoke a version of the country filled with tumbleweeds and cowboys. He\u2019s played across the U.S. at venues including Red Rocks, the Hollywood Bowl, and even SummerStage in 2022, when he opened for Willie Nelson. Durand Jones and the Indications will open the evening. \n  Charley Crockett, in partnership with PLUS1, will contribute $1.00 from every ticket sold to Last Prisoner Project.",
-      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/03/Static_Social-FacebookPR_1200x630_CharleyCrockett_2026_Regional_SummerStageinCentralPark_1001.webp",
-      "cost": "",
-      "venue": "Manhattan",
-      "venue_park": "Central Park",
-      "venue_address": "E. 71st Street, New York, NY",
-      "venue_source": "detail",
-      "tags": [
-        "ticketed"
-      ],
-      "categories": [
-        "summerstage"
-      ],
-      "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-27T20:00:43Z"
-    },
-    {
       "id": "summerstage-18362",
       "title": "Odd Mob",
       "start_date": "2027-05-29 17:30:00",
@@ -42,8 +20,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-09-27T20:00:44Z"
+      "fetched_at": "2026-10-03T10:25:50Z"
     }
   ],
-  "fetched_at": "2026-09-27T20:00:44Z"
+  "fetched_at": "2026-10-03T10:25:50Z"
 }

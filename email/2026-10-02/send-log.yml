@@ -1,0 +1,58 @@
+- timestamp: '2026-10-03T10:34:46.618567+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 3\u20139: the Conservancy Film Festival runs four nights\
+    \ at Cherry Hill, and the Big Apple Triathlon takes the drives"
+  week_of: '2026-10-02'
+  status: sent
+- timestamp: '2026-10-03T10:34:50.559853+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 3\u20139: the Lower Loop goes Saturday morning, the\
+    \ drives go Thursday, and Monday is perfect and empty"
+  week_of: '2026-10-02'
+  status: sent
+- timestamp: '2026-10-03T10:34:54.644059+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 3\u20139: four nights of film at Cherry Hill, City of\
+    \ Forest Day, and the best weather of the autumn"
+  week_of: '2026-10-02'
+  status: sent
+- timestamp: '2026-10-03T10:34:58.788657+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 3\u20139: a permit that said 'Lower\
+    \ Loop' scored no loop impact, and Bethesda crosses into November"
+  week_of: '2026-10-02'
+  status: sent
