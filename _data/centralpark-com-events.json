@@ -39,18 +39,18 @@
     "title": "Central Park Conservancy Film Festival 2026",
     "url": "https://www.centralpark.com/events/central-park-conservancy-film-festival/",
     "source": "centralpark.com",
-    "description": "Bring a blanket and a picnic and enjoy watching a movie under the stars!",
-    "location": "Sheep Meadow",
+    "description": "Four free outdoor films, presented by National Geographic, screen October 6 to 9, 2026 on the lawn between Cherry Hill and Sheep Meadow. Gates open at 5:30 PM and each film starts at dusk, around 7:00 PM.",
+    "location": "Landscape between Cherry Hill and Sheep Meadow",
     "coordinates": {
-      "lat": 40.7719207940189,
-      "lng": -73.9752120943934
+      "lat": 40.7732275771112,
+      "lng": -73.9732786838705
     },
     "cost": "Free – no tickets required",
     "tags": [
       "Central Park Film Festival",
       "Free Events"
     ],
-    "image_url": "https://www.centralpark.com/downloads/5696/download/cpfilmfestival_lit.jpg.jpe?cb=783665e2e86dabe11fdbe675f24e26c4",
+    "image_url": "https://www.centralpark.com/downloads/10893/download/central-park-film-festival.jpg?cb=10ed882faeadcd134cdc3b65675a1f7d",
     "start_date": "2026-10-06T18:30:00",
     "end_date": "2026-10-06T20:30:00"
   },
@@ -404,22 +404,6 @@
       "Winter Activities"
     ],
     "image_url": "https://www.centralpark.com/downloads/3441/download/central-park-scavenger-hunt.jpe?cb=7066e140bd94dce4d2f0dc3e50e72849"
-  },
-  {
-    "title": "We Belong Here Festival Experience",
-    "url": "https://www.centralpark.com/events/we-belong-here-festival-experience-central-park/",
-    "source": "centralpark.com",
-    "description": "The We Belong Here three-day music festival experience returns to Wollman Rink from October 2-4.",
-    "location": "Wollman Rink",
-    "coordinates": {
-      "lat": 40.7678877312757,
-      "lng": -73.974401746967
-    },
-    "tags": [
-      "Dancing",
-      "Wollman Rink"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10818/download/we-belong-here-central-park.jpg?cb=e182897b92622749099c7d2ccaf81446"
   },
   {
     "title": "Yoga Classes",
