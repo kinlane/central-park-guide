@@ -1,0 +1,58 @@
+- timestamp: '2026-10-05T11:55:47.400000+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 5\u201311: seven sunny days, four nights of film at\
+    \ Cherry Hill, and the triathlon takes the drives Thursday to Sunday"
+  week_of: '2026-10-04'
+  status: sent
+- timestamp: '2026-10-05T11:55:51.073418+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 5\u201311: Monday through Wednesday are yours, then\
+    \ the triathlon holds the drives for four days"
+  week_of: '2026-10-04'
+  status: sent
+- timestamp: '2026-10-05T11:55:55.736364+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 5\u201311: four nights of film under clear skies, armoured\
+    \ combat behind the Met, and seven sunny days"
+  week_of: '2026-10-04'
+  status: sent
+- timestamp: '2026-10-05T11:56:00.023003+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 5\u201311: a four-day drive closure\
+    \ our own tooling tried to bury, and the Great Lawn takes a booking"
+  week_of: '2026-10-04'
+  status: sent
