@@ -678,12 +678,26 @@ def _location_parts(loc):
 
 
 def clean_location(loc):
-    """DISPLAY form — first two parts only, to keep event cards readable.
+    """DISPLAY form — first two parts, plus any drive or loop the permit names.
 
-    Deliberately lossy. Never match places against this; use
-    clean_location_full() for that. See the note on clean_location_full().
+    Deliberately lossy for ordinary events, to keep event cards readable. Never
+    match places against this; use clean_location_full() for that.
+
+    The one thing it will not drop is road. Truncating to two parts was telling
+    readers the Big Apple Triathlon was at "Cherry Hill, Wagner Cove" when its
+    permit covers Center, West and East Drive, the Lower Loop, the 72nd Street
+    Cross Drive and two more — and an all-day "Party" at Cedar Hill was hiding
+    East Drive until 8 PM. The loop flag was correct in both cases; the line a
+    reader actually looks at was not. 6 of 1,102 events in the 2026-10-09 pull
+    omitted a drive or loop this way, so the extra names are rare enough to cost
+    card width almost nowhere and matter enormously where they appear.
     """
-    return ', '.join(_location_parts(loc)[:2])
+    parts = _location_parts(loc)
+    shown = parts[:2]
+    for p in parts[2:]:
+        if p in LOOP_PLACE_NAMES and p not in shown:
+            shown.append(p)
+    return ', '.join(shown)
 
 
 def clean_location_full(loc):
