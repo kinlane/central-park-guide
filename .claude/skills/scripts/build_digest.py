@@ -225,7 +225,15 @@ def collapse_and_rank(r):
 
     oneoffs, recurring, junk = [], [], []
     for title, evs in by_title.items():
-        if title.lower().strip() in JUNK_TITLES:
+        # A junk title is still a real permit. Suppressing one that holds road
+        # removes the single most important thing the brief can say: two all-day
+        # "Party" permits on Oct 14-15 2026 held East Drive until 8 PM, were
+        # correctly flagged affects_loop, and were dropped here — leaving both
+        # days reading "nothing one-off". The scorer below already weights
+        # _affects_loop at +100, so the pipeline knows these outrank everything;
+        # the title filter must not get to veto that.
+        if title.lower().strip() in JUNK_TITLES and not any(
+                ev.get('_affects_loop') for ev in evs):
             junk.append((title, evs))
             continue
         if len(evs) >= RECURRING_THRESHOLD:

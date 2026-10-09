@@ -1,0 +1,58 @@
+- timestamp: '2026-10-09T23:21:06.767294+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 10\u201316: the triathlon finishes in the rain, East\
+    \ Drive goes Wednesday and Thursday, and Open House New York opens Friday"
+  week_of: '2026-10-09'
+  status: sent
+- timestamp: '2026-10-09T23:21:10.980995+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 10\u201316: the loop opens Monday, then East Drive goes\
+    \ again Wednesday and Thursday"
+  week_of: '2026-10-09'
+  status: sent
+- timestamp: '2026-10-09T23:21:15.582728+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 10\u201316: armoured combat behind the Met, Indigenous\
+    \ Day of Remembrance, and Open House New York"
+  week_of: '2026-10-09'
+  status: sent
+- timestamp: '2026-10-09T23:21:19.827415+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 10\u201316: a permit called 'Party'\
+    \ holds East Drive for twenty hours, twice, and our filter had deleted it"
+  week_of: '2026-10-09'
+  status: sent
