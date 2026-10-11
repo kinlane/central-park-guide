@@ -1,0 +1,58 @@
+- timestamp: '2026-10-11T23:42:50.662603+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 12\u201318: 76\xB0 Wednesday, two loop events stacked\
+    \ Thursday, and then autumn finally arrives"
+  week_of: '2026-10-11'
+  status: sent
+- timestamp: '2026-10-11T23:42:54.866496+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 12\u201318: ride Monday and Tuesday, skip Thursday entirely,\
+    \ and dress for 40\xB0 by the weekend"
+  week_of: '2026-10-11'
+  status: sent
+- timestamp: '2026-10-11T23:42:59.461592+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 12\u201318: 76\xB0 Wednesday, Open House New York, and\
+    \ the Ramble at its best on Sunday"
+  week_of: '2026-10-11'
+  status: sent
+- timestamp: '2026-10-11T23:43:03.995834+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 12\u201318: a fix pays for itself,\
+    \ a charity walk arrives untagged, and Bethesda extends a sixth time"
+  week_of: '2026-10-11'
+  status: sent
