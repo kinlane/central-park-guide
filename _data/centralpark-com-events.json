@@ -36,23 +36,6 @@
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
   },
   {
-    "title": "Central Park Conservancy Film Festival 2026",
-    "url": "https://www.centralpark.com/events/central-park-conservancy-film-festival/",
-    "source": "centralpark.com",
-    "description": "Four free outdoor films, presented by National Geographic, screen October 6 to 9, 2026 on the lawn between Cherry Hill and Sheep Meadow. Gates open at 5:30 PM and each film starts at dusk, around 7:00 PM.",
-    "location": "Landscape between Cherry Hill and Sheep Meadow",
-    "coordinates": {
-      "lat": 40.7732275771112,
-      "lng": -73.9732786838705
-    },
-    "cost": "Free – no tickets required",
-    "tags": [
-      "Central Park Film Festival",
-      "Free Events"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10893/download/central-park-film-festival.jpg?cb=10ed882faeadcd134cdc3b65675a1f7d"
-  },
-  {
     "title": "Central Park Farm Stand",
     "url": "https://www.centralpark.com/events/central-park-farm-stand/",
     "source": "centralpark.com",
@@ -287,24 +270,6 @@
       "Sports & Recreation"
     ],
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
-  },
-  {
-    "title": "Gladiators NYC",
-    "url": "https://www.centralpark.com/events/gladiators-nyc/",
-    "source": "centralpark.com",
-    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
-    "location": "Lawn Behind Met Museum",
-    "coordinates": {
-      "lat": 40.7784296398896,
-      "lng": -73.9655968372519
-    },
-    "tags": [
-      "Annual Events",
-      "Featured Events",
-      "Free Events",
-      "Metropolitan Museum Of Art"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",

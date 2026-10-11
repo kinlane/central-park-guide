@@ -1,36 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-10-09-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/09/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-09T09:00:00-04:00",
-      "end_date": "2026-10-09T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-10-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/10/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-10T00:00:00-04:00",
-      "end_date": "2026-10-10T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-11-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/11/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-11T00:00:00-04:00",
-      "end_date": "2026-10-11T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-10-12-nyc-parks-44th-annual-wreath-interpretations-open-call",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/12/nyc-parks-44th-annual-wreath-interpretations-open-call",
       "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
@@ -471,5 +441,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-10-09T21:15:29Z"
+  "fetched_at": "2026-10-11T23:06:06Z"
 }
