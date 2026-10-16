@@ -79,6 +79,20 @@ Oct 30, Nov 6 — and review before anything else is added.
   not produce big numbers. Suggested bar: *any week with a substantive comment
   thread* counts as working. Upvote count alone does not.
 
+### Posting log
+
+| Week | Date | Post | Metrics |
+|---|---|---|---|
+| 1 of 4 | 2026-10-16 | [What's on in the park this week (Oct 17–23) — and Bethesda Terrace is still closed](https://www.reddit.com/r/CentralPark/comments/1x7uwe2/whats_on_in_the_park_this_week_oct_1723_and/) | pending — see `social/reddit/2026-10-16-r-centralpark.md` |
+| 2 of 4 | 2026-10-23 | — | — |
+| 3 of 4 | 2026-10-30 | — | — |
+| 4 of 4 | 2026-11-06 | — | — |
+
+Drafts and their metrics live in `social/reddit/<date>-r-<sub>.md`. **Reddit cannot
+be read from the pipeline environment** (403 unauthenticated, WebFetch blocked on
+both reddit.com and old.reddit.com), so every metric in those files is entered by
+hand. An empty metrics block at month-end is a missing data point, not a zero.
+
 ### Week-one checklist
 
 Before the Oct 16 post, run the rules checklist at the bottom of this file
