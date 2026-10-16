@@ -1,7 +1,7 @@
 ---
 title: "Celebration"
 date: 2026-10-26
-time: "14:00"
+time: "13:00"
 end_time: "15:00"
 location: "Ladies' Pavilion"
 place: "Ladies' Pavilion"
@@ -25,7 +25,7 @@ Celebration takes place at Ladies' Pavilion in Central Park on Monday, October 2
 
 - **Event:** Celebration
 - **Date:** Monday, October 26, 2026
-- **Time:** 2:00 PM - 3:00 PM
+- **Time:** 1:00 PM - 3:00 PM
 - **Location:** Ladies' Pavilion, Central Park
 - **Place:** Ladies' Pavilion
 - **Type:** Special Event

@@ -186,32 +186,6 @@
     "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png"
   },
   {
-    "title": "CPDSA Skate Circle Events",
-    "url": "https://www.centralpark.com/events/cpdsa-skate-circle-skating-events/",
-    "source": "centralpark.com",
-    "description": "Enjoy free weekend parties at the Skate Circle, filled with live DJs and high-energy moves. Lace up your skates or come out to watch!",
-    "location": "Central Park Skate Circle",
-    "coordinates": {
-      "lat": 40.7727407970644,
-      "lng": -73.972585227451
-    },
-    "schedule": {
-      "raw": "Strawberry Fields | Central Park Zoo | Ice Skating | Horse & Carriage Rides | Bike Rentals | Yoga Classes"
-    },
-    "tags": [
-      "Fall Activities",
-      "Free Events",
-      "Live DJ Sets",
-      "music",
-      "Roller Dancing",
-      "Roller Skating",
-      "Sports & Recreation",
-      "Spring Activities",
-      "Summer Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3"
-  },
-  {
     "title": "Events on The Green at the Davis Center",
     "url": "https://www.centralpark.com/events/events-on-the-green-at-the-davis-center/",
     "source": "centralpark.com",
@@ -270,6 +244,55 @@
       "Sports & Recreation"
     ],
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
+  },
+  {
+    "title": "Ice Skating at Wollman Rink",
+    "url": "https://www.centralpark.com/events/ice-skating-wollman-rink/",
+    "source": "centralpark.com",
+    "description": "NYC magic at its best! Get the latest info about ice skating hours, rates, skate rentals, lockers & more.",
+    "location": "Wollman Rink",
+    "coordinates": {
+      "lat": 40.7678877312757,
+      "lng": -73.974401746967
+    },
+    "tags": [
+      "10 Best Dates",
+      "Activities",
+      "Dating Ideas",
+      "Fall Activities",
+      "Family Activities",
+      "Featured Events",
+      "Fun Fall and Winter Traditions",
+      "Holidays",
+      "Ice Skating",
+      "Scenic Views",
+      "Winter Activities",
+      "Winter Attractions",
+      "Winter Sports",
+      "Wollman Rink"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10909/download/ice-skating-wollman-fall.jpg?cb=d11cae5c706e4c1059d310759915b3a5",
+    "start_date": "2026-10-24T00:00:00",
+    "end_date": "2026-10-25T00:00:00"
+  },
+  {
+    "title": "Making Strides Against Breast Cancer Walk 2026",
+    "url": "https://www.centralpark.com/events/making-strides-against-breast-cancer-walk/",
+    "source": "centralpark.com",
+    "description": "The American Cancer Society's 4-mile breast cancer walk has a rolling start from 8:00 AM to 10:30 AM on Sunday, October 18, 2026, at the Naumburg Bandshell in Central Park. Registration is free.",
+    "location": "Naumburg Bandshell",
+    "coordinates": {
+      "lat": 40.7727049726675,
+      "lng": -73.9710345049975
+    },
+    "tags": [
+      "Charity & Cause Events",
+      "Sports & Recreation",
+      "Walking"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10725/download/Get_involved_making_strides.jpg?cb=eca980520bbeb813d779bd1f2118090e",
+    "start_date": "2026-10-18T08:00:00",
+    "end_date": "2026-10-18T12:00:00"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
