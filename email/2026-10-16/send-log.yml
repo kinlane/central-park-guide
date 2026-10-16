@@ -1,0 +1,58 @@
+- timestamp: '2026-10-16T22:43:16.949958+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 17\u201323: Making Strides takes the Bandshell for two\
+    \ days, then the quietest week of the autumn"
+  week_of: '2026-10-16'
+  status: sent
+- timestamp: '2026-10-16T22:43:20.950265+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 17\u201323: nothing on the drives all week, two woodland\
+    \ walks, and the marathon two weeks out"
+  week_of: '2026-10-16'
+  status: sent
+- timestamp: '2026-10-16T22:43:26.169649+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 17\u201323: two woodland walks, Open House New York,\
+    \ and a bench dedication at the Zoo"
+  week_of: '2026-10-16'
+  status: sent
+- timestamp: '2026-10-16T22:43:30.413025+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 17\u201323: three charity-walk permits,\
+    \ all tagged 'uncategorised', and the emptiest week since August"
+  week_of: '2026-10-16'
+  status: sent
