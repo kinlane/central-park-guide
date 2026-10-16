@@ -58,6 +58,57 @@ belongs on Reddit.
 Three or four closure posts a month will outperform forty digest posts, and
 cannot be read as spam.
 
+## FINDING 2026-10-16: it was filtered with no link in it
+
+The week-1 post was **caught by filters on the first attempt** and went up on a
+repost. That is worth more than a clean post would have been, because of what it
+rules out.
+
+**The post contained no link at all.** No URL to centralpark.guide, no
+newsletter mention, nothing promotional. So whatever caught it, it was **not a
+self-promotion filter.** The plan's whole opening argument — go link-free to stay
+clear of promo rules — was correct as far as it went, and irrelevant to what
+actually happened.
+
+What is left as the likely cause, in rough order:
+
+1. **Account standing in the sub.** Reddit's own spam filter and most
+   AutoModerator configs hold a first post from an account with no comment
+   history in that subreddit. This is the single most common explanation and it
+   fits perfectly: our account had never participated there.
+2. **Account age or karma thresholds** set by the mod team.
+3. A keyword or formatting rule we cannot see.
+
+I cannot diagnose it further from here — Reddit is unreadable from this
+environment, so I cannot tell whether the first post was removed by
+AutoModerator, held in the mod queue, or shadow-filtered sitewide. **The only way
+to know is to ask the mods**, and that is now the highest-value next action.
+
+### What this changes
+
+The plan treated "read the rules" as the gate for every new sub. That is
+necessary but not sufficient. **Standing is the real gate, and it applies even to
+our own natural hub.**
+
+So the revised sequence for any sub, r/CentralPark included:
+
+1. **Comment first, post second.** Participate in a few existing threads before
+   posting anything. This is what the plan already said about r/AskNYC — it turns
+   out to be the general rule, not a special case for the strict subs.
+2. **Message the mods once**, introducing the weekly roundup and asking whether
+   they want it. A mod who knows what you are doing can whitelist the account,
+   and that one message is worth more than any amount of careful formatting.
+3. Only then post on a cadence.
+
+### Immediate housekeeping
+
+Two near-identical posts now exist, minutes apart. If the first is only *held*
+rather than removed, a mod may approve it later and leave a duplicate — which is
+itself a spam signal. **Delete the first attempt, or ask a mod to clear it.**
+
+And note for the month-end review: week 1 is a post that needed two attempts.
+That is the honest baseline, not a clean start.
+
 ## Phase 1 — r/CentralPark (DECIDED 2026-10-10)
 
 Our own natural hub. On-topic by definition, small enough that volume is not a
@@ -83,7 +134,7 @@ Oct 30, Nov 6 — and review before anything else is added.
 
 | Week | Date | Post | Metrics |
 |---|---|---|---|
-| 1 of 4 | 2026-10-16 | [What's on in the park this week (Oct 17–23) — and Bethesda Terrace is still closed](https://www.reddit.com/r/CentralPark/comments/1x7uwe2/whats_on_in_the_park_this_week_oct_1723_and/) | pending — see `social/reddit/2026-10-16-r-centralpark.md` |
+| 1 of 4 | 2026-10-16 | [Week 1](https://www.reddit.com/r/CentralPark/comments/1x7uzrb/whats_on_in_the_park_this_week_oct_1723_and/) — **filtered on first attempt**, live on repost | pending — see `social/reddit/2026-10-16-r-centralpark.md` |
 | 2 of 4 | 2026-10-23 | — | — |
 | 3 of 4 | 2026-10-30 | — | — |
 | 4 of 4 | 2026-11-06 | — | — |

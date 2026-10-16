@@ -2,10 +2,12 @@
 sub: r/CentralPark
 drafted: 2026-10-16
 covers: 2026-10-17 to 2026-10-23
-status: POSTED
+status: POSTED (on second attempt)
 posted_at: 2026-10-16
-url: https://www.reddit.com/r/CentralPark/comments/1x7uwe2/whats_on_in_the_park_this_week_oct_1723_and/
-link_included: false
+url: https://www.reddit.com/r/CentralPark/comments/1x7uzrb/whats_on_in_the_park_this_week_oct_1723_and/
+first_attempt: https://www.reddit.com/r/CentralPark/comments/1x7uwe2/whats_on_in_the_park_this_week_oct_1723_and/
+first_attempt_outcome: caught by filters
+link_included: false   # NOTE: it was filtered anyway — see the finding below
 phase: 1
 week: 1 of 4
 # Metrics — fill in from Reddit; this environment cannot read reddit.com.
@@ -17,6 +19,9 @@ metrics:
   substantive_thread:   # true/false — THE success bar for Phase 1
   mod_action:           # none / removed / flaired
   notes:
+  duplicate_risk: first attempt may still be sitting in the mod queue — if it
+                  gets approved there will be two identical posts; delete the
+                  first or ask a mod to remove it
 ---
 
 # TITLE
