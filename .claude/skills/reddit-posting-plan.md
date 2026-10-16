@@ -100,13 +100,12 @@ So the revised sequence for any sub, r/CentralPark included:
    and that one message is worth more than any amount of careful formatting.
 3. Only then post on a cadence.
 
-### Immediate housekeeping
+### Housekeeping — done
 
-Two near-identical posts now exist, minutes apart. If the first is only *held*
-rather than removed, a mod may approve it later and leave a duplicate — which is
-itself a spam signal. **Delete the first attempt, or ask a mod to clear it.**
+The filtered first attempt was deleted the same day, so no duplicate remains and
+there is nothing left in a mod queue to be approved later. One post stands.
 
-And note for the month-end review: week 1 is a post that needed two attempts.
+Note for the month-end review: week 1 is a post that needed two attempts.
 That is the honest baseline, not a clean start.
 
 ## Phase 1 — r/CentralPark (DECIDED 2026-10-10)
