@@ -1,0 +1,58 @@
+- timestamp: '2026-10-18T20:31:13.521746+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 19\u201325: seven sunny days, two fall foliage photo\
+    \ walks, and the marathon build begins"
+  week_of: '2026-10-18'
+  status: sent
+- timestamp: '2026-10-18T20:31:17.660644+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 19\u201325: seven sunny days and open drives \u2014\
+    \ the last clear week before the marathon"
+  week_of: '2026-10-18'
+  status: sent
+- timestamp: '2026-10-18T20:31:22.102295+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 19\u201325: two fall foliage photo walks, geology at\
+    \ the Harlem Meer, and marionettes at Diana Ross"
+  week_of: '2026-10-18'
+  status: sent
+- timestamp: '2026-10-18T20:31:26.340180+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 19\u201325: the marathon permit lands\
+    \ as a 24-day envelope, and the Heckscher call comes in"
+  week_of: '2026-10-18'
+  status: sent
