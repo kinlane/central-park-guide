@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-14T01:13:55+00:00",
+  "fetched_at": "2026-10-18T20:23:15+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -379,6 +379,22 @@
       "parsed": false,
       "reason": "not_central_park",
       "slug": "rbcbrooklynhalf",
+      "year": 2026
+    },
+    "2026tcsnycmarathonmanhattancentralpark": {
+      "candidate_title": "2026 TCS NYC Marathon - Manhattan - Central Park",
+      "fetched_at": "2026-10-18T20:23:13+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "tcsnycmarathonmanhattancentralpark",
+      "urls_tried": [
+        "https://events.nyrr.org/tcs-nyc-marathon-manhattan-central-park",
+        "https://events.nyrr.org/nyrr-tcs-nyc-marathon-manhattan-central-park",
+        "https://events.nyrr.org/nyrr-marathon-manhattan-central-park",
+        "https://www.nyrr.org/races/2026tcsnycmarathonmanhattancentralpark",
+        "https://www.nyrr.org/races/2026/tcsnycmarathonmanhattancentralpark",
+        "https://www.nyrr.org/races/tcsnycmarathonmanhattancentralpark"
+      ],
       "year": 2026
     }
   }
