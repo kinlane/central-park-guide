@@ -1,0 +1,58 @@
+- timestamp: '2026-10-24T12:29:32.069064+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 24\u201330: marathon week begins \u2014 the blue line\
+    \ gets painted Wednesday, and the big weekend is right behind it"
+  week_of: '2026-10-23'
+  status: sent
+- timestamp: '2026-10-24T12:29:37.580049+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 24\u201330: three West Drive closures this week, then\
+    \ the loop goes entirely for the marathon weekend"
+  week_of: '2026-10-23'
+  status: sent
+- timestamp: '2026-10-24T12:29:43.983075+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 24\u201330: the marathon's blue line gets painted Wednesday,\
+    \ and two foliage photo walks Saturday"
+  week_of: '2026-10-23'
+  status: sent
+- timestamp: '2026-10-24T12:29:49.196627+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 24\u201330: marathon week lands five\
+    \ permits, and a typo'd one got flagged anyway"
+  week_of: '2026-10-23'
+  status: sent
