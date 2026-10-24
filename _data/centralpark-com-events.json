@@ -186,6 +186,32 @@
     "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png"
   },
   {
+    "title": "CPDSA Skate Circle Events",
+    "url": "https://www.centralpark.com/events/cpdsa-skate-circle-skating-events/",
+    "source": "centralpark.com",
+    "description": "Enjoy free weekend parties at the Skate Circle, filled with live DJs and high-energy moves. Lace up your skates or come out to watch!",
+    "location": "Central Park Skate Circle",
+    "coordinates": {
+      "lat": 40.7727407970644,
+      "lng": -73.972585227451
+    },
+    "schedule": {
+      "raw": "Strawberry Fields | Central Park Zoo | Ice Skating | Horse & Carriage Rides | Bike Rentals | Yoga Classes"
+    },
+    "tags": [
+      "Fall Activities",
+      "Free Events",
+      "Live DJ Sets",
+      "music",
+      "Roller Dancing",
+      "Roller Skating",
+      "Sports & Recreation",
+      "Spring Activities",
+      "Summer Activities"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3"
+  },
+  {
     "title": "Events on The Green at the Davis Center",
     "url": "https://www.centralpark.com/events/events-on-the-green-at-the-davis-center/",
     "source": "centralpark.com",
@@ -246,6 +272,37 @@
     "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
   },
   {
+    "title": "Ice Skating at Gottesman Rink",
+    "url": "https://www.centralpark.com/events/ice-skating-at-gottesman-rink-the-davis-center/",
+    "source": "centralpark.com",
+    "description": "Glide across the ice with sessions for all skill levels, enjoy special events, and make it a fun outing for friends and family.",
+    "location": "Davis Center",
+    "coordinates": {
+      "lat": 40.7961140600508,
+      "lng": -73.954965898685
+    },
+    "tags": [
+      "10 Best Dates",
+      "Activities",
+      "Dating Ideas",
+      "Davis Center",
+      "Fall Activities",
+      "Family Activities",
+      "Featured Events",
+      "Fun Fall and Winter Traditions",
+      "Gottesman Rink",
+      "Holidays",
+      "Ice Skating",
+      "Scenic Views",
+      "Winter Activities",
+      "Winter Attractions",
+      "Winter Sports"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10915/download/gottesman-rink.jpg?cb=51d83194a7bef214143892a5f908443d",
+    "start_date": "2026-11-01T00:00:00",
+    "end_date": "2026-11-02T00:00:00"
+  },
+  {
     "title": "Ice Skating at Wollman Rink",
     "url": "https://www.centralpark.com/events/ice-skating-wollman-rink/",
     "source": "centralpark.com",
@@ -272,8 +329,29 @@
       "Wollman Rink"
     ],
     "image_url": "https://www.centralpark.com/downloads/10909/download/ice-skating-wollman-fall.jpg?cb=d11cae5c706e4c1059d310759915b3a5",
-    "start_date": "2026-10-24T00:00:00",
-    "end_date": "2026-10-25T00:00:00"
+    "start_date": "2026-10-28T00:00:00",
+    "end_date": "2026-10-29T00:00:00"
+  },
+  {
+    "title": "NYC Marathon 2026",
+    "url": "https://www.centralpark.com/events/nyc-marathon/",
+    "source": "centralpark.com",
+    "description": "The last three miles of the NYC marathon take place in Central Park and the area will be packed with spectators, runners, staff, and volunteers.",
+    "location": "NYC Marathon Finish Line",
+    "coordinates": {
+      "lat": 40.7727755786673,
+      "lng": -73.9764239682007
+    },
+    "tags": [
+      "Charity & Cause Events",
+      "NYC Marathon",
+      "Races",
+      "Running",
+      "Sports & Recreation"
+    ],
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png",
+    "start_date": "2026-11-01T08:00:00",
+    "end_date": "2026-11-01T23:00:00"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",

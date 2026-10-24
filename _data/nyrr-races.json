@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-18T20:23:15+00:00",
+  "fetched_at": "2026-10-24T12:10:48+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -58,6 +58,22 @@
       "title": "2024 United Airlines NYC Half",
       "total_finishers": 27824,
       "year": 2024
+    },
+    "2026abbottdashtothefinishline5kfinish": {
+      "candidate_title": "Abbott Dash to the Finish Line 5K- Finish",
+      "fetched_at": "2026-10-24T12:10:02+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "abbottdashtothefinishline5kfinish",
+      "urls_tried": [
+        "https://events.nyrr.org/abbott-dash-to-the-finish-line-5k-finish",
+        "https://events.nyrr.org/nyrr-abbott-dash-to-the-finish-line-5k-finish",
+        "https://events.nyrr.org/nyrr-to-the-finish-line-5k-finish",
+        "https://www.nyrr.org/races/2026abbottdashtothefinishline5kfinish",
+        "https://www.nyrr.org/races/2026/abbottdashtothefinishline5kfinish",
+        "https://www.nyrr.org/races/abbottdashtothefinishline5kfinish"
+      ],
+      "year": 2026
     },
     "2026frontrunnersnewyorklgbtpriderun4m": {
       "candidate_title": "Front Runners New York LGBT Pride Run 4m",
@@ -381,9 +397,25 @@
       "slug": "rbcbrooklynhalf",
       "year": 2026
     },
+    "2026tcsnycmarathonbluelinepaintingceremony": {
+      "candidate_title": "2026 TCS NYC Marathon Blue Line Painting Ceremony",
+      "fetched_at": "2026-10-24T12:09:31+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "tcsnycmarathonbluelinepaintingceremony",
+      "urls_tried": [
+        "https://events.nyrr.org/tcs-nyc-marathon-blue-line-painting-ceremony",
+        "https://events.nyrr.org/nyrr-tcs-nyc-marathon-blue-line-painting-ceremony",
+        "https://events.nyrr.org/nyrr-marathon-blue-line-painting-ceremony",
+        "https://www.nyrr.org/races/2026tcsnycmarathonbluelinepaintingceremony",
+        "https://www.nyrr.org/races/2026/tcsnycmarathonbluelinepaintingceremony",
+        "https://www.nyrr.org/races/tcsnycmarathonbluelinepaintingceremony"
+      ],
+      "year": 2026
+    },
     "2026tcsnycmarathonmanhattancentralpark": {
       "candidate_title": "2026 TCS NYC Marathon - Manhattan - Central Park",
-      "fetched_at": "2026-10-18T20:23:13+00:00",
+      "fetched_at": "2026-10-24T12:10:46+00:00",
       "last_error": "http_302",
       "parsed": false,
       "slug": "tcsnycmarathonmanhattancentralpark",
@@ -394,6 +426,22 @@
         "https://www.nyrr.org/races/2026tcsnycmarathonmanhattancentralpark",
         "https://www.nyrr.org/races/2026/tcsnycmarathonmanhattancentralpark",
         "https://www.nyrr.org/races/tcsnycmarathonmanhattancentralpark"
+      ],
+      "year": 2026
+    },
+    "2026tcsnycmarathonopeningceremony": {
+      "candidate_title": "2026 TCS NYC Marathon - Opening Ceremony",
+      "fetched_at": "2026-10-24T12:10:24+00:00",
+      "last_error": "http_302",
+      "parsed": false,
+      "slug": "tcsnycmarathonopeningceremony",
+      "urls_tried": [
+        "https://events.nyrr.org/tcs-nyc-marathon-opening-ceremony",
+        "https://events.nyrr.org/nyrr-tcs-nyc-marathon-opening-ceremony",
+        "https://events.nyrr.org/nyrr-marathon-opening-ceremony",
+        "https://www.nyrr.org/races/2026tcsnycmarathonopeningceremony",
+        "https://www.nyrr.org/races/2026/tcsnycmarathonopeningceremony",
+        "https://www.nyrr.org/races/tcsnycmarathonopeningceremony"
       ],
       "year": 2026
     }

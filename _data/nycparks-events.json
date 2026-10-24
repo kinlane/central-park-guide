@@ -1,106 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-10-19-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/19/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-19T00:00:00-04:00",
-      "end_date": "2026-10-19T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-19-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/19/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-19T09:00:00-04:00",
-      "end_date": "2026-10-19T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-20-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/20/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-20T00:00:00-04:00",
-      "end_date": "2026-10-20T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-20-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/20/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-20T09:00:00-04:00",
-      "end_date": "2026-10-20T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-21-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/21/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-21T00:00:00-04:00",
-      "end_date": "2026-10-21T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-21-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/21/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-21T09:00:00-04:00",
-      "end_date": "2026-10-21T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-22-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/22/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-22T00:00:00-04:00",
-      "end_date": "2026-10-22T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-22-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/22/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-22T09:00:00-04:00",
-      "end_date": "2026-10-22T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-23-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/23/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-23T00:00:00-04:00",
-      "end_date": "2026-10-23T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-23-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/23/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-23T09:00:00-04:00",
-      "end_date": "2026-10-23T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-10-24-nyc-parks-44th-annual-wreath-interpretations-open-call",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/24/nyc-parks-44th-annual-wreath-interpretations-open-call",
       "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
@@ -319,7 +219,47 @@
       "location": "West 81st Street and Central Park West",
       "category": "Nature, Urban Park Rangers, Hiking, Wildlife",
       "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-12-06-birding-winter-waterfowl",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/12/06/birding-winter-waterfowl",
+      "title": "Birding: Winter Waterfowl",
+      "start_date": "2026-12-06T13:00:00-05:00",
+      "end_date": "2026-12-06T14:30:00-05:00",
+      "location": "Entrance - 85th Street and Central Park West",
+      "category": "Birding, Nature, Urban Park Rangers, Hiking",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-12-13-winter-tree-id-the-pinetum",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/12/13/winter-tree-id-the-pinetum",
+      "title": "Winter Tree ID: The Pinetum",
+      "start_date": "2026-12-13T13:00:00-05:00",
+      "end_date": "2026-12-13T14:30:00-05:00",
+      "location": "Entrance - 85th Street and Central Park West",
+      "category": "Nature, Urban Park Rangers",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2026-12-27-central-park-benches-highlights-hike",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/12/27/central-park-benches-highlights-hike",
+      "title": "Central Park Benches Highlights Hike",
+      "start_date": "2026-12-27T13:00:00-05:00",
+      "end_date": "2026-12-27T14:30:00-05:00",
+      "location": "West 72nd and Central Park West",
+      "category": "Urban Park Rangers, Hiking",
+      "free": true
+    },
+    {
+      "id": "nycparks-parks-central-park-events-2027-01-01-new-years-day-hike1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2027/01/01/new-years-day-hike1",
+      "title": "New Year's Day Hike",
+      "start_date": "2027-01-01T11:00:00-05:00",
+      "end_date": "2027-01-01T13:00:00-05:00",
+      "location": "Entrance - East 60th Street and Fifth Avenue",
+      "category": "Urban Park Rangers",
+      "free": true
     }
   ],
-  "fetched_at": "2026-10-18T20:23:17Z"
+  "fetched_at": "2026-10-24T12:07:16Z"
 }
