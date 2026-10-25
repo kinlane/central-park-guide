@@ -1,36 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-10-24-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/24/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-24T00:00:00-04:00",
-      "end_date": "2026-10-24T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-25-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/25/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-25T00:00:00-04:00",
-      "end_date": "2026-10-25T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-25-geology-central-park-rocks",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/25/geology-central-park-rocks",
-      "title": "Geology: Central Park Rocks!",
-      "start_date": "2026-10-25T13:00:00-04:00",
-      "end_date": "2026-10-25T14:00:00-04:00",
-      "location": "Harlem Meer",
-      "category": "Nature, Urban Park Rangers",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-10-26-nyc-parks-44th-annual-wreath-interpretations-open-call",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/26/nyc-parks-44th-annual-wreath-interpretations-open-call",
       "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
@@ -261,5 +231,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-10-24T12:07:16Z"
+  "fetched_at": "2026-10-25T22:15:31Z"
 }

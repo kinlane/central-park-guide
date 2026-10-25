@@ -1,13 +1,13 @@
 ---
 title: "Bird Watching with Birding Bob"
-date: 2026-10-24
+date: 2026-12-20
 time: "07:30"
 location: "Central Park Boathouse"
 place: "Loeb Boathouse"
 place_category: "event_venues"
 image: "https://www.centralpark.com/downloads/10951/download/bird-watching-birders.jpeg?cb=42f10e56c7429e134753013550fb01b5"
 description: "Join this fun bird watching tour and explore lesser-known parts of Central Park with local guide Dr. Robert \"Birding Bob\" DeCandido. Meet at Boathouse Restaurant/Cafe (near 74th Street along the East Drive)."
-event_id: "cpcom-bird-watching-with-birding-bob-saturdays"
+event_id: "cpcom-bird-watching-with-birding-bob-sundays"
 event_type: "Bird Walk"
 event_borough: "Manhattan"
 source: "centralpark.com"
@@ -33,7 +33,7 @@ Join this fun bird watching tour and explore lesser-known parts of Central Park 
 ## Event Details
 
 - **Event:** Bird Watching with Birding Bob
-- **Date:** Saturday, October 24, 2026
+- **Date:** Sunday, December 20, 2026
 - **Time:** 07:30
 - **Location:** Central Park Boathouse, Central Park
 - **Official site:** https://www.centralpark.com/events/bird-watching-with-birding-bob/
