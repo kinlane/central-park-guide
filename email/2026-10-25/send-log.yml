@@ -1,0 +1,58 @@
+- timestamp: '2026-10-25T22:27:15.048995+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 26\u2013Nov 1: marathon weekend, and the forecast has\
+    \ given it 70\xB0 and sun"
+  week_of: '2026-10-25'
+  status: sent
+- timestamp: '2026-10-25T22:27:19.910748+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 26\u2013Nov 1: Monday is your last open day, then the\
+    \ loop goes for the weekend \u2014 and 69\xB0 is warm for a marathon"
+  week_of: '2026-10-25'
+  status: sent
+- timestamp: '2026-10-25T22:27:25.920808+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 26\u2013Nov 1: the blue line Wednesday, the marathon\
+    \ Sunday, and a Halloween with no Halloween in it"
+  week_of: '2026-10-25'
+  status: sent
+- timestamp: '2026-10-25T22:27:31.169750+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 26\u2013Nov 1: marathon weekend arrives,\
+    \ Halloween is empty, and the relocation has settled"
+  week_of: '2026-10-25'
+  status: sent

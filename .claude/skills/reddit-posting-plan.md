@@ -134,7 +134,7 @@ Oct 30, Nov 6 — and review before anything else is added.
 | Week | Date | Post | Metrics |
 |---|---|---|---|
 | 1 of 4 | 2026-10-16 | [Week 1](https://www.reddit.com/r/CentralPark/comments/1x7uzrb/whats_on_in_the_park_this_week_oct_1723_and/) — **filtered on first attempt**, live on repost | pending — see `social/reddit/2026-10-16-r-centralpark.md` |
-| 2 of 4 | 2026-10-23 | — | — |
+| 2 of 4 | 2026-10-25 | drafted — `social/reddit/2026-10-25-r-centralpark.md` | pending |
 | 3 of 4 | 2026-10-30 | — | — |
 | 4 of 4 | 2026-11-06 | — | — |
 
