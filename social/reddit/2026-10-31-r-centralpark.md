@@ -1,11 +1,12 @@
 ---
 sub: r/CentralPark
 drafted: 2026-10-31
-covers: 2026-11-01 to 2026-11-06
+covers: 2026-10-31 to 2026-11-06
 status: draft — not yet posted
 link_included: false
 phase: 1
 week: 3 of 4
+note: full-week roundup, echoing the 2026-10-30 email window
 # Metrics — fill in from Reddit; this environment cannot read reddit.com.
 metrics:
   checked_on:
@@ -18,54 +19,66 @@ metrics:
 
 # TITLE
 
-Marathon is tomorrow — where to watch, and where to go if you want nothing to do with it
+What's on in the park this week (Oct 31–Nov 6) — the marathon tomorrow, then a 70°F November
 
 # BODY
 
-The TCS marathon finishes in the park tomorrow, **8am to 5pm**, 55,000 runners.
-And the forecast finally settled somewhere good: **61°F, mostly sunny, no rain.**
-A week ago it was tracking 69°F, which would have been genuinely warm for racing.
-61 and dry is about what runners hope for.
+Weekly rundown, pulled from the NYC permit feed plus the Conservancy and Parks
+calendars. Big weekend, and then November does something odd.
 
-**If you want to watch**
+**Today, Sat 31** — 58°F, sunny
 
-The finish area around Tavern on the Green is the obvious spot, and the last mile
-up East Drive is the better one. If you only have an hour, take a late-afternoon
-one — the crowd thins, the runners coming through have been out there five or six
-hours, and it's a completely different thing to watch than the leaders.
+* **Abbott Dash to the Finish Line 5K** ran 8:45–11am on the loop, with the finish holding Grand Army Plaza from 8. If you're reading this after 11 the roads are back.
+* **North Woods woodland walk**, 10am from the Dana Discovery Center
+* **Conservatory Garden tour**, 11am
+* **Seneca Village tour**, 2pm
+* Model yachts at Kerbs 9–3; Unity Markets at Farmers' Gate 9–7
+* East Meadow closed all day
 
-**If you want nothing to do with it**
+Also: it's Halloween, and **there is not one Halloween event on the park's permit
+calendar.** No parade, no trick-or-treat, nothing. The Village parade takes that
+crowd. For a park that permits bench dedications and harp circles, it's a strange
+gap.
 
-Go north. The Ravine, the Loch and the North Woods are nowhere near the course,
-and marathon Sunday is one of the quietest mornings of the year up there — the
-entire city's attention is three miles south of you. It's the best-kept thing
-about marathon day and almost nobody uses it.
+**Sun 1 — the marathon**, 8am–5pm, 55,000 runners finishing in the park
 
-The loop itself is gone 8am–5pm, and the Reservoir track will be thick with
-spectators even though it's not on the course.
+Forecast is **61°F and mostly sunny with no rain**, which is close to ideal for
+racing — a week ago it was tracking 69 and that would have been warm.
 
-**The drives reopen Monday**
+* **To watch:** the finish by Tavern on the Green, or the last mile up East Drive. A late-afternoon hour is the better one — thinner crowd, and the runners coming through have been out there five or six hours.
+* **To avoid it:** go north. The Ravine, the Loch and the North Woods are nowhere near the course, and marathon Sunday is one of the quietest mornings of the year up there. Almost nobody uses this.
+* The loop is gone 8am–5pm. The Reservoir isn't on the course but will be thick with spectators.
+* International Folkdancers at King Jagiello 11am–3pm — shortened from their usual six hours, which tells you how far the race reorganises things.
 
-The city's marathon permit runs on paper through **November 10**, so there'll be
-trailers and fencing coming down across the west side all week. That's strike
-work, not closure — nothing blocks a lap from Monday morning.
+**Mon 2 – Wed 4 — the drives reopen, and it hits 70°F**
 
-**And then November does something strange**
+66, 67, then **70 on Wednesday**. All dry. The entire public calendar for those
+three days is a sports mini-camp Tuesday morning and a kids' soccer session
+Wednesday afternoon.
 
-Monday 66°F, Tuesday 67, **Wednesday 70**, Thursday 71. All dry until Thursday
-afternoon, and the public calendar for those three days is a kids' soccer session
-and a sports mini-camp. That's it.
+The city's marathon permit runs on paper to **November 10**, so there'll be
+trailers and fencing coming down across the west side — that's strike work, not
+closure. **Nothing blocks a lap from Monday.**
 
 If you've been putting off a long walk or ride, Monday to Wednesday is the last
-warm window of the year and there is nothing in the way of it. Storms arrive
-Thursday night and Friday.
+warm window of the year.
 
-Friday morning before the rain, the Conservancy's **Ramble woodland walk** goes
-at 10am from Belvedere Castle — one of the last of the season.
+**Thu 5 – Fri 6 — warm and wet**
+
+71°F Thursday with showers around 49%, 69 Friday with thunderstorms likely. The
+warmest days are the wettest ones.
+
+Friday morning before it breaks: the Conservancy's **Ramble woodland walk**,
+10am from Belvedere Castle, and the **Iconic Views tour** at 2pm.
 
 **Still closed**
 
 Bethesda Terrace and Fountain, as it has been since early September. The permits
-now run through **November 30** — that's the whole month, extended eleven times
-at roughly four weeks a go, and there is still no stated reason anywhere in the
-public record. Ten weeks now.
+now run through **November 30** — the whole month. Extended eleven times, roughly
+four weeks at a go, and there's still no stated reason anywhere in the public
+record. Ten weeks.
+
+**Also worth knowing:** field permits across the park are down to 66 this week
+from a September peak of 223, and the Great Lawn has had **zero** league play for
+fourteen straight weeks with no closure permit on file to explain it. North
+Meadow is carrying almost the whole calendar now.
