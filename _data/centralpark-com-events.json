@@ -186,32 +186,6 @@
     "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png"
   },
   {
-    "title": "CPDSA Skate Circle Events",
-    "url": "https://www.centralpark.com/events/cpdsa-skate-circle-skating-events/",
-    "source": "centralpark.com",
-    "description": "Enjoy free weekend parties at the Skate Circle, filled with live DJs and high-energy moves. Lace up your skates or come out to watch!",
-    "location": "Central Park Skate Circle",
-    "coordinates": {
-      "lat": 40.7727407970644,
-      "lng": -73.972585227451
-    },
-    "schedule": {
-      "raw": "Strawberry Fields | Central Park Zoo | Ice Skating | Horse & Carriage Rides | Bike Rentals | Yoga Classes"
-    },
-    "tags": [
-      "Fall Activities",
-      "Free Events",
-      "Live DJ Sets",
-      "music",
-      "Roller Dancing",
-      "Roller Skating",
-      "Sports & Recreation",
-      "Spring Activities",
-      "Summer Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10901/download/cpdsa.jpg?cb=e97a91f6184595ddaec8264ee57d33e3"
-  },
-  {
     "title": "Events on The Green at the Davis Center",
     "url": "https://www.centralpark.com/events/events-on-the-green-at-the-davis-center/",
     "source": "centralpark.com",
@@ -328,9 +302,7 @@
       "Winter Sports",
       "Wollman Rink"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10909/download/ice-skating-wollman-fall.jpg?cb=d11cae5c706e4c1059d310759915b3a5",
-    "start_date": "2026-10-28T00:00:00",
-    "end_date": "2026-10-29T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10909/download/ice-skating-wollman-fall.jpg?cb=d11cae5c706e4c1059d310759915b3a5"
   },
   {
     "title": "NYC Marathon 2026",
@@ -349,7 +321,7 @@
       "Running",
       "Sports & Recreation"
     ],
-    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png",
+    "image_url": "https://www.centralpark.com/downloads/11043/download/nyc-marathon-central-park.jpeg?cb=2cb7b3ba35bef6794d848e6dcd63962b",
     "start_date": "2026-11-01T08:00:00",
     "end_date": "2026-11-01T23:00:00"
   },

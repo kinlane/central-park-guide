@@ -1,106 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-10-26-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/26/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-26T00:00:00-04:00",
-      "end_date": "2026-10-26T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-26-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/26/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-26T09:00:00-04:00",
-      "end_date": "2026-10-26T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-27-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/27/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-27T00:00:00-04:00",
-      "end_date": "2026-10-27T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-27-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/27/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-27T09:00:00-04:00",
-      "end_date": "2026-10-27T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-28-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/28/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-28T00:00:00-04:00",
-      "end_date": "2026-10-28T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-28-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/28/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-28T09:00:00-04:00",
-      "end_date": "2026-10-28T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-29-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/29/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-29T00:00:00-04:00",
-      "end_date": "2026-10-29T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-29-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/29/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-29T09:00:00-04:00",
-      "end_date": "2026-10-29T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-30-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/30/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-30T00:00:00-04:00",
-      "end_date": "2026-10-30T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-10-30-new-dendrology-at-the-arsenal-gallery",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/30/new-dendrology-at-the-arsenal-gallery",
-      "title": "New Dendrology at the Arsenal Gallery",
-      "start_date": "2026-10-30T09:00:00-04:00",
-      "end_date": "2026-10-30T17:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Education, Nature, Art",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-10-31-nyc-parks-44th-annual-wreath-interpretations-open-call",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/31/nyc-parks-44th-annual-wreath-interpretations-open-call",
       "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
@@ -191,8 +91,8 @@
       "free": true
     },
     {
-      "id": "nycparks-parks-central-park-events-2026-12-06-birding-winter-waterfowl",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/12/06/birding-winter-waterfowl",
+      "id": "nycparks-parks-central-park-events-2026-12-06-birding-winter-waterfowl1",
+      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/12/06/birding-winter-waterfowl1",
       "title": "Birding: Winter Waterfowl",
       "start_date": "2026-12-06T13:00:00-05:00",
       "end_date": "2026-12-06T14:30:00-05:00",
@@ -231,5 +131,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-10-25T22:15:31Z"
+  "fetched_at": "2026-10-31T12:22:52Z"
 }
