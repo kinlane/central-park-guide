@@ -1,0 +1,58 @@
+- timestamp: '2026-10-31T12:27:54.719461+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Oct 31\u2013Nov 6: marathon weekend has perfect weather,\
+    \ then an unseasonable 70\xB0 week"
+  week_of: '2026-10-30'
+  status: sent
+- timestamp: '2026-10-31T12:28:04.562549+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Oct 31\u2013Nov 6: 61\xB0 and dry for the marathon, then\
+    \ the drives reopen into a 70\xB0 week"
+  week_of: '2026-10-30'
+  status: sent
+- timestamp: '2026-10-31T12:28:11.887355+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Oct 31\u2013Nov 6: the marathon gets a perfect Sunday, then\
+    \ a 70\xB0 November week"
+  week_of: '2026-10-30'
+  status: sent
+- timestamp: '2026-10-31T12:28:16.710650+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Oct 31\u2013Nov 6: the marathon lands,\
+    \ and the envelope keeps flagging for nine days after it"
+  week_of: '2026-10-30'
+  status: sent
