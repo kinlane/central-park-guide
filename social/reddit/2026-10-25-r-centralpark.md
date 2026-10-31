@@ -2,7 +2,9 @@
 sub: r/CentralPark
 drafted: 2026-10-25
 covers: 2026-10-26 to 2026-11-01
-status: draft — not yet posted
+status: POSTED
+posted_at: 2026-10-25
+url:   # TODO — Kin posted this; URL not yet recorded here
 link_included: false
 phase: 1
 week: 2 of 4
