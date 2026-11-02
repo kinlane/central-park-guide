@@ -1,0 +1,58 @@
+- timestamp: '2026-11-02T11:01:27.473632+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Nov 2\u20138: the emptiest week on the calendar, at 68\xB0\
+    \ and sunny"
+  week_of: '2026-11-01'
+  status: sent
+- timestamp: '2026-11-02T11:01:37.508347+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Nov 2\u20138: the loop is clear all week, and Monday hits\
+    \ 65\xB0"
+  week_of: '2026-11-01'
+  status: sent
+- timestamp: '2026-11-02T11:01:47.639213+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Nov 2\u20138: a wide-open week at 68\xB0, and everything\
+    \ lands on Sunday"
+  week_of: '2026-11-01'
+  status: sent
+- timestamp: '2026-11-02T11:01:57.647357+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Nov 2\u20138: the envelope still flags\
+    \ a closed loop, nine days after the race"
+  week_of: '2026-11-01'
+  status: sent

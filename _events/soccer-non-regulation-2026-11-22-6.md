@@ -1,14 +1,14 @@
 ---
 title: "Soccer - Non Regulation"
-date: 2026-10-31
-time: "17:00"
-end_time: "18:30"
+date: 2026-11-22
+time: "13:00"
+end_time: "15:00"
 location: "North Meadow-Soccer-05"
 place: "North Meadow"
 place_category: "meadows_and_lawns"
 image: "/assets/images/tags/soccer.png"
 description: "Soccer - Non Regulation at North Meadow-Soccer-05. Adult league permitted event in Central Park."
-event_id: "983382"
+event_id: "986509"
 event_type: "Sport - Adult"
 event_borough: "Manhattan"
 community_board: "64"
@@ -18,17 +18,17 @@ tags:
   - "Sports"
 ---
 
-Soccer - Non Regulation takes place at North Meadow-Soccer-05 in Central Park on Saturday, October 31, 2026.
+Soccer - Non Regulation takes place at North Meadow-Soccer-05 in Central Park on Sunday, November 22, 2026.
 
 ## Event Details
 
 - **Event:** Soccer - Non Regulation
-- **Date:** Saturday, October 31, 2026
-- **Time:** 5:00 PM - 6:30 PM
+- **Date:** Sunday, November 22, 2026
+- **Time:** 1:00 PM - 3:00 PM
 - **Location:** North Meadow-Soccer-05, Central Park
 - **Place:** North Meadow
 - **Type:** Sport - Adult
-- **Event ID:** 983382
+- **Event ID:** 986509
 
 ## About This Event
 

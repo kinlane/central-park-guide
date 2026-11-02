@@ -1,26 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-10-31-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/10/31/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-10-31T00:00:00-04:00",
-      "end_date": "2026-10-31T12:00:00-04:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
-      "id": "nycparks-parks-central-park-events-2026-11-01-nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/11/01/nyc-parks-44th-annual-wreath-interpretations-open-call",
-      "title": "NYC Parks\u2019 44th Annual Wreath Interpretations Open Call",
-      "start_date": "2026-11-01T00:00:00-04:00",
-      "end_date": "2026-11-01T12:00:00-05:00",
-      "location": "Arsenal",
-      "category": "Arts & Crafts, Art, Talks",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-11-02-new-dendrology-at-the-arsenal-gallery",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/11/02/new-dendrology-at-the-arsenal-gallery",
       "title": "New Dendrology at the Arsenal Gallery",
@@ -131,5 +111,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-10-31T12:22:52Z"
+  "fetched_at": "2026-11-01T20:56:34Z"
 }

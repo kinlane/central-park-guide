@@ -36,27 +36,6 @@
     "recurrence": "Weekly - Monday, Thursday, Friday, Saturday, Sunday"
   },
   {
-    "title": "Central Park Farm Stand",
-    "url": "https://www.centralpark.com/events/central-park-farm-stand/",
-    "source": "centralpark.com",
-    "description": "The Central Park Farm Stand returns in 2026 on Saturdays from 10:00 AM to 7:00 PM, June 20 through October 31, at the Farmers' Gate entrance on 110th Street and Malcolm X Boulevard.",
-    "location": "110th Street & Malcom X Boulevard",
-    "coordinates": {
-      "lat": 40.7982390346597,
-      "lng": -73.9525212856841
-    },
-    "tags": [
-      "Fall Activities",
-      "Fall Attractions",
-      "Food & Drink",
-      "Market",
-      "Seasonal",
-      "Summer Activities",
-      "Summer Attractions"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10918/download/fresh-produce-central-park-farm-stand.jpg?cb=e85c3e1cd00c5aad97ccbd12bea1a11b"
-  },
-  {
     "title": "Central Park Highlights Running Tour",
     "url": "https://www.centralpark.com/events/central-park-highlights-running-tour/",
     "source": "centralpark.com",
@@ -321,9 +300,7 @@
       "Running",
       "Sports & Recreation"
     ],
-    "image_url": "https://www.centralpark.com/downloads/11043/download/nyc-marathon-central-park.jpeg?cb=2cb7b3ba35bef6794d848e6dcd63962b",
-    "start_date": "2026-11-01T08:00:00",
-    "end_date": "2026-11-01T23:00:00"
+    "image_url": "https://www.centralpark.com/downloads/11043/download/nyc-marathon-central-park.jpeg?cb=2cb7b3ba35bef6794d848e6dcd63962b"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -396,26 +373,20 @@
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
     "url": "https://www.centralpark.com/events/amazing-race-style-scavenger-hunt-adventure/",
     "source": "centralpark.com",
-    "description": "Get clues on your smart phone leading you around to different sights while having fun in Central Park! Save 10% with promo code.",
+    "description": "Get clues on your smart phone leading you around to different sights while having fun in Central Park! Save 15% with promo code.",
     "location": "Columbus Circle",
     "coordinates": {
       "lat": 40.7680709632492,
       "lng": -73.9819067373597
     },
     "tags": [
-      "Activities",
       "Fall Activities",
-      "Family Activities",
       "Featured Events",
-      "Fun",
       "Games",
       "Good for Groups",
-      "Group Tours",
-      "Groups",
       "Runs Every Day",
       "Scavenger Hunt",
       "Sightseeing",
-      "Sightseeing Tours",
       "Spring Activities",
       "Summer Activities",
       "Winter Activities"

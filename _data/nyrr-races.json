@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-31T12:22:51+00:00",
+  "fetched_at": "2026-11-01T20:56:32+00:00",
   "races": {
     "2023nyrrmanhattan10k": {
       "boroughs": [
@@ -415,8 +415,8 @@
     },
     "2026tcsnycmarathonmanhattancentralpark": {
       "candidate_title": "2026 TCS NYC Marathon - Manhattan - Central Park",
-      "fetched_at": "2026-10-31T12:22:49+00:00",
-      "last_error": "http_302",
+      "fetched_at": "2026-11-01T20:56:30+00:00",
+      "last_error": "queueit",
       "parsed": false,
       "slug": "tcsnycmarathonmanhattancentralpark",
       "urls_tried": [
