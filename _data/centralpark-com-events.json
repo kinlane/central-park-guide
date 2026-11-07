@@ -162,7 +162,7 @@
       "Walks",
       "Women"
     ],
-    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.264.post159.dev229098586404/static/images/blank.png"
+    "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.265.post124.dev315903263707/static/images/blank.png"
   },
   {
     "title": "Events on The Green at the Davis Center",
@@ -222,7 +222,7 @@
       "Running Classes",
       "Sports & Recreation"
     ],
-    "image_url": "https://www.centralpark.com/downloads/5659/download/boathouse_from_the_terrace.jpg..jpe?cb=b5350e536ab5cfffe9793de33fb38543"
+    "image_url": "https://www.centralpark.com/downloads/5659/download/central-park-boathouse-from-terrace.jpe?cb=b6772711fda809944c9a32c1243a1ffe"
   },
   {
     "title": "Ice Skating at Gottesman Rink",
@@ -251,9 +251,7 @@
       "Winter Attractions",
       "Winter Sports"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10915/download/gottesman-rink.jpg?cb=51d83194a7bef214143892a5f908443d",
-    "start_date": "2026-11-01T00:00:00",
-    "end_date": "2026-11-02T00:00:00"
+    "image_url": "https://www.centralpark.com/downloads/10915/download/gottesman-rink.jpg?cb=51d83194a7bef214143892a5f908443d"
   },
   {
     "title": "Ice Skating at Wollman Rink",
@@ -282,25 +280,6 @@
       "Wollman Rink"
     ],
     "image_url": "https://www.centralpark.com/downloads/10909/download/ice-skating-wollman-fall.jpg?cb=d11cae5c706e4c1059d310759915b3a5"
-  },
-  {
-    "title": "NYC Marathon 2026",
-    "url": "https://www.centralpark.com/events/nyc-marathon/",
-    "source": "centralpark.com",
-    "description": "The last three miles of the NYC marathon take place in Central Park and the area will be packed with spectators, runners, staff, and volunteers.",
-    "location": "NYC Marathon Finish Line",
-    "coordinates": {
-      "lat": 40.7727755786673,
-      "lng": -73.9764239682007
-    },
-    "tags": [
-      "Charity & Cause Events",
-      "NYC Marathon",
-      "Races",
-      "Running",
-      "Sports & Recreation"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/11043/download/nyc-marathon-central-park.jpeg?cb=2cb7b3ba35bef6794d848e6dcd63962b"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",

@@ -1,0 +1,58 @@
+- timestamp: '2026-11-07T00:44:15.359297+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Nov 7\u201313: seven days of sun, a charity run on the Upper\
+    \ Loop, and the Conservancy's gala"
+  week_of: '2026-11-06'
+  status: sent
+- timestamp: '2026-11-07T00:44:25.458667+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Nov 7\u201313: a run on the Upper Loop tomorrow, then seven\
+    \ days of sun"
+  week_of: '2026-11-06'
+  status: sent
+- timestamp: '2026-11-07T00:44:40.989263+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Nov 7\u201313: seven sunny days, Sunday's four-event morning,\
+    \ and the Conservancy's gala"
+  week_of: '2026-11-06'
+  status: sent
+- timestamp: '2026-11-07T00:44:54.182345+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Nov 7\u201313: the Great Lawn gets a permit,\
+    \ and Bethesda gets a second one"
+  week_of: '2026-11-06'
+  status: sent

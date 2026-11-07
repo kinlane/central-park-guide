@@ -1,6 +1,28 @@
 {
   "events": [
     {
+      "id": "summerstage-22216",
+      "title": "Angus & Julia Stone",
+      "start_date": "2027-05-15 19:00:00",
+      "end_date": "2027-05-15 22:00:00",
+      "url": "https://cityparksfoundation.org/events/angus-julia-stone/",
+      "description": "SummerStage Member Presale: Wednesday, November 11 @ 10AM \n Capital One Cardholder Presale: Wednesday, November 11 @ 10AM \n General Onsale: Friday, November 13 @ 10AM \n  Aussie sibling duo   Angus & Julia Stone   have been crafting folk and indie-pop hits since forming in 2006. They\u2019re known for their dreamy, ethereal charm and chart-topping albums including    A Book Like This    and    Down the Way   , the latter of which earned them five ARIA awards. Their latest release,    Karaoke Bar   , \u201ccaptures a sense of both the granular and the grand,\u201d (   Billboard   ) with its joyful message and bright sound.",
+      "image": "https://cityparksfoundation.org/wp-content/uploads/2026/11/Static_Social-FacebookPR_1200x630_AngusJuliaStone_2027_Regional_SummerStageinCentralPark_0515-1.webp",
+      "cost": "",
+      "venue": "Manhattan",
+      "venue_park": "Central Park",
+      "venue_address": "E. 71st Street, New York, NY",
+      "venue_source": "detail",
+      "tags": [
+        "ticketed"
+      ],
+      "categories": [
+        "summerstage"
+      ],
+      "place_hint": "Rumsey Playfield",
+      "fetched_at": "2026-11-07T00:09:56Z"
+    },
+    {
       "id": "summerstage-18362",
       "title": "Odd Mob",
       "start_date": "2027-05-29 17:30:00",
@@ -20,8 +42,8 @@
         "summerstage"
       ],
       "place_hint": "Rumsey Playfield",
-      "fetched_at": "2026-11-01T20:56:35Z"
+      "fetched_at": "2026-11-07T00:09:57Z"
     }
   ],
-  "fetched_at": "2026-11-01T20:56:35Z"
+  "fetched_at": "2026-11-07T00:09:57Z"
 }
