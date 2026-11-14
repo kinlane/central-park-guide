@@ -556,6 +556,24 @@ paths_and_drives:
     location: Southern section, connecting south to East Drive
     description: Connects northbound traffic from Central Park South/6th Avenue to East Drive near the 66th Street transverse. Attractions along it include Victorian Gardens, the Carousel, and the Mall.
 
+  # The permit feed names the drives in segments as well as whole. "Lower Loop"
+  # was added in September 2026; "Center Loop" and "Upper Loop" are the two
+  # remaining segment names it uses, and both were missing — a permit naming
+  # only one of them matched no place at all and so could not be scored for
+  # loop impact. Added 2026-11-14 after the Walk to End Alzheimer's (permit
+  # 893015, "Bandshell Plaza, Lower Loop, Center Loop, Dead Road North") was
+  # caught by Lower Loop alone, and the Nov 7 Saving the Elephants Run
+  # ("Bandshell Plaza, Upper Loop") was not caught at all.
+  - name: Center Loop
+    type: drive/path
+    location: Mid-park, the drives between the 72nd Street and 86th Street transverses
+    description: The middle segment of the park drives, between the 72nd Street and 86th Street transverses. A permit naming it is on the roadway, not beside it.
+
+  - name: Upper Loop
+    type: drive/path
+    location: Northern section, the drives above the 86th Street transverse
+    description: The northern segment of the park drives, above the 86th Street transverse and over Harlem Hill. A permit naming it is on the roadway, not beside it.
+
   - name: Terrace Drive
     type: scenic drive
     location: At 72nd Street

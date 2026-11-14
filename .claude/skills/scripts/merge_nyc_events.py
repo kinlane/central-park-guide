@@ -578,12 +578,28 @@ LOOP_PLACE_NAMES = {
     'West Drive',
     'Center Drive',
     'Ted Corbitt Loop',
-    # The southern 1.7-mile loop, and a place name the permit feed uses outright:
-    # the Terry Fox Run's event_location reads "Bandshell Plaza, Lower Loop" and
-    # still scored no loop impact until this was added. It is the loop itself, not
-    # a transverse or cross drive, so it belongs here by the same rule as the
-    # drives above.
+    # The permit feed names the drives in segments as well as whole, and all
+    # three segment names are the loop itself — not a transverse or a cross
+    # drive — so they belong here by the same rule as the drives above.
+    #
+    # 'Lower Loop' was added first: the Terry Fox Run's event_location reads
+    # "Bandshell Plaza, Lower Loop" and scored no loop impact until then. That
+    # fix patched the one instance instead of the category, and the other two
+    # names stayed missing for two months:
+    #
+    #   2026-11-07  Saving the Elephants Run     "Bandshell Plaza, Upper Loop"
+    #               -> no loop impact, missed in that week's editions entirely.
+    #   2026-11-14  Walk to End Alzheimer's      "Bandshell Plaza, Lower Loop,
+    #               Center Loop, Dead Road North" -> flagged, but only because
+    #               the permit happened to also name Lower Loop. Center Loop
+    #               alone would have gone through unflagged.
+    #
+    # occupies_loop()'s own docstring cited a "Center Loop" permit as the
+    # reason permit_sourced widens the match to any position — while the name
+    # it cited was in neither this set nor the place vocabulary.
     'Lower Loop',
+    'Center Loop',
+    'Upper Loop',
 }
 
 
