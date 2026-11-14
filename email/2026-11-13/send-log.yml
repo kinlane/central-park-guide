@@ -1,0 +1,58 @@
+- timestamp: '2026-11-14T13:01:27.482160+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Nov 14\u201320: a charity walk on the loop Saturday morning,\
+    \ then seven dry days that end at 64\xB0"
+  week_of: '2026-11-13'
+  status: sent
+- timestamp: '2026-11-14T13:01:36.338865+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Nov 14\u201320: the loop is closed Saturday 8\u20131, and\
+    \ then seven dry days in a row"
+  week_of: '2026-11-13'
+  status: sent
+- timestamp: '2026-11-14T13:01:46.746792+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Nov 14\u201320: lanterns at Summit Rock, a jazz band at\
+    \ the Bandshell, and a week with no rain in it"
+  week_of: '2026-11-13'
+  status: sent
+- timestamp: '2026-11-14T13:01:58.648909+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Nov 14\u201320: I had the gala permit wrong,\
+    \ and six closures now converge on December 13"
+  week_of: '2026-11-13'
+  status: sent
