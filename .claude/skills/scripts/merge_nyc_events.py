@@ -1615,7 +1615,15 @@ if os.path.exists(CONSERVANCY_CACHE_PATH):
     for rec in cpc_data.get('events', []):
         # Date first: an evergreen self-guided tour page with no schedule isn't
         # a missing-location problem, it just isn't an event.
+        # `event_instances` is normally a list of instance objects, but the
+        # Conservancy API sometimes returns a dict keyed by
+        # "<instanceDate>-<instanceId>" holding those same objects as values.
+        # One record in 62 arrived that way on 2026-11-14 ("How the Grinch Stole
+        # Skate Night") and raised AttributeError here, which aborted the whole
+        # merge at source 3 and left sources 3-8 unrun. Normalise both shapes.
         instances = rec.get('event_instances') or []
+        if isinstance(instances, dict):
+            instances = list(instances.values())
         stamps = [i.get('instanceDate') for i in instances if i.get('instanceDate')]
         if not stamps and rec.get('start_date'):
             stamps = [rec['start_date']]
