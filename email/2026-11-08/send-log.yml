@@ -1,0 +1,58 @@
+- timestamp: '2026-11-08T23:21:44.090047+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Nov 9\u201315: three more mild days, then the warm spell\
+    \ ends hard on Friday"
+  week_of: '2026-11-08'
+  status: sent
+- timestamp: '2026-11-08T23:21:54.806254+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Nov 9\u201315: Veterans Day is the ride of the week, then\
+    \ Friday turns cold and wet"
+  week_of: '2026-11-08'
+  status: sent
+- timestamp: '2026-11-08T23:22:06.594174+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Nov 9\u201315: lanterns at Summit Rock, the Great Park Hike,\
+    \ and the warm spell ends Friday"
+  week_of: '2026-11-08'
+  status: sent
+- timestamp: '2026-11-08T23:22:17.982273+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Nov 9\u201315: five closures moved to December\
+    \ 8 together"
+  week_of: '2026-11-08'
+  status: sent
