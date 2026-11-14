@@ -1,16 +1,6 @@
 {
   "events": [
     {
-      "id": "nycparks-parks-central-park-events-2026-11-08-leaf-peeping-in-central-park-hike",
-      "url": "https://www.nycgovparks.org/parks/central-park/events/2026/11/08/leaf-peeping-in-central-park-hike",
-      "title": "Leaf Peeping in Central Park Hike",
-      "start_date": "2026-11-08T13:00:00-05:00",
-      "end_date": "2026-11-08T14:30:00-05:00",
-      "location": "Entrance - West 100 Street and Central Park West",
-      "category": "Urban Park Rangers, Fall Foliage",
-      "free": true
-    },
-    {
       "id": "nycparks-parks-central-park-events-2026-11-21-falling-for-nature-hike",
       "url": "https://www.nycgovparks.org/parks/central-park/events/2026/11/21/falling-for-nature-hike",
       "title": "Falling for Nature Hike",
@@ -61,5 +51,5 @@
       "free": true
     }
   ],
-  "fetched_at": "2026-11-07T00:09:55Z"
+  "fetched_at": "2026-11-14T11:27:17Z"
 }

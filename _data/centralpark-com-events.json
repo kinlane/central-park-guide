@@ -126,27 +126,6 @@
     "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
   },
   {
-    "title": "Children's Programs at Central Park Zoo",
-    "url": "https://www.centralpark.com/events/childrens-programs-at-central-park-zoo/",
-    "source": "centralpark.com",
-    "description": "Interactive children’s programs offer hands-on animal learning, fun activities, and early wildlife exploration for all ages at the zoo.",
-    "location": "Central Park Zoo",
-    "coordinates": {
-      "lat": 40.7676906686356,
-      "lng": -73.9718115378346
-    },
-    "tags": [
-      "Annual Events",
-      "Central Park Zoo",
-      "Children's Activities",
-      "Fall Activities",
-      "Spring Activities",
-      "Tisch Children's Zoo",
-      "Winter Activities"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3"
-  },
-  {
     "title": "City Girls Who Walk",
     "url": "https://www.centralpark.com/events/city-girls-who-walk/",
     "source": "centralpark.com",
@@ -163,28 +142,6 @@
       "Women"
     ],
     "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.265.post124.dev315903263707/static/images/blank.png"
-  },
-  {
-    "title": "Events on The Green at the Davis Center",
-    "url": "https://www.centralpark.com/events/events-on-the-green-at-the-davis-center/",
-    "source": "centralpark.com",
-    "description": "The Central Park Conservancy hosts free community events on the Davis Center green each spring, including wellness, music, art, and family programming.",
-    "location": "Davis Center",
-    "coordinates": {
-      "lat": 40.7961140600508,
-      "lng": -73.954965898685
-    },
-    "tags": [
-      "Central Park Conservancy Events",
-      "Davis Center",
-      "Fall Activities",
-      "Family Activities",
-      "Free Events",
-      "Sports & Recreation",
-      "The Green",
-      "Wellness"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10914/download/davis-center.jpg?cb=5201cb32886adb8674330c968bf984b8"
   },
   {
     "title": "Fishing at the Harlem Meer",
@@ -223,6 +180,24 @@
       "Sports & Recreation"
     ],
     "image_url": "https://www.centralpark.com/downloads/5659/download/central-park-boathouse-from-terrace.jpe?cb=b6772711fda809944c9a32c1243a1ffe"
+  },
+  {
+    "title": "Gladiators NYC",
+    "url": "https://www.centralpark.com/events/gladiators-nyc/",
+    "source": "centralpark.com",
+    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
+    "location": "Lawn Behind Met Museum",
+    "coordinates": {
+      "lat": 40.7784296398896,
+      "lng": -73.9655968372519
+    },
+    "tags": [
+      "Annual Events",
+      "Featured Events",
+      "Free Events",
+      "Metropolitan Museum Of Art"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb"
   },
   {
     "title": "Ice Skating at Gottesman Rink",
