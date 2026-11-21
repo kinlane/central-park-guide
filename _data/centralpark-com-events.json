@@ -1,5 +1,26 @@
 [
   {
+    "title": "30th Annual Central Park Holiday Lighting",
+    "url": "https://www.centralpark.com/events/central-park-holiday-lighting/",
+    "source": "centralpark.com",
+    "description": "The whole family can enjoy a festive evening of carols, refreshments and a dazzling display of floating holiday lights on the Harlem Meer.",
+    "location": "Charles A. Dana Discovery Center",
+    "coordinates": {
+      "lat": 40.7970789440131,
+      "lng": -73.9514760598962
+    },
+    "tags": [
+      "Charles A. Dana Discovery Center",
+      "Free Events",
+      "Harlem Meer",
+      "Holidays",
+      "Winter"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10930/download/annual-holiday-lighting-harlem-meer.jpg?cb=b128d0c638457ea1085ab3132ab7cc36",
+    "start_date": "2026-12-03T17:30:00",
+    "end_date": "2026-12-03T19:30:00"
+  },
+  {
     "title": "Bird Watching with Birding Bob",
     "url": "https://www.centralpark.com/events/bird-watching-with-birding-bob/",
     "source": "centralpark.com",
@@ -126,6 +147,27 @@
     "image_url": "https://www.centralpark.com/downloads/8394/download/Snow%20Leopards.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
   },
   {
+    "title": "Children's Programs at Central Park Zoo",
+    "url": "https://www.centralpark.com/events/childrens-programs-at-central-park-zoo/",
+    "source": "centralpark.com",
+    "description": "Interactive children’s programs offer hands-on animal learning, fun activities, and early wildlife exploration for all ages at the zoo.",
+    "location": "Central Park Zoo",
+    "coordinates": {
+      "lat": 40.7676906686356,
+      "lng": -73.9718115378346
+    },
+    "tags": [
+      "Annual Events",
+      "Central Park Zoo",
+      "Children's Activities",
+      "Fall Activities",
+      "Spring Activities",
+      "Tisch Children's Zoo",
+      "Winter Activities"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/7731/download/Red%20Panda.jpg?cb=5819a3042515f77fa3e82def5c36fcb3"
+  },
+  {
     "title": "City Girls Who Walk",
     "url": "https://www.centralpark.com/events/city-girls-who-walk/",
     "source": "centralpark.com",
@@ -142,6 +184,31 @@
       "Women"
     ],
     "image_url": "https://d2az0yupc2akbm.cloudfront.net/vanguardistas.publicview/4.265.post124.dev315903263707/static/images/blank.png"
+  },
+  {
+    "title": "Columbus Circle Holiday Market 2026",
+    "url": "https://www.centralpark.com/events/columbus-circle-holiday-market/",
+    "source": "centralpark.com",
+    "description": "Find unique gifts and delicious treats while immersing yourself in the festive atmosphere at this holiday market.",
+    "location": "Columbus Circle Holiday Market",
+    "coordinates": {
+      "lat": 40.7682230145603,
+      "lng": -73.9811677468186
+    },
+    "tags": [
+      "Food & Drink",
+      "Free Events",
+      "Gift Shop",
+      "Holidays",
+      "Restaurants",
+      "Shopping",
+      "Winter",
+      "Winter Activities",
+      "Winter Attractions"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10932/download/columbus-circle-holiday-market-2025.jpg?cb=6d9cdad353bc55fdebf9aa88c3d01a12",
+    "start_date": "2026-12-01T00:00:00",
+    "end_date": "2026-12-02T00:00:00"
   },
   {
     "title": "Fishing at the Harlem Meer",
@@ -182,22 +249,26 @@
     "image_url": "https://www.centralpark.com/downloads/5659/download/central-park-boathouse-from-terrace.jpe?cb=b6772711fda809944c9a32c1243a1ffe"
   },
   {
-    "title": "Gladiators NYC",
-    "url": "https://www.centralpark.com/events/gladiators-nyc/",
+    "title": "Holiday Lights: Park & City Carriage Ride",
+    "url": "https://www.centralpark.com/events/holiday-lights-park-and-city-horse-carriage-ride/",
     "source": "centralpark.com",
-    "description": "Don't miss the chance to see knights in full armor fighting it out in the middle of Central Park! This exciting event takes place every second Saturday of the month.",
-    "location": "Lawn Behind Met Museum",
+    "description": "See Central Park and the 5th Avenue holiday lights and windows from your own private horse-drawn carriage, with a photo stop at the Rockefeller Center Christmas Tree.",
+    "location": "Meeting Point: Horse & Carriage",
     "coordinates": {
-      "lat": 40.7784296398896,
-      "lng": -73.9655968372519
+      "lat": 40.766993823624,
+      "lng": -73.9790416145416
     },
     "tags": [
-      "Annual Events",
-      "Featured Events",
-      "Free Events",
-      "Metropolitan Museum Of Art"
+      "5th Avenue",
+      "Christmas",
+      "Christmas Tree",
+      "Holiday Lights",
+      "Holidays",
+      "Horse & Carriage Rides",
+      "Rockefeller Center",
+      "Sightseeing Tours"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10804/download/gladiators-nyc-central-park.jpg?cb=188a9632d701a313135beaac2dab70cb"
+    "image_url": "https://www.centralpark.com/downloads/10787/download/holiday-horse-carriage-rockefeller-center.jpg?cb=d998df8ed457988c6d5903380ed7efd4"
   },
   {
     "title": "Ice Skating at Gottesman Rink",
@@ -257,6 +328,49 @@
     "image_url": "https://www.centralpark.com/downloads/10909/download/ice-skating-wollman-fall.jpg?cb=d11cae5c706e4c1059d310759915b3a5"
   },
   {
+    "title": "Macy's Thanksgiving Day Parade",
+    "url": "https://www.centralpark.com/events/macys-thanksgiving-day-parade/",
+    "source": "centralpark.com",
+    "description": "The Macy's Thanksgiving Day parade is a New York holiday tradition like no other! Get information on this year's lineup, parade route and road closures.",
+    "location": "Central Park West & 77th Street",
+    "coordinates": {
+      "lat": 40.7794835771761,
+      "lng": -73.9735836451925
+    },
+    "tags": [
+      "Fall",
+      "Free Events",
+      "Holidays",
+      "Parades",
+      "Thanksgiving"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/11048/download/street-march-macys-thanksgiving-parade.jpeg?cb=4ecc52e08d2530e484a4929f66e7507d",
+    "start_date": "2026-11-26T08:30:00",
+    "end_date": "2026-11-26T12:00:00"
+  },
+  {
+    "title": "Origami Holiday Tree at Museum of Natural History",
+    "url": "https://www.centralpark.com/events/american-museum-natural-history-origami-holiday-tree/",
+    "source": "centralpark.com",
+    "description": "See the American Museum of Natural History’s 13-foot Origami Holiday Tree, covered in 1,000+ folded models, opening November 23, 2026.",
+    "location": "American Museum of Natural History",
+    "coordinates": {
+      "lat": 40.7812192112224,
+      "lng": -73.9734949268922
+    },
+    "tags": [
+      "American Museum of Natural History",
+      "Christmas",
+      "Christmas Tree",
+      "Holidays",
+      "Winter Activities",
+      "Winter Attractions"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10940/download/amnh-origami-tree.jpg?cb=8119f961094e6b21d66e3239e636230e",
+    "start_date": "2026-11-23T10:00:00",
+    "end_date": "2026-11-23T17:30:00"
+  },
+  {
     "title": "Penguin Feedings at Central Park Zoo",
     "url": "https://www.centralpark.com/events/central-park-zoo-penguin-feedings/",
     "source": "centralpark.com",
@@ -275,6 +389,27 @@
       "Zoo Animals"
     ],
     "image_url": "https://www.centralpark.com/downloads/8387/download/Penguins_king.jpg?cb=f52afeb0b3e5b5d9f19123735a4da10c"
+  },
+  {
+    "title": "Rockefeller Center Christmas Tree 2026",
+    "url": "https://www.centralpark.com/events/rockefeller-center-christmas-tree-lighting-and-viewing/",
+    "source": "centralpark.com",
+    "description": "The 2026 Rockefeller Center Christmas Tree is a 76-foot Norway spruce from West Edmeston, New York. It lights up on December 2 and stays on view through mid-January 2027.",
+    "location": "Rockefeller Center",
+    "coordinates": {
+      "lat": 40.7586339912243,
+      "lng": -73.9786727522181
+    },
+    "tags": [
+      "Christmas Tree",
+      "Free Events",
+      "Holidays",
+      "Rockefeller Center",
+      "Winter"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/10788/download/rock-center-christmas-tree.jpg?cb=f507205866972b95568296cbad205b3b",
+    "start_date": "2026-12-02T19:00:00",
+    "end_date": "2026-12-02T22:00:00"
   },
   {
     "title": "Sea Lion Feedings at Central Park Zoo",
@@ -322,6 +457,28 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d"
+  },
+  {
+    "title": "Thanksgiving Eve Balloon Inflating",
+    "url": "https://www.centralpark.com/events/thanksgiving-eve-balloon-inflating/",
+    "source": "centralpark.com",
+    "description": "Watch the Macy’s Thanksgiving Day Parade balloons take shape outside the American Museum of Natural History on Thanksgiving Eve. The viewing is free, and no tickets are needed.",
+    "location": "American Museum of Natural History",
+    "coordinates": {
+      "lat": 40.7812192112224,
+      "lng": -73.9734949268922
+    },
+    "tags": [
+      "Fall",
+      "Free Events",
+      "Holidays",
+      "Parades",
+      "Thanksgiving",
+      "Thanksgiving Eve Balloon Inflating"
+    ],
+    "image_url": "https://www.centralpark.com/downloads/11047/download/macys-balloon-at-macys-thanksgiving.jpeg?cb=d43d59d56cf5139e23f15fbb10a20eae",
+    "start_date": "2026-11-25T13:00:00",
+    "end_date": "2026-11-25T18:00:00"
   },
   {
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
