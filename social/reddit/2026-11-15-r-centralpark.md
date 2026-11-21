@@ -2,8 +2,32 @@
 sub: r/CentralPark
 drafted: 2026-11-15
 covers: 2026-11-15 to 2026-11-21
-status: draft — not yet posted
+status: DO NOT POST AS WRITTEN — two claims in it are false (see retractions below)
 link_included: false
+retractions:
+  - claim: "the loop is clear the whole week" (in the title and a body section)
+    verdict: FALSE as of 2026-11-21
+    why: >
+      The Central Park Turkey Trot (permit 906222) was filed after the Nov 15
+      pull and runs today, Sat Nov 21, 10-11am across Bandshell Plaza, Center
+      Drive, Center Loop, East Drive and the cross drives. It was not in the
+      data when the post was written, which is exactly the hazard the post
+      itself describes two paragraphs earlier about the Festival Dei Cinque
+      Colori. The claim was true against the data and is not true about the
+      park.
+  - claim: "seven permits ... all ending within a day of each other ... something is planned for the park around December 14"
+    verdict: FALSE — artifact of the data source
+    why: >
+      The NYC permit dataset expands a recurring permit into one row per
+      occurrence only ~31 days ahead of the query. Querying event_id=895600
+      with no date filter returns exactly 31 rows, Nov 21 - Dec 21. Of 68
+      permits in the Nov 21 pull dated after Dec 21, all 68 have exactly one
+      row. The "shared end date" is the materialization boundary, and every
+      reported move of it (Dec 6, 8, 13, 14, 20) is the pull date plus ~29
+      days. These closures do not end in December; their end date is not
+      visible in this dataset at all. The post asks readers to go look for
+      posted notices about a December event there is no evidence for — that
+      ask must not go out.
 phase: 1 complete — see note
 week: 5 (Phase 1's four weeks ended with the Nov 8 post)
 note: >
