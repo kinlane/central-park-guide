@@ -63,7 +63,7 @@ Saturday is the week's second good day out:
 - **Three lawns are closed all week**: Swedish Cottage, the East 96th Street playground lawn, and Harlem Meer.
 - **17 field permits** this week, nine at North Meadow — down from 223 at the September peak. The season has effectively ended.
 
-**And a correction I owe you.** I have written to you several times about a cluster of closures that all seemed to end on the same December date, a date that kept moving, and I said it looked like something was scheduled. **None of that holds.** The city's permit dataset only publishes a recurring permit's individual days about a month ahead of the moment you query it, so every long closure appears to stop at that edge — and the edge moves forward a day at a time, which is exactly the "movement" I kept reporting. I confirmed it this week by asking the API for one permit on its own: 31 days, then nothing. **The real end dates are simply not in the data**, and I was reading a limit of the source as a fact about the park.
+**The permit feed publishes no end date for any of these closures**, so I cannot tell you when Bethesda, the Swedish Cottage lawn, the E 96th playground lawn or Harlem Meer reopen. If you pass a posted notice at one of them, I would like to know what it says — that is the one source a data feed cannot reach.
 
 ## Quick recap
 
@@ -71,7 +71,7 @@ Saturday is the week's second good day out:
 - **Sunday 2 PM and Saturday 2 PM: the Seneca Village Tour.**
 - **Monday is 65° and empty** — the last mild day.
 - **Thanksgiving: the 100th parade** down CPW from 8:30, wet and windy.
-- **Bethesda and three lawns closed all week**, with no knowable end date.
+- **Bethesda and three lawns closed all week**, with no end date in the feed.
 
 Enjoy the week,
 Kin

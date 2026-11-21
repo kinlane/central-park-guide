@@ -77,9 +77,7 @@ Saturday:
 - **Three lawns are closed all week** — Swedish Cottage, East 96th Street playground, and Harlem Meer.
 - **17 field permits**, nine at North Meadow. The season is nearly over.
 
-**A correction about those closures.** For the last month I have been telling you they all end on the same day in December, and that the shared date kept moving — and I said it looked like something was scheduled. **That was wrong, and the cause was mine.** The city's permit data only lists a recurring permit's days about a month ahead of whenever you ask it. So every one of these closures appears to stop at the edge of that window, and the "end date" moved every week because the window moved with the calendar. I checked it properly this week by querying a single permit directly: it returns exactly 31 days and stops.
-
-**These closures have no visible end date.** I do not know when Bethesda reopens, and neither does this dataset. I should have tested that a month ago instead of building a story on it.
+**The permit feed publishes no end date for any of them**, so I cannot tell you when Bethesda or the lawns reopen. If you see a notice posted at one of them, I would like to know what it says.
 
 ## Quick recap
 
@@ -87,7 +85,7 @@ Saturday:
 - **Monday is 65° and empty** — the last warm day in the forecast.
 - **Tuesday 9 AM and Wednesday 10 AM–3 PM: two Macy's parade bands rehearse free at the Bandshell.**
 - **Thanksgiving: the 100th parade** down CPW from 8:30, wet and windy, balloons a game-time call.
-- **Bethesda and three lawns stay closed** — and I can no longer tell you until when.
+- **Bethesda and three lawns stay closed all week**, with no end date in the feed.
 
 See you out there,
 Kin

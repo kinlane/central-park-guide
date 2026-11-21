@@ -31,7 +31,17 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.normpath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
 EVENTS_DIR = os.path.join(REPO_ROOT, '_events')
 PERSONAS_YML = os.path.join(REPO_ROOT, '_data', 'personas.yml')
-ENV_FILE = os.path.normpath(os.path.join(REPO_ROOT, '..', '.env'))
+# Credentials. /Users/kinlane/GitHub/.env is the live, maintained file; the
+# repo-adjacent new-york/.env is a May 2026 leftover whose AWS and Fastmail
+# keys are both stale — its AWS key was deactivated in IAM and returns
+# InvalidClientTokenId, which silently broke every send on 2026-11-21. Load the
+# legacy file first so nothing it holds alone is lost, then let the root file
+# overwrite, because the root is the one that gets rotated.
+ENV_FILES = [
+    os.path.normpath(os.path.join(REPO_ROOT, '..', '.env')),
+    os.path.normpath(os.path.join(REPO_ROOT, '..', '..', '.env')),
+]
+ENV_FILE = ENV_FILES[-1]  # back-compat for anything referencing the old name
 
 # Tags that mark an event as a private booking — suppressed for every persona
 # except walker and park-watcher (draft-persona-email.md "Soft-exclude rules").
@@ -51,13 +61,14 @@ FOREIGN_PARK_SKIPS = []
 
 def load_env():
     env = {}
-    if not os.path.exists(ENV_FILE):
-        return env
-    for line in open(ENV_FILE):
-        line = line.strip()
-        if "=" in line and not line.startswith("#"):
-            k, v = line.split("=", 1)
-            env[k.strip()] = v.strip().strip('"').strip("'")
+    for path in ENV_FILES:
+        if not os.path.exists(path):
+            continue
+        for line in open(path):
+            line = line.strip()
+            if "=" in line and not line.startswith("#"):
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip().strip('"').strip("'")
     return env
 
 

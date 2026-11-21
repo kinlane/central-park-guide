@@ -31,7 +31,17 @@ a = ap.parse_args()
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.normpath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
-ENV_FILE = os.path.normpath(os.path.join(REPO_ROOT, '..', '.env'))
+# Credentials. /Users/kinlane/GitHub/.env is the live, maintained file; the
+# repo-adjacent new-york/.env is a May 2026 leftover whose AWS and Fastmail
+# keys are both stale — its AWS key was deactivated in IAM and returns
+# InvalidClientTokenId, which silently broke every send on 2026-11-21. Load the
+# legacy file first so nothing it holds alone is lost, then let the root file
+# overwrite, because the root is the one that gets rotated.
+ENV_FILES = [
+    os.path.normpath(os.path.join(REPO_ROOT, '..', '.env')),
+    os.path.normpath(os.path.join(REPO_ROOT, '..', '..', '.env')),
+]
+ENV_FILE = ENV_FILES[-1]  # back-compat for anything referencing the old name
 EMAIL_PATH = os.path.join(REPO_ROOT, '_emails', a.week, a.file)
 LOG_DIR = os.path.join(REPO_ROOT, 'email', a.week)
 LOG_PATH = os.path.join(LOG_DIR, 'send-log.yml')
@@ -39,12 +49,26 @@ LOG_PATH = os.path.join(LOG_DIR, 'send-log.yml')
 if not os.path.exists(EMAIL_PATH):
     sys.exit(f"No email at {EMAIL_PATH}")
 
+# As of 2026-11-21 NEITHER env file is complete, and no precedence order
+# fixes that: new-york/.env (May 2026) has a Fastmail key that authenticates
+# and an AWS key IAM has deactivated; the root .env has a live AWS key and a
+# Fastmail key that returns 535. So collect every distinct value per key and
+# try them in order at the point of use rather than picking one up front.
+# The real repair is consolidating the two files; this keeps sends working
+# until that happens, and degrades to a single candidate once it does.
 env = {}
-for line in open(ENV_FILE):
-    line = line.strip()
-    if "=" in line and not line.startswith("#"):
-        k, v = line.split("=", 1)
-        env[k.strip()] = v.strip().strip('"').strip("'")
+env_candidates = {}
+for _env_path in ENV_FILES:
+    if not os.path.exists(_env_path):
+        continue
+    for line in open(_env_path):
+        line = line.strip()
+        if "=" in line and not line.startswith("#"):
+            k, v = line.split("=", 1)
+            k, v = k.strip(), v.strip().strip('"').strip("'")
+            env[k] = v
+            if v not in env_candidates.setdefault(k, []):
+                env_candidates[k].append(v)
 
 raw = open(EMAIL_PATH, encoding='utf-8').read()
 m = re.match(r"^---\n(.*?)\n---\n(.*)$", raw, re.DOTALL)
@@ -107,10 +131,24 @@ msg.attach(MIMEText(html_doc, "html", "utf-8"))
 
 ctx = ssl.create_default_context()
 print("\nConnecting to smtp.fastmail.com:587 ...")
-with smtplib.SMTP("smtp.fastmail.com", 587, timeout=30) as s:
-    s.ehlo(); s.starttls(context=ctx); s.ehlo()
-    s.login("hello@centralpark.guide", env["FASTMAIL_CENTRAL_PARK_GUIDE_KEY"])
-    refused = s.send_message(msg)
+_keys = env_candidates.get("FASTMAIL_CENTRAL_PARK_GUIDE_KEY") or []
+if not _keys:
+    sys.exit("No FASTMAIL_CENTRAL_PARK_GUIDE_KEY in any env file")
+_auth_errors = []
+for _i, _key in enumerate(_keys, 1):
+    try:
+        with smtplib.SMTP("smtp.fastmail.com", 587, timeout=30) as s:
+            s.ehlo(); s.starttls(context=ctx); s.ehlo()
+            s.login("hello@centralpark.guide", _key)
+            refused = s.send_message(msg)
+        if _i > 1:
+            print(f"  (mail key candidate {_i} of {len(_keys)} authenticated; "
+                  f"earlier candidate(s) rejected — consolidate the env files)")
+        break
+    except smtplib.SMTPAuthenticationError as e:
+        _auth_errors.append(f"candidate {_i}: {e.smtp_code} {e.smtp_error!r}")
+        if _i == len(_keys):
+            sys.exit("Every Fastmail key was rejected:\n  " + "\n  ".join(_auth_errors))
 status = "refused" if refused else "sent"
 print(f"  -> {status}")
 

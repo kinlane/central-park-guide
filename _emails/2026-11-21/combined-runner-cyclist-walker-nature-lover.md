@@ -61,7 +61,7 @@ Friday 54°, chance of light rain, nothing booked. Saturday:
 ## Worth knowing
 
 - **Bethesda Terrace, the Swedish Cottage lawn, the East 96th Street playground lawn and Harlem Meer are all closed all week.** None of them touches a path you run or ride.
-- **I have to correct something I have been telling you.** I reported for a month that these closures all ended on a shared date in December that kept moving. That was an artifact of how the city publishes the data — it only lists a recurring permit about a month out from whenever you ask, so everything appears to stop at that edge. I verified it this week by querying one permit directly and getting exactly 31 days. **There is no visible end date on any of them.** I was reading the edge of a window as a fact about the park.
+- **The permit feed publishes no end date for any of them**, so I cannot tell you when they come back. None of them affects a route you use in the meantime.
 
 Have a good week out there,
 Kin

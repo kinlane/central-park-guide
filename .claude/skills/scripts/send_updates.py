@@ -29,7 +29,17 @@ WEEK = sys.argv[1]
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.normpath(os.path.join(SCRIPT_DIR, '..', '..', '..'))
-ENV_FILE = os.path.normpath(os.path.join(REPO_ROOT, '..', '.env'))
+# Credentials. /Users/kinlane/GitHub/.env is the live, maintained file; the
+# repo-adjacent new-york/.env is a May 2026 leftover whose AWS and Fastmail
+# keys are both stale — its AWS key was deactivated in IAM and returns
+# InvalidClientTokenId, which silently broke every send on 2026-11-21. Load the
+# legacy file first so nothing it holds alone is lost, then let the root file
+# overwrite, because the root is the one that gets rotated.
+ENV_FILES = [
+    os.path.normpath(os.path.join(REPO_ROOT, '..', '.env')),
+    os.path.normpath(os.path.join(REPO_ROOT, '..', '..', '.env')),
+]
+ENV_FILE = ENV_FILES[-1]  # back-compat for anything referencing the old name
 EMAILS_DIR = os.path.join(REPO_ROOT, '_emails', WEEK)
 LOG_DIR = os.path.join(REPO_ROOT, 'email', WEEK)
 LOG_PATH = os.path.join(LOG_DIR, 'send-log.yml')
@@ -42,12 +52,15 @@ if not os.path.isdir(EMAILS_DIR):
 os.makedirs(LOG_DIR, exist_ok=True)
 
 env = {}
-with open(ENV_FILE) as f:
-    for line in f:
-        line = line.strip()
-        if "=" in line and not line.startswith("#"):
-            k, v = line.split("=", 1)
-            env[k.strip()] = v.strip().strip('"').strip("'")
+for _env_path in ENV_FILES:
+    if not os.path.exists(_env_path):
+        continue
+    with open(_env_path) as f:
+        for line in f:
+            line = line.strip()
+            if "=" in line and not line.startswith("#"):
+                k, v = line.split("=", 1)
+                env[k.strip()] = v.strip().strip('"').strip("'")
 
 smtp_password = env.get("FASTMAIL_CENTRAL_PARK_GUIDE_KEY") or env.get("fastmail-key")
 if not smtp_password:
