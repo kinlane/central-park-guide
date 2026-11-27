@@ -249,28 +249,6 @@
     "image_url": "https://www.centralpark.com/downloads/5659/download/central-park-boathouse-from-terrace.jpe?cb=b6772711fda809944c9a32c1243a1ffe"
   },
   {
-    "title": "Holiday Lights: Park & City Carriage Ride",
-    "url": "https://www.centralpark.com/events/holiday-lights-park-and-city-horse-carriage-ride/",
-    "source": "centralpark.com",
-    "description": "See Central Park and the 5th Avenue holiday lights and windows from your own private horse-drawn carriage, with a photo stop at the Rockefeller Center Christmas Tree.",
-    "location": "Meeting Point: Horse & Carriage",
-    "coordinates": {
-      "lat": 40.766993823624,
-      "lng": -73.9790416145416
-    },
-    "tags": [
-      "5th Avenue",
-      "Christmas",
-      "Christmas Tree",
-      "Holiday Lights",
-      "Holidays",
-      "Horse & Carriage Rides",
-      "Rockefeller Center",
-      "Sightseeing Tours"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/10787/download/holiday-horse-carriage-rockefeller-center.jpg?cb=d998df8ed457988c6d5903380ed7efd4"
-  },
-  {
     "title": "Ice Skating at Gottesman Rink",
     "url": "https://www.centralpark.com/events/ice-skating-at-gottesman-rink-the-davis-center/",
     "source": "centralpark.com",
@@ -345,8 +323,8 @@
       "Thanksgiving"
     ],
     "image_url": "https://www.centralpark.com/downloads/11048/download/street-march-macys-thanksgiving-parade.jpeg?cb=4ecc52e08d2530e484a4929f66e7507d",
-    "start_date": "2026-11-26T08:30:00",
-    "end_date": "2026-11-26T12:00:00"
+    "start_date": "2026-11-28T08:30:00",
+    "end_date": "2026-11-28T12:00:00"
   },
   {
     "title": "Origami Holiday Tree at Museum of Natural History",
@@ -366,9 +344,7 @@
       "Winter Activities",
       "Winter Attractions"
     ],
-    "image_url": "https://www.centralpark.com/downloads/10940/download/amnh-origami-tree.jpg?cb=8119f961094e6b21d66e3239e636230e",
-    "start_date": "2026-11-23T10:00:00",
-    "end_date": "2026-11-23T17:30:00"
+    "image_url": "https://www.centralpark.com/downloads/10940/download/amnh-origami-tree.jpg?cb=8119f961094e6b21d66e3239e636230e"
   },
   {
     "title": "Penguin Feedings at Central Park Zoo",
@@ -457,28 +433,6 @@
       "Yoga Classes"
     ],
     "image_url": "https://www.centralpark.com/downloads/8110/download/FitToursNYC%20yoga%20class.jpg?cb=e90b37636950e16f0e143f8b8fcc7b8d"
-  },
-  {
-    "title": "Thanksgiving Eve Balloon Inflating",
-    "url": "https://www.centralpark.com/events/thanksgiving-eve-balloon-inflating/",
-    "source": "centralpark.com",
-    "description": "Watch the Macy’s Thanksgiving Day Parade balloons take shape outside the American Museum of Natural History on Thanksgiving Eve. The viewing is free, and no tickets are needed.",
-    "location": "American Museum of Natural History",
-    "coordinates": {
-      "lat": 40.7812192112224,
-      "lng": -73.9734949268922
-    },
-    "tags": [
-      "Fall",
-      "Free Events",
-      "Holidays",
-      "Parades",
-      "Thanksgiving",
-      "Thanksgiving Eve Balloon Inflating"
-    ],
-    "image_url": "https://www.centralpark.com/downloads/11047/download/macys-balloon-at-macys-thanksgiving.jpeg?cb=d43d59d56cf5139e23f15fbb10a20eae",
-    "start_date": "2026-11-25T13:00:00",
-    "end_date": "2026-11-25T18:00:00"
   },
   {
     "title": "The Amazing Race-Style DIY Scavenger Hunt Adventure",
