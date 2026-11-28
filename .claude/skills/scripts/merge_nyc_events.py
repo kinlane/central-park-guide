@@ -19,7 +19,7 @@ import json
 import yaml
 import os
 import re
-from datetime import datetime
+from datetime import datetime, timedelta, time as dtime
 from collections import defaultdict
 from html import unescape
 
@@ -851,6 +851,92 @@ with open(LATEST_JSON) as f:
     latest = json.load(f)
 
 print(f"Loaded {len(latest)} latest events from API")
+
+
+def expand_long_span_rows(rows):
+    """Expand a single-row permit that spans days into one row per day.
+
+    Open Data files permits in two different shapes and we only handled one.
+    Most arrive as ONE ROW PER OCCURRENCE — permit 897230 (Thanksgiving parade
+    bleachers) has four rows for its four days. But some arrive as A SINGLE ROW
+    CARRYING THE WHOLE SPAN in start_date_time/end_date_time.
+
+    The loop below writes one file per row and dates it from start_date_time,
+    so a single-row span produced exactly one file, dated its FIRST day. The
+    daily past-event purge then deleted that file the next morning, while the
+    permit stayed in force. Found 2026-11-27 on permit 963800, "100th Macy's
+    Thanksgiving Day Parade - Grandstands", which holds the Central Park West
+    sidewalks from 65th north through the 70s from 2026-11-04 08:00 to
+    2026-12-05 17:00: a 31-day permit on the park's entire western boundary
+    that had been invisible to the site since 2026-11-05.
+
+    Expanding gives each day of the hold its own file, which is what the
+    per-occurrence permits already produce, so everything downstream — the
+    (event_id, date) dedupe, the purge, the digest window — works unchanged.
+
+    Deliberately conservative in two ways:
+
+    - Only when the permit has exactly ONE row. Multi-row permits are already
+      per-occurrence; expanding them would duplicate days.
+    - Only when end_date is at least 2 days after start_date. A one-boundary
+      span is usually an overnight event (22:00 to 02:00), not a series, and
+      splitting those would invent a second day. Those keep the old behaviour.
+
+    Times are set so the hold reads continuously: the first day runs from its
+    real start to 23:59, interior days are full days, and the last day runs to
+    its real end time.
+    """
+    by_id = defaultdict(list)
+    for r in rows:
+        by_id[r.get('event_id', '')].append(r)
+
+    out = []
+    expanded_report = []
+    for r in rows:
+        eid = r.get('event_id', '')
+        if len(by_id.get(eid, [])) != 1:
+            out.append(r)
+            continue
+        try:
+            s = datetime.fromisoformat(r['start_date_time'].replace('.000', ''))
+            e = datetime.fromisoformat(r['end_date_time'].replace('.000', ''))
+        except Exception:
+            out.append(r)
+            continue
+        span_days = (e.date() - s.date()).days
+        if span_days < 2:
+            out.append(r)
+            continue
+        if span_days > 400:
+            # Almost certainly a data error rather than a real permit. Leave it
+            # as-is and say so rather than writing 400 files.
+            print(f"  long-span: NOT expanding {eid} — span of {span_days} days "
+                  f"looks like bad data ({s.date()} -> {e.date()})")
+            out.append(r)
+            continue
+
+        for n in range(span_days + 1):
+            day = s.date() + timedelta(days=n)
+            first, last = (n == 0), (n == span_days)
+            day_start = s if first else datetime.combine(day, dtime(0, 0))
+            day_end = e if last else datetime.combine(day, dtime(23, 59))
+            clone = dict(r)
+            clone['start_date_time'] = day_start.isoformat(timespec='seconds')
+            clone['end_date_time'] = day_end.isoformat(timespec='seconds')
+            out.append(clone)
+        expanded_report.append((eid, r.get('event_name', '?'), s.date(), e.date(),
+                                span_days + 1))
+
+    for eid, nm, sd, ed, ndays in expanded_report:
+        print(f"  long-span: expanded {eid} \"{nm[:44]}\" "
+              f"{sd} -> {ed} into {ndays} daily rows")
+    return out
+
+
+_before = len(latest)
+latest = expand_long_span_rows(latest)
+if len(latest) != _before:
+    print(f"Long-span expansion: {_before} rows -> {len(latest)}")
 
 
 def load_superseded_permit_ids():

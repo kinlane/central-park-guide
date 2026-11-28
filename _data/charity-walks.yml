@@ -360,6 +360,20 @@ walks:
     organizer: "New York Road Runners"
     source_url: "https://events.nyrr.org/race-to-deliver-4m-to-benefit-god-s-love-we-deliver"
     recurrence: "Third or fourth Sunday of November"
+    # Open Data filed this race as permit 890908 in the week before race day,
+    # which produced a second event for 2026-11-22 under a different id
+    # namespace ("2026 Race to Deliver 4M..."). Claim it so the merge drops the
+    # permit-generated file and this editorial entry stands alone.
+    # Re-check each year: the permit id changes annually.
+    #
+    # The permit's own footprint read "102nd Street Cross Drive, 72nd Street
+    # Cross Drive, Center Loop" and ran 08:00-11:00 — an hour past the race
+    # finish, which is breakdown. That detail is folded into route_impact below
+    # so claiming the permit loses nothing. Worth noting that the permit scored
+    # loop impact ONLY because 'Center Loop' was added to LOOP_PLACE_NAMES on
+    # 2026-11-14: the two cross drives are correctly not loop names.
+    supersedes_permit_ids:
+      - "890908"
     dates:
       "2026": "2026-11-22"
     start_time: "08:00"
@@ -369,9 +383,11 @@ walks:
     event_borough: "Manhattan"
     affects_loop: true
     route_impact: >
-      A four-mile race on the park drives on a Sunday morning; plan on race
-      traffic on the loop roughly 8–10 AM. NYRR publishes the start line and
-      course map closer to race day.
+      A four-mile race on the park drives on a Sunday morning. The race runs
+      roughly 8–10 AM, but the city permit holds the 72nd Street and 102nd
+      Street cross drives and the Center Loop until 11 AM — so the drives are
+      not reliably clear until then. Run, ride or walk before 8 or after 11,
+      or use the bridle path and the Reservoir.
     audience_relevance:
       - runners
       - cyclists
