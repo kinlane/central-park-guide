@@ -2,7 +2,7 @@
 sub: r/CentralPark
 drafted: 2026-11-21
 covers: 2026-11-22 to 2026-11-28
-status: draft — not yet posted
+status: SUPERSEDED — never posted, window spent; use 2026-11-27 instead
 link_included: false
 phase: 1 complete (ended with the Nov 8 post); this is week 6
 week: 6
