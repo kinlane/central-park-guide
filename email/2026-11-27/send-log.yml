@@ -1,0 +1,58 @@
+- timestamp: '2026-11-28T00:20:27.863521+00:00'
+  to_name: Kin Lane
+  to_email: kinlane@gmail.com
+  format: combined
+  personas:
+  - cyclist
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - runner
+  - sports-fan
+  - theater-fan
+  - walker
+  - wellness-seeker
+  subject: "Central Park, Nov 28\u2013Dec 4: the parade is tomorrow morning, not Thursday\
+    \ \u2014 and the grandstands stay up until December 5"
+  week_of: '2026-11-27'
+  status: sent
+- timestamp: '2026-11-28T00:20:33.938822+00:00'
+  to_name: Audrey Watters
+  to_email: mail@audreywatters.com
+  format: combined
+  personas:
+  - cyclist
+  - nature-lover
+  - runner
+  - walker
+  subject: "Central Park, Nov 28\u2013Dec 4: parade on the west edge tomorrow morning,\
+    \ and the drives are clear all seven days"
+  week_of: '2026-11-27'
+  status: sent
+- timestamp: '2026-11-28T00:20:38.625317+00:00'
+  to_name: Marcia Naidoo
+  to_email: marcia@oceanicshipping.co.za
+  format: combined
+  personas:
+  - family
+  - music-fan
+  - nature-lover
+  - park-watcher
+  - sports-fan
+  - theater-fan
+  - walker
+  subject: "Central Park, Nov 28\u2013Dec 4: the parade is tomorrow morning, and the\
+    \ holiday season starts at the Harlem Meer on Thursday"
+  week_of: '2026-11-27'
+  status: sent
+- timestamp: '2026-11-28T00:20:43.382499+00:00'
+  to_name: Dan Barahona
+  to_email: rdbarahona@gmail.com
+  format: combined
+  personas:
+  - park-watcher
+  subject: "Central Park Watcher's Digest, Nov 28\u2013Dec 4: the parade grandstand\
+    \ permit is invisible to our own pipeline, and it runs to December 5"
+  week_of: '2026-11-27'
+  status: sent
